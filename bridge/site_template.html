@@ -590,7 +590,7 @@ function renderAbout() {
 
     audited.length ? el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Independent check")), el("span", null, B("Checked {date}", ...day(dept.audit.audited_on)))),
       el("div", { class: "figs four", "data-reveal": "" },
-        fig(num(audited.length), "", B("requirements re-read against the handbook page by a second reader")),
+        fig(num(audited.length), "", B("requirements re-read against their source page by a second reader")),
         fig(num(dept.audit.cards_first_reading.agree), `of ${dept.audit.cards_first_reading.of}`, B("agreed in full at the first reading")),
         fig(num(audited.filter((c) => c.audit.status === "reader_agrees").length), `of ${audited.length}`, B("have the second reader's full agreement after corrections")),
         fig(num(caught), `of ${Object.keys(dept.audit.decoys).length}`, B("deliberately wrong entries, mixed in as a test, were caught"))),

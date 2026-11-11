@@ -125,7 +125,7 @@
   "The {n} requirements were written by hand from the official documents. {a} of them have been re-read by a second reader; the others say \"Verification pending\".": "요건 {n}개는 공식 문서를 보고 사람이 직접 작성했습니다. 그중 {a}개는 2차 판독자가 다시 대조했으며, 나머지는 ‘Verification pending(검증 대기)’으로 표시됩니다.",
   "Re-read by a second reader on {date}": "{date} 2차 판독 완료",
   "Independent check": "독립 검증",
-  "requirements re-read against the handbook page by a second reader": "2차 판독자가 학사안내서 해당 쪽과 다시 대조한 요건",
+  "requirements re-read against their source page by a second reader": "2차 판독자가 출처 문서의 해당 쪽과 다시 대조한 요건",
   "agreed in full at the first reading": "첫 판독에서 모두 일치한 요건",
   "deliberately wrong entries, mixed in as a test, were caught": "시험용으로 일부러 잘못 작성해 섞어 넣은 항목을 찾아낸 수",
   "notices with deadlines compared with the Korean original": "한국어 원문과 대조한 마감 기한이 있는 공지",

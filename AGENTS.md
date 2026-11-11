@@ -117,4 +117,7 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   instructions change. The site shows "Who must act" and "Conditions and exceptions" on each notice. The same ten notices
   were read again by the second reader: points that could mislead fell from 66 to 4.
   Never push a new `PROMPT_VERSION` without the re-translated briefs, or the daily job will redo them all on GitHub.
-- Not built: calendar file, plugin. In progress: the second reading of the remaining 58 cards.
+- Audit complete for all 98 cards (12 Nov): 74 agreed at the first reading; after corrections the second reader agrees
+  with 91, and 7 are settled by the author with a reason on the card (mostly rules that run over a page break);
+  11 of 11 planted errors were caught. Re-run it after any change to card text: `tools/audit.py prepare-rest <prefix> <snapshot>`.
+- Not built: calendar file, plugin.

@@ -136,15 +136,21 @@ TEXT_PROMPT = PROMPT.replace("Attached is one page image from a Korean universit
     "1. Copy into `transcription` the Korean lines of that file that the cards below depend on.")
 
 
-def prepare_rest() -> None:
-    """Every card not audited yet, grouped by the page it cites. A PDF page becomes an image; a spreadsheet is given as text."""
+def prepare_rest(prefix: str = "rest", snapshot: str = "") -> None:
+    """Every card not audited yet, grouped by the page it cites. A PDF page becomes an image; a spreadsheet is given as text.
+    With a snapshot (the card file before a round of corrections), only the cards changed since then are asked again."""
     sys.path.insert(0, str(ROOT))
     from bridge import sources
     done = set(json.loads((ROOT / "data/ECE/audit.json").read_text(encoding="utf-8"))["cards"])
     fields = ("id", "title", "key", "rule", "why", "trap", "when", "applies_from", "source_quote_ko")
     todo = [c for c in cards() if c["id"] not in done]
+    decoys = REST_DECOYS
+    if snapshot:
+        before = {c["id"]: c for c in json.loads((OUT / snapshot).read_text(encoding="utf-8"))}
+        todo = [c for c in cards() if any(before[c["id"]].get(k) != c.get(k) for k in fields + ("source_page_also",))]
+        decoys = {"check-i": ("ug-category-change", "one week", "two weeks")}
     by_id = {c["id"]: c for c in todo}
-    for fake, (real, old, new) in REST_DECOYS.items():
+    for fake, (real, old, new) in decoys.items():
         text = json.dumps(by_id[real], ensure_ascii=False)
         assert old in text, (real, old)
         decoy = json.loads(text.replace(old, new))
@@ -159,21 +165,21 @@ def prepare_rest() -> None:
     for number, ((file, page), group) in enumerate(sorted(groups.items()), 1):
         path = ROOT / "sources/ECE" / file
         asked = [{k: c.get(k, "") for k in fields} for c in group]
-        (OUT / f"rest-page-{number}.json").write_text(json.dumps(asked, ensure_ascii=False, indent=1), encoding="utf-8")
+        (OUT / f"{prefix}-page-{number}.json").write_text(json.dumps(asked, ensure_ascii=False, indent=1), encoding="utf-8")
         if path.suffix.lower() == ".pdf":
             with fitz.open(path) as doc:
-                doc[page - 1].get_pixmap(dpi=170).save(OUT / f"rest-{number}.png")
-            (OUT / f"rest-page-{number}.prompt.txt").write_text(PROMPT.format(questions=f"rest-page-{number}.json").replace(
+                doc[page - 1].get_pixmap(dpi=170).save(OUT / f"{prefix}-{number}.png")
+            (OUT / f"{prefix}-page-{number}.prompt.txt").write_text(PROMPT.format(questions=f"{prefix}-page-{number}.json").replace(
                 "graduate handbook", "official document"), encoding="utf-8")
             kind = "image"
         else:
-            (OUT / f"rest-{number}.txt").write_text(sources._xlsx_text(path), encoding="utf-8")
-            (OUT / f"rest-page-{number}.prompt.txt").write_text(TEXT_PROMPT.format(questions=f"rest-page-{number}.json", source=f"rest-{number}.txt"), encoding="utf-8")
+            (OUT / f"{prefix}-{number}.txt").write_text(sources._xlsx_text(path), encoding="utf-8")
+            (OUT / f"{prefix}-page-{number}.prompt.txt").write_text(TEXT_PROMPT.format(questions=f"{prefix}-page-{number}.json", source=f"{prefix}-{number}.txt"), encoding="utf-8")
             kind = "text"
         index.append({"number": number, "file": file, "page": page, "kind": kind, "cards": [c["id"] for c in group]})
         print(f"{number:2d} {kind:5s} p{page:<3} {len(group):2d} cards  {file[:34]}")
-    (OUT / "rest-index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{len(todo) - len(REST_DECOYS)} cards and {len(REST_DECOYS)} decoys in {len(index)} packets")
+    (OUT / f"{prefix}-index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{len(todo) - len(decoys)} cards and {len(decoys)} decoys in {len(index)} packets")
 
 
 def collect() -> None:
@@ -321,4 +327,4 @@ def prepare_notices(prefix: str = "notice") -> None:
 
 
 if __name__ == "__main__":
-    {"prepare": prepare, "prepare-notices": lambda: prepare_notices(*sys.argv[2:3]), "prepare-pass": lambda: prepare_pass(int(sys.argv[2])), "collect": collect, "prepare-rest": prepare_rest}[sys.argv[1]]()
+    {"prepare": prepare, "prepare-notices": lambda: prepare_notices(*sys.argv[2:3]), "prepare-pass": lambda: prepare_pass(int(sys.argv[2])), "collect": collect, "prepare-rest": lambda: prepare_rest(*sys.argv[2:4])}[sys.argv[1]]()

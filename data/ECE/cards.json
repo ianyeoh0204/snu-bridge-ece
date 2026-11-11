@@ -54,7 +54,7 @@
    "Miss one session while auditing and you get an F when you take the seminar.",
    "The professor may change the number of absences allowed."
   ],
-  "why": "An F in the seminar blocks finishing coursework.",
+  "why": "One absence while auditing leads to an F when you take the seminar.",
   "when": "",
   "trap": "One absence is enough.",
   "applies_from": "",
@@ -83,7 +83,7 @@
   ],
   "why": "A different sub-title counts as a different seminar.",
   "when": "",
-  "trap": "Several seminars share one course name and differ only by sub-title code.",
+  "trap": "Several seminars share one course name; the sub-title and its code tell them apart.",
   "applies_from": "",
   "events": [],
   "source_file": "[웹용] 2026년 대학원학사안내서_최종.pdf",
@@ -108,7 +108,7 @@
    "Audit and enrolment should be in two consecutive semesters.",
    "If that is not possible, you must tell the course assistant."
   ],
-  "why": "A gap that nobody recorded can cost you the audit.",
+  "why": "Exceptions must be reported to the course assistant.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -171,7 +171,7 @@
    "Logic design. Basics of programming. Random variables and random processes. Signals and systems.",
    "Choose 2."
   ],
-  "why": "Lets you plan which courses to take before the exam.",
+  "why": "Shows the subjects you choose from.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -381,7 +381,7 @@
    "International students choose English or Korean for the language test.",
    "If English is your native language, you must choose Korean."
   ],
-  "why": "Decides which test or class you need.",
+  "why": "Decides which language test applies to you.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -547,7 +547,7 @@
    "M2480.000100 (1 credit), M1570.000300 (2 credits), or 990.501A (3 credits).",
    "Taken during an SNU master's, it need not be repeated in the PhD."
   ],
-  "why": "Coursework cannot be finished without it.",
+  "why": "One research ethics course is compulsory.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from spring 2022",
@@ -620,7 +620,7 @@
   "rule": [
    "If you count 6 thesis research credits, other-department courses count up to 9 credits.",
    "You still need 9 or more ECE graduate credits.",
-   "Read the academic board notice before taking them."
+   "The self-check sheet says the academic board notice on this must be read."
   ],
   "why": "Credits above the cap do not get you to 24.",
   "when": "",
@@ -632,7 +632,7 @@
   "source_page_also": 0,
   "source_quote_ko": "6) 타학과, 학부과목 이수 여부(반드시 학사게시판 게시글 참조)(논문연구 6학점 수강 했으면 타학과 9학점까지만 인정, 주전공 9학점 이상 수강 필수)",
   "check": "unchecked",
-  "key": "Up to 9 credits",
+  "key": "Up to 9 credits with 6 thesis research credits",
   "entry_years": [],
   "updates": []
  },
@@ -648,9 +648,9 @@
   "rule": [
    "Credits earned elsewhere before admission can count: up to 6 for master's, 9 for PhD, 15 for integrated.",
    "Grade B0 or higher, within the last 10 years, same or similar subject.",
-   "Needs your advisor's recommendation and committee approval."
+   "Needs your advisor's recommendation, confirmation that the subject is the same or similar, review by the department committee and the graduate academic committee, and the president's approval."
   ],
-  "why": "Fewer credits to take here.",
+  "why": "Approved courses are entered in your record as if taken at SNU; their grades are not counted in your average.",
   "when": "Details announced each semester",
   "trap": "",
   "applies_from": "",
@@ -876,7 +876,7 @@
    "Registration is in February and August.",
    "Exact dates are announced on the SNU and department notice boards."
   ],
-  "why": "Not registering ends your student status for the semester.",
+  "why": "If the instalments are not all paid by the fourth, you are treated as not registered.",
   "when": "February and August",
   "trap": "",
   "applies_from": "",
@@ -939,7 +939,7 @@
    "From semester 5 for master's and PhD, semester 9 for integrated, tuition depends on the credits you take.",
    "Registering for 0 credits means removal for non-registration."
   ],
-  "why": "Protects your student status after the standard semesters.",
+  "why": "The handbook states removal for non-registration in this case.",
   "when": "",
   "trap": "Zero credits is treated as not registered.",
   "applies_from": "",
@@ -961,7 +961,7 @@
   "group": "every_semester",
   "title": "Leave of absence",
   "rule": [
-   "Up to 4 semesters in total.",
+   "Up to 4 semesters. Military, start-up, illness, pregnancy and childbirth, childcare and recommended leave are not counted in this limit.",
    "One leave request is valid for up to 1 year.",
    "Apply on mySNU. Your advisor approves online after a meeting."
   ],
@@ -972,7 +972,7 @@
   "events": [],
   "source_file": "[웹용] 2026년 대학원학사안내서_최종.pdf",
   "source_page": 5,
-  "source_page_also": 0,
+  "source_page_also": 6,
   "source_quote_ko": "(가) 석사과정: 4개 학기까지 가능",
   "check": "unchecked",
   "key": "Up to 4 semesters",
@@ -992,7 +992,7 @@
    "Apply within the set period: mid December or mid June.",
    "Apply on mySNU, then register in the registration period."
   ],
-  "why": "Missing the period delays your return by a semester.",
+  "why": "Return is possible only within the designated registration period.",
   "when": "Mid December and mid June",
   "trap": "",
   "applies_from": "",
@@ -1221,7 +1221,7 @@
    "You must sit the exam at the start of your third semester.",
    "The number of attempts is limited to one."
   ],
-  "why": "Missing or failing it puts the PhD track at risk.",
+  "why": "The handbook fixes both the timing and the number of attempts.",
   "when": "",
   "trap": "There is no free second attempt.",
   "applies_from": "",
@@ -1423,7 +1423,7 @@
    "Only courses with grade B0 or higher. S/U courses cannot be used.",
    "They do not count toward the exam's 6 credits."
   ],
-  "why": "Fewer credits to take in the PhD.",
+  "why": "Recognised credits count toward PhD completion.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -1447,7 +1447,7 @@
   "rule": [
    "If you count 12 thesis research credits, other-department courses count up to 12 credits.",
    "You still need 12 or more ECE graduate credits.",
-   "Read the academic board notice before taking them."
+   "The self-check sheet says the academic board notice on this must be read."
   ],
   "why": "Credits above the cap do not get you to 36.",
   "when": "",
@@ -1459,7 +1459,7 @@
   "source_page_also": 0,
   "source_quote_ko": "6) 타학과, 학부과목 이수 여부(반드시 학사게시판 게시글 참조)(논문연구 12학점 수강 했으면 타학과 12학점까지만 인정, 주전공 12학점 이상 수강 필수)",
   "check": "unchecked",
-  "key": "Up to 12 credits",
+  "key": "Up to 12 credits with 12 thesis research credits",
   "entry_years": [],
   "updates": []
  },
@@ -1523,7 +1523,7 @@
    "Take 21 or more credits of ECE graduate courses.",
    "The module seminars count toward these 21."
   ],
-  "why": "Part of the 60 credits must be from your own department.",
+  "why": "A minimum number of credits must come from ECE graduate courses.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -1548,7 +1548,7 @@
    "At most 18 thesis research credits count toward coursework.",
    "Anything above 18 is not counted."
   ],
-  "why": "Extra thesis research credits do not get you to 60.",
+  "why": "Thesis research credits above the limit are not counted for completion.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -1572,7 +1572,7 @@
   "rule": [
    "At most 6 credits of graduate common-competency courses count."
   ],
-  "why": "More than 6 such credits do not get you to 60.",
+  "why": "Credits above the limit are not counted for completion.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -1621,7 +1621,7 @@
   "rule": [
    "If you count 18 thesis research credits, other-department courses count up to 21 credits.",
    "You still need 21 or more ECE graduate credits.",
-   "Read the academic board notice before taking them."
+   "The self-check sheet says the academic board notice on this must be read."
   ],
   "why": "Credits above the cap do not get you to 60.",
   "when": "",
@@ -1633,7 +1633,7 @@
   "source_page_also": 0,
   "source_quote_ko": "7) 타학과, 학부과목 이수여부(반드시 학사게시판 게시글 참조)(논문연구 18학점 수강 했으면 타학과 21학점까지만 인정, 주전공 21학점 이상 수강 필수)",
   "check": "unchecked",
-  "key": "Up to 21 credits",
+  "key": "Up to 21 credits with 18 thesis research credits",
   "entry_years": [],
   "updates": []
  },
@@ -1672,7 +1672,7 @@
    "The start of semester 4 is treated as the start of the PhD stage.",
    "Condition: registered through semester 3 with 24 credits taken."
   ],
-  "why": "Decides when doctoral rules, such as the doctoral seminar, begin to apply.",
+  "why": "Fixes the point from which the program treats you as a doctoral student.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -1791,11 +1791,11 @@
   "title": "Defense documents and submission periods",
   "rule": [
    "Committee appointment report: April for a February degree, the previous October for an August degree.",
-   "Thesis supervision report and journal publication proof: by June-July, or by the previous December-January.",
+   "Thesis supervision report and international journal publication proof: June to the end of July for a February degree; the previous December to the end of January for an August degree.",
    "Defense application: September-October, or March-April.",
    "Defense results: early January, or early July."
   ],
-  "why": "Each document has its own window before the defense semester.",
+  "why": "The first three documents are due by the semester before the defense; the application and result documents belong to the defense semester.",
   "when": "",
   "trap": "",
   "applies_from": "",
@@ -1931,7 +1931,7 @@
   "group": "every_semester",
   "title": "Leave of absence",
   "rule": [
-   "Up to 6 semesters in total.",
+   "Up to 6 semesters. Military, start-up, illness, pregnancy and childbirth, childcare and recommended leave are not counted in this limit.",
    "One leave request is valid for up to 1 year.",
    "Apply on mySNU. Your advisor approves online after a meeting."
   ],
@@ -1942,7 +1942,7 @@
   "events": [],
   "source_file": "[웹용] 2026년 대학원학사안내서_최종.pdf",
   "source_page": 5,
-  "source_page_also": 0,
+  "source_page_also": 6,
   "source_quote_ko": "(나) 박사과정: 6개 학기까지 가능",
   "check": "unchecked",
   "key": "Up to 6 semesters",
@@ -1957,7 +1957,7 @@
   "group": "every_semester",
   "title": "Leave of absence",
   "rule": [
-   "Up to 8 semesters in total.",
+   "Up to 8 semesters. Military, start-up, illness, pregnancy and childbirth, childcare and recommended leave are not counted in this limit.",
    "One leave request is valid for up to 1 year.",
    "Apply on mySNU. Your advisor approves online after a meeting."
   ],
@@ -2014,9 +2014,9 @@
    "Signals and Systems (430.306): Engineering Mathematics 1 first.",
    "Programming Methodology (430.211): Computer Concepts and Practice first."
   ],
-  "why": "A missed prerequisite delays the courses that depend on it.",
+  "why": "These courses cannot be taken before their prerequisites.",
   "when": "",
-  "trap": "The prerequisites form a chain across several semesters.",
+  "trap": "Basic Electronic Circuits and Lab requires two courses that have prerequisites of their own.",
   "applies_from": "",
   "events": [],
   "source_file": "2026학년도 이수규정_전기정보공학부.pdf",
@@ -2209,7 +2209,7 @@
    "Two further basic science courses with labs (4 credits each).",
    "Computer Concepts and Practice, Engineering Mathematics 1 and 2 (3 credits each)."
   ],
-  "why": "These 41 credits are fixed for every ECE undergraduate.",
+  "why": "The audit card lists these 41 credits course by course.",
   "when": "",
   "trap": "Advanced Mathematics and Advanced Physics may be taken in place of the standard courses.",
   "applies_from": "",
@@ -2255,9 +2255,9 @@
   "rule": [
    "A basic science course must be taken together with the lab of the same name, in the same semester.",
    "Physics, Basics of Physics 1 and Basics of Physics 2 do not count toward graduation.",
-   "A year-long course and its one-semester version in the same area count only once."
+   "If a year-long course and one of its one-semester versions (1 or 2) in the same area are taken at the same time, only one counts."
   ],
-  "why": "A course taken without the matching lab is not recognised.",
+  "why": "The lab of the same name must be taken in the same semester.",
   "when": "",
   "trap": "For Chemistry 2, the lab must be Chemistry Lab 2. Chemistry Lab 1 is not accepted.",
   "applies_from": "",
@@ -2430,7 +2430,7 @@
   "entry_years": [],
   "group": "major_courses",
   "title": "Duplicate courses with Computer Science and Engineering",
-  "key": "Only the ECE course counts",
+  "key": "Only the ECE course counts as major",
   "rule": [
    "Designated ECE and CSE courses have the same content and are treated as duplicates.",
    "If both are taken, only the ECE course counts as a major course.",
@@ -2582,7 +2582,7 @@
    "Check that the change was made, and contact the department office if it was not.",
    "No change is possible after graduation."
   ],
-  "why": "An uncorrected category can leave a requirement unmet.",
+  "why": "The card tells you to confirm that the change was made.",
   "when": "",
   "trap": "Corrections are not possible after graduation.",
   "applies_from": "",
@@ -2705,13 +2705,13 @@
   "entry_years": [],
   "group": "for_degree",
   "title": "Graduation audit card",
-  "key": "One card per entry year",
+  "key": "The department's own checklist",
   "rule": [
-   "The department issues a graduation audit card (졸업사정 이수과목 확인카드) for each entry year.",
+   "This is the department's graduation audit card (졸업사정 이수과목 확인카드) for one entry year; its course-requirements page has a separate card for each year.",
    "It lists every general-education and major course to be confirmed, including courses planned for the current semester.",
    "It ends with a signed statement that the graduation application is submitted as attached."
   ],
-  "why": "It is the department's own checklist, and the source of every item on this page.",
+  "why": "It is the department's own checklist for your entry year.",
   "when": "",
   "trap": "",
   "applies_from": "",

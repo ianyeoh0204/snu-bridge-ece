@@ -11,14 +11,15 @@
   "check-f": "caught",
   "check-h": "caught",
   "check-g": "caught",
+  "check-i": "caught",
   "notice": "caught",
   "notice2": "caught"
  },
  "rules_on_these_pages_without_a_card": 51,
  "cards_first_reading": {
-  "agree": 69,
-  "of": 89,
-  "contradicted": 3
+  "agree": 74,
+  "of": 98,
+  "contradicted": 4
  },
  "cards": {
   "exam-basics": {
@@ -667,13 +668,13 @@
    "reason": ""
   },
   "seminar-consecutive": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Audit and enrolment should be in two consecutive semesters.": "supported",
     "If that is not possible, you must tell the course assistant.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
    "agrees": true,
    "quote_found": true,
@@ -681,13 +682,13 @@
    "reason": ""
   },
   "seminar-attendance": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Miss one session while auditing and you get an F when you take the seminar.": "supported",
     "The professor may change the number of absences allowed.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "supported",
    "agrees": true,
    "quote_found": true,
@@ -695,28 +696,162 @@
    "reason": ""
   },
   "seminar-subtitle": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "The same course name is not enough.": "supported",
     "The sub-title and its code must match the seminar you audited.": "supported"
    },
    "why": "supported",
-   "caution": "contradicted",
+   "caution": "supported",
    "agrees": true,
    "quote_found": true,
    "status": "reader_agrees",
    "reason": ""
   },
   "research-ethics": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Take at least one of three research ethics courses.": "supported",
     "M2480.000100 (1 credit), M1570.000300 (2 credits), or 990.501A (3 credits).": "supported",
     "Taken during an SNU master's, it need not be repeated in the PhD.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "language-score-validity": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Only TEPS or TOEFL scores earned within 2 years of submission count.": "supported",
+    "A score accepted at admission stays valid until you graduate.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "language-choice": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "International students choose English or Korean for the language test.": "supported",
+    "If English is your native language, you must choose Korean.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-subjects": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "Circuit theory. Electronic circuits. Electromagnetics. Data structures and algorithms.": "supported",
+    "Logic design. Basics of programming. Random variables and random processes. Signals and systems.": "supported",
+    "Choose 2.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-retake-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Your advisor must file a petition that semester showing your excellence.": "supported",
+    "If the committee approves, up to 2 retakes in following semesters.": "supported",
+    "One refusal by the committee ends the right to retake.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "thesis-research-form": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Every semester you register for Thesis Research (430.960).": "supported",
+    "One page: research content, thesis title, at least 3 references, signed by the course professor.": "supported",
+    "Due at the department office within one week after the add/drop period.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "defense-paperwork-phd": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "Committee appointment report: April for a February degree, the previous October for an August degree.": "supported",
+    "Thesis supervision report and international journal publication proof: June to the end of July for a February degree; the previous December to the end of January for an August degree.": "supported",
+    "Defense application: September-October, or March-April.": "supported",
+    "Defense results: early January, or early July.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-other-department": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "If you count 6 thesis research credits, other-department courses count up to 9 credits.": "supported",
+    "You still need 9 or more ECE graduate credits.": "supported",
+    "The self-check sheet says the academic board notice on this must be read.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-other-department-phd": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "If you count 12 thesis research credits, other-department courses count up to 12 credits.": "supported",
+    "You still need 12 or more ECE graduate credits.": "supported",
+    "The self-check sheet says the academic board notice on this must be read.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-other-department-integrated": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "If you count 18 thesis research credits, other-department courses count up to 21 credits.": "supported",
+    "You still need 21 or more ECE graduate credits.": "supported",
+    "The self-check sheet says the academic board notice on this must be read.": "supported"
+   },
+   "why": "supported",
    "caution": "empty",
    "agrees": true,
    "quote_found": true,
@@ -766,7 +901,7 @@
    "reason": ""
   },
   "ug-prerequisites": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Basic Electromagnetics and Practice (430.202B): Physics 2 and Engineering Mathematics 2 first.": "supported",
@@ -775,8 +910,8 @@
     "Signals and Systems (430.306): Engineering Mathematics 1 first.": "supported",
     "Programming Methodology (430.211): Computer Concepts and Practice first.": "supported"
    },
-   "why": "not_stated",
-   "caution": "not_stated",
+   "why": "supported",
+   "caution": "supported",
    "agrees": true,
    "quote_found": true,
    "status": "reader_agrees",
@@ -831,7 +966,7 @@
    "reason": ""
   },
   "ug-ge-foundation": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "College Writing 1 and College Writing 2: Science and Technology Writing (2 credits each).": "supported",
@@ -840,7 +975,7 @@
     "Two further basic science courses with labs (4 credits each).": "supported",
     "Computer Concepts and Practice, Engineering Mathematics 1 and 2 (3 credits each).": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "supported",
    "agrees": true,
    "quote_found": true,
@@ -861,18 +996,18 @@
    "reason": ""
   },
   "ug-basic-science": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "A basic science course must be taken together with the lab of the same name, in the same semester.": "supported",
     "Physics, Basics of Physics 1 and Basics of Physics 2 do not count toward graduation.": "supported",
-    "A year-long course and its one-semester version in the same area count only once.": "not_stated"
+    "If a year-long course and one of its one-semester versions (1 or 2) in the same area are taken at the same time, only one counts.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "supported",
-   "agrees": false,
+   "agrees": true,
    "quote_found": true,
-   "status": "open",
+   "status": "reader_agrees",
    "reason": ""
   },
   "ug-major-total": {
@@ -950,8 +1085,8 @@
    "reason": ""
   },
   "ug-cse-duplicates": {
-   "pass": 5,
-   "key": "contradicted",
+   "pass": 6,
+   "key": "supported",
    "lines": {
     "Designated ECE and CSE courses have the same content and are treated as duplicates.": "supported",
     "If both are taken, only the ECE course counts as a major course.": "supported",
@@ -959,9 +1094,9 @@
    },
    "why": "supported",
    "caution": "supported",
-   "agrees": false,
+   "agrees": true,
    "quote_found": true,
-   "status": "open",
+   "status": "reader_agrees",
    "reason": ""
   },
   "ug-excluded-course": {
@@ -1036,14 +1171,14 @@
    "reason": ""
   },
   "ug-category-change": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "A change of course category or a retake correction takes one week after the request.": "supported",
     "Check that the change was made, and contact the department office if it was not.": "supported",
     "No change is possible after graduation.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "supported",
    "agrees": true,
    "quote_found": true,
@@ -1095,22 +1230,22 @@
    "reason": ""
   },
   "ug-audit-card": {
-   "pass": 5,
-   "key": "not_stated",
+   "pass": 6,
+   "key": "supported",
    "lines": {
-    "The department issues a graduation audit card (졸업사정 이수과목 확인카드) for each entry year.": "not_stated",
+    "This is the department's graduation audit card (졸업사정 이수과목 확인카드) for one entry year; its course-requirements page has a separate card for each year.": "not_stated",
     "It lists every general-education and major course to be confirmed, including courses planned for the current semester.": "supported",
     "It ends with a signed statement that the graduation application is submitted as attached.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
    "agrees": false,
    "quote_found": true,
-   "status": "open",
-   "reason": ""
+   "status": "settled_by_author",
+   "reason": "The card itself is for one entry year. That there is a separate card for each year comes from the department's course-requirements page, which listed one file per year when checked on 11 November 2026."
   },
   "registration": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Registration is in February and August.": "supported",
@@ -1124,13 +1259,13 @@
    "reason": ""
   },
   "extra-semesters": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "From semester 5 for master's and PhD, semester 9 for integrated, tuition depends on the credits you take.": "supported",
     "Registering for 0 credits means removal for non-registration.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "supported",
    "agrees": true,
    "quote_found": true,
@@ -1138,69 +1273,10 @@
    "reason": ""
   },
   "leave-of-absence": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
-    "Up to 4 semesters in total.": "supported",
-    "One leave request is valid for up to 1 year.": "not_stated",
-    "Apply on mySNU. Your advisor approves online after a meeting.": "not_stated"
-   },
-   "why": "not_stated",
-   "caution": "empty",
-   "agrees": false,
-   "quote_found": true,
-   "status": "open",
-   "reason": ""
-  },
-  "leave-of-absence-phd": {
-   "pass": 5,
-   "key": "supported",
-   "lines": {
-    "Up to 6 semesters in total.": "supported",
-    "One leave request is valid for up to 1 year.": "not_stated",
-    "Apply on mySNU. Your advisor approves online after a meeting.": "not_stated"
-   },
-   "why": "not_stated",
-   "caution": "empty",
-   "agrees": false,
-   "quote_found": true,
-   "status": "open",
-   "reason": ""
-  },
-  "return-from-leave": {
-   "pass": 5,
-   "key": "supported",
-   "lines": {
-    "Apply within the set period: mid December or mid June.": "supported",
-    "Apply on mySNU, then register in the registration period.": "supported"
-   },
-   "why": "not_stated",
-   "caution": "empty",
-   "agrees": true,
-   "quote_found": true,
-   "status": "reader_agrees",
-   "reason": ""
-  },
-  "credits-from-masters": {
-   "pass": 5,
-   "key": "supported",
-   "lines": {
-    "Master's credits earned beyond that program's requirement can count toward the PhD, up to 12.": "supported",
-    "Only courses with grade B0 or higher. S/U courses cannot be used.": "supported",
-    "They do not count toward the exam's 6 credits.": "supported"
-   },
-   "why": "not_stated",
-   "caution": "empty",
-   "agrees": true,
-   "quote_found": true,
-   "status": "reader_agrees",
-   "reason": ""
-  },
-  "leave-of-absence-integrated": {
-   "pass": 5,
-   "key": "supported",
-   "lines": {
-    "Up to 8 semesters in total.": "contradicted",
+    "Up to 4 semesters. Military, start-up, illness, pregnancy and childbirth, childcare and recommended leave are not counted in this limit.": "not_stated",
     "One leave request is valid for up to 1 year.": "supported",
     "Apply on mySNU. Your advisor approves online after a meeting.": "supported"
    },
@@ -1208,22 +1284,81 @@
    "caution": "empty",
    "agrees": false,
    "quote_found": true,
-   "status": "open",
+   "status": "settled_by_author",
+   "reason": "The rule runs over a page break. The limit is on page 5; the kinds of leave that are not counted, the one-year validity of a request, the mySNU procedure and removal for going over the limit are on page 6. The reader confirmed each part on its own page."
+  },
+  "leave-of-absence-phd": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "Up to 6 semesters. Military, start-up, illness, pregnancy and childbirth, childcare and recommended leave are not counted in this limit.": "not_stated",
+    "One leave request is valid for up to 1 year.": "supported",
+    "Apply on mySNU. Your advisor approves online after a meeting.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "settled_by_author",
+   "reason": "The rule runs over a page break. The limit is on page 5; the kinds of leave that are not counted, the one-year validity of a request, the mySNU procedure and removal for going over the limit are on page 6. The reader confirmed each part on its own page."
+  },
+  "return-from-leave": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "Apply within the set period: mid December or mid June.": "supported",
+    "Apply on mySNU, then register in the registration period.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-from-masters": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "Master's credits earned beyond that program's requirement can count toward the PhD, up to 12.": "supported",
+    "Only courses with grade B0 or higher. S/U courses cannot be used.": "supported",
+    "They do not count toward the exam's 6 credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "leave-of-absence-integrated": {
+   "pass": 6,
+   "key": "supported",
+   "lines": {
+    "Up to 8 semesters. Military, start-up, illness, pregnancy and childbirth, childcare and recommended leave are not counted in this limit.": "supported",
+    "One leave request is valid for up to 1 year.": "supported",
+    "Apply on mySNU. Your advisor approves online after a meeting.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
    "reason": ""
   },
   "credits-before-admission": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Credits earned elsewhere before admission can count: up to 6 for master's, 9 for PhD, 15 for integrated.": "supported",
     "Grade B0 or higher, within the last 10 years, same or similar subject.": "supported",
-    "Needs your advisor's recommendation and committee approval.": "not_stated"
+    "Needs your advisor's recommendation, confirmation that the subject is the same or similar, review by the department committee and the graduate academic committee, and the president's approval.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
-   "agrees": false,
+   "agrees": true,
    "quote_found": true,
-   "status": "open",
+   "status": "reader_agrees",
    "reason": ""
   },
   "exam-six-credits-integrated": {
@@ -1241,13 +1376,13 @@
    "reason": ""
   },
   "exam-timing-integrated": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "You must sit the exam at the start of your third semester.": "supported",
     "The number of attempts is limited to one.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "supported",
    "agrees": true,
    "quote_found": true,
@@ -1255,13 +1390,13 @@
    "reason": ""
   },
   "credits-ece-integrated": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "Take 21 or more credits of ECE graduate courses.": "supported",
     "The module seminars count toward these 21.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
    "agrees": true,
    "quote_found": true,
@@ -1269,13 +1404,13 @@
    "reason": ""
   },
   "credits-thesis-research-integrated": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "At most 18 thesis research credits count toward coursework.": "supported",
     "Anything above 18 is not counted.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
    "agrees": true,
    "quote_found": true,
@@ -1283,12 +1418,12 @@
    "reason": ""
   },
   "credits-common-integrated": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "At most 6 credits of graduate common-competency courses count.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
    "agrees": true,
    "quote_found": true,
@@ -1296,13 +1431,13 @@
    "reason": ""
   },
   "phd-stage-from-semester-4": {
-   "pass": 5,
+   "pass": 6,
    "key": "supported",
    "lines": {
     "The start of semester 4 is treated as the start of the PhD stage.": "supported",
     "Condition: registered through semester 3 with 24 credits taken.": "supported"
    },
-   "why": "not_stated",
+   "why": "supported",
    "caution": "empty",
    "agrees": true,
    "quote_found": true,
