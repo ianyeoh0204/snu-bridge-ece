@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korean, in blocks · SNU Bridge</title>
+<meta name="description" content="Korean grammar as building blocks: one small block, and what it joins. Study notes in English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Hanken+Grotesk:wght@400;600;700&family=Noto+Sans+KR:wght@500;700&display=swap">
+<style>
+/* An extra page of SNU Bridge, deliberately in another look: the "sottsass" (Memphis) theme of the open-source
+   reacticle project. Colours, radii and the hard offset shadows are that theme's published values. */
+:root {
+  --bg:#fcf7ef; --surface:#f4ecdf; --text:#1a1714; --ink:#0e0c0a; --muted:#595149;
+  --blue:#2c54e0; --blue-soft:#e0e6fb; --pink:#ff5d9e; --pink-soft:#ffe1ee; --teal:#18c2bf; --teal-soft:#d4f4f3; --yellow:#ffd23f; --yellow-soft:#fff1c2;
+  --sh-sm:3px 3px 0 var(--ink); --sh-md:5px 5px 0 var(--ink); --sh-lg:8px 8px 0 var(--ink);
+  --body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display:"Space Grotesk", "Hanken Grotesk", system-ui, sans-serif;
+  --ko:"Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+body { margin:0; background:var(--bg); color:var(--text); font:18px/1.6 var(--body); }
+[hidden] { display:none !important; }
+a { color:inherit; }
+.page { max-width:920px; margin:0 auto; padding:20px 16px 96px; }
+.ko { font-family:var(--ko); }
+h1, h2, h3 { margin:0; font-family:var(--display); color:var(--ink); line-height:1.1; }
+p { margin:0 0 1em; }
+.pill { display:inline-block; font:700 12px/1.4 var(--display); letter-spacing:.1em; text-transform:uppercase; padding:4px 12px; background:#fff; border:2px solid var(--ink); border-radius:999px; box-shadow:var(--sh-sm); text-decoration:none; }
+.pill.blue { background:var(--blue); color:#fff; }
+.pill.yellow { background:var(--yellow); }
+
+/* cover */
+.cover { position:relative; overflow:hidden; margin-top:8px; padding:24px 24px 40px; background:var(--bg); border:2px solid var(--ink); border-radius:18px; box-shadow:var(--sh-lg); }
+.cover .top { position:relative; z-index:2; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; }
+.shape { position:absolute; border:2px solid var(--ink); }
+.s1 { right:-34px; top:54px; width:200px; height:130px; background:var(--teal); transform:rotate(4deg); }
+.s2 { left:-30px; top:150px; width:120px; height:120px; background:var(--yellow); transform:rotate(-7deg); }
+.s3 { left:-24px; bottom:-40px; width:260px; height:120px; background:var(--pink); transform:rotate(-3deg); }
+.s4 { right:44px; bottom:40px; width:36px; height:36px; border-radius:50%; background:var(--blue); }
+.tiles { position:relative; z-index:2; display:grid; grid-template-columns:repeat(5, minmax(0, 1fr)); gap:16px 14px; max-width:660px; margin:44px auto 34px; }
+.tile { display:flex; align-items:center; justify-content:center; min-height:76px; padding:8px 4px; font:700 clamp(20px, 4.2vw, 32px)/1.05 var(--ko); text-align:center; text-decoration:none; color:var(--ink);
+  border:2px solid var(--ink); border-radius:12px; box-shadow:var(--sh-md); transition:transform .12s, box-shadow .12s; }
+.tile:hover, .tile:focus-visible { transform:translate(-2px, -2px) rotate(0deg) !important; box-shadow:7px 7px 0 var(--ink); outline:none; }
+.tile.long { font-size:clamp(14px, 2.8vw, 21px); }
+.c0 { background:var(--pink); } .c1 { background:var(--yellow); } .c2 { background:var(--blue); color:#fff; } .c3 { background:var(--teal); } .c4 { background:#fff; }
+.cover h1 { position:relative; z-index:2; font-size:clamp(38px, 9vw, 68px); font-weight:700; text-align:center; letter-spacing:-.02em; }
+.cover .sub { position:relative; z-index:2; display:table; margin:16px auto 0; padding:6px 18px; font-weight:600; text-align:center; background:#fff; border:2px solid var(--ink); border-radius:999px; box-shadow:var(--sh-sm); }
+
+.lead { margin:44px 0 0; font-size:20px; max-width:62ch; }
+.box { margin:22px 0 0; padding:16px 18px; background:#fff; border:2px solid var(--ink); border-radius:14px; box-shadow:var(--sh-md); }
+.formula { display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+.b, .j, .r { font-family:var(--ko); font-weight:700; white-space:nowrap; padding:1px 10px; border:2px solid var(--ink); border-radius:8px; }
+.b { background:var(--yellow); } .j { background:#fff; border-style:dashed; } .r { background:var(--blue); color:#fff; }
+.op { font:700 16px var(--display); }
+.eq { display:inline-flex; align-items:center; gap:8px; }
+.key { margin:10px 0 0; font-size:14px; color:var(--muted); }
+
+/* map */
+.map { margin-top:40px; padding:10px; overflow-x:auto; background:#fff; border:2px solid var(--ink); border-radius:18px; box-shadow:var(--sh-md); }
+.map svg { display:block; width:100%; min-width:680px; height:auto; }
+.map a { cursor:pointer; }
+.map a:hover rect, .map a:focus rect { stroke-width:4; }
+.map .hint { margin:4px 8px 6px; font-size:14px; color:var(--muted); }
+
+/* search */
+.search { position:sticky; top:0; z-index:5; margin-top:36px; padding:10px 0; background:var(--bg); }
+.search input { width:100%; padding:12px 16px; font:inherit; color:var(--ink); background:#fff; border:2px solid var(--ink); border-radius:12px; box-shadow:var(--sh-sm); }
+.search input:focus { outline:3px solid var(--blue); outline-offset:2px; }
+.count { margin-top:8px; font-size:14px; color:var(--muted); }
+
+/* families */
+.fam { margin-top:56px; scroll-margin-top:124px; }
+.fam > header { display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap; margin-bottom:20px; }
+.root { font:700 28px/1.2 var(--ko); padding:6px 16px; border:2px solid var(--ink); border-radius:12px; box-shadow:var(--sh-md); transform:rotate(-2deg); }
+.fam > header div { flex:1; min-width:220px; }
+.fam h2 { font-size:28px; font-weight:700; }
+.fam h2 small { font:500 15px var(--display); color:var(--muted); margin-left:8px; white-space:nowrap; }
+.fam header p { margin:8px 0 0; color:var(--muted); max-width:60ch; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; }
+.card { display:grid; gap:6px; align-content:start; padding:14px 16px; background:#fff; border:2px solid var(--ink); border-radius:14px; box-shadow:var(--sh-md); }
+.mean { font-weight:600; color:var(--ink); }
+.ex { font-family:var(--ko); }
+.ex b { color:var(--blue); }
+.tr { font-size:15px; color:var(--muted); }
+
+.grid2 { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+.tail { display:grid; gap:6px; align-content:start; padding:14px 16px; background:#fff; border:2px solid var(--ink); border-radius:14px; box-shadow:var(--sh-md); }
+.tail .th { display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; }
+.tail .th b { font:700 19px var(--ko); }
+.tail p { margin:0; }
+.tag { font:700 11px/1.5 var(--display); letter-spacing:.08em; text-transform:uppercase; padding:1px 10px; border:2px solid var(--ink); border-radius:999px; white-space:nowrap; }
+.tag.neg { background:var(--pink-soft); } .tag.negx { background:var(--pink); } .tag.pos { background:var(--teal-soft); } .tag.neu { background:var(--yellow-soft); }
+.legend { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+.trap { padding:14px 16px; background:var(--blue-soft); border:2px solid var(--ink); border-radius:14px; box-shadow:5px 5px 0 var(--pink); }
+.trap h3 { font:700 19px/1.3 var(--ko); margin-bottom:6px; }
+.trap p { margin:0; }
+.empty { color:var(--muted); }
+footer { margin-top:72px; padding-top:20px; border-top:2px solid var(--ink); font-size:14px; color:var(--muted); }
+footer a { color:var(--blue); font-weight:700; }
+@media (max-width:560px) {
+  .cover { padding:18px 14px 30px; }
+  .tiles { grid-template-columns:repeat(3, minmax(0, 1fr)); gap:14px 12px; margin:36px auto 26px; }
+  .tile { min-height:64px; font-size:24px; } .tile.long { font-size:17px; }
+  .s1 { width:120px; height:90px; } .s3 { width:170px; height:90px; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <section class="cover">
+    <div class="top"><a class="pill" href="./">SNU Bridge · Extra</a><span class="pill blue">Korean · in blocks</span></div>
+    <div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div><div class="shape s4"></div>
+    <nav class="tiles" id="tiles" aria-label="Blocks"></nav>
+    <h1>Korean, in blocks</h1>
+    <p class="sub">Learn one small block, then see what it joins.</p>
+  </section>
+
+  <p class="lead">Much of Korean grammar is one small block joined to another. Know the block in the middle, look at what is joined to it, and the meaning follows. Pick a block above, or search below.</p>
+  <div class="box">
+    <div class="formula"><span class="b">지다</span><span class="op">+</span><span class="j">면서</span><span class="op">=</span><span class="r">-아지면서</span></div>
+    <p class="key">Yellow is the root block. Dashed is what joins it. Blue is the pattern they make.</p>
+  </div>
+
+  <section class="map" aria-label="Map of the blocks">
+    <svg id="map" viewBox="0 0 900 560" role="img" aria-label="Mind map of the fifteen root blocks"></svg>
+    <p class="hint">Select any block to jump to its group. On a narrow screen, slide the map sideways.</p>
+  </section>
+
+  <div class="search"><input id="q" type="search" placeholder="Search: 면서, because, if, 다고 …" aria-label="Search patterns"><div class="count" id="count"></div></div>
+
+  <div id="fams"></div>
+
+  <section class="fam" id="tails">
+    <header><span class="root" style="background:var(--teal)">→</span>
+      <div><h2>What usually follows</h2><p>Some patterns lean good or bad, or must be followed by a negative. When you hear the first half of a sentence, you can often guess the second.</p></div></header>
+    <div class="legend"><span class="tag neg">Bad result</span><span class="tag negx">Negative follows</span><span class="tag pos">Good · purpose</span><span class="tag neu">Neutral · rule</span></div>
+    <div class="grid2" id="taillist"></div>
+  </section>
+
+  <section class="fam" id="traps">
+    <header><span class="root" style="background:var(--pink)">!</span>
+      <div><h2>Easily confused <small>22 pairs</small></h2><p>Pairs that look alike and are not. Tests like these.</p></div></header>
+    <div class="grid2" id="traplist"></div>
+  </section>
+
+  <footer>
+    <p>These are a student's study notes, written for learners at about TOPIK II levels 3 to 4. They are not teaching material from Seoul National University, and they can contain mistakes.</p>
+    <p><a href="./">Back to SNU Bridge</a> · SNU Bridge is a student project. It is not an official Seoul National University website.</p>
+  </footer>
+</main>
+
+<script>
+/* item: [block, joiner, pattern, meaning, example (the pattern inside braces), example in English] */
+const FAM = [
+{ id: "dago", root: "다고", tile: "다고", title: "Reporting what was said", gist: "다고 marks reported words: \"they say that…\". When you see 다고, 다는 or 대, the sentence is quoting, supposing, or talking about a statement.",
+  items: [
+  ["다고", "하다", "-는다고 하다", "They say… / I hear that… (reporting someone's words)", "내일 비가 {온다고 해요}.", "They say it will rain tomorrow."],
+  ["다고 해", "shortened", "-는대", "The spoken short form of \"they say…\"", "회의가 {취소됐대}.", "I hear the meeting was cancelled."],
+  ["다고", "하던데", "-다고 하던데", "I heard that…, so… (then an opinion or suggestion)", "그 식당 {맛있다고 하던데} 가 볼까?", "I heard that restaurant is good. Shall we try it?"],
+  ["다고", "해도", "-다고 해도", "Even if (you say)…", "아무리 {바쁘다고 해도} 밥은 먹어야지.", "However busy you are, you still have to eat."],
+  ["다고", "해서", "-는다고 해서", "Just because… does not mean… (a negative usually follows)", "{비싸다고 해서} 다 좋은 건 아니다.", "Expensive does not always mean good."],
+  ["다고", "치다", "-다고 치다", "Let us say… / suppose that…", "이번엔 운이 {없었다고 치자}.", "Let us just say we were unlucky this time."],
+  ["다고", "생각하다", "-다고 생각하다", "I think that…", "환경 보호가 {중요하다고 생각합니다}.", "I think protecting the environment is important."],
+  ["다고", "주장하다", "-다고 주장하다", "To claim or argue that… (speeches, news)", "전문가들은 규제가 {필요하다고 주장한다}.", "Experts argue that regulation is needed."],
+  ["다는", "점에서", "-다는 점에서", "In that… / from the point that…", "시간을 {아낄 수 있다는 점에서} 좋다.", "It is good in that it saves time."],
+  ["다는", "건데요 / 거지요", "-다는 건데요", "The point is that…; as a question (-다는 거지요?), \"so you mean…?\"", "결국 {늦는다는 거지요}?", "So you mean you will be late?"],
+  ["다", "니", "-다니", "To think that…! (surprise)", "벌써 {끝났다니}!", "It is over already!"],
+  ["다", "면", "-는다면", "If it really were the case that… (hypothetical)", "복권에 {당첨된다면} 여행을 가겠다.", "If I won the lottery, I would travel."],
+  ["다기", "보다는", "-는다기보다는", "Rather than saying…, it is more that…", "{싫다기보다는} 좀 피곤해요.", "It is not that I dislike it; I am just a bit tired."],
+  ["다고", "요?", "-는다고요?", "You said…? (repeating to confirm, a little surprised)", "회사를 {그만둔다고요}?", "You are quitting your job?"],
+] },
+{ id: "mod", root: "는 + noun", tile: "는", title: "Describing a noun", gist: "With action verbs, 는 is ongoing or habitual and 은 is completed; with describing words, 은 is a present state (비싼 is \"expensive\"). 을 is yet to come or a guess. The noun that follows carries the meaning: know the noun and you know the pattern.",
+  items: [
+  ["는", "것 같다", "-는 것 같다", "It seems… / I think… (your own guess)", "밖에 비가 {오는 것 같아요}.", "It seems to be raining outside."],
+  ["는", "것으로 보이다", "-는 것으로 보이다", "It appears that… (news style)", "범인은 동일인{인 것으로 보입니다}.", "The culprit appears to be the same person."],
+  ["는", "것처럼", "-는 것처럼", "As if… / like… (comparison)", "{날아가는 것처럼} 가벼워요.", "It is so light it feels like flying."],
+  ["는", "모양이다", "-는 모양이다", "It looks like… (a guess from something you saw)", "불이 꺼진 걸 보니 {자는 모양이다}.", "The light is off, so they seem to be asleep."],
+  ["는", "셈이다", "-는 셈이다", "It amounts to… / practically…", "이 정도면 거의 {다 한 셈이다}.", "At this point it is practically finished."],
+  ["는", "탓에", "-는 탓에", "Because of… (a bad result, with blame)", "비가 {오는 탓에} 경기가 취소됐다.", "The match was cancelled because of the rain."],
+  ["는", "반면(에)", "-는 반면에", "…, whereas… (contrast)", "가격은 {비싼 반면에} 품질이 좋다.", "The price is high; on the other hand, the quality is good."],
+  ["는", "대신(에)", "-는 대신에", "Instead of… / …but in return…", "{비싼 대신에} 오래 쓸 수 있다.", "It is expensive, but in return it lasts a long time."],
+  ["는", "동안", "-는 동안", "While… / during…", "{기다리는 동안} 책을 읽었다.", "I read a book while waiting."],
+  ["는", "중에", "-는 중에", "In the middle of… (while busy with it)", "{바쁘신 중에} 와 주셔서 감사합니다.", "Thank you for coming when you are so busy."],
+  ["는", "가운데", "-는 가운데", "Amid… / while… (news style)", "반대가 {거세지는 가운데} 회의가 열렸다.", "The meeting was held amid growing opposition."],
+  ["는", "까닭에", "-는 까닭에", "Because… (written, formal)", "자료가 {부족한 까닭에} 연구가 늦어졌다.", "The research was delayed because of a lack of data."],
+  ["는", "과정에서", "-는 과정에서", "In the process of…", "{만드는 과정에서} 문제가 생겼다.", "A problem came up in the process of making it."],
+  ["는", "면에서", "-는 면에서", "In terms of…", "{건강 면에서} 좋은 음식이다.", "It is good food in terms of health."],
+  ["는", "한", "-는 한", "As long as… (while the condition holds)", "{포기하지 않는 한} 기회는 있다.", "As long as you do not give up, there is a chance."],
+  ["는", "경우", "-는 경우", "In the case that… / if…", "비가 {오는 경우} 행사는 취소됩니다.", "If it rains, the event is cancelled."],
+  ["는", "등", "-는 등", "…and so on (listing examples)", "{운동하는 등} 건강을 챙긴다.", "They look after their health by exercising and so on."],
+  ["는", "편이다", "-는 편이다", "Tends to… / is rather…", "저는 {잘 먹는 편이에요}.", "I am a fairly good eater."],
+  ["는", "경향이 있다", "-는 경향이 있다", "There is a tendency to…", "젊은 층은 {온라인을 선호하는 경향이 있다}.", "Younger people tend to prefer online."],
+  ["는", "상황이다", "-는 상황이다", "The situation is that…", "인력이 {부족한 상황이다}.", "The situation is that there are not enough staff."],
+  ["는", "데(다가)", "-는 데다가", "Not only… but also… (adding one more)", "{비싼 데다가} 맛도 없다.", "It is expensive, and on top of that it does not taste good."],
+  ["는", "데 비해(서)", "-는 데 비해", "Compared with…", "{노력한 데 비해} 결과가 아쉽다.", "The result is disappointing compared with the effort."],
+  ["는", "한편", "-는 한편", "While…, also… (two things side by side)", "{일하는 한편} 공부도 한다.", "They work, and at the same time they study."],
+  ["은", "이래", "-은 이래", "Ever since…", "회사를 {시작한 이래} 처음이다.", "It is the first time since the company started."],
+  ["은", "적이 있다", "-은 적이 있다", "Have done… before (experience)", "한국에 {가 본 적이 있어요}.", "I have been to Korea."],
+  ["던", "—", "-던", "That (I) used to… (a past habit, or something unfinished)", "어릴 때 {살던} 집", "the house I lived in as a child"],
+  ["았던", "—", "-았던", "That (I) once… (finished in the past)", "작년에 {갔던} 식당", "the restaurant I went to last year"],
+] },
+{ id: "eul", root: "을", tile: "을", title: "Future and guesses", gist: "을 (or ㄹ) often carries the sense of \"yet to come\" or \"a guess\", though not always: 어릴 때 is simply \"when I was young\". What joins it turns it into a promise, a suggestion, regret, worry, or worth.",
+  items: [
+  ["을", "게요", "-을게요", "I will… (a promise to the listener)", "제가 {할게요}.", "I will do it."],
+  ["을", "까요?", "-을까요?", "Shall we…? / I wonder if…?", "같이 {갈까요}?", "Shall we go together?"],
+  ["을까", "하다", "-을까 하다", "I am thinking of… (not decided yet)", "주말에 영화나 {볼까 해요}.", "I am thinking of seeing a film at the weekend."],
+  ["을", "걸", "-을걸", "I should have… (regret) / probably…", "좀 더 일찍 {올걸}.", "I should have come earlier."],
+  ["을", "테니까", "-을 테니까", "I will…, so you…", "내가 {살 테니까} 많이 먹어.", "It is my treat, so eat plenty."],
+  ["을", "텐데(요)", "-을 텐데요", "It will probably… (worry or regret)", "밖은 {추울 텐데요}.", "It must be cold outside."],
+  ["을", "겁니다", "-을 겁니다", "Will… / will probably… (a prediction or plan)", "곧 {도착할 겁니다}.", "It will arrive soon."],
+  ["을", "수밖에 없다", "-을 수밖에 없다", "Have no choice but to…", "{기다릴 수밖에 없다}.", "We can only wait."],
+  ["을", "줄 모르다", "-을 줄 모르다", "Do not know how to…", "운전을 {할 줄 몰라요}.", "I do not know how to drive."],
+  ["을", "수 없다", "-을 수 없다", "Cannot…", "지금은 {갈 수 없어요}.", "I cannot go now."],
+  ["을", "만하다", "-을 만하다", "Worth doing", "{볼 만한} 영화예요.", "It is a film worth seeing."],
+  ["을", "법하다", "-을 법하다", "Likely to… / plausible", "그럴 {법한} 이야기다.", "It is a plausible story."],
+  ["을", "정도이다", "-을 정도이다", "To the point of…", "{울 정도로} 감동했다.", "I was moved almost to tears."],
+  ["을", "필요가 있다", "-을 필요가 있다", "Need to…", "다시 {확인할 필요가 있다}.", "It needs to be checked again."],
+  ["을", "예정이다", "-을 예정이다", "Is scheduled to… / plans to…", "다음 달에 {개장할 예정입니다}.", "It is scheduled to open next month."],
+  ["을", "때", "-을 때", "When…", "{어릴 때} 자주 갔어요.", "I went there often when I was young."],
+] },
+{ id: "a", root: "아/어", tile: "아/어", title: "Plus a helping verb", gist: "아/어 links one verb to another. The second verb keeps roughly its own meaning: 보다 try, 주다 give, 있다 be, 오다 come.",
+  items: [
+  ["아", "보다", "-아 보다", "Try doing", "한번 {먹어 보세요}.", "Try some."],
+  ["아", "보이다", "-아 보이다", "Looks… (judging by appearance)", "오늘 {피곤해 보여요}.", "You look tired today."],
+  ["아", "주다", "-아 주다", "Do… for someone", "문 좀 {열어 주세요}.", "Please open the door for me."],
+  ["아 주다", "다고 하다", "-아 달라고 하다 / -아 달라는", "(Someone) asks to have… done for them", "{도와 달라는} 연락이 왔다.", "Someone got in touch asking for help."],
+  ["아", "있다", "-아 있다", "Is in the state of… (the result remains)", "문이 {열려 있어요}.", "The door is open."],
+  ["아", "놓다", "-아 놓다", "Do… in advance and leave it done", "미리 {예약해 놓았어요}.", "I have booked it in advance."],
+  ["아", "내다", "-아 내다", "Manage to… (through difficulty)", "끝까지 {참아 냈다}.", "I managed to hold out to the end."],
+  ["아", "오다", "-아 오다", "Have been doing (up to now)", "10년 동안 {연구해 왔다}.", "They have been researching it for ten years."],
+  ["아", "나가다", "-아 나가다", "Go on doing (into the future)", "문제를 {해결해 나가겠습니다}.", "We will go on solving the problem."],
+  ["아", "지다", "-아지다", "Become… (an adjective turns into a change)", "날씨가 {추워졌어요}.", "The weather has turned cold."],
+  ["아지다", "면서", "-아지면서", "As… becomes… (at the same time)", "날씨가 {따뜻해지면서} 사람이 많아졌다.", "As the weather warmed up, more people came."],
+  ["아", "서", "-아(서)", "1. and then  2. because", "친구를 {만나서} 영화를 봤어요.", "I met a friend and then we saw a film."],
+] },
+{ id: "gi", root: "기", tile: "기", title: "Turns an action into a thing", gist: "Add 기 to a verb and \"to do\" becomes \"the doing\". What follows (때문, 위해, 전, 바라다) gives the meaning directly.",
+  items: [
+  ["기", "때문에 / 때문이다", "-기 때문에", "Because… (a reason; a command cannot follow)", "{바쁘기 때문에} 못 가요.", "I cannot go because I am busy."],
+  ["기", "위해(서) / 위한", "-기 위해", "In order to…", "{합격하기 위해} 열심히 공부한다.", "I study hard in order to pass."],
+  ["기", "바라다", "-기 바랍니다", "Please… (notices and announcements)", "늦지 {않기 바랍니다}.", "Please do not be late."],
+  ["기", "로 하다", "-기로 하다", "Decide to…", "다음 달에 {결혼하기로 했어요}.", "We have decided to marry next month."],
+  ["기", "마련이다", "-기 마련이다", "Is bound to… (only natural)", "누구나 {실수하기 마련이다}.", "Everyone is bound to make mistakes."],
+  ["기는", "하지만 / 한데요", "-기는 하지만", "It is…, but…", "{맛있기는 하지만} 비싸요.", "It is tasty, but it is expensive."],
+  ["기", "에는", "-기에는", "For doing… (too much, or not enough)", "{혼자 하기에는} 너무 많다.", "It is too much to do alone."],
+  ["기", "도 하다", "-기도 하다", "Also… / sometimes…", "주말에는 {등산하기도 해요}.", "At weekends I sometimes go hiking."],
+  ["기", "를 기대하다", "-기를 기대하다", "Look forward to… (formal speech)", "좋은 결과가 {있기를 기대합니다}.", "We look forward to a good result."],
+  ["기", "전에", "-기 전에", "Before…", "{자기 전에} 이를 닦아요.", "I brush my teeth before I sleep."],
+  ["기는", "커녕", "-기는커녕", "Far from…, not even…", "{쉬기는커녕} 밥도 못 먹었다.", "Far from resting, I did not even get to eat."],
+] },
+{ id: "myeon", root: "면", tile: "면", title: "If", gist: "면 is \"if\". What comes before turns it into a wish, \"if you want to\", a supposition, or \"unless\". 면서 is \"while\".",
+  items: [
+  ["으", "면", "-으면", "If…", "시간이 {있으면} 같이 가요.", "If you have time, let us go together."],
+  ["으면", "되다", "-으면 되다", "You only need to… / …is enough", "여기에 {쓰면 돼요}.", "Just write it here."],
+  ["으면", "좋겠다", "-으면 좋겠다", "I hope… / I wish…", "빨리 {나았으면 좋겠어요}.", "I hope you get well soon."],
+  ["았으면", "하다", "-았으면 하다", "I would like… (formal, indirect)", "함께 {해 주셨으면 합니다}.", "We would like you to join us."],
+  ["려", "면", "-으려면", "If you want to…", "{합격하려면} 매일 공부해야 해요.", "If you want to pass, you must study every day."],
+  ["다", "면", "-는다면", "If it really… (hypothetical)", "시간이 {된다면} 가겠습니다.", "If time allows, I will go."],
+  ["지 않", "으면", "-지 않으면", "If not… / unless…", "{서두르지 않으면} 늦어요.", "If you do not hurry, you will be late."],
+  ["면", "서", "-(으)면서", "While… / at the same time as…", "음악을 {들으면서} 공부해요.", "I study while listening to music."],
+  ["아지", "면서", "-아지면서", "As it becomes…", "{추워지면서} 감기 환자가 늘었다.", "As it got colder, more people caught colds."],
+] },
+{ id: "daga", root: "다가", tile: "다가", title: "Partway through", gist: "다가 is \"while doing\". With 보다 it becomes \"after doing it for a while, I found…\"; with 는 it becomes a warning: \"if you go on like this…\".",
+  items: [
+  ["다", "가", "-다(가)", "While doing… (then switching to something else)", "{가다가} 친구를 만났어요.", "On the way, I met a friend."],
+  ["았", "다가", "-았다가", "Did…, and then… (often the opposite)", "옷을 {샀다가} 환불했어요.", "I bought clothes and then returned them."],
+  ["다가", "는", "-다가는", "If you keep doing… (something bad will happen)", "이렇게 {놀다가는} 떨어질 거야.", "If you keep playing around like this, you will fail."],
+  ["다", "보니(까)", "-다 보니까", "After doing it for a while, I found… / before I knew it", "{살다 보니} 익숙해졌어요.", "Living here, I got used to it."],
+  ["다", "보면", "-다(가) 보면", "If you keep doing…, you will…", "{연습하다 보면} 잘하게 될 거예요.", "If you keep practising, you will get good at it."],
+] },
+{ id: "do", root: "도", tile: "도", title: "Even if", gist: "도 is \"also\". Joined at the end it becomes \"even if\". 아도 is plain, 더라도 is more hypothetical, and 음에도 is \"despite\", stating a fact.",
+  items: [
+  ["아", "도", "-아도", "Even if…", "{비싸도} 살 거예요.", "I will buy it even if it is expensive."],
+  ["더라", "도", "-더라도", "Even if (it really)… (hypothetical, stronger)", "{힘들더라도} 포기하지 마세요.", "Even if it is hard, do not give up."],
+  ["다고 해", "도", "-다고 해도", "Even if (you say)…", "{바쁘다고 해도} 연락은 해야지.", "Even if you are busy, you should at least get in touch."],
+  ["음", "에도", "-음에도", "Despite… (stating a fact)", "{노력했음에도} 실패했다.", "Despite the effort, it failed."],
+  ["에도", "불구하고", "에도 불구하고", "In spite of… (after a noun)", "비{에도 불구하고} 많이 왔다.", "Many came in spite of the rain."],
+  ["은", "들", "-(으)ㄴ들", "Even if…, what of it? (rhetorical: it is no use)", "{후회한들} 무슨 소용이 있겠어요?", "What use is regretting it now?"],
+  ["이라", "도", "이라도", "At least… / even just… (settling for less)", "커피{라도} 마실래요?", "Shall we at least have a coffee?"],
+  ["으나", "마", "-으나마", "Though it is not much…", "{작으나마} 도움이 되길 바랍니다.", "It is small, but I hope it helps."],
+  ["조", "차", "조차", "Even… (the most basic or extreme case, usually with a negative)", "이름{조차} 몰라요.", "I do not even know the name."],
+] },
+{ id: "aya", root: "아야", tile: "아야", title: "Must · only then", gist: "아야 is \"only if\". With 하다 it is \"must\"; with 겠다 it is \"I had better\"; with 만 it is \"only by\".",
+  items: [
+  ["아야", "하다", "-아야 하다", "Must…", "내일까지 {내야 해요}.", "It must be submitted by tomorrow."],
+  ["아야", "겠다", "-아야겠다", "I had better… (your own decision)", "오늘은 일찍 {자야겠다}.", "I had better go to bed early today."],
+  ["아", "야", "-아야", "Only if… (a condition)", "{먹어야} 힘이 나요.", "You only get energy if you eat."],
+  ["아야", "만", "-아야만", "Only by… (the one condition, stressed)", "{연습해야만} 실력이 는다.", "Only by practising does skill improve."],
+] },
+{ id: "ji", root: "지", tile: "지", title: "Negatives and questions", gist: "지 is usually followed by 않다 or 말다 to make a negative. 잖아 is 지 않아 shortened. 는지 is \"whether\".",
+  items: [
+  ["지", "말다", "-지 말다", "Do not…", "여기서 {떠들지 마세요}.", "Please do not make noise here."],
+  ["지", "말고", "-지 말고", "Do not…; do this instead", "{걱정하지 말고} 쉬세요.", "Do not worry; get some rest."],
+  ["지", "않으면", "-지 않으면", "If not…", "{예약하지 않으면} 못 들어가요.", "You cannot go in without a booking."],
+  ["지 않", "아 → 잖아", "-잖아", "…, you know (reminding someone of what they already know)", "내가 {말했잖아}.", "I told you, did I not?"],
+  ["는", "지", "-는지", "Whether… (a question inside a sentence)", "그가 {오는지} 모르겠어요.", "I do not know whether he is coming."],
+  ["느라", "고", "-느라(고)", "Because (I) was busy doing… (usually a bad result)", "{일하느라고} 못 갔어요.", "I could not go because I was working."],
+] },
+{ id: "ni", root: "니", tile: "니", title: "Reason and discovery", gist: "니 carries \"found out\" or \"reason\": 으니까 is because (and a command may follow), 다니 is surprise, 다 보니 is \"after a while, I found\".",
+  items: [
+  ["으", "니(까)", "-으니까", "Because…, so (a command or suggestion may follow)", "{추우니까} 옷 많이 입으세요.", "It is cold, so dress warmly."],
+  ["다", "니", "-다니", "To think that…!", "그가 {떠났다니}!", "To think he has left!"],
+  ["다 보", "니(까)", "-다 보니까", "After doing it for a while, I found…", "{이야기하다 보니} 늦었네요.", "We got talking and now it is late."],
+] },
+{ id: "go", root: "고", tile: "고", title: "And then", gist: "고 is \"and\" or \"and then\". With 있다 it is \"is doing\"; with 자 it is \"intend to\" (formal); with 는 it stresses \"after that\".",
+  items: [
+  ["고", "있다", "-고 있다", "Is doing", "지금 밥을 {먹고 있어요}.", "I am eating now."],
+  ["고", "는", "-고는", "After…, then… (stressing the order)", "밥을 {먹고는} 바로 잤다.", "After eating, I went straight to sleep."],
+  ["고", "자 하다", "-고자 하다", "Intend to… / wish to… (very formal)", "오늘은 이 문제를 {다루고자 합니다}.", "Today I would like to address this issue."],
+  ["고", "요", "-고요", "And also… (adding a point)", "싸{고요}, 맛있어요.", "It is cheap, and it is tasty too."],
+  ["거", "나", "-거나", "… or …", "책을 {읽거나} 산책해요.", "I read a book or go for a walk."],
+  ["거니", "와", "-거니와", "Not only…, but also… (very written)", "{비싸거니와} 품질도 나쁘다.", "It is expensive, and the quality is poor as well."],
+] },
+{ id: "ryeo", root: "려", tile: "려", title: "Intending to", gist: "려 is \"intend to\". With 고 it is \"in order to\"; with 면 it is \"if you want to\".",
+  items: [
+  ["려", "고", "-으려고", "Intending to… / in order to…", "한국에 {가려고} 돈을 모아요.", "I am saving money to go to Korea."],
+  ["려", "면", "-으려면", "If you want to…", "{성공하려면} 노력해야 한다.", "If you want to succeed, you must work at it."],
+] },
+{ id: "gyet", root: "겠", tile: "겠", title: "Will · probably", gist: "겠 is \"I will\" (intention) or \"it probably will\" (a guess).",
+  items: [
+  ["겠", "습니다", "-겠-", "I will… (intention) / it probably will… (a guess)", "제가 {하겠습니다}.", "I will do it."],
+  ["아야", "겠다", "-아야겠다", "I had better… (a decision)", "다이어트를 {해야겠어요}.", "I had better go on a diet."],
+] },
+{ id: "ptc", root: "에 · 을 · 으로", tile: "에·을·으로", title: "A particle plus a verb", gist: "Fixed pairs of a particle and a verb, common in news, speeches and notices. Read the particle (에, 을, 으로), then the verb after it.",
+  items: [
+  ["에", "대해 / 대한", "에 대해(서)", "About…", "환경{에 대해} 이야기했다.", "They talked about the environment."],
+  ["에", "따르면", "에 따르면", "According to… (a source)", "조사{에 따르면} 증가했다.", "According to the survey, it increased."],
+  ["에", "따라(서)", "에 따라", "Depending on… / in accordance with…", "지역{에 따라} 다르다.", "It differs by region."],
+  ["에", "비해(서)", "에 비해", "Compared with…", "작년{에 비해} 늘었다.", "It rose compared with last year."],
+  ["에", "이어(서)", "에 이어", "Following…", "작년{에 이어} 올해도 1위다.", "It is first again this year, following last year."],
+  ["에", "달려 있다", "에 달려 있다", "Depends on…", "성공은 노력{에 달려 있다}.", "Success depends on effort."],
+  ["을", "통해(서)", "을 통해", "Through…", "인터넷{을 통해} 신청한다.", "Apply through the internet."],
+  ["을", "대상으로", "을 대상으로", "For… / aimed at…", "대학생{을 대상으로} 조사했다.", "The survey was of university students."],
+  ["을", "위한", "을 위한", "For (the benefit of)…", "노인{을 위한} 시설", "facilities for older people"],
+  ["을", "비롯해(서)", "을 비롯해", "Including…, starting with…", "서울{을 비롯해} 전국에서 열린다.", "It is held across the country, including Seoul."],
+  ["을", "바탕으로", "을 바탕으로", "On the basis of…", "경험{을 바탕으로} 책을 썼다.", "They wrote a book based on experience."],
+  ["을", "맞이하여", "을 맞이하여", "To mark… (an anniversary, a holiday)", "10주년{을 맞이하여} 행사를 연다.", "An event is held to mark the tenth anniversary."],
+  ["을", "앞세워", "을 앞세워", "Leading with… / on the strength of…", "가격{을 앞세워} 판매한다.", "They sell it on the strength of its price."],
+  ["을", "넘다", "을 넘다", "Exceed…", "참가자가 100명{을 넘었다}.", "There were more than 100 participants."],
+  ["으로", "나타나다", "으로 나타나다", "Was found to be… (a survey)", "만족도가 높은 것{으로 나타났다}.", "Satisfaction was found to be high."],
+  ["으로", "알려지다", "으로 알려지다", "Is reported to be… / is known as…", "원인은 화재{로 알려졌다}.", "The cause is reported to be a fire."],
+  ["으로", "인해(서)", "으로 인해", "Owing to… (news style, usually something bad)", "폭우{로 인해} 도로가 막혔다.", "The road was blocked owing to heavy rain."],
+  ["으로", "서", "으로서", "As… (a role)", "부모{로서} 책임이 있다.", "As a parent, one has a responsibility."],
+  ["만", "에", "만에", "After… (only after that long)", "3년{만에} 고향에 갔다.", "I went home for the first time in three years."],
+  ["밖에", "없다", "밖에 + negative", "Only… (a negative must follow)", "천 원{밖에} 없어요.", "I have only 1,000 won."],
+  ["이", "야말로", "이야말로", "…is the very… / …indeed", "이것{이야말로} 진짜 맛이다.", "This is the real taste."],
+  ["과", "마찬가지로", "과 마찬가지로", "Just like…", "작년{과 마찬가지로} 올해도 덥다.", "This year is hot, just like last year."],
+  ["과", "달리", "과 달리", "Unlike…", "예상{과 달리} 쉬웠다.", "Contrary to expectations, it was easy."],
+  ["이", "나 다름없다", "나 다름없다", "As good as… / no different from…", "가족{이나 다름없다}.", "They are as good as family."],
+] },
+];
+
+const TRAPS = [
+  ["-아서 vs -으니까", "Both mean \"because\". Only -으니까 can be followed by a command or suggestion. 추워서 옷을 입으세요 ✗ → 추우니까 옷을 입으세요 ✓"],
+  ["-느라고 vs -아서", "-느라고 is \"because I was busy doing something\": the same subject on both sides, and usually a bad result. Cold weather is not something you are busy doing, so -느라고 does not fit it."],
+  ["-아도 vs -더라도", "Both can mean \"even if\". -더라도 is more hypothetical; -아도 can also mean \"even though\". For a plain fact in formal writing, -음에도 or 에도 불구하고 is common."],
+  ["-는 반면에 vs -는 대신에", "반면에 contrasts two sides (A is this, B is that). 대신에 trades one thing for another (expensive, but long-lasting)."],
+  ["-다가 vs -다 보니까", "다가: something else happens partway through, or the action changes. 다 보니까: you keep doing it and it leads to a result or a discovery."],
+  ["-는 것 같다 vs -는 모양이다", "것 같다 is a guess or an impression. 모양이다 is an inference from something observed; about yourself, it works only when you are inferring and not reporting what you know."],
+  ["-기 때문에 vs -기 위해", "때문에 is a reason (because); 위해 is a purpose (in order to). One looks back, the other looks ahead."],
+  ["밖에 vs 만", "Both mean \"only\". 밖에 must be followed by a negative (없다, 안, 못); 만 is not."],
+  ["위해 vs 인해", "They look alike and mean different things. 위해 is a purpose or a benefit: 시험을 위해 공부했다. 인해 is a cause: 사고로 인해 길이 막혔다. In news and notices, 인해 usually introduces something unwelcome."],
+  ["-는 탓에 vs 덕분에", "Both mean \"because of\". 탓에 is a bad result, with blame; 덕분에 is a good result, with thanks. 비 탓에 취소됐다 / 선생님 덕분에 합격했다."],
+  ["으로 인해 vs 에 따라", "인해 is a cause (owing to). 에 따라 is \"depending on\" or \"in line with\". 지역에 따라 가격이 다르다 cannot become 지역으로 인해."],
+  ["-다고 해도 vs -다고 해서", "해도: even if…, it still happens. 해서: \"because someone says…\", and very often \"just because… does not mean…\", followed by 아니다 or -지는 않다."],
+  ["-을 만하다 vs -을 법하다", "만하다 is \"worth doing\" (a recommendation): 볼 만한 영화. 법하다 is \"likely; it stands to reason\": 그럴 법한 이야기."],
+  ["-기 마련이다 vs -는 셈이다", "마련이다 is \"bound to happen\" (a general truth): 누구나 실수하기 마련이다. 셈이다 is \"it amounts to\" (a conclusion): 거의 다 한 셈이다."],
+  ["-는 대신에 vs -는 데다가", "대신에 trades one thing for another (a plus and a minus). 데다가 adds one more in the same direction (good on good, or bad on bad)."],
+  ["-기로 하다 vs -게 되다", "기로 하다 is a decision. 게 되다 presents how things came to be, without saying whose choice it was. 회사를 옮기기로 했다 / 회사를 옮기게 됐다."],
+  ["-을 텐데 vs -을 테니까", "텐데 gives background for what follows, often with worry or regret: \"it will probably…\". 테니까 gives a reason: \"I will…, so you…\", or \"you must be…, so…\" (피곤할 테니까 쉬세요)."],
+  ["-는 동안 vs -는 중에", "동안 is over a stretch of time: 방학 동안 여행했다. 중에 is in the middle of doing something, when something else comes in; it is also a set courtesy: 바쁘신 중에."],
+  ["-아 놓다 vs -아 있다", "아 놓다: an action done and left in place, often to prepare for something: 문을 열어 놓았다. 아 있다: the resulting state continues: 문이 열려 있다."],
+  ["-던 vs -았던", "던 recalls something you used to do or did not finish: 자주 가던 카페. 았던 recalls something done and finished: 작년에 갔던 카페."],
+  ["조차 vs 이라도", "조차 is \"even…\", usually with something unwelcome and often a negative: 물조차 없다. 이라도 is \"at least…\", settling for less: 물이라도 주세요."],
+  ["-는 반면에 vs -는 한편", "반면에 contrasts two opposite sides. 한편 means something else is also going on, not necessarily the opposite."],
+];
+
+/* [pattern, what usually follows, feeling: neg | negx | pos | neu, example, example in English] */
+const TAILS = [
+  ["으로 인해", "Usually a bad result: 피해, 사고, 막히다, 취소되다", "neg", "폭우로 인해 피해가 컸다.", "The heavy rain caused great damage."],
+  ["-는 탓에", "A bad result, with blame", "neg", "늦잠을 잔 탓에 지각했다.", "I was late because I overslept."],
+  ["덕분에 (for comparison)", "A good result, with thanks: the opposite of 탓에", "pos", "친구 덕분에 길을 찾았다.", "I found the way thanks to a friend."],
+  ["-느라(고)", "A bad result such as 못 하다, 늦다, 힘들다. Same subject on both sides; no command after it", "neg", "숙제하느라고 못 잤어요.", "I could not sleep because I was doing homework."],
+  ["-다가는", "A warning: carry on like this and something goes wrong (-을 거예요, 큰일 나다)", "neg", "이렇게 먹다가는 살찔 거예요.", "If you keep eating like this, you will put on weight."],
+  ["-을걸", "Regret: something you should have done and did not", "neg", "미리 공부할걸.", "I should have studied beforehand."],
+  ["밖에", "A negative must follow: 없다, 안, 못, 모르다", "negx", "시간이 10분밖에 없어요.", "There are only ten minutes left."],
+  ["조차", "Usually a negative: even the most basic thing is missing", "negx", "이름조차 몰라요.", "I do not even know the name."],
+  ["-기는커녕", "Something worse follows, often with 도 or 조차 and a negative", "negx", "칭찬은커녕 혼만 났다.", "Far from being praised, I was told off."],
+  ["-는다고 해서", "In the sense \"just because…\", followed by -는 것은 아니다 or -지는 않다", "negx", "비싸다고 해서 다 좋은 건 아니다.", "Expensive does not always mean good."],
+  ["-을 수밖에 없다", "No way around it; accepted reluctantly", "neg", "포기할 수밖에 없었다.", "I had no choice but to give up."],
+  ["-아서 · -기 때문에", "When they give a reason, a command or suggestion does not follow (-세요, -ㅂ시다, -을까요). -아서 meaning \"and then\" can: 가서 확인하세요", "neu", "바빠서 못 가요. (✓) / 바빠서 가세요. (✗)", "For a command, use -으니까 instead."],
+  ["-으니까", "A command or suggestion may follow", "neu", "추우니까 문 닫으세요.", "It is cold, so please close the door."],
+  ["-기 위해", "Effort or action follows: 노력하다, 준비하다, 모으다", "pos", "건강을 위해 운동한다.", "I exercise for my health."],
+  ["-더라도", "Often advice or resolve follows: 포기하지 마세요, -겠다", "neu", "힘들더라도 끝까지 하겠다.", "Even if it is hard, I will see it through."],
+  ["-는 한", "Possibility or assurance follows: 기회는 있다, 가능하다", "pos", "포기하지 않는 한 기회는 있다.", "As long as you do not give up, there is a chance."],
+  ["-을 정도로", "An exaggerated degree follows: 감동하다, 놀라다", "neu", "눈물이 날 정도로 웃었다.", "I laughed until I cried."],
+  ["-기 마련이다", "A general truth; the subject is often 누구나 or 사람은", "neu", "사람은 누구나 실수하기 마련이다.", "Everyone is bound to make mistakes."],
+  ["-을 텐데", "Often a worried question or a suggestion follows", "neu", "추울 텐데 코트 입고 가요.", "It will be cold, so wear a coat."],
+  ["-았으면 하다", "A polite wish or request (formal settings)", "pos", "많이 참석해 주셨으면 합니다.", "We hope many of you will attend."],
+  ["에 따르면", "Reported speech follows: -다고 한다, -는 것으로 나타났다", "neu", "조사에 따르면 증가한 것으로 나타났다.", "According to the survey, it was found to have increased."],
+  ["-는 가운데", "News style: another event at the same time follows", "neu", "관심이 높아지는 가운데 행사가 열렸다.", "The event was held amid growing interest."],
+  ["-기 바랍니다", "Notices and announcements: a polite instruction to everyone", "neu", "안전에 주의하시기 바랍니다.", "Please take care for your safety."],
+];
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const exHTML = (s) => esc(s).replace(/\{([^}]*)\}/, "<b>$1</b>");
+const total = FAM.reduce((a, f) => a + f.items.length, 0);
+const TILT = [-4, 2, -2, 3, -1];
+
+function card([a, b, pattern, meaning, ex, tr]) {
+  const join = b === "—" ? "" : `<span class="op">+</span><span class="j">${esc(b)}</span>`;
+  return `<article class="card"><div class="formula"><span class="b">${esc(a)}</span>${join}<span class="eq"><span class="op">=</span><span class="r">${esc(pattern)}</span></span></div>
+    <div class="mean">${esc(meaning)}</div><div class="ex">${exHTML(ex)}</div><div class="tr">${esc(tr)}</div></article>`;
+}
+function renderFams(q) {
+  const key = (s) => s.toLowerCase().replace(/[-\s]/g, ""), nq = key(q.trim());
+  let found = 0;
+  const html = FAM.map((f, i) => {
+    const items = nq ? f.items.filter((it) => key(it.join(" ")).includes(nq)) : f.items;
+    found += items.length;
+    if (!items.length) return "";
+    return `<section class="fam" id="f-${f.id}"><header><span class="root c${i % 5}">${esc(f.root)}</span>
+      <div><h2>${esc(f.title)} <small>${f.items.length} patterns</small></h2><p>${esc(f.gist)}</p></div></header>
+      <div class="cards">${items.map(card).join("")}</div></section>`;
+  }).join("");
+  $("#fams").innerHTML = html || `<p class="empty">Nothing found for "${esc(q)}". Try part of a pattern or an English word, such as 면서, because or if.</p>`;
+  $("#count").textContent = nq ? `${found} found` : `${total} patterns in ${FAM.length} blocks`;
+}
+function go(id) {
+  if ($("#q").value) { $("#q").value = ""; renderFams(""); }
+  const node = document.getElementById("f-" + id);
+  if (node) node.scrollIntoView();
+}
+// The cover's tiles and the map are drawn from the same list of blocks.
+$("#tiles").innerHTML = FAM.map((f, i) =>
+  `<a class="tile c${i % 5}${f.tile.length > 3 ? " long" : ""}" href="#f-${f.id}" data-go="${f.id}" style="transform:rotate(${TILT[(i * 3) % 5]}deg)" aria-label="${esc(f.root)}: ${esc(f.title)}">${esc(f.tile)}</a>`).join("");
+// Short names for the map, where a long title would run into its neighbour.
+const SHORT = { dago: "Reporting", mod: "Describing a noun", eul: "Future", a: "Helping verbs", gi: "Action to thing", myeon: "If", daga: "Partway", do: "Even if",
+  aya: "Must", ji: "Negatives", ni: "Reason", go: "And then", ryeo: "Intending", gyet: "Will", ptc: "Particle + verb" };
+function renderMap() {
+  const W = 900, H = 560, cx = W / 2, cy = H / 2, rx = 335, ry = 218, fill = ["var(--pink)", "var(--yellow)", "var(--blue)", "var(--teal)", "#fff"];
+  const order = ["dago", "eul", "a", "gi", "mod", "myeon", "daga", "do", "aya", "ji", "ni", "ptc", "go", "ryeo", "gyet"].map((id) => FAM.findIndex((f) => f.id === id));
+  const pos = order.map((_, i) => { const t = -Math.PI / 2 + (i * 2 * Math.PI) / order.length; return [cx + rx * Math.cos(t), cy + ry * Math.sin(t)]; });
+  let s = pos.map(([x, y]) => `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke-width="2" style="stroke:var(--ink)"/>`).join("");
+  s += `<rect x="${cx - 104 + 6}" y="${cy - 40 + 6}" width="208" height="80" rx="14" style="fill:var(--ink)"/>
+    <rect x="${cx - 104}" y="${cy - 40}" width="208" height="80" rx="14" stroke-width="2" style="fill:var(--yellow);stroke:var(--ink)"/>
+    <text x="${cx}" y="${cy - 4}" text-anchor="middle" font-weight="700" font-size="22" style="font-family:var(--display);fill:var(--ink)">Korean, in blocks</text>
+    <text x="${cx}" y="${cy + 22}" text-anchor="middle" font-size="14" style="font-family:var(--body);fill:var(--ink)">${total} patterns</text>`;
+  order.forEach((fi, i) => {
+    const f = FAM[fi], [x, y] = pos[i], sub = `${SHORT[f.id]} · ${f.items.length}`, w = Math.max(96, f.root.length * 17 + 30, sub.length * 6.8 + 22), dark = fi % 5 === 2;
+    s += `<a href="#f-${f.id}" data-go="${f.id}" tabindex="0" aria-label="${esc(f.root)}: ${esc(f.title)}">
+      <rect x="${x - w / 2 + 4}" y="${y - 24 + 4}" width="${w}" height="48" rx="10" style="fill:var(--ink)"/>
+      <rect x="${x - w / 2}" y="${y - 24}" width="${w}" height="48" rx="10" stroke-width="2" style="fill:${fill[fi % 5]};stroke:var(--ink)"/>
+      <text x="${x}" y="${y - 3}" text-anchor="middle" font-weight="700" font-size="18" style="font-family:var(--ko);fill:${dark ? "#fff" : "var(--ink)"}">${esc(f.root)}</text>
+      <text x="${x}" y="${y + 15}" text-anchor="middle" font-size="12" style="font-family:var(--body);fill:${dark ? "#fff" : "var(--ink)"}">${esc(sub)}</text></a>`;
+  });
+  $("#map").innerHTML = s;
+}
+for (const id of ["#tiles", "#map"]) {
+  $(id).addEventListener("click", (e) => { const a = e.target.closest("a[data-go]"); if (a) { e.preventDefault(); go(a.dataset.go); } });
+  $(id).addEventListener("keydown", (e) => { const a = e.target.closest("a[data-go]"); if (a && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); go(a.dataset.go); } });
+}
+const TAG = { neg: "Bad result", negx: "Negative follows", pos: "Good · purpose", neu: "Neutral · rule" };
+$("#taillist").innerHTML = TAILS.map(([p, f, v, ex, tr]) =>
+  `<div class="tail"><div class="th"><b>${esc(p)}</b><span class="tag ${v}">${TAG[v]}</span></div><p>${esc(f)}</p><div class="ex">${esc(ex)}</div><div class="tr">${esc(tr)}</div></div>`).join("");
+$("#traplist").innerHTML = TRAPS.map(([t, p]) => `<div class="trap"><h3>${esc(t)}</h3><p>${esc(p)}</p></div>`).join("");
+$("#q").addEventListener("input", (e) => renderFams(e.target.value));
+renderMap();
+renderFams("");
+</script>
+</body>
+</html>

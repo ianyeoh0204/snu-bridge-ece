@@ -143,3 +143,28 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - The developer wants the poster to say where and how the site can expand. Do not start a second department's
   requirements before the poster and source archive (20 Nov) are done.
 
+## Background page, notices and the extra page (12 Nov 2026, published)
+- The About page ("Background and Method") is six short steps, widest first, because the developer loses focus on a long
+  scroll and wants the story told big to small: Why now, Engineering departments, ECE, In practice, How it works, Checks
+  and limits. Only the step on screen is built. The steps are listed in a menu under the About tab (hover or focus; on a
+  touch screen the first tap opens it), not as a block on the page; each step shows its own title with "n / 6" above it
+  and a "Next" link below. Addresses: `#about` and `#about-<why|engineering|department|examples|method|checks>`.
+- "Why now" ties the project to what the university itself has said in 2026. Its facts and links are in
+  `sources/context.json`; each was read on the cited page on 12 Nov. Rules for that step: say plainly that the link
+  between internationalisation and the AI Native Campus is this project's own reading; say which AI does what
+  (translations by Claude through the API; an OpenAI model through ChatGPT Edu was the second reader); keep the names of
+  university offices off the page; ranking figures are "as reported by" the two newspapers (QS's page could not be read).
+  The developer's memory of a "go global" motto was wrong; the 80th-anniversary motto is something else and is not used.
+- Notices: prompt version 2 made the short parts (summary, who must act, dates, conditions, steps) longer than the full
+  translation for 65 of 75 ECE notices and 96 of 112 Aerospace notices (the developer noticed). The page now shows the
+  summary and dates, then the full translation open and the checklist closed, unless the short parts really are shorter.
+  A cleaner fix is shorter summaries in a prompt version 3, which means translating everything again (about 12 USD).
+- `bridge/korean_blocks.html` is an extra page, built to `site/korean-blocks.html` and linked from the footer: the
+  developer's own Korean grammar notes (examples written with Claude) in English, in the "sottsass" look of the
+  open-source reacticle project, deliberately unlike the main site. Its English was read once by ChatGPT; no Korean
+  speaker has read it yet, and its footer says it is a student's study notes.
+- The developer's ChatGPT Edu quota is kept for the booth demo: do not run ChatGPT or Codex reviews without asking.
+  Korean lines added on 12 Nov after that point are unchecked and wait for the developer's Korean-speaking reader.
+- Each department's notice page is labelled a pilot until its requirements are written. The developer asked about a home
+  page per major: wait until a second department has requirements; for now Home carries one line to each pilot.
+

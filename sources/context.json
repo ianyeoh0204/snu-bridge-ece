@@ -1,0 +1,22 @@
+{
+  "note": "What the university and the government have said and done in 2026, for the first step of the Background page and the poster's opening. Every line was read on the page it cites on the date in read_on. Names of university offices are deliberately left out.",
+  "read_on": "2026-11-12",
+  "year": "2026",
+  "sources": {
+    "address": {"name": {"en": "President's New Year address, 2 January 2026", "ko": "총장 신년사, 2026년 1월 2일"},
+                "url": "https://www.snu.ac.kr/about/president/speeches?md=v&bbsidx=163753"},
+    "summit": {"name": {"en": "SNU press release, 3 April 2026", "ko": "서울대학교 보도자료, 2026년 4월 3일"},
+               "url": "https://www.snu.ac.kr/snunow/press?md=v&bbsidx=167408"},
+    "edu": {"name": {"en": "SNU press release, 2 June 2026", "ko": "서울대학교 보도자료, 2026년 6월 2일"},
+            "url": "https://www.snu.ac.kr/snunow/press?md=v&bbsidx=170942"},
+    "colleges": {"name": {"en": "News1, 27 April 2026", "ko": "뉴스1, 2026년 4월 27일"},
+                 "url": "https://news.nate.com/view/20260427n29144"},
+    "qs_2026": {"name": {"en": "SNU Alumni Association newspaper, July 2025", "ko": "서울대학교총동창신문, 2025년 7월"},
+                "url": "https://www.snua.or.kr/magazine?md=v&seqidx=12577"},
+    "qs_2027": {"name": {"en": "Korea University News, 24 June 2026", "ko": "한국대학신문, 2026년 6월 24일"},
+                "url": "https://news.unn.net/news/articleView.html?idxno=593870"},
+    "ministry": {"name": {"en": "The Korea Herald, 8 September 2026", "ko": "코리아헤럴드, 2026년 9월 8일"},
+                 "url": "https://m.koreaherald.com/article/10866638"}
+  },
+  "figures": {"qs_rank": 38, "qs_rank_before": 31, "qs_student_ratio_rank": 622, "action_plans": 47, "students_in_korea": 307464}
+}

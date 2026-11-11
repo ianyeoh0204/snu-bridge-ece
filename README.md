@@ -45,6 +45,8 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 .venv/bin/python tools/audit.py prepare    # a second reader re-reads cards against the page images (see the file's top)
 .venv/bin/python tools/survey.py count     # other engineering departments: Korean and English notices (then check, sample, aggregate)
 ```
+`sources/context.json` holds the facts and links for the first step of the Background page (what the university has said
+and done this year). Re-read each cited page before changing a line there.
 When two sources differ, the most recent official one is the rule: add a line to `sources/<department>/updates.json`
 with the notice number and the exact Korean line, and it appears on the card as "Added or changed by later notices".
 

@@ -88,7 +88,8 @@ def build() -> Path:
             read = (audit or {}).get("cards", {}).get(c["id"])
             c["audit"] = {"status": read["status"], "reason": read["reason"], "date": audit["audited_on"]} if read else None
         departments[name] = {
-            "name": config["department"], "name_ko": config.get("department_ko", ""), "programs": config["programs"],
+            "name": config["department"], "name_ko": config.get("department_ko", ""), "short": config.get("short", ""),
+            "programs": config["programs"],
             "default_program": config.get("default_program", config["programs"][0]),
             "headline_cards": config.get("headline_cards", {}),  # the one fact shown on each program's homepage column
             "assistant": config.get("assistant"),  # where to read attachments and images this site did not translate
@@ -103,11 +104,17 @@ def build() -> Path:
     template = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8")
     for name, department in departments.items():
         _both_languages(department["evidence_notes"], f"sources/{name}/evidence_notes.json")
-    data = {"departments": departments, "pilots": pilots, "survey": _json(ROOT / "data" / "survey.json"), "groups": GROUPS, "program_labels": PROGRAM_LABELS, "text": _pairs(template),
+    context = _json(ROOT / "sources" / "context.json")  # what the university has said and done this year, with its sources
+    _both_languages(context, "sources/context.json")
+    data = {"departments": departments, "pilots": pilots, "survey": _json(ROOT / "data" / "survey.json"), "context": context, "groups": GROUPS, "program_labels": PROGRAM_LABELS, "text": _pairs(template),
             "built": datetime.datetime.now(SEOUL).date().isoformat()}
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     (site / "index.html").write_text(template.replace("__DATA__", payload), encoding="utf-8")
     (site / "cards.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    # An extra page with its own look: Korean grammar as building blocks, a student's study notes in English.
+    extra = Path(__file__).parent / "korean_blocks.html"
+    if extra.exists():
+        (site / "korean-blocks.html").write_text(extra.read_text(encoding="utf-8"), encoding="utf-8")
     return site / "index.html"
