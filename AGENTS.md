@@ -75,5 +75,8 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - Deployed (11 Nov): https://ianyeoh0204.github.io/snu-bridge-ece/ from the public repository `ianyeoh0204/snu-bridge-ece`.
   `.github/workflows/update.yml` reads the boards, translates, rebuilds and publishes every morning at 07:17 Seoul time;
   a push republishes only. The department's own files are deliberately not in the repository (see README).
+  A notice counts as changed only when its text changes; the attachment download counter is stripped first
+  (`COUNTER` in `bridge/briefs.py`), otherwise most notices would be translated again every day.
+  First full run on GitHub passed on 11 Nov: 75 checked, 0 translated, 0 failed. The model key is the secret `API_KEY`.
   Unreadable attachments and images send the student to the `assistant` named in the config (ChatGPT Edu until the plugin exists).
 - Not built: calendar file, plugin, "why and how" page, model check of the hand-written cards.
