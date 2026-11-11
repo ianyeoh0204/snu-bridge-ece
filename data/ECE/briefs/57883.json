@@ -1,0 +1,46 @@
+{
+ "title_en": "Call for Candidates: University-Run Outgoing Exchange Student Program, Semester 1 of the 2027 Academic Year",
+ "summary": "The university is recruiting candidates for its centrally run outgoing exchange student program for Semester 1 of the 2027 academic year. Applicants must apply online through mySNU and submit seven required documents through a Google Form between 6 July 2026, 18:00 and 22 July 2026, 23:59.",
+ "applies_to": "Students who wish to apply as candidates for the university-run (본부 주관) outgoing exchange student program for Semester 1 of the 2027 academic year. The notice does not state any further eligibility conditions.",
+ "dates": [
+  {
+   "what": "Online application and document submission period",
+   "when": "Monday, 6 July 2026, 18:00 to Wednesday, 22 July 2026, 23:59",
+   "original_ko": "2026. 7. 6.(월) 18:00 ~ 7. 22.(수) 23:59까지",
+   "verified": true
+  },
+  {
+   "what": "SNU English transcript must be issued on or after this date (date as written in the notice)",
+   "when": "On or after 6 July 2027",
+   "original_ko": "2027년 7월 6일 이후 발급본",
+   "verified": true
+  },
+  {
+   "what": "Official foreign language test must have been taken on or after this date",
+   "when": "On or after 1 February 2025",
+   "original_ko": "2025년 2월 1일 이후 응시본",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Apply online through mySNU. New applicants complete the application in mySNU and download the application form; re-applicants complete the separate re-applicant application form instead.",
+  "Prepare the seven required documents (one copy each): online application form, SNU English transcript (4.0 scale), copy of an official foreign language test score report, study plan in Korean on the provided form, recommendation letter from your academic advisor and the department head, personal information consent form, and human rights and gender equality training completion certificate.",
+  "Complete the human rights and gender equality training through the SNU Human Rights Center (https://helplms.snu.ac.kr), or, if you have already completed it online or offline, download and print your completion certificate.",
+  "For the recommendation letter, obtain your academic advisor's signature, then bring it to the undergraduate staff member at the department office to have the seal applied (contact details are in the original notice).",
+  "Log in to Google with your SNU account and submit all documents through the Google Form (https://forms.gle/STkSYXtCVNE5zELt5) by Wednesday, 22 July 2026, 23:59.",
+  "Check the OGA website post (https://oga.snu.ac.kr/news/outgoing-outgoing-exchange-program/6594) for details and updates."
+ ],
+ "translation": "This is a notice of recruitment for candidates for the university-run (본부 주관) outgoing exchange student program for Semester 1 of the 2027 academic year.\n\nA. Number of places: approximately 828 (counted by semester) (222 universities in 39 countries)\n\nB. How to apply: Apply online (mySNU), then submit the documents below through the Google Form* within the application period.\n* The Google Form (https://forms.gle/STkSYXtCVNE5zELt5) can be completed only when you are logged in to Google with your SNU account.\n\n1) Required documents (one copy each, 7 types in total)\n\n① Online application form (온라인 지원서)\n- New applicants: Complete the application in mySNU, then download the application form and submit it.\n- Re-applicants: Complete and submit the application form for re-applicants (separate form).\n\n② SNU English transcript (서울대 영문성적표)\n- Must be issued on or after 6 July 2027 (as written in the notice), showing grades on a 4.0 scale.\n\n③ Copy of official foreign language test score report (공인외국어성적표 사본)\n- Test must have been taken on or after 1 February 2025.\n\n④ Study plan in Korean (국문 수학계획서)\n- Complete on the separate form provided in the attachment.\n\n⑤ Recommendation letter from academic advisor and department head (지도교수 및 학과장 추천서)\n\n⑥ Consent form for collection, use and provision of personal information (개인정보 수집·이용·제공 동의서)\n\n⑦ Human rights and gender equality training completion certificate (인권·성평등 교육이수확인서)\n- Complete the training offered by the SNU Human Rights Center (https://helplms.snu.ac.kr).\n- If you have previously completed this training online or offline, you do not need to take it again; obtain your completion certificate and submit it.\n\n2) Online application and document submission period: Monday, 6 July 2026, 18:00 to Wednesday, 22 July 2026, 23:59\n\n※ Details and updates are available in the post on the OGA website (https://oga.snu.ac.kr/news/outgoing-outgoing-exchange-program/6594).\n\n* To have the recommendation letter sealed, obtain your academic advisor's signature and then visit the undergraduate staff member at the department office. (The staff member's name and phone number are given in the original notice.)\n\nAttachments (4):\n01. 2027년 1학기 교환학생 모집공고.hwp (Exchange student recruitment announcement, Semester 1 2027)\n02. 2027년 1학기 파견대학 리스트.xlsx (List of partner universities, Semester 1 2027)\n03. 제출서류 양식 모음.zip (Collection of required document forms)\n04. 안내자료 모음.zip (Collection of guidance materials)\n\nNote: The contents of these attachments were not included in the notice text and have not been read for this translation.",
+ "id": 57883,
+ "text_hash": "2f1712a965bcf012",
+ "images": 0,
+ "attachments": [
+  "01. 2027년 1학기 교환학생 모집공고.hwp",
+  "02. 2027년 1학기 파견대학 리스트.xlsx",
+  "03. 제출서류 양식 모음.zip",
+  "04. 안내자료 모음.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

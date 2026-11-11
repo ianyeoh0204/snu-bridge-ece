@@ -1,0 +1,29 @@
+{
+ "title_en": "2026 Second Semester: Application for Recognition of Credits Earned at Seoul National University Graduate School Before Admission",
+ "summary": "Graduate students who wish to have credits earned at the Seoul National University graduate school before their current admission recognised must submit a paper application and a marked transcript to the department office by 5:00 p.m. on Monday, 21 September 2026. Only course credits from master's or doctoral programmes in the same or a similar major are eligible, up to the limits stated in the notice.",
+ "applies_to": "Graduate students who wish to have credits recognised that they earned at the same university (Seoul National University) graduate school before their admission. Only course credits earned in a master's or doctoral programme in the same or a similar major at the Seoul National University graduate school, before admission to the current master's or doctoral programme, are eligible. Undergraduate courses are not eligible. Students are asked to apply in their first semester after admission.",
+ "dates": [
+  {
+   "what": "Deadline for submitting the paper application documents to the department office",
+   "when": "By 5:00 p.m., Monday, 21 September 2026",
+   "original_ko": "~ 2026. 9. 21.(월) 오후 5시까지",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Download and complete the application form provided as the attachment [붙임01] (입학전 본교 신청서(학생용)_2026-2.hwp).",
+  "Prepare your personal transcript and mark on it the courses for which you are applying.",
+  "Submit the application form together with the marked transcript to the staff member in charge at the department office (Building 301, Room 319) by 5:00 p.m. on Monday, 21 September 2026.",
+  "After the university administration has processed the paper application, complete the application in the online system according to the separate notice you will receive."
+ ],
+ "translation": "2026 Second Semester: Application for Recognition of Credits Earned at Seoul National University Graduate School Before Admission\nPosted: 12 September 2026\n\n1. Who should apply\nGraduate students who wish to have credits recognised that they earned at the same university (Seoul National University) graduate school before their admission to this university.\n※ For smooth academic administration, please apply in your first semester after admission.\n\n2. Submission of application documents\nA. Period: until 5:00 p.m., Monday, 21 September 2026\nB. Submit the application documents to the staff member in charge at the department office (Building 301, Room 319).\nC. Application documents: see the attached file (Attachment 01 [붙임01]).\n※ Please submit the application form together with your personal transcript, with the courses you are applying for marked on it.\n※ Because your previous student ID number and department information must be linked, you must first submit the paper application form. After the university administration has processed it, you will complete the application in the online system according to a separate notice.\n\n3. Recognition of earned credits\nA. You may apply for recognition only of course credits earned in a master's or doctoral programme in the same or a similar major at the same university (Seoul National University) graduate school before your admission to your current master's or doctoral programme at this university.\n※ Undergraduate courses: not eligible.\n\nB. Maximum credits that may be recognised:\n\n- Programme before admission: Master's programme\n  - Current programme: Master's programme — up to 12 credits\n  - Current programme: Integrated Master's–Doctoral programme — up to 12 credits\n\n- Programme before admission: Doctoral programme\n  - Current programme: Doctoral programme — up to 18 credits\n  - Current programme: Integrated Master's–Doctoral programme — up to 18 credits\n\n- Programme before admission: Integrated Master's–Doctoral programme\n  - Current programme: Master's programme — up to 12 credits\n  - Current programme: Doctoral programme* — up to 18 credits\n  - Current programme: Integrated Master's–Doctoral programme — up to 18 credits\n\n* This applies only if, before admission to the doctoral programme, you completed the coursework (수료) of an Integrated Master's–Doctoral programme in the same or a similar department or major at this university.\n\n- Please refer to the attached file.\n- Inquiries: the department office (Building 301, Room 319). The contact person's details are given in the original Korean notice.\n\nAttachment (1 file):\n[붙임01] 입학전 본교 신청서(학생용)_2026-2.hwp (Application form for credits earned at this university before admission, student version, 2026 Second Semester; 37 KB). The content of this attachment was not read; only its file name is given in the notice.",
+ "id": 58057,
+ "text_hash": "54790d8547ed8a9d",
+ "images": 0,
+ "attachments": [
+  "[붙임01] 입학전 본교 신청서(학생용)_2026-2.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

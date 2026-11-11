@@ -1,0 +1,36 @@
+{
+ "title_en": "Recruitment of Participants for the 2026 Academic Year Winter Study Abroad Program (SAP)",
+ "summary": "The university will run the 2026 Academic Year Winter Study Abroad Program (SAP) to strengthen the global competitiveness of its enrolled students. Interested students must submit an application to their own department office by Thursday, 3 September 2026.",
+ "applies_to": "Currently enrolled students of the university (본교 재학생) who are interested in the program",
+ "dates": [
+  {
+   "what": "Deadline for submitting the application",
+   "when": "By Thursday, 3 September 2026",
+   "original_ko": "2026. 9. 3.(목)까지",
+   "verified": true
+  },
+  {
+   "what": "Announcement of successful applicants (scheduled)",
+   "when": "Wednesday, 23 September 2026 (scheduled)",
+   "original_ko": "2026. 9. 23.(수) 예정",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Obtain the application documents from the attachments to the original notice (submission form templates, 제출 서류 양식.zip; the program list and recruitment announcement are also attached).",
+  "Submit your application to the office of your own department or school (소속 학과(부) 사무실) by Thursday, 3 September 2026.",
+  "Check the announcement of successful applicants, scheduled for Wednesday, 23 September 2026."
+ ],
+ "translation": "2026 Academic Year Winter Study Abroad Program (SAP): Recruitment of Participants\n\nPosted: 21 August 2026\n\nTo enhance the global competitiveness of our enrolled students, the university will run the 2026 Academic Year Winter Study Abroad Program (SAP). Interested students are encouraged to participate.\n\n1. Schedule\n- Application submission: by Thursday, 3 September 2026 <Applicant → the office of the applicant's own department or school (소속 학과(부) 사무실)>\n\n2. Announcement of successful applicants: scheduled for Wednesday, 23 September 2026\n\n3. Inquiries: International Cooperation Support Team (국제협력지원과). The contact details are given in the original notice.\n\nAttachments (3)\n1-1. 2026 Winter Office of International Affairs Recommended Program List, revised (2026 동계 국제처 추천 프로그램 리스트_수정.xlsx, 18 KB)\n1. 2026 Academic Year Winter Study Abroad Program (SAP) Participant Recruitment Announcement (2026학년도 동계 Study Abroad Program (SAP) 참가자 모집 공고문.pdf, 120 KB)\n3. Submission Document Forms (제출 서류 양식.zip, 194 KB)\n\nNote: The contents of these attached files were not read and are not included in this translation. Please refer to the attachments in the original notice for program details and the required forms.",
+ "id": 57991,
+ "text_hash": "88c1d0fcc5d841f0",
+ "images": 0,
+ "attachments": [
+  "1-1. 2026 동계 국제처 추천 프로그램 리스트_수정.xlsx",
+  "1. 2026학년도 동계 Study Abroad Program (SAP) 참가자 모집 공고문.pdf",
+  "3. 제출 서류 양식.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

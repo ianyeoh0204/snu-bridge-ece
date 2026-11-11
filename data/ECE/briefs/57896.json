@@ -1,0 +1,51 @@
+{
+ "title_en": "[Graduate School] Application for Research Student Registration for Students Who Have Exceeded the Thesis Submission Deadline, Fall Semester 2026 (until 22 July)",
+ "summary": "Students who have exceeded the thesis submission deadline may apply once for research student registration, subject to approval by the Graduate Academic Affairs Committee. Applications must be submitted to the department office by Wednesday, 22 July 2026.",
+ "applies_to": "Students who have exceeded the thesis submission deadline (master's: 4 years + 2 years after completion of coursework; doctoral: 6 years + 2 years after completion of coursework). Students who are fewer than 6 years past completion of a master's programme or fewer than 8 years past completion of a doctoral programme must instead apply for an 'Extension of the Thesis Submission Deadline'. Separately, students who were granted a 2-year thesis submission opportunity before 1 March 2012, did not complete their thesis within that period and wish to request an additional 1-year extension must submit Attachment 2.",
+ "dates": [
+  {
+   "what": "Deadline for submitting the application documents",
+   "when": "Wednesday, 22 July 2026",
+   "original_ko": "2026. 7. 22.(수)까지",
+   "verified": true
+  },
+  {
+   "what": "Cut-off date for students eligible to request an additional 1-year extension (those granted a 2-year thesis submission opportunity before this date)",
+   "when": "Before 1 March 2012",
+   "original_ko": "2012. 3. 1. 이전",
+   "verified": true
+  },
+  {
+   "what": "Course registration period for approved research students (specific dates not stated in the notice)",
+   "when": "During the course registration change period for enrolled students",
+   "original_ko": "'재학생 수강신청 변경기간'",
+   "verified": true
+  },
+  {
+   "what": "Tuition payment period for approved research students (specific dates not stated in the notice)",
+   "when": "Within the registration period (additional registration, final registration)",
+   "original_ko": "등록기간(추가등록, 최종등록)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Download Attachment 1 from the original notice and complete one copy each of the Research Student Registration Application for Students Who Have Exceeded the Thesis Submission Deadline, the Confirmation Form and the Statement of Reasons.",
+  "Obtain your academic advisor's signature on the application, or instead obtain an approval email from your advisor and submit it together with the application.",
+  "Submit the documents by Wednesday, 22 July 2026, either in person at the department office (Building 301, Room 319) or as a PDF file by email (the email address is given in the original notice).",
+  "Wait for the Graduate Academic Affairs Committee to decide whether your application is approved.",
+  "If approved, register for courses during the course registration change period for enrolled students and pay tuition within the registration period (additional registration or final registration). Master's students must register for at least 1 semester and earn at least 6 credits; doctoral students must register for at least 2 semesters and earn at least 9 credits.",
+  "Check whether you have passed the thesis qualifying examination via Mysnu > 학사정보 > 졸업 > 졸업시험 신청 > 종합시험판정결과. If you have not passed, you must take the examination again.",
+  "Submit your thesis within 3 years of approval."
+ ],
+ "translation": "[Graduate School] Application for Research Student Registration for Students Who Have Exceeded the Thesis Submission Deadline, Fall Semester 2026 (until 22 July)\n\n1. Eligibility\n- Students who have exceeded the thesis submission deadline (master's: 4 years + 2 years after completion of coursework; doctoral: 6 years + 2 years after completion of coursework).\n※ You may apply only once. Approval is decided through review by the Graduate Academic Affairs Committee.\n※ You must submit your thesis within 3 years of approval. If you are approved this time and fail to submit your thesis for personal reasons, no further opportunity will be given.\n※ Students who are fewer than 6 years past completion of a master's programme, or fewer than 8 years past completion of a doctoral programme, must apply for an 'Extension of the Thesis Submission Deadline' [학위논문제출기한 연장 신청] instead.\n\n2. Required Documents\n- [Attachment 1] (Research Student Registration Application for Students Who Have Exceeded the Thesis Submission Deadline [학위논문제출기한 초과자 연구생 등록 신청서], Confirmation Form [확인서], Statement of Reasons [사유서]): one copy of each.\n\n3. How to Submit the Application\n- Submit by Wednesday, 22 July 2026, in person at the department office (Building 301, Room 319) or as a PDF file by email.\n※ The academic advisor's signature may be replaced by an approval email from the advisor, which must be submitted together with the application.\n\n4. Programme Completion Requirements\na. Number of registrations: Master's students must register for at least 1 semester; doctoral students must register for at least 2 semesters.\n※ The tuition amount is that paid by students registering beyond the standard period of study (i.e., students exceeding the prescribed number of semesters): half tuition for 3 credits or fewer, full tuition for 4 credits or more.\nb. Coursework: Students who have completed a master's programme must earn at least 6 credits; students who have completed a doctoral programme must earn at least 9 credits.\n※ Doctoral students may not complete all 9 credits in a single semester. However, after completing 9 credits, it is possible to take 1 or more additional credits in the following semester.\n※ Research students who have exceeded the deadline may take any course (e.g., courses recommended by the academic advisor, courses helpful to their research, courses already taken, thesis research, etc.).\n※ Courses taken by research students who have exceeded the deadline are recorded on the transcript but are not reflected in grades or grade point average.\nc. Thesis Qualifying Examination: A previous pass may be recognised; if you did not pass, you must take the examination again.\n※ To check whether you passed the qualifying examination: Mysnu > Academic Information [학사정보] > Graduation [졸업] > Graduation Examination Application [졸업시험 신청] > Comprehensive Examination Results [종합시험판정결과].\nd. Course registration period: You may register for courses during the 'course registration change period for enrolled students' [재학생 수강신청 변경기간].\ne. Tuition payment period: Pay within the registration period (additional registration [추가등록], final registration [최종등록]).\n\n5. Students who completed their coursework and were granted a 2-year thesis submission opportunity before 1 March 2012, but did not complete their thesis within that period and wish to obtain approval for an additional 1-year extension, must submit [Attachment 2].\n\n● Inquiries: Department office (Building 301, Room 319). The contact person and email address are given in the original notice.\n\nAttachments (2)\n[Attachment 1] Research Student Registration Application Form for Students Who Have Exceeded the Thesis Submission Deadline (including Confirmation Form and Statement of Reasons) (.hwp)\n[Attachment 2] Additional Extension Application Form (.hwp)\n\nNote: The contents of the attached files were not read; please download them from the original notice.",
+ "id": 57896,
+ "text_hash": "985c3eaeac97a4db",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 학위논문제출기한 초과자 연구생 등록신청서 양식(확인서.사유서 포함).hwp",
+  "[붙임2] 추가연장신청서식.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

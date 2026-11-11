@@ -1,0 +1,24 @@
+{
+ "title_en": "Notice of the Tuition Payment Plan for the 2nd Semester of the 2026 Academic Year",
+ "summary": "The university has announced the tuition payment plan for the 2nd semester of the 2026 academic year, with details provided in six attached files. Students are asked to refer to the tuition payment schedule, which does not appear in the text of the notice.",
+ "applies_to": "",
+ "dates": [],
+ "steps": [
+  "Refer to the tuition payment schedule and the attached files for the 2nd semester of the 2026 academic year. The schedule is not included in the text of the notice, and the attachments were not read."
+ ],
+ "translation": "Notice of the Tuition Payment Plan for the 2nd Semester of the 2026 Academic Year\n\nPosted: 2026-08-06\n\nThe tuition payment plan for the 2nd semester of the 2026 academic year is announced as attached. Please refer to the tuition payment schedule below.\n\n[Translator's note: The notice refers to a payment schedule \"below\", but no schedule appears in the text of the notice. It may be shown in an image or in the attachments, which were not read. No payment dates can be given here. Please check the original notice and its attachments, or contact the department office. Contact details are in the original notice.]\n\nAttachments (6 files). The contents of these files were not read.\n\n[Attachment 1-1] 2026-2 Tuition Payment Guide for Enrolled Students, Korean version ([붙임1-1] 2026-2 재학생 등록금 납부 안내문_국문.pdf)\n\n[Attachment 1-2] 2026-2 Tuition Payment Guide for Enrolled Students, English version ([붙임1-2] 2026-2 재학생 등록금 납부 안내문_영문.pdf)\n\n[Attachment 2] 2026-2 Tuition Payment FAQ ([붙임2] 2026-2 등록금 납부 FAQ.pdf)\n\n[Attachment 3] Notice on the Prohibition of Third-Party Proxy Payment and Unauthorised Services, Including Private Payment, Currency Exchange and Remittance Agencies, When Paying Tuition ([붙임3] 등록금 납부 시 제3자 대리납부 및 사설 결제·환전·송금대행 등 비인가 서비스 이용 금지 안내.pdf)\n\n[Attachment 4] 2026 Academic Year, 2nd Semester Tuition Fee Table for Undergraduate and Graduate Students ([붙임4] 2026학년도 제2학기 대학(원)생 등록금 일람표.pdf)\n\n[Attachment 5] 2026 Academic Year Tuition Fee Table for Students Exceeding the Regular Number of Semesters ([붙임5] 2026학년도 규정학기초과자 등록금 일람표.pdf)",
+ "id": 57948,
+ "text_hash": "171bab41ccbfa94a",
+ "images": 1,
+ "attachments": [
+  "[붙임1-1] 2026-2 재학생 등록금 납부 안내문_국문.pdf",
+  "[붙임1-2] 2026-2 재학생 등록금 납부 안내문_영문.pdf",
+  "[붙임2] 2026-2 등록금 납부 FAQ.pdf",
+  "[붙임3] 등록금 납부 시 제3자 대리납부 및 사설 결제·환전·송금대행 등 비인가 서비스 이용 금지 안내.pdf",
+  "[붙임4] 2026학년도 제2학기 대학(원)생 등록금 일람표.pdf",
+  "[붙임5] 2026학년도 규정학기초과자 등록금 일람표.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

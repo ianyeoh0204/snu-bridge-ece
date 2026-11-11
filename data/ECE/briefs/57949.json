@@ -1,0 +1,30 @@
+{
+ "title_en": "Course Evaluation for the 2026 Summer Session",
+ "summary": "Course evaluations for the 2026 Summer Session will be conducted from 4 August to 11 August 2026 through Portal mySNU or the Seoul National University mobile app. Students must complete the evaluation to view their grades during the evaluation period; after the period ends, grades may be viewed regardless of participation.",
+ "applies_to": "Students enrolled in 2026 Summer Session courses. The evaluation covers all undergraduate and graduate courses, except 'Graduate Thesis Research' ('대학원 논문연구').",
+ "dates": [
+  {
+   "what": "Course evaluation period",
+   "when": "Tuesday 4 August 2026 to Tuesday 11 August 2026",
+   "original_ko": "2026. 8. 4.(화) ~ 8. 11.(화)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Between 4 August and 11 August 2026, log in to Portal mySNU ('포털 마이스누') or the Seoul National University mobile app ('서울대학교 모바일 앱').",
+  "Go to Academic Administration [학사행정] ⇒ Classes/Grades [수업/성적] ⇒ Grades [성적] ⇒ Course Evaluation [강의평가].",
+  "Complete the course evaluation for each of your Summer Session courses (all undergraduate and graduate courses, except 'Graduate Thesis Research' [대학원 논문연구]).",
+  "View your grades. During the evaluation period, grades can be viewed only after completing the evaluation; after the period ends, grades can be viewed regardless of participation."
+ ],
+ "translation": "Course Evaluation for the 2026 Summer Session\n\nCourse evaluations for the 2026 Summer Session will be conducted as follows. All enrolled students are encouraged to participate.\n\n1. Period: Tuesday 4 August 2026 to Tuesday 11 August 2026 (2026. 8. 4.(화) ~ 8. 11.(화))\n\n2. Method: Portal mySNU ('포털 마이스누') or the Seoul National University mobile app ('서울대학교 모바일 앱')\n   - Portal mySNU / Seoul National University mobile app ⇒ Academic Administration [학사행정] ⇒ Classes/Grades [수업/성적] ⇒ Grades [성적] ⇒ Course Evaluation [강의평가]\n\n3. Courses subject to evaluation: All undergraduate and graduate courses, excluding 'Graduate Thesis Research' ('대학원 논문연구').\n\n4. Main points of the course evaluation\n※ Only the average scores for certain common items will be reflected in various assessments, such as those for strengthening faculty teaching capacity.\n   (However, scores in the specialised area (collaborative team-teaching courses) will be used in the review for selecting collaborative team-teaching courses.)\n※ Due to the reorganisation of the course evaluation, the procedure for entering college-specific optional items, which was in place up to the 1st semester of the 2025 academic year, has been removed.\n\n5. Note: You must participate in the course evaluation in order to view your grades. However, after the evaluation period ends, grades can be viewed regardless of whether you participated.\n\nAttachment 1. Guide to the Course Evaluation Method (for students), 1 copy.\nAttachment 2. Course Evaluation Questionnaire\n\nAttached files (2):\n[Attachment 1] Course Evaluation Program Guide (for students) ([붙임1] 강의평가 프로그램 안내(학생용).hwp, 3 MB)\n[Attachment 2] Course Evaluation Questionnaire ([붙임2] 강의평가 문항지.hwpx, 55 KB)\n\n(Translator's note: The contents of the two attached files were not read and are not included in this translation. Please refer to the original notice to download them.)",
+ "id": 57949,
+ "text_hash": "361a4d112deceba9",
+ "images": 1,
+ "attachments": [
+  "[붙임1] 강의평가 프로그램 안내(학생용).hwp",
+  "[붙임2] 강의평가 문항지.hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

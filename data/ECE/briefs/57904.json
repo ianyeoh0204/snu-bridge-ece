@@ -1,0 +1,31 @@
+{
+ "title_en": "[Graduate School] Submission of Applications to Extend the Thesis Submission Deadline, 2nd Semester of the 2026 Academic Year (Due 24 July)",
+ "summary": "Graduate students whose thesis submission deadline has passed, within the eligible period, may apply to extend it by submitting the application form to the department office in person or by email by Friday, 24 July 2026. Approval is subject to review by the Graduate School Academic Affairs Committee, and extensions may be granted for up to two years.",
+ "applies_to": "Master's students for whom at least 4 years but less than 6 years have passed since completing coursework (수료), and doctoral students for whom at least 6 years but less than 8 years have passed since completing coursework. Periods of military service and of pregnancy and childbirth are not counted toward the thesis submission deadline, but the extension is not automatic: affected students must also apply and obtain approval. Students who have passed the maximum extendable deadline (6 years after completion for Master's, 8 years for doctoral) cannot use this application and must instead apply for registration as a 'research student exceeding the thesis submission deadline' (학위논문제출기한 초과자 연구생).",
+ "dates": [
+  {
+   "what": "Deadline for submitting the thesis submission deadline extension application",
+   "when": "Friday, 24 July 2026",
+   "original_ko": "2026. 7. 24.(금)까지",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Download the application form attached to the original notice (학위논문제출기한 연장신청서 양식, .hwp file).",
+  "Complete one copy of the Application for Extension of the Thesis Submission Deadline (학위논문 제출기한 연장 신청서). In the 'extension requested' (연장신청) field, enter a date up to two years after your current thesis submission deadline (see the doctoral example in the notice).",
+  "Obtain your academic advisor's signature on the form, or instead obtain an approval email from your advisor to submit together with the form. Leave the Head of School signature field (학부장 서명란) blank.",
+  "Submit the form (and the advisor's approval email, if used) by Friday, 24 July 2026, either in person at the department administrative office (Building 301, Room 319) or by email. The contact email is given in the original notice.",
+  "If the extension is approved, register as a research student (연구생 등록) in the semester in which your thesis is reviewed (fee for Engineering fields: KRW 200,000).",
+  "Submit your thesis within the approved extended deadline."
+ ],
+ "translation": "[Graduate School] Submission of Applications to Extend the Thesis Submission Deadline, 2nd Semester of the 2026 Academic Year (Due 24 July)\nPosted: 22 July 2026\n\n1. Eligibility for applying to extend the thesis submission deadline\n- Master's programme: students for whom at least 4 years but less than 6 years have passed since completing coursework (수료)\n- Doctoral programme: students for whom at least 6 years but less than 8 years have passed since completing coursework\n※ Under Article 11, Paragraph 3 of the Regulations on the Conferral of Degrees (학위수여 규정), where a student whose thesis submission deadline has passed applies for an extension, the extension may be approved for a period of up to 2 years following review by the Graduate School Academic Affairs Committee (대학원학사위원회).\n(Maximum extendable deadline: up to 6 years after completing coursework for the Master's programme, and up to 8 years after completing coursework for the doctoral programme.)\n※ Periods of military service and periods of pregnancy and childbirth are not counted toward the thesis submission deadline. However, the deadline is not extended automatically; you must apply for an extension and obtain approval.\n\n2. Required documents\n- One copy of the Application for Extension of the Thesis Submission Deadline (학위논문 제출기한 연장 신청서) — see the attached file.\n\n3. Submission of the application\nA. Method of submission: Submit by Friday, 24 July 2026, to the department administrative office (학부행정실, Building 301, Room 319) or by email.\n※ Instead of the academic advisor's signature, an approval email from the advisor may be accepted; submit it together with the application form. Leave the Head of School signature field (학부장 서명란) blank.\nB. Example of how to complete the form (doctoral programme):\nIf the 'date of coursework completion' (수료년월) is 'August 2020', the thesis submission deadline is August 2026, so enter 'until August 2028' (2028년 8월까지) in the 'extension requested' (연장신청) field.\n\n4. Important notes\nA. Students approved for an extension of the thesis submission deadline must register as a research student (연구생 등록) in the semester in which they undergo thesis review (fee for Engineering fields: KRW 200,000).\nB. The thesis must be submitted within the approved extended deadline.\nC. Students who have passed the maximum extendable deadline must apply for registration as a 'research student exceeding the thesis submission deadline' (학위논문제출기한 초과자 연구생). → Related notice: the original notice links to a separate announcement ('Click!!'); that linked notice was not read.\n\n● Enquiries: Department administrative office (학부행정실, Building 301, Room 319). The contact person's details are given in the original notice.\n\nAttachment (1 file): 학위논문제출기한 연장신청서 양식 (3).hwp (35 KB) — the application form. The content of this attachment was not read.",
+ "id": 57904,
+ "text_hash": "cea3f8ff1a548bd4",
+ "images": 0,
+ "attachments": [
+  "학위논문제출기한 연장신청서 양식 (3).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

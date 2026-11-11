@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SNU Bridge</title>
+<style>
+/* Swiss signage: one typeface, black and white plus SNU blue, a visible grid, no rounding, everything left-aligned. */
+/* Yellow is used for cautions only, as on road and station signs. */
+:root { --bg:#fff; --ink:#000; --muted:#666; --hair:#c9c9c9; --tint:#f1f1f1; --blue:#002c84; --caution:#ffd60a; }
+@media (prefers-color-scheme: dark) { :root { --bg:#000; --ink:#fff; --muted:#a3a3a3; --hair:#4a4a4a; --tint:#1c1c1c; --blue:#7ea2ff; } }
+* { box-sizing:border-box; }
+[hidden] { display:none !important; }
+html { scroll-padding-top:72px; }
+body { margin:0; background:var(--bg); color:var(--ink); -webkit-font-smoothing:antialiased; overflow-x:clip;
+  font:17px/1.45 "Helvetica Neue",Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
+:is(a, button, summary, input):focus-visible { outline:3px solid var(--blue); outline-offset:2px; }
+
+.nav { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:2px solid var(--ink); }
+.nav div { max-width:980px; height:52px; margin:0 auto; padding:0 22px; display:flex; align-items:center; justify-content:space-between; }
+.nav .brand { font-size:17px; font-weight:700; color:var(--blue); text-decoration:none; }
+.nav nav { display:flex; gap:24px; align-self:stretch; }
+.nav nav a { display:flex; align-items:center; font-size:15px; color:var(--muted); text-decoration:none; border-bottom:4px solid transparent; margin-bottom:-2px; }
+.nav nav a[aria-current="page"] { color:var(--ink); font-weight:700; border-bottom-color:var(--blue); }
+main { max-width:980px; margin:0 auto; padding:0 22px 96px; }
+footer { max-width:936px; margin:0 auto; padding:20px 0 48px; border-top:2px solid var(--ink); font-size:13px; color:var(--muted); }
+
+/* page headers */
+.hero { padding:56px 0 8px; }
+.eyebrow { margin:0 0 16px; font-size:16px; font-weight:500; }
+h1 { margin:0; font-size:clamp(40px, 6.6vw, 64px); font-weight:700; line-height:1; letter-spacing:-.03em; text-wrap:balance; }
+.lede { margin:20px 0 32px; max-width:58ch; font-size:19px; line-height:1.4; color:var(--muted); text-wrap:pretty; }
+.band { margin:0 calc(50% - 50vw); padding:72px calc(50vw - 50%) 64px; background:var(--blue); color:var(--bg); }
+.band p { margin:0; font-size:16px; font-weight:500; }
+.band h1 { margin:24px 0 32px; font-size:clamp(56px, 12vw, 120px); line-height:.92; letter-spacing:-.045em; }
+.band p:last-child { max-width:56ch; font-size:20px; font-weight:400; line-height:1.4; }
+
+/* controls */
+.seg { display:inline-flex; flex-wrap:wrap; border:2px solid var(--ink); }
+.seg button { min-height:40px; padding:8px 18px; border:0; background:none; color:var(--ink); font:inherit; font-size:15px; cursor:pointer; }
+.seg button[aria-pressed="true"] { background:var(--ink); color:var(--bg); font-weight:700; }
+.pick { display:flex; align-items:center; flex-wrap:wrap; gap:8px 16px; margin-top:16px; font-size:14px; color:var(--muted); }
+.pick .note { flex-basis:100%; margin:0; }
+.note { margin:12px 0 0; font-size:13px; color:var(--muted); }
+.note a, .source a, .related a, .links a, .more, .notice .body p a { color:var(--blue); font-weight:700; text-decoration:none; }
+.trapline a { color:inherit !important; text-decoration:underline !important; }
+.source a::after, .related a::after, .links a::after, .more::after, .go::after, .tile a::after { content:" \2192"; }
+
+/* a black bar carries every section heading */
+.barhead, .group h2 { display:flex; justify-content:space-between; align-items:center; gap:16px; min-height:48px; margin:0; padding:8px 16px;
+  background:var(--ink); color:var(--bg); font-size:16px; font-weight:700; letter-spacing:0; }
+.barhead h2 { margin:0; font-size:16px; }
+.group h2 span { font-size:14px; font-weight:400; }
+.barhead .seg { border:1px solid var(--bg); }
+.barhead .seg button { min-height:30px; padding:3px 14px; font-size:14px; color:var(--bg); }
+.barhead .seg button[aria-pressed="true"] { background:var(--bg); color:var(--ink); }
+.block, .group { margin-top:56px; }
+.list { border-bottom:2px solid var(--ink); }
+
+/* home: programs as four columns, notices as a departure board */
+.gates { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); border-left:1px solid var(--ink); }
+.gate { display:flex; flex-direction:column; min-height:280px; padding:20px 16px; border-right:1px solid var(--ink); border-bottom:2px solid var(--ink); text-decoration:none; color:inherit; }
+.gate b { font-size:clamp(60px, 9.4vw, 96px); font-weight:700; line-height:.9; letter-spacing:-.045em; color:var(--blue); }
+.gate small { margin-top:8px; font-size:13px; color:var(--muted); }
+.gate h3 { margin:44px 0 0; font-size:24px; line-height:1.08; letter-spacing:-.015em; }
+.gate p { flex:1; margin:8px 0 0; font-size:14px; color:var(--muted); }
+.gate .go { margin-top:16px; font-size:14px; font-weight:700; }
+.gate:hover, .gate:focus-visible, .flap:hover, .flap:focus-visible { background:var(--blue); color:var(--bg); outline:0; }
+.gate:hover :is(b, small, p), .gate:focus-visible :is(b, small, p) { color:inherit; }
+.flaps { background:var(--ink); color:var(--bg); }
+.flap { display:grid; grid-template-columns:84px minmax(0, 1fr) auto; gap:16px; align-items:baseline; padding:18px 16px; border-top:1px solid rgba(128,128,128,.5); text-decoration:none; color:inherit; }
+.flap time { font-size:14px; letter-spacing:.04em; text-transform:uppercase; font-variant-numeric:tabular-nums; opacity:.72; }
+.swap { display:grid; }
+.swap span { grid-area:1 / 1; font-size:20px; font-weight:500; line-height:1.25; text-wrap:pretty;
+  transition:transform .28s cubic-bezier(.4,0,.2,1); transition-delay:calc(var(--i) * 110ms); }
+/* the titles turn like a departure board: the old line folds away, then the new one folds in */
+.board[data-lang="en"] .ko, .board[data-lang="ko"] .en { transform:rotateX(90deg); }
+.board[data-lang="en"] .en, .board[data-lang="ko"] .ko { transition-delay:calc(var(--i) * 110ms + .28s); }
+.more { display:inline-block; margin-top:8px; }
+
+/* requirements: this month, progress, cards */
+.tiles { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); margin-top:40px; border-top:2px solid var(--ink); border-left:1px solid var(--ink); }
+.tile { padding:16px; border-right:1px solid var(--ink); border-bottom:2px solid var(--ink); }
+.tile small { display:block; font-size:13px; color:var(--muted); }
+.tile h3 { margin:4px 0 16px; font-size:40px; line-height:1; letter-spacing:-.03em; color:var(--blue); }
+.tile a, .tile span { display:block; padding:3px 0; font-size:15px; }
+.tile a { color:inherit; font-weight:500; text-decoration:none; }
+.tile a:hover { color:var(--blue); }
+.tile span { color:var(--muted); }
+.progress { margin-top:48px; }
+.progress .num { font-size:17px; color:var(--muted); }
+.progress .num b { margin-right:6px; font-size:64px; font-weight:700; line-height:1; letter-spacing:-.04em; color:var(--ink); }
+.bar { height:8px; margin-top:12px; background:var(--hair); }
+.bar i { display:block; height:100%; width:0; background:var(--blue); transition:width .3s; }
+details + details { border-top:1px solid var(--hair); }
+summary { list-style:none; display:flex; align-items:center; gap:16px; min-height:60px; padding:14px 16px; cursor:pointer; }
+summary::-webkit-details-marker { display:none; }
+summary::after { content:"+"; flex:none; width:20px; text-align:center; font-size:24px; line-height:1; }
+details[open] > summary::after { content:"\2212"; }
+summary:hover :is(.title, .en) { color:var(--blue); }
+summary input { appearance:none; -webkit-appearance:none; flex:none; width:24px; height:24px; margin:0; border:2px solid var(--ink); border-radius:0; background:var(--bg); cursor:pointer; display:grid; place-items:center; }
+summary input:checked { background:var(--blue); border-color:var(--blue); }
+summary input:checked::after { content:""; width:6px; height:11px; margin-top:-2px; border:solid var(--bg); border-width:0 2px 2px 0; transform:rotate(45deg); }
+summary .repeat { flex:none; width:24px; text-align:center; font-size:18px; color:var(--muted); }
+summary .title { flex:1; font-size:18px; font-weight:700; letter-spacing:-.01em; }
+summary .title small { display:block; font-size:14px; font-weight:400; letter-spacing:0; color:var(--muted); }
+details.done .title { color:var(--muted); }
+.tag { padding:3px 8px; border:1px solid var(--ink); font-size:12px; white-space:nowrap; }
+.tag.trap { background:var(--caution); border-color:var(--caution); color:#000; font-weight:700; }
+.body { max-width:78ch; padding:0 16px 24px 56px; font-size:16px; line-height:1.5; }
+.body ul { margin:0 0 12px; padding-left:18px; }
+.body li { margin-bottom:2px; }
+.body p { margin:0 0 6px; }
+.body b { font-weight:700; }
+.trapline { margin-top:12px !important; padding:10px 12px; background:var(--caution); color:#000; }
+.source { margin-top:16px; padding-top:14px; border-top:1px solid var(--hair); font-size:13px; color:var(--muted); }
+.source blockquote { margin:8px 0; padding:10px 12px; background:var(--tint); color:var(--ink); font-size:14px; }
+.related { margin-top:12px; }
+.related a { display:block; padding:2px 0; }
+
+/* notices */
+.notice summary { align-items:flex-start; }
+.notice .head { flex:1; }
+.notice .meta { display:flex; align-items:center; gap:10px; margin-bottom:4px; font-size:13px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.notice .en { font-size:18px; font-weight:700; letter-spacing:-.01em; }
+.notice .body { padding-left:16px; }
+.notice .ko { margin:0 0 12px; font-size:14px; color:var(--muted); }
+.notice table { width:100%; margin:4px 0 12px; border-collapse:collapse; }
+.notice td { padding:7px 0; border-top:1px solid var(--hair); vertical-align:top; }
+.notice td:first-child { padding-right:14px; }
+.notice td small { display:block; font-size:13px; color:var(--muted); }
+.notice ol { margin:4px 0 12px; padding-left:20px; }
+.notice h4 { margin:14px 0 4px; font-size:16px; font-weight:700; }
+.notice .full summary { min-height:0; padding:8px 0; font-size:14px; font-weight:700; color:var(--blue); }
+.notice .full summary::after { font-size:18px; }
+.notice .full p { margin:0 0 10px; white-space:pre-wrap; }
+.links { display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:12px; font-size:14px; }
+
+@media (prefers-reduced-motion: reduce) { .swap span, .bar i { transition:none; } }
+@media (max-width:860px) { .gates { grid-template-columns:repeat(2, minmax(0, 1fr)); } .gate { min-height:232px; } .gate h3 { margin-top:28px; } footer { margin:0 22px; } }
+@media (max-width:640px) {
+  .band { padding-top:44px; padding-bottom:44px; } .hero { padding-top:40px; }
+  .gate { padding:16px 12px; } .gate h3 { font-size:19px; overflow-wrap:anywhere; }
+  .flap { grid-template-columns:minmax(0, 1fr) auto; gap:4px 12px; } .flap time { grid-column:1 / -1; } .swap span { font-size:18px; }
+  .tiles { grid-template-columns:minmax(0, 1fr); } .body { padding-left:16px; } .tag.when { display:none; }
+  .seg button { padding:8px 13px; } #programs { display:grid; grid-template-columns:1fr 1fr; } #programs button { text-align:left; } .nav nav { gap:16px; } .progress .num b { font-size:48px; }
+}
+</style>
+</head>
+<body>
+<header class="nav"><div><a class="brand" href="#home" aria-label="SNU Bridge home">SNU Bridge</a><nav aria-label="Sections"><a href="#requirements" id="tab-requirements">Requirements</a><a href="#notices" id="tab-notices">Notices</a></nav></div></header>
+<main>
+  <div id="view-home" hidden></div>
+  <div id="view-requirements">
+    <section class="hero">
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1>Graduation Requirements</h1>
+      <p class="lede">A guide for international students, prepared in English from official department documents. Each item cites its source.</p>
+      <div class="seg" id="programs" role="group" aria-label="Program"></div>
+      <div class="pick" id="years-row" hidden><span>Year of admission</span><div class="seg" id="years" role="group" aria-label="Year of admission"></div>
+        <p class="note" id="years-note"></p></div>
+    </section>
+    <div id="schedule">
+      <section class="tiles" id="months" aria-label="Schedule"></section>
+      <p class="note">Months are taken from the graduate handbook. Exact dates are announced in each semester's notices.</p>
+    </div>
+    <section class="progress" aria-label="Progress">
+      <div class="num"><b id="done">0</b> of <span id="total">0</span> completed</div>
+      <div class="bar"><i id="bar"></i></div>
+      <p class="note">Progress is stored on this device only.</p>
+    </section>
+    <div id="groups"></div>
+  </div>
+  <div id="view-notices" hidden>
+    <section class="hero">
+      <p class="eyebrow" id="eyebrow-notices"></p>
+      <h1>Department Notices</h1>
+      <p class="lede">Notices from the department's academic board, with English titles. Each entry links to the original notice.</p>
+      <div class="seg" id="audiences" role="group" aria-label="Audience"></div>
+    </section>
+    <p class="note" id="notice-note"></p>
+    <div id="notice-list"></div>
+  </div>
+</main>
+<footer>
+  SNU Bridge is a student project for the 2nd SNU Generative AI Competition. It is not an official Seoul National University website.
+  English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated <span id="built"></span>.
+</footer>
+<script>
+const DATA = __DATA__;
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const deptId = Object.keys(DATA.departments)[0];
+const dept = DATA.departments[deptId];
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} },
+};
+let program = dept.programs.includes(store.get("bridge:program")) ? store.get("bridge:program") : dept.default_program;
+// Entry years exist only where the rules differ by year of admission (undergraduate). The latest year is the default.
+const yearsOf = (p) => [...new Set(dept.cards.filter((c) => c.programs.includes(p)).flatMap((c) => c.entry_years || []))].sort();
+let entryYear = Number(store.get("bridge:year")) || 0;
+const yearOf = (p) => { const ys = yearsOf(p); return !ys.length ? 0 : ys.includes(entryYear) ? entryYear : ys[ys.length - 1]; };
+const yearNow = () => yearOf(program);
+const audienceOf = (p) => (p === "undergraduate" ? "Undergraduate" : "Graduate");
+
+function el(tag, attrs, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "class") node.className = v; else if (k.startsWith("on")) node.addEventListener(k.slice(2), v);
+    else if (v !== false && v !== null) node.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of children) if (c !== null && c !== "") node.append(c);
+  return node;
+}
+const doneKey = (id) => `bridge:${deptId}:${program}:${id}`;
+
+// Cards written for one program come before cards shared by several, so the main rule leads its group.
+const cardsOf = (p) => dept.cards.filter((c) => c.programs.includes(p) && (!(c.entry_years || []).length || c.entry_years.includes(yearOf(p))))
+  .sort((a, b) => a.programs.length - b.programs.length);
+const cardsNow = () => cardsOf(program);
+
+function openCard(id) {
+  const node = document.getElementById("card-" + id);
+  if (node) { node.open = true; node.scrollIntoView({ behavior: "smooth", block: "center" }); }
+}
+
+function renderMonths() {
+  document.getElementById("schedule").hidden = !cardsNow().some((c) => c.events.length);
+  const now = new Date().getMonth() + 1;
+  document.getElementById("months").replaceChildren(...[[now, "Current month"], [now % 12 + 1, "Following month"]].map(([m, label]) => {
+    const items = cardsNow().flatMap((c) => c.events.filter((e) => e.months.includes(m)).map((e) => [e.label, c.id]));
+    return el("div", { class: "tile" }, el("small", null, label), el("h3", null, MONTHS[m - 1]),
+      ...(items.length ? items.map(([text, id]) => el("a", { href: "#card-" + id, onclick: (ev) => { ev.preventDefault(); openCard(id); } }, text))
+        : [el("span", null, "No scheduled items in the handbook")]));
+  }));
+}
+
+function renderCount() {
+  const tickable = cardsNow().filter((c) => c.group !== "every_semester");
+  const done = tickable.filter((c) => store.get(doneKey(c.id))).length;
+  document.getElementById("done").textContent = done;
+  document.getElementById("total").textContent = tickable.length;
+  document.getElementById("bar").style.width = tickable.length ? `${(100 * done) / tickable.length}%` : "0";
+}
+
+function relatedNotices(c) {
+  const list = dept.notices.filter((n) => n.cards.includes(c.id) && [audienceOf(program), "All students"].includes(n.audience)).slice(0, 3);
+  if (!list.length) return null;
+  return el("div", { class: "related" }, el("b", null, "Recent notices. "),
+    ...list.map((n) => el("a", { href: n.url, target: "_blank", rel: "noopener" }, `${n.date}  ${n.title_en || n.title_ko}`)));
+}
+
+// Steps of one case arrive as "Online attendance: do this", repeated on every step of that case (see bridge/briefs.py).
+// Show the case name once as a heading with its own numbered list. Steps outside a case keep one running count.
+function stepBlocks(steps) {
+  const runs = [];
+  for (const text of steps) {
+    const m = text.match(/^([^:.]{3,48}):\s+([\s\S]+)$/), last = runs[runs.length - 1];
+    if (m && last && last.label === m[1]) last.items.push(m[2]);
+    else runs.push({ label: m ? m[1] : null, items: [m ? m[2] : text], whole: text });
+  }
+  const blocks = [];
+  let plain = null, counted = 0;
+  for (const run of runs) {
+    if (run.label && run.items.length > 1) {
+      plain = null;
+      blocks.push(el("h4", null, run.label), el("ol", null, ...run.items.map((t) => el("li", null, t))));
+    } else {
+      if (!plain) blocks.push(plain = el("ol", { start: String(counted + 1) }));
+      plain.append(el("li", null, run.whole));
+      counted += 1;
+    }
+  }
+  return blocks;
+}
+
+const assistantLink = () => el("a", { href: dept.assistant.url, target: "_blank", rel: "noopener" }, dept.assistant.name);
+let audience = audienceOf(program);
+function renderNotices() {
+  const options = { Graduate: ["Graduate", "All students"], Undergraduate: ["Undergraduate", "All students"], All: null };
+  document.getElementById("audiences").replaceChildren(...Object.keys(options).map((a) =>
+    el("button", { type: "button", "aria-pressed": String(a === audience), onclick: () => { audience = a; renderNotices(); } }, a)));
+  const shown = dept.notices.filter((n) => !options[audience] || options[audience].includes(n.audience));
+  document.getElementById("notice-note").textContent =
+    `${shown.length} notices since ${dept.board.since}. English titles are unofficial translations; the original notices are in Korean.`;
+  const byMonth = new Map();
+  for (const n of shown) { const k = n.date.slice(0, 7); byMonth.set(k, [...(byMonth.get(k) || []), n]); }
+  document.getElementById("notice-list").replaceChildren(...[...byMonth].map(([k, list]) =>
+    el("section", { class: "group month" },
+      el("h2", null, `${MONTHS[Number(k.slice(5)) - 1]} ${k.slice(0, 4)}`, el("span", null, `${list.length} notices`)),
+      el("div", { class: "list" }, ...list.map((n) => {
+        const card = cardsNow().find((c) => n.cards.includes(c.id));
+        const b = n.brief;
+        const links = el("div", { class: "links" },
+          el("a", { href: n.url, target: "_blank", rel: "noopener" }, "Original notice"),
+          card ? el("a", { href: "#card-" + card.id, onclick: (ev) => { ev.preventDefault(); history.replaceState(null, "", "#card-" + card.id); show("requirements", true); openCard(card.id); } }, "Related requirement: " + card.title) : null);
+        return el("details", { class: "notice", id: "notice-" + n.id },
+          el("summary", null, el("div", { class: "head" },
+            el("div", { class: "meta" }, n.date,
+              n.edited || (b && b.revised) ? el("span", { class: "tag trap" }, "Revised") : null,
+              b && b.dates.length ? el("span", { class: "tag" }, `${b.dates.length} ${b.dates.length === 1 ? "date" : "dates"}`) : null),
+            el("div", { class: "en" }, n.title_en || "Translation pending"))),
+          el("div", { class: "body" },
+            el("p", { class: "ko", lang: "ko" }, n.title_ko),
+            ...(b ? [
+              el("p", null, b.summary),
+              b.dates.length ? el("table", null, ...b.dates.map((d) => el("tr", null,
+                el("td", null, d.what), el("td", null, d.when,
+                  el("small", { lang: "ko" }, d.original_ko + (d.verified ? "" : "  (not found in the notice text)")))))) : null,
+              ...stepBlocks(b.steps),
+              b.images ? el("p", { class: "trapline" }, el("b", null, "Caution. "),
+                `${b.images} image${b.images === 1 ? "" : "s"} in this notice could not be read. `,
+                ...(dept.assistant ? ["For English, paste a screenshot into ", assistantLink(), "."] : ["Please check the original notice."])) : null,
+              b.attachments.length ? el("p", null, el("b", null, "Attachments (Korean). "), b.attachments.join("; ") + ". ",
+                ...(dept.assistant ? ["For English, upload to ", assistantLink(), "."] : [])) : null,
+              el("details", { class: "full" }, el("summary", null, "Full English translation"),
+                ...b.translation.split(/\n\s*\n/).map((t) => el("p", null, t))),
+            ] : [el("p", null, "A translation of this notice is being prepared.")]),
+            links,
+            el("div", { class: "source" }, b ? `Translated by AI on ${b.written}. AI can make mistakes. Please check important details against the original notice.`
+              : "Title translated manually. Unofficial.")));
+      })))));
+}
+
+function openNotice(id) {
+  const node = document.getElementById("notice-" + id);
+  if (node) { node.open = true; node.scrollIntoView({ block: "center" }); }
+}
+
+// Home: what the site is, one column per program, and the latest notices as a board that turns from Korean to English.
+const longDay = (iso) => `${iso.slice(8)} ${MONTHS[Number(iso.slice(5, 7)) - 1].slice(0, 3)}`;
+function programFacts(p) {
+  const cards = cardsOf(p), years = yearsOf(p);
+  const fact = cards.find((c) => c.id === dept.headline_cards[p]);
+  const parts = fact ? fact.key.match(/^(\d+)\s+([^;]+)(?:;\s*(.+))?$/) : null;  // "24 credits; 3.0 average"
+  return { label: DATA.program_labels[p], items: `${cards.length} items`, number: parts ? parts[1] : "", unit: parts ? parts[2] : "",
+    rest: [parts ? parts[3] : fact ? fact.key : "", years.length ? `Admitted ${years[0]} to ${years[years.length - 1]}` : ""].filter(Boolean).join(" · "),
+    go: () => { program = p; store.set("bridge:program", p); audience = audienceOf(p); render(); } };
+}
+let boardPlayed = false;
+function setBoardLang(lang) {
+  document.getElementById("board").dataset.lang = lang;
+  document.getElementById("board-lang").replaceChildren(...[["ko", "한국어"], ["en", "English"]].map(([k, label]) =>
+    el("button", { type: "button", "aria-pressed": String(k === lang), lang: k, onclick: () => setBoardLang(k) }, label)));
+}
+function renderHome() {
+  document.getElementById("view-home").replaceChildren(
+    el("section", { class: "band" }, el("p", null, `Department of ${dept.name}`), el("h1", null, "SNU Bridge"),
+      el("p", null, "Graduation requirements and department notices in English, for international students. Prepared from official department documents; every item links to its source.")),
+    el("section", { class: "block", "aria-label": "Programs" },
+      el("div", { class: "barhead" }, el("h2", null, "Graduation requirements")),
+      el("div", { class: "gates" }, ...dept.programs.map(programFacts).map((f) =>
+        el("a", { class: "gate", href: "#requirements", onclick: f.go }, el("b", null, f.number), el("small", null, f.unit),
+          el("h3", null, f.label), el("p", null, f.rest), el("span", { class: "go" }, f.items))))),
+    el("section", { class: "block board", id: "board", "aria-label": "Latest notices" },
+      el("div", { class: "barhead" }, el("h2", null, "Latest notices"),
+        el("div", { class: "seg", id: "board-lang", role: "group", "aria-label": "Language of the titles" })),
+      el("div", { class: "flaps" }, ...dept.notices.slice(0, 5).map((n, i) =>
+        el("a", { class: "flap", href: "#notice-" + n.id, "aria-label": `${n.date}: ${n.title_en || n.title_ko}` },
+          el("time", { datetime: n.date }, longDay(n.date)),
+          el("span", { class: "swap", style: `--i:${i}`, "aria-hidden": "true" },
+            el("span", { class: "ko", lang: "ko" }, n.title_ko), el("span", { class: "en" }, n.title_en || n.title_ko)),
+          el("span", { "aria-hidden": "true" }, "→")))),
+      el("p", { class: "note" }, `From the department's academic board, as of ${DATA.built}. Unofficial translations.`),
+      el("a", { class: "more", href: "#notices" }, `All ${dept.notices.length} notices since ${dept.board.since}`)));
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  setBoardLang(boardPlayed || still ? "en" : "ko");
+  if (!boardPlayed && !still) setTimeout(() => setBoardLang("en"), 1100);  // shown once: the board turns from Korean to English
+  boardPlayed = true;
+}
+
+function show(view, keepScroll) {
+  for (const v of ["home", "requirements", "notices"]) {
+    document.getElementById("view-" + v).hidden = v !== view;
+    if (v !== "home") document.getElementById("tab-" + v).setAttribute("aria-current", v === view ? "page" : "false");
+  }
+  if (view === "home") renderHome();
+  if (view === "notices") renderNotices();
+  if (!keepScroll) window.scrollTo(0, 0);
+}
+
+function cardNode(c) {
+  const recurring = c.group === "every_semester";
+  const isDone = !recurring && !!store.get(doneKey(c.id));
+  const node = el("details", { class: isDone ? "done" : "", id: "card-" + c.id });
+  const tick = recurring ? el("span", { class: "repeat", title: "Every semester", "aria-hidden": "true" }, "↻")
+    : el("input", { type: "checkbox", "aria-label": "Mark as completed: " + c.title, checked: isDone,
+        onclick: (ev) => ev.stopPropagation(),
+        onchange: (ev) => { store.set(doneKey(c.id), ev.target.checked ? "1" : null); node.classList.toggle("done", ev.target.checked); renderCount(); } });
+  let src = dept.sources[c.source_file] || { name: c.source_file };
+  // A document issued once per entry year: cite the one for the student's own year.
+  if (src.series) src = Object.values(dept.sources).find((s) => s.series === src.series && s.entry_year === yearNow()) || src;
+  node.append(
+    el("summary", null, tick, el("span", { class: "title" }, c.title, c.key ? el("small", null, c.key) : null),
+      c.when ? el("span", { class: "tag when" }, c.when) : null,
+      c.trap ? el("span", { class: "tag trap" }, "Caution") : null),
+    el("div", { class: "body" },
+      el("ul", null, ...c.rule.map((line) => el("li", null, line))),
+      el("p", null, el("b", null, "Relevance. "), c.why),
+      c.when ? el("p", null, el("b", null, "Schedule. "), c.when) : null,
+      c.applies_from ? el("p", null, el("b", null, "Applicability. "), c.applies_from) : null,
+      c.trap ? el("p", { class: "trapline" }, el("b", null, "Caution. "), c.trap) : null,
+      relatedNotices(c),
+      el("div", { class: "source" },
+        el("b", null, "Source. "), `${src.name}, page ${c.source_page}. `,
+        c.check === "confirmed" ? "Verified against the source page." : "Verification pending.",
+        el("blockquote", { lang: "ko" }, c.source_quote_ko),
+        src.url ? el("a", { href: src.url, target: "_blank", rel: "noopener" }, "Official page where this document is published") : null)));
+  return node;
+}
+
+function render() {
+  document.getElementById("eyebrow").textContent = `Department of ${dept.name}`;
+  document.getElementById("eyebrow-notices").textContent = `Department of ${dept.name}`;
+  document.getElementById("programs").replaceChildren(...dept.programs.map((p) =>
+    el("button", { type: "button", "aria-pressed": String(p === program),
+      onclick: () => { program = p; store.set("bridge:program", p); audience = audienceOf(p); render(); } }, DATA.program_labels[p])));
+  const years = yearsOf(program);
+  document.getElementById("years-row").hidden = !years.length;
+  const series = Object.values(dept.sources).find((s) => s.entry_year);
+  document.getElementById("years-note").replaceChildren(...(years.length ? [`Requirements for students admitted before ${years[0]} are not included. `,
+    series && series.url ? el("a", { href: series.url, target: "_blank", rel: "noopener" }, "Department page for earlier years") : ""] : []));
+  document.getElementById("years").replaceChildren(...years.map((y) =>
+    el("button", { type: "button", "aria-pressed": String(y === yearNow()),
+      onclick: () => { entryYear = y; store.set("bridge:year", String(y)); render(); } }, String(y))));
+  renderMonths();
+  renderCount();
+  document.getElementById("groups").replaceChildren(...Object.entries(DATA.groups).map(([group, label]) => {
+    const list = cardsNow().filter((c) => c.group === group);
+    return list.length ? el("section", { class: "group" }, el("h2", null, label, el("span", null, `${list.length} items`)),
+      el("div", { class: "list" }, ...list.map(cardNode))) : "";
+  }));
+  document.getElementById("built").textContent = DATA.built;
+}
+render();
+// Addresses: (none) or #home, #requirements, #notices, #card-<id>, #notice-<id>.
+function route() {
+  const h = location.hash;
+  if (h.startsWith("#card-")) { show("requirements", true); openCard(h.slice(6)); }
+  else if (h.startsWith("#notice-")) { audience = "All"; show("notices", true); openNotice(h.slice(8)); }
+  else show(h === "#notices" ? "notices" : h === "#requirements" ? "requirements" : "home");
+}
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>

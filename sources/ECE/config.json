@@ -1,0 +1,101 @@
+{
+  "department": "Electrical and Computer Engineering",
+  "department_ko": "전기·정보공학부",
+  "programs": [
+    "undergraduate",
+    "masters",
+    "phd",
+    "integrated"
+  ],
+  "files": [
+    {
+      "file": "[웹용] 2026년 대학원학사안내서_최종.pdf",
+      "name": "Graduate handbook 2026",
+      "pages": "4-22,25",
+      "note": "Pages 23-24 list professors by research group and are skipped. Pages 26+ cover welfare and military service.",
+      "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=56747",
+      "found_on": "ECE academic board notice where this file is attached"
+    },
+    {
+      "file": "수료 자가진단 체크리스트.xlsx",
+      "name": "Completion self-check sheet",
+      "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=56747",
+      "found_on": "ECE academic board notice where this file is attached"
+    },
+    {
+      "file": "1. 논문제출자격시험 영어과목 기준 점수.pdf",
+      "name": "Qualification exam: English score thresholds",
+      "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57932",
+      "found_on": "ECE academic board notice where this file is attached"
+    },
+    {
+      "file": "2. 대학원 논문제출자격시험 교과목표.pdf",
+      "name": "Qualification exam: subject table",
+      "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57932",
+      "found_on": "ECE academic board notice where this file is attached"
+    },
+    {
+      "file": "3. 논문제출자격시험 종합 점수 및 각 항목별 점수 일람.pdf",
+      "name": "Qualification exam: score table",
+      "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57932",
+      "found_on": "ECE academic board notice where this file is attached"
+    },
+    {
+      "file": "4. 특강 형식의 모듈별 석사 및 박사세미나 목록.pdf",
+      "name": "Module seminar list",
+      "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57932",
+      "found_on": "ECE academic board notice where this file is attached"
+    },
+    {
+      "file": "2023학년도 이수규정_전기정보공학부.pdf",
+      "name": "Undergraduate graduation audit card, 2023 entrants",
+      "url": "https://ece.snu.ac.kr/academics/undergraduate/requirements",
+      "series": "undergraduate-audit-card",
+      "entry_year": 2023
+    },
+    {
+      "file": "2024학년도 이수규정_전기정보공학부.pdf",
+      "name": "Undergraduate graduation audit card, 2024 entrants",
+      "url": "https://ece.snu.ac.kr/academics/undergraduate/requirements",
+      "series": "undergraduate-audit-card",
+      "entry_year": 2024
+    },
+    {
+      "file": "2025학년도 이수규정_전기정보공학부.pdf",
+      "name": "Undergraduate graduation audit card, 2025 entrants",
+      "url": "https://ece.snu.ac.kr/academics/undergraduate/requirements",
+      "series": "undergraduate-audit-card",
+      "entry_year": 2025
+    },
+    {
+      "file": "2026학년도 이수규정_전기정보공학부.pdf",
+      "name": "Undergraduate graduation audit card, 2026 entrants",
+      "url": "https://ece.snu.ac.kr/academics/undergraduate/requirements",
+      "series": "undergraduate-audit-card",
+      "entry_year": 2026
+    }
+  ],
+  "skipped": [
+    {
+      "file": "[붙임2] 2026학년도 2학기 모듈별 석박세미나 수업조교 명단_홈페이지 공지용.pdf",
+      "why": "Lists people by name. Never read or published."
+    }
+  ],
+  "board": {
+    "name": "ECE academic notices (학사)",
+    "list_url": "https://ece.snu.ac.kr/community/academics",
+    "detail_url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx={id}",
+    "since": "2026-07-01"
+  },
+  "default_program": "masters",
+  "headline_cards": {
+    "undergraduate": "ug-degree-total",
+    "masters": "credits-total",
+    "phd": "credits-total-phd",
+    "integrated": "credits-total-integrated"
+  },
+  "assistant": {
+    "name": "ChatGPT Edu",
+    "url": "https://chatgpt.com"
+  }
+}

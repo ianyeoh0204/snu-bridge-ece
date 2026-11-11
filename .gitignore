@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+out/
+# built by `python -m bridge site`; the published copy is built by the workflow
+site/
+# lists people by name; never read, never uploaded
+sources/**/*명단*
+# the department's own documents: downloaded by hand, never republished here (see README)
+sources/**/*.pdf
+sources/**/*.xlsx
+sources/**/*.hwp
+sources/**/*.hwpx

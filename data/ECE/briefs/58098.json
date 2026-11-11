@@ -1,0 +1,41 @@
+{
+ "title_en": "[2026 Academic Year, 2nd Semester] Graduation Project (Electrical Engineering Design Project) – Second Interim Presentation",
+ "summary": "The second interim presentation of the Graduation Project will be held on Thursday, 8 October at 18:30 in rooms assigned by module, with attendance checked at the exact start time. The final poster presentation (fourth session) has been moved from Thursday, 19 November to Friday, 20 November.",
+ "applies_to": "Students in the 2026 Academic Year 2nd Semester Graduation Project (Electrical Engineering Design Project [전기공학설계프로젝트]); the notices and module assignments were sent to the email addresses written on the interview confirmation forms [면담확인서] that students submitted.",
+ "dates": [
+  {
+   "what": "Second interim presentation of the Graduation Project",
+   "when": "Thursday, 8 October, 18:30",
+   "original_ko": "10월 8일 (목) 18:30",
+   "verified": true
+  },
+  {
+   "what": "Final poster presentation (fourth session), original date (cancelled)",
+   "when": "Thursday, 19 November",
+   "original_ko": "11.19(목)",
+   "verified": true
+  },
+  {
+   "what": "Final poster presentation (fourth session), new date",
+   "when": "Friday, 20 November",
+   "original_ko": "11.20 (금)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Check the email sent to the address written on your interview confirmation form [면담확인서] for the notice and your assigned module.",
+  "If you did not receive the email, be sure to inform the department office contact (contact details are in the original notice).",
+  "If you wrote a non-SNU address (for example, Naver Mail) on the form and wish to change it to your SNU account, inform the department office contact by email.",
+  "If you cannot attend because of reserve forces training [예비군], an academic conference [학회] or a similar reason, inform the department office contact.",
+  "Attend the second interim presentation on Thursday, 8 October at 18:30 in the room for your module; attendance is checked at the exact start time, so avoid unexcused lateness or absence.",
+  "Check the changed date of the final poster presentation (Friday, 20 November) in your email."
+ ],
+ "translation": "The second interim presentation of the Graduation Project will take place on Thursday, 8 October.\n\nThe notice and your assigned module have been sent to the email address written on the interview confirmation form [면담확인서] you submitted. Please check it. Any student who did not receive the email must inform the staff member in charge at the department office (contact details are in the original notice).\n\nEmails are being sent to the address written on the interview confirmation form. If you wrote an address such as Naver Mail and wish to change it to your SNU account, please let the department office know by email.\n\nAttendance will be checked at the exact start time, so please take care not to be late or absent without permission. (If you are unable to attend for a reason such as reserve forces training [예비군] or an academic conference [학회], please inform the staff member in charge.)\n\nIn addition, the date of the fourth session of the Graduation Project, the final poster presentation, has been changed from 11.19 (Thursday) to 11.20 (Friday). Please also check the related schedule (see your email).\n\nhttps://ece.snu.ac.kr/community/academics?md=v&bbsidx=57944 (the content of this linked page was not read).\n\n<Teaching assistants in charge and classrooms by module>\n* Session 2: 8 October (Thursday), 18:30\n\nModule | Classroom\nSemiconductor 1 [반도체1] | Room 202\nSemiconductor 2 [반도체2] | Room 818\nElectrical Energy [전기에너지] | Room 103\nElectrophysics [전자물리] | Room 104\nCommunications [통신] | Room 201\nControl [제어] | Room 302\nComputer 1 [컴퓨터1] | Room 102\nComputer 2 [컴퓨터2] | Room 118\nBio [바이오] | Room 106\n\n(The original table also lists the name of the teaching assistant leading each module; names are omitted here. Please refer to the original notice.)\n\n*Inquiries: Department Office, Building 301, Room 308 (the contact person and email address are in the original notice).",
+ "id": 58098,
+ "text_hash": "7113ded97ffd18e9",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

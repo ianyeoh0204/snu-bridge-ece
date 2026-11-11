@@ -1,0 +1,33 @@
+{
+ "title_en": "Information Session on the Recruitment of Outgoing Exchange Students for Semester 2 of the 2027 Academic Year",
+ "summary": "An information session on the recruitment of outgoing exchange students for Semester 2 of the 2027 academic year will be held on 30 October 2026 in Building 152. The same session will be held twice, in the morning and in the afternoon, and interested students are encouraged to attend.",
+ "applies_to": "Undergraduate and graduate students interested in being sent to a foreign university on exchange.",
+ "dates": [
+  {
+   "what": "Information session (morning session)",
+   "when": "Friday, 30 October 2026, 10:00–11:30",
+   "original_ko": "2026. 10. 30.(금) 오전 10:00 - 11:30",
+   "verified": true
+  },
+  {
+   "what": "Information session (afternoon session, same content as the morning session)",
+   "when": "Friday, 30 October 2026, 14:00–15:30",
+   "original_ko": "오후 14:00 - 15:30",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Attend one of the two sessions on Friday, 30 October 2026 (10:00–11:30 or 14:00–15:30); both sessions cover the same content.",
+  "Go to the 1st-floor Seminar Room of Building 152 (CJ International Center) [152동 1층 세미나실(CJ인터내셔널센터)].",
+  "For detailed information, see the page linked in the notice: https://oga.snu.ac.kr/outgoing_notice-board/?mod=document&uid=3125",
+  "Direct any questions to the Office of International Affairs [국제처]; the contact details are given in the original notice."
+ ],
+ "translation": "Information Session on the Recruitment of Outgoing Exchange Students for Semester 2 of the 2027 Academic Year\n\nAn information session on the recruitment of outgoing exchange students for Semester 2 of the 2027 academic year will be held. Interested students are encouraged to attend.\n\n1. Date and time: Friday, 30 October 2026, 10:00–11:30 (morning) / 14:00–15:30 (afternoon)\n* The same content will be presented twice, once in the morning and once in the afternoon.\n\n2. Venue: Seminar Room, 1st floor, Building 152 (CJ International Center) [152동 1층 세미나실(CJ인터내셔널센터)]\n\n3. Main content: General information on the outgoing exchange semester\n\n4. Who should attend: Undergraduate and graduate students interested in being sent to a foreign university\n\n5. Detailed information: https://oga.snu.ac.kr/outgoing_notice-board/?mod=document&uid=3125\n\n6. Inquiries: Office of International Affairs [국제처]. The contact person and telephone number are given in the original notice.",
+ "id": 58161,
+ "text_hash": "cb3c64feb9d3ef3f",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

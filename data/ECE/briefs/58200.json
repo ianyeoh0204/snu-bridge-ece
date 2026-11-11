@@ -1,0 +1,28 @@
+{
+ "title_en": "Notice on Tuition Payment and Refund Schedule for the 2026 Academic Year Winter Session",
+ "summary": "This notice announces the tuition payment and refund schedule for the 2026 Academic Year Winter Session and asks students to pay within the payment period. Courses with fewer than 20 paid students will be finally cancelled on 8 December 2026 (Tuesday); the tuition amounts, payment period and refund details are given only in the attached files.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Final course cancellation (courses with fewer than 20 students who have paid tuition)",
+   "when": "8 December 2026 (Tuesday)",
+   "original_ko": "2026.12.08.(화)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Read the attached payment guide to find the tuition amount, the payment period and the refund details. An English version is attached: \"[Eng] Winter 2026 Session Payment & Refunds Information.pdf\".",
+  "Pay the tuition within the payment period at any bank or by virtual account transfer (전 은행 및 가상계좌 납부)."
+ ],
+ "translation": "Notice on Tuition Payment and Refund Schedule for the 2026 Academic Year Winter Session\n\nWe hereby announce the tuition payment and refund schedule for the 2026 Academic Year Winter Session (동계 계절수업). Please pay your tuition within the payment period.\n\n1. Tuition and Payment Period\n[The tuition amounts and the payment period are not given in the text of the notice. This content appears to be in an image or in the attached files, which were not read.]\n※ Final course cancellation (courses with fewer than 20 students who have paid tuition): 8 December 2026 (Tuesday) [2026.12.08.(화)]\n\n2. Payment Method: Payment at any bank or by virtual account (가상계좌).\n\n3. Refund Period and Refund Amount\n[The refund period and refund amounts are not given in the text of the notice. This content appears to be in an image or in the attached files, which were not read.]\n\nAttachment: 2026 Academic Year Winter Session Tuition Payment Guide (Korean/English)\nAttached files (2):\n- [Eng] Winter 2026 Session Payment & Refunds Information.pdf (39 KB)\n- [국문] 2026학년도 동계 계절수업 수강료 납부 안내.pdf (Korean version, 80 KB)\n\nThe attached files were not read. Please check them for the full details. For questions, contact the department office; the contact details are in the original notice.",
+ "id": 58200,
+ "text_hash": "d14de8375d6aa231",
+ "images": 2,
+ "attachments": [
+  "[Eng] Winter 2026 Session Payment & Refunds Information.pdf",
+  "[국문] 2026학년도 동계 계절수업 수강료 납부 안내.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

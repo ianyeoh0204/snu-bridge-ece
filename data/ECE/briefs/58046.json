@@ -1,0 +1,32 @@
+{
+ "title_en": "Issuance of Completion Certificates for the Summer 2026 Safety and Environment Training for New Students (2026 Fall Semester Thesis Qualifying Examination Candidates: Please Check)",
+ "summary": "Completion certificates for the laboratory safety and environment training (new-student course) held in August 2026 have been issued and should be checked on the SAFE system. Candidates for the 2026 second-semester thesis qualifying examination whose certificates had not previously been issued must print their certificate and submit it to the department office.",
+ "applies_to": "Researchers who took the laboratory safety and environment training (new-student course) held during the 2026 summer vacation (in August); in particular, candidates for the 2026 second-semester thesis qualifying examination whose completion certificates had not been issued.",
+ "dates": [
+  {
+   "what": "Laboratory safety and environment training (new-student course) was held",
+   "when": "During the 2026 summer vacation (in August)",
+   "original_ko": "2026년 여름방학(8월 중)",
+   "verified": true
+  },
+  {
+   "what": "Semester of the thesis qualifying examination whose candidates must submit the certificate",
+   "when": "Second semester of 2026",
+   "original_ko": "26년 2학기",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Check that your completion certificate for the summer 2026 laboratory safety and environment training has been issued, referring to the SAFE (Integrated Research Safety Information System) [연구안전통합정보시스템] website for how to issue it.",
+  "If you cannot find your certificate, send an email to the officer in charge at the Environmental Safety Office [환경안전원] asking them to check it. The contact details are in the original notice.",
+  "If you are a candidate for the 2026 second-semester thesis qualifying examination [논자시] and your certificate had not been issued before, print the certificate and submit it to the department office. The notice does not state a submission deadline."
+ ],
+ "translation": "Title: Issuance of Completion Certificates for the Summer 2026 Safety and Environment Training for New Students (2026 Fall Semester Thesis Qualifying Examination Candidates: Please Check)\n\nPosted: 2026-09-08\n\nThe completion certificates for the laboratory safety and environment training (new-student course) held during the 2026 summer vacation (in August) have been issued successfully. Please check your certificate.\n\nFor how to issue the certificate, please refer to the SAFE (Integrated Research Safety Information System) [연구안전통합정보시스템] website.\n\nResearchers who cannot find their certificate are asked to email the officer in charge at the Environmental Safety Office [환경안전원] to request a check. (The officer's name and email address are given in the original notice.)\n\nCandidates for the 2026 second-semester thesis qualifying examination [논자시] whose certificates had not been issued must print their certificate and submit it to the department office.",
+ "id": 58046,
+ "text_hash": "07ce7e3609e9b2d5",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

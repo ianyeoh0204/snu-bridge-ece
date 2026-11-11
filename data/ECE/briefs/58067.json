@@ -1,0 +1,44 @@
+{
+ "title_en": "Submission of Withdrawal and Continuation Forms for Integrated Master's-Doctoral Program Students, 2nd Semester of the 2026 Academic Year",
+ "summary": "Integrated Master's-Doctoral Program students in their second semester in 2026-2 must submit either a Withdrawal Form (to receive only a master's degree) or a Continuation Form (to remain in the integrated program) to the Department Administrative Office between 15 September and 17:00 on 11 December 2026. Students in their fourth semester or later who wish to complete the master's program in February 2027 must submit a Withdrawal Form by the morning of 23 September 2026.",
+ "applies_to": "Integrated Master's-Doctoral Program students for whom the 2nd semester of 2026 is their second semester (for example, students admitted in March 2026). Also: Integrated Program students in their fourth semester or later who wish to complete the master's program in February 2027 (must submit a Withdrawal Form by the morning of 23 September 2026), and students who have already submitted a Continuation Form (earlier cohorts) but wish to receive only a master's degree (must submit a Withdrawal Form according to the schedule above).",
+ "dates": [
+  {
+   "what": "Submission period for the Withdrawal Form or Continuation Form",
+   "when": "15 September 2026 to 11 December 2026, 17:00",
+   "original_ko": "2026년 9월 15일 ~ 2026년 12월 11일 17:00시까지",
+   "verified": true
+  },
+  {
+   "what": "Deadline for Integrated Program students in their fourth semester or later who wish to complete the master's program in February 2027 to submit a Withdrawal Form",
+   "when": "By the morning of 23 September 2026",
+   "original_ko": "2026년 9월 23일 오전까지",
+   "verified": true
+  },
+  {
+   "what": "Master's completion date referred to for students in their fourth semester or later",
+   "when": "February 2027",
+   "original_ko": "2027년 2월",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Decide whether you wish to receive only a master's degree (submit a Withdrawal Form) or continue in the Integrated Master's-Doctoral Program (submit a Continuation Form).",
+  "To withdraw (master's degree only): in MySNU, go to 학생서비스 (Student Services) > 학적변동 (Change of Academic Status) > 신청 (Apply) > 전공/과정취소신청 (Major/Program Cancellation Request) > 석박사통합포기 (Withdrawal from Integrated Master's-Doctoral Program), then print the application (신청서 출력).",
+  "On the printed Withdrawal Form, under 이번학기 수료 여부 (Completion this semester), check '미수료' (Not completed).",
+  "To continue in the integrated program instead: download and print the attached Continuation Form (석박사통합과정 지속원.hwp).",
+  "Sign the form yourself (your signature is mandatory).",
+  "Obtain your academic advisor's signature (or seal) on the form.",
+  "Submit the form to the staff member in charge at the Department Administrative Office (Building 301, Room 319) within the deadline that applies to you."
+ ],
+ "translation": "Submission of Withdrawal and Continuation Forms for Integrated Master's-Doctoral Program Students, 2nd Semester of the 2026 Academic Year\nPosted: 2026-09-15\n\n1. Who must submit\n- Integrated Master's-Doctoral Program students for whom the 2nd semester of 2026 is their second semester (for example, students admitted in March 2026).\n\n2. Submission deadline\n- From 15 September 2026 until 17:00 on 11 December 2026.\n- Integrated Program students in their fourth semester or later who wish to complete the master's program in February 2027 must submit a Withdrawal Form by the morning of 23 September 2026.\n\n3. How to apply\n1) Withdrawal Form [포기원] (if you wish to receive only a master's degree):\nMySNU > 학생서비스 (Student Services) > 학적변동 (Change of Academic Status) > 신청 (Apply) > 전공/과정취소신청 (Major/Program Cancellation Request) > 석박사통합포기 (Withdrawal from Integrated Master's-Doctoral Program) > 신청서 출력 (Print Application) > under 이번학기 수료 여부 (Completion this semester), check '미수료' (Not completed) > your own signature (mandatory) > your academic advisor's signature (or seal) > submit to the staff member in charge at the Department Administrative Office (Building 301, Room 319).\n\n2) Continuation Form [지속원] (if you wish to continue in the Integrated Master's-Doctoral Program):\nDownload and print the attached file (Continuation Form) > your own signature (mandatory) > your academic advisor's signature (or seal) > submit to the staff member in charge at the Department Administrative Office (Building 301, Room 319).\n\n4. Important notes\n- Integrated Master's-Doctoral Program students admitted in 2015 or later are required to take the Thesis Submission Qualifying Examination in their third semester. Therefore, you must submit either a Withdrawal Form or a Continuation Form in your second semester (for example, students admitted in March 2026).\n- If you wish to complete the master's program, please submit the Withdrawal Form no later than the semester immediately before the semester in which you wish to complete, so that no problems arise in processing your academic records.\n- Students who have already submitted a Continuation Form (earlier cohorts) and wish to receive only a master's degree should submit a Withdrawal Form according to the schedule above.\n- Once you submit a Withdrawal Form, your academic status is changed to the master's program, and you cannot later change back to the Integrated Master's-Doctoral Program. The notice links to a related announcement (\"관련 공지 Click!!\"); the content of that link was not read.\n\n(Reference) Thesis Submission Qualifying Examination\n- If you submit a Continuation Form, you must meet the eligibility requirements for the doctoral Thesis Submission Qualifying Examination at the beginning of your third semester and take the examination. If you fail the doctoral Thesis Submission Qualifying Examination, you will then submit a Withdrawal Form and graduate from the master's program. In principle, only one attempt at the doctoral Thesis Submission Qualifying Examination is allowed. If you fail and submit a petition signed by your academic advisor, the Academic Affairs Committee will discuss whether to grant one more attempt in the following semester and will decide whether an additional attempt is allowed. In the event of failure, provided that your academic advisor submits a petition demonstrating your excellence to the Academic Affairs Committee in that semester and the petition passes review, you may retake the examination in subsequent semesters up to a maximum of two times; however, if a petition is rejected at review even once, no retake is permitted. The notice links to a related announcement (\"관련 공지 Click!!\"); the content of that link was not read.\n\n- Inquiries: Department Administrative Office (Building 301, Room 319). The contact person, email address and telephone number are given in the original notice.\n\nAttachment (1 file)\n(Attached) 석박사통합과정 지속원.hwp (Integrated Master's-Doctoral Program Continuation Form, 21 KB). The content of this attachment was not read.",
+ "id": 58067,
+ "text_hash": "df64530225d6f660",
+ "images": 0,
+ "attachments": [
+  "(붙임) 석박사통합과정 지속원.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

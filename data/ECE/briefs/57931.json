@@ -1,0 +1,41 @@
+{
+ "title_en": "Registration for Military Service Credit-Recognition Remote Courses, Fall Semester (2nd Semester) 2026",
+ "summary": "Registration for remote courses with credit recognition for students in military service for the 2nd semester of 2026 runs from 12 August 2026 (Wed) 18:00 to 17 September 2026 (Thu) 24:00. Eligible students who wish to take these courses must complete registration within this period through 'Jangbyeong e-Eum' [장병e음].",
+ "applies_to": "Eligible students who wish to take the military service credit-recognition remote courses. Registration is not permitted for students who are discharged from military service or released from duty (소집해제) before the one-quarter point of the semester (23 September 2026).",
+ "dates": [
+  {
+   "what": "Course registration period (registration, changes and cancellation via 'Jangbyeong e-Eum')",
+   "when": "12 August 2026 (Wednesday) 18:00 to 17 September 2026 (Thursday) 24:00",
+   "original_ko": "2026. 8. 12.(수) 18:00 ~ 9. 17.(목) 24:00",
+   "verified": true
+  },
+  {
+   "what": "One-quarter point of the semester; students discharged or released from duty before this date may not register",
+   "when": "23 September 2026 (Wednesday)",
+   "original_ko": "2026. 9. 23.(수)",
+   "verified": true
+  },
+  {
+   "what": "Deadline to apply for credit recognition on mySNU",
+   "when": "Before the last day of classes of the semester in which you return to study",
+   "original_ko": "복학한 학기 종강일 전까지",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Confirm that you will not be discharged or released from duty before 23 September 2026, and that the course is not a retake of a regular (in-person) course you have already taken.",
+  "Register for courses only on 'Jangbyeong e-Eum' [장병e음] between 12 August 2026 (Wed) 18:00 and 17 September 2026 (Thu) 24:00, keeping within 6 credits per semester and 12 credits in total for the entire service period. Any changes or cancellations must also be made on 'Jangbyeong e-Eum'.",
+  "Pay the tuition of KRW 40,500 per credit.",
+  "After returning to study, apply for credit recognition on mySNU before the last day of classes of the semester in which you return."
+ ],
+ "translation": "Title: Registration for Military Service Credit-Recognition Remote Courses, 2nd Semester of the 2026 Academic Year\nPosted: 31 July 2026\n\nWe are announcing the registration schedule and related details for the military service credit-recognition remote courses for the 2nd semester of the 2026 academic year. Eligible students who wish to take these courses are asked to complete registration within the registration period.\n\n1. Registration period: 12 August 2026 (Wed) 18:00 to 17 September 2026 (Thu) 24:00\n\n2. Credits: Up to 6 credits per semester, and up to a maximum of 12 credits over the entire period of service\n\n3. Tuition: KRW 40,500 per credit\n\n4. Credit recognition: Apply on mySNU before the last day of classes of the semester in which you return to study\n\n5. Important notes\n   a. Course registration (including changes and cancellation) is possible only through 'Jangbyeong e-Eum' [장병e음].\n   b. Students who are discharged from military service or released from duty [소집해제] before the one-quarter point of the semester (23 September 2026, Wed) may not register.\n   c. A regular course may not be retaken as a remote course; such registrations will not be approved.\n   d. Completed credits will be recognised as earned credits after approval, but will not be included in the grade point average (GPA).\n\n[Attachment] 2026 Academic Year 2nd Semester Military Service Credit-Recognition Remote Course Registration Guide\nAttached file (1): [붙임] 2026학년도 2학기 군복무 학점인정 원격수업 수강신청 안내.hwp (110 KB)\n\nNote from the translator: The content of the attached .hwp file was not read and is not included in this translation. For questions, please contact the department office; contact details are given in the original notice.",
+ "id": 57931,
+ "text_hash": "9d5bb8f7391a6eac",
+ "images": 0,
+ "attachments": [
+  "[붙임] 2026학년도 2학기 군복무 학점인정 원격수업 수강신청 안내.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

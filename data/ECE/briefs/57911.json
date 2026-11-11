@@ -1,0 +1,28 @@
+{
+ "title_en": "Course Registration Guide for Undergraduate Courses, Department of Electrical and Computer Engineering (전기·정보공학부), 2nd Semester of the 2026 Academic Year",
+ "summary": "The department has published its course guide for the 2nd semester of the 2026 academic year for students to consult when registering for courses. Any changes will be announced through this notice and may appear later on the course registration website.",
+ "applies_to": "Not explicitly stated. The notice is addressed to students consulting the department's undergraduate course guide when registering for courses in the 2nd semester of the 2026 academic year.",
+ "dates": [
+  {
+   "what": "Semester to which the course guide applies",
+   "when": "2nd semester of the 2026 academic year",
+   "original_ko": "2026학년도 2학기",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Consult the attached course guide (PDF) when registering for courses.",
+  "Check this notice regularly, as any changes will be announced here.",
+  "Note that changes may be reflected on the course registration website (http://sugang.snu.ac.kr) somewhat later than in this notice."
+ ],
+ "translation": "2nd Semester of the 2026 Academic Year: Course Registration Guide for Undergraduate Courses, Department of Electrical and Computer Engineering (전기·정보공학부)\n\nWe are providing the course guide for undergraduate courses for the 2nd semester of the 2026 academic year. Please refer to it when registering for courses.\n\nIf there are any changes, they will be announced through this notice, so please check it regularly. (Changes may be reflected somewhat later on the course registration website (http://sugang.snu.ac.kr).)\n\n※ Please note that two professors with the same name are distinguished in the course listings by the suffixes (S) and (B): the professor marked (S) specialises in semiconductors, and the professor marked (B) specialises in communications (bio). (The professors' names are given in the original notice.)\n\nAttachment: 2026 Academic Year 2nd Semester Course Guide, 1 copy\n\nAttached file (1): [붙임] 2026학년도 2학기 교과목 안내책자_전기정보공학부.pdf (260 KB). The content of this attachment was not read; please download it from the original notice. For questions, contact the department office; contact details are in the original notice.",
+ "id": 57911,
+ "text_hash": "c63bf81790f66cc4",
+ "images": 1,
+ "attachments": [
+  "[붙임] 2026학년도 2학기 교과목 안내책자_전기정보공학부.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

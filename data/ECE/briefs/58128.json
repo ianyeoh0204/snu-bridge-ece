@@ -1,0 +1,25 @@
+{
+ "title_en": "Notice of Building Access Restrictions for the 2027 Law School Admissions",
+ "summary": "Building 17 of the School of Law will be closed to everyone except personnel involved in the Law School admission examination from Friday, 6 November to Saturday, 7 November 2026. Everyone is asked to cooperate and to avoid making noise inside and outside the building during this period.",
+ "applies_to": "All persons other than personnel involved in the Law School admission examination (the access restriction); everyone near the restricted area (the request to avoid noise).",
+ "dates": [
+  {
+   "what": "Access restriction period for Building 17 of the School of Law",
+   "when": "Friday, 6 November 2026 to Saturday, 7 November 2026",
+   "original_ko": "2026. 11. 6.(금) ~ 11. 7.(토)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Do not enter Building 17 of the School of Law (법학전문대학원 17동) at any time from Friday, 6 November to Saturday, 7 November 2026 unless you are personnel involved in the Law School admission examination.",
+  "During the same period, avoid making noise inside and outside Building 17."
+ ],
+ "translation": "Notice of Building Access Restrictions for the 2027 Law School Admissions\nPosted: 12 October 2026\n\nThe building access restrictions and requests for cooperation relating to the admission process for the Professional Master's Program (전문석사과정) of the School of Law (법학전문대학원) for the 2027 academic year are set out below. Please cooperate so that the admission process can proceed smoothly.\n\nRestriction period: Friday, 6 November 2026 to Saturday, 7 November 2026\n\nRestricted area: All of Building 17, School of Law (법학전문대학원 17동)\n\nRequests for cooperation:\n\na. During the restriction period, no one other than personnel involved in the Law School admission examination may enter the restricted area.\n\nb. Please refrain from making noise inside and outside the restricted area.",
+ "id": 58128,
+ "text_hash": "846826685fdda3ed",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

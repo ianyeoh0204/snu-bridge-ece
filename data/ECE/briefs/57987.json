@@ -1,0 +1,22 @@
+{
+ "title_en": "Notice on Tuition Payment and Course Registration for Students Expected to Complete Coursework",
+ "summary": "This notice explains when students expected to complete their coursework (수료예정자) must pay tuition and when they must also register for courses. Tuition payment for the regular semester is required in these cases, while course registration is optional only for students who do not exceed the prescribed number of semesters and are not overtime research students.",
+ "applies_to": "Students expected to complete coursework (수료예정자) who are registering to meet the residency period or tuition payment requirement for completion; students exceeding the prescribed number of semesters (규정학기초과자: from the 5th semester for master's and doctoral students, from the 9th semester for integrated master's-doctoral students); overtime research students (초과자연구생); and general enrolled students (일반 재학생). Requirements may differ in special cases or depending on individual circumstances.",
+ "dates": [],
+ "steps": [
+  "Pay tuition for the regular semester (정규학기 등록금 납부). This is required for all students covered by this notice.",
+  "If you are registering only to meet the residency period or tuition payment requirement for completion (for example, a master's student who has met all other completion requirements and is registering for the required 4th time), course registration is optional.",
+  "If you exceed the prescribed number of semesters (from the 5th semester for master's or doctoral students, from the 9th semester for integrated master's-doctoral students), you must also register for courses. If you neither register for courses (earn credits) nor take a leave of absence, you will be expelled (제적).",
+  "If you are an overtime research student (초과자연구생), you must also register for courses. See the reference link given in the notice.",
+  "If you are a general enrolled student (일반 재학생) and not in any of the cases above, you must both pay tuition and register for courses.",
+  "If you are unsure which case applies to you, contact the department office again. The contact details are in the original notice."
+ ],
+ "translation": "Notice on Tuition Payment and Course Registration for Students Expected to Complete Coursework (수료예정자)\n\nPosted: 2026-08-19\n\n1. Registration to meet the residency period or tuition payment requirement for completion of coursework\n- In this case, payment of tuition for the regular semester is required, but course registration (수강신청) is optional.\n- For example, if you have met all requirements for completion of the master's coursework but must still register at least 4 times, you do not need to register for courses when you register for the 4th time.\n\n2. However, students who exceed the prescribed number of semesters (규정학기초과자) must register for courses.\n- Students exceeding the prescribed number of semesters: master's and doctoral students from the 5th semester; integrated master's-doctoral students from the 9th semester.\n- For example, a master's student in the 5th semester must both register (pay tuition) and register for courses.\n※ If you neither register for courses (earn credits) nor take a leave of absence, you will be expelled (제적).\n\n3. Overtime research students (초과자연구생) must also register for courses.\n- Reference link: https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57896 (the content of this linked page was not read).\n\n4. General enrolled students (일반 재학생) who are not students expected to complete coursework or in the other cases described above must register (pay tuition) and register for courses.\n\nThe above may differ in special cases or depending on individual student circumstances. If it is difficult to determine which applies to you, please contact the department office once more.\n\nInquiries: Administrative Office, Department of Electrical and Computer Engineering (전기정보공학부 행정실). The contact details are in the original notice.",
+ "id": 57987,
+ "text_hash": "8bf367a0bf6e3f1e",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

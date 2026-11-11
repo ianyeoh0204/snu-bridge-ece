@@ -1,0 +1,36 @@
+{
+ "title_en": "Notice of Pilot Operation of the Graduation and Completion Status Check Program",
+ "summary": "The Academic Affairs Office has developed a program for checking graduation and completion status, planned for formal operation in the second semester of 2026 (during September). A pilot operation begins on 10 August 2026 at 13:00 so that the service can be improved before formal operation.",
+ "applies_to": "Undergraduate and graduate students. The notice is issued for reference and does not state that any action is mandatory.",
+ "dates": [
+  {
+   "what": "Start of the pilot operation of the program",
+   "when": "Monday, 10 August 2026, 13:00",
+   "original_ko": "2026. 8. 10.(월) 13:00",
+   "verified": true
+  },
+  {
+   "what": "Planned formal operation of the program",
+   "when": "Second semester of 2026 (during September)",
+   "original_ko": "2026년도 2학기(9월 중)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Undergraduate students: open the program via Student Services > Graduation > Graduation Application > Undergraduate Graduation Application and Status [학생서비스 > 졸업 > 졸업신청 > 학부졸업신청 및 현황].",
+  "Graduate students: open the program via Student Services > Graduation > Thesis-related > Thesis/Achievement Review Application and Completion Status [학생서비스 > 졸업 > 논문관련 > 논문/실적심사 신청 및 수료현황].",
+  "Check the progress status and results of graduation, completion and thesis/achievement review for your major.",
+  "Check your diploma (degree certificate) [학위기(졸업증서)] information."
+ ],
+ "translation": "Notice of Pilot Operation of the Graduation and Completion Status Check Program\n\nPosted: 10 August 2026\n\nTo make it more convenient and accessible for students to manage their graduation and completion schedules, the Academic Affairs Office [학사과] has developed a Graduation and Completion Status Check Program and plans to begin formal operation in the second semester of 2026 (during September).\n\nAccordingly, before formal operation, a pilot operation will be carried out as follows in order to improve the service. Please refer to the details below.\n\nA. Program start date and time: Monday, 10 August 2026, 13:00\n\nB. Graduation and Completion Status Check Program\n- (Undergraduate) Student Services > Graduation > Graduation Application > Undergraduate Graduation Application and Status [학생서비스 > 졸업 > 졸업신청 > 학부졸업신청 및 현황]\n- (Graduate) Student Services > Graduation > Thesis-related > Thesis/Achievement Review Application and Completion Status [학생서비스 > 졸업 > 논문관련 > 논문/실적심사 신청 및 수료현황]\n\nC. Items to check\n- Progress status and results of graduation, completion and thesis/achievement review by major\n- Diploma (degree certificate) [학위기(졸업증서)] information\n\nAttachments (2)\n- (Attachment 1) Undergraduate screen [학부생 화면.png] (244 KB)\n- (Attachment 2) Graduate student screen [대학원생 화면.png] (367 KB)\n\nNote: The attachments are image files whose content is not included in the text of the notice; they were not read for this translation.",
+ "id": 57961,
+ "text_hash": "96c8d86e1fb2b83b",
+ "images": 0,
+ "attachments": [
+  "(붙임 1)학부생 화면.png",
+  "(붙임 2)대학원생 화면.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

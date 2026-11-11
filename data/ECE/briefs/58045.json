@@ -1,0 +1,59 @@
+{
+ "title_en": "[Fall Semester 2026] Writing the Graduation Thesis after the Graduation Project and Obtaining the Supervisor's Signature",
+ "summary": "Students who have completed the graduation project must write the graduation thesis and obtain the supervising professor's signature on the approval page by Monday, 21 December 2026. Students in their graduating semester must also submit the thesis, and students not yet graduating must keep the signed thesis until their graduating semester.",
+ "applies_to": "Students who have completed the graduation project (졸업프로젝트). Separate rules apply to (1) students in their graduating semester and (2) students not in their graduating semester.",
+ "dates": [
+  {
+   "what": "Graduating-semester students: deadline to submit the graduation thesis with the supervising professor's signature on the approval page",
+   "when": "Monday, 21 December 2026",
+   "original_ko": "2026.12. 21.(월)",
+   "verified": true
+  },
+  {
+   "what": "Graduating-semester students who cannot submit on time: deadline to submit the Graduation Thesis Submission Date Confirmation form",
+   "when": "Monday, 21 December 2026",
+   "original_ko": "2026. 12. 21.(월)",
+   "verified": true
+  },
+  {
+   "what": "Latest thesis submission date permitted under the Graduation Thesis Submission Date Confirmation form",
+   "when": "Monday, 28 December 2026",
+   "original_ko": "2026.12.28.(월)",
+   "verified": true
+  },
+  {
+   "what": "Non-graduating students: deadline to write the signature date on the approval page, obtain the supervising professor's signature and keep the thesis",
+   "when": "Monday, 21 December",
+   "original_ko": "12.21.(월)",
+   "verified": true
+  },
+  {
+   "what": "Non-graduating students who cannot complete the thesis by 21 December: extended deadline to obtain the signature, only with the supervising professor's prior permission",
+   "when": "Monday, 28 December",
+   "original_ko": "12. 28.(월)",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Graduating-semester students: Write the graduation thesis according to the thesis writing guidelines.",
+  "Graduating-semester students: On the outer cover, write the date as 2027.2; on the approval page, write the year, month and day on which the supervising professor signs.",
+  "Graduating-semester students: Write your student ID number in pencil at the bottom of the thesis cover. Separate binding is not required.",
+  "Graduating-semester students: Obtain the supervising professor's signature on the approval page (인준지) and submit the thesis by Monday, 21 December 2026.",
+  "Graduating-semester students who cannot submit on time: Submit the Graduation Thesis Submission Date Confirmation form (졸업논문제출일 확인서, attached) to the staff member in charge in Building 301, Room 319, by Monday, 21 December 2026, and submit the thesis by Monday, 28 December 2026 at the latest.",
+  "Non-graduating students: Write the thesis according to the thesis writing guidelines, write the month and day of signing on the approval page, obtain the supervising professor's signature by Monday, 21 December, and keep the signed thesis yourself.",
+  "Non-graduating students who cannot finish by 21 December: Inform the supervising professor beforehand and obtain permission; then obtain the signature by Monday, 28 December and keep the thesis.",
+  "Non-graduating students, in the later graduating semester: Fill in only Appendix 1 (outer cover, 별표 1(외표지)) with the year and month of graduation (e.g. August 2027 for an August 2027 graduation) and submit the thesis by that semester's thesis submission deadline.",
+  "Do not change the content of the thesis after the approval page has been signed."
+ ],
+ "translation": "[Fall Semester 2026] Writing the Graduation Thesis after the Graduation Project and Obtaining the Supervisor's Signature\n\nPlease note the following regarding the submission date and storage of the signed graduation thesis after the graduation project.\n\n1. Students in their graduating semester: Write the graduation thesis, obtain the supervising professor's signature on the approval page (인준지), and submit it by Monday, 21 December 2026.\n\n1) Write your student ID number in pencil at the bottom of the thesis cover.\n\n2) Separate binding is not required (the department office will bind all theses together later).\n\n3) Students who are unavoidably unable to submit the graduation thesis by the deadline must submit the Graduation Thesis Submission Date Confirmation form (졸업논문제출일 확인서; form attached) to the staff member in charge in Building 301, Room 319, by Monday, 21 December 2026. (The latest thesis submission date permitted under this confirmation form is Monday, 28 December 2026. The confirmation form itself must be submitted by Monday, 21 December 2026.) The name of the staff member is given in the original notice.\n\n4) How to fill in the thesis:\n- Outer cover (외표지): write 2027.2\n- Approval page (인준지): write the year, month and day on which the thesis supervisor signed\n\n2. Students not in their graduating semester: Write the thesis according to the graduation thesis writing guidelines. By Monday, 21 December, write the month and day of signing on the approval page, obtain the supervising professor's signature, and keep the thesis yourself.\n\nIf it is difficult to complete the thesis by Monday, 21 December, you must inform your supervising professor and, with the professor's permission, obtain the signature by Monday, 28 December and keep the thesis.\n(You must obtain the supervising professor's permission in advance.)\n\n\"The Thesis Submission Date Confirmation form only postpones the submission; writing the thesis and obtaining the signature on the approval page must all be done in the graduation project semester.\"\n\nLater, in your graduating semester, fill in only Appendix 1 (outer cover) (별표 1(외표지)) with the year and month of the semester in which you graduate, and submit the thesis by the thesis submission deadline of the graduating semester.\n(For example, for graduation in August 2027, write August 2027.)\n\nBecause the supervising professor signed the approval page for the thesis as submitted, the content of the thesis must not be changed.\n\n* Please note that if it is found that a thesis has been changed without authorisation after the approval page was signed, this may cause problems with your graduation.\n\nAttachments (2):\n1. Undergraduate Graduation Thesis Writing Guidelines (학부졸업논문 작성지침(2024.8.13).hwp)\n2. Graduation Thesis Submission Date Confirmation form, Department of Electrical and Information Engineering (전기정보공학부_졸업논문_제출일_확인서.hwp)\n\nNote: The contents of the attached files were not read and are not included in this translation.",
+ "id": 58045,
+ "text_hash": "3f7b9a93c8487f10",
+ "images": 0,
+ "attachments": [
+  "1. 학부졸업논문 작성지침(2024.8.13).hwp",
+  "2. 전기정보공학부_졸업논문_제출일_확인서.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

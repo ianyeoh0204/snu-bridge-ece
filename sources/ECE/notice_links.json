@@ -1,0 +1,113 @@
+[
+ {
+  "pattern": "한국어시험",
+  "cards": [
+   "language-korean-test"
+  ]
+ },
+ {
+  "pattern": "안전환경교육",
+  "cards": [
+   "cert-safety"
+  ]
+ },
+ {
+  "pattern": "생명존중",
+  "cards": [
+   "cert-life-respect",
+   "ug-life-respect"
+  ]
+ },
+ {
+  "pattern": "논문제출자격시험|논자시",
+  "cards": [
+   "exam-basics",
+   "exam-basics-phd"
+  ]
+ },
+ {
+  "pattern": "석박세미나",
+  "cards": [
+   "seminar-two-semesters",
+   "seminar-two-semesters-phd",
+   "seminar-both-integrated"
+  ]
+ },
+ {
+  "pattern": "예비심사",
+  "cards": [
+   "preliminary-defense"
+  ]
+ },
+ {
+  "pattern": "논문 심사 일정|논문심사 공개발표",
+  "cards": [
+   "defense-schedule",
+   "defense-schedule-phd"
+  ]
+ },
+ {
+  "pattern": "논문연구 과목수강 확인서",
+  "cards": [
+   "thesis-research-form"
+  ]
+ },
+ {
+  "pattern": "포기원|지속원",
+  "cards": [
+   "continue-or-quit-form"
+  ]
+ },
+ {
+  "pattern": "타학과 및 학사과정 교과목 이수 승인",
+  "cards": [
+   "credits-other-department",
+   "credits-other-department-phd",
+   "credits-other-department-integrated"
+  ]
+ },
+ {
+  "pattern": "타교 대학원 수학학점 인정",
+  "cards": [
+   "credits-before-admission"
+  ]
+ },
+ {
+  "pattern": "교과학점 통산인정",
+  "cards": [
+   "credits-from-masters"
+  ]
+ },
+ {
+  "pattern": "학위논문제출기한",
+  "cards": [
+   "thesis-deadline",
+   "thesis-deadline-phd"
+  ]
+ },
+ {
+  "pattern": "학위수여\\(논문 관련\\)",
+  "cards": [
+   "paper-requirement",
+   "paper-requirement-phd"
+  ]
+ },
+ {
+  "pattern": "등록금 수납계획",
+  "cards": [
+   "registration"
+  ]
+ },
+ {
+  "pattern": "졸업논문",
+  "cards": [
+   "ug-thesis"
+  ]
+ },
+ {
+  "pattern": "졸업프로젝트|전기공학설계프로젝트",
+  "cards": [
+   "ug-major-required"
+  ]
+ }
+]

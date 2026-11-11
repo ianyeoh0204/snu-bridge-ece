@@ -1,0 +1,45 @@
+{
+ "title_en": "★Fall Semester 2026 Graduate Thesis Submission Qualifying Examination: Instructions for Examinees",
+ "summary": "The major written examination of the Thesis Submission Qualifying Examination for the Fall Semester 2026 will be held on Friday, 11 September 2026, from 10:00 to 12:00, and examinees must be seated by 09:50. This notice sets out the examination rooms, required items, examination rules and how to check results.",
+ "applies_to": "Examinees taking the major written examination of the graduate Thesis Submission Qualifying Examination (논자시) in the Fall Semester 2026 (master's, doctoral, and integrated master's-doctoral students).",
+ "dates": [
+  {
+   "what": "Major written examination (120 minutes)",
+   "when": "Friday, 11 September 2026, 10:00–12:00",
+   "original_ko": "2026. 9. 11.(금) 10:00 ~ 12:00(120분)",
+   "verified": true
+  },
+  {
+   "what": "Deadline for entering the examination room (no entry after the examination starts at 10:00)",
+   "when": "09:50 on the examination day",
+   "original_ko": "09:50",
+   "verified": true
+  },
+  {
+   "what": "Results available on MySNU",
+   "when": "After the end of October (year not stated)",
+   "original_ko": "10월 말 이후",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "Read this notice and all three attachments (Instructions for Examinees, Answer Sheet Example, Examination Room Guide).",
+  "Prepare an identification card (a student ID card is acceptable) and a black pen.",
+  "Go to your examination room according to your programme: master's students to Building 301, Room 302; doctoral students to Building 301, Room 103; integrated master's-doctoral students to Building 301, Room 202 or 204 (see the attached Examination Room Guide).",
+  "Be in the examination room by 09:50 on Friday, 11 September 2026; entry is not permitted after the examination starts at 10:00.",
+  "Take the examination following the rules: do not use pencils or correction tape; you may use a calculator but may not share it; do not leave the room until one hour has passed after the start, even if you have finished.",
+  "After the end of October, check your result on MySNU at Mysnu > 학사정보 > 졸업 > 졸업시험 신청 > 종합시험 판정결과 조회."
+ ],
+ "translation": "★Fall Semester 2026 Graduate Thesis Submission Qualifying Examination (논자시): Instructions for Examinees\n\nThis notice concerns the major written examination of the Thesis Submission Qualifying Examination. Please be sure to read the information below and the attached documents (Instructions for Examinees, How to Complete the Answer Sheet, Examination Room Guide).\n\n1. Schedule: Friday, 11 September 2026, 10:00–12:00 (120 minutes)\n※ You must be in the examination room by 09:50. (Entry is not permitted after the examination begins at 10:00!)\n\n2. Location\n- Master's students: Building 301, Room 302\n- Doctoral students: Building 301, Room 103\n- Integrated master's-doctoral students: Building 301, Rooms 202 and 204\n※ See the attachment: Examination Room Guide\n\n3. Items to bring\n- Identification card (a student ID card is acceptable)\n- Pen (black)\n\n4. Rules\n- Pencils and correction tape may not be used.\n- Calculators may be used but may not be shared.\n- Even if you have finished your answers, you may not leave the room until one hour has passed after the start of the examination.\n※ See the attachment: Instructions for Examinees\n\n5. Announcement of results\n- Results can be checked on MySNU after the end of October, under: Mysnu > 학사정보 [Academic Information] > 졸업 [Graduation] > 졸업시험 신청 [Graduation Examination Application] > 종합시험 판정결과 조회 [Comprehensive Examination Result Inquiry].\n\n6. Attachments\n- Instructions for Examinees\n- Answer Sheet Example\n- Examination Room Guide\n\nAttached files (3):\n- 고사장 안내(2026-2)_공지.pdf (Examination Room Guide, 83 KB)\n- 답안지 작성 예시.pdf (Answer Sheet Example, 149 KB)\n- 수험생 유의사항.pdf (Instructions for Examinees, 203 KB)\n\nNote: The contents of these attached PDF files were not included in the notice text and have not been read or translated. Please open the attachments in the original notice.",
+ "id": 58043,
+ "text_hash": "562034763caecfd1",
+ "images": 0,
+ "attachments": [
+  "- 고사장 안내(2026-2)_공지.pdf",
+  "- 답안지 작성 예시.pdf",
+  "- 수험생 유의사항.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

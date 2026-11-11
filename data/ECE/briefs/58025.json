@@ -1,0 +1,47 @@
+{
+ "title_en": "[Fall Semester 2026] Graduation Project (Electrical Engineering Design Project) Session 1 Special Lecture: \"Overview of Thesis Writing\"",
+ "summary": "The department will hold the first special lecture of the Graduation Project (Electrical Engineering Design Project), \"Overview of Thesis Writing,\" on Friday, 11 September, at 18:30 in Building 301, Room 102. Attendance is compulsory for students enrolled in the course, and undergraduates who plan to take the course in future may audit it.",
+ "applies_to": "Students currently enrolled in the Graduation Project (Electrical Engineering Design Project), for whom attendance counts towards the grade. Undergraduates who plan to take the Graduation Project in future may audit without restriction. Third- and fourth-year undergraduates who will soon write a graduation thesis are particularly encouraged to attend.",
+ "dates": [
+  {
+   "what": "Special lecture \"Overview of Thesis Writing\" (Building 301, Room 102)",
+   "when": "Friday, 11 September, 18:30",
+   "original_ko": "9월 11일 금요일 18시 30분",
+   "verified": true
+  },
+  {
+   "what": "Attendance check for enrolled students",
+   "when": "18:30",
+   "original_ko": "18시 30분",
+   "verified": true
+  },
+  {
+   "what": "Entry may be restricted from this time",
+   "when": "19:00",
+   "original_ko": "19시부터",
+   "verified": true
+  },
+  {
+   "what": "Auditors must enter the lecture room before this time",
+   "when": "Before 19:00",
+   "original_ko": "19시 이전",
+   "verified": true
+  }
+ ],
+ "steps": [
+  "If needed, download the lecture slides attached to the original notice.",
+  "Go to Building 301, Room 102 on Friday, 11 September for the lecture starting at 18:30.",
+  "Enrolled students: be present by 18:30, when attendance is checked. Absence or lateness lowers the grade (one absence: one grade step down; two absences: F).",
+  "Auditors: enter the room before 19:00, as entry may be restricted from 19:00, and follow any further instructions given for auditors."
+ ],
+ "translation": "[Fall Semester 2026] Graduation Project (Electrical Engineering Design Project) Session 1 Special Lecture: \"Overview of Thesis Writing\"\n\nPosted: 2026-09-02\n\nWe are announcing the first special lecture, \"Overview of Thesis Writing,\" of the Graduation Project (Electrical Engineering Design Project) [졸업프로젝트(전기공학설계프로젝트)] for the Fall Semester of the 2026 academic year.\n\nThe lecture slides are also posted; anyone who needs them may download and use them.\n\nThis special lecture is intended for students currently taking the Graduation Project.\n\nAs the topic concerns thesis writing, there will be no restriction on auditing for undergraduate students who plan to take the Graduation Project in future.\n\nIn particular, third- and fourth-year undergraduates who will soon need to write a graduation thesis are encouraged to attend.\n\n• Lecture title: Overview of Thesis Writing [논문 작성의 개요]\n• Lecturer: a professor of the department (name given in the original notice)\n• Date and time: Friday, 11 September, 18:30\n• Location: Building 301, Room 102 [301동 102호]\n\n※ Students enrolled in the course will receive an F if they are absent (or late) for two class sessions, so please be sure to attend. (One absence: grade lowered by one step, e.g. A+ → A0; two absences: F.)\n※ Attendance will be checked at 18:30.\n※ Every year some students fail to earn credit because of attendance problems, so please take care.\n\n* Due to the nature of the lecture, entry from 19:00 may be restricted. Those who wish to audit are asked to enter before 19:00.\nAs some students are attending as part of the regular course, there may be additional instructions for auditors.\n\nAttachment (1 file): lecture slides in PowerPoint format (.pptx, 3 MB), dated 20260911. The content of this attachment was not read and is not included in this translation.\n\nFor enquiries, please contact the department office; the contact details are in the original notice.",
+ "id": 58025,
+ "text_hash": "d87b5c463621832c",
+ "images": 0,
+ "attachments": [
+  "SNU 전기∙정보공학부 특강(교수님)_20260911.pptx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}

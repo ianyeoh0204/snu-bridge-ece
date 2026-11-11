@@ -1,0 +1,23 @@
+{
+ "title_en": "Opening of the Online Application Menu for Duplicate Course Credit Recognition",
+ "summary": "Under Article 5(1) of the Seoul National University undergraduate major completion regulations, eligible students may now apply for duplicate course credit recognition directly in the Academic Information System at any time. Applications approved by the department and college staff are applied automatically to graduation assessment and graduation simulation.",
+ "applies_to": "Students taking major courses (including college-wide common courses) that are recognised in common across their primary major, double major and/or interdisciplinary major, and who wish to have those credits recognised in duplicate.",
+ "dates": [],
+ "steps": [
+  "Read the attached manual, 교과목 중복인정 신청 매뉴얼.pdf (Duplicate Course Credit Recognition Application Manual). Its content was not read for this translation.",
+  "Log in to the Academic Information System [학사정보시스템].",
+  "Go to Student Services > Classes/Grades > Grades > Duplicate Course Recognition Application [학생서비스>수업/성적>성적>교과목중복인정신청].",
+  "Submit the application directly in the system. Applications may be made at any time, and may also be cancelled through the same menu.",
+  "Wait for approval by the department and college staff. Once approved, the recognition is applied automatically to your graduation assessment and graduation simulation."
+ ],
+ "translation": "Notice: Opening of the Duplicate Course Credit Recognition Application Menu\n\nUnder Article 5 (Duplicate Recognition of Courses), Paragraph 1, of the Seoul National University Regulations on Major Completion for Undergraduate Programmes, major courses that are recognised in common across a primary major, double major and interdisciplinary major (including college-wide common courses) may be credited in duplicate. Based on this regulation, the application procedure for duplicate course credit recognition has been improved, as explained in the attached manual. Students concerned are asked to apply.\n\n1) Improvements to the duplicate course credit recognition process\n\nApplication timing:\n- Before: Application during the graduation assessment period of the graduating semester.\n- After: Application at any time.\n\nApplication method:\n- Before: The student submitted documents, and department and college staff entered the recognition into the system manually.\n- After: The student applies directly in the Academic Information System [학사정보시스템]. When the department and college staff approve the application, it is applied automatically to the graduation assessment and graduation simulation.\n\n2) Menu location\n\n(Student application and cancellation) Academic Information System > Student Services > Classes/Grades > Grades > Duplicate Course Recognition Application [학사정보시스템>학생서비스>수업/성적>성적>교과목중복인정신청]\n\nAttachment (1 file):\n(Attached) Duplicate Course Credit Recognition Application Manual [교과목 중복인정 신청 매뉴얼.pdf] (995 KB). The content of this attachment was not read for this translation; please refer to the original notice to download it.\n\nFor questions, please contact the department office; contact details are given in the original notice.",
+ "id": 57854,
+ "text_hash": "6f7b402f44274619",
+ "images": 0,
+ "attachments": [
+  "(붙임) 교과목 중복인정 신청 매뉴얼.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-11",
+ "revised": false
+}
