@@ -72,4 +72,8 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   stand out). Keep new elements inside this vocabulary. The developer rejected an editorial
   "gazette" look as the worst of three: too many words.
 - Extract and check code exist; the batch extractor is untested. The first single-request run failed at the output limit.
-- Not built: calendar file, plugin, "why and how" page, deployment, model check of the hand-written cards.
+- Deployed (12 Nov): https://ianyeoh0204.github.io/snu-bridge-ece/ from the public repository `ianyeoh0204/snu-bridge-ece`.
+  `.github/workflows/update.yml` reads the boards, translates, rebuilds and publishes every morning at 07:17 Seoul time;
+  a push republishes only. The department's own files are deliberately not in the repository (see README).
+  Unreadable attachments and images send the student to the `assistant` named in the config (ChatGPT Edu until the plugin exists).
+- Not built: calendar file, plugin, "why and how" page, model check of the hand-written cards.

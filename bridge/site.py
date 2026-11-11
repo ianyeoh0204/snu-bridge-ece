@@ -9,6 +9,7 @@ from pathlib import Path
 from .cards import GROUPS
 
 ROOT = Path(__file__).resolve().parent.parent
+SEOUL = datetime.timezone(datetime.timedelta(hours=9))  # the published date is the date in Seoul, wherever this runs
 PROGRAM_LABELS = {"undergraduate": "Undergraduate", "masters": "Master's", "phd": "PhD", "integrated": "Integrated MS-PhD"}
 HIDDEN = {"wrong", "not_on_page"}  # a card the second reader rejected is never published
 
@@ -54,7 +55,7 @@ def build() -> Path:
             "cards": cards, "notices": notices, "board": config.get("board", {}),
         }
     data = {"departments": departments, "groups": GROUPS, "program_labels": PROGRAM_LABELS,
-            "built": datetime.date.today().isoformat()}
+            "built": datetime.datetime.now(SEOUL).date().isoformat()}
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
