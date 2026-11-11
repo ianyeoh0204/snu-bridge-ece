@@ -1,0 +1,35 @@
+{
+ "title_en": "Active-Duty Enlisted Recruitment Schedule by Military Branch (October 2026)",
+ "summary": "The Military Manpower Administration runs a recruitment system that lets persons liable for military service apply for military specialties related to their major, qualifications, licences or experience. This notice shares the recruitment schedule for each branch for applications made in October 2026, with enlistment in January 2027. The detailed schedule is only in the attached file, which was not read for this translation, so interested students must check the attachment directly.",
+ "applies_to": "Persons liable for military service (병역의무자) who wish to apply for active-duty enlisted service in a military specialty related to their major, qualifications, licences or experience. The notice is informational. It does not state that any student must apply.",
+ "dates": [
+  {
+   "what": "Application period for active-duty enlisted recruitment in each military branch (exact dates are in the attachment, which was not read)",
+   "when": "October 2026",
+   "original_ko": "2026년 10월에 지원",
+   "verified": true
+  },
+  {
+   "what": "Enlistment for those recruited in the October 2026 round",
+   "when": "January 2027",
+   "original_ko": "2027년 1월에 입영",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "Open the attached file \"'26년 10월 각 군 현역병 모집계획(배부용).hwpx\" to read the recruitment schedule for each military branch. The content of this file was not read for this translation.",
+  "If you wish to apply, apply in October 2026 according to the schedule in the attachment."
+ ],
+ "translation": "Title: Notice of Active-Duty Enlisted Recruitment Schedule for Each Military Branch (October 2026)\n\nThe Military Manpower Administration (병무청) operates an active-duty enlisted recruitment system. Under this system, persons liable for military service may apply for military specialties related to their major, qualifications, licences, experience and similar background, and then serve in that field. The recruitment schedule for active-duty enlisted personnel in each military branch is attached. It covers those who apply in October 2026 and enlist in January 2027.\n\nAttachment (1 file): '26년 10월 각 군 현역병 모집계획(배부용).hwpx (October 2026 Active-Duty Enlisted Recruitment Plan for Each Branch, for distribution) (1 MB). The content of this attachment was not read for this translation.",
+ "id": 31489,
+ "text_hash": "792fac7dfef02a07",
+ "images": 0,
+ "attachments": [
+  "'26년 10월 각 군 현역병 모집계획(배부용).hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

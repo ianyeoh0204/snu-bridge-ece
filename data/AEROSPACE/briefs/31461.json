@@ -1,0 +1,46 @@
+{
+ "title_en": "Fall 2026 SNU Plus Mentoring Program for International Faculty and Students",
+ "summary": "Full-time faculty and enrolled graduate students who wish to take part in the Fall 2026 SNU Plus Mentoring Program, as mentors or as mentees, may apply through a Google Form by Wednesday, 16 September 2026. Participation is voluntary, and the application instructions are in an attached guide, which was not read for this translation. The program runs from 23 September to 11 December 2026, and each mentoring group must hold at least two meetings.",
+ "applies_to": "Voluntary; for those interested only. Faculty mentors: full-time faculty who wish to participate. Faculty mentees: foreign full-time faculty (holders of foreign nationality). Graduate student mentors: students who have been enrolled for two or more semesters, who wish to participate and who have completed the Human Rights Center training. For graduate student mentors, new foreign participants are selected first. Graduate student mentees: foreign enrolled students with no previous mentoring activity experience who wish to participate (incoming foreign students included) and who have completed the Human Rights Center training.",
+ "dates": [
+  {
+   "what": "Application deadline (Google Form), for all applicants",
+   "when": "By Wednesday, 16 September 2026",
+   "original_ko": "2026. 9. 16.(수)까지",
+   "verified": true
+  },
+  {
+   "what": "Program operation period, during which mentoring meetings take place",
+   "when": "Wednesday, 23 September 2026 to Friday, 11 December 2026",
+   "original_ko": "2026. 9. 23.(수) ~ 2026. 12. 11.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Participation is voluntary and open only to those who wish to take part.",
+  "Graduate student mentors must have been enrolled for at least two semesters.",
+  "Graduate student mentors and mentees must have completed the Human Rights Center training.",
+  "Graduate student mentees must be foreign enrolled students with no previous mentoring activity experience; incoming foreign students are included.",
+  "Faculty mentees must be foreign full-time faculty holding foreign nationality.",
+  "For graduate student mentors, new foreign participants are selected first.",
+  "Each mentoring group must hold at least two mentoring meetings during the operation period.",
+  "The Office of International Affairs provides activity funds."
+ ],
+ "steps": [
+  "Read the attached guide (2026학년도 2학기 멘토링 안내문.hwp) for the application instructions. Its content was not read for this translation.",
+  "Make sure you meet the eligibility requirements for your role, including completion of the Human Rights Center training if you are a graduate student.",
+  "Submit your application through the Google Form described in the attached guide by Wednesday, 16 September 2026.",
+  "If you are selected, hold at least two mentoring meetings between 23 September and 11 December 2026."
+ ],
+ "translation": "(SNU Plus Mentoring Program) Fall 2026 SNU Plus Mentoring Program for International Faculty and International Students (until Wednesday, 9/16)\n\nTo help international faculty and international students adjust to life on campus and in Korea, the SNU Plus Mentoring Program will be run as described below. Those who are eligible and interested are invited to apply.\n\n○ Program overview\n\nMentors:\n- Faculty: full-time faculty members who wish to participate.\n- Graduate students: students who have been enrolled for two or more semesters, who wish to participate and who have completed the Human Rights Center training.\n\nMentees:\n- Faculty: foreign full-time faculty members (holders of foreign nationality).\n- Graduate students: foreign enrolled students with no previous mentoring activity experience who wish to participate (incoming foreign students included) and who have completed the Human Rights Center training.\n\n※ For graduate student mentors, new foreign participants are selected first.\n\n- Operation period: Wednesday, 23 September 2026 to Friday, 11 December 2026\n- Activities: At least two mentoring meetings in total during the operation period. Activity funds are provided by the Office of International Affairs (국제협력본부).\n\n○ How to apply: Apply through a Google Form (see the attached guide), by Wednesday, 16 September 2026.\n\nAttachment (1): 2026학년도 2학기 멘토링 안내문.hwp (63 KB). The content of this attachment was not read for this translation.",
+ "id": 31461,
+ "text_hash": "013c74732c355b1f",
+ "images": 0,
+ "attachments": [
+  "2026학년도 2학기 멘토링 안내문.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

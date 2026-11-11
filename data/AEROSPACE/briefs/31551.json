@@ -1,0 +1,42 @@
+{
+ "title_en": "Announcement of the 2nd SNU Commons Central Library Convergence Media Work Competition",
+ "summary": "Seoul National University undergraduate and graduate students, including students on leave of absence and research students, are invited to enter the 2nd SNU Commons Central Library Convergence Media Work Competition. Participation is voluntary. Ideas must be submitted through the Google Form (https://forms.gle/6J9KXLXeLywNdErb8) during the competition period, from 2 November 2026 to 29 November 2026.",
+ "applies_to": "Seoul National University undergraduate and graduate students, including students on leave of absence and research students (연구생). Participation is voluntary, not mandatory.",
+ "dates": [
+  {
+   "what": "Competition period (idea submission period)",
+   "when": "Monday 2 November 2026 to Sunday 29 November 2026",
+   "original_ko": "2026. 11. 2.(월) ~ 2026. 11. 29.(일)",
+   "verified": true
+  },
+  {
+   "what": "Competition information session (attendance optional)",
+   "when": "Tuesday 10 November 2026, 14:00",
+   "original_ko": "2026. 11. 10.(화) 14:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Students without relevant experience may still enter if they have an idea; mentoring and technical support are provided.",
+  "Attendance at the information session is optional.",
+  "Ideas are submitted only through the Google Form stated in the notice.",
+  "The notice does not give the location of the information session or the dates of the planned exhibitions."
+ ],
+ "steps": [
+  "Read the detailed guide at the link given in the notice; note that the link appears incomplete or corrupted in the notice text, so contact the department office (contact details are in the original notice) if it does not open.",
+  "Read the attached promotional poster (its content was not read for this translation).",
+  "Optionally, attend the competition information session on Tuesday 10 November 2026 at 14:00 (the location is not stated in the notice).",
+  "Submit your idea through the Google Form at https://forms.gle/6J9KXLXeLywNdErb8 by Sunday 29 November 2026."
+ ],
+ "translation": "Announcement of the 2nd SNU Commons Central Library Convergence Media Work Competition\n\nA. Event: Seoul National University SNU Commons Central Library Convergence Media Work Competition (2nd)\n\nB. Competition period: Monday 2 November 2026 to Sunday 29 November 2026\n\nC. Eligible participants: Seoul National University undergraduate and graduate students (including students on leave of absence and research students [연구생])\n- Participation is possible with just an idea, even without relevant experience (mentoring and technical support provided).\n- An exhibition of works is planned at the SNU Commons Central Library, as well as a special off-campus media façade exhibition.\n\nD. How to participate: Submit your idea through the Google Form (https://forms.gle/6J9KXLXeLywNdErb8).\n\nE. Detailed information: [a link is given in the notice, but it appears incomplete or corrupted in the notice text: https://buly.kr/...]\n- Competition information session (optional attendance): Tuesday 10 November 2026, 14:00\n\nAttachment (1 file)\n[Attachment] SNU Commons Central Library Convergence Media Work Competition (2nd) promotional poster.jpg (505 KB) — this image was not read; its content is not included in this translation.",
+ "id": 31551,
+ "text_hash": "80958884ce78733e",
+ "images": 1,
+ "attachments": [
+  "[붙임] SNU Commons 중앙도서관 융합 미디어 작품 공모전 (제2회) 홍보 포스터.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

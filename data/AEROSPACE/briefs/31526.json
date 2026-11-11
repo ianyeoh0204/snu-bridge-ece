@@ -1,0 +1,63 @@
+{
+ "title_en": "Fall 2026 SNU Global EDGE Fellowship Program: Call for Scholarship Applicants (Expanded Eligibility)",
+ "summary": "Foreign students enrolled in a regular graduate program (including master's) in Fall 2026, in a department with a selected 4th-stage BK21 education and research group, who do not receive a research-group scholarship, may apply for the SNU Global EDGE Fellowship. Applicants must submit the required documents by email by Wednesday, 4 November 2026. The required documents are listed in the attachments, which were not read; the email address is given in the original notice.",
+ "applies_to": "Optional (competitive application; 5 places). Applicants must meet all of the following: (1) enrolled in a regular graduate program at the university in Fall 2026 (master's students included), excluding students expected to complete coursework in Spring 2027 and students on leave of absence; (2) foreign students in a department (or division) where a 4th-stage BK21 education and research group (team) has been established; (3) as of Fall 2026, foreign students in a graduate school participating in the 4th-stage BK21 project who do not receive a research-group scholarship.",
+ "dates": [
+  {
+   "what": "Deadline to submit application documents by email (all applicants)",
+   "when": "By Wednesday, 4 November 2026",
+   "original_ko": "~2026.11.4.(수)까지",
+   "verified": true
+  },
+  {
+   "what": "Selection of Fall 2026 fellows",
+   "when": "November (2026)",
+   "original_ko": "11월",
+   "verified": true
+  },
+  {
+   "what": "Living allowance for selected students is paid retroactively from this month",
+   "when": "From September (2026)",
+   "original_ko": "9월분부터",
+   "verified": true
+  },
+  {
+   "what": "End of the scholarship period (the project runs only until then)",
+   "when": "Until Spring 2027",
+   "original_ko": "27학년도 1학기까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must meet all three eligibility requirements at the same time.",
+  "Students expected to complete coursework in Spring 2027 are not eligible.",
+  "Students on leave of absence cannot apply.",
+  "Students who already receive a research-group scholarship are not eligible.",
+  "The fellowship cannot be received together with other scholarships, including tuition-waiver scholarships and other BK21-related research scholarships.",
+  "For students selected in Fall 2026, tuition already paid will be refunded and the living allowance will be paid retroactively from September.",
+  "Recipients must keep their status as a BK21-participating graduate student throughout the scholarship period.",
+  "The scholarship is paid only until Spring 2027, because the project ends then.",
+  "The list of eligible BK21 education and research groups may change following the National Research Foundation of Korea's re-evaluation; any change will be announced in advance."
+ ],
+ "steps": [
+  "Read the attachments: the selection plan and guidelines (Attachment 1) and the list of 4th-stage BK21 education and research groups (Attachment 3) to confirm your department is eligible. The attachments were not read for this translation.",
+  "Prepare the required documents listed in the attachments, including the forms in Attachment 2: the BK-participating graduate student confirmation form (BK참여 대학원생 확인서), the application form, and the recommendation letter form (추천서 양식).",
+  "Email the documents by Wednesday, 4 November 2026. The email address is in the original notice."
+ ],
+ "translation": "Title: Recruitment of Scholarship Recipients for the Fall 2026 SNU Global EDGE Fellowship Program (Expanded Eligibility)\n\nAs part of the university's 4th-stage BK21 Graduate School Innovation Project, and in order to develop outstanding talent from various countries, secure an excellent pool of research personnel for the university and identify new demand for study abroad, the university is recruiting scholarship recipients for the SNU Global EDGE Fellowship Program as follows.\n\nA. Eligibility (all must be met)\n① Students enrolled in a regular graduate program at the university in Fall 2026 (including master's programs)\n※ Students expected to complete coursework (수료) in Spring 2027 are excluded.\n※ Students on leave of absence may not apply.\n② Foreign students belonging to a department (division) in which a 4th-stage BK21 education and research group (team) has been established\n※ See the attachment <Status of Selected 4th-Stage BK21 Education and Research Groups (Teams) (Draft)>. (If the list changes according to the National Research Foundation of Korea's re-evaluation schedule, this will be announced in advance in cooperation with the relevant graduate school.)\n③ As of Fall 2026, among foreign students belonging to a graduate school participating in the 4th-stage BK21 project, graduate students who do not receive a research-group scholarship\n\nB. Support: Full tuition and a living allowance of KRW 1,800,000 per month (may not be received together with other scholarships*)\n* May not be received together with tuition-waiver scholarships or other BK21-related research scholarships.\n※ Because the Fall 2026 selection takes place in November, tuition already paid by selected students will be refunded, and the living allowance will be paid retroactively from September.\n\nC. Scholarship period: Until Spring 2027\n※ Recipients must maintain their status as BK21-participating graduate students during the scholarship period.\n※ As the project runs until Spring 2027, the scholarship will be paid only until Spring 2027.\n\nD. Number of recipients: 5\n\nE. How to apply\n- Submit documents by email by Wednesday, 4 November 2026. (The email address is given in the original notice.)\n\nF. Required documents and other notes: See the attachments.\n\nAttachments (6) (their contents were not read):\n(Attachment 1) Fall 2026 SNU Global EDGE Fellowship Program Selection Plan (PDF)\n(Attachment 1) Guidelines for SNU Global EDGE Scholarship for Fall 2026 (PDF)\n(Attachment 2) BK-Participating Graduate Student Confirmation (form) [BK참여 대학원생 확인서(서식)] (HWP)\n(Attachment 2) SNU Global EDGE Fellowship Program Application Form, Fall 2026 (DOCX)\n(Attachment 2) SNU Global EDGE Fellowship Recommendation Letter Form [추천서 양식] (HWP)\n(Attachment 3) Status of 4th-Stage BK21 Education and Research Groups (Teams) (as of 2 March 2026) (XLSX)",
+ "id": 31526,
+ "text_hash": "725f1bf415f4d1c2",
+ "images": 0,
+ "attachments": [
+  "(붙임 1) 2026-2학기 SNU Global EDGE Fellowship 프로그램 선발계획 (2).pdf",
+  "(붙임 1) Guidelines for SNU Global EDGE Scholarship for Fall 2026 (2).pdf",
+  "(붙임 2) BK참여 대학원생 확인서(서식) (4).hwp",
+  "(붙임 2) SNU Global EDGE Fellowship Program Application form_Fall 2026 (2).docx",
+  "(붙임 2) SNU Global EDGE Fellowship 추천서 양식 (4).hwp",
+  "(붙임 3) 4단계 BK21 교육연구단(팀) 현황 (2026.3.2.) (5).xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

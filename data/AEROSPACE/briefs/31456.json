@@ -1,0 +1,33 @@
+{
+ "title_en": "2026 NASA International Space Apps Challenge Seoul: Call for Participants",
+ "summary": "Students who are interested may take part in the NASA International Space Apps Challenge 2026, a global hackathon organised by NASA and held simultaneously around the world on November 14–15. Participation is free of charge and open regardless of major or skill level, including undergraduate and graduate students. Details, including how to register, are in the attached promotional PDF, which was not read for this translation.",
+ "applies_to": "Anyone interested, including undergraduate and graduate students, regardless of major or skill level. Participation is optional, not mandatory.",
+ "dates": [
+  {
+   "what": "NASA International Space Apps Challenge 2026 (held simultaneously worldwide)",
+   "when": "November 14–15 (year 2026 as stated in the event name)",
+   "original_ko": "오는 11월 14일–15일",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Participation is free of charge.",
+  "Participation is open to all majors and all skill levels.",
+  "Registration method, deadlines and venue details are not stated in the notice text; they may be in the attachment, which was not read."
+ ],
+ "steps": [
+  "Read the attached promotional file (2026+NASA+Space+Apps_참가자_홍보물_v1.0.pdf) for full details; its content was not read for this translation.",
+  "Follow the participation instructions given in the attachment if you wish to take part."
+ ],
+ "translation": "Title: 2026 NASA International Space Apps Challenge Seoul Information\n\nThe NASA International Space Apps Challenge 2026, a global hackathon organised by NASA, will be held simultaneously around the world on November 14–15. Participation is entirely free of charge, and anyone, including undergraduate and graduate students, may take part regardless of major or skill level. Please check the attached file for specific details. We encourage many of you to participate.\n\nAttachment: 2026 NASA International Space Apps Challenge Seoul promotional material, 1 copy. End.\n\nAttached file (1): 2026+NASA+Space+Apps_참가자_홍보물_v1.0.pdf (5 MB). [Note: The content of this attachment was not read for this translation.]",
+ "id": 31456,
+ "text_hash": "537ad12ac6ee5ee1",
+ "images": 0,
+ "attachments": [
+  "2026+NASA+Space+Apps_참가자_홍보물_v1.0.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

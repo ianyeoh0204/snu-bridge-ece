@@ -1,0 +1,51 @@
+{
+ "title_en": "Call for Applications: 5th Wonik Next-Generation Engineer Award, National Academy of Engineering of Korea",
+ "summary": "The National Academy of Engineering of Korea is accepting applications for the 5th Wonik Next-Generation Engineer Award. Eligible students who wish to apply must prepare the required documents and submit them by email to the address given in the original notice by Tuesday, 29 September 2026. The Academy's stated receipt deadline is Wednesday, 30 September 2026.",
+ "applies_to": "Voluntary. Open to students currently enrolled at, or on leave of absence from, a university or graduate school in Korea in an engineering-related major who have contributed to social development through technology start-ups or original inventions in materials, parts and equipment (소재·부품·장비) or related fields, and who were born on or after 1 January 1994. Students who have completed coursework but have not yet graduated (미졸업 수료생) may also apply. The award has two fields: Research and Entrepreneurship.",
+ "dates": [
+  {
+   "what": "Deadline for applicants to submit their documents by email to the address in the original notice",
+   "when": "Tuesday, 29 September 2026",
+   "original_ko": "2026.9.29.(화)",
+   "verified": true
+  },
+  {
+   "what": "Application receipt deadline stated for the award",
+   "when": "Wednesday, 30 September 2026",
+   "original_ko": "2026. 9. 30.(수)",
+   "verified": true
+  },
+  {
+   "what": "Birth date eligibility: applicants must be born on or after this date",
+   "when": "1 January 1994",
+   "original_ko": "'94.1.1 이후 출생자",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must be enrolled at, or on leave of absence from, a university or graduate school in Korea in an engineering-related major.",
+  "Applicants must have contributed to social development through technology start-ups or original inventions in materials, parts and equipment or related fields.",
+  "Applicants must have been born on or after 1 January 1994.",
+  "Students who have completed coursework but have not yet graduated may apply.",
+  "The portfolio must not exceed 15 A4 pages, including the cover page."
+ ],
+ "steps": [
+  "Read the two attachments to the original notice: the recommendation and statement of achievements form (.docx) and the award poster (.pdf). Their contents were not read for this translation.",
+  "Complete the recommendation form (추천서) using the attached form.",
+  "Prepare a portfolio of your activities and career plans in any format, no longer than 15 A4 pages including the cover.",
+  "Obtain a certificate of enrollment or certificate of leave of absence (재학(휴학)증명서).",
+  "Email all documents to the address given in the original notice by Tuesday, 29 September 2026."
+ ],
+ "translation": "Call for Applications: 5th Wonik Next-Generation Engineer Award, National Academy of Engineering of Korea\n\nThe National Academy of Engineering of Korea runs the 'Wonik Next-Generation Engineer Award' to discover and recognise creative and challenge-seeking young engineering students, to establish a new image of engineering talent, and to encourage and support them to grow into engineers who actively help solve social problems.\n\nWe hereby announce the call for the 5th Wonik Next-Generation Engineer Award. Students who wish to apply should complete the relevant documents and submit them to [email address given in the original notice; not reproduced here] (by Tuesday, 29 September 2026).\n\nA. Eligibility: Students enrolled at, or on leave of absence from, a university or graduate school in Korea in an engineering-related major who have contributed to social development through technology start-ups or original inventions in materials, parts and equipment (소재·부품·장비) and related fields (born on or after 1 January 1994).\n※ Fields: Research; Entrepreneurship\n※ Students who have completed coursework but have not yet graduated may also apply.\n\nB. Award: Certificate from the President of the National Academy of Engineering of Korea and prize money.\n※ Grand Prize: 1 person (KRW 10,000,000); Excellence Prize: 6 persons (KRW 5,000,000 each)\n\nC. Application deadline: Wednesday, 30 September 2026\n\nD. Required documents: Recommendation form (추천서); portfolio of activities and career plans (free format, no more than 15 A4 pages including the cover); certificate of enrollment or leave of absence (재학(휴학)증명서).\n\nAttachments (2) [not read for this translation]:\n- ★National Academy of Engineering of Korea Wonik Next-Generation Engineer Award candidate recommendation and statement of achievements form_2026_(candidate name) (2).docx (26 KB)\n- 5th Wonik Next-Generation Engineer Award poster (1) (1).pdf (1 MB)",
+ "id": 31472,
+ "text_hash": "369f9e432ad6626d",
+ "images": 0,
+ "attachments": [
+  "★한국공학한림원 원익 차세대 공학도상 수상후보 추천서  공적서_2026_(후보성명) (2).docx",
+  "제5회 원익 차세대공학도상 포스터 (1) (1).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

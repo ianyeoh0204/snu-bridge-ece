@@ -1,0 +1,60 @@
+{
+ "title_en": "Extended Application Period: Company Visit Program for Hope Ladder Type I Scholarship Students",
+ "summary": "Hope Ladder Type I scholarship students and general university students in related majors who wish to join a company visit to Hyosung Electric Co., Ltd. on Tuesday, 17 November 2026 must apply. They must email the applicant list form (Attachment 2) and the consent form for the collection, use and third-party provision of personal information (Attachment 3) by 14:00 on Tuesday, 27 October 2026. The email address is given in the original notice, and the selection list will be announced on 29 October 2026 by Korea Student Aid Foundation KakaoTalk notification (알림톡).",
+ "applies_to": "Optional (for interested students). Open to 30 participants: Hope Ladder Type I (희망사다리Ⅰ유형) scholarship students and general university students who are currently enrolled in their third year or above, or who are graduates, and who major in a related field such as mechanical engineering, electrical/electronic engineering or industrial engineering. If applicants exceed the number of places, Hope Ladder Type I scholarship students are selected first.",
+ "dates": [
+  {
+   "what": "Application period",
+   "when": "Thursday, 15 October 2026 to Tuesday, 27 October 2026, 14:00",
+   "original_ko": "2026. 10. 15.(목) ~ 2026. 10. 27.(화) 14:00",
+   "verified": true
+  },
+  {
+   "what": "Deadline to email the applicant list form (Attachment 2) and consent form (Attachment 3)",
+   "when": "Tuesday, 27 October 2026, by 14:00",
+   "original_ko": "2026. 10. 27.(화)까지 14:00까지",
+   "verified": true
+  },
+  {
+   "what": "Announcement of the selection list, by Korea Student Aid Foundation KakaoTalk notification",
+   "when": "Thursday, 29 October 2026 (planned)",
+   "original_ko": "2026. 10. 29.(목)",
+   "verified": true
+  },
+  {
+   "what": "Company visit to Hyosung Electric Co., Ltd. (for selected participants)",
+   "when": "Tuesday, 17 November 2026, 12:00 to 16:00",
+   "original_ko": "'26. 11. 17.(화), 12시 ~ 16시",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must be enrolled in their third year or above, or be graduates.",
+  "Applicants must major in a related field such as mechanical engineering, electrical/electronic engineering or industrial engineering.",
+  "Only 30 participants will be selected; if applicants exceed this number, Hope Ladder Type I scholarship students are selected first.",
+  "Up to twice the number of places may additionally be selected as reserve participants.",
+  "Scholarship students who attend will be recognised as having completed the job basic training (직무기초교육) of the Fall 2026 SME employment-linked scholarship program.",
+  "Lunch and refreshments are planned to be provided."
+ ],
+ "steps": [
+  "Read Attachment 1 (Recruitment notice for the SME employment-linked scholarship company visit); its content was not read for this translation.",
+  "Fill in Attachment 2 (Company visit applicant list form, .xlsx).",
+  "Complete Attachment 3 (Consent form for the collection, use and third-party provision of personal information, .hwpx).",
+  "Email both Attachment 2 and Attachment 3 by 14:00 on Tuesday, 27 October 2026; the email address is in the original notice.",
+  "Check the Korea Student Aid Foundation KakaoTalk notification (알림톡) for the selection list on Thursday, 29 October 2026.",
+  "If selected, attend the visit on Tuesday, 17 November 2026, 12:00 to 16:00, at the Hyosung Electric Co., Ltd. affiliated technology research institute, 190 Jangansandan 9-ro, Jangan-eup, Gijang-gun, Busan."
+ ],
+ "translation": "Title: Notice of Extension of the Application Period for the Company Visit Program for Hope Ladder Type I Scholarship Students\n\nWe announce the recruitment of participants for the company visit program for Hope Ladder Type I (희망사다리 Ⅰ유형) scholarship students as follows. Interested students are encouraged to participate.\n\n<Overview of the Hyosung Electric Co., Ltd. Company Visit Program>\n\n□ (Date and time) Tuesday, 17 November 2026, 12:00 to 16:00\n\n□ (Venue) Technology research institute affiliated with Hyosung Electric Co., Ltd. (190 Jangansandan 9-ro, Jangan-eup, Gijang-gun, Busan)\n\n□ (Eligibility) 30 Hope Ladder Type I scholarship students and general university students (currently enrolled students in their third year or above, and graduates)\n○ Majors in related fields such as mechanical engineering, electrical/electronic engineering and industrial engineering\n※ If the number of applicants exceeds the number of places, Hope Ladder Type I scholarship students will be selected first.\n\n□ (Benefit for participating scholarship students) Recognition of completion of the job basic training (직무기초교육) of the Fall 2026 SME employment-linked scholarship program\n\n□ (Other) Lunch and refreshments are planned to be provided.\n\n○ Information\n- (Application period) Thursday, 15 October 2026 to Tuesday, 27 October 2026, 14:00\n- (How to apply) Submit the applicant list (Attachment 2) and the consent form for the collection, use and third-party provision of personal information (Attachment 3) by email by 14:00 on Tuesday, 27 October 2026. (The email address is given in the original notice.)\n- (Selection date) The list of selected participants is scheduled to be announced on Thursday, 29 October 2026 (by Korea Student Aid Foundation KakaoTalk notification, 알림톡).\n\n○ (Number selected by the Korea Student Aid Foundation) 30 people (up to twice this number may additionally be selected as reserves).\n\nAttachments (3)\nAttachment 1. Recruitment notice for the SME employment-linked scholarship company visit (.pdf, 86 KB)\nAttachment 2. Company visit applicant list form (.xlsx, 10 KB)\nAttachment 3. Consent form for the collection, use and third-party provision of personal information (.hwpx, 54 KB)\n\n(Note: The contents of the attachments were not read for this translation.)",
+ "id": 31536,
+ "text_hash": "13e5c2c3c0f25363",
+ "images": 0,
+ "attachments": [
+  "붙임1. 중소기업 취업연계 장학생 기업탐방 모집 안내.pdf",
+  "붙임2. 기업탐방 신청자 취합 양식.xlsx",
+  "붙임3. 개인정보 수집·이용 및 제3자 제공 동의서.hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

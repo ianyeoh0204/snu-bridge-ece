@@ -1,0 +1,44 @@
+{
+ "title_en": "Additional Nominations for the 3rd IPESK Next-Generation Engineer (Researcher) Programme",
+ "summary": "Currently enrolled students who wish to be nominated as a 3rd-cohort IPESK Next-Generation Engineer (undergraduates in Year 3 or 4 with a cumulative GPA of 3.5 or higher) or Engineering Researcher (graduate students with outstanding paper, presentation or award records) should submit the required documents by email. The deadline is Friday, 20 November. The email address is given in the original notice.",
+ "applies_to": "Voluntary; only for currently enrolled students who wish to be nominated. Engineer category: currently enrolled 3rd- or 4th-year undergraduate students with a grade point average of 3.5 or higher across all semesters. Engineering Researcher category: currently enrolled graduate students with a record of publishing or presenting outstanding papers or of receiving awards. Detailed requirements are in Attachment 1, which was not read.",
+ "dates": [
+  {
+   "what": "Deadline to submit nomination documents by email (both categories)",
+   "when": "By Friday, 20 November",
+   "original_ko": "~11.20(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Engineer applicants must be currently enrolled 3rd- or 4th-year undergraduates with a GPA of 3.5 or higher across all semesters.",
+  "Engineering Researcher applicants must be currently enrolled graduate students with outstanding paper publication, presentation or award records.",
+  "Detailed requirements are set out in Attachment 1, which was not read; check it before applying.",
+  "Each department may nominate at most 10 Engineers (per 60 students of admission quota) and at most 5 Engineering Researchers.",
+  "Departmental nominees will be reviewed internally by the College of Engineering before the final nomination is made, so being nominated by the department does not guarantee final nomination.",
+  "The official seal on the recommendation letter may be omitted.",
+  "Engineers must submit an academic transcript; Engineering Researchers must instead submit their representative paper record and award record."
+ ],
+ "steps": [
+  "Read Attachment 1 ([붙임1]) for the detailed requirements (its content was not read for this summary).",
+  "Engineer (undergraduate): Prepare one copy each of the recommendation letter (Attachment 2 form; official seal may be omitted), the nomination list (Attachment 3 form), the consent form for collection, use and provision of personal information for Engineers (Attachment 4 form), and your academic transcript.",
+  "Engineer (undergraduate): Email the documents to the address given in the original notice by Friday, 20 November.",
+  "Engineering Researcher (graduate): Prepare one copy each of the recommendation letter (Attachment 2 form; official seal may be omitted), the nomination list (Attachment 3 form), the consent form for collection, use and provision of personal information for Engineering Researchers (Attachment 5 form), your representative paper record, and your award record.",
+  "Engineering Researcher (graduate): Email the documents to the address given in the original notice by Friday, 20 November."
+ ],
+ "translation": "Additional Nominations for the 3rd IPESK Next-Generation Engineer (Researcher) Programme (until 20 November, Friday)\n\nTo promote engineering education and foster outstanding engineers and engineering researchers, the Institute for the Promotion of Engineering and Science of Korea (IPESK, 사단법인 한국이공학진흥원) will receive nominations of outstanding enrolled students and certify them as IPESK Next-Generation Engineers (Researchers). Those who wish to be nominated should submit the documents by email [the email address is in the original notice]. (Until 20 November, Friday)\n\nA. Nomination requirements for IPESK Next-Generation Engineer (Researcher) ※ For detailed requirements and information, see the guidance document [Attachment 1].\n - Engineer: currently enrolled 3rd- or 4th-year undergraduate students with excellent grades (grade point average of 3.5 or higher across all semesters)\n - Engineering Researcher: currently enrolled graduate students with a record of publishing or presenting outstanding papers or receiving awards\n\nB. Number of nominations possible ※ Nominees from each department will undergo an internal review by the College of Engineering before the final nomination.\n - Engineer: up to 10 per department (per 60 students of admission quota)\n - Engineering Researcher: up to 5 per department\n\nC. Documents to submit: recommendation letter (official seal may be omitted), nomination list, consent form for the collection, use and provision of personal information, and academic transcript (Engineer) or representative paper record and award record (Engineering Researcher), one copy each.\n\nAttachments (5) [their contents were not read]:\n[붙임1] Guidance on additional nominations for the 3rd IPESK Next-Generation Engineer (Researcher) (PDF)\n[붙임2] Dean's recommendation letter for the 3rd Next-Generation Engineer (Researcher) (form, HWPX)\n[붙임3] Nomination list for the 3rd Next-Generation Engineer (Researcher) (form, XLSX)\n[붙임4] Consent form for collection and use of personal information – 3rd Next-Generation Engineer (form, HWP)\n[붙임5] Consent form for collection and use of personal information – 3rd Next-Generation Engineering Researcher (form, HWP)",
+ "id": 31527,
+ "text_hash": "53193ca90df0ebcd",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 제3기 IPESK 차세대 공학(연구)자 추가 추천 안내 (1).pdf",
+  "[붙임2] 제3기 차세대 공학(연구)자 학장 추천서(서식).hwpx",
+  "[붙임3] 제3기 차세대 공학(연구)자 추천명단(서식).xlsx",
+  "[붙임4] 제3기 차세대 공학자 개인정보 수집 및 이용 동의서(서식).hwp",
+  "[붙임5] 제3기 차세대 공학연구자 개인정보 수집 및 이용 동의서(서식).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

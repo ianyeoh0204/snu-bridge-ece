@@ -93,7 +93,7 @@ def read(url: str) -> dict:
     return {
         "text": PHONE.sub("[phone]", EMAIL.sub("[email]", text)),
         "images": len(re.findall(r'<img[^>]+src="(?!/_skin/)', region)),
-        "attachments": [TITLED_NAME.sub(r"\1", html.unescape(a).strip()) for a in re.findall(r'md=down[^"]*">([^<]+)</a>', region)],
+        "attachments": [TITLED_NAME.sub(r"\1", html.unescape(a).strip()) for a in re.findall(r'(?:md|bm)=down[^"]*">([^<]+)</a>', region)],
     }
 
 

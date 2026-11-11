@@ -1,0 +1,60 @@
+{
+ "title_en": "Recruitment of Participants for the UNAIDS Fellowship Program, First Half of 2027",
+ "summary": "The Office of International Affairs is recruiting currently enrolled students who meet the academic, grade and English requirements to work as unpaid fellows at UNAIDS from March to August 2027. Applicants must submit the Google Form by 11:00 on Friday, 20 November 2026. Full details are in the attached recruitment notice, which was not read for this translation.",
+ "applies_to": "Voluntary; for students who wish to apply. Undergraduate students: currently enrolled at this university (students on leave of absence are not eligible) who have completed at least 2 semesters at this university. Graduate students: currently enrolled at this university (students on leave of absence are not eligible) who have completed at least 1 semester at this university, and graduate research students. Applicants must also have a cumulative GPA in their current degree program of at least 2.7 (undergraduate) or 3.3 (graduate), and must be fluent in English.",
+ "dates": [
+  {
+   "what": "Application deadline (Google Form submission)",
+   "when": "Friday, 20 November 2026, by 11:00",
+   "original_ko": "2026. 11. 20.(금) 11시까지",
+   "verified": true
+  },
+  {
+   "what": "First-round interview",
+   "when": "Late November to early December 2026",
+   "original_ko": "11월 말 ~ 12월 초",
+   "verified": true
+  },
+  {
+   "what": "Announcement of final successful applicants (tentative)",
+   "when": "January to February (tentative)",
+   "original_ko": "1월 ~ 2월 (예정)",
+   "verified": true
+  },
+  {
+   "what": "Fellowship dispatch period at UNAIDS",
+   "when": "March 2027 to August 2027 (6 months)",
+   "original_ko": "2027년 3월 ~ 2027년 8월 (6개월간)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Students on leave of absence are not eligible.",
+  "Undergraduate students must have completed at least 2 semesters at this university; graduate students at least 1 semester.",
+  "The cumulative GPA in the current degree program must be at least 2.7 for undergraduates and at least 3.3 for graduate students.",
+  "Applicants must be fluent in English; English ability will be assessed at the interview.",
+  "The fellowship is unpaid (dispatched work without salary); the Office of International Affairs provides a support grant, the details of which are in an attachment that was not read.",
+  "International students holding a D-2 (study) visa must check in advance their individual visa and residence status as affected by leave of absence or return to study.",
+  "The second-round interview is a video interview held according to the schedule of the local UNAIDS office; no date is given."
+ ],
+ "steps": [
+  "Read the attached recruitment notice, the Terms of Reference file and the submission forms (attachments not read for this translation; they contain the detailed schedule, support grant and further information).",
+  "If you are an international student holding a D-2 (study) visa, check your individual visa and residence status regarding leave of absence or return to study before applying.",
+  "Prepare any required documents using the attached submission forms (제출양식).",
+  "Submit the application via the Google Form by 11:00 on Friday, 20 November 2026 (the form link is not given in the notice text).",
+  "Attend the first-round interview (late November to early December) and, if selected, the second-round video interview scheduled by the local office."
+ ],
+ "translation": "Title: Recruitment of Participants for the UNAIDS Fellowship Program, First Half of 2027\n\nUnder an agreement with an international organization, the Office of International Affairs (국제처) is recruiting program participants to work as fellows at UNAIDS, as set out below.\n\nA. Fellowship overview\n\n[Table] Document application deadline: 20 November (Fri), by 11:00 | First-round interview: late November to early December | Second-round interview: video interview according to the local office's schedule | Announcement of final successful applicants: January to February (tentative) | Dispatch: March 2027, for 6 months | Remarks: (blank)\n\n- Period: March 2027 to August 2027 (6 months)\n- Working conditions: dispatched work (unpaid)\n\nB. Main schedule (see attachment for the detailed schedule)\n\nC. Eligibility\n\n1) Academic status\n a) Undergraduate students: currently enrolled students of this university (students on leave of absence not included) who have completed at least 2 semesters at this university\n b) Graduate students: currently enrolled students of this university (students on leave of absence not included) who have completed at least 1 semester at this university, and graduate research students\n ※ International students holding a D-2 (study) visa must check their individual visa and residence matters relating to leave of absence and return to study in advance.\n\n2) Grades: cumulative GPA in the current degree program of at least 2.7 for undergraduates and at least 3.3 for graduate students\n\n3) Fluency in English: English ability will be verified at the interview\n\nD. Support from the Office of International Affairs: support grant (see attachment)\n\nE. How to apply: submit the Google Form by 20 November 2026 (Fri), 11:00\n ※ Please check the attached recruitment notice for detailed information.\n\nAttachments (3) — not read for this translation:\n1. 2027년 상반기 UNAIDS 인턴십 참가자 모집 공고문.pdf (Recruitment notice for participants in the UNAIDS internship, first half of 2027) (87 KB)\n2. Terms of Reference - SNU-UNAIDS Fellowship Program.zip (1 MB)\n3. 제출양식 (1).zip (Submission forms) (39 KB)\n\nFor enquiries, contact the department office; contact details are in the original notice.",
+ "id": 31564,
+ "text_hash": "10a5d55af17e849b",
+ "images": 0,
+ "attachments": [
+  "1. 2027년 상반기 UNAIDS 인턴십 참가자 모집 공고문.pdf",
+  "2. Terms of Reference - SNU-UNAIDS Fellowship Program.zip",
+  "3. 제출양식 (1).zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

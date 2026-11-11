@@ -1,0 +1,40 @@
+{
+ "title_en": "Information Session on the 2027 Undergraduate Startup and Advanced Research Innovative Talent Support Program",
+ "summary": "Undergraduate students registered (재적) as first-year, second-semester students as of Fall 2026 may apply to attend an information session on the 2027 Undergraduate Startup and Advanced Research Innovative Talent Support Program. Applicants must complete and submit the Google Form by Thursday, 15 October 2026; places are limited to 100 and are allocated on a first-come, first-served basis. The session will be held on Tuesday, 20 October 2026 from 17:00 in Room 422, Global Engineering Education Center (Building 38).",
+ "applies_to": "Undergraduate (bachelor's program) students on the register (재적생) who are in the second semester of their first year as of Fall 2026 (2026-2학기). Attendance is optional; the notice invites interest but does not make it mandatory.",
+ "dates": [
+  {
+   "what": "Deadline to apply for the information session via the Google Form",
+   "when": "By Thursday, 15 October 2026",
+   "original_ko": "~ 2026. 10. 15.(목)",
+   "verified": true
+  },
+  {
+   "what": "Information session (start time; no end time is stated)",
+   "when": "Tuesday, 20 October 2026, from 17:00",
+   "original_ko": "2026. 10. 20.(화) 17:00 ~",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only undergraduate students registered as first-year, second-semester students as of Fall 2026 are eligible to apply.",
+  "Places are limited to 100 and are allocated on a first-come, first-served basis.",
+  "Students must complete and submit the Google Form themselves."
+ ],
+ "steps": [
+  "Optionally, view the attached poster (its content was not read for this translation).",
+  "By Thursday, 15 October 2026, complete and submit the application Google Form yourself at https://forms.gle/eJHo4kxMkEVC4eacA.",
+  "On Tuesday, 20 October 2026, attend the session from 17:00 in Room 422, Global Engineering Education Center (Building 38)."
+ ],
+ "translation": "Information Session on the 2027 \"Undergraduate Startup and Advanced Research Innovative Talent Support Program\"\n\nAn information session on the 2027 academic year \"Undergraduate Startup and Advanced Research Innovative Talent Support Program\" (학부생 창업·심화연구 혁신 인재 지원사업) will be held as follows. We look forward to your interest.\n\nA. Event overview\n1) Date and time: Tuesday, 20 October 2026, from 17:00\n2) Venue: Global Engineering Education Center (Building 38), Room 422\n3) Content: Information on the selection of innovative talent for the 2027 academic year, question-and-answer session, etc.\n\nB. Application for participation\n1) Eligibility: Undergraduate (bachelor's program) students on the register who are in the second semester of their first year as of Fall 2026 (2026-2학기)\n2) Capacity: 100 students (first come, first served)\n3) Application deadline and method\n- Deadline: by Thursday, 15 October 2026\n- Method: Students who wish to attend must complete and submit the Google Form themselves.\n※ Application link: https://forms.gle/eJHo4kxMkEVC4eacA\n\nAttachment (1 file)\nAttachment: Poster_2027 Undergraduate Startup and Advanced Research Innovative Talent Support Program Information Session.png (1 MB) — this image was not read; its content is not included in this translation.",
+ "id": 31510,
+ "text_hash": "8b00ce0eb2e4a2ca",
+ "images": 1,
+ "attachments": [
+  "붙임. 포스터_2027학년도 학부생 창업·심화연구 혁신 인재 지원사업 설명회.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

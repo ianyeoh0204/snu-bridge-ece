@@ -1,0 +1,34 @@
+{
+ "title_en": "Active-Duty Enlisted Recruitment Schedule for All Military Branches (November 2026)",
+ "summary": "The Military Manpower Administration (병무청) operates an active-duty enlisted recruitment system through which persons liable for military service may apply for a military specialty related to their major, qualifications or licences, or career, and serve in that field. This notice announces the recruitment schedule for all branches for applications made in November 2026, with enlistment in February 2027. Persons liable for military service should read the attached recruitment plan for reference; the attachment was not read, so its details are not included here.",
+ "applies_to": "Persons liable for military service (병역의무자) who wish to apply for active-duty enlisted service in any branch. The notice is for reference only and does not state a mandatory action.",
+ "dates": [
+  {
+   "what": "Application period for active-duty enlisted recruitment in all branches (exact dates are in the attachment, which was not read)",
+   "when": "November 2026",
+   "original_ko": "2026년 11월에 지원하여",
+   "verified": true
+  },
+  {
+   "what": "Enlistment for those who apply in November 2026",
+   "when": "February 2027",
+   "original_ko": "2027년 2월에 입영하는",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "Read the attached file \"'26년 11월 각 군 현역병 모집계획(배부용).hwpx\" for the recruitment schedule of each branch. Its content was not read and is not included in this translation."
+ ],
+ "translation": "Notice of the Active-Duty Enlisted Recruitment Schedule for Each Military Branch (November 2026)\n\nThe Military Manpower Administration (병무청) operates an active-duty enlisted recruitment system that allows persons liable for military service to apply for a military specialty related to their major, qualifications or licences, or career, and to serve in that field. The recruitment schedule for active-duty enlisted personnel in each branch, for those who apply in November 2026 and enlist in February 2027, is provided in the attachment. Please refer to it in fulfilling your military service obligation.\n\nAttachment (1 file):\n'26년 11월 각 군 현역병 모집계획(배부용).hwpx (1 MB) [November 2026 Recruitment Plan for Active-Duty Enlisted Personnel in Each Branch (for distribution)]\n\n(Note: The content of the attachment was not read and is not included in this translation.)",
+ "id": 31531,
+ "text_hash": "08612dee67eaf102",
+ "images": 0,
+ "attachments": [
+  "'26년 11월 각 군 현역병 모집계획(배부용).hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

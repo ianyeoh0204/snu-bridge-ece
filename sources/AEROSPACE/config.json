@@ -1,0 +1,13 @@
+{
+  "department": "Aerospace Engineering",
+  "department_ko": "항공우주공학과",
+  "pilot": true,
+  "note": "Notices only. No requirement cards have been written for this department, so the site shows it as a pilot.",
+  "board": {
+    "name": "Aerospace notices (공지사항)",
+    "list_url": "https://aerospace.snu.ac.kr/board/notice",
+    "detail_url": "https://aerospace.snu.ac.kr/board/notice?bm=v&bbsidx={id}",
+    "since": "2026-09-01",
+    "first_page": 1
+  }
+}

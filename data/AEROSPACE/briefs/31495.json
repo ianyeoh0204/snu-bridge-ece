@@ -1,0 +1,62 @@
+{
+ "title_en": "SNU 80th Anniversary KBS Open Concert: Invitation Ticket Applications",
+ "summary": "Members of the university (faculty, staff and students) who wish to attend the Seoul National University 80th Anniversary KBS Open Concert must apply for invitation tickets through a Google Form between 29 and 30 September 2026. Winners will be chosen by random draw and notified by email on 2 October 2026. Winners must collect their tickets between 6 and 8 October 2026 (10:00–16:00) to attend the concert at the SNU Main Stadium on 13 October 2026.",
+ "applies_to": "Optional. Open to members of the university, including faculty, staff and students, who wish to attend the concert. Only invitation ticket holders will be admitted.",
+ "dates": [
+  {
+   "what": "Application period for invitation tickets (via Google Form)",
+   "when": "Tuesday 29 September 2026 to Wednesday 30 September 2026",
+   "original_ko": "2026. 9. 29.(화) ~ 9. 30.(수)",
+   "verified": true
+  },
+  {
+   "what": "Announcement of draw winners, sent individually to the @snu.ac.kr email address entered in the Google Form",
+   "when": "Friday 2 October 2026",
+   "original_ko": "2026. 10. 2.(금)",
+   "verified": true
+  },
+  {
+   "what": "Invitation ticket collection period, for winners only (details to be announced on mySNU)",
+   "when": "Tuesday 6 October 2026 to Thursday 8 October 2026, 10:00 to 16:00 each day",
+   "original_ko": "2026. 10. 6.(화) ~ 10. 8.(목) 10:00 ~ 16:00",
+   "verified": true
+  },
+  {
+   "what": "Audience admission begins (tentative)",
+   "when": "Tuesday 13 October 2026, from 18:00",
+   "original_ko": "관객 입장 18:00 시작(예정)",
+   "verified": true
+  },
+  {
+   "what": "Concert (tentative times)",
+   "when": "Tuesday 13 October 2026, 19:30 to 21:30",
+   "original_ko": "2026. 10. 13.(화) 19:30 ~ 21:30(예정)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Each person may apply for a maximum of 2 tickets.",
+  "Tickets are allocated by random draw among applicants.",
+  "Faculty, staff and students must each use their own dedicated application link, which will be announced on mySNU.",
+  "Winners are notified only by email to the @snu.ac.kr address entered in the Google Form.",
+  "Only invitation ticket holders will be admitted to the concert.",
+  "Admission on the day is first-come, first-served, so holding a ticket does not guarantee entry.",
+  "The concert and admission times are tentative."
+ ],
+ "steps": [
+  "Check mySNU for the student application link (the Google Form link for students will be announced there).",
+  "Between 29 and 30 September 2026, complete the Google Form for students, requesting up to 2 tickets and entering your @snu.ac.kr email address.",
+  "On 2 October 2026, check your @snu.ac.kr email for the draw result.",
+  "If you win, check mySNU for collection details (the notice does not state the collection location) and collect your tickets between 6 and 8 October 2026, 10:00 to 16:00.",
+  "On 13 October 2026, bring your invitation ticket to the SNU Main Stadium; admission begins at 18:00 (tentative) on a first-come, first-served basis."
+ ],
+ "translation": "Title: Notice on the 「SNU 80th Anniversary KBS Open Concert」\n\nTo commemorate the 80th anniversary of the founding of our university, the 「Seoul National University 80th Anniversary KBS Open Concert」, bringing together university members, alumni and the local community, will be held as follows.\n\nA. Event Overview\n1) Event: Seoul National University 80th Anniversary KBS Open Concert\n2) Date and time: Tuesday 13 October 2026, 19:30–21:30 (tentative) ※ Audience admission begins at 18:00 (tentative)\n3) Venue: Seoul National University Main Stadium (종합운동장)\n\nB. Invitation Ticket Application and Collection\n1) Eligible applicants: members of the university, including faculty, staff and students\n2) How to apply: advance application through a Google Form (maximum 2 tickets per person), followed by a random draw\n※ Faculty, staff and students each use a dedicated link; the links will be announced on mySNU.\n3) Application period: Tuesday 29 September 2026 – Wednesday 30 September 2026\n4) Announcement of winners: Friday 2 October 2026, notified individually by email to the address (@snu.ac.kr) entered in the Google Form\n5) Ticket collection: Tuesday 6 October 2026 – Thursday 8 October 2026, 10:00–16:00; details will be announced on mySNU\n6) Admission: invitation ticket holders only, admitted on a first-come, first-served basis on the day",
+ "id": 31495,
+ "text_hash": "fd5b793c85661a97",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

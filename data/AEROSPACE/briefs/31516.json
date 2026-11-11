@@ -1,0 +1,38 @@
+{
+ "title_en": "2026 UAM Future Talent Development Open Special Lecture",
+ "summary": "Undergraduate and graduate students interested in Urban Air Mobility (UAM) are invited to attend an open special lecture hosted by the Ministry of Land, Infrastructure and Transport and the Korea Transportation Safety Authority. The lecture takes place on Friday, 30 October 2026, from 10:00 to 12:00 in the 2nd-floor Seminar Hall at GUMICO. Students may apply through the QR code on the poster by Friday, 23 October 2026, 24:00, or apply on site.",
+ "applies_to": "Undergraduate and graduate students nationwide who are interested in UAM. Participation is optional.",
+ "dates": [
+  {
+   "what": "Application deadline (via the poster QR code)",
+   "when": "Until Friday, 23 October 2026, 24:00",
+   "original_ko": "~2026.10.23(금) 24:00",
+   "verified": true
+  },
+  {
+   "what": "Special lecture",
+   "when": "Friday, 30 October 2026, 10:00–12:00",
+   "original_ko": "'26. 10. 30(금) 10:00~12:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Participation is voluntary and open to interested undergraduate and graduate students.",
+  "On-site application is also accepted as an alternative to applying through the poster QR code.",
+  "The lecture is held in connection with the 2026 Aviation, Defense and Logistics Expo."
+ ],
+ "steps": [
+  "Obtain the poster for this lecture, which contains the application QR code; the poster was not included in the notice text and its content was not read.",
+  "Apply by scanning the poster QR code by Friday, 23 October 2026, 24:00, or apply on site on the day of the lecture.",
+  "Attend the lecture on Friday, 30 October 2026, 10:00–12:00, at the 2nd-floor Seminar Hall, GUMICO."
+ ],
+ "translation": "The Korea Transportation Safety Authority will run an open special lecture for future talent, aimed at undergraduate and graduate students interested in UAM, as described below. Interested students are encouraged to participate.\n\nA. Program title: 2026 UAM Future Talent Development Open Special Lecture\n\nB. Date/Time: Friday, 30 October 2026, 10:00–12:00\n\nC. Venue: 2nd-floor Seminar Hall, GUMICO\n   * Held in connection with the 2026 Aviation, Defense and Logistics Expo\n\nD. Hosted by: Ministry of Land, Infrastructure and Transport; Korea Transportation Safety Authority\n\nE. Target participants: Undergraduate and graduate students nationwide\n\nF. Application period: Until Friday, 23 October 2026, 24:00\n\nG. How to apply: Apply via the QR code on the poster, or apply on site\n(Note: the poster is not included in the notice text and was not read.)\n\nH. Lecture content\n  1) Status of the domestic UAM industry and aircraft development\n  2) AAM-related technology and certification\n  3) Development status of UAM traffic management systems",
+ "id": 31516,
+ "text_hash": "b7e35a249e3f2fad",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

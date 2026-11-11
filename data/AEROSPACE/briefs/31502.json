@@ -1,0 +1,43 @@
+{
+ "title_en": "2026 National University Student Aerospace Makerthon Competition, Gyeongsang National University",
+ "summary": "The Glocal University Project Group of Gyeongsang National University is holding the 2026 National University Student Aerospace Makerthon Competition, and participation is voluntary for teams of undergraduate or graduate students from any university in Korea. The preliminary review takes place on 21–22 October 2026 and the final competition on 2–3 November 2026 at Changwon Convention Center. The application method and deadline are not stated in the notice text; they are expected to be in the attached document, which was not read.",
+ "applies_to": "Optional. Open to teams made up of undergraduate or graduate students from universities nationwide. The final round is limited to 10 teams per category (Eco-friendly Aircraft or Lunar Exploration).",
+ "dates": [
+  {
+   "what": "Preliminary review",
+   "when": "Wednesday 21 October 2026 to Thursday 22 October 2026",
+   "original_ko": "2026. 10. 21.(수)~10. 22.(목)",
+   "verified": true
+  },
+  {
+   "what": "Final competition (for teams selected for the final round), at Changwon Convention Center",
+   "when": "Monday 2 November 2026 to Tuesday 3 November 2026",
+   "original_ko": "2026. 11. 2.(월)~11. 3.(화)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Participants must enter as a team made up of undergraduate or graduate students.",
+  "Only 10 teams per category advance to the final competition.",
+  "Teams enter one of two categories: Eco-friendly Aircraft or Lunar Exploration.",
+  "Detailed rules, including how and when to apply, are given only in the attached document, which was not read."
+ ],
+ "steps": [
+  "Read the attached document \"2026년 전국 대학생 우주항공 Makerthon 경진대회 개최 안내.pdf\" for the detailed rules and application procedure (its content was not read for this translation).",
+  "Form a team of undergraduate or graduate students and choose a category: Eco-friendly Aircraft or Lunar Exploration.",
+  "Apply as described in the attached document; for questions, use the contact given in the original notice.",
+  "Take part in the preliminary review on 21–22 October 2026.",
+  "If selected, attend the final competition at Changwon Convention Center on 2–3 November 2026."
+ ],
+ "translation": "Notice of the Gyeongsang National University 2026 National University Student Aerospace Makerthon Competition\n\nThe Glocal University Project Group of Gyeongsang National University is holding the \"2026 National University Student Aerospace Makerthon Competition\" to strengthen university students' creative problem-solving skills and practical design and modelling competencies in the aerospace field. We look forward to your interest and participation.\n\nMain details\n\nA. Competition name: 2026 National University Student Aerospace Makerthon Competition\n\nB. Competition schedule\n1) Preliminary review: Wednesday 21 October 2026 to Thursday 22 October 2026\n2) Final competition: Monday 2 November 2026 to Tuesday 3 November 2026\n\nC. Venue: Changwon Convention Center\n\nD. Eligibility: Teams made up of undergraduate or graduate students from universities nationwide (final round: 10 teams per category)\n\nE. Categories: Eco-friendly Aircraft / Lunar Exploration\n\nF. Details: See the attached document\n\nG. Enquiries: A contact telephone number is given in the original notice.\n\nAttachment: 1. Notice of the 2026 National University Student Aerospace Makerthon Competition, 1 copy. End.\n\nAttached file (1): 2026년 전국 대학생 우주항공 Makerthon 경진대회 개최 안내.pdf (176 KB). The content of this attachment was not read.",
+ "id": 31502,
+ "text_hash": "b6b93d18a84db49e",
+ "images": 0,
+ "attachments": [
+  "2026년 전국 대학생 우주항공 Makerthon 경진대회 개최 안내.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

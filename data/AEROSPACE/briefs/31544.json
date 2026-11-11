@@ -1,0 +1,42 @@
+{
+ "title_en": "Advisory Workshop for Korean Graduate Students in Multicultural STEM Laboratories",
+ "summary": "Korean (domestic) graduate students who belong to multicultural science and engineering laboratories may voluntarily apply for an advisory workshop on 7 November 2026 at the Emerald Hall, Ramada Hotel, Daejeon. International students are not eligible. To apply, complete the online participation survey by 3 November 2026; selected students will be contacted individually.",
+ "applies_to": "Domestic (Korean) graduate students who belong to a multicultural science and engineering (이공계) laboratory. International students are excluded. Participation is voluntary; students who apply are selected, and only selected students attend.",
+ "dates": [
+  {
+   "what": "Deadline to complete the online participation survey (application)",
+   "when": "By Tuesday, 3 November 2026",
+   "original_ko": "2026. 11. 3.(화)까지",
+   "verified": true
+  },
+  {
+   "what": "Advisory workshop (for selected students only)",
+   "when": "Saturday, 7 November 2026, 09:30–14:30",
+   "original_ko": "2026. 11. 7.(토) 09:30~14:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "International students are not eligible; only domestic (Korean) graduate students in multicultural science and engineering laboratories may apply.",
+  "Only selected applicants may attend; selected students will be contacted individually.",
+  "Lunch is provided, but travel expenses are not provided.",
+  "An advisory fee of KRW 200,000 per person (before tax) is paid only to participants who attend the entire programme."
+ ],
+ "steps": [
+  "Read the attached poster for further details (the attachment is an image and its content was not read for this translation).",
+  "Complete the online participation survey at https://moaform.com/q/tWuV3W by Tuesday, 3 November 2026.",
+  "Wait for an individual contact; only selected students will be contacted.",
+  "If selected, attend the workshop at the Emerald Hall, Ramada Hotel, Daejeon, on Saturday, 7 November 2026, from 09:30 to 14:30, and stay for the whole programme to receive the advisory fee."
+ ],
+ "translation": "Smart Multicultural Lab Life – Advisory Workshop for Korean Graduate Students in Multicultural Science and Engineering Laboratories\n\nAs part of the Full-Cycle Settlement Support Program for Overseas Research Personnel (해외연구인력 전주기 정착지원사업), the National Institute of Science and Technology Human Resources Development (국가과학기술인력개발원) is holding an advisory workshop to gather the field experience and opinions of domestic (Korean) graduate students in order to improve the research environment of multicultural science and engineering laboratories. Interested students are invited to apply.\n\nA. Event name: 「슬기로운 다문화 연구실 생활」 (Smart Multicultural Lab Life) – Advisory Workshop for Korean Graduate Students in Multicultural Science and Engineering Laboratories\n\nB. Eligible participants: Domestic (Korean) graduate students belonging to multicultural science and engineering laboratories (international students excluded)\n\nC. Date and time: Saturday, 7 November 2026, 09:30–14:30 (lunch provided; travel expenses not provided)\n\nD. Venue: Emerald Hall, Ramada Hotel, Daejeon\n\nE. How to apply: Complete the participation survey by Tuesday, 3 November 2026 (link: https://moaform.com/q/tWuV3W)\n※ Selected students will be contacted individually.\n\nF. Main content: Sharing experiences of research and life in multinational laboratories, and advising on improvements\n※ Participants will receive an advisory fee (KRW 200,000 per person before tax; paid only to those who attend the entire programme).\n\nG. Main content: Sharing experiences of life in multicultural laboratories and giving advice ※ See the attachment for details.\n\nH. Enquiries: The responsible staff member of the Career Foundation Office (경력기반실) of the organizing institute; contact details are given in the original notice.\n\nAttachment (1 file): 슬기로운 다문화 연구실 생활_자문워크숍_홍보 포스터_1.jpg (158 KB) — promotional poster image; its content was not read.",
+ "id": 31544,
+ "text_hash": "54d94e99b26c4e04",
+ "images": 1,
+ "attachments": [
+  "슬기로운 다문화 연구실 생활_자문워크숍_홍보 포스터_1.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

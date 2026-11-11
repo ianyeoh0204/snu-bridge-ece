@@ -1,0 +1,49 @@
+{
+ "title_en": "Fall 2026 Recognition of Graduate Credits Earned at Other Universities Before Admission",
+ "summary": "Graduate students who wish to have credits they earned at another university's graduate school before admission recognized as completed credits may apply in this Fall 2026 round. They must submit the application form, signed by their academic advisor, together with transcripts and course documents. Applications must be submitted to the Department Office, Building 301, Room 117, by Thursday, 8 October 2026.",
+ "applies_to": "Optional. Students who wish to have credits earned before admission to this university recognized. The credits must have been earned at another university's graduate school in the same level of program, in the same or a similar major. Only same or similar courses with a grade of B0 or higher, completed within 10 years, qualify.",
+ "dates": [
+  {
+   "what": "Deadline to submit the credit recognition application to the Department Office (Building 301, Room 117)",
+   "when": "Thursday, 8 October 2026",
+   "original_ko": "2026. 10. 8.(목)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only credits earned before admission at another university's graduate school in the same level of program are eligible.",
+  "Only courses in the same or a similar major with a grade of B0 or higher are eligible.",
+  "Only courses completed within the last 10 years are eligible.",
+  "Master's program to this university's master's program: up to 6 credits may be recognized.",
+  "Master's program to this university's integrated master's-doctoral program: up to 6 credits may be recognized.",
+  "Doctoral program to this university's doctoral program: up to 9 credits may be recognized.",
+  "Doctoral program to this university's integrated master's-doctoral program: up to 9 credits may be recognized.",
+  "Integrated master's-doctoral program at another university to this university's master's program: up to 6 credits may be recognized.",
+  "Integrated master's-doctoral program to this university's integrated master's-doctoral program: up to 15 credits may be recognized.",
+  "The application form must bear your academic advisor's signature.",
+  "For courses taken at a foreign university, you must also submit evidence showing the lecture hours, such as a timetable.",
+  "If the department or major name does not match exactly, the department will assess the similarity and may still recognize the credits.",
+  "A course offered by a different department at the other university may still be recognized if it falls within the academic scope of your department or major.",
+  "Credits will not be recognized if you have already completed the same or a similar course at this university after admission."
+ ],
+ "steps": [
+  "Read Attachment 1 (Curriculum Explanation and Detailed Criteria). Its content was not read for this translation.",
+  "Download Attachment 2 (Credit Recognition Application Form, .hwp file) and complete it.",
+  "Obtain your academic advisor's signature on the application form.",
+  "Obtain your transcript from the other university, one copy in Korean and one copy in English.",
+  "Prepare one copy each of the course overview and the syllabus for every course you want recognized. For a foreign university, also include evidence of lecture hours, such as a timetable.",
+  "Submit all documents to the Department Office, Building 301, Room 117, by Thursday, 8 October 2026."
+ ],
+ "translation": "Fall 2026 Application for Recognition of Credits Earned at Other Universities Before Admission (until Thursday, 10/8)\n\nThe department announces the Fall 2026 application round for recognition of credits earned at another university's graduate school before admission to this university. Eligible students should read the detailed criteria in the attachment carefully before applying.\n\nYou may apply to have credits recognized as completed credits only for same or similar courses that meet all of these conditions: they were earned before admission to this university at another university's graduate school in the same level of program; they are in the same or a similar major; the grade is B0 or higher; and they were completed within the last 10 years. The maximum is 6 credits for the master's program, 9 credits for the doctoral program and 15 credits for the integrated master's-doctoral program.\n\nHowever, if you earned credits in an integrated master's-doctoral program at another university before admission and were admitted to this university's master's program, you may apply for up to 6 credits. (In effect since Spring 2015.)\n\nProgram before admission | Program at this university | Recognized credits\nMaster's program | Master's program | Up to 6 credits\nMaster's program | Integrated master's-doctoral program | Up to 6 credits\nDoctoral program | Doctoral program | Up to 9 credits\nDoctoral program | Integrated master's-doctoral program | Up to 9 credits\nIntegrated master's-doctoral program | Master's program | Up to 6 credits\nIntegrated master's-doctoral program | Integrated master's-doctoral program | Up to 15 credits\n\nStudents who wish to have credits earned at another university's graduate school before admission recognized should apply as follows.\n\n1) Deadline: Thursday, 8 October 2026 / Department Office, Building 301, Room 117\n\n2) Required documents\n- Application for Recognition of Credits Earned at Another University's Graduate School Before Admission (attached form). Your academic advisor's signature is required.\n- Transcript from the other university attended before admission, one copy each in Korean and English.\n- Course overview and syllabus for each course you want recognized, one copy each. For foreign universities, also submit evidence showing the lecture hours, such as a timetable.\n\n[Scope of recognition for courses completed before admission]\n- Same department or major: Even if the department or major name does not match exactly, the department will check how similar the department and major are and may recognize the credits.\n※ Even if the course at the other university was offered by a department other than your own department or major, it may be recognized if it falls within the academic scope of your department or major.\n※ If you have already completed a course at this university after admission that is the same as or similar to the course taken at the other university, the credits from the other university will not be recognized.\n\nAttachments:\n1. Curriculum Explanation and Detailed Criteria\n2. Credit Recognition Application Form\n\nInquiries: Department of Aerospace Engineering office. The contact details are in the original notice.\n\nAttached files (2):\n[Attachment 1] Curriculum Explanation and Detailed Criteria for Recognition of Credits Earned at Another University's Graduate School Before Admission (PDF, 98 KB)\n[Attachment 2] Credit Recognition Application Form (HWP, 74 KB)\n\n(Note: The contents of the attachments were not read for this translation.)",
+ "id": 31475,
+ "text_hash": "92a47c82ddae3680",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 『입학 전 타교 대학원 취득 학점 인정』교과과정 해설 및 세부기준.pdf",
+  "[붙임2] 취득학점 인정 신청서.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,36 @@
+{
+ "title_en": "Winter 2026 SNU in the World Program (SWP): Second Round of Student Selection",
+ "summary": "The Office of Global Affairs (국제처) is selecting additional students for three programs of the Winter 2026 SNU in the World Program (SWP). Interested students must apply by 09:00 on Monday, 12 October 2026. The method of application, eligibility and required documents are given in the attached announcement (not read) and in the notices on the Office of Global Affairs website (https://oga.snu.ac.kr/).",
+ "applies_to": "Seoul National University students who are interested in the Winter 2026 SNU in the World Program. Application is voluntary. The notice text states no other eligibility limits; any eligibility requirements are in the attached announcement, which was not read.",
+ "dates": [
+  {
+   "what": "Application deadline for the second round of selection for the Winter 2026 SNU in the World Program",
+   "when": "By 09:00 on Monday, 12 October 2026",
+   "original_ko": "2026. 10. 12.(월) 09:00까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications are due by 09:00, not the end of the day, on 12 October 2026.",
+  "Eligibility, selection criteria and the required documents are set out in the attached announcement and document files, which were not read; check them before applying."
+ ],
+ "steps": [
+  "Read the attached announcement (2026 동계 SNU in the World Program 선발 공고문(2차)), the submission document files (제출서류) and the program operation plans (운영계획서); these attachments were not read for this translation.",
+  "Read the notice for this program on the Office of Global Affairs website (https://oga.snu.ac.kr/) under Notices (공지사항) for full details, including how and where to apply.",
+  "Prepare the required submission documents and apply by 09:00 on Monday, 12 October 2026, as instructed in the announcement.",
+  "For questions, contact the International Cooperation Support Division (국제협력지원과); the contact details are in the original notice."
+ ],
+ "translation": "Winter 2026 SNU in the World Program (SWP) Student Selection Announcement (Second Round)\n\nThe Office of Global Affairs (국제처) operates the SNU in the World Program (SWP) to support the internationalization of Seoul National University students. Following the student selection held last September, additional students will be selected for the Winter 2026 SNU in the World Program as set out below. Interested students are invited to apply.\n\nA. Programs: 3 in total\n\nB. Application deadline: by 09:00 on Monday, 12 October 2026\n\nC. Inquiries: International Cooperation Support Division (국제협력지원과); the phone number and email address are given in the original notice.\n\nD. Other: For details, refer to the Notices (공지사항) section of the Office of Global Affairs website (https://oga.snu.ac.kr/).\n\nAttachments: 1. Winter 2026 SNU in the World Program announcement and submission documents, one copy each. 2. Program operation plans (운영계획서), one copy each. End.\n\nAttached files (3):\n1-1. 제출서류 (2).zip (Submission documents, 82 KB)\n1. 2026 동계 SNU in the World Program 선발 공고문(2차) (1).pdf (Winter 2026 SNU in the World Program Selection Announcement, Second Round, 71 KB)\n2. 운영계획서 (2).zip (Program operation plans, 155 KB)\n\n[Note: The contents of the attached files were not read for this translation.]",
+ "id": 31504,
+ "text_hash": "1060c937b27cda33",
+ "images": 0,
+ "attachments": [
+  "1-1. 제출서류 (2).zip",
+  "1. 2026 동계 SNU in the World Program 선발 공고문(2차) (1).pdf",
+  "2. 운영계획서 (2).zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

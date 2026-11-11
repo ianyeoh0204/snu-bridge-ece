@@ -1,0 +1,42 @@
+{
+ "title_en": "Hanaro Rocket Club: MATLAB System Composer Workshop (Apply by October 27, 23:59)",
+ "summary": "Interested students may apply for a MATLAB System Composer workshop hosted by the Hanaro Rocket Club of the Department of Aerospace Engineering, Seoul National University. Applications must be submitted through the online form by Tuesday, October 27, 23:59. The workshop takes place on Friday, October 30, 2026, from 10:00 to 15:00 in 301-303, Gwanak Campus, and participants must complete the System Composer Onramp course and install the required software beforehand.",
+ "applies_to": "Any interested student. Participation is voluntary; the notice states no further limits on program, year or nationality.",
+ "dates": [
+  {
+   "what": "Deadline to apply for the workshop through the online form",
+   "when": "Tuesday, October 27, 2026, 23:59",
+   "original_ko": "~10/27(화) 23:59",
+   "verified": true
+  },
+  {
+   "what": "MATLAB System Composer workshop",
+   "when": "Friday, October 30, 2026, 10:00–15:00",
+   "original_ko": "'26. 10. 30(금) 10:00~15:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must apply through the online form by the deadline.",
+  "Participants must complete the System Composer Onramp course before the workshop.",
+  "Participants must have MATLAB R2026a or later installed, together with Simulink, Stateflow, System Composer, Requirements Toolbox and MATLAB Report Generator.",
+  "Students who need a basic understanding of MATLAB and Simulink should consider taking MATLAB Onramp and Simulink Onramp.",
+  "If the venue changes, only applicants will be notified individually."
+ ],
+ "steps": [
+  "Submit an application through the online form at https://forms.gle/JfKPivRbfn95qRnd7 by Tuesday, October 27, 23:59.",
+  "Complete the System Composer Onramp course on MATLAB Academy: https://matlabacademy.mathworks.com/kr/details/system-composer-onramp/orsc?s_tid=srchtitle_support_results_1_system%20composer%20onramp",
+  "Install MATLAB R2026a or later with Simulink, Stateflow, System Composer, Requirements Toolbox and MATLAB Report Generator.",
+  "If you need basic MATLAB and Simulink knowledge, consider taking MATLAB Onramp and Simulink Onramp.",
+  "Attend the workshop on Friday, October 30, 10:00–15:00, in 301-303, Gwanak Campus, Seoul National University, unless you have been notified individually of a change of venue."
+ ],
+ "translation": "The Hanaro Rocket Club is holding a MATLAB System Composer workshop led by a senior aerospace engineer from MathWorks. (The engineer's name is given in the original notice.)\n\nMATLAB System Composer is a tool for representing the components of complex systems and the relationships between them as models, and for designing and analysing system architectures.\n\nThe workshop will cover the main features of System Composer and how to use them. All interested students are encouraged to participate.\n\nA. Title: MATLAB System Composer Workshop\n\nB. Date and time: Friday, October 30, 2026, 10:00–15:00\n\nC. Venue: 301-303, Gwanak Campus, Seoul National University. If the venue changes, applicants will be notified individually.\n\nD. Host: Hanaro Rocket Club, Department of Aerospace Engineering, Seoul National University\n\nE. Application period: until Tuesday, October 27, 23:59\n\nF. How to participate: apply through the link below\nhttps://forms.gle/JfKPivRbfn95qRnd7\n\nG. Content: MATLAB System Composer Toolbox and Model Based System Engineering\n\nH. Preparation required in advance:\n- Complete the System Composer Onramp course (https://matlabacademy.mathworks.com/kr/details/system-composer-onramp/orsc?s_tid=srchtitle_support_results_1_system%20composer%20onramp)\n- Install MATLAB R2026a or later, together with Simulink, Stateflow, System Composer, Requirements Toolbox and MATLAB Report Generator\n- If you need a basic understanding of MATLAB and Simulink, consider taking MATLAB Onramp and Simulink Onramp",
+ "id": 31518,
+ "text_hash": "8bb012c602515b7a",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

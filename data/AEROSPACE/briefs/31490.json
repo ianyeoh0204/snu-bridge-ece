@@ -1,0 +1,47 @@
+{
+ "title_en": "2026 GKS Year-End Evening: Call for Academic Excellence Award and Performance Nominations",
+ "summary": "Global Korea Scholarship (GKS) scholars currently within their scholarship period who wish to be nominated for the GKS Academic Excellence Award or to take part in the special performance at the 2026 GKS Year-End Evening should submit the required documents by email. The deadline is Friday, 2 October 2026, and it will be strictly enforced because there is an internal university selection process. The email address is given in the original notice.",
+ "applies_to": "Korean Government Scholarship Program (GKS) scholars who are currently within their scholarship period and are interested in being nominated for the Academic Excellence Award or in performing at the special performance. Participation is voluntary. Students on a leave of absence and students whose scholarship period has ended are excluded.",
+ "dates": [
+  {
+   "what": "Deadline to submit documents for Academic Excellence Award nomination or special performance participation (strictly enforced)",
+   "when": "By Friday, 2 October 2026",
+   "original_ko": "~ 2026.10.2.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "2026 GKS Year-End Evening event, at the National Institute for International Education (NIIED), 1st floor",
+   "when": "Tuesday, 15 December 2026, 16:00–18:10",
+   "original_ko": "2026.12.15.(화) 16:00 ~ 18:10",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only GKS scholars who are within their scholarship period are eligible.",
+  "Students on a leave of absence are not eligible.",
+  "Students whose scholarship period has ended are not eligible.",
+  "The deadline is strictly enforced because there is an internal university selection process.",
+  "Three Academic Excellence Award candidates (one per program) will be selected internally and recommended to NIIED.",
+  "All students who apply to take part in the special performance will be recommended.",
+  "Final selection is decided by NIIED, not by the university."
+ ],
+ "steps": [
+  "Read the attached summary guide (attachment 3) and the NIIED event guide (attachment 4, for reference); their contents were not read for this translation.",
+  "Complete the nominee list (attachment 1, Excel file) and, if you wish to perform, the special performance application form (attachment 2).",
+  "Email the completed documents to the address given in the original notice by Friday, 2 October 2026."
+ ],
+ "translation": "Notice on the 2026 Global Korea Scholarship (GKS) Year-End Evening and Call for Nominations for the Academic Excellence Award and Other Recommendations\n\nWe are informing you of the 2026 GKS Year-End Evening and the call for nominations for the Academic Excellence Award and other recommendations. Interested students should review this notice and submit the relevant documents by email to [email address given in the original notice].\n\nA. Content: Call for nominations of candidates for the Academic Excellence Award for Korean Government Scholarship students and of students wishing to take part in the special performance\n\nB. Deadline: By Friday, 2 October 2026 (~ 2026.10.2.(금)까지). * The deadline must be strictly observed (there is an internal university selection process).\n\nC. Eligibility: Korean Government Scholarship (GKS) students within their scholarship period\n※ Students on a leave of absence and students whose scholarship period has ended are excluded.\n\nD. Benefits:\n- Three Academic Excellence Award candidates (one per program) will be selected and recommended to the National Institute for International Education (NIIED).\n- All students who wish to take part in the special performance will be recommended.\n- 2026 GKS Year-End Evening (Tuesday, 15 December 2026, 16:00–18:10, NIIED, 1st floor)\n※ However, final selection is decided by NIIED.\n\nAttachments:\n1. List of nominees, 1 copy\n2. Special performance application form, 1 copy\n3. Guide to the event and candidate nominations, 1 copy\n4. (Reference) NIIED event guide, 1 copy. End.\n\nAttached files (4):\n1. (College) 2026 GKS Year-End Evening attendance nomination list_event attendance, special performance, academic excellence.xlsx (15 KB)\n2. (College) 2026 GKS Year-End Evening special performance application form.hwpx (175 KB)\n3. 2026 GKS Year-End Evening event and Academic Excellence Award candidate nomination guide (summary).hwpx (171 KB)\n4. (Reference) NIIED 2026 GKS Year-End Evening event guide.hwpx (210 KB)\n\n[Note: The contents of the attached files were not read for this translation. The email address for submission is given in the original notice.]",
+ "id": 31490,
+ "text_hash": "3d7fa7af693135af",
+ "images": 0,
+ "attachments": [
+  "1. (단과대) 2026 GKS 송년의 밤 참석 추천 명단_행사참석 특별공연 학업우수.xlsx",
+  "2. (단과대) 2026 GKS 송년의 밤 특별공연 참가 신청서.hwpx",
+  "3. 2026 GKS 송년의 밤 행사 및 학업성적 우수상 후보 추천 안내(요약).hwpx",
+  "4. (참고)국립국제교육원 2026 GKS 송년의 밤 행사 안내.hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

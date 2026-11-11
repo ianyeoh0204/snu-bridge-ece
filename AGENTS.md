@@ -121,3 +121,25 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   with 91, and 7 are settled by the author with a reason on the card (mostly rules that run over a page break);
   11 of 11 planted errors were caught. Re-run it after any change to card text: `tools/audit.py prepare-rest <prefix> <snapshot>`.
 - Not built: calendar file, plugin.
+
+## Other departments (12 Nov 2026)
+- Survey: `tools/survey.py` counted the public notice boards of nine other engineering departments for 1 Jan 2025 to
+  11 Nov 2026: 7,791 Korean notices, 21 of them with a title in English. Totals are in `data/survey.json` and on
+  the About page ("Other engineering departments"); the full post lists and every fetched page stay in `out/survey/`
+  (not published, titles can name people). Each count was repeated from the board's own row numbering. "English" is a
+  title test, backed by a seeded sample of 90 opened notices (2 held a short English passage, none a full version).
+  Materials Science (paging disallowed by robots.txt) and Architecture (everything disallowed) are not counted.
+  The eleven sites read use six kinds of board software.
+- Pilot: `sources/AEROSPACE/` is a notices-only department (112 notices since 1 Sep 2026, translated 12 Nov for about
+  5.80 USD). `bridge/site.py` keeps pilots out of `departments` (the template takes the first department as the site's own)
+  and passes them as `pilots`; the Notices page gets a department switch, a yellow pilot line, and the addresses
+  `#notices-<DEPARTMENT>` and `#notice-<DEPARTMENT>-<id>`. Pilot translations were not re-read by the second reader and the
+  page says so. The daily job now also translates new Aerospace notices (about 45 a month, roughly 2 to 3 USD).
+- `bridge/notices.py`: the list reader now accepts both ECE's rows and Aerospace's (dashed dates, a category above the
+  title, list pages numbered from 1, a first page of pinned notices only). It was checked to read ECE's 75 notices
+  exactly as stored. A speaker's name after "Prof." or "Dr." in a title is replaced with "[name]".
+- `bridge/briefs.py`: attachment links are found on both kinds of page (`md=down` on ECE, `bm=down` on Aerospace).
+  Re-reading all 112 Aerospace notices gave the same text hash as stored, so the daily job does not translate them again.
+- The developer wants the poster to say where and how the site can expand. Do not start a second department's
+  requirements before the poster and source archive (20 Nov) are done.
+

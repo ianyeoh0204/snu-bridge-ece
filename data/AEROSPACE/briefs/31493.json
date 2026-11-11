@@ -1,0 +1,42 @@
+{
+ "title_en": "Call for Participants: 2026 AUA Academic Conference on Inclusive Sports",
+ "summary": "Faculty members, students, researchers and others who wish to take part in the 2026 Asian Universities Alliance (AUA) Academic Conference, hosted by IIT Bombay on 4–5 December 2026, may apply. Applicants must submit a paper abstract themselves through the online form linked in the original notice by Friday, 30 October 2026.",
+ "applies_to": "Faculty members, students, researchers and others (as stated in the notice) who wish to participate in the 2026 AUA Academic Conference. This is a call for participants; the notice does not state that participation is mandatory.",
+ "dates": [
+  {
+   "what": "Conference dates (held by IIT Bombay, India)",
+   "when": "Friday, 4 December 2026 to Saturday, 5 December 2026",
+   "original_ko": "2026. 12. 4. (금) ~ 12. 5.(토)",
+   "verified": true
+  },
+  {
+   "what": "Deadline for applicants to submit their paper abstract",
+   "when": "Friday, 30 October 2026",
+   "original_ko": "2026. 10. 30.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must submit the paper abstract themselves; the notice states it is submitted directly by the applicant.",
+  "The submission link in the notice appears to be incomplete or corrupted; check the original notice or ask the contact listed there for the correct link.",
+  "The two attachments (a conference poster image and Guideline.pdf) were not read; they may contain further requirements."
+ ],
+ "steps": [
+  "Read the attached conference poster and Guideline.pdf in the original notice (their content was not read for this translation).",
+  "Prepare a paper abstract for the conference theme \"Advancing Health, Technology, and Community through Inclusive Sports\".",
+  "Submit the abstract yourself through the Google Form linked in the original notice (https://forms.gle/...) by Friday, 30 October 2026.",
+  "For questions, contact the person listed in the original notice (contact details are given there)."
+ ],
+ "translation": "Title: Asian Universities Alliance 2026 AUA Academic Conference – on Advancing Health, Technology, and Community thro... [title truncated in the original]\n\nWe are recruiting participants for the \"2026 AUA Academic Conference\" held by a member university of the Asian Universities Alliance (AUA), as follows.\n\n1. Programme: 2026 Asian Universities Alliance (AUA) Academic Conference on \"Advancing Health, Technology, and Community through Inclusive Sports\"\n\n2. Dates: Friday, 4 December 2026 – Saturday, 5 December 2026\n\n3. Host: Indian Institute of Technology Bombay (IITB), India\n\n4. Eligibility: Faculty members, students, researchers, etc.\n\n5. How to apply\n   a. Documents to submit: Paper abstract, submitted directly by the applicant via https://forms.gle/XxfpiTUWeF... [the link in the original notice is incomplete or corrupted by formatting code; please check the original notice for the correct link]\n   b. Submission deadline: Friday, 30 October 2026\n\n6. Enquiries: The contact person and extension number are listed in the original notice.\n\nAttachments (2) [not read]:\n- 2026 AUA Academic Conference on Pubic Health_Advancing Health Technology and Community through.jpeg (267 KB)\n- Guideline.pdf (260 KB)",
+ "id": 31493,
+ "text_hash": "3e3ded44dac021bc",
+ "images": 1,
+ "attachments": [
+  "2026 AUA Academic Conference on Pubic Health_Advancing Health  Technology and Community through.jpeg",
+  "Guideline.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

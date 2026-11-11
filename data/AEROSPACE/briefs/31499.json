@@ -1,0 +1,41 @@
+{
+ "title_en": "Recruitment of Student Mentors and Operations Assistants for the 2026 SNU–Paju University Experience Camp",
+ "summary": "Currently enrolled undergraduate students in engineering fields at Seoul National University who are interested may apply to serve as student mentors or operations assistants at the 2026 SNU–Paju City University Experience Camp. Applicants must submit the application form by email to the person in charge by 20:00 on Sunday, 25 October 2026; the email address is given in the original notice. The camp will be held on Tuesday, 3 November 2026, from 09:00 to 18:00 on the Gwanak Campus.",
+ "applies_to": "Currently enrolled undergraduate students in engineering fields (공학계열) at Seoul National University who wish to serve as student mentors or operations assistants. Application is voluntary.",
+ "dates": [
+  {
+   "what": "Application period for student mentors and operations assistants (closes at 20:00 on the last day)",
+   "when": "Wednesday, 23 September 2026 to Sunday, 25 October 2026, 20:00",
+   "original_ko": "2026. 9. 23.(수)~10. 25.(일) 20:00까지",
+   "verified": true
+  },
+  {
+   "what": "Date and time of the camp, for selected mentors and operations assistants",
+   "when": "Tuesday, 3 November 2026, 09:00–18:00",
+   "original_ko": "2026. 11. 3.(화) 09:00~18:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only currently enrolled undergraduate students in engineering fields at Seoul National University may apply.",
+  "Applications must be submitted by email to the person in charge using the application form attached to the original notice.",
+  "Applications are accepted only until 20:00 on Sunday, 25 October 2026."
+ ],
+ "steps": [
+  "Read the original notice and its attached recruitment poster image (2026년 2학기 파주 대학체험캠프 멘토 및 운영조교 모집_1.jpg); the content of the image was not read for this translation and may contain further details.",
+  "Download the attached application form \"(2026파주대학체험)지원자명_멘토 및 운영조교 지원서.hwp\" from the original notice and complete it, replacing 지원자명 in the file name with your name.",
+  "Email the completed application form to the person in charge (the email address is given in the original notice) by 20:00 on Sunday, 25 October 2026."
+ ],
+ "translation": "2026 SNU–Paju City <University Experience Camp>: Recruitment of Student Mentors and Operations Assistants\n\nThe Seoul National University Center for Lifelong Education, together with Paju City, is running the \"2026 SNU–Paju City <University Experience Camp>\" to support Paju City youth in exploring careers and academic majors, and is recruiting student mentors and operations assistants from among currently enrolled Seoul National University students in engineering fields. Interested students are invited to apply.\n\nA. Event name: 2026 SNU–Paju City <University Experience Camp> (Engineering)\n\nB. Event date and time: Tuesday, 3 November 2026, 09:00–18:00\n\nC. Event location: Seoul National University Gwanak Campus and surrounding areas (including Building 152-1, LOTTE International Education Hall)\n\nD. Eligible applicants: Currently enrolled undergraduate students in engineering fields at Seoul National University\n\nE. Positions: Student mentors and operations assistants\n\nF. Application period: Wednesday, 23 September 2026 to Sunday, 25 October 2026, until 20:00\n\nG. How to apply: Submit the application form by email to the person in charge (the email address is given in the original notice).\n\nAttachments (2):\n- (2026파주대학체험)지원자명_멘토 및 운영조교 지원서.hwp (56 KB) [application form for mentors and operations assistants; 지원자명 = applicant's name]\n- 2026년 2학기 파주 대학체험캠프 멘토 및 운영조교 모집_1.jpg (957 KB) [recruitment poster image; its content was not read for this translation]",
+ "id": 31499,
+ "text_hash": "074c61ba7b753918",
+ "images": 1,
+ "attachments": [
+  "(2026파주대학체험)지원자명_멘토 및 운영조교 지원서.hwp",
+  "2026년 2학기 파주 대학체험캠프 멘토 및 운영조교 모집_1.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

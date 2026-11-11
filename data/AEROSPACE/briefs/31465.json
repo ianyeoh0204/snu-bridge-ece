@@ -1,0 +1,48 @@
+{
+ "title_en": "Hanwha Ocean Fall 2026 New Graduate Recruitment and Campus Information Sessions",
+ "summary": "Students interested in Hanwha Ocean's second-half 2026 new employee recruitment may attend a lunch or dessert recruitment information session at Seoul National University on Tuesday, September 15. Pre-registration is requested through the QR code or the URL in the notice, but walk-in attendance on the day is also possible. Applications for the recruitment itself must be submitted online through the Hanwha Ocean recruitment website between September 14 and September 30, 2026.",
+ "applies_to": "Any student interested in Hanwha Ocean's second-half 2026 new employee recruitment. The notice states no restriction by program, year or nationality. Attendance at the information sessions is optional.",
+ "dates": [
+  {
+   "what": "Lunch recruitment information session (Building 34, Room 316)",
+   "when": "Tuesday, September 15, 2026, 12:30–13:40",
+   "original_ko": "9/15 (화) 런치 채용 설명회 ㅣ 12:30 - 13:40",
+   "verified": false
+  },
+  {
+   "what": "Dessert recruitment information session (Building 301, Room 118)",
+   "when": "Tuesday, September 15, 2026, 15:00–16:00",
+   "original_ko": "9/15 (화) 디저트 채용 설명회 ㅣ 15:00 - 16:00",
+   "verified": false
+  },
+  {
+   "what": "Application period for Hanwha Ocean second-half 2026 new employee recruitment",
+   "when": "September 14 to September 30, 2026",
+   "original_ko": "2026.9.14 - 9.30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Pre-registration for the information sessions is only to estimate attendance; walk-in attendance on the day is also allowed.",
+  "Applications are accepted only online through the Hanwha Ocean recruitment website.",
+  "Recruitment fields are design; sales/business management/purchasing; production management; AX; research and development; and management support.",
+  "The attached image (한화오션_서울대학교.jpg), including the QR code, was not read; its content may contain additional information."
+ ],
+ "steps": [
+  "Information session: Pre-register through the QR code in the attachment or at https://zrr.kr/qZwdtW (optional; walk-in attendance is also possible).",
+  "Information session: On Tuesday, September 15, attend the lunch session (12:30–13:40, Building 34, Room 316) or the dessert session (15:00–16:00, Building 301, Room 118).",
+  "Application: Read the detailed recruitment information at https://recruit-hanwhaocean.com/ko/2026newrecruits.",
+  "Application: Apply online through the Hanwha Ocean recruitment website (recruit-hanwhaocean.com) between September 14 and September 30, 2026."
+ ],
+ "translation": "[Hanwha Ocean] Promotion of Hanwha Ocean's Second-Half 2026 New Employee Recruitment and Pre-Registration for Recruitment Events\n\n[Pre-registration for Hanwha Ocean's Second-Half 2026 New Employee Recruitment: Seoul National University Lunch & Dessert Recruitment Information Sessions]\n\n■ Date, time and place\nTuesday, September 15\n- Lunch recruitment information session | 12:30–13:40, Building 34, Room 316\n- Dessert recruitment information session | 15:00–16:00, Building 301, Room 118\n\n■ How to participate\nPre-register through the QR code or the URL below.\n*Pre-registration is for the purpose of surveying attendance demand; on-site participation on the day is also possible.\n✅ https://zrr.kr/qZwdtW\n\n[Hanwha Ocean Second-Half 2026 New Employee Recruitment]\n- Application period: September 14 – September 30, 2026\n- How to apply: Online application through the Hanwha Ocean recruitment website (recruit-hanwhaocean.com)\n- Recruitment fields: Design; Sales/Business Management/Purchasing; Production Management; AX; Research and Development; Management Support\n- Detailed recruitment information: https://recruit-hanwhaocean.com/ko/2026newrecruits\n\nAttachment (1 file)\n한화오션_서울대학교.jpg (4 MB) — this image (which appears to contain the QR code) was not read.",
+ "id": 31465,
+ "text_hash": "702821e026ee7df3",
+ "images": 1,
+ "attachments": [
+  "한화오션_서울대학교.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

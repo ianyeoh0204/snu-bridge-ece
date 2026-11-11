@@ -1,0 +1,32 @@
+{
+ "title_en": "2026 Integrity Special Lecture for Enrolled Students (Online, Zoom)",
+ "summary": "Enrolled undergraduate and graduate students may attend an online special lecture on anti-corruption law, held as part of the 2026 1st SNU Integrity Week. The lecture takes place on Thursday, 17 September 2026, from 14:00 to 16:00 as a live Zoom session accessed through the Integrity Week website (https://cleanweek.snu.ac.kr). Students who attend at least 80% of the session will receive a small commemorative gift (mobile gift voucher).",
+ "applies_to": "Enrolled students (undergraduate and graduate). The notice does not state that attendance is mandatory.",
+ "dates": [
+  {
+   "what": "Anti-corruption law special lecture (live online session via Zoom)",
+   "when": "Thursday, 17 September 2026, 14:00 to 16:00 (2 hours)",
+   "original_ko": "2026. 9. 17.(목) 14:00 ~ 16:00 (2시간)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The lecture is held online only, as a live Zoom video session.",
+  "To complete the lecture, you must attend at least 80% of the session time.",
+  "Only students who complete the lecture will receive the commemorative gift (mobile gift voucher)."
+ ],
+ "steps": [
+  "Go to the Integrity Week website (https://cleanweek.snu.ac.kr) before 14:00 on 17 September 2026.",
+  "On the website, select Five-Day Schedule [5일간의 일정] > Integrity Talk [청렴 토크] > For Enrolled Students – Anti-Corruption Law Special Lecture [재학생 대상 - 반부패 법령 특강] > Join Zoom [zoom 접속하기].",
+  "Attend the live Zoom lecture and remain for at least 80% of the two-hour session to meet the completion requirement."
+ ],
+ "translation": "Title: Notice on the 2026 Integrity Special Lecture for Enrolled Students\n\nAs part of the 2026 1st SNU Integrity Week [「2026년 제1회 SNU 청렴주간」], a special lecture on anti-corruption and integrity will be held as follows, to foster integrity awareness among enrolled students and to build a sound campus culture.\n\nA. Target: Enrolled students (undergraduate and graduate)\n\nB. Content: Special lecture on anti-corruption law / [Online] live video session (ZOOM)\n\nC. Date and time: Thursday, 17 September 2026, 14:00 to 16:00 (2 hours)\n\nD. How to join:\n① Go to the Integrity Week website (https://cleanweek.snu.ac.kr).\n② Select Five-Day Schedule [5일간의 일정] > Integrity Talk [청렴 토크] > For Enrolled Students – Anti-Corruption Law Special Lecture [재학생 대상 - 반부패 법령 특강] > Join Zoom [zoom 접속하기].\n\nE. Completion requirement: Attendance of at least 80% of the session time.\n\nF. Note: Students who complete the lecture are scheduled to receive a small commemorative gift (mobile gift voucher [모바일 기프티콘]). End.",
+ "id": 31477,
+ "text_hash": "af17d9e565f31d53",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

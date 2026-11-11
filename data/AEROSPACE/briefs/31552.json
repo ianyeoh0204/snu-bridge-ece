@@ -1,0 +1,42 @@
+{
+ "title_en": "2026 National University Student AI Startup Hackathon: Notice of Event",
+ "summary": "University students who wish to take part in the 2026 National University Student AI Startup Hackathon must apply through the Google Form linked by the QR code on the attached poster by 17:00 on Wednesday, 11 November 2026. The competition will be held on 19–20 November 2026 in the gymnasium on the 3rd floor of the Recreation Center, Hallym University. Participation is voluntary.",
+ "applies_to": "University students nationwide (as stated in the event title) who wish to participate; participation is optional. The competition is limited to 100 participants in total (25 teams of up to 4 members each).",
+ "dates": [
+  {
+   "what": "Application period for the hackathon (closes at 17:00 on the last day)",
+   "when": "Tuesday, 27 October 2026 to Wednesday, 11 November 2026, 17:00",
+   "original_ko": "2026. 10. 27.(화) ~ 11. 11.(수) 17:00",
+   "verified": true
+  },
+  {
+   "what": "Competition dates (held at the Recreation Center, 3rd-floor gymnasium, Hallym University)",
+   "when": "Thursday, 19 November 2026 to Friday, 20 November 2026",
+   "original_ko": "2026. 11. 19.(목) ~ 20.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications close at 17:00 on 11 November 2026.",
+  "Each team may have at most 4 members.",
+  "Participation is limited to 100 people in total (25 teams).",
+  "Entries must address the theme of discovering a startup idea using AI (education technology)."
+ ],
+ "steps": [
+  "Open the attached poster (2026 AI활용 전국 대학생 창업 해커톤 대회 포스터.png); its image content was not read for this translation, so check it for further details.",
+  "Scan the QR code on the poster to open the Google Form.",
+  "Complete and submit the Google Form application by 17:00 on Wednesday, 11 November 2026.",
+  "Attend the competition on 19–20 November 2026 at the gymnasium, 3rd floor, Recreation Center, Hallym University."
+ ],
+ "translation": "2026 National University Student AI Startup Hackathon: Notice of Event\n\nEvent Overview\n\nA. Competition dates/venue: Thursday, 19 November 2026 to Friday, 20 November 2026 / Gymnasium, 3rd floor, Recreation Center, Hallym University\n※ Competition application: Tuesday, 27 October 2026 to Wednesday, 11 November 2026, 17:00\n\nB. Number of participants: 100 people in total (25 teams of up to 4 members each)\n\nC. Theme: Discover a startup idea using AI (education technology)\n\nD. Prizes: Total prize money of KRW 15,000,000\n\nE. How to apply: Scan the QR code on the poster and apply via the Google Form\n\nAttachment (1 file)\n2026 AI활용 전국 대학생 창업 해커톤 대회 포스터.png (2 MB) [2026 AI Startup Hackathon poster; the content of this image was not read for this translation]",
+ "id": 31552,
+ "text_hash": "dacdec9f7a75d366",
+ "images": 1,
+ "attachments": [
+  "2026 AI활용 전국 대학생 창업 해커톤 대회 포스터.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,29 @@
+{
+ "title_en": "Job Opening at Ansys Korea: Applications Engineer, Digital Mission Engineering",
+ "summary": "The Digital Mission Engineering team at Synopsys Korea (formerly Ansys Korea) is recruiting an Applications Engineering, Staff Engineer (Job ID 18784) to work in Seoul. Interested alumni should first send a text message to the contact number given in the original notice and will then be contacted individually. The notice states no application deadline.",
+ "applies_to": "Alumni of the department who are interested in the position; application is voluntary. Stated requirements: a bachelor's degree or higher in aerospace, mechanical or electrical engineering or a related field; the ability to communicate in Korean and English; and programming experience such as Python or MATLAB. Candidates whose experience or specific major does not exactly match are also welcome if they have interest and ability in aerospace simulation.",
+ "dates": [],
+ "conditions": [
+  "The posted experience requirement of 5–7 years is for reference only.",
+  "Candidates whose experience or specific major does not exactly match the posting are still welcome if they have interest and ability in aerospace simulation.",
+  "Preferred, but not required: experience with STK/ODTK, and an understanding of orbital mechanics, flight dynamics and MBSE.",
+  "The notice states no application deadline; applications are welcome at any time."
+ ],
+ "steps": [
+  "Read the attached job description (Synopsys_DME_Staff_Engineer_KOR.pdf). Its content was not read for this translation.",
+  "Review the posting \"Applications Engineering, Staff Engineer at Synopsys\" on the Synopsys recruitment website. The original notice names it, but no web address appears in the text.",
+  "Send a text message to the contact number given in the original notice. The contact is an alumnus working at Ansys Korea.",
+  "Wait to be contacted individually."
+ ],
+ "translation": "[Ansys Korea] Applications Engineer Recruitment – Digital Mission Engineering\n\nHello. This is the Digital Mission Engineering team at the Korean branch of Synopsys (formerly Ansys).\n\nOur team supports analysis and mission engineering of satellites, launch vehicles, aircraft, and radar and sensor systems for major Korean defense and space organizations, using aerospace and defense simulation tools such as STK and ODTK. We are looking for an Applications Engineer to work with us.\n\nPosition: Applications Engineering, Staff Engineer (Job ID 18784)\n\nLocation: Seoul\n\nMain duties: technical support and solution proposals for aerospace and defense customers in Korea; orbit, sensor and RF modeling and simulation; technical seminars and training\n\nQualifications: bachelor's degree or higher in aerospace, mechanical or electrical engineering or a related field; ability to communicate in Korean and English; programming experience such as Python or MATLAB\n\nPreferred: experience using STK/ODTK; understanding of orbital mechanics, flight dynamics and MBSE\n\nRecruitment website: Applications Engineering, Staff Engineer at Synopsys (no web address appears in the text of the notice)\n\nThe experience requirement in the posting (5–7 years) is for reference only. Even if your experience or specific major does not exactly match, anyone with interest and ability in the field of aerospace simulation is welcome at any time. Interested alumni should first leave a text message at the number below, and you will be contacted individually.\n\n[Contact phone number and email address of an alumnus at Ansys Korea: see the original notice.]\n\nAttachment (1 file): Synopsys_DME_Staff_Engineer_KOR.pdf (115 KB). The content of this attachment was not read.",
+ "id": 31570,
+ "text_hash": "f7a6e09ef8d2cbb9",
+ "images": 0,
+ "attachments": [
+  "Synopsys_DME_Staff_Engineer_KOR.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

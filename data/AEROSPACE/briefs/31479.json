@@ -1,0 +1,48 @@
+{
+ "title_en": "Gwanak Residence Halls: Applications for the Winter Trainee-Only Building (Building 901)",
+ "summary": "Students who wish to stay in the trainee-only building (Building 901) of Gwanak Residence Halls during the winter vacation must complete the attached application form, attach it to an official document (공문) and submit it by email by Thursday, 26 November 2026. The building is open from 26 December 2026 to 10 February 2027 and costs KRW 23,000 per person per night (two persons per room). Use is limited to attendees of events organized by, or closely involving, a Seoul National University institution; the email address and the contact for prior consultation are in the original notice.",
+ "applies_to": "Optional; applies only to students who wish to use the trainee-only building. Use is limited to attendees of events organized by, or closely involving, an on-campus Seoul National University institution. Events organized by external companies for profit-making purposes are excluded.",
+ "dates": [
+  {
+   "what": "Application deadline (submit the application form attached to an official document by email)",
+   "when": "Thursday, 26 November 2026",
+   "original_ko": "2026. 11. 26.(목)",
+   "verified": true
+  },
+  {
+   "what": "Period during which the trainee-only building (Building 901) may be used",
+   "when": "Saturday, 26 December 2026 to Wednesday, 10 February 2027",
+   "original_ko": "2026. 12. 26.(토) ~ 2027. 2. 10.(수)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only attendees of events organized by, or closely involving, an on-campus Seoul National University institution may use the building.",
+  "Events organized by external companies for profit-making purposes are not eligible.",
+  "The fee is KRW 23,000 per person per night, based on two persons sharing a room.",
+  "Before moving in, users must submit a health certificate showing a normal chest X-ray result taken within 6 months of the move-in date.",
+  "Before moving in, users must also submit a measles vaccination certificate and their personal information (name, contact number, emergency contact, etc.).",
+  "Users must bring their own bedding, toiletries and other personal items.",
+  "On move-out, the room will be inspected, and users may be charged for damage to or loss of facilities, including the card key.",
+  "Users who have completed the move-in procedure are subject to the Gwanak Residence Halls Rewards and Disciplinary Guidelines that apply to residence hall residents."
+ ],
+ "steps": [
+  "Consult in advance with Gwanak Residence Halls (the contact number is in the original notice).",
+  "Download the attached application form (연수생 전용동 신청서 양식.hwp); its content was not read for this translation.",
+  "Complete the application form, attach it to an official document (공문), and send it by email to the address given in the original notice by Thursday, 26 November 2026.",
+  "Before moving in, submit a health certificate (normal chest X-ray result within 6 months of the move-in date), a measles vaccination certificate, and your personal information (name, contact number, emergency contact, etc.).",
+  "Bring your own bedding, toiletries and other personal items when you move in.",
+  "On move-out, have your room inspected, and pay any charges for damaged or lost facilities, including the card key."
+ ],
+ "translation": "Title: Gwanak Residence Halls – Application for Use of the Winter Trainee-Only Building\n\nGwanak Residence Halls will operate the trainee-only building (Building 901) during the winter vacation. Students who wish to use it should complete the application form and submit it by email [the email address is in the original notice].\n\nA. Submission form: Complete the [attached] application form, attach it to an official document (공문) and submit it.\n\nB. Submission deadline: Thursday, 26 November 2026\n\nC. Period of use: Saturday, 26 December 2026 – Wednesday, 10 February 2027\n\nD. Fee: KRW 23,000 per person per night (based on two persons per room)\n\nE. Important notes\n- Only attendees of events organized by, or closely involving, an on-campus Seoul National University institution may use the building.\n  ※ However, events organized by external companies for profit-making purposes are excluded.\n- Before moving in, submit a health certificate (a normal result from a chest X-ray taken within 6 months of the move-in date), a measles vaccination certificate, and the user's personal information (name, contact number, emergency contact, etc.).\n- Users must bring their own bedding, toiletries and other personal items. On move-out, depending on the results of the room inspection, users may be charged for damage to or loss of facilities (including the card key).\n- The conduct of trainee-only building users who have completed the move-in procedure is governed, mutatis mutandis, by the 「Gwanak Residence Halls Rewards and Disciplinary Guidelines」 that apply to residents of Gwanak Residence Halls.\n\nF. Prior consultation: Gwanak Residence Halls (the contact number is in the original notice)\n\nAttachment (1): 연수생 전용동 신청서 양식.hwp (Trainee-Only Building Application Form, 33 KB) – the content of this attachment was not read.",
+ "id": 31479,
+ "text_hash": "12082e4a615dbbf4",
+ "images": 0,
+ "attachments": [
+  "연수생 전용동 신청서 양식.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

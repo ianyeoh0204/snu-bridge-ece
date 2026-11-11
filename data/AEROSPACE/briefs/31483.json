@@ -1,0 +1,48 @@
+{
+ "title_en": "Information Session on Study and Scholarships in Germany (DAAD & Humboldt)",
+ "summary": "The Office of International Affairs will hold an information session on study in Germany, exchange programs and scholarships for research in Germany (DAAD & Humboldt). Interested students and researchers may attend on Monday, 21 September 2026, from 17:30 to 18:30, in the 1st-floor Seminar Room of the Office of International Affairs (Building 152). Attendance is optional.",
+ "applies_to": "Optional, not mandatory. Open to all undergraduate students, graduate students and researchers interested in study, exchange or research funding in Germany. This includes foreign exchange or visiting students currently here from Germany, students who have already taken part in an exchange program at a German university, students now preparing for an exchange semester in Germany, and other students interested in Germany.",
+ "dates": [
+  {
+   "what": "Information session (whole event)",
+   "when": "Monday, 21 September 2026, 17:30–18:30 (1 hour)",
+   "original_ko": "2026. 9. 21.(월) 17:30 - 18:30 (1시간)",
+   "verified": true
+  },
+  {
+   "what": "Welcome remarks",
+   "when": "17:30–17:40",
+   "original_ko": "17:30-17:40",
+   "verified": true
+  },
+  {
+   "what": "Introduction to DAAD scholarships (undergraduate Summer Course; master's and doctoral scholarships)",
+   "when": "17:40–18:30",
+   "original_ko": "17:40-18:30",
+   "verified": true
+  },
+  {
+   "what": "Questions, answers and networking",
+   "when": "From 18:30",
+   "original_ko": "18:30-",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "Attend the session on Monday, 21 September 2026, at 17:30 in the 1st-floor Seminar Room of the Office of International Affairs (Building 152).",
+  "For further details, see the two files attached to the original notice (a promotional poster and an event details document); their content was not read for this translation."
+ ],
+ "translation": "Information Session on Study in Germany and Scholarships (DAAD & Humboldt)\n\nThe Office of International Affairs will hold an information session on study in Germany, exchange student programs and scholarships. Interested students are asked to take note.\n\n1. Event: Scholarships for Study and Research in Germany (DAAD & Humboldt)\n\n2. Date, time and place: Monday, 21 September 2026, 17:30–18:30 (1 hour) | 1st-floor Seminar Room, Office of International Affairs (Building 152)\n\n3. Who may attend: all undergraduate students, graduate students and researchers interested in study, exchange or research funding in Germany\n\n4. Programme\n\n17:30–17:40 | Welcome remarks | An officer of the Office of International Affairs; a professor of the Department of German Language and Literature; the Director of DAAD Seoul\n\n17:40–18:30 | Introduction to DAAD (German Academic Exchange Service) scholarships: Summer Course for undergraduates; scholarships for master's and doctoral programs | A representative (Dr.) of the DAAD Seoul Office\n\n18:30– | Questions, answers and networking | Exchange students and researchers from Germany, among others\n\n(Names of individual speakers are given in the original notice and are omitted here.)\n\n※ This event is intended for foreign exchange or visiting students currently here from Germany, students who have already taken part in an exchange program at a German university, students currently preparing to be sent on an exchange semester in Germany, and students interested in Germany.\n\nAttachments (2):\nAttachment 1. Promotional poster (PDF, 2 MB)\nAttachment 2. Event details (DOCX, 16 KB)\n(The content of these attachments was not read for this translation.)",
+ "id": 31483,
+ "text_hash": "9282875b9ecd06c5",
+ "images": 0,
+ "attachments": [
+  "붙임1. 홍보포스터.pdf",
+  "붙임2. 행사내용.docx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

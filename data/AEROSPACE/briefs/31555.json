@@ -1,0 +1,30 @@
+{
+ "title_en": "Information Session on Recruitment for the 2027 Entrepreneurial Engineering Innovation Talent Program",
+ "summary": "The Seoul National University College of Engineering Innovation and Startup Center (서울공대혁신창업센터) will hold an information session on recruitment for the 2027 Entrepreneurial Engineering and Technology Innovation Talent program. Interested students are invited to attend on Monday, 9 November 2026, from 15:00 to 16:00 in Room B103, Building 39, College of Engineering. The session will introduce the program and explain the 2027 recruitment and selection process.",
+ "applies_to": "Students interested in the 2027 Entrepreneurial Engineering and Technology Innovation Talent program. The notice states no limits by program, year of admission or nationality. Attendance is voluntary.",
+ "dates": [
+  {
+   "what": "Information session on the 2027 Entrepreneurial Engineering and Technology Innovation Talent program recruitment",
+   "when": "Monday, 9 November 2026, 15:00–16:00",
+   "original_ko": "2026. 11. 9.(월) 15:00~16:00",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "Read the attached file \"2027년도 창업가형 혁신인재 모집 설명회 개최 안내.pdf\" for further details. Its content was not read for this translation.",
+  "Attend the information session in Room B103, Building 39, College of Engineering, on Monday, 9 November 2026, from 15:00 to 16:00.",
+  "Direct any questions to the Seoul National University College of Engineering Innovation and Startup Center (서울공대혁신창업센터). Its contact details are given in the original notice."
+ ],
+ "translation": "Information Session on Recruitment for the 2027 Entrepreneurial Engineering and Technology Innovation Talent Program\n\nThe Seoul National University College of Engineering Innovation and Startup Center (서울공대혁신창업센터) will hold an information session on recruitment for the 2027 Entrepreneurial Engineering and Technology Innovation Talent program (창업가형 공학기술 혁신인재) as follows. Interested students are encouraged to apply.\n\nA. Event: Information Session on Recruitment for the 2027 Entrepreneurial Engineering and Technology Innovation Talent Program\n\nB. Date and time: Monday, 9 November 2026, 15:00–16:00\n\nC. Venue: Room B103, Building 39, College of Engineering\n\nD. Main contents:\n1) Introduction to the College of Engineering Entrepreneurial Innovation Talent program\n2) Information on recruitment and selection for the 2027 program, and other matters\n\nE. Inquiries: Seoul National University College of Engineering Innovation and Startup Center. Contact details are given in the original notice.\n\nAttachment (1 file): 2027년도 창업가형 혁신인재 모집 설명회 개최 안내.pdf (55 KB). The content of this attachment was not read for this translation.",
+ "id": 31555,
+ "text_hash": "45742c4b7a123a49",
+ "images": 0,
+ "attachments": [
+  "2027년도 창업가형 혁신인재 모집 설명회 개최 안내.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

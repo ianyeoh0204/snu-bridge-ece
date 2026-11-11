@@ -1,0 +1,47 @@
+{
+ "title_en": "2026 Global Women's Leadership Scholarship (Women Professors' Association)",
+ "summary": "Female master's and doctoral students currently enrolled at Seoul National University whose grade point average in the previous semester was 3.0 or higher may apply for a scholarship of KRW 2,000,000, either as students of foreign nationality (Type 1) or as Korean students raising children of elementary school age or younger (Type 2). Applicants must send a transcript, a certificate of enrollment, the application form and a recommendation letter from their academic advisor by email by 11:59 p.m. on Wednesday, 14 October 2026; the email address is in the original notice. Final recipients must attend the award ceremony at 5:00 p.m. on Thursday, 26 November 2026.",
+ "applies_to": "Optional (by application). Female graduate students currently enrolled in a master's or doctoral program at Seoul National University with a grade point average of 3.0 or higher in the previous semester, who also fall under one of two types: Type 1, female graduate students of foreign nationality; or Type 2, Korean female graduate students who are raising a child or children of elementary school age or younger while pursuing their studies.",
+ "dates": [
+  {
+   "what": "Application deadline (email submission)",
+   "when": "Wednesday, 14 October 2026, 11:59 p.m.",
+   "original_ko": "2026. 10. 14. (수) 오후 11:59",
+   "verified": true
+  },
+  {
+   "what": "Scholarship award ceremony (attendance mandatory for final recipients)",
+   "when": "Thursday, 26 November 2026, 5:00 p.m.",
+   "original_ko": "2026. 11. 26. (목) 오후 5시",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must be female graduate students currently enrolled in a master's or doctoral program at Seoul National University.",
+  "Applicants must have a grade point average of 3.0 or higher in the previous semester.",
+  "Applicants must be either a foreign national (Type 1) or a Korean national raising a child or children of elementary school age or younger while studying (Type 2).",
+  "A total of 15 students will be selected, and the final number selected for each type will be decided by the review results.",
+  "The application form and the advisor's recommendation letter must be prepared on the designated forms.",
+  "Applications must be submitted by email; the deadline is 11:59 p.m. on 14 October 2026.",
+  "Final recipients must attend the award ceremony."
+ ],
+ "steps": [
+  "Read the two attached files (an English and a Korean image of the announcement); their content was not read for this translation.",
+  "Download the designated application form and advisor recommendation form from the Google Drive folder linked in the notice: https://drive.google.com/drive/folders/1MVBbC-xuAEF7ulXNvgVy6LRjhLRqtjv4?usp=sharing",
+  "Prepare your transcript, certificate of enrollment, completed application form and a recommendation letter from your academic advisor on the designated form.",
+  "Email all documents to the address given in the original notice by 11:59 p.m. on Wednesday, 14 October 2026.",
+  "If you are selected as a final recipient, attend the award ceremony at 5:00 p.m. on Thursday, 26 November 2026."
+ ],
+ "translation": "Title: [Women Professors' Association (여교수회)] 2026 Global Women's Leadership Scholarship\n\n[2026 Global Women's Leadership Scholarship]\n\n- Scholarship amount: KRW 2,000,000 per person\n\n- Eligibility: Female graduate students currently enrolled in a master's or doctoral program at Seoul National University with a grade point average of 3.0 or higher in the previous semester\n  · Type 1: Female graduate students of foreign nationality\n  · Type 2: Korean female graduate students who are raising a child or children of elementary school age or younger while pursuing their studies\n\n- Number of recipients: 15 in total\n  ※ The final number of recipients for each type will be determined according to the review results.\n\n- Required documents: Transcript, certificate of enrollment, application form*, recommendation letter from academic advisor* (*Please download the designated forms for the application form and the recommendation letter.)\n  > Application document forms: https://drive.google.com/drive/folders/1MVBbC-xuAEF7ulXNvgVy6LRjhLRqtjv4?usp=sharing\n\n- Application deadline: Wednesday, 14 October 2026, 11:59 p.m.\n\n- Submission method: By email (the email address is given in the original notice).\n\n- Scholarship award ceremony: Thursday, 26 November 2026, 5:00 p.m. ※ Attendance is mandatory for final recipients.\n\nAttachments (2):\n2026_SNUW_Global_Leaders_Fellowship_EN.png (372 KB)\n2026_여교수회_글로벌여성장학금_국문.png (329 KB)\n(The content of these image attachments was not read.)",
+ "id": 31492,
+ "text_hash": "ccfab05a70ee0f9a",
+ "images": 2,
+ "attachments": [
+  "2026_SNUW_Global_Leaders_Fellowship_EN.png",
+  "2026_여교수회_글로벌여성장학금_국문.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

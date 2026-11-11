@@ -1,0 +1,73 @@
+{
+ "title_en": "2026 Winter Session: Tuition Payment and Refund Schedule",
+ "summary": "Students registered for 2026 winter session courses must print their bill and pay tuition at any bank or by virtual account, from 18 to 23 November 2026 (first round) or 26 to 27 November 2026 (second and final round), excluding Saturdays and Sundays. Unpaid registrations are cancelled automatically, and late payment is not accepted. Refunds depend on when a course is cancelled, between 11 December 2026 and 7 January 2027, and are paid only into an account in the student's own name.",
+ "applies_to": "Students who have registered for courses in the 2026 academic year winter session. Payment is mandatory: unpaid registrations are cancelled automatically. The notice states no other limits.",
+ "dates": [
+  {
+   "what": "First round: tuition payment and bill printing (excluding Saturdays and Sundays)",
+   "when": "Wednesday 18 November 2026 to Monday 23 November 2026",
+   "original_ko": "2026. 11. 18.(수) ~ 11. 23.(월)",
+   "verified": true
+  },
+  {
+   "what": "Second (final) round: tuition payment and bill printing (excluding Saturdays and Sundays)",
+   "when": "Thursday 26 November 2026 to Friday 27 November 2026",
+   "original_ko": "2026. 11. 26.(목) ~ 11. 27.(금)",
+   "verified": true
+  },
+  {
+   "what": "Final cancellation of courses with fewer than 20 paid students",
+   "when": "Tuesday 8 December 2026",
+   "original_ko": "2026. 12. 8.(화)",
+   "verified": true
+  },
+  {
+   "what": "Course cancellation with a full tuition refund",
+   "when": "Friday 11 December 2026 to Monday 21 December 2026",
+   "original_ko": "2026. 12. 11.(금) ~ 2026. 12. 21.(월)",
+   "verified": true
+  },
+  {
+   "what": "Course cancellation with a refund of two-thirds of tuition",
+   "when": "Tuesday 22 December 2026 to Friday 1 January 2027",
+   "original_ko": "2026. 12. 22.(화) ~ 2027. 1. 1.(금)",
+   "verified": true
+  },
+  {
+   "what": "Course cancellation with a refund of one-half of tuition",
+   "when": "Saturday 2 January 2027 to Thursday 7 January 2027",
+   "original_ko": "2027. 1. 2.(토) ~ 2027. 1. 7.(목)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Payment is not possible on Saturdays and Sundays during the payment periods.",
+  "If tuition is not paid, course registration is cancelled automatically.",
+  "Payment is not accepted after the payment periods end.",
+  "Courses with fewer than 20 paid students will be finally cancelled on 8 December 2026.",
+  "Tuition is 40,500 KRW per credit for lecture (theory) courses and 45,500 KRW per credit for laboratory and practical courses.",
+  "To drop only some of your courses, you must first pay the full tuition and then cancel those courses during the cancellation period.",
+  "Refunds cannot be made to an account that is not in your own name (for example, a parent's account).",
+  "You must register or change your refund account to one in your own name before cancelling a course.",
+  "The refund amount depends on the cancellation date: full refund from 11 to 21 December 2026, two-thirds from 22 December 2026 to 1 January 2027, and one-half from 2 to 7 January 2027."
+ ],
+ "steps": [
+  "Read the attached English information sheet ([Eng] Winter 2026 Session Payment & Refunds Information.pdf); its content was not read for this translation.",
+  "Print your tuition bill during the first round (18–23 November 2026) or the second and final round (26–27 November 2026), excluding Saturdays and Sundays. The notice does not say where to print it.",
+  "Pay the full tuition at any bank or by virtual account within the same period.",
+  "If you may cancel a course, first register or change your refund account to an account in your own name.",
+  "To cancel a course, cancel it between 11 December 2026 and 7 January 2027; cancel by 21 December 2026 to receive a full refund. The notice does not say where to cancel."
+ ],
+ "translation": "2026 Academic Year Winter Session: Tuition Payment and Refund Schedule\n\nWe announce the tuition payment and refund schedule for the 2026 academic year winter session. Please check the schedule so that you do not miss your winter session course because tuition was not paid.\n\nA. Tuition and payment periods\n\nRound 1: payment and bill printing period 18 November 2026 (Wed) to 23 November 2026 (Mon).\nRound 2 (final): payment and bill printing period 26 November 2026 (Thu) to 27 November 2026 (Fri).\nTuition (per credit): lecture (theory) courses 40,500 KRW; laboratory and practical courses 45,500 KRW.\nNotes: Saturdays and Sundays are excluded. If tuition is not paid, registration is cancelled automatically, and no payment is accepted after the period ends.\n\n※ Final cancellation of courses (fewer than 20 paid students): 8 December 2026 (Tue).\n\nB. Payment method: payment at any bank or by virtual account.\n\nC. Refund periods and refund amounts\n\n11 December 2026 (Fri) to 21 December 2026 (Mon): full refund of tuition.\n22 December 2026 (Tue) to 1 January 2027 (Fri): refund of two-thirds of tuition.\n2 January 2027 (Sat) to 7 January 2027 (Thu): refund of one-half of tuition.\n\nNotes:\n- To cancel only some courses, pay the full tuition first, then cancel those courses during the cancellation period.\n- Tuition cannot be refunded to an account that is not your own (for example, a parent's account). You must complete registration of (or change to) an account in your own name before cancelling a course.\n\nAttachments (2):\n[Eng] Winter 2026 Session Payment & Refunds Information.pdf (39 KB)\n[국문] 2026학년도 동계 계절수업 수강료 납부 안내.pdf (80 KB) (Korean version)\nThe content of these attachments was not read for this translation.",
+ "id": 31556,
+ "text_hash": "bedf05bcf99349c2",
+ "images": 0,
+ "attachments": [
+  "[Eng] Winter 2026 Session Payment & Refunds Information.pdf",
+  "[국문] 2026학년도 동계 계절수업 수강료 납부 안내.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

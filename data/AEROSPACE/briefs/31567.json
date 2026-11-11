@@ -1,0 +1,42 @@
+{
+ "title_en": "Application for the Asia K-Banker School for Government-Invited International Scholars",
+ "summary": "Government-invited international scholarship students who wish to take part in the Asia K-Banker School, hosted by KB Kookmin Bank and Bapilkkum, may apply. Applications must be submitted online through a Google Form by 24:00 on Tuesday, 24 November 2026. All events are held in Korean, and details are in the attachment to the original notice.",
+ "applies_to": "Government-invited international scholarship students (정부초청외국인장학생) who wish to participate. Participation is voluntary; the notice does not state that it is mandatory. Applicants with TOPIK Level 4 or higher and applicants majoring in finance, economics or business-related fields are given preference.",
+ "dates": [
+  {
+   "what": "Application deadline (online Google Form submission)",
+   "when": "Tuesday, 24 November 2026, by 24:00",
+   "original_ko": "~ 2026. 11. 24.(화) 24:00까지",
+   "verified": true
+  },
+  {
+   "what": "Operating hours of the Asia K-Banker School Operations Office for inquiries",
+   "when": "10:00 to 18:00",
+   "original_ko": "운영시간 10:00~18:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications must be submitted by 24:00 on Tuesday, 24 November 2026.",
+  "Applications are submitted online through a Google Form.",
+  "Applicants with TOPIK Level 4 or higher are given preference.",
+  "Applicants majoring in finance, economics or business-related fields are given preference.",
+  "All events, including lectures and discussions, are conducted in Korean."
+ ],
+ "steps": [
+  "Read the attachment to the original notice (2026_Asia_K-Banker_School_안내_261030 (1).hwpx) for program details and the application method; its content was not read for this translation.",
+  "Complete and submit the online application form (Google Form) by 24:00 on Tuesday, 24 November 2026; the form link is not given in the notice text, so check the attachment.",
+  "For questions, contact the Asia K-Banker School Operations Office between 10:00 and 18:00; the email address and phone number are in the original notice."
+ ],
+ "translation": "Government-Invited International Scholars: Application for the 「Asia K-Banker School」\n\nWe announce the 「Asia K-Banker School」 program, hosted by KB Kookmin Bank and Bapilkkum (a nonprofit incorporated association), as follows.\n\nA. Program name: Asia K-Banker School\n   - Digital finance as seen through the eyes of Asian international students\n\nB. Application period: until Tuesday, 24 November 2026, 24:00\n\nC. Application method: submit the online application form (Google Form) / check the attachment\n\nE. Details: see the [attachment]\n\nF. Notes for applicants\n   - Preference is given to applicants with TOPIK Level 4 or higher and to applicants majoring in finance, economics or business-related fields.\n   - All events (lectures and discussions) are conducted in Korean.\n\nG. Inquiries: Asia K-Banker School Operations Office (operating hours 10:00–18:00)\n   - Email and phone: see the original notice.\n\nAttachment (1)\n2026_Asia_K-Banker_School_안내_261030 (1).hwpx (78 KB) — the content of this attachment was not read for this translation.\n\n(Note: item D is missing from the numbering in the original notice.)",
+ "id": 31567,
+ "text_hash": "37fbfd8a0e271b3b",
+ "images": 0,
+ "attachments": [
+  "2026_Asia_K-Banker_School_안내_261030 (1).hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,51 @@
+{
+ "title_en": "Fall 2026 Processing Schedule for Withdrawal from the Integrated Master's-Doctoral Program",
+ "summary": "Students who wish to withdraw from the integrated master's-doctoral program in Fall 2026 must follow the procedure for the period in which they apply. From 1 September to 14 December 2026, students apply themselves on mySNU, then submit the printed withdrawal form, confirmed by themselves and their advisor (signature or seal), to the department administrative office. From 15 December 2026 to 28 February 2027, mySNU applications are not possible: students submit the attached withdrawal form to the department administrative office, which applies on their behalf.",
+ "applies_to": "Students in the integrated master's-doctoral program who wish to withdraw from it (give it up) in the Fall 2026 semester. Withdrawal is by the student's own application. Students who wish to complete coursework or graduate in the February 2027 (2026 academic year, first-half) term must complete the withdrawal before completion assessment begins.",
+ "dates": [
+  {
+   "what": "Application period (start of classes to end of classes): students apply themselves on mySNU",
+   "when": "1 September 2026 – 14 December 2026",
+   "original_ko": "2학기 개강 ~ 종강\n(2026.9.1. ~ 2026.12.14.)",
+   "verified": true
+  },
+  {
+   "what": "Period after the end of classes until the end of the semester: the department or college applies and processes withdrawals; students submit the paper form to the department office and cannot apply on mySNU",
+   "when": "15 December 2026 – 28 February 2027",
+   "original_ko": "2학기 종강 이후 ~\n해당 학기 종료일\n(2026.12.15. ~ 2027.2.28.)",
+   "verified": true
+  },
+  {
+   "what": "Completion/graduation term for which withdrawal must be completed before completion assessment begins (the start date of completion assessment is not stated in the notice)",
+   "when": "February 2027 (2026 academic year, first-half term)",
+   "original_ko": "2026학년도 전기(2027.2.)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "From 15 December 2026, students cannot apply for withdrawal on mySNU; the application must go through the department office.",
+  "Students who wish to complete coursework or graduate in February 2027 must complete the withdrawal application before completion assessment begins.",
+  "The withdrawal form must be confirmed by both the student and the advisor, by signature or seal.",
+  "The application takes effect only after approval by the department, the college and the university headquarters and entry in the academic record.",
+  "After withdrawal, the student's maximum period of leave of absence and maximum period of enrollment change to those of the master's program."
+ ],
+ "steps": [
+  "Application from 1 September to 14 December 2026: Apply on mySNU via mySNU > Student Services [학생서비스] > Academic Status Change [학적변동] > Application [신청] > Major/Program Cancellation Application [전공/과정취소신청] > Withdrawal from Integrated Master's-Doctoral Program [석박사통합포기].",
+  "Application from 1 September to 14 December 2026: After applying, print the withdrawal form from mySNU.",
+  "Application from 1 September to 14 December 2026: Have the form confirmed by yourself and your advisor (signature or seal).",
+  "Application from 1 September to 14 December 2026: Submit the confirmed form to the department administrative office; the department, college and headquarters then approve it and it is entered in your academic record.",
+  "Application from 15 December 2026 to 28 February 2027: Complete the attached Integrated Master's-Doctoral Program Withdrawal Form [석사박사통합과정 포기원] (the attachment was not read).",
+  "Application from 15 December 2026 to 28 February 2027: Submit the form to the department administrative office; the department applies and approves it in the integrated administration system, then the college and headquarters approve it and it is entered in your academic record."
+ ],
+ "translation": "Fall 2026 Integrated Master's-Doctoral Program Withdrawal Processing Schedule\n\nThe schedule and procedure for processing applications to withdraw from the integrated master's-doctoral program in the second semester of the 2026 academic year (Fall 2026) are set out below. Students concerned should review them.\n\nSchedule: Start of classes to end of classes, second semester (2026.9.1. – 2026.12.14.)\nProcedure: Application by the student\n- The student applies directly on mySNU*, followed by approval by the department, college and university headquarters and entry in the academic record.\n*mySNU > Student Services [학생서비스] > Academic Status Change [학적변동] > Application [신청] > Major/Program Cancellation Application [전공/과정취소신청] > Withdrawal from Integrated Master's-Doctoral Program [석박사통합포기]\n* After applying on mySNU, print the withdrawal form, have it confirmed by the student and the advisor (signature or seal), and submit it to the department administrative office.\n\nSchedule: After the end of classes, second semester, until the end date of the semester (2026.12.15. – 2027.2.28.)\nProcedure: The department/college applies and processes directly. ※ Students cannot apply on mySNU.\n(This is to prevent errors in graduation assessment caused by missed processing after the end of classes.)\n- On receiving the student's application, the department applies and approves it in the integrated administration system*, followed by approval by the college and university headquarters and entry in the academic record.\n* Complete the attached Integrated Master's-Doctoral Program Withdrawal Form and submit it to the department administrative office.\n\n<Notes>\n※ Students who wish to complete coursework or graduate in the 2026 academic year first-half term (February 2027) must complete the integrated master's-doctoral program withdrawal application before completion assessment begins.\n※ Upon withdrawal from the integrated program, the maximum period of leave of absence and the maximum period of enrollment change to those of the master's program.\n\nAttachment (1 file): 석사박사통합과정 포기원.hwp (Integrated Master's-Doctoral Program Withdrawal Form, 43 KB). The content of the attachment was not read.\n\nFor enquiries, contact the department office; contact details are in the original notice.",
+ "id": 31454,
+ "text_hash": "3d85d56f4986945c",
+ "images": 0,
+ "attachments": [
+  "석사박사통합과정 포기원.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,39 @@
+{
+ "title_en": "TOPIK Test Fee Support for International Undergraduates, College of Engineering",
+ "summary": "International undergraduate students enrolled in the College of Engineering in Fall 2026 (excluding students on leave of absence) may apply to have their Korean language proficiency test (TOPIK) fee reimbursed. Applicants must email the completed application form, TOPIK score report, payment receipt, a copy of their bank book and a copy of their ID to the College of Engineering International Cooperation Office between 28 September 2026 and 1 January 2027. The email address is given in the original notice.",
+ "applies_to": "International undergraduate students enrolled in the College of Engineering in Fall 2026, excluding students on leave of absence. This is a voluntary support programme; eligible students may apply but are not required to.",
+ "dates": [
+  {
+   "what": "Application period for TOPIK fee support (eligible international undergraduates)",
+   "when": "Monday 28 September 2026 to Friday 1 January 2027",
+   "original_ko": "2026. 9. 28.(월) ~ 2027. 1. 1.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only international undergraduate students enrolled in the College of Engineering in Fall 2026 are eligible.",
+  "Students on leave of absence are not eligible.",
+  "All five documents must be submitted: the application form, TOPIK score report, payment receipt, copy of bank book and copy of ID.",
+  "Applications must be submitted within the application period, which ends on 1 January 2027.",
+  "The attached guide (Korean and English) and application form were not read for this translation and may contain further conditions."
+ ],
+ "steps": [
+  "Read the attached guide on TOPIK fee support, available in Korean [붙임 1-1] and English [붙임 1-2]; these attachments were not read for this translation.",
+  "Download and complete the TOPIK fee support application form [붙임 2] (한국어능력시험(TOPIK) 응시료 지원 신청서.xlsx).",
+  "Prepare your TOPIK score report (TOPIK 성적증명서), the payment receipt for the test fee, a copy of your bank book (통장사본) and a copy of your ID (신분증사본).",
+  "Email the completed form and all documents to the College of Engineering International Cooperation Office (공과대학 국제협력실) between 28 September 2026 and 1 January 2027; the email address is given in the original notice."
+ ],
+ "translation": "TOPIK Test Fee Support for International Undergraduate Students in the College of Engineering\n\nTo help international undergraduate students improve their Korean language proficiency and support a smooth university life and academic progress, the College of Engineering will support the Test of Proficiency in Korean (TOPIK) fee as follows.\n\nA. Eligibility: International undergraduate students enrolled in the College of Engineering in Fall 2026 (students on leave of absence are excluded)\n\nB. Application period: Monday 28 September 2026 to Friday 1 January 2027\n\nC. Documents to submit: TOPIK fee support application form (attached form), TOPIK score report, payment receipt, copy of bank book, copy of ID\n\nD. Where to submit: By email to the College of Engineering International Cooperation Office (공과대학 국제협력실) (the email address is given in the original notice)\n\nAttachments:\n1. Guide to TOPIK fee support, one copy each in Korean and English.\n2. TOPIK fee support application form, one copy. End.\n\nAttached files (3):\n[Attachment 1-1] 공과대학 외국인 학부생 한국어능력시험(TOPIK) 응시료 지원 안내.hwpx (45 KB)\n[Attachment 1-2] TOPIK Registration Fee Support for International Undergraduate Students in the College .pdf (66 KB)\n[Attachment 2] 한국어능력시험(TOPIK) 응시료 지원 신청서.xlsx (11 KB)\n\n(The contents of the attached files were not read for this translation.)",
+ "id": 31494,
+ "text_hash": "e9d94a8afb62c331",
+ "images": 0,
+ "attachments": [
+  "[붙임 1-1] 공과대학 외국인 학부생 한국어능력시험(TOPIK) 응시료 지원 안내.hwpx",
+  "[붙임 1-2] TOPIK Registration Fee Support for International Undergraduate Students in the College .pdf",
+  "[붙임 2] 한국어능력시험(TOPIK) 응시료 지원 신청서.xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

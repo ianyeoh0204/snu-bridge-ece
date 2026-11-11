@@ -1,0 +1,30 @@
+{
+ "title_en": "Fulbright Graduate Study and Research Scholarship Information Session",
+ "summary": "The Korean-American Educational Commission will hold an information session on the Fulbright scholarships for graduate study and research in the United States. Anyone interested in master's or doctoral study, postdoctoral research or faculty sabbatical research in the United States may attend on Friday, 6 November 2026 at 14:00 in Room 102 of the Law Building, Konkuk University. Attendance is optional, and the notice does not mention prior registration.",
+ "applies_to": "Anyone interested in master's or doctoral study, postdoctoral research or faculty sabbatical research in the United States. Attendance is optional; the notice states no other limit.",
+ "dates": [
+  {
+   "what": "Fulbright scholarship information session",
+   "when": "Friday, 6 November 2026, 14:00",
+   "original_ko": "2026. 11. 6.(금) 14:00",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "Optionally, view the attached poster. It is an image file, and its content was not read for this translation.",
+  "Attend the session at 14:00 on 6 November 2026 in Room 102 of the Law Building (법학관), Konkuk University.",
+  "Send any questions to the Scholarship Team of the Korean-American Educational Commission (한미교육위원단). Their contact details are given in the original notice."
+ ],
+ "translation": "Promotion of the Fulbright Scholarship Information Session for Study and Research in the United States\n\nThe Korean-American Educational Commission (한미교육위원단) will hold an information session on the Fulbright scholarships for study and research in the United States.\n\nA. Date and time: Friday, 6 November 2026, 14:00\n\nB. Venue: Room 102, Law Building (법학관), Konkuk University\n\nC. Intended audience: Anyone interested in master's or doctoral study, postdoctoral research or faculty sabbatical research in the United States\n\nEnquiries: Scholarship Team, Korean-American Educational Commission. The contact details are given in the original notice.\n\nAttachment (1 file): [Attachment 1] Fulbright Scholarship Information Session Poster_Konkuk University_for web posting (1).jpg (384 KB). This image was not read for this translation.",
+ "id": 31521,
+ "text_hash": "bbd3a462d5355c30",
+ "images": 1,
+ "attachments": [
+  "[붙임1] 풀브라이트 장학금 설명회 포스터_건국대학교_웹 게시용 (1).jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

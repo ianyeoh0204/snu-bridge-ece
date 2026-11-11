@@ -189,6 +189,24 @@ details.done .title { color:var(--muted); }
 .plain b { font-weight:700; }
 .aboutnote { margin:12px 0 0; max-width:86ch; font-size:13px; color:var(--muted); }
 
+.survey { border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); margin-top:16px; }
+.survey .row { display:grid; grid-template-columns:minmax(0, 2.4fr) minmax(0, 1fr) minmax(0, 2.2fr) minmax(0, 1fr); gap:0 16px; padding:10px 16px; border-top:1px solid var(--hair); align-items:baseline; font-size:16px; }
+.survey .row:first-child { border-top:0; }
+.survey .head { font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
+.survey .n { text-align:right; font-variant-numeric:tabular-nums; font-weight:700; }
+.survey .own { background:var(--ink); color:var(--bg); }
+.survey .lab { display:none; }
+@media (max-width:700px) {
+  .survey .row { grid-template-columns:minmax(0, 1fr) minmax(0, 1fr); gap:6px 16px; }
+  .survey .row > :first-child, .survey .row > :nth-child(3) { grid-column:1 / -1; }
+  .survey .row > :first-child { font-weight:700; }
+  .survey .row > :nth-child(3) { order:3; }
+  .survey .head { display:none; }
+  .survey .n { text-align:left; }
+  .survey .lab { display:block; font-size:11px; font-weight:400; letter-spacing:.04em; text-transform:uppercase; opacity:.7; }
+}
+#boards { margin-bottom:12px; }
+#pilot-note { margin:0 0 16px !important; }
 .figs.one { grid-template-columns:minmax(0, 1fr); }
 .figs.one .fig { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; }
 .figs.one .fig p { margin:0; font-size:17px; }
@@ -212,7 +230,7 @@ details.done .title { color:var(--muted); }
 
 /* two languages on one page: the Korean sits under the English, smaller and lighter */
 .ko2 { display:block; margin-top:3px; font-size:max(12px, .68em); font-weight:400; line-height:1.4; letter-spacing:0; color:var(--muted); text-transform:none; }
-:is(.band, .barhead, .group h2, .brd, .flaps, .gate:hover, .tag.trap, .seg button[aria-pressed="true"], .trapline) .ko2 { color:inherit; opacity:.78; }
+:is(.band, .barhead, .group h2, .brd, .flaps, .gate:hover, .tag.trap, .seg button[aria-pressed="true"], .trapline, .survey .own) .ko2 { color:inherit; opacity:.78; }
 .seg button { text-align:left; line-height:1.2; } .seg button .ko2 { margin-top:1px; font-size:11px; }
 .progress .num > span { display:inline-block; vertical-align:baseline; }
 :is(h1, .fig b, .gate b) .ko2 { font-size:max(14px, .3em); }
@@ -281,8 +299,10 @@ details.done .title { color:var(--muted); }
       <p class="eyebrow" id="eyebrow-notices"></p>
       <h1 id="h1-notices"></h1>
       <p class="lede" id="lede-notices"></p>
+      <div class="seg" id="boards" role="group" aria-label="Department" hidden></div>
       <div class="seg" id="audiences" role="group" aria-label="Audience"></div>
     </section>
+    <p class="trapline" id="pilot-note" hidden></p>
     <p class="note" id="notice-note"></p>
     <div id="notice-list"></div>
   </div>
@@ -393,13 +413,27 @@ function stepBlocks(steps) {
 
 const assistantLink = () => el("a", { href: dept.assistant.url, target: "_blank", rel: "noopener" }, dept.assistant.name);
 let audience = audienceOf(program);
+// A pilot is a department with notices only. The Notices page can show it; every other page stays this department's.
+const pilots = DATA.pilots || {};
+let board = deptId;
 function renderNotices() {
+  const pilot = board !== deptId, nd = pilot ? pilots[board] : dept, anchor = (id) => "notice-" + (pilot ? board + "-" : "") + id;
+  const boards = document.getElementById("boards"), pilotNote = document.getElementById("pilot-note");
+  boards.hidden = !Object.keys(pilots).length;
+  boards.replaceChildren(...[deptId, ...Object.keys(pilots)].map((k) =>
+    el("button", { type: "button", "aria-pressed": String(k === board), onclick: () => { board = k; audience = "All"; history.replaceState(null, "", k === deptId ? "#notices" : "#notices-" + k); renderNotices(); } },
+      k === deptId ? `${dept.name} · ${dept.name_ko}` : L("{name} (pilot)", { name: pilots[k].name }, { name: pilots[k].name_ko }))));
+  pilotNote.hidden = !pilot;
+  pilotNote.replaceChildren(...(pilot ? B("Pilot. Notices only: this department's requirements have not been written, and these translations have not been re-read by the second reader.") : []));
+  document.getElementById("eyebrow-notices").replaceChildren(...B("Department of {name}", { name: nd.name }, { name: nd.name_ko }));
+  document.getElementById("lede-notices").replaceChildren(...(pilot ? B("Notices from the department's notice board, with English titles. Each entry links to the original notice.")
+    : B("Notices from the department's academic board, with English titles. Each entry links to the original notice.")));
   const options = { Graduate: ["Graduate", "All students"], Undergraduate: ["Undergraduate", "All students"], All: null };
   document.getElementById("audiences").replaceChildren(...Object.keys(options).map((a) =>
     el("button", { type: "button", "aria-pressed": String(a === audience), onclick: () => { audience = a; renderNotices(); } }, AUDIENCE[a]())));
-  const shown = dept.notices.filter((n) => !options[audience] || options[audience].includes(n.audience));
+  const shown = nd.notices.filter((n) => !options[audience] || options[audience].includes(n.audience));
   document.getElementById("notice-note").replaceChildren(...B("{n} notices since {date}. English titles are unofficial translations; the original notices are in Korean.",
-    { n: shown.length, date: fullDate(dept.board.since) }, { date: koDate(dept.board.since) }));
+    { n: shown.length, date: fullDate(nd.board.since) }, { date: koDate(nd.board.since) }));
   const byMonth = new Map();
   for (const n of shown) { const k = n.date.slice(0, 7); byMonth.set(k, [...(byMonth.get(k) || []), n]); }
   document.getElementById("notice-list").replaceChildren(...[...byMonth].map(([k, list]) =>
@@ -411,9 +445,10 @@ function renderNotices() {
         const links = el("div", { class: "links" },
           el("a", { href: n.url, target: "_blank", rel: "noopener" }, L("Original notice")),
           card ? el("a", { href: "#card-" + card.id, onclick: (ev) => { ev.preventDefault(); history.replaceState(null, "", "#card-" + card.id); show("requirements", true); openCard(card.id); } }, L("Related requirement") + ": " + card.title) : null);
-        return el("details", { class: "notice", id: "notice-" + n.id },
+        return el("details", { class: "notice", id: anchor(n.id) },
           el("summary", null, el("div", { class: "head" },
             el("div", { class: "meta" }, n.date,
+              n.category ? el("span", { class: "tag" }, `${n.category.en} · ${n.category.ko}`) : null,
               n.edited || (b && b.revised) ? el("span", { class: "tag trap" }, L("Revised")) : null,
               b && b.dates.length ? el("span", { class: "tag" }, L("Dates: {n}", { n: b.dates.length })) : null),
             el("div", { class: "en" }, n.title_en || L("Translation pending")))),
@@ -523,6 +558,13 @@ function renderAbout() {
   const misleading = (list) => list.reduce((a, n) => a + Object.values(n.could_mislead).reduce((x, y) => x + y, 0), 0);
   const caught = Object.values((dept.audit || {}).decoys || {}).filter((v) => v === "caught").length;
   const status = (n) => n.english_board === "found" ? B("Identified") : n.english_board ? B("None identified") : B("Not compared");
+  // The same count on other departments' boards (tools/survey.py), with this department's own boards for the same period.
+  const sv = DATA.survey;
+  const svRow = (cls, name, korean, side, titled) => el("div", { class: "row " + cls }, el("div", null, ...name),
+    el("div", { class: "n" }, el("small", { class: "lab" }, L("Korean notices")), korean), el("div", null, ...side),
+    el("div", { class: "n" }, el("small", { class: "lab" }, L("Of those, titled in English")), titled));
+  const svSide = { separate: (d) => B("Its own English board. Posts in the period: {n}", { n: num(d.english_posts) }), same_posts: () => B("The English menu lists the same Korean posts"),
+    none: () => B("No English site; a browser translation button") };
   root.replaceChildren(
     el("section", { class: "band" }, el("p", null, B("Department of {name}", { name: dept.name }, { name: dept.name_ko })), el("h1", null, B("Background and Method")),
       el("p", null, B("Most of the department's academic notices are posted on its Korean board. This page counts what was posted on the Korean academic board and on the English notice board, and shows how SNU Bridge works."))),
@@ -604,11 +646,35 @@ function renderAbout() {
         { s: audited.filter((c) => c.audit.status === "settled_by_author").length, o: audited.filter((c) => c.audit.status === "open").length })),
       el("p", { class: "aboutnote" }, B("The second reader is an AI model from a different maker than the one that drafted the requirements. It read each page image itself. This is not a check by a person or by the department."))) : "",
 
+    ...(sv ? [
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Other engineering departments")), el("span", null, B("Counted {date}", ...day(sv.counted_on)))),
+      el("div", { class: "figs", "data-reveal": "" },
+        fig(num(sv.totals.korean), "", B("Korean notices on the boards of {n} other departments since {date}", { n: sv.departments.length, date: fullDate(sv.since) }, { date: koDate(sv.since) })),
+        fig(num(sv.totals.english_titled), `of ${num(sv.totals.korean)}`, B("of them have a title in English")),
+        fig(num(sv.totals.sample_with_english_passage), `of ${sv.totals.sample_opened}`, B("Korean-titled notices, opened as a sample, contained a line of English (a programme or conference name). None had an English version."))),
+      el("div", { class: "survey", "data-reveal": "" },
+        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Korean notices")), el("div", null, B("English side")), el("div", { class: "n" }, B("Of those, titled in English"))),
+        ...sv.departments.map((d) => svRow("", [d.name, below(d.name_ko)], (d.approximate ? "≈ " : "") + num(d.korean), svSide[d.english_side](d), num(d.english_titled))),
+        svRow("own", B("{name} (this site, academic board only)", { name: dept.name }, { name: dept.name_ko }), num(sv.own.korean), svSide.separate(sv.own), num(sv.own.english_titled))),
+      el("ul", { class: "plain" },
+        el("li", null, B("Only titles were tested for every notice. Attachments and images were not read.")),
+        el("li", null, B("These boards carry every kind of notice, including job and event announcements. Their totals cannot be compared with this department's academic board.")),
+        el("li", null, B("Each count was repeated from the board's own post numbering. Seven sites matched exactly, Chemical and Biological Engineering differs by up to 11 posts, and Computer Science and Engineering prints no numbering.")),
+        el("li", null, B("Two departments are not counted. The Materials Science and Engineering site permits automated reading of its first page only, and the Architecture site permits none.")))),
+
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Extending to another department"))),
+      el("ul", { class: "plain" },
+        el("li", null, B("Notices: each site needs a small reader for its own board software. The eleven department sites read here use six kinds. Translation, the date check and publishing stay the same.")),
+        el("li", null, B("Requirements: written by hand from that department's official documents and re-read by a second reader, as they were here.")),
+        ...Object.entries(pilots).map(([k, d]) => el("li", null, B("Pilot: {name} notices since {date} are on this site in English. Its board runs on the same software as this department's.", { name: d.name, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }),
+          el("span", { class: "links" }, el("a", { href: "#notices-" + k }, L("Open the pilot"))))))),
+    ] : []),
+
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("What it does not do yet"))),
       el("ul", { class: "plain" },
         el("li", null, B("The {n} requirements were written by hand from the official documents. {a} of them have been re-read by a second reader; the others say \"Verification pending\".", { n: num(dept.cards.length), a: num(audited.filter((c) => c.audit.status !== "open").length) })),
         el("li", null, B("Images and attachments are not read. The notice says so and sends the student to {assistant}.", { assistant: dept.assistant ? dept.assistant.name : "the original notice" })),
-        el("li", null, B("It covers one department and notices since {date}. Month boxes come from the handbook; exact dates are in each notice.", ...day(dept.board.since))),
+        el("li", null, B("Requirements cover one department. Notices cover it since {date}, and one more department as a pilot. Month boxes come from the handbook; exact dates are in each notice.", ...day(dept.board.since))),
         el("li", null, B("Translations are made by AI and can be wrong. It is a student project, not an official Seoul National University website.")))),
 
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Passing it on"))),
@@ -702,7 +768,7 @@ function cardNode(c) {
 }
 
 function render() {
-  for (const id of ["eyebrow", "eyebrow-notices"]) document.getElementById(id).replaceChildren(...B("Department of {name}", { name: dept.name }, { name: dept.name_ko }));
+  document.getElementById("eyebrow").replaceChildren(...B("Department of {name}", { name: dept.name }, { name: dept.name_ko }));
   document.getElementById("programs").replaceChildren(...dept.programs.map((p) =>
     el("button", { type: "button", "aria-pressed": String(p === program),
       onclick: () => { program = p; store.set("bridge:program", p); audience = audienceOf(p); render(); } }, PROGRAM[p] ? PROGRAM[p]() : DATA.program_labels[p])));
@@ -723,19 +789,20 @@ function render() {
   }));
 }
 render();
-// Addresses: (none) or #home, #requirements, #notices, #about, #card-<id>, #notice-<id>.
+// Addresses: (none) or #home, #requirements, #notices, #about, #card-<id>, #notice-<id>;
+// for a pilot department, #notices-<DEPARTMENT> and #notice-<DEPARTMENT>-<id>.
 function route() {
   const h = location.hash;
   if (h.startsWith("#card-")) { show("requirements", true); openCard(h.slice(6)); }
-  else if (h.startsWith("#notice-")) { audience = "All"; show("notices", true); openNotice(h.slice(8)); }
+  else if (h.startsWith("#notice-")) { board = Object.keys(pilots).find((k) => h.startsWith(`#notice-${k}-`)) || deptId; audience = "All"; show("notices", true); openNotice(h.slice(8)); }
+  else if (h.startsWith("#notices-") && pilots[h.slice(9)]) { board = h.slice(9); audience = "All"; show("notices"); }
   else show({ "#notices": "notices", "#requirements": "requirements", "#about": "about" }[h] || "home");
 }
 window.addEventListener("hashchange", route);
 for (const [id, label] of [["tab-requirements", B("Requirements")], ["tab-notices", B("Notices")], ["tab-about", B("About")],
   ["h1-requirements", B("Graduation requirements")], ["lede-requirements", B("A guide for international students, prepared in English from official department documents. Each item cites its source.")],
   ["years-label", B("Year of admission")], ["months-note", B("Months are taken from the graduate handbook. Exact dates are announced in each semester's notices.")],
-  ["progress-note", B("Progress is stored on this device only.")], ["h1-notices", B("Department notices")],
-  ["lede-notices", B("Notices from the department's academic board, with English titles. Each entry links to the original notice.")]]) document.getElementById(id).replaceChildren(...label.flat());
+  ["progress-note", B("Progress is stored on this device only.")], ["h1-notices", B("Department notices")]]) document.getElementById(id).replaceChildren(...label.flat());
 document.getElementById("footer").replaceChildren(...B("SNU Bridge is a student project for the 2nd SNU Generative AI Competition. It is not an official Seoul National University website. English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
 route();
 </script>

@@ -1,0 +1,62 @@
+{
+ "title_en": "Notice of the 2026 SNU Joint College Festival BLUEPRINT (September 9–10)",
+ "summary": "This notice informs readers that the 2026 joint festival <BLUEPRINT> of the Colleges of Engineering, Natural Sciences, and Agriculture and Life Sciences, together with Liberal Studies (자전) and Convergence Science and Technology (첨융), will be held on 9–10 September 2026 at the Lawn Plaza (잔디광장) and Beodeulgol Pungsan Madang (버들골 풍산마당). No action is required of students, but some noise may occur near both venues during the event hours. Further details are available on Instagram at @snu_blueprint.",
+ "applies_to": "No student action is required. The notice is for general information about the festival and the noise it may cause. Requests for cooperation are addressed to specific university offices and colleges, not to students.",
+ "dates": [
+  {
+   "what": "Festival period",
+   "when": "Wednesday 9 September 2026 to Thursday 10 September 2026",
+   "original_ko": "2026. 9. 9.(수) ~ 9. 10.(목)",
+   "verified": true
+  },
+  {
+   "what": "Closing ceremony performances at Beodeulgol Pungsan Madang",
+   "when": "Thursday 10 September 2026, 17:20 to 22:30",
+   "original_ko": "2026. 9. 10.(목) 17:20 ~ 22:30",
+   "verified": true
+  },
+  {
+   "what": "Event hours at the Lawn Plaza, day 1 (possible noise)",
+   "when": "Wednesday 9 September 2026, 10:30 to 18:00",
+   "original_ko": "2026. 9. 9.(수) 10:30 ~ 18:00 (잔디광장)",
+   "verified": true
+  },
+  {
+   "what": "Event hours at the Lawn Plaza, day 2 (possible noise)",
+   "when": "Thursday 10 September 2026, 10:30 to 15:00",
+   "original_ko": "2026. 9. 10.(목) 10:30 ~ 15:00 (잔디광장)",
+   "verified": true
+  },
+  {
+   "what": "Event hours at Pungsan Madang, day 2 (possible noise)",
+   "when": "Thursday 10 September 2026, 14:00 to 22:30",
+   "original_ko": "2026. 9. 10.(목) 14:00 ~ 22:30 (풍산마당)",
+   "verified": true
+  },
+  {
+   "what": "Restrooms in the College of Humanities and College of Education buildings requested to be open for the closing ceremony",
+   "when": "Thursday 10 September 2026",
+   "original_ko": "폐막제 당일(9.10.)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Noise may occur near the Lawn Plaza and Pungsan Madang during event hours because of large crowds and performances.",
+  "Organisers plan to minimise noise by adjusting speaker direction and keeping event staff on site.",
+  "The College of Humanities and College of Education have been asked to open restrooms in their buildings on the day of the closing ceremony (10 September).",
+  "The attached festival plan (PDF) and poster (image) were not read; their content is not included here."
+ ],
+ "steps": [],
+ "translation": "Title: Notice of the 2026 Seoul National University Joint Festival of the College of Engineering x College of Natural Sciences x College of Agriculture and Life Sciences x Liberal Studies (자전) x Convergence Science and Technology (첨융)\n\nA. Event overview ※ Details: Instagram @snu_blueprint\n1) Event name: 2026 Seoul National University Joint Festival of Engineering x Natural Sciences x Agriculture and Life Sciences x Liberal Studies x Convergence Science and Technology <BLUEPRINT>\n2) Period: Wednesday 9 September 2026 to Thursday 10 September 2026\n※ Closing ceremony performances (Beodeulgol Pungsan Madang [버들골 풍산마당]): Thursday 10 September 2026, 17:20–22:30\n3) Venues: Lawn Plaza [잔디광장] (days 1 and 2), Beodeulgol Pungsan Madang (day 2)\n4) Programme\n- Lawn Plaza (days 1 and 2): festival booths (food, mini-games, etc.), food trucks\n- Pungsan Madang (day 2): Creative Design Festival award ceremony, closing ceremony performances (student club and invited guest performances), food trucks\n\nB. Requests for cooperation ※ Details of items 1) and 2) will be sent in separate official letters requesting cooperation.\n1) Campus Management Division: permission to use the Lawn Plaza and operate food trucks\n2) Facilities Support Division: installation of electrical equipment at the venues (Lawn Plaza, Pungsan Madang, etc.) and safety support when connecting electricity\n3) College of Humanities and College of Education: opening of restrooms in their buildings on the day of the closing ceremony (10 September)\n4) College of Engineering Facilities Support Office: provision of rubbish bags and collection of rubbish at Pungsan Madang after the event\n5) College of Engineering departments: advance notice of noise caused by the event\n\n3. In addition, some noise may occur near the Lawn Plaza and Pungsan Madang during the event because of large crowds and performances. We ask for your kind understanding.\nA. Event times: Wednesday 9 September 2026, 10:30–18:00 (Lawn Plaza); Thursday 10 September 2026, 10:30–15:00 (Lawn Plaza); Thursday 10 September 2026, 14:00–22:30 (Pungsan Madang)\nB. Other: noise will be minimised by adjusting the direction of speakers and keeping event staff on site.\n\nAttachments: 1. 2026 Seoul National University Joint Festival Plan (draft), 1 copy. 2. Event poster, 1 copy. End.\n\nAttached files (2): 2026 단과대학 연합축제 포스터.png (15 MB); 2026학년도 공대X자연대X농생대X자전X첨융 연합축제 계획(안).pdf (253 KB). [The attached poster image and plan document were not read; their content is not included in this translation.]",
+ "id": 31459,
+ "text_hash": "430cf35c390851d4",
+ "images": 1,
+ "attachments": [
+  "2026 단과대학 연합축제 포스터.png",
+  "2026학년도 공대X자연대X농생대X자전X첨융 연합축제 계획(안).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

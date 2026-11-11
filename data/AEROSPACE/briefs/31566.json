@@ -1,0 +1,42 @@
+{
+ "title_en": "Israeli Government Scholarship Selection for 2027-2028",
+ "summary": "Students interested in the 2027-2028 Israeli Government Scholarship may apply, as announced by the National Institute for International Education. Applicants must send one set of original application documents by post to the Academic Section of the Embassy of Israel in Seoul, and the documents must arrive by Friday, 15 January 2027. In-person submission is not accepted, and eligibility requirements are set out in Attachment 1, which was not read.",
+ "applies_to": "Optional, open call for applicants to the 2027-2028 Israeli Government Scholarship in the following tracks: master's and doctoral degree programs, postdoctoral program (Post-Doc), research program, and summer language program. Eligibility requirements are given in Attachment 1, which was not read; the notice text itself states no further limits.",
+ "dates": [
+  {
+   "what": "Application deadline: original documents must arrive at the Embassy of Israel by post (all tracks)",
+   "when": "Friday, 15 January 2027 (documents arriving by 15 January are accepted)",
+   "original_ko": "2027. 1. 15.(금) [1.15. 도착분까지 접수, 방문접수 불가]",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications are accepted only if they arrive at the Embassy by 15 January 2027; the arrival date, not the posting date, counts.",
+  "In-person (walk-in) submission is not accepted; applications must be sent by post.",
+  "One set of original application documents must be submitted.",
+  "The front of the envelope must be marked \"정부장학금 지원서\" (Government Scholarship Application).",
+  "Eligibility requirements and other details are stated in Attachment 1, which was not read; applicants must check them there.",
+  "Master's/doctoral, postdoctoral and research program benefits: tuition (50% of fees, up to USD 6,000), basic medical insurance, and a living allowance of USD 1,000 for 8 months.",
+  "Summer language program (3.5 weeks) benefits: full tuition, dormitory, basic medical insurance, and a modest living allowance."
+ ],
+ "steps": [
+  "Read Attachment 1 (2027-2028 Israeli Government Scholarship selection guide, file \"2027-2028 이스라엘 정부장학금 안내.pdf\") for eligibility and details; its content was not read in this translation.",
+  "Complete the application form in Attachment 2 (file \"지원서 양식 (1).pdf\"); its content was not read in this translation.",
+  "Prepare one set of original application documents as required by Attachment 1.",
+  "Write \"정부장학금 지원서\" (Government Scholarship Application) on the front of the envelope.",
+  "Send the documents by post to: Academic Section, Embassy of Israel, 18th floor, Cheonggye Hankook Building, 11 Cheonggyecheon-ro, Jongno-gu, Seoul (postal code 03187), allowing time for them to arrive by 15 January 2027.",
+  "For questions, contact the Academic Section of the Embassy of Israel; the phone number and email are in the original notice."
+ ],
+ "translation": "Title: Selection of 2027-2028 Israeli Government Scholarship Recipients\n\nThe National Institute for International Education has announced the selection of 2027-2028 Israeli Government Scholarship recipients as follows. We encourage you to apply.\n\nA. Programs: master's and doctoral degree programs, postdoctoral program (Post-Doc), research program, summer language program\n\nB. Eligibility requirements and other details: see [Attachment 1] (not read in this translation)\n\nC. Scholarship benefits\n1) Master's and doctoral degree programs, postdoctoral program, research program: tuition (50% of tuition fees, up to USD 6,000), basic medical insurance, living allowance (USD 1,000, for 8 months)\n2) Summer language program (3.5-week program): full tuition, dormitory, basic medical insurance, a modest living allowance\n\nD. Application method and deadline: Friday, 15 January 2027 [applications arriving by 15 January are accepted; in-person submission is not accepted]\n1) Application method: submit one set of original application documents to the Embassy by post\n2) Submit to: Academic Section, Embassy of Israel, 18th floor, Cheonggye Hankook Building, 11 Cheonggyecheon-ro, Jongno-gu, Seoul (postal code 03187)\n※ Write \"정부장학금 지원서\" (Government Scholarship Application) on the front of the envelope.\n\nE. Inquiries: Academic Section, Embassy of Israel (the phone number and email address are given in the original notice)\n\nAttachments:\n1. 2027-2028 Israeli Government Scholarship selection guide, 1 copy.\n2. Application form, 1 copy. End.\n\nAttached files (2): \"2027-2028 이스라엘 정부장학금 안내.pdf\" (217 KB); \"지원서 양식 (1).pdf\" (326 KB). The contents of these files were not read.",
+ "id": 31566,
+ "text_hash": "0adf50b1a7459463",
+ "images": 0,
+ "attachments": [
+  "2027-2028 이스라엘 정부장학금 안내.pdf",
+  "지원서 양식 (1).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

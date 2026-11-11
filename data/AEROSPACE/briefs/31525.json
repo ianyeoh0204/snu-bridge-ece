@@ -1,0 +1,63 @@
+{
+ "title_en": "SNU Grand Quest Academy Junior 2027: Call for Participants",
+ "summary": "Undergraduate and master's students who wish to join the SNU Grand Quest Academy Junior 2027 program must apply individually on the SNU Grand Quest website (grandquest.snu.ac.kr) by Thursday, 5 November 2026. To apply, complete the application form and attach it on the website. About 25 students will be selected, and applicants will be contacted individually during the second week of November.",
+ "applies_to": "Undergraduate students and master's students who wish to take part (participation is voluntary and by selection; about 25 students will be selected). This includes students on leave of absence, students in the integrated master's-doctoral program who are within their first four semesters, and students who have completed master's coursework, provided no more than one semester has passed since completion.",
+ "dates": [
+  {
+   "what": "Application deadline",
+   "when": "By Thursday, 5 November 2026",
+   "original_ko": "~ 2026. 11. 5.(목)까지",
+   "verified": true
+  },
+  {
+   "what": "Selection results, sent to applicants individually",
+   "when": "During the second week of November (2026)",
+   "original_ko": "11월 둘째주 중",
+   "verified": true
+  },
+  {
+   "what": "Orientation (1 day): preliminary exploration, for selected participants",
+   "when": "Wednesday, 16 December 2026",
+   "original_ko": "2026.12.16.(수)",
+   "verified": true
+  },
+  {
+   "what": "Camp (3 days, 2 nights): question inquiry, for selected participants",
+   "when": "Wednesday, 6 January 2027 to Friday, 8 January 2027",
+   "original_ko": "2027.1.6.(수)~1.8.(금)",
+   "verified": true
+  },
+  {
+   "what": "Connect (1 day): presentation of results, for selected participants",
+   "when": "Wednesday, 24 March 2027",
+   "original_ko": "2027.3.24.(수)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Students in the integrated master's-doctoral program are eligible only if they are within their first four semesters.",
+  "Students who have completed master's coursework are eligible only if no more than one semester has passed since completion.",
+  "Students on leave of absence are eligible.",
+  "An activity certificate and a certificate of completion will be issued only to participants who complete the entire program (orientation, camp and connect).",
+  "Awards are planned for outstanding participants.",
+  "The attached poster image was not read; its content is not included here."
+ ],
+ "steps": [
+  "Read the detailed information on the SNU Grand Quest website (grandquest.snu.ac.kr).",
+  "Complete the application form and attach it when applying individually on the SNU Grand Quest website (grandquest.snu.ac.kr) by Thursday, 5 November 2026.",
+  "Wait for the individual notification of selection results during the second week of November.",
+  "If selected, attend the orientation on 16 December 2026, the camp from 6 to 8 January 2027, and the connect session on 24 March 2027.",
+  "For questions, contact the program's official email address given in the original notice."
+ ],
+ "translation": "SNU Grand Quest Academy Junior 2027: Call for Participants\n\nIn connection with 'SNU Grand Quest', promoted by our university, the 2027 Junior course of the SNU Grand Quest Academy, aimed at the next generation of scholars, will be run as follows.\n\nA. Program name: \"SNU Grand Quest Academy Junior\"\n※ What is the \"SNU Grand Quest Academy\"?\n- An on-campus program that supports the thinking process through which the next generation of scholars explore questions from various perspectives and expand and develop them.\n- Among these, the '2027 Junior course' is for undergraduate and master's students, and aims to help them learn how to structure and reinterpret questions.\n\nB. Eligibility and number of participants: Undergraduate students and master's students; about 25 students will be selected.\n- Includes students on leave of absence and students in the integrated master's-doctoral program who are within their first four semesters.\n- Includes students who have completed master's coursework (provided no more than one semester has passed since completion).\n\nC. Main schedule and content\n- Starting from a single question, participants form teams with peers from other majors and perspectives and repeatedly develop it into new questions, thereby learning how to ask questions.\n\nOrientation (1 day) ▶ Camp (3 days, 2 nights) ▶ Connect (1 day)\nPreliminary exploration: Wednesday, 16 December 2026\nQuestion inquiry: Wednesday, 6 January 2027 to Friday, 8 January 2027\nPresentation of results: Wednesday, 24 March 2027\n\n- An activity certificate and a certificate of completion will be issued upon completion of the entire program.\n- Awards are planned for outstanding participants.\n\nD. How and when to apply\n- Application period: until Thursday, 5 November 2026.\n- How to apply: apply individually on the SNU Grand Quest website (grandquest.snu.ac.kr); complete the application form and attach it.\n- Selection results: applicants will be contacted individually during the second week of November.\n\nE. Details: SNU Grand Quest website\n\nF. Inquiries: the program's official email address (given in the original notice).\n\nAttachment (1 file): [SNU Grand Quest] Academy Junior poster_final (jpg).jpg (687 KB). This image was not read, and its content is not included in this translation.",
+ "id": 31525,
+ "text_hash": "e6c358303797ed98",
+ "images": 1,
+ "attachments": [
+  "[SNU 그랜드퀘스트] 아카데미 주니어 포스터_최종(jpg).jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,41 @@
+{
+ "title_en": "2026 UAM Future Talent Development Open Special Lecture",
+ "summary": "The Korea Transportation Safety Authority invites university and graduate students across Korea who are interested in Urban Air Mobility (UAM) to attend an open special lecture; attendance is voluntary. The lecture takes place on Wednesday, 4 November 2026, from 10:00 to 12:00 on the Main Stage, Hall 2, KINTEX Exhibition Center 1. Students may apply through the QR code on the poster by Sunday, 1 November 2026, 24:00, or register on site.",
+ "applies_to": "University and graduate students nationwide who are interested in UAM. Attendance is voluntary, not mandatory.",
+ "dates": [
+  {
+   "what": "Application deadline (QR application through the poster)",
+   "when": "Sunday, 1 November 2026, 24:00",
+   "original_ko": "~2026.11.01(일) 24:00",
+   "verified": true
+  },
+  {
+   "what": "Special lecture",
+   "when": "Wednesday, 4 November 2026, 10:00–12:00",
+   "original_ko": "'26. 11. 04(수) 10:00~12:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The lecture is open only to university and graduate students.",
+  "Students may apply in advance through the poster QR code or register on site on the day.",
+  "The lecture is held in connection with the 2026 Drone and Urban Air Mobility Expo.",
+  "Further details are in an attached image file, which was not read; its content is not included here."
+ ],
+ "steps": [
+  "Read the attached poster (2026 UAM 미래인재 양성 3차 공개형 강의 특강.png) attached to the original notice for details and the application QR code; this attachment was not read here.",
+  "Apply by scanning the QR code on the poster by Sunday, 1 November 2026, 24:00, or register on site on the day of the lecture.",
+  "Attend the lecture on Wednesday, 4 November 2026, 10:00–12:00, at the Main Stage, Hall 2, KINTEX Exhibition Center 1."
+ ],
+ "translation": "2026 UAM Future Talent Development Open Special Lecture\n\nThe Korea Transportation Safety Authority is holding an open special lecture for future talent, intended for university and graduate students interested in UAM (Urban Air Mobility), as described below. We encourage many students to attend.\n\nA. Program title: 2026 UAM Future Talent Development Open Special Lecture\n\nB. Date/time: Wednesday, 4 November 2026, 10:00–12:00\n\nC. Venue: Main Stage, Hall 2, KINTEX Exhibition Center 1\n* Held in connection with the 2026 Drone and Urban Air Mobility Expo\n\nD. Organisers: Ministry of Land, Infrastructure and Transport; Korea Transportation Safety Authority\n\nE. Eligible participants: University and graduate students nationwide\n\nF. Application period: Until Sunday, 1 November 2026, 24:00\n\nG. How to participate: Apply via the QR code on the poster, or register on site\n\nH. Lecture content:\n1) Commercialisation trends in the UAM industry and technology\n2) Current status and roadmap of eVTOL aircraft development\n3) Current status of UAM air traffic control and traffic management system development\n* See the attached file for details.\n\nAttachment (1): 2026 UAM 미래인재 양성 3차 공개형 강의 특강.png (2 MB) — this image was not read, and its content is not included in this translation.",
+ "id": 31543,
+ "text_hash": "cc72cc10dd6df2a7",
+ "images": 1,
+ "attachments": [
+  "2026 UAM 미래인재 양성 3차 공개형 강의 특강.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

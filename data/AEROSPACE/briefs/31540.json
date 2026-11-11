@@ -1,0 +1,59 @@
+{
+ "title_en": "Demand Survey for Training on International Registration of Satellite Networks (KCA)",
+ "summary": "The Korea Communications Agency (KCA) invites university students, graduate students and researchers who are interested to complete a voluntary demand survey for a training session on international registration of satellite networks with the ITU. The survey must be completed through the online form at https://forms.gle/DxZFq4iUsw7SbS3SA by Monday, 2 November 2026. The training is provisionally planned for Friday, 27 November 2026, 1:00–5:00 p.m., at a venue in the Daejeon area that is still to be arranged.",
+ "applies_to": "University students, graduate students and researchers who wish to attend the training on international registration of satellite networks. Participation in the survey and the training is voluntary; the notice only encourages active participation.",
+ "dates": [
+  {
+   "what": "Training on international registration of satellite networks (general period stated)",
+   "when": "During November 2026",
+   "original_ko": "11월 중",
+   "verified": true
+  },
+  {
+   "what": "Deadline to complete the online demand survey",
+   "when": "By Monday, 2 November 2026",
+   "original_ko": "11월2일(월)까지",
+   "verified": true
+  },
+  {
+   "what": "Planned training session (provisional; may change depending on survey results)",
+   "when": "Friday, 27 November 2026, 1:00–5:00 p.m.",
+   "original_ko": "2026년 11월 27일(금), 오후 1시~5시",
+   "verified": true
+  },
+  {
+   "what": "Possible alternative training date, asked about in the survey for those who cannot attend on 27 November",
+   "when": "Wednesday, 25 November 2026",
+   "original_ko": "25일(수)",
+   "verified": true
+  },
+  {
+   "what": "Possible alternative training date, asked about in the survey for those who cannot attend on 27 November",
+   "when": "Thursday, 26 November 2026",
+   "original_ko": "26일(목)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The training schedule is provisional and may change depending on the results of the demand survey.",
+  "The training venue has not yet been fixed; it will be arranged in the Daejeon area.",
+  "Participation is voluntary."
+ ],
+ "steps": [
+  "Read the planned training details: overview and processing procedures for international registration of satellite networks, related ITU Radio Regulations, and software practice.",
+  "Open the online survey form at https://forms.gle/DxZFq4iUsw7SbS3SA.",
+  "In the form, indicate whether you will participate (O / X).",
+  "In the form, enter the expected number of participants.",
+  "If you cannot attend on Friday, 27 November, indicate in the form whether you could attend on Wednesday, 25 November or Thursday, 26 November.",
+  "Submit the survey by Monday, 2 November 2026."
+ ],
+ "translation": "[Korea Communications Agency] Demand Survey for Training on International Registration of Satellite Networks\n\nThe Korea Communications Agency (KCA) carries out policy support work to secure national satellite networks and to promote the satellite industry. Because international registration of satellite networks with the International Telecommunication Union (ITU) must be completed in advance whenever a satellite needs to use frequencies for communications or other purposes, the Agency plans to provide training in November for university and graduate students and researchers on the overview and procedures of international satellite network registration and on how to use the related software. To ensure the training runs smoothly, a demand survey is being conducted in advance, and your active participation is requested.\n\n○ Planned schedule for the training on international registration of satellite networks (draft) *May change depending on the survey results\n- (Date) Friday, 27 November 2026, 1:00 p.m. to 5:00 p.m.\n- (Venue) To be arranged in the Daejeon area\n- (Content) Overview and processing procedures for international registration of satellite networks, related ITU Radio Regulations, software practice, etc.\n\n○ How to take part in the demand survey: https://forms.gle/DxZFq4iUsw7SbS3SA / The survey is open until Monday, 2 November.\n\n1. Participation | O / X |\n2. Expected number of participants | 0 persons |\n3. If you cannot attend on Friday the 27th, can you attend on Wednesday the 25th or Thursday the 26th? | 25th (Wed) / 26th (Thu) |",
+ "id": 31540,
+ "text_hash": "394f6e0e94d3c9b1",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

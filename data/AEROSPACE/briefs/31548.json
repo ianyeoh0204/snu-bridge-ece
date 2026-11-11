@@ -1,0 +1,52 @@
+{
+ "title_en": "Recruitment of Examination Staff for the 16th Bar Examination (2027)",
+ "summary": "The Ministry of Justice is recruiting undergraduate students of the university to work as examination staff for the 16th Bar Examination in 2027, at the Law Building (Building 15), Seoul National University. Interested students must send the application form (Attachment 2) individually to the contact person's email address by Friday, 6 November. The Ministry of Justice plans to notify selected students by telephone between 24 and 27 November 2026, and students who cannot be reached will not be selected.",
+ "applies_to": "Undergraduate students of the university currently enrolled in years 1 to 4 who wish to apply. Fourth-year students who plan to enter a law school (법학전문대학원) or who already have a job lined up are not eligible. Application is voluntary.",
+ "dates": [
+  {
+   "what": "Deadline to email the application form (Attachment 2) to the contact person",
+   "when": "Friday, 6 November (2026)",
+   "original_ko": "11. 6.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "Period in which the Ministry of Justice plans to notify selected applicants by telephone",
+   "when": "Tuesday, 24 November 2026 to Friday, 27 November 2026",
+   "original_ko": "2026. 11. 24.(화) ~ 11. 27.(금)",
+   "verified": true
+  },
+  {
+   "what": "Working period for examination staff: stated only in Attachment 1, which was not read",
+   "when": "Not stated in the notice text; see Attachment 1",
+   "original_ko": "[붙임1] 참고",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only undergraduate students currently enrolled in years 1 to 4 are eligible.",
+  "Fourth-year students who plan to enter a law school or who already have a job lined up are not eligible.",
+  "21 students will be selected; the Ministry of Justice may also select reserve staff depending on its circumstances.",
+  "Applicants who cannot be reached by telephone during the notification period will not be selected.",
+  "The allowance is KRW 100,000 per weekday and KRW 120,000 per holiday worked.",
+  "The work location is the Law Building (Building 15), Seoul National University.",
+  "The working period and duties are stated only in Attachment 1, whose content was not read."
+ ],
+ "steps": [
+  "Read Attachment 1 (시험관리원 근무안내.hwpx) for the working period and duties; its content was not read for this translation.",
+  "Download and complete Attachment 2, the application form (시험관리원 근무 지원서(서울대).xlsx).",
+  "Send the completed application form individually by email to the contact person by Friday, 6 November; the email address is given in the original notice.",
+  "Keep your telephone available between 24 and 27 November 2026, when the Ministry of Justice plans to call selected applicants."
+ ],
+ "translation": "Recruitment of Examination Staff for the 16th Bar Examination (2027)\n\nThe Ministry of Justice is recruiting undergraduate students of our university to work as examination staff (시험관리원) for the 16th Bar Examination in 2027, as set out below. Interested students are encouraged to apply.\n\nA. Eligibility: Undergraduate students currently enrolled in years 1 to 4\n* Fourth-year students who plan to enter a law school or who already have a job lined up are excluded.\n\nB. Number of positions: 21 (reserve staff may be selected depending on the circumstances of the Ministry of Justice)\n\nC. Work location: Law Building (Building 15), Seoul National University\n\nD. Working period and duties: See [Attachment 1]\n\nE. Allowance: KRW 100,000 per weekday; KRW 120,000 per holiday\n\nF. How to apply: Send the [Attachment 2] application form individually to the contact person's email address by Friday, 6 November. (The email address is given in the original notice.)\n\nG. Selection: The Ministry of Justice plans to notify selected applicants by telephone between Tuesday, 24 November 2026 and Friday, 27 November 2026. (Applicants who cannot be reached will not be selected.)\n\nH. Enquiries: Legal Professional Personnel Division (법조인력과), Ministry of Justice. (The telephone number is given in the original notice.)\n\nAttachments (2)\nAttachment 1. 시험관리원 근무안내.hwpx (Examination Staff Work Information) (55 KB)\nAttachment 2. 시험관리원 근무 지원서(서울대) (1).xlsx (Examination Staff Application Form (SNU)) (12 KB)\n\n[Note: The contents of the attachments were not read for this translation.]",
+ "id": 31548,
+ "text_hash": "624372f995d4ebb2",
+ "images": 0,
+ "attachments": [
+  "붙임 1. 시험관리원 근무안내.hwpx",
+  "붙임 2. 시험관리원 근무 지원서(서울대) (1).xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

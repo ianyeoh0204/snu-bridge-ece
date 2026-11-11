@@ -1,0 +1,37 @@
+{
+ "title_en": "Announcement: 3rd International Aerospace and Defense Convergence Conference 2026",
+ "summary": "Gyeongsang National University's Gyeongnam Aerospace and Defense Institute of Science and Technology (GADIST) will hold the 3rd International Aerospace and Defense Convergence Conference 2026 on Thursday, 26 November 2026, from 09:00 to 18:00, at the Gajwa Campus of Gyeongsang National University. Those who wish to attend may pre-register through the conference website, gass2026.kr. The notice does not state a registration deadline or say that attendance is mandatory.",
+ "applies_to": "The notice lists the intended participants as about 200 domestic and international experts, academic researchers, industry practitioners and policy officials. It does not name any student group and does not state that attendance is mandatory.",
+ "dates": [
+  {
+   "what": "Conference date and hours",
+   "when": "Thursday, 26 November 2026, 09:00 to 18:00",
+   "original_ko": "2026. 11. 26.(목) 09:00 ~ 18:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The notice does not state a pre-registration deadline, a fee, or whether attendance is mandatory.",
+  "The specific building or hall at Gajwa Campus is not legible in the notice text, so check the website or the attachments for the exact venue."
+ ],
+ "steps": [
+  "Read the attached invitations and posters (Korean and English versions); their content was not read for this translation because they are image files.",
+  "Visit the conference website, gass2026.kr, to view details and complete pre-registration.",
+  "Attend the conference on 26 November 2026 (09:00 to 18:00) at Gyeongsang National University Gajwa Campus; confirm the exact venue on the website.",
+  "For questions, contact the Office of External Cooperation at GADIST, Gyeongsang National University; the contact details are in the original notice."
+ ],
+ "translation": "[Announcement of the 3rd International Aerospace and Defense Convergence Conference 2026]\n\nThe Gyeongnam Aerospace and Defense Institute of Science and Technology (GADIST) of Gyeongsang National University will hold the \"3rd International Aerospace and Defense Convergence Conference 2026\" as set out below, in order to share new opportunities and challenges in the aerospace and defense fields through satellite and AI technologies, and to build a global cooperation network bringing together local government, industry, academia, research institutes, public agencies and the military.\n\nA. Event name: 3rd International Aerospace and Defense Convergence Conference 2026\n\nB. Theme: The Future of Aerospace and Defense Connected by Satellites and AI\n\nC. Date and time: Thursday, 26 November 2026, 09:00 to 18:00\n\nD. Venue: Gyeongsang National University, Gajwa Campus (the rest of the venue text is not legible in the original notice)\n\nE. Intended participants: about 200 people, including domestic and international experts, academic researchers, industry practitioners and policy officials\n\nF. Hosted / organized by: Gyeongsangnam-do Province, Jinju City, Gyeongsang National University / Aerospace and Defense Technology Council (Gyeongsang National University, Defense Agency for Technology and Quality) (part of this line is not legible in the original notice)\n\nG. Key themes: Satellites × Aerospace, Satellites × Defense, AI Convergence\n\nH. Website and pre-registration: gass2026.kr\n\nI. Inquiries: Office of External Cooperation, Gyeongnam Aerospace and Defense Institute of Science and Technology (GADIST), Gyeongsang National University (contact details are in the original notice)\n\nAttachments (4): Invitation_Korean.jpg (2 MB), Invitation_English.jpg (2 MB), Poster_Korean.jpg (5 MB), Poster_English.jpg (5 MB). These attachments are images and their content was not read.",
+ "id": 31571,
+ "text_hash": "cd4598e2f765797e",
+ "images": 4,
+ "attachments": [
+  "초청장_국문.jpg",
+  "초청장_영문.jpg",
+  "포스터_국문.jpg",
+  "포스터_영문.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,48 @@
+{
+ "title_en": "2026 Gwanak Campus Laboratory Animal Use and Management Training, Sessions 10 and 11",
+ "summary": "All researchers who conduct animal experiments, other than veterinarians and laboratory animal technicians, must complete training on the use and management of laboratory animals. The Laboratory Animal Resources Management Center will hold Session 10 for university members on 18 November (Wednesday), 13:00–16:30, and Session 11 on 19 November (Thursday), 13:00–16:30 for university members and 09:15–16:30 for external members. The location and registration procedure are not stated in the notice text and are given in the attached guide, which was not read.",
+ "applies_to": "Mandatory for all researchers who conduct animal experiments (undergraduate students, graduate students, researchers and others), except veterinarians and laboratory animal technicians. Sessions 10 and 11 at 13:00–16:30 are for university members; the 19 November session at 09:15–16:30 is for external members.",
+ "dates": [
+  {
+   "what": "Session 10 of the training (university members)",
+   "when": "18 November 2026 (Wednesday), 13:00–16:30",
+   "original_ko": "11월 18일(수) 13:00 ~ 16:30",
+   "verified": true
+  },
+  {
+   "what": "Session 11 of the training (university members)",
+   "when": "19 November 2026 (Thursday), 13:00–16:30",
+   "original_ko": "11월 19일(목) 13:00 ~ 16:30",
+   "verified": true
+  },
+  {
+   "what": "Session 11 of the training (external members)",
+   "when": "19 November 2026 (Thursday), 09:15–16:30",
+   "original_ko": "11월 19일(목) 09:15 ~ 16:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Training on the use and management of laboratory animals is mandatory for everyone who conducts animal experiments.",
+  "Veterinarians and laboratory animal technicians are exempt from this training requirement.",
+  "University members attend the 13:00–16:30 sessions; external members attend the 09:15–16:30 session on 19 November.",
+  "The notice text does not state the venue, the registration method or any fee; these details are in the attached guides, which were not read."
+ ],
+ "steps": [
+  "Read the attached guide for full details, including venue and registration: Attachment 1 (Korean) or Attachment 2 (English). The content of these attachments was not read for this translation.",
+  "Attend one session that matches your status: Session 10 on 18 November (13:00–16:30) or Session 11 on 19 November (13:00–16:30) for university members, or 19 November (09:15–16:30) for external members.",
+  "For questions, contact the department office or the contact given in the original notice."
+ ],
+ "translation": "2026 Gwanak Campus Training Sessions 10 and 11 on the Use and Management of Laboratory Animals (18 November (Wed.) and 19 November (Thu.))\n\nAll researchers who conduct animal experiments (undergraduate students, graduate students, researchers, etc.), except veterinarians and laboratory animal technicians, must complete training on the use and management of laboratory animals.\n\nAccordingly, the Laboratory Animal Resources Management Center announces that it will hold training for researchers who conduct animal experiments, as described in the attachment. Those concerned are asked to participate.\n(Please check the attached guide for details.)\n\nSession 10 (university members): 18 November (Wed.) 13:00–16:30\nSession 11 (university members): 19 November (Thu.) 13:00–16:30\n(external members): 19 November (Thu.) 09:15–16:30\n\nAttachments (2):\nAttachment 1. 2026 Gwanak Campus Sessions 10 and 11 Training on the Use and Management of Laboratory Animals – Guide.pdf (239 KB) [Korean]\nAttachment 2. Education on the use and management of laboratory animals 2026 Gwanak Campus the 10·11 Cl.pdf (72 KB) [English]\n\n(Note: the contents of the attached files were not read for this translation.)",
+ "id": 31557,
+ "text_hash": "c7b060314fc8b201",
+ "images": 0,
+ "attachments": [
+  "붙임 1. 2026년 관악캠퍼스 제10·11차 실험동물의 사용ㆍ관리 등에 관한 교육 안내.pdf",
+  "붙임 2. Education on the use and management of laboratory animals  2026 Gwanak Campus the 10·11 Cl.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

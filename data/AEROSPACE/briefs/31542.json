@@ -1,0 +1,67 @@
+{
+ "title_en": "5th Satellite Radio and Satellite Technology Conference, 18 November 2026",
+ "summary": "All readers are invited to attend the 5th Satellite Radio and Satellite Technology Conference; the notice requests participation but does not state that it is mandatory. Those who wish to attend must pre-register online free of charge using the link in the QR code attachment. The conference takes place on Wednesday 18 November 2026, 10:00–17:00, at COEX, 3rd floor, Conference Room 300 (Samseong-dong, Seoul).",
+ "applies_to": "The notice does not name a specific group of students; it is a general invitation to attend. Participation is requested, not stated as mandatory.",
+ "dates": [
+  {
+   "what": "Conference day and hours (all attendees)",
+   "when": "Wednesday 18 November 2026, 10:00–17:00",
+   "original_ko": "2026. 11. 18.(수), 10:00 ~ 17:00",
+   "verified": true
+  },
+  {
+   "what": "Pre-event: opening address by the Director of the Central Radio Management Service",
+   "when": "10:00–10:05",
+   "original_ko": "10:00~10:05",
+   "verified": true
+  },
+  {
+   "what": "Pre-event: commemorative group photo",
+   "when": "10:05–10:10",
+   "original_ko": "10:05~10:10",
+   "verified": true
+  },
+  {
+   "what": "Part I: Satellite surveillance and SAR situational awareness research (4 sessions)",
+   "when": "10:10–11:50",
+   "original_ko": "10:10~11:50",
+   "verified": true
+  },
+  {
+   "what": "Part II: Domestic satellite industry strategy and space power system technology (3 sessions)",
+   "when": "13:00–14:30",
+   "original_ko": "13:00~14:30",
+   "verified": true
+  },
+  {
+   "what": "Part III: Low Earth orbit satellite communication system technology development (3 sessions)",
+   "when": "15:30–17:00",
+   "original_ko": "15:30~17:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Attendance requires online pre-registration.",
+  "Registration is free of charge.",
+  "The pre-registration link is provided only through the QR code in the attached image, which was not read for this translation.",
+  "The notice does not state a deadline for pre-registration."
+ ],
+ "steps": [
+  "Open the attachments to the original notice, in particular the QR code image (제5회 위성전파 및 위성기술 컨퍼런스 QR코드.png) and the web poster; their content was not read for this translation.",
+  "Scan the QR code to reach the online pre-registration page and complete the free pre-registration.",
+  "Attend the conference on Wednesday 18 November 2026 from 10:00 at COEX, 3rd floor, Conference Room 300 (Samseong-dong, Seoul)."
+ ],
+ "translation": "[5th Satellite Radio and Satellite Technology Conference] Announcement\n\nThe \"5th Satellite Radio and Satellite Technology Conference\" will be held as follows, with the aim of making Korea a leading nation in the satellite communication industry in the era of space competition, including the launch of domestic low Earth orbit (LEO) satellite communication services and the development of LEO satellite communication based on 6G standards. Your participation is requested.\n\nA. Date and time: Wednesday 18 November 2026, 10:00–17:00\n\nB. Venue: COEX Conference Room, 3rd floor, Room 300 (Samseong-dong, Seoul)\n\nC. Registration: Online pre-registration (free of charge)\n※ Pre-registration link: see the QR code [QR_code 참조]\n\nD. Programme\n\nPre-event:\n- 10:00–10:05: Opening address (Director of the Central Radio Management Service)\n- 10:05–10:10: Commemorative photo\n\nConference:\n- Part I, 10:10–11:50: Current state of research on satellite surveillance and SAR situational awareness (4 sessions)\n- Part II, 13:00–14:30: Domestic satellite industry strategy and current state of space power system technology (3 sessions)\n- Part III, 15:30–17:00: Current state of technology development for LEO satellite communication systems (3 sessions)\n\nE. Hosted and organised by: Central Radio Management Service, Ministry of Science and ICT; Korea Radio Promotion Association\n\nAttachments (3):\n- 1020_제5회 위성전파 및 위성기술 컨퍼런스_웹포스터_최종.jpg (web poster, 4 MB)\n- 제5회 위성전파 및 위성기술 컨퍼런스 QR코드.png (QR code, 9 KB)\n- 제5회 위성전파 및 위성기술 컨퍼런스_EDM_(최종).jpg (e-mail flyer, 904 KB)\n\n(Note: The attached images, including the QR code containing the pre-registration link, were not read for this translation. For questions, contact the department office; contact details are in the original notice.)",
+ "id": 31542,
+ "text_hash": "e50141a7be036c48",
+ "images": 3,
+ "attachments": [
+  "1020_제5회 위성전파 및 위성기술 컨퍼런스_웹포스터_최종.jpg",
+  "제5회 위성전파 및 위성기술 컨퍼런스 QR코드.png",
+  "제5회 위성전파 및 위성기술 컨퍼런스_EDM_(최종).jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,57 @@
+{
+ "title_en": "2026 Gwansa Scholarship: SNU Mentor Scholars from Overseas Korean Schools",
+ "summary": "Seoul National University undergraduates who graduated from one of the 34 Ministry of Education-accredited overseas Korean schools, of any nationality, may apply for the 2026 Gwansa Scholarship Foundation mentor scholarship of KRW 3,000,000. Applicants must email the application form, certificate of enrollment, academic transcript, a copy of a bankbook in their own name and a high school graduation certificate to the staff member in charge by Friday, 25 September 2026. The email address and contacts are in the original notice; results will be announced on Friday, 2 October 2026.",
+ "applies_to": "Undergraduate students enrolled at Seoul National University who graduated from an overseas Korean school, regardless of nationality. Only the 34 overseas Korean schools accredited by the Ministry of Education qualify; Korean-language schools (한글학교) do not. Exception: students enrolled in the College of Education may also apply if they graduated from an international school abroad; graduates of international schools enrolled in other colleges may not apply. Application is voluntary.",
+ "dates": [
+  {
+   "what": "Deadline to email all application documents",
+   "when": "Friday, 25 September 2026",
+   "original_ko": "2026. 9. 25.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "Announcement of selection results (successful applicants notified individually)",
+   "when": "Friday, 2 October 2026",
+   "original_ko": "2026. 10. 2.(금)",
+   "verified": true
+  },
+  {
+   "what": "Mentor group activity period for selected scholars (5 months)",
+   "when": "From sometime in October 2026 to 28 February 2027",
+   "original_ko": "2026. 10월 중 ~ 2027. 2. 28.(5개월)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only graduates of the 34 overseas Korean schools accredited by the Ministry of Education are eligible.",
+  "Graduates of Korean-language schools (한글학교) are not eligible.",
+  "Graduates of international schools abroad may apply only if they are enrolled in the College of Education; those enrolled in other colleges may not apply.",
+  "Nationality does not affect eligibility.",
+  "About 5 students will be selected.",
+  "The scholarship is KRW 3,000,000 per person, paid once.",
+  "The bankbook copy must be for an account in the applicant's own name.",
+  "Selected scholars must join the mentor group of the Ministry of Education's Overseas Education Support Center and take part in its activities until 28 February 2027.",
+  "Selected scholars must attend the scholarship award ceremony and submit a thank-you letter.",
+  "Results will be notified individually to successful applicants."
+ ],
+ "steps": [
+  "Read Attachment 1 (the recruitment notice and application form) and Attachment 2 (the foundation's official request letter); these attachments were not read for this translation.",
+  "Complete the application form using the format provided in Attachment 1.",
+  "Prepare one copy each of: certificate of enrollment, academic transcript, a copy of a bankbook in your own name, and your high school graduation certificate.",
+  "Email the application form and all documents to the staff member in charge by Friday, 25 September 2026 (the email address is in the original notice).",
+  "Wait for the results on Friday, 2 October 2026; successful applicants will be notified individually.",
+  "If selected: join the mentor group of the Overseas Education Support Center, take part in its activities from October 2026 to 28 February 2027, attend the award ceremony and submit a thank-you letter."
+ ],
+ "translation": "2026 Gwansa Scholarship Foundation Recruitment of SNU Mentor Scholars from Overseas Korean Schools\n\nThe 2026 Gwansa Scholarship Foundation SNU mentor scholars who graduated from overseas Korean schools will be selected as follows. Please take note.\n\nA. Scholarship name: Gwansa Scholarship Foundation SNU Mentor Scholarship for Graduates of Overseas Korean Schools\n\nB. Purpose: To support undergraduate students who graduated from overseas Korean schools and entered this university, and to develop them into future talent with a balanced Korean identity and global competence.\n\nC. Number to be selected: About 5\n\nD. Eligibility: Undergraduate students of Seoul National University who graduated from an overseas Korean school (regardless of nationality)\n※ Limited to the 34 overseas Korean schools accredited by the Ministry of Education (Korean-language schools [한글학교] are not included).\n※ However, students enrolled in the College of Education may also apply if they graduated from an international school abroad (graduates of international schools enrolled in other colleges may not apply).\n\nE. Scholarship amount: KRW 3,000,000 per person (paid once)\n\nF. Obligations of scholars: Selected scholars must belong to and take part in the mentor group of the Ministry of Education's Overseas Education Support Center, attend the scholarship award ceremony and submit a thank-you letter.\n□ Mentor group activities\n- Supporting the production of educational materials for students of overseas Korean schools (e.g., introductions to academic departments)\n- Participating as mentors in training programs for overseas Korean school staff, etc.\n□ Mentor group activity period: Sometime in October 2026 to 28 February 2027 (5 months)\n\nG. Documents to submit: One copy each of the application form (see the form provided), certificate of enrollment, academic transcript, a copy of a bankbook in the applicant's own name, and high school graduation certificate\n\nH. Deadline and method: Submit the documents by email to the staff member in charge by Friday, 25 September 2026 (the email address is in the original notice).\n\nI. Inquiries about mentor activities: A researcher at the SNU Overseas Education Support Center (contact details are in the original notice).\n\nJ. Announcement of results: Friday, 2 October 2026; successful applicants will be notified individually.\n\nAttachments (2) (not read for this translation):\n[Attachment 1] 2026 Gwansa Scholarship Foundation SNU Mentor Scholar Recruitment Notice and Application Form for Graduates of Overseas Korean Schools.pdf (66 KB)\n[Attachment 2] 2026 Gwansa Scholarship Foundation Mentor Scholar Selection Request Letter (Gwansa Scholarship Foundation).pdf (213 KB)",
+ "id": 31469,
+ "text_hash": "b17628d22ed0d847",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 2026학년도 관사장학회 재외 한국학교 출신자 서울대 멘토장학생 모집 공고 및 신청서 양식.pdf",
+  "[붙임2] 2026 관사장학회 멘토장학생 선발요청공문(관사장학회).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

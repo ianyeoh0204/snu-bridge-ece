@@ -1,0 +1,56 @@
+{
+ "title_en": "Samsung Electronics DX Division Recruitment Announcement",
+ "summary": "Samsung Electronics' DX Division is accepting job applications through its careers website until 5:00 p.m. on Tuesday 15 September. Interested students may also request an online job consultation by 12:00 noon on Monday 14 September and register for the online recruitment briefing on Friday 11 September by 5:00 p.m. on Thursday 10 September.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Deadline for submitting job applications",
+   "when": "By 5:00 p.m., Tuesday 15 September",
+   "original_ko": "~9.15(화) 17시까지",
+   "verified": true
+  },
+  {
+   "what": "Online job consultation period",
+   "when": "Thursday 10 September to Monday 14 September",
+   "original_ko": "9.10(목) ~ 9.14(월)",
+   "verified": true
+  },
+  {
+   "what": "Deadline to request an online job consultation",
+   "when": "By 12:00 noon, Monday 14 September",
+   "original_ko": "~ 9.14(월) 12시까지",
+   "verified": true
+  },
+  {
+   "what": "Online recruitment briefing (2026 Second-Half Samsung Electronics DX Division Live Recruitment Briefing)",
+   "when": "Friday 11 September, 10:00 a.m. to 6:20 p.m.",
+   "original_ko": "9.11(금) 10:00~18:20",
+   "verified": true
+  },
+  {
+   "what": "Deadline to register in advance for the online recruitment briefing",
+   "when": "By 5:00 p.m., Thursday 10 September",
+   "original_ko": "~ 9.10(목) 17시까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The access URL for the online recruitment briefing will be sent only to those who register in advance by the registration deadline.",
+  "Applications must be submitted by 5:00 p.m. on Tuesday 15 September."
+ ],
+ "steps": [
+  "Review business unit, job and other information at https://www.samsung-dxrecruit.com/.",
+  "If you wish to receive an online job consultation, request one at https://www.samsungdxcareertalk.com/Apply?p=JGnEDJ~univ~~univ~5sjdzr8Hd5ffyw==/ by 12:00 noon on Monday 14 September.",
+  "If you wish to attend the online recruitment briefing on Friday 11 September, register in advance by 5:00 p.m. on Thursday 10 September; the access URL will be sent to registered participants.",
+  "Submit your application for the open recruitment at https://www.samsungcareers.com/hr/?no=23055 by 5:00 p.m. on Tuesday 15 September."
+ ],
+ "translation": "[Samsung Electronics DX Division] Recruitment Announcement\n\nApplication period: until 5:00 p.m., Tuesday 15 September\n\n- How to apply\n  · Open recruitment: https://www.samsungcareers.com/hr/?no=23055\n\n- Recruitment information\n  · Check business unit and job information and a range of other content\n    (https://www.samsung-dxrecruit.com/)\n  · Online job consultation: Thursday 10 September to Monday 14 September\n    (https://www.samsungdxcareertalk.com/Apply?p=JGnEDJ~univ~~univ~5sjdzr8Hd5ffyw==/ ; request deadline: by 12:00 noon, Monday 14 September)\n  · Online recruitment briefing: Friday 11 September, 10:00 a.m. to 6:20 p.m.\n    (2026 Second-Half Samsung Electronics DX Division Live Recruitment Briefing; registration deadline: by 5:00 p.m., Thursday 10 September)\n    The access URL will be sent to those who have registered in advance.",
+ "id": 31464,
+ "text_hash": "699b5016184768af",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

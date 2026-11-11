@@ -1,0 +1,22 @@
+{
+ "title_en": "Recruitment Information Session for Super-Gap Companies, Hosted by the Korea Aerospace Research Institute",
+ "summary": "The department announces a recruitment information session for super-gap (초격차) companies in the aerospace sector, hosted by the Korea Aerospace Research Institute (한국항공우주연구원). The text of the notice does not state who may take part, the date, the location or how to apply. These details appear to be only in the attached poster, which was not read for this translation.",
+ "applies_to": "",
+ "dates": [],
+ "conditions": [],
+ "steps": [
+  "Open the attached poster file (항공우주분야 초격차 기업 채용설명회 참가자 모집 홍보포스터.png) on the original notice for the session details, eligibility and how to register. Its content was not read for this translation.",
+  "For any questions, contact the department office. The contact details are in the original notice."
+ ],
+ "translation": "Title: Notice of Recruitment Information Session for Super-Gap Companies, Hosted by the Korea Aerospace Research Institute [한국항공우주연구원 주관 초격차 기업 채용설명회 안내]\n\nAttachment (1 file): Aerospace Sector Super-Gap Companies Recruitment Information Session – Call for Participants Promotional Poster (항공우주분야 초격차 기업 채용설명회 참가자 모집 홍보포스터.png, 2 MB)\n\nThe notice contains no text other than the title and the attachment. The attached poster is an image file, and its content was not read for this translation.",
+ "id": 31501,
+ "text_hash": "3e50b65338ca8a30",
+ "images": 1,
+ "attachments": [
+  "항공우주분야 초격차 기업 채용설명회 참가자 모집 홍보포스터.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

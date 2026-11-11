@@ -1,0 +1,47 @@
+{
+ "title_en": "Advance Registration for the Student Policy Evaluation Panel (29th President Selection)",
+ "summary": "Undergraduate and graduate students enrolled as of 1 September 2026, and registered research students (including those past the thesis submission deadline), who wish to take part in the policy evaluation of presidential pre-candidates must first register as members of the policy evaluation panel. Registration is open from 09:00 on Tuesday, 15 September 2026 to 18:00 on Tuesday, 6 October 2026, through the Seoul National University app or the mySNU portal (my.snu.ac.kr). The policy evaluation itself is a mobile vote on the Kevoting system on Wednesday, 7 October 2026, from 14:00 to 19:00.",
+ "applies_to": "Undergraduate and graduate students enrolled as of 1 September 2026, and registered research students (including research students who have exceeded the thesis submission deadline). Registration is not required of all students, but it is mandatory for anyone who wishes to take part in the policy evaluation.",
+ "dates": [
+  {
+   "what": "Registration period for the student policy evaluation panel",
+   "when": "Tuesday, 15 September 2026, 09:00 to Tuesday, 6 October 2026, 18:00",
+   "original_ko": "2026. 9. 15.(화) 09:00 ~ 2026. 10. 6.(화) 18:00",
+   "verified": true
+  },
+  {
+   "what": "Policy evaluation (online vote via Kevoting) for registered panel members",
+   "when": "Wednesday, 7 October 2026, 14:00 to 19:00",
+   "original_ko": "2026. 10. 7.(수), 14:00 ~ 19:00",
+   "verified": true
+  },
+  {
+   "what": "Reference date for eligibility: students must be enrolled as of this date",
+   "when": "1 September 2026",
+   "original_ko": "2026. 9. 1.",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only students who have registered in advance as members of the policy evaluation panel may take part in the policy evaluation.",
+  "Eligibility is limited to undergraduate and graduate students enrolled as of 1 September 2026 and registered research students, including research students who have exceeded the thesis submission deadline."
+ ],
+ "steps": [
+  "Read the attached guide, 학생 정책평가단 등록 안내문.hwp (its content was not read for this translation).",
+  "Register between 09:00 on 15 September 2026 and 18:00 on 6 October 2026 using one of the following two options.",
+  "Option 1, Seoul National University app: select the policy evaluation panel registration banner [정책평가단 등록 배너], check (and correct if needed) your personal information [개인정보 확인(수정)], then select Register [등록].",
+  "Option 2, mySNU portal (my.snu.ac.kr): select policy evaluation panel registration [정책평가단 등록], check (and correct if needed) your personal information [개인정보 확인(수정)], then select Register [등록].",
+  "Vote online through the Kevoting system on 7 October 2026 between 14:00 and 19:00."
+ ],
+ "translation": "Advance Registration for the Student Policy Evaluation Panel\n\nThe policy evaluation of presidential pre-candidates for the selection of the 29th President will be conducted as a mobile vote using Kevoting. To take part in the policy evaluation, you must register in advance as a member of the policy evaluation panel.\n\nA. Eligible to register for the student policy evaluation panel: undergraduate and graduate students enrolled as of 1 September 2026, and registered research students (including research students who have exceeded the thesis submission deadline).\n\nB. Registration period for the student policy evaluation panel: Tuesday, 15 September 2026, 09:00 to Tuesday, 6 October 2026, 18:00.\n\nC. How to register for the student policy evaluation panel:\n- Seoul National University app: policy evaluation panel registration banner [정책평가단 등록 배너] → check (correct) personal information [개인정보 확인(수정)] → Register [등록]\n- Seoul National University portal mySNU (my.snu.ac.kr): policy evaluation panel registration [정책평가단 등록] → check (correct) personal information [개인정보 확인(수정)] → Register [등록]\n\nD. Date and time of the policy evaluation: Wednesday, 7 October 2026, 14:00 to 19:00.\n\nE. Method of the policy evaluation: online vote (Kevoting system).\n\nAttachment (1 file): 학생 정책평가단 등록 안내문.hwp (519 KB) (Student Policy Evaluation Panel Registration Guide). The content of this attachment was not read for this translation.",
+ "id": 31478,
+ "text_hash": "16c6ea83b9687903",
+ "images": 0,
+ "attachments": [
+  "학생 정책평가단 등록 안내문.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

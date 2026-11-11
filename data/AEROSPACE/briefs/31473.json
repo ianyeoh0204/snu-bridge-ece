@@ -1,0 +1,43 @@
+{
+ "title_en": "Selection of Candidates for Professional Research Personnel, Second Half of 2026",
+ "summary": "Students who wish to apply for selection as Professional Research Personnel (전문연구요원) candidates for the second half of 2026 must apply online between 10:00 on Monday 21 September 2026 and 18:00 on Tuesday 13 October 2026. Applicants must then print all related documents and submit them to the department office by 6:00 p.m. on Tuesday 13 October 2026. Eligible applicants are those currently enrolled in, or who have completed the coursework of, a doctoral program at a natural sciences graduate school.",
+ "applies_to": "Applicants (application is voluntary) who are currently studying in, or have completed the coursework of (수료), a doctoral degree program at a natural sciences graduate school (자연계 대학원). The online application period stated applies to Seoul National University applicants.",
+ "dates": [
+  {
+   "what": "Online application period for Seoul National University applicants",
+   "when": "Monday 21 September 2026, 10:00 to Tuesday 13 October 2026, 18:00",
+   "original_ko": "2026. 9. 21.(월) 10:00 ~ 10. 13.(화) 18:00",
+   "verified": true
+  },
+  {
+   "what": "Deadline for applicants to submit printed documents to the department office",
+   "when": "Tuesday 13 October 2026, by 6:00 p.m.",
+   "original_ko": "2026. 10. 13.(화) 오후 6시까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only those currently studying in, or who have completed the coursework of, a doctoral program at a natural sciences graduate school may apply.",
+  "The online application must be made within the application period.",
+  "After applying online, applicants must also submit printed copies of all related documents to the department office; the deadline must be strictly observed.",
+  "The two attachments (the official selection notice and the document forms and online application manual) were not read; their content is not included in this translation and may contain further requirements."
+ ],
+ "steps": [
+  "Read Attachment 1 (the official notice on the selection of Professional Research Personnel candidates) and Attachment 2 (document forms and online application manual) in the original notice; their content was not read for this translation.",
+  "Apply online between 10:00 on 21 September 2026 and 18:00 on 13 October 2026, following the online application manual in Attachment 2.",
+  "Print all related documents, using the forms provided in Attachment 2.",
+  "Submit the printed documents to the department office (room number not given in the notice) by 6:00 p.m. on 13 October 2026. Contact details for the department office are in the original notice."
+ ],
+ "translation": "Notice on the Selection of Candidates for Professional Research Personnel, Second Half of 2026 (Mon 9/21 – Tue 10/13, 18:00)\n\nWe announce the plan for selecting candidates for assignment as Professional Research Personnel (전문연구요원) from natural sciences graduate schools for the second half of 2026. Applicants must apply online within the application period, then print all related documents and submit them to the department office, strictly observing the deadline.\n\nA. Online application period for Seoul National University applicants: Monday 21 September 2026, 10:00 to Tuesday 13 October 2026, 18:00\n\nB. Eligible applicants: those currently studying in, or who have completed the coursework of (수료), a doctoral degree program at a natural sciences graduate school\n\nC. Deadline for (applicants') submission of printed documents: Tuesday 13 October 2026, by 6:00 p.m.\n\nAttachments (2):\nAttachment 1. (Notice) Selection of Candidates for Professional Research Personnel from Natural Sciences Graduate Schools, Second Half of 2026 (.hwp, 2 MB)\nAttachment 2. (Applicants) Submission document forms and online application manual (.zip, 2 MB)\n\n[Note: The content of the attachments was not read and is not included in this translation.]",
+ "id": 31473,
+ "text_hash": "6f75f0dfd0225033",
+ "images": 0,
+ "attachments": [
+  "붙임1. (공고문) 2026년 후기 자연계 대학원 전문연구요원 편입대상자 선발 공고.hwp",
+  "붙임2. (지원자) 제출서류 양식 및 온라인 신청 매뉴얼 (1).zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

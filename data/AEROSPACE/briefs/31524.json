@@ -1,0 +1,42 @@
+{
+ "title_en": "KASI Colloquium on Korean Space Exploration Beyond the Moon, 21 October, 4:00 pm",
+ "summary": "All members are invited to the regular colloquium for the second half of 2026, held on Wednesday, 21 October, at 4:00 pm in Jang Yeong-sil Hall, Room 331-2, and online via Zoom. A conversation with the speaker (5:00–5:40 pm) and a dinner will follow the talk. KASI-affiliated attendees who attend in person receive 0.5 mandatory education credits.",
+ "applies_to": "Open to all members; attendance is encouraged but the notice does not state that it is required. The 0.5 mandatory education credits are granted only to KASI-affiliated attendees who attend in person.",
+ "dates": [
+  {
+   "what": "Colloquium talk (in person and online)",
+   "when": "Wednesday, 21 October, 4:00 pm",
+   "original_ko": "10월 21일 (수) 오후 4:00",
+   "verified": true
+  },
+  {
+   "what": "Conversation with the speaker, after the talk",
+   "when": "5:00–5:40 pm on 21 October",
+   "original_ko": "5:00-5:40",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only KASI-affiliated attendees who attend in person receive the 0.5 mandatory education credits; online attendance is not stated to earn credits.",
+  "The talk is given in Korean; the slides are in English.",
+  "Online attendees must keep their microphone muted; it is muted by default.",
+  "Online attendees may unmute and use the microphone to ask questions only during the question-and-answer time.",
+  "A dinner follows the conversation with the speaker; no time is given for it."
+ ],
+ "steps": [
+  "Attending in person: Go to Jang Yeong-sil Hall, Room 331-2, by 4:00 pm on Wednesday, 21 October.",
+  "Attending in person: Stay after the talk for the conversation with the speaker (5:00–5:40 pm) and the dinner, if you wish.",
+  "Attending online: Open the Zoom link https://us06web.zoom.us/j/84840334355?pwd=3FUkcuaYwNQwscjoUSo3ulk6KPPo6x.1 in a web browser (Chrome is recommended) before 4:00 pm on 21 October; a program needed to run Zoom may be installed.",
+  "Attending online: Keep your microphone muted after joining.",
+  "Attending online: During the question-and-answer time, unmute your microphone to ask a question."
+ ],
+ "translation": "[KASI Colloquium] Oct. 21 (Wed.) 4:00 pm – Prof. [name] (Seoul National University)\n\nThe regular colloquium for the second half of 2026 will be held as follows on Wednesday (21 October) at 4:00 pm. After the talk, a conversation with the speaker (5:00–5:40) and a dinner are planned. We kindly ask for your participation.\n\nSpeaker: a professor from Seoul National University (name omitted; see the original notice)\nHost: a faculty member (name omitted; see the original notice)\nVenue: Jang Yeong-sil Hall, Room 331-2, and remote connection\nDate and time: 21 October (Wed.), 4:00 pm\nConnection address: https://us06web.zoom.us/j/84840334355?pwd=3FUkcuaYwNQwscjoUSo3ulk6KPPo6x.1\nEducation credits: 0.5 mandatory credits are granted to KASI-affiliated attendees who attend in person\nTitle: What Should Korea Do Beyond Moon Exploration?\n\nAbstract:\nSince the successful Korean Pathfinder Lunar Orbiter mission, Korea has focused its national space exploration program on the Moon. According to KASA's current plan, this focus would continue for the next few years (until 2032, under the current plan): Korea Lunar Telecommunication Orbiter, Cis-lunar, and lunar Lander missions in 2030 and 2032. The next question is what Korea should do after this series of lunar missions in terms of where to go and what kind of missions to pursue.\n\nIn this talk, we will attempt to provide a vision for this. We are exploring several possible missions beyond the Moon, including planetary, small-body, cis-lunar, and heliophysics missions. Mission targets and their science goals and objectives are based on not only the latest U.S. Decadal Survey reports (the 2022 Planetary Science report and the 2024 Solar and Space Physics report), but also the white papers (> 400 each) which formed the basis of those decadal survey reports. Furthermore, Korean long-range planning documents and public information on ongoing international missions are being considered. The purpose is not to make a long list of attractive missions, but to identify missions where Korea may make a real and unique contribution, considering scientific interest, available technology, management capability, cost, and possible industrial participation. Last but not least, we want to open a dialogue about how to fairly evaluate different mission concepts that explore different science fields (i.e., how to deal with \"my science is better than your science\", for example, heliophysics versus Mars versus asteroids versus interplanetary, etc.)\n\nThis talk serves as an initial communication with the Korean space science community and seeks broader input from the community.\n\nLanguage of presentation: Korean\nLanguage of slides: English\n\nHow to connect remotely:\nA. Web browser: Chrome is recommended. When you open the address below, a program needed to run Zoom may be installed.\nB. Connection address: https://us06web.zoom.us/j/84840334355?pwd=3FUkcuaYwNQwscjoUSo3ulk6KPPo6x.1\nC. Note: After connecting, set your microphone to mute (it is muted by default). During the question-and-answer time, you may use your microphone to ask questions.",
+ "id": 31524,
+ "text_hash": "6f15b69db7b7de7f",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

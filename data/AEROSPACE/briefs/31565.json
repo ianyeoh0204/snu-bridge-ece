@@ -1,0 +1,42 @@
+{
+ "title_en": "Fall 2026 SNU Global Scholarship (GS2) Additional Recruitment",
+ "summary": "International graduate degree-program students enrolled and studying at the university in Fall 2026 may apply for the SNU Global Scholarship II, a full tuition waiver for Fall 2026. Students must apply online themselves through MySNU (my.snu.ac.kr) between Monday, 9 November and Friday, 13 November 2026. Applicants should first read the attached English guide.",
+ "applies_to": "International students in graduate degree programs at the university who are currently enrolled and studying in Fall 2026 (2026학년도 2학기). Application is optional; the notice does not state any further limits.",
+ "dates": [
+  {
+   "what": "Online application period for the Fall 2026 GS2 additional recruitment, through MySNU",
+   "when": "Monday, 9 November 2026 to Friday, 13 November 2026",
+   "original_ko": "2026. 11. 9.(월) ~ 11. 13.(금)",
+   "verified": true
+  },
+  {
+   "what": "Semester covered by the scholarship (one semester; Fall 2026 tuition waived)",
+   "when": "Fall 2026",
+   "original_ko": "1개 학기(2026학년도 2학기 등록금 면제)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only international graduate degree-program students enrolled and studying in Fall 2026 are eligible.",
+  "The scholarship covers one semester only, the Fall 2026 tuition.",
+  "Students must apply online themselves through MySNU (my.snu.ac.kr).",
+  "The number of recipients is not stated in the notice; it is shown only as ○○.",
+  "The Office of International Affairs makes the final selection, considering each college or graduate school's applications and review results and its available budget, so applying does not guarantee selection."
+ ],
+ "steps": [
+  "Read the attached English guide, \"(ENG) SNU Global Scholarship(GS) for Fall 2026 (Additional Recruitment).pdf\" (the attachments were not read for this translation; download them from the original notice).",
+  "Log in to MySNU (my.snu.ac.kr) and submit the online application between 9 November and 13 November 2026 (the notice does not give the menu path)."
+ ],
+ "translation": "Fall 2026 SNU Global Scholarship (GS2) Additional Recruitment\n\nThe university will select additional recipients of the Fall 2026 SNU Global Scholarship (GS2) [글로벌 초우수 장학금] as follows.\n\nA. Eligible for recommendation: International students in graduate degree programs at the university (currently enrolled students studying in Fall 2026).\n\nB. Support: Global Scholarship II (full tuition waiver) [the notice spells this \"Global Scholarshop II\"].\n1) Benefit period: one semester (tuition waived for Fall 2026).\n2) Number of recipients (planned): ○○ (number not stated).\n※ The Office of International Affairs [국제처] will make the final decision, taking into account the applications and review results of each college or graduate school, the Office's available budget, and other factors.\n\nD. Application period: Monday, 9 November 2026 to Friday, 13 November 2026.\n※ Applicants apply online themselves through MySNU (my.snu.ac.kr).\n※ See the attached English guide.\n\nAttachments (2) [not read for this translation]:\n- (ENG) SNU Global Scholarship(GS) for Fall 2026 (Additional Recruitment).pdf (350 KB)\n- 2026학년도 2학기 글로벌 초우수 장학사업 추가 선발계획.pdf (Fall 2026 SNU Global Scholarship Program Additional Selection Plan, 92 KB)\n\nNote: the original notice skips item C. For questions, contact the department office; the contact details are in the original notice.",
+ "id": 31565,
+ "text_hash": "b0a8db3e8ed7e91d",
+ "images": 0,
+ "attachments": [
+  "(ENG) SNU Global Scholarship(GS) for Fall 2026 (Additional Recruitment).pdf",
+  "2026학년도 2학기 글로벌 초우수 장학사업 추가 선발계획.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

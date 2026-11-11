@@ -15,6 +15,9 @@ HIDDEN = {"wrong", "not_on_page"}  # a card the second reader rejected is never 
 
 
 AUDIENCE = {"학부": "Undergraduate", "대학원": "Graduate", "학부&대학원": "All students"}
+# A department that files notices by kind instead: shown as a label, and offered to every audience.
+CATEGORY = {"공통": "General", "홍보": "Promotion", "장학": "Scholarship", "안전교육": "Safety training",
+            "전문연구요원": "Technical research personnel"}
 
 
 def _notices(department: str, card_ids: set) -> list[dict]:
@@ -31,7 +34,8 @@ def _notices(department: str, card_ids: set) -> list[dict]:
         brief = json.loads(brief_file.read_text(encoding="utf-8")) if brief_file.exists() else None
         out.append({"id": n["id"], "date": n["date"], "url": n["url"], "title_ko": n["title_ko"], "brief": brief,
                     "title_en": titles.get(str(n["id"])) or (brief or {}).get("title_en", ""),  # a reviewed title wins
-                    "audience": AUDIENCE.get(n["audience_ko"], n["audience_ko"]),
+                    "audience": AUDIENCE.get(n["audience_ko"], "All students" if n["audience_ko"] in CATEGORY else n["audience_ko"]),
+                    "category": {"en": CATEGORY[n["audience_ko"]], "ko": n["audience_ko"]} if n["audience_ko"] in CATEGORY else None,
                     "edited": bool(n.get("title_history")), "cards": [c for c in tied if c in card_ids]})
     return out
 
@@ -65,13 +69,18 @@ def _both_languages(value, where: str) -> None:
 
 
 def build() -> Path:
-    departments = {}
+    departments, pilots = {}, {}
     for config_file in sorted((ROOT / "sources").glob("*/config.json")):
         name = config_file.parent.name
         cards_file = ROOT / "data" / name / "cards.json"
-        if not cards_file.exists():
-            continue
         config = json.loads(config_file.read_text(encoding="utf-8"))
+        if not cards_file.exists():
+            # Notices only: no requirements have been written for this department, so it never becomes the site's
+            # department. It is offered on the Notices page, marked as a pilot.
+            if config.get("pilot"):
+                pilots[name] = {"name": config["department"], "name_ko": config.get("department_ko", ""),
+                                "notices": _notices(name, set()), "board": config.get("board", {})}
+            continue
         cards = [c for c in json.loads(cards_file.read_text(encoding="utf-8")) if c.get("check") not in HIDDEN]
         notices = _notices(name, {c["id"] for c in cards})
         audit = _json(ROOT / "data" / name / "audit.json")  # the second reading (tools/audit.py)
@@ -94,7 +103,7 @@ def build() -> Path:
     template = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8")
     for name, department in departments.items():
         _both_languages(department["evidence_notes"], f"sources/{name}/evidence_notes.json")
-    data = {"departments": departments, "groups": GROUPS, "program_labels": PROGRAM_LABELS, "text": _pairs(template),
+    data = {"departments": departments, "pilots": pilots, "survey": _json(ROOT / "data" / "survey.json"), "groups": GROUPS, "program_labels": PROGRAM_LABELS, "text": _pairs(template),
             "built": datetime.datetime.now(SEOUL).date().isoformat()}
     site = ROOT / "site"
     site.mkdir(exist_ok=True)

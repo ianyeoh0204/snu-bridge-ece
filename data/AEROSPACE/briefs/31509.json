@@ -1,0 +1,45 @@
+{
+ "title_en": "Call for Participants: 2026 OECD Internship Program (Round 2)",
+ "summary": "Currently enrolled undergraduate and graduate students (including research students) who will have at least one semester remaining before graduation after completing the internship may apply to the 2026 OECD Internship Program (Round 2), run by the Office of International Affairs. Applicants must submit the required documents through the Google Form by Monday, 23 November 2026, at 14:00. Applicants must check the eligibility requirements in the attached recruitment notice.",
+ "applies_to": "Voluntary; open to applicants. Eligible applicants are undergraduate and graduate students (including research students) currently enrolled at the university who will have at least one semester remaining until graduation after completing the internship. Further eligibility requirements are in the attached recruitment notice, which must be checked; that attachment was not read.",
+ "dates": [
+  {
+   "what": "Deadline to submit application documents through the Google Form",
+   "when": "Monday, 23 November 2026, 14:00",
+   "original_ko": "2026. 11. 23.(월) 14:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must be currently enrolled undergraduate or graduate students (including research students) at the university.",
+  "Applicants must have at least one semester remaining until graduation after the internship is completed.",
+  "Applicants must check the eligibility requirements in the attached recruitment notice; its content was not read.",
+  "The university will recommend no more than 15 students to the OECD.",
+  "All five required documents must be submitted through the Google Form within the application period.",
+  "The internship lasts 1 to 6 months; the exact period is arranged with the relevant OECD department after final selection.",
+  "Work may be in person, remote, or a combination of both.",
+  "Passing the university's internal selection is not final; selected students must then apply individually to the OECD, which makes the final selection."
+ ],
+ "steps": [
+  "Read the attached recruitment notice (2026년 OECD 인턴십 프로그램(Round 2)_모집 공고문.pdf) for full details and eligibility requirements; its content was not read for this translation.",
+  "Download the attached forms: the application form (참가신청서 (Application Form).hwp), the participation pledge (인턴십 프로그램 참가 서약서.hwp) and the consent form for collection, use and provision of personal information (개인정보 수집이용 및 제공 동의서 양식.hwp).",
+  "Prepare one copy each of: the application form, the pledge, an English Statement of Purpose (free format), an English CV (free format), an English academic transcript, and the personal information consent form.",
+  "Submit all documents through the Google Form by Monday, 23 November 2026, 14:00. The form link is not given in the notice text; contact the department office or see the original notice.",
+  "If selected in the first (internal) selection, apply individually to the OECD for the second stage.",
+  "Await the final selection by the OECD; the internship period will then be arranged with the relevant OECD department."
+ ],
+ "translation": "Recruitment of Participants for the 2026 OECD Internship Program (Round 2)\n\nThe Office of International Affairs is recruiting participants to work as OECD interns as described below. We encourage you to apply.\n\nA. Number of students recommended to the OECD: up to 15\n\nB. Internship period: 1 to 6 months (to be arranged with the relevant OECD department after final selection)\n\nC. Work arrangement: in person or remote (a combination is possible)\n\nD. Eligibility\n- Academic status: undergraduate and graduate students (including research students) currently enrolled at the university who will have at least one semester remaining until graduation after completing the internship.\n* You must check the eligibility requirements in the attached recruitment notice.\n\nE. How to apply: submit the documents below through the Google Form within the application period.\n1) Required documents\n a) Application form and pledge (attached forms), one copy each\n b) Statement of Purpose in English (free format), one copy\n c) CV in English (free format), one copy\n d) Academic transcript in English, one copy\n e) Consent form for the collection, use and provision of personal information, one copy\n2) Application deadline: Monday, 23 November 2026, 14:00\n3) Selection process: 1st stage, internal university selection -> 2nd stage, selected students apply individually to the OECD -> final selection (by the OECD)\n※ Please see the attached recruitment notice for details.\n\nAttachments (4) (the contents of the attachments were not read):\n1. 2026년 OECD 인턴십 프로그램(Round 2)_모집 공고문.pdf (recruitment notice, 107 KB)\n1. 참가신청서 (Application Form).hwp (41 KB)\n2. 개인정보 수집이용 및 제공 동의서 양식.hwp (personal information consent form, 56 KB)\n3. 인턴십 프로그램 참가 서약서.hwp (internship program participation pledge, 59 KB)\n\nNote: The Google Form link is not included in the notice text. For contact details, please refer to the original notice or the department office.",
+ "id": 31509,
+ "text_hash": "8d387641267c17eb",
+ "images": 0,
+ "attachments": [
+  "1. 2026년 OECD 인턴십 프로그램(Round 2)_모집 공고문.pdf",
+  "1. 참가신청서 (Application Form).hwp",
+  "2. 개인정보 수집이용 및 제공 동의서 양식.hwp",
+  "3. 인턴십 프로그램 참가 서약서.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,50 @@
+{
+ "title_en": "Call for Applicants: AUA–UM Overseas Study Program (Online), November–December 2026",
+ "summary": "Undergraduate students of any major who meet the stated English requirement may apply for one of two places in the online AUA–UM Overseas Study Program, held from 30 November to 4 December 2026. Applicants must email a self-introduction, written on the attached application form, and a transcript covering all years of study. The deadline is 18 September 2026 at 17:00; the submission email address is in the original notice.",
+ "applies_to": "Voluntary (by application). Open to undergraduate students of any major who are proficient in English and able to participate actively in the program. Applicants must meet the English score requirement (TOEFL ITP 510, TOEFL CBT 180, TOEFL iBT 64, TOEFL PBT 510, IELTS 5.0 or TOEIC 600 or higher) or hold an equivalent English score. They must also understand the program's goals, take an active part in discussions and be willing to share the results with the local community. Only 2 students will be selected.",
+ "dates": [
+  {
+   "what": "Application deadline (self-introduction and transcript, by email)",
+   "when": "18 September 2026, 17:00 (the notice gives Friday in the body; the title gives a different weekday)",
+   "original_ko": "2026년 9월 18일(금) 17:00시",
+   "verified": true
+  },
+  {
+   "what": "Application deadline as shown in the notice title",
+   "when": "18 September, 17:00",
+   "original_ko": "~9/18(믁) 17:00",
+   "verified": true
+  },
+  {
+   "what": "Program dates (online sessions), for selected students",
+   "when": "30 November to 4 December 2026, 11:00–18:00 Korea time each day",
+   "original_ko": "2026년 11월 30일(화)-12월 4일(금), 11:00-18:00(한국시간)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only undergraduate students may apply; any major is eligible.",
+  "Applicants must meet the English score requirement (TOEFL ITP 510 / TOEFL CBT 180 / TOEFL iBT 64 / TOEFL PBT 510 / IELTS 5.0 / TOEIC 600 or higher) or hold an equivalent English score.",
+  "Applicants must be able to take an active part in the program and its discussions and be willing to share the results with the local community.",
+  "Only 2 students will be selected.",
+  "The program is held online, from 11:00 to 18:00 Korea time on each program day."
+ ],
+ "steps": [
+  "Read the attached poster (Poster AUA-UM-OSP-2026.pdf) and application form (AUA-UM OSP 2026 지원서.hwp); their content was not read for this translation.",
+  "Write your self-introduction on the attached application form, focusing on your motivation for taking part.",
+  "Obtain a transcript covering all years of your study (전학년 성적증명서).",
+  "Email the self-introduction and the transcript to the address given in the original notice by 18 September 2026, 17:00."
+ ],
+ "translation": "Call for Applicants: Association of Universities of Asia (AUA) – UM Overseas Study Program (deadline 18 September, 17:00)\n\nThe Association of Universities of Asia (AUA), of which our university is a member, will run the following program to promote active knowledge exchange and mutual understanding among students of member universities. Participants will be selected as described below, and interested students are encouraged to apply.\n\n1. Overview of the AUA – UM Overseas Study Program\n a. Dates: 30 November (Tue.) – 4 December (Fri.) 2026, 11:00–18:00 (Korea time)\n b. Theme: Empowering the Future Generation with Ethical Artificial Intelligence\n c. Organised by: AUA Secretariat and Universiti Malaya\n d. Format: Online\n\n2. Number of places and eligibility\n a. Number of students to be selected: 2\n b. Eligibility\n 1) Undergraduate students (any major)\n 2) Students who are proficient in English and can participate actively in the program\n ※ Students who meet the English score requirement (TOEFL ITP 510 / TOEFL CBT 180 / TOEFL iBT 64 / TOEFL PBT 510 / IELTS 5.0 / TOEIC 600 or higher) or hold an equivalent English score\n 3) Students who understand the program's goals, can take an active part in discussions and are willing to share the results with the local community\n\n3. How to apply\n a. Documents: a self-introduction (using the attached form, focusing on your motivation for participating) and a transcript covering all years of study, submitted by email (the address is given in the original notice)\n b. Deadline: 18 September 2026 (Fri.), 17:00\n\n4. Contact: International Cooperation Planning Team (국제협력기획과). The contact details are in the original notice.\n\nAttachments (2):\n- AUA-UM OSP 2026 지원서.hwp (application form, 44 KB)\n- Poster AUA-UM-OSP-2026.pdf (2 MB)\n(The content of the attachments was not read.)\n\nNote: the notice title gives the deadline as 9/18 with a different (apparently mistyped) weekday, while the body gives Friday, 18 September 2026, 17:00.",
+ "id": 31462,
+ "text_hash": "ca389048027852d3",
+ "images": 0,
+ "attachments": [
+  "AUA-UM OSP 2026 지원서.hwp",
+  "Poster AUA-UM-OSP-2026.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,43 @@
+{
+ "title_en": "Fall 2026 Blue Lighthouse Donation Scholarship: Second Round of New Recipient Selection",
+ "summary": "Undergraduate students of Korean nationality who are currently enrolled (excluding those on leave of absence in Fall 2026) may apply for the Blue Lighthouse (푸른등대) Donation Scholarship, a living-expense scholarship of KRW 2,000,000 per person for the Fall 2026 semester. Students must apply directly on the Korea Student Aid Foundation website (www.kosaf.go.kr) between 09:00 on Thursday, 22 October 2026 and 18:00 on Thursday, 12 November 2026.",
+ "applies_to": "Undergraduate students of Korean nationality who are currently enrolled at the university, excluding students on leave of absence in the Fall 2026 semester (2026학년도 2학기). Application is voluntary; detailed eligibility requirements for each scholarship are set out in Attachment 1, which was not included in the text provided.",
+ "dates": [
+  {
+   "what": "Application period (online, Korea Student Aid Foundation website)",
+   "when": "From 09:00 on Thursday, 22 October 2026 to 18:00 on Thursday, 12 November 2026",
+   "original_ko": "2026. 10. 22.(목) 9시 ~ 11. 12.(목) 18시",
+   "verified": true
+  },
+  {
+   "what": "Semester covered by the scholarship",
+   "when": "Fall 2026 semester only (one semester)",
+   "original_ko": "1개 학기(26-2학기)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only students of Korean nationality are eligible.",
+  "Only enrolled undergraduate students are eligible.",
+  "Students on leave of absence in the Fall 2026 semester are not eligible.",
+  "Each scholarship has further detailed requirements set out in Attachment 1, the Donation Scholarship Program Business Plan.",
+  "Students must apply in person on the Korea Student Aid Foundation website; applications must be made by the student directly.",
+  "The scholarship is a living-expense scholarship of KRW 2,000,000 per person and covers one semester (Fall 2026) only."
+ ],
+ "steps": [
+  "Read Attachment 1, the Donation Scholarship Program Business Plan ([붙임1] 기부장학사업 사업계획서), to check the detailed requirements of each scholarship (this attachment was not included in the text provided and was not read).",
+  "Go to the Korea Student Aid Foundation website (www.kosaf.go.kr) and submit your application yourself between 09:00 on 22 October 2026 and 18:00 on 12 November 2026.",
+  "For questions, contact the Korea Student Aid Foundation counselling centre; the contact details are given in the original notice."
+ ],
+ "translation": "Fall 2026 Blue Lighthouse (푸른등대) Donation Scholarship: Second Selection of New Scholarship Recipients\n\nA. Eligibility: Undergraduate students of Korean nationality currently enrolled at the university (excluding students on leave of absence in the Fall 2026 semester)\n※ For the detailed requirements of each scholarship, refer to [Attachment 1] Donation Scholarship Program Business Plan ([붙임1] 기부장학사업 사업계획서). (This attachment was not included in the text provided and was not read.)\n\nB. Support: Living-expense scholarship of KRW 2,000,000 per person\n\nC. Support period: One semester (Fall 2026)\n\nD. Application period: 22 October 2026 (Thursday), 09:00 to 12 November 2026 (Thursday), 18:00\n\nE. How to apply: Students apply directly on the Korea Student Aid Foundation website (www.kosaf.go.kr)\n\nF. Enquiries: Korea Student Aid Foundation counselling centre (contact details are given in the original notice)\n\nAttachment (1 file)\n2. Fall 2026 Blue Lighthouse Donation Scholarship (2nd round) application promotional poster (.jpg, 1 MB) — this image was not read.",
+ "id": 31535,
+ "text_hash": "ba1e18291c9103a1",
+ "images": 1,
+ "attachments": [
+  "2.2026년 2학기 푸른등대 기부장학금(2차) 신청 홍보 포스터.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

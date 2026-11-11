@@ -1,0 +1,25 @@
+{
+ "title_en": "Korea Student Aid Foundation: Job Fair for Hope Ladder Scholarship Recipients",
+ "summary": "The Korea Student Aid Foundation, together with various partner organisations, is holding a job fair to support employment and business start-ups among Hope Ladder scholarship recipients. Eligible students are asked to participate. The date, venue and registration details are not stated in the notice text; they may be in the two attached images (a poster and a web flyer for the 2026 Mid-sized Enterprise Job Fair in Daejeon), which were not read.",
+ "applies_to": "Students who are Hope Ladder (희망사다리) scholarship recipients of the Korea Student Aid Foundation. Participation is requested, but the notice does not state that it is mandatory.",
+ "dates": [],
+ "conditions": [
+  "The job fair is intended for Hope Ladder scholarship recipients."
+ ],
+ "steps": [
+  "Read the two attached images (the poster and the web flyer for the 2026 Mid-sized Enterprise Job Fair in Daejeon) in the original notice for the event details; their content was not read for this translation.",
+  "Participate in the job fair if you are a Hope Ladder scholarship recipient."
+ ],
+ "translation": "[Korea Student Aid Foundation] Notice of a Job Fair for Hope Ladder Scholarship Recipients\n\nThe Korea Student Aid Foundation is holding a job fair in cooperation with various organisations to promote employment and business start-ups among Hope Ladder scholarship recipients. Eligible students are asked to participate.\n\nAttachments (2):\n2. [Poster] \"2026 Mid-sized Enterprise Job Fair in Daejeon\" (「2026년 중견기업 일자리 박람회 in 대전」).png (210 KB)\n\"2026 Mid-sized Enterprise Job Fair in Daejeon\" web flyer (웹플라이어).png (1 MB)\n\n[Note: The attachments are images whose content is not in the notice text; they were not read for this translation.]",
+ "id": 31452,
+ "text_hash": "b7f79a86ab3b8fc1",
+ "images": 2,
+ "attachments": [
+  "2. [포스터] 「2026년 중견기업 일자리 박람회 in 대전」.png",
+  "「2026년 중견기업 일자리 박람회 in 대전」 웹플라이어.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

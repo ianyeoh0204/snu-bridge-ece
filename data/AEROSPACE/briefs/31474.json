@@ -1,0 +1,50 @@
+{
+ "title_en": "Fall 2026 Application for Recognition of Graduate Course Credits Between Programs",
+ "summary": "Graduate students who wish to have course credits earned in a previous program (bachelor's to master's, or master's to doctoral) recognized must apply in MySNU, print the application form and obtain their academic advisor's signature. The signed form and a transcript with the requested courses highlighted must be submitted to the department office by Thursday, 8 October. Students are asked to apply in their first semester after admission.",
+ "applies_to": "Graduate students in the department who wish to have course credits recognized between programs: credits from a bachelor's program toward a master's program, or credits from a master's program toward a doctoral program (for students who progressed from a master's to a doctoral program). This is the Fall 2026 application round. Applying is optional and only for students who want this recognition, but those who apply must meet the deadline.",
+ "dates": [
+  {
+   "what": "Deadline to submit the signed application form and highlighted transcript to the department office",
+   "when": "Thursday, 8 October (2026)",
+   "original_ko": "10월8일(목)",
+   "verified": true
+  },
+  {
+   "what": "Recommended timing for applying for credit recognition",
+   "when": "The first semester after admission",
+   "original_ko": "입학 후 첫 학기",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Bachelor's-to-master's recognition: only courses graded B0 or above, up to a maximum of 6 credits.",
+  "Bachelor's-to-master's recognition: only graduate courses taken during the undergraduate program whose course classification is shown as 'Graduate' (대학원) are eligible.",
+  "Courses shown as 'Major Elective' (전선) or 'Major Required' (전필) instead of 'Graduate' (대학원) are not eligible, because their classification was changed so they could count toward undergraduate graduation.",
+  "Master's-to-doctoral recognition: only courses graded B0 or above, up to a maximum of 12 credits, and only for students who progressed from a master's program to a doctoral program.",
+  "For both types of recognition, S/U (Satisfactory/Unsatisfactory) courses are not eligible.",
+  "For students enrolled from March 2021 onward, master's-to-doctoral recognition covers the same or a similar major, not only the same department; for a similar major, you must have it confirmed whether the major counts as similar to this department.",
+  "Undergraduate courses taken during the master's program cannot be recognized toward the doctoral program.",
+  "General education (교양) courses from the bachelor's program are not recognized as graduate course credits.",
+  "Recognized courses will be recorded under the admission year, semester 0, with the grade 'S'.",
+  "The application form must carry your academic advisor's signature (서명)."
+ ],
+ "steps": [
+  "Read the attached guide, 'Checklist for Recognition of Graduate Course Credits' ([붙임1] 대학원 교과학점 통산인정 확인 사항 안내); its content was not read for this translation.",
+  "Apply online in MySNU under Student Services > Classes/Grades > Credit Recognition Application > Recognition Between Programs [마이스누 - 학생서비스 - 수업/성적 - 학점인정신청 - 과정간 통산인정].",
+  "Print the application form after applying.",
+  "Obtain your academic advisor's signature (서명) on the printed form.",
+  "Prepare your academic transcript and mark the courses you want recognized with a highlighter.",
+  "Submit the signed application form together with the highlighted transcript to the department office by Thursday, 8 October; the notice gives Building 301, Room 117 as the place for inquiries, and the contact details are in the original notice."
+ ],
+ "translation": "Fall 2026 Application for Recognition of Graduate Course Credits Between Programs (until Thursday, 10/8)\n\nWe announce the application for recognition of graduate course credits between programs for Fall 2026. Eligible students should read the information below carefully and apply within the deadline.\n\nStudents who wish to have credits completed in a bachelor's-master's or master's-doctoral program recognized should apply in MySNU under Student Services > Classes/Grades > Credit Recognition Application > 'Recognition Between Programs' [마이스누 - 학생서비스 - 수업/성적 - 학점인정신청 내 '과정간 통산인정'], then print the application form, obtain the signature of their academic advisor, and submit it together with their academic transcript (with the courses they want recognized marked with a highlighter) to the department office by Thursday, 8 October.\n\nFor smooth academic administration, please apply for credit recognition in your first semester after admission.\n\n(Courses for which credits are recognized will be recorded as admission year – semester 0, with the grade 'S'.)\n\n1. Recognition of course credits between bachelor's and master's programs\n- Scope of recognition: courses graded B0 or above, up to 6 credits (S/U courses are not eligible).\n- Among graduate courses taken during the undergraduate program, only those whose course classification is shown as 'Graduate' (대학원) can be recognized.\n  Courses shown as 'Major Elective' (전선), 'Major Required' (전필) or similar instead of 'Graduate' (대학원) are cases where the classification was corrected so that they could be recognized as undergraduate graduation credits, and these cannot be recognized.\n\n2. Recognition of course credits between master's and doctoral programs\n- Scope of recognition: courses graded B0 or above, up to 12 credits (S/U courses are not eligible).\n- For students who progressed from a master's program to a doctoral program, only credits from master's courses with a grade of B0 or above can be recognized.\n  * For students enrolled from March 2021 onward, recognition has been expanded from the same department only to the same or similar majors. (For a similar major, it must be confirmed whether the major is similar to this department.)\n\n3. Notes\n- Undergraduate courses taken during the master's program cannot be recognized toward the doctoral program.\n- General education (교양) courses from the bachelor's program are not recognized as graduate course credits.\n\nAttachment: Checklist for Recognition of Graduate Course Credits, 1 copy\n\n* Inquiries: Building 301, Room 117 (the contact person's details are given in the original notice).\n\nAttached file (1): [붙임1] 대학원 교과학점 통산인정 확인 사항 안내(2026.9.7.).hwp (879 KB). The content of this attachment was not read for this translation.",
+ "id": 31474,
+ "text_hash": "b1135b0cf1c06da3",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 대학원 교과학점 통산인정 확인 사항 안내(2026.9.7.).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

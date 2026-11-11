@@ -1,0 +1,44 @@
+{
+ "title_en": "Iksan City Student Loan Interest Support for University and Graduate Students, Second Half 2026",
+ "summary": "Iksan City is offering support for student loan interest to university and graduate students, including those on leave of absence and graduates of up to five years, whose registered resident address was in Iksan City on 31 August 2026. Eligible students who wish to apply must submit an online application between 31 August 2026 at 09:00 and 18 September 2026 at 18:00. The online application address and the full details are in the attached city announcement and guide, which were not read for this translation.",
+ "applies_to": "Optional (not mandatory). Open to students enrolled at, or on leave of absence from, any university or graduate school in Korea, and to graduates within five years of graduation, whose registered resident address (주민등록 주소) was in Iksan City as of the announcement date, 31 August 2026.",
+ "dates": [
+  {
+   "what": "Date on which the applicant's registered resident address must be in Iksan City (eligibility reference date)",
+   "when": "31 August 2026",
+   "original_ko": "공고일(2026. 8. 31.) 현재",
+   "verified": true
+  },
+  {
+   "what": "Online application period",
+   "when": "From Monday 31 August 2026, 09:00, to Friday 18 September 2026, 18:00",
+   "original_ko": "2026. 8. 31.(월) 09:00 ~ 9. 18.(금) 18:00까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The support covers only the interest incurred in the first half of 2026.",
+  "The support covers only student loans (tuition and living expenses) taken out through the Korea Student Aid Foundation (한국장학재단) from 2017 onwards.",
+  "Your registered resident address must have been in Iksan City as of 31 August 2026.",
+  "You must be enrolled at or on leave of absence from a university or graduate school, or have graduated within the last five years.",
+  "Applications are accepted online only.",
+  "The application period closes on 18 September 2026 at 18:00."
+ ],
+ "steps": [
+  "Read the two attached documents, the city announcement (공고문) and the application guide (안내문); their content was not read for this translation, and they contain the details of the online application.",
+  "Submit the online application between 31 August 2026 at 09:00 and 18 September 2026 at 18:00.",
+  "For questions, contact the Education Cooperation Division of Iksan City (익산시 교육협력과); the telephone number is in the original notice."
+ ],
+ "translation": "Notice on Iksan City Student Loan Interest Support for University and Graduate Students, Second Half of 2026\n\nIksan City is running its student loan interest support program for university and graduate students for the second half of 2026, as set out below. Please refer to it.\n\nA. Support provided: Support for the interest incurred in the first half of 2026 on student loans (tuition and living expenses) taken out through the Korea Student Aid Foundation (한국장학재단) from 2017 onwards.\n\nB. Eligibility: Students enrolled at or on leave of absence from any university or graduate school in Korea, or graduates within five years of graduation, whose registered resident address (주민등록 주소) is in Iksan City as of the announcement date (31 August 2026).\n\nC. Application period: From Monday 31 August 2026, 09:00, to Friday 18 September 2026, 18:00.\n\nD. How to apply: Online application.\n\nE. Enquiries: Education Cooperation Division, Iksan City (익산시 교육협력과). The telephone number is given in the original notice.\n\nAttachments:\n1. Iksan City Student Loan Interest Support Announcement, Second Half 2026 (공고문), 1 copy.\n2. Iksan City Student Loan Interest Support Guide, Second Half 2026 (안내문), 1 copy.\n\nAttached files (2):\n- [공고문] 2026년 하반기 익산시 대학(원)생 학자금 이자지원 신청자 접수 공고.pdf (86 KB)\n- [안내문] 2026년 하반기 익산시 대학생 학자금 대출이자 지원 신청.pdf (60 KB)\n\n(The content of these attached files was not read for this translation.)",
+ "id": 31467,
+ "text_hash": "f09d93e16ca18eaf",
+ "images": 0,
+ "attachments": [
+  "[공고문] 2026년 하반기 익산시 대학(원)생 학자금 이자지원 신청자 접수 공고.pdf",
+  "[안내문] 2026년 하반기 익산시 대학생 학자금 대출이자 지원 신청.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

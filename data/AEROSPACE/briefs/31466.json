@@ -1,0 +1,22 @@
+{
+ "title_en": "Hanwha Systems Space Business Division Information Session for SNU Aerospace Engineering",
+ "summary": "Hanwha Systems (Defense Division) is promoting an information session on its Space Business Division, held for the Department of Aerospace Engineering at Seoul National University. The notice gives no date, time, location or registration details in its text. These details appear to be only in the attached web flyer, which was not read. Interested students should view the attached flyer or contact the department office; contact details are in the original notice.",
+ "applies_to": "The session is aimed at the Department of Aerospace Engineering at Seoul National University. The notice does not state any program, year or other limit, and does not say that attendance is mandatory. According to the attachment's file name, the flyer concerns recruitment of new graduates (신입).",
+ "dates": [],
+ "conditions": [],
+ "steps": [
+  "Open the attached file '한화시스템(신입) 서울대학교 채용설명회 웹플라이어.jpg' (Hanwha Systems (New Graduate) Seoul National University Recruitment Information Session Web Flyer) for the session date, time, location and any registration instructions. Its content was not read for this translation.",
+  "If the details are unclear, contact the department office. The contact is in the original notice."
+ ],
+ "translation": "Title: [Hanwha Systems Defense Division] Promotion of the Hanwha Space Business Division Information Session for the Department of Aerospace Engineering, Seoul National University\n\nAttachment (1 file): 한화시스템(신입) 서울대학교 채용설명회 웹플라이어.jpg (Hanwha Systems (New Graduate) Seoul National University Recruitment Information Session Web Flyer), 14 MB\n\n[The notice contains no body text beyond the title and the attachment. The attachment is an image, and its content was not read. Any dates, times, locations or registration details are likely to be in that image only.]",
+ "id": 31466,
+ "text_hash": "5ee8d35a1cb52626",
+ "images": 1,
+ "attachments": [
+  "한화시스템(신입) 서울대학교 채용설명회 웹플라이어.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

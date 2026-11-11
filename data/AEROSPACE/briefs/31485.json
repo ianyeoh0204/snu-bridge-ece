@@ -1,0 +1,49 @@
+{
+ "title_en": "AUA–Tsinghua University SDG Scholars Program: Call for Research Grant Applications",
+ "summary": "Full-time faculty members and researchers in SDG-related fields may apply to the Asian Universities Alliance (AUA)–Tsinghua University (THU) SDG Scholars Program for a research visit to Tsinghua University between 1 January 2027 and 28 February 2028. Applicants must email the application form, an invitation letter from a host professor at Tsinghua University, an up-to-date CV and the other required documents by 31 October 2026. A supporting letter from the home university must be requested from the Office of International Affairs; the email address and contact details are in the original notice.",
+ "applies_to": "Full-time faculty members or researchers in fields related to the Sustainable Development Goals (SDGs). Application is voluntary. Detailed eligibility is given in the attached guidelines, which were not read.",
+ "dates": [
+  {
+   "what": "Application deadline (submit documents by email)",
+   "when": "31 October 2026 (Saturday)",
+   "original_ko": "2026. 10. 31.(토)",
+   "verified": true
+  },
+  {
+   "what": "Period within which the research visit to Tsinghua University must take place",
+   "when": "1 January 2027 to 28 February 2028",
+   "original_ko": "2027. 1. 1.(금)- 2028. 2. 28.(일) 사이",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only full-time faculty members or researchers in SDG-related fields are eligible.",
+  "The research visit must take place between 1 January 2027 and 28 February 2028.",
+  "An invitation letter from a host professor at Tsinghua University is required.",
+  "A supporting letter from the home university is required and must be requested from the Office of International Affairs.",
+  "The grant amount (45,000–75,000 RMB, approximately KRW 9–15 million) varies with the length of the visit; details are in the attached guidelines, which were not read."
+ ],
+ "steps": [
+  "Read the attached Application Guidelines (attachment 1) for detailed eligibility and grant amounts; their content was not read for this translation.",
+  "Obtain an invitation letter from your host professor at Tsinghua University (a host professor supporting letter template is attached as attachment 5).",
+  "Request the Supporting Letter from Home University from the Office of International Affairs (a template is attached as attachment 4); the contact is in the original notice.",
+  "Complete the attached Application Form (attachment 2) and prepare your most recent CV and any other documents the guidelines require (such as the Statement in attachment 3).",
+  "Email the application form, host professor's invitation letter, CV and other documents to the address given in the original notice by 31 October 2026."
+ ],
+ "translation": "Asian Universities Alliance (AUA) – Tsinghua University (THU), China, SDG Scholars Program: Application for Research Activity Grants\n\nProgram: AUA (Asian Universities Alliance) – Tsinghua University (THU) SDG Scholars Program\n\nEligibility: Full-time faculty members or researchers in SDG-related fields (see the attached guidelines for details).\n\nResearch visit period: Between 1 January 2027 (Friday) and 28 February 2028 (Sunday, as stated in the notice).\n\nBenefits: Selected participants receive research support and a grant of 45,000–75,000 RMB (approximately KRW 9–15 million). (The amount varies by length of stay; see the attached guidelines for details.)\n\nHow to apply: Submit the attached application form, an invitation letter from your host professor at Tsinghua University, your latest CV and other documents by email (the address is given in the original notice).\n* Supporting letter from your home university (Supporting Letter from Home University): request it from the Office of International Affairs (국제처).\n\nDeadline: 31 October 2026 (Saturday)\n\nInquiries: Office of International Cooperation (국제협력본부); the contact details are in the original notice.\n\nAttachments (6) (their content was not read):\n1. AUA-THU SDG Scholars Program 2026-2027 Application Guidelines.pdf (262 KB)\n2. AUA-THU SDG Scholars Program (2026-2027) Application Form.doc (538 KB)\n3. Statement on AUA-THU SDG Scholar Application.docx (19 KB)\n4. Supporting Letter from Home University-template.docx (19 KB)\n5. Supporting Letter from Host Professor-template.docx (20 KB)\n6. AUA-THU SDG Scholars Program Academic Visit Summary and Review.docx (367 KB)",
+ "id": 31485,
+ "text_hash": "f364744d837bf37f",
+ "images": 0,
+ "attachments": [
+  "1. AUA-THU SDG Scholars Program 2026-2027 Application Guidelines.pdf",
+  "2. AUA-THU SDG Scholars Program (2026-2027) Application Form.doc",
+  "3. Statement on AUA-THU SDG Scholar Application.docx",
+  "4. Supporting Letter from Home University-template.docx",
+  "5. Supporting Letter from Host Professor-template.docx",
+  "6. AUA-THU SDG Scholars Program Academic Visit Summary and Review.docx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

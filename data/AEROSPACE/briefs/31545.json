@@ -1,0 +1,105 @@
+{
+ "title_en": "2026 National University Student AI Start-up Hackathon: Call for Participants",
+ "summary": "Currently enrolled university students nationwide, including those at EduTech Soft Lab consortium universities, may enter the 2026 AI-based National University Student Start-up Hackathon in teams of up to four. Teams must apply online by 17:00 on Wednesday, 11 November 2026, attend a Zoom orientation on 16 November, and take part in the event on 19–20 November 2026 at the Gymnasium, 3rd floor, Recreation Center, Hallym University. Participation is voluntary.",
+ "applies_to": "Currently enrolled students (재학생) of universities participating in the EduTech Soft Lab consortium and of universities nationwide, who wish to take part. Teams have at most 4 members; 25 teams (100 participants in total) will take part. Participation is voluntary.",
+ "dates": [
+  {
+   "what": "Online application deadline",
+   "when": "Wednesday, 11 November 2026, by 17:00",
+   "original_ko": "2026.11.11.(수), 17:00까지",
+   "verified": true
+  },
+  {
+   "what": "Pre-event orientation (online, via ZOOM)",
+   "when": "Monday, 16 November 2026, 19:00–20:00",
+   "original_ko": "2026. 11. 16.(월) 19:00~20:00",
+   "verified": true
+  },
+  {
+   "what": "Hackathon event",
+   "when": "Thursday, 19 November to Friday, 20 November 2026",
+   "original_ko": "2026. 11. 19.(목)~11. 20.(금)",
+   "verified": true
+  },
+  {
+   "what": "Team check-in (registration on site)",
+   "when": "Thursday, 19 November 2026, 09:00–10:30",
+   "original_ko": "11.19.(목) 09:00~10:30",
+   "verified": false
+  },
+  {
+   "what": "Hackathon briefing",
+   "when": "Thursday, 19 November 2026, 10:30–10:50",
+   "original_ko": "10:30~10:50",
+   "verified": true
+  },
+  {
+   "what": "Team work session (360 minutes)",
+   "when": "Thursday, 19 November 2026, from 11:00",
+   "original_ko": "11:00~",
+   "verified": true
+  },
+  {
+   "what": "Deadline to submit presentation materials",
+   "when": "Friday, 20 November 2026, by 09:30",
+   "original_ko": "11.20.(금) ~09:30",
+   "verified": false
+  },
+  {
+   "what": "Presentations, Part 1 (12 teams)",
+   "when": "Friday, 20 November 2026, 10:00–12:00",
+   "original_ko": "10:00~12:00",
+   "verified": true
+  },
+  {
+   "what": "Presentations, Part 2 (13 teams)",
+   "when": "Friday, 20 November 2026, 13:00–15:10",
+   "original_ko": "13:00~15:10",
+   "verified": true
+  },
+  {
+   "what": "Special lecture (scores tallied; satisfaction survey)",
+   "when": "Friday, 20 November 2026, 15:10–16:10",
+   "original_ko": "15:10~16:10",
+   "verified": true
+  },
+  {
+   "what": "Award ceremony and group photo",
+   "when": "Friday, 20 November 2026, 16:10–16:40",
+   "original_ko": "16:10~16:40",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only currently enrolled university students may participate.",
+  "Each team may have no more than 4 members; the event is limited to 25 teams (100 participants).",
+  "Each team must choose exactly one of the five given themes and develop an AI (EduTech)-based solution and prototype for a regional problem.",
+  "Presentation materials must be submitted by 09:30 on 20 November 2026.",
+  "Each team's presentation must be 10 minutes or less.",
+  "Taxes and public charges on prize money are paid by the prize winners themselves.",
+  "An award may not be given if there is no suitable recipient for that category.",
+  "A certificate of participation will be issued.",
+  "Lunch and dinner boxes and a late-night snack are provided on 19 November, and a lunch box on 20 November."
+ ],
+ "steps": [
+  "Read this notice; the attached poster image (PNG) was not read, so check the original notice for any details it may contain.",
+  "Form a team of up to 4 currently enrolled university students and choose one of the five themes.",
+  "Apply online by 17:00 on 11 November 2026 using the application link in the original notice (the link appeared incomplete in the text provided; if it does not work, contact the organiser, whose contact details are in the original notice).",
+  "Attend the online orientation on ZOOM on 16 November 2026, 19:00–20:00.",
+  "Go to the Gymnasium, 3rd floor, Recreation Center, Hallym University and check in your team between 09:00 and 10:30 on 19 November 2026.",
+  "Attend the briefing at 10:30 and work on your solution and prototype from 11:00; on-site advisers are available.",
+  "Submit your presentation materials by 09:30 on 20 November 2026.",
+  "Give your presentation (10 minutes or less) in your assigned session, then attend the special lecture, award ceremony and group photo."
+ ],
+ "translation": "Notice: 2026 AI-Based National University Student Start-up Hackathon (「2026 AI 활용 전국 대학생 창업 해커톤 대회」)\n\nA. Event: 2026 AI-Based National University Student Start-up Hackathon\n\nB. Dates: Thursday, 19 November to Friday, 20 November 2026\n※ Orientation: Monday, 16 November 2026, 19:00–20:00 (ZOOM)\n\nC. Venue: Gymnasium, 3rd floor, Recreation Center, Hallym University\n\nD. Eligibility: Currently enrolled students of EduTech Soft Lab consortium universities and of universities nationwide / up to 4 members per team (25 teams, 100 participants in total)\n\nE. Theme: Regional problems – Discover start-up ideas using AI (EduTech)\n\n1. Education – Problem area: regional education gaps, learning support, improving access to education. Description: Develop a customised education start-up item that uses AI to address regional education gaps (including Gangwon), learning access and individual learning support.\n\n2. Tourism and Transport – Problem area: public transport access, mobility, support for people with limited mobility. Description: Develop a start-up item that uses AI to address public transport access, travel to tourist sites and support for people with limited mobility in regions including Gangwon.\n\n3. Ageing, Care, Medical Services and Welfare – Problem area: growing elderly population, shortage of care workers, access to medical and welfare services. Description: Develop an AI-based care and daily-living support start-up item suited to regional characteristics, responding to the growing elderly population and care-worker shortage in regions including Gangwon.\n\n4. Local Commercial Districts – Problem area: customer acquisition, sales growth, promotion and marketing, demand forecasting. Description: Develop an AI-based start-up item supporting small business owners in regions including Gangwon with customer acquisition, sales growth, serving foreign customers, promotion and demand forecasting.\n\n5. Disaster, Safety and Environment – Problem area: wildfires, heavy rain and snow, mountain accidents, disaster prevention and response. Description: Develop an AI-based safety and disaster-response start-up item that considers regional characteristics such as wildfires, heavy rain, heavy snow and mountain accidents in regions including Gangwon.\n\n※ Each team selects one of the five themes, defines a specific regional problem, derives an AI (EduTech)-based solution and develops a prototype in order to discover and refine a feasible start-up item.\n\nF. Main schedule\n\nThursday, 19 November\n- 09:00–10:30 (60'): Team check-in\n- 10:30–10:50 (10'): Hackathon briefing\n- From 11:00 (360'): Team work session. ※ On-site advisory panel (help with difficulties and advice on development direction) ※ Lunch and dinner boxes provided ※ Late-night snack provided\n\nFriday, 20 November\n- By 09:30: Submission of presentation materials\n- 09:30–10:00 (30'): Break\n- 10:00–12:00 (120'): Presentations [Part 1] ※ Up to 10 minutes per team ※ 12 teams\n- 12:00–13:00 (60'): Lunch ※ Lunch box provided\n- 13:00–15:10 (130'): Presentations [Part 2] ※ Up to 10 minutes per team ※ 13 teams\n- 15:10–16:10 (60'): Special lecture ※ Tallying of judges' scores ※ Satisfaction survey\n- 16:10–16:40 (30'): Awards and group photo\n\nG. Application deadline: Online application by 17:00 on Wednesday, 11 November 2026 (application link given in the original notice; the link appeared incomplete in the text provided)\n\nH. Other: A certificate of participation will be issued.\n\nI. Awards (prize money per team)\n- Grand Prize (President of KERIS Award): KRW 5,000,000 – 1 team\n- First Prize (President of Hallym University Award): KRW 3,000,000 – 1 team\n- Excellence Prize (Director of the EduTech Soft Lab Project Group Award): KRW 2,000,000 – 2 teams\n- Special Prize (Head of the Hallym University Start-up Support Headquarters Award): KRW 1,000,000 – 3 teams\n※ Taxes and public charges are borne by the prize winners.\n※ An award may not be given if there is no suitable recipient for that category.\n\nEnquiries: Hallym University EduTech Soft Lab Project Group (contact details are in the original notice).\n\nAttachment (1): 「2026 AI-Based National University Student Start-up Hackathon Poster」 (PNG, 2 MB) – the content of this image was not read.",
+ "id": 31545,
+ "text_hash": "effdd42c92b57743",
+ "images": 1,
+ "attachments": [
+  "붙임. 「2026 AI 활용 전국 대학생 창업 해커톤 대회 포스터」 1부.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

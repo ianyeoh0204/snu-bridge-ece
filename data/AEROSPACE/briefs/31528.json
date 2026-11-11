@@ -1,0 +1,72 @@
+{
+ "title_en": "2027 Undergraduate Entrepreneurship and Advanced Research Innovative Talent Support: Applications Due 13 November",
+ "summary": "Undergraduate students who wish to apply for the 2027 Undergraduate Entrepreneurship and Advanced Research Innovative Talent Support Program must submit a recommendation letter and a proposal, merged into one PDF, together with the applicant list in Excel form. Applications are due by Friday, 13 November 2026 to the department office (Building 301, Room 117) or as a scanned copy by email; the address is in the original notice. Students on leave of absence as of the application deadline must also submit a certificate of enrollment by Tuesday, 2 March 2027.",
+ "applies_to": "Optional (by application). Open to undergraduate (bachelor's) students who, as of Spring 2027, are enrolled or expected to be enrolled in the first semester of their second year, among others (\"등\"). The full eligibility details are in Attachment 1, which was not read. Up to 30 students are selected once a year.",
+ "dates": [
+  {
+   "what": "Deadline for students to submit application documents to the department",
+   "when": "By Friday, 13 November 2026",
+   "original_ko": "~ '26. 11. 13.(금)",
+   "verified": true
+  },
+  {
+   "what": "Department collects documents and sends the official letter to the Research Administration Office (department action; for planning)",
+   "when": "By Tuesday, 17 November 2026",
+   "original_ko": "~ '26. 11. 17.(화)",
+   "verified": true
+  },
+  {
+   "what": "First-round review (document evaluation) (tentative)",
+   "when": "Until early/mid December 2026",
+   "original_ko": "~ '26. 12월 초/중",
+   "verified": true
+  },
+  {
+   "what": "Second-round review (interview evaluation) (tentative)",
+   "when": "Early/mid December 2026 to mid January 2027",
+   "original_ko": "'26. 12월 초/중 ~ '27. 1월 중",
+   "verified": true
+  },
+  {
+   "what": "Final selection (tentative)",
+   "when": "Mid January 2027",
+   "original_ko": "'27. 1월 중",
+   "verified": true
+  },
+  {
+   "what": "Deadline to submit a certificate of enrollment, only for applicants whose status is 'on leave of absence' as of the application deadline",
+   "when": "By Tuesday, 2 March 2027",
+   "original_ko": "2027. 3. 2.(화)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Students whose academic status is 'on leave of absence' (휴학) as of the application deadline must separately submit a certificate of enrollment by 2 March 2027.",
+  "The recommendation letter and the proposal must be merged into a single PDF file per student.",
+  "The applicant list must be submitted as an Excel file.",
+  "Support lasts one year; continued support is decided by an interim evaluation at the end of each academic year, up to a maximum of three years.",
+  "The selection schedule is tentative; detailed dates from the first-round review to final selection will be announced separately later.",
+  "Further eligibility and program details are in Attachment 1, which was not read for this translation."
+ ],
+ "steps": [
+  "Read Attachment 1 (selection announcement and forms) for detailed eligibility and program information.",
+  "Complete the recommendation letter (Attachment 1 – Form 1) and the proposal (Attachment 1 – Form 2).",
+  "Merge the recommendation letter and the proposal into one PDF file.",
+  "Fill in the applicant list (Attachment 2) as an Excel file.",
+  "Submit the documents by 13 November 2026 to the department office (Building 301, Room 117), or send scanned copies by email to the address given in the original notice.",
+  "If your status is 'on leave of absence' as of the application deadline, submit a certificate of enrollment by 2 March 2027.",
+  "Watch for the separate announcement of the detailed review and selection schedule."
+ ],
+ "translation": "2027 Undergraduate Entrepreneurship and Advanced Research Innovative Talent Support Program – Selection Notice (until Fri. 11.13)\n\nApplicants for the 2027 academic year Undergraduate Entrepreneurship and Advanced Research Innovative Talent Support Program will be selected as follows.\n\nA. Program overview\n1) Selection frequency and number: once a year, up to 30 students\n2) Support period: 1 year\n※ Continued support is decided through an interim evaluation at the end of each academic year; support is available for up to 3 years.\n3) Eligibility: as of the first semester of the 2027 academic year (Spring 2027), students enrolled (or expected to be enrolled) in the first semester of the second year of the bachelor's program, etc.\n※ For other details, please refer to the attached document.\n\nB. Selection overview\n1) Selection schedule (tentative)\n※ If your academic status as of the application deadline is 'on leave of absence', you must separately submit a certificate of enrollment by Tuesday, 2 March 2027.\n※ The detailed schedule from the first-round review to final selection will be announced separately later.\n\n- Submission of application documents (student → department): by Fri. 13 Nov. 2026\n- Collection of documents and submission of official letter (department/division → Research Administration Office): by Tue. 17 Nov. 2026\n- First-round review (document evaluation): by early/mid December 2026\n- Second-round review (interview evaluation): early/mid December 2026 to mid January 2027\n- Final selection: mid January 2027\n\n2) Required documents ※ Items ① and ② must be merged into one PDF file per student.\n① [Attachment 1 – Form 1] Recommendation letter\n② [Attachment 1 – Form 2] Proposal\n③ [Attachment 2] List (submit as an Excel file)\n\nSubmit to the department office (Building 301, Room 117), or submit scanned copies by email (the email address is given in the original notice).\n\nAttachments (2) (not read for this translation):\n- Attachment 1. Undergraduate Entrepreneurship and Advanced Research Innovative Talent Support Program (2027) selection announcement and forms (.hwp, 147 KB)\n- Attachment 2. Applicant list (Undergraduate Entrepreneurship and Advanced Research Innovative Talent Support Program 2027)_department name (.xlsx, 11 KB)",
+ "id": 31528,
+ "text_hash": "a7eb7163ce083b4f",
+ "images": 0,
+ "attachments": [
+  "붙임1. 학부생 창업·심화연구 혁신 인재 지원사업(2027학년도) 선발 공고문 및 서식.hwp",
+  "붙임2. 지원자 명단(학부생 창업심화연구 혁신인재연구지원사업  2027)_학과명.xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

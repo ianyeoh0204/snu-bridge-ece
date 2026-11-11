@@ -1,0 +1,35 @@
+{
+ "title_en": "NIIED 2026 Awareness Survey",
+ "summary": "The National Institute for International Education (NIIED) invites Korean nationals and foreign nationals, including international students, to take part voluntarily in its 2026 awareness survey. Participants complete a 13-question online survey, reached by QR code, during the survey period of 2 November to 11 November 2026. One hundred participants will be selected by lottery to receive a mobile gift voucher worth approximately 5,000 won.",
+ "applies_to": "Korean nationals and foreign nationals, including international students. Participation is voluntary; the notice encourages wide participation.",
+ "dates": [
+  {
+   "what": "Survey period (all participants)",
+   "when": "Monday 2 November 2026 to Wednesday 11 November 2026",
+   "original_ko": "2026. 11. 2.(월) ~ 11. 11.(수)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Participation is voluntary.",
+  "The survey is open to Korean nationals and foreign nationals, including international students.",
+  "One hundred participants will be selected by lottery to receive a mobile gift voucher (gifticon) worth approximately 5,000 won.",
+  "The notice gives the survey link only as a QR code in the attached poster and on the right of the original notice; the image was not read, so the link is not available in this translation."
+ ],
+ "steps": [
+  "Open the attached poster (2026 국립국제교육원 (NIIED) 인지도 조사 포스터.png) in the original notice, or view the story or post on NIIED's Instagram account (@niied_official). The poster image was not read.",
+  "Scan the QR code on the poster, or the QR code shown on the right of the original notice, to open the survey link.",
+  "Complete the 13-question survey by Wednesday 11 November 2026."
+ ],
+ "translation": "2026 National Institute for International Education (NIIED) Awareness Survey\n\nIn connection with the international education exchange programs that the National Institute for International Education (NIIED) is carrying out to develop global talent, NIIED is conducting the \"2026 NIIED Awareness Survey.\" Your participation is warmly encouraged.\n\nA. How to participate: Access the survey via the QR code and complete the questionnaire.\n※ (SNS) Refer to the story/post on NIIED's Instagram account (@niied_official).\n(QR code) You can access the link directly by scanning the QR code on the poster or the QR code on the right. [Translator's note: the QR code image was not read.]\n\nB. Survey period: Monday 2 November 2026 to Wednesday 11 November 2026\n\nC. Survey participants: Korean nationals and foreign nationals (including international students)\n\nD. Survey content: A questionnaire of 13 questions in total on awareness of the institute and its programs.\n※ One hundred participants will be selected by lottery to receive a mobile gift voucher (gifticon) worth approximately 5,000 won.\n\nAttachment (1 file)\n2026 국립국제교육원 (NIIED) 인지도 조사 포스터.png (293 KB) [2026 NIIED Awareness Survey poster; the content of this image was not read.]",
+ "id": 31568,
+ "text_hash": "71a93ed4a3da92f9",
+ "images": 1,
+ "attachments": [
+  "2026 국립국제교육원 (NIIED) 인지도 조사 포스터.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

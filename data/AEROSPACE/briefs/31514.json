@@ -1,0 +1,29 @@
+{
+ "title_en": "How to Request a Change of English Name in Student Academic Records",
+ "summary": "Students who wish to change the English name in their academic records must submit a request with supporting documents. Enrolled students (including those on leave of absence) apply through MySNU, while graduates and students who have completed coursework (수료생) submit a correction request form and supporting documents to the Office of Academic Affairs (학사과) in person or by email. The notice states no deadline.",
+ "applies_to": "Any student who wishes to change the English name in their academic record (학적). Two groups are covered: (1) enrolled students (재적생), meaning currently enrolled students and students on leave of absence; (2) graduates and students who have completed coursework without graduating (수료생). The request is made only by students who want the change; it is not mandatory for all students.",
+ "dates": [],
+ "conditions": [
+  "A supporting document is required in every case: one copy of your passport or of your alien registration card.",
+  "Enrolled students and students on leave apply online through MySNU, not on paper.",
+  "Graduates and students who have completed coursework must also submit a Request Form for Correction of Academic Record Entries (학적부 기재사항 정정신청서)."
+ ],
+ "steps": [
+  "Enrolled students and students on leave: Prepare one copy of your passport or alien registration card as a supporting document.",
+  "Enrolled students and students on leave: Log in to MySNU and go to 학사정보시스템 (Academic Information System) -> 학적변동 (Change of Academic Status) -> 신청 (Application) -> 학적부기재사항정정 (Correction of Academic Record Entries).",
+  "Enrolled students and students on leave: Submit the request with the supporting document attached.",
+  "Graduates and students who have completed coursework: Prepare one Request Form for Correction of Academic Record Entries (학적부 기재사항 정정신청서) and one copy of your passport or alien registration card.",
+  "Graduates and students who have completed coursework: Submit the form and supporting document to the Office of Academic Affairs (학사과) in person or by email; the email address is in the original notice (no room number is given)."
+ ],
+ "translation": "[Common] How to Request a Change of English Name in Student Academic Records\n\nHow to request a change of the English name in academic records\n\nEnrolled students (currently enrolled students and students on leave of absence)\n- How to apply: Apply through MySNU with a supporting document attached.\n- Required documents: One supporting document (a copy of your passport or a copy of your alien registration card).\n- Menu: MySNU -> 학사정보시스템 (Academic Information System) -> 학적변동 (Change of Academic Status) -> 신청 (Application) -> 학적부기재사항정정 (Correction of Academic Record Entries)\n\nGraduates and students who have completed coursework (수료생)\n- How to apply: Submit the Request Form for Correction of Academic Record Entries and a supporting document to the Office of Academic Affairs (학사과).\n- Required documents: One Request Form for Correction of Academic Record Entries (학적부 기재사항 정정신청서) and one supporting document (a copy of your passport or a copy of your alien registration card).\n- How to submit: Visit the Office of Academic Affairs in person or submit by email (the email address is given in the original notice).\n\nAttachment (1)\nAttachment 2. Guide to Requesting a Change of English Name in Student Academic Records (2026.10.).hwp (3 MB). The content of this attachment was not read.",
+ "id": 31514,
+ "text_hash": "2c001ea94f7f6635",
+ "images": 0,
+ "attachments": [
+  "붙임2. 학생 학적상 영문성명 변경 신청 방법 안내(2026.10.).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

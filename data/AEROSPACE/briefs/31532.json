@@ -1,0 +1,54 @@
+{
+ "title_en": "Hanwha Ocean Internship Applications for 'Field Practice 3', 2026 Winter Session",
+ "summary": "Students interested in the Hanwha Ocean internship under the 'Field Practice 3' (현장실습 3) course in the 2026 academic year winter session may apply. The first round takes applications from 26 to 30 October 2026, and a possible second round runs from 10 to 11 November 2026. Applicants must email the signed application form to the Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417). Selected students must also register for the course and must not take any other winter session course.",
+ "applies_to": "Students who wish to apply for the Hanwha Ocean internship in the 'Field Practice 3' (현장실습 3) course, a semester-based internship course run by the Department of Naval Architecture and Ocean Engineering in the 2026 academic year winter session. Applying is voluntary. Participants must register for the course. The text does not state any further eligibility limits. The course overview, schedule and host table sections were not in the text and may contain further limits.",
+ "dates": [
+  {
+   "what": "Application submission, first round",
+   "when": "Monday 26 October 2026 to Friday 30 October 2026",
+   "original_ko": "(1차) 2026.10.26.(월) ~ 2026.10.30.(금)",
+   "verified": true
+  },
+  {
+   "what": "Application submission, second round (may not take place, depending on first-round selection results)",
+   "when": "Tuesday 10 November 2026 to Wednesday 11 November 2026",
+   "original_ko": "(2차) 2026.11.10.(화) ~ 2026.11.11.(수)",
+   "verified": true
+  },
+  {
+   "what": "Period in which the internship and the 'Field Practice 3' course take place (exact dates are not in the text)",
+   "when": "2026 academic year winter session",
+   "original_ko": "2026학년도 동계 계절학기",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Application deadlines must be strictly observed.",
+  "Participants must register for the 'Field Practice 3' course, because the internship and the course run together.",
+  "Participants may not take any other winter session course, including online courses.",
+  "Any other winter session course a participant has already registered for will be cancelled.",
+  "Course registration and tuition payment dates may differ from the regular schedule; check the separate notice on these.",
+  "The application form must include the applicant's signature at the bottom.",
+  "The second round may not take place, depending on first-round selection results.",
+  "Students who withdraw from the internship partway through or participate poorly will not receive credit, and payment of the internship allowance may be restricted."
+ ],
+ "steps": [
+  "Read Attachment 1 (list of host organizations, [붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관) and Attachment 3 (Hanwha Ocean job role descriptions, [붙임3] (한화오션) 직무별 담당 업무 소개), which is for reference when filling in your preferred job field. These attachments were not read for this translation.",
+  "Complete the application form in Attachment 2 ([붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(한화오션)) and sign it at the bottom.",
+  "Email the signed application form to the Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417) within the application period. The email address is in the original notice.",
+  "If selected, check the separate notice on course registration and tuition payment dates. Then register for 'Field Practice 3' (현장실습 3) and pay tuition according to that notice."
+ ],
+ "translation": "[Hanwha Ocean] Application for the Internship in the 'Field Practice 3' Course, Semester-Based Internship Program, 2026 Academic Year Winter Session (Application documents accepted: Mon 26 Oct to Fri 30 Oct)\n\nThe Department of Naval Architecture and Ocean Engineering will run the internship for 'Field Practice 3' (현장실습 3), a semester-based internship course in the 2026 academic year winter session, as set out below. Interested students are encouraged to apply.\n\nIn 'Field Practice 3', the internship and the course run together, so participants must register for the course (수강신청). Participants may not take any other winter session course, including online courses. Any other course already registered for will be cancelled. Course registration and tuition payment dates may differ from the regular schedule, so you must check the separate notice on these.\n\nPlease note that students who withdraw from the internship partway through or participate poorly will not receive credit, and payment of the internship allowance may be restricted.\n\n1. Course overview\n\n2. Schedule\n\n3. Host organizations (If the table below is not visible, see Attachment 1 [붙임1].)\n\n[Note: The content of sections 1 to 3 (course overview, schedule and host organization table) was not included in the text and was not read for this translation.]\n\n4. How to apply: submit the application form by email, including your signature at the bottom of the form.\n\n5. Application period (deadlines strictly observed)\n- (First round) 26 October 2026 (Mon) to 30 October 2026 (Fri)\n- (Second round) 10 November 2026 (Tue) to 11 November 2026 (Wed) (The second round may not take place, depending on first-round selection results.)\n\n6. Submission and enquiries: Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417). The contact details are given in the original notice.\n\n[Attachment 1] 2026 (Winter) Semester-Based Internship Program, Field Practice 3, Host Organizations\n[Attachment 2] 2026 (Winter) Semester-Based Internship Program, Field Practice 3, Application Form (Hanwha Ocean)\n[Attachment 3] (Hanwha Ocean) Description of Duties by Job Role (reference for filling in your preferred job field)\n\nAttached files (3):\n[붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관 (1).xlsx (12 KB)\n[붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(한화오션).docx (21 KB)\n[붙임3] (한화오션) 직무별 담당 업무 소개(희망직무분야 작성 참고용) (3).pdf (232 KB)\n\n[Note: The contents of the attached files were not read for this translation.]",
+ "id": 31532,
+ "text_hash": "c9eeb1ccfaf25b76",
+ "images": 3,
+ "attachments": [
+  "[붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관 (1).xlsx",
+  "[붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(한화오션).docx",
+  "[붙임3] (한화오션) 직무별 담당 업무 소개(희망직무분야 작성 참고용) (3).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

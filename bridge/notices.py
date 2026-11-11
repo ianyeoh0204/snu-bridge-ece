@@ -15,9 +15,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 AGENT = "SNU-Bridge/0.1 (student project; one request per second)"
 ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
-LINK = re.compile(r'bbsidx=(\d+)"[^>]*>\s*<span[^>]*>(.*?)</span>', re.S)
+LINK = re.compile(r'<a[^>]+bbsidx=(\d+)[^"]*"[^>]*>\s*<span[^>]*>(.*?)</span>\s*</a>', re.S)
 CELL = re.compile(r'<td class="text-center hidden-sm-down[^"]*">([^<]*)</td>')
-DATE = re.compile(r"(\d{4})\.(\d{2})\.(\d{2})\.")
+CATEGORY = re.compile(r'class="bbs-category">\s*\[?([^<\]]*)\]?\s*<')  # some departments print "[학부]" above the title instead
+DATE = re.compile(r"(\d{4})[.-](\d{2})[.-](\d{2})")
+# A speaker's name in a seminar title. The original notice keeps it; this site does not copy personal names.
+NAMED = re.compile(r"\b(Prof\.|Professor|Dr\.)\s*[A-Z][\w'-]+(?:[ -][A-Z][\w'-]+){0,3}")
 
 
 def _fetch(url: str) -> str:
@@ -29,15 +32,18 @@ def _fetch(url: str) -> str:
 def _rows(page: str) -> list[dict]:
     found = []
     for row in ROW.findall(page):
-        link, date = LINK.search(row), DATE.search(row)
+        link = LINK.search(row)
+        date = link and DATE.search(row[:link.start()] + row[link.end():])  # a title can contain a date of its own
         if not (link and date):
             continue
         cells = [html.unescape(c).strip() for c in CELL.findall(row)]
+        category = CATEGORY.search(row)
+        title = html.unescape(re.sub(r"<[^>]+>", "", link.group(2))).strip()
         found.append({
             "id": int(link.group(1)),
-            "title_ko": html.unescape(re.sub(r"<[^>]+>", "", link.group(2))).strip(),
+            "title_ko": NAMED.sub(r"\1 [name]", title),
             "date": "-".join(date.groups()),
-            "audience_ko": next((c for c in cells if c and not c.isdigit()), ""),
+            "audience_ko": next((c for c in cells if c and not c.isdigit()), category.group(1).strip() if category else ""),
             "pinned": 'class="noti"' in row,
         })
     return found
@@ -49,7 +55,8 @@ def update(department: str) -> tuple[list[dict], list[str]]:
     store = ROOT / "data" / department / "notices.json"
     known = {n["id"]: n for n in json.loads(store.read_text(encoding="utf-8"))} if store.exists() else {}
     today, changes = datetime.date.today().isoformat(), []
-    for page in range(40):
+    first = config.get("first_page", 0)  # some departments number their list pages from 1
+    for page in range(first, first + 40):
         rows = _rows(_fetch(f"{config['list_url']}?page={page}"))
         for row in rows:
             if row["date"] < config["since"]:
@@ -63,7 +70,7 @@ def update(department: str) -> tuple[list[dict], list[str]]:
                 old.update(title_ko=row["title_ko"], pinned=row["pinned"])
                 changes.append(f"retitled {row['id']} {row['title_ko']}")
         dated = [r["date"] for r in rows if not r["pinned"]]
-        if not dated or max(dated) < config["since"]:
+        if not rows or (dated and max(dated) < config["since"]):  # a page of pinned notices only is not the end
             break
         time.sleep(1)
     notices = sorted(known.values(), key=lambda n: (n["date"], n["id"]), reverse=True)

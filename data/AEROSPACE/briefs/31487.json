@@ -1,0 +1,29 @@
+{
+ "title_en": "Research Ethics Seminar (Session 1) [Issue Resolution]: Training Information",
+ "summary": "The department has announced a training session, Research Ethics Seminar (Session 1) [Issue Resolution], to be held on Thursday 22 October from 13:00. Only the title of the notice was available; it does not state who must attend, whether attendance is mandatory, where the seminar is held, or how to register. Students should check the original notice or contact the department office (contact details are in the original notice) for these details.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Research Ethics Seminar (Session 1) [Issue Resolution] begins (year not stated in the title)",
+   "when": "Thursday 22 October, from 13:00",
+   "original_ko": "10/22(목) 13:00~",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The text provided contained only the title, so any conditions, exemptions or registration requirements in the body or attachments were not read."
+ ],
+ "steps": [
+  "Read the full original notice and any attachments for the venue, eligibility and registration method, as these were not included in the text provided.",
+  "Attend the Research Ethics Seminar (Session 1) [Issue Resolution] on Thursday 22 October from 13:00."
+ ],
+ "translation": "Title: Information on the training \"Research Ethics Seminar (Session 1) [Issue Resolution] (연구윤리 세미나(1회)[이슈해결편])\" (Thursday 22 October, from 13:00)\n\nNote: Only the title of this notice was provided. The body text and any attachments were not available and were not read.",
+ "id": 31487,
+ "text_hash": "e3b0c44298fc1c14",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

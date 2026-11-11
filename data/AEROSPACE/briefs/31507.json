@@ -1,0 +1,65 @@
+{
+ "title_en": "Interview and Oral Exam Schedule, 2027 Graduate Early-Round Admission (October 16)",
+ "summary": "Applicants to the Aerospace Engineering graduate programs in the 2027 early-round (전기모집) admission must attend an interview on Friday, October 16, 2026, bringing their printed admission ticket and identification. Master's applicants must enter the waiting room, Building 301 Room 1313, by 8:30 a.m. Integrated master's-doctoral and doctoral applicants must enter the waiting room, Building 301 Room 1355-2, by 9:50 a.m., and no entry is permitted after these times.",
+ "applies_to": "All applicants to the Aerospace Engineering graduate programs (master's, integrated master's-doctoral and doctoral) in the 2027 graduate early-round (전기모집) admission; attendance at the interview is required. The oral examination with problem solving applies only to applicants to the Aerospace Engineering master's program.",
+ "dates": [
+  {
+   "what": "Admission ticket available to print from the application website (all applicants)",
+   "when": "From Tuesday, October 6, 2026",
+   "original_ko": "2026. 10.06.(화)부터",
+   "verified": true
+  },
+  {
+   "what": "Master's applicants: entry to waiting room must be completed (no entry afterwards)",
+   "when": "Friday, October 16, 2026, by 8:30 a.m.",
+   "original_ko": "2026.10. 16.(금) 오전 8시 30분까지 입실 완료 / 08:30 이후 입실 불가",
+   "verified": true
+  },
+  {
+   "what": "Master's applicants: move to problem-solving room begins",
+   "when": "Friday, October 16, 2026, from 9:03 a.m. (as stated in the notice)",
+   "original_ko": "9시 3분부터",
+   "verified": true
+  },
+  {
+   "what": "Integrated master's-doctoral and doctoral applicants: entry to waiting room must be completed (no entry afterwards)",
+   "when": "Friday, October 16, 2026, by 9:50 a.m.",
+   "original_ko": "2026.10. 16.(금) 오전 9시 50분까지 입실 완료 / 09:50 이후 입실 불가",
+   "verified": true
+  },
+  {
+   "what": "Integrated master's-doctoral and doctoral applicants: move to interview room begins",
+   "when": "Friday, October 16, 2026, from 10:45 a.m.",
+   "original_ko": "10시 45분부터",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "You must bring your admission ticket and identification; the admission ticket must be brought on the interview day.",
+  "Master's applicants who arrive at the waiting room after 8:30 a.m. will not be admitted.",
+  "Integrated master's-doctoral and doctoral applicants who arrive at the waiting room after 9:50 a.m. will not be admitted.",
+  "The problem-solving and oral examination applies only to Aerospace Engineering master's applicants: each reviews problems in 5 subjects, chooses 2, solves them in 20 minutes, then has a 10-minute oral examination and interview.",
+  "Integrated master's-doctoral and doctoral applicants have an interview of about 5 minutes.",
+  "Integrated master's-doctoral and doctoral applicants must enter quietly because master's interviews will be in progress.",
+  "The exam scope is given only in the attached file, which was not read for this translation."
+ ],
+ "steps": [
+  "Print your admission ticket yourself from the application website, available from October 6, 2026.",
+  "Master's applicants: Read the attached file on the oral examination scope (붙임 3, 구술고사(석사과정) 범위) to prepare.",
+  "Master's applicants: On October 16, 2026, bring your admission ticket and identification and enter the waiting room, Building 301 Room 1313, by 8:30 a.m.",
+  "Master's applicants: From 9:03 a.m. move to the problem-solving room when called; choose 2 of 5 subjects, solve problems for 20 minutes, then take a 10-minute oral examination and interview.",
+  "Integrated master's-doctoral and doctoral applicants: On October 16, 2026, bring your admission ticket and identification and enter the waiting room, Building 301 Room 1355-2, quietly by 9:50 a.m.",
+  "Integrated master's-doctoral and doctoral applicants: From 10:45 a.m. move to the interview room when called for an interview of about 5 minutes."
+ ],
+ "translation": "Title: [Graduate School] Interview and Oral Examination Schedule for the 2027 Graduate Early-Round Admission (Friday, October 16)\n\nThe interview and oral examination schedule for Aerospace Engineering in the 2027 graduate early-round admission (전기모집) is as follows.\n\nWhat to bring: admission ticket (수험표) and identification\n\nIssue of admission tickets\nFrom Tuesday, October 6, 2026, applicants may print their own admission ticket from the application website. (You must bring the admission ticket on the interview day.)\n\nInterview and oral examination schedule\n\n[Master's applicants]\n- Waiting room entry: entry must be completed by 8:30 a.m. on Friday, October 16, 2026. No entry after 08:30.\n- Waiting room: Building 301, Room 1313\n- Master's applicants move to the problem-solving room from 9:03 a.m. (each applicant solves problems for 20 minutes, followed by a 10-minute oral examination and interview).\n\n[Integrated master's-doctoral and doctoral applicants]\n- Waiting room entry: entry must be completed by 9:50 a.m. on Friday, October 16, 2026. No entry after 09:50.\n- Waiting room: Building 301, Room 1355-2\n- Doctoral and integrated master's-doctoral applicants move to the interview room from 10:45 a.m. (interview of about 5 minutes).\n* Master's interviews will be in progress when you enter, so please move quietly.\n\nMaster's oral examination (only for applicants to the master's program in Aerospace Engineering)\n- On the day, each applicant reviews the problems for 5 subjects, selects 2 subjects and solves the problems for 20 minutes, followed by a 10-minute oral examination and interview.\n- Exam scope: see the attached file.\n\nAttachment (1): (붙임 3). 27학년도 대학원 전기 모집 구술고사(석사과정) 범위.hwp (51 KB) [Attachment 3: Scope of the oral examination (master's program), 2027 graduate early-round admission]. The content of this attachment was not included in the notice text and was not read.",
+ "id": 31507,
+ "text_hash": "48ce2c9e456d53e4",
+ "images": 0,
+ "attachments": [
+  "(붙임 3). 27학년도 대학원 전기 모집 구술고사(석사과정) 범위.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

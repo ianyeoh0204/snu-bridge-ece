@@ -1,0 +1,42 @@
+{
+ "title_en": "2027 German Government (DAAD) Summer Course Scholarship: Call for Applications",
+ "summary": "Undergraduate and master's students with German language proficiency at level B1 or above may apply for the 2027 German Government (DAAD) Summer Course Scholarship. Applications must be submitted online by 30 October 2026. Further details are on the DAAD Korea website (www.daad-korea.org) and in the attached guide.",
+ "applies_to": "Optional (not mandatory). Open to undergraduate and master's students of any major with German language proficiency at level B1 or above. At the time the scholarship is received, applicants must have completed at least the second year of their bachelor's studies and must be enrolled at a university.",
+ "dates": [
+  {
+   "what": "Application deadline (applications are accepted once a year)",
+   "when": "30 October 2026",
+   "original_ko": "2026년 10월 30일(연 1회)",
+   "verified": true
+  },
+  {
+   "what": "Scholarship period: summer course, generally four weeks",
+   "when": "Between June and September 2027",
+   "original_ko": "2027년 6월 - 9월 사이",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "German language proficiency at level B1 or above is required.",
+  "Only undergraduate and master's students may apply; students of any major are eligible.",
+  "At the time the scholarship is received, the applicant must have completed at least the second year of bachelor's studies.",
+  "At the time the scholarship is received, the applicant must be enrolled at a university.",
+  "Applications are accepted only once a year, with a deadline of 30 October 2026."
+ ],
+ "steps": [
+  "Read the details on the DAAD Korea website (www.daad-korea.org) and the attached guide (\"2027 독일 정부초청(DAAD) 섬머코스 장학생 선발 안내문.pdf\"); the attachment was not read for this translation.",
+  "Submit your application online by 30 October 2026.",
+  "Direct any questions to the DAAD Korea office (주한독일고등교육진흥원); the contact details are in the original notice."
+ ],
+ "translation": "2027 German Government (DAAD) Summer Course Scholarship: Call for Applications\n\nScholars for the 2027 German Government Summer Course will be selected as follows.\n\nA. Eligibility: Undergraduate and master's students with German language proficiency at level B1 or above.\n* Any major is eligible. At the time the scholarship is received, the applicant must have completed at least the second year of bachelor's studies and must be enrolled at a university.\n\nB. Application deadline: 30 October 2026 (once a year).\n\nC. Application method: Online application.\n\nD. Scholarship benefits: Language course tuition fees, accommodation, a one-time allowance (475 euros), travel costs (1,735 euros), and health insurance, accident insurance and personal liability insurance, among others.\n\nE. Scholarship period: Generally four weeks (between June and September 2027).\n\nF. Contact: DAAD Korea office (주한독일고등교육진흥원). The telephone number and email address are given in the original notice.\n※ For other details, please refer to the website (www.daad-korea.org) and the <Attachment>.\n\nAttachment (1 file): 2027 독일 정부초청(DAAD) 섬머코스 장학생 선발 안내문.pdf (326 KB) [2027 German Government (DAAD) Summer Course Scholarship Selection Guide]. The content of this attachment was not read.",
+ "id": 31484,
+ "text_hash": "ece5d596d6e67e4d",
+ "images": 0,
+ "attachments": [
+  "2027 독일 정부초청(DAAD) 섬머코스 장학생 선발 안내문.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

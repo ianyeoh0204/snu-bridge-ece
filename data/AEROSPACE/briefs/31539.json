@@ -1,0 +1,57 @@
+{
+ "title_en": "Micron Taiwan Entry-Level Recruitment in Korea and Recruitment Information Session",
+ "summary": "Prospective graduates and graduates (with less than two years of work experience) of STEM bachelor's, master's or doctoral programs who can work in English may apply to Micron Taiwan for entry-level engineering positions by submitting an English résumé by email no later than Wednesday, 18 November 2026. Selected applicants will be interviewed between 23 and 25 November 2026 on the 3rd floor of COEX, Seoul, with individual times notified separately. Any enrolled student or graduate may also attend the recruitment information session at COEX Room 318, 12:00–13:00 on 23–25 November 2026, by submitting an attendance application through the poster's QR code or link.",
+ "applies_to": "Job application (optional): prospective graduates and graduates with less than two years of work experience who hold, or are about to receive, a bachelor's, master's or doctoral degree in a STEM field (science, technology, engineering or mathematics), and who are able to work in English. Recruitment information session (optional): any enrolled student or graduate, whether or not they apply for an interview.",
+ "dates": [
+  {
+   "what": "Deadline for submitting the English résumé (job applicants)",
+   "when": "Wednesday, 18 November 2026",
+   "original_ko": "2026년 11월 18일(수)",
+   "verified": true
+  },
+  {
+   "what": "Interview period for selected applicants; each applicant's individual interview time will be notified separately",
+   "when": "Monday, 23 November to Wednesday, 25 November 2026",
+   "original_ko": "2026년 11월 23일(월)~25일(수), 개인별 면접 일정은 별도 안내",
+   "verified": true
+  },
+  {
+   "what": "Recruitment information session (open to any enrolled student or graduate)",
+   "when": "Monday, 23 November to Wednesday, 25 November 2026, 12:00–13:00 each day",
+   "original_ko": "2026년 11월 23일(월)~25일(수), 12:00-13:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must hold or be about to receive a bachelor's, master's or doctoral degree in a STEM field.",
+  "Graduates may apply only if they have less than two years of work experience.",
+  "Applicants must be able to work in English.",
+  "The résumé must be written in English using the company's résumé form.",
+  "Only applicants selected after document review will be invited to interview, and they will be notified individually.",
+  "The final hiring decision will be made after the interview held on the day of the event.",
+  "Attending the information session does not require applying for an interview.",
+  "Attendees of the information session will receive snacks and a souvenir."
+ ],
+ "steps": [
+  "Job application: Read the attached recruitment poster (Poster_Micron Campus Recruit 2026.jpg) to check the positions and eligibility requirements. The poster is an image and its content was not read for this translation.",
+  "Job application: Use the QR code or link on the poster to download the English résumé form; the form is also attached to the notice as 마이크론 영문이력서 양식.docx (its content was not read for this translation).",
+  "Job application: Complete the English résumé and submit it by email by Wednesday, 18 November 2026. The email address is given in the original notice.",
+  "Job application: Wait for individual notification of whether you have been selected for interview and of your detailed interview schedule.",
+  "Job application: Attend your interview at your notified time between 23 and 25 November 2026 on the 3rd floor of COEX, Seoul; the final hiring decision will be made after the interview.",
+  "Recruitment information session: Use the QR code or link on the attached poster to access the attendance application.",
+  "Recruitment information session: Complete and submit the recruitment information session attendance application (채용 설명회 참석 신청서).",
+  "Recruitment information session: Attend the session at Room 318, 3rd floor, COEX, Seoul, from 12:00 to 13:00 on any day from 23 to 25 November 2026."
+ ],
+ "translation": "Micron (Micron Taiwan) Entry-Level Recruitment in Korea\n\n1. Positions\nProcess Engineer\nEquipment Engineer\nQuality Engineer\nProduction Engineer\n\n2. Eligibility\nProspective graduates and graduates (with less than two years of work experience) of bachelor's, master's or doctoral programs in STEM fields (science, technology, engineering and mathematics)\nAble to work in English\n\n3. Résumé submission deadline\nWednesday, 18 November 2026\n\n4. Interview application procedure\nCheck the positions and eligibility requirements in the attached recruitment notice.\nAccess the QR code or link on the poster and download the English résumé form.\nComplete the English résumé and submit it by email. (The email address is given in the original notice.)\nAfter document review, those selected for interview will be notified individually of the detailed interview schedule.\nInterviews will be held on the day of the event, after which final hiring decisions will be made.\n\n5. Interview schedule and venue\nDate: Monday, 23 November to Wednesday, 25 November 2026; individual interview times will be notified separately\nVenue: 3rd floor, COEX, Seoul\n\n[Recruitment Information Session]\nAny enrolled student or graduate may attend the recruitment information session, regardless of whether they apply for an interview. Please share this information so that as many interested students as possible can participate.\n\n1. Session schedule and venue\nDate: Monday, 23 November to Wednesday, 25 November 2026, 12:00–13:00\nVenue: Room 318, 3rd floor, COEX, Seoul\n\n2. How to attend\nAccess the QR code or link on the poster.\nComplete the recruitment information session attendance application (채용 설명회 참석 신청서).\nAttendees will receive snacks and a souvenir.\n\nAttachments (2)\nPoster_Micron Campus Recruit 2026.jpg (785 KB) — image; its content, including the QR code and link, was not read for this translation.\n마이크론 영문이력서 양식.docx (Micron English résumé form, 56 KB) — its content was not read for this translation.",
+ "id": 31539,
+ "text_hash": "251d6ae92d529a42",
+ "images": 1,
+ "attachments": [
+  "Poster_Micron Campus Recruit 2026.jpg",
+  "마이크론 영문이력서 양식.docx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

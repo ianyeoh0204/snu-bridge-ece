@@ -1,0 +1,28 @@
+{
+ "title_en": "Area Recognition Criteria for Common Curriculum Courses (2024–2026 Comparison Table)",
+ "summary": "Students taking common curriculum (general education) courses should note how each course is credited to a curriculum area following the 2025 general education curriculum reform. Area recognition is based on the completion rules for the student's year of admission, and students should consult the attached comparison table when choosing courses. No deadline or submission is stated.",
+ "applies_to": "Students taking common curriculum (general education) courses; the notice does not limit this to any program or year of admission. This is guidance to consult when registering for courses; no action or submission is required.",
+ "dates": [],
+ "conditions": [
+  "Whether a course counts toward a curriculum area is decided by the common curriculum completion rules of the student's year of admission.",
+  "If a student completes a course created after their year of admission and that course's area exists in their admission-year rules, the credits count toward that area.",
+  "If a student completes a course created after their year of admission and that course's area does not exist in their admission-year rules, the credits do not count toward any required area and count only toward total common curriculum (general education) credits.",
+  "If a new course is designated as an equivalent or substitute (동일·대체) for an existing course, taking the new course counts toward the area the existing course belonged to before the reform."
+ ],
+ "steps": [
+  "Read the attached file \"2024-2026 공통교육과정 영역 및 교과목 비교표_ 260804.(안내용).xlsx\" (2024–2026 Common Curriculum Area and Course Comparison Table), attached to the original notice; its content was not read for this translation.",
+  "Check the common curriculum completion rules for your year of admission.",
+  "Before registering, check whether each course you plan to take counts toward a required area under your admission-year rules, or only toward total general education credits."
+ ],
+ "translation": "Area Recognition Criteria for Common Curriculum Courses (2024–2026 Common Curriculum Area and Course Comparison Table)\n\nThe criteria for recognising the curriculum areas of common curriculum courses, following the reform of the general education curriculum in the 2025 academic year, are set out below. Please refer to them when taking courses.\n\nA. Whether a course is recognised as belonging to an area is determined according to the common curriculum completion rules of the student's year of admission.\n\nB. Where a student has completed a course newly established after the student's year of admission:\n- If the relevant area exists in the completion rules of the student's year of admission, the credits are recognised as credits completed in that area.\n- If the relevant area does not exist in the completion rules of the student's year of admission, the credits are not included in required area completion and are recognised only as total common curriculum (general education) credits.\n※ Where a course is designated as an equivalent or substitute course (동일·대체 교과목), taking the new course is recognised as credits completed in the pre-reform area of the existing course designated as its equivalent or substitute.\n\nAttachment (1 file):\n2024-2026 공통교육과정 영역 및 교과목 비교표_ 260804.(안내용).xlsx (73 KB) — 2024–2026 Common Curriculum Area and Course Comparison Table (for guidance). The content of this attachment was not included in the notice text and was not read.",
+ "id": 31496,
+ "text_hash": "0e21fe4b0e3bfe60",
+ "images": 0,
+ "attachments": [
+  "2024-2026 공통교육과정 영역 및 교과목 비교표_ 260804.(안내용).xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

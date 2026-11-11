@@ -1,0 +1,39 @@
+{
+ "title_en": "1st Next-Generation Engineering Researchers Alumni Symposium 2026",
+ "summary": "The SeAH Haiam Arts & Sciences Scholarship Foundation is holding the 1st Next-Generation Engineering Researchers Alumni Symposium 2026. Those wishing to attend must apply through the QR code on the attached poster by midnight on Sunday, 15 November 2026; applications may close earlier if the planned number is exceeded. The symposium takes place on Monday, 21 December 2026, from 15:00 to 17:00 in the 4th-floor Auditorium of SeAH Tower (Hapjeong Station).",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Application deadline (may close earlier if applications exceed the planned number)",
+   "when": "Sunday, 15 November 2026, midnight",
+   "original_ko": "~ 2026. 11. 15.(일) 자정",
+   "verified": true
+  },
+  {
+   "what": "Symposium date and time (the foundation alumni homecoming day follows immediately after the symposium)",
+   "when": "Monday, 21 December 2026, 15:00 to 17:00",
+   "original_ko": "2026. 12. 21.(월) 15:00 ~ 17:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications may close before the deadline if the number of applicants exceeds the planned number.",
+  "Applications are made only through the QR code on the poster."
+ ],
+ "steps": [
+  "Open the attached poster (홍보 포스터_1.jpg); its content was not read for this translation and is not included here.",
+  "Apply by scanning the QR code on the poster before midnight on Sunday, 15 November 2026, or earlier if applications close early.",
+  "Attend the symposium on Monday, 21 December 2026, from 15:00 to 17:00 in the 4th-floor Auditorium of SeAH Tower (Hapjeong Station)."
+ ],
+ "translation": "1st Next-Generation Engineering Researchers Alumni Symposium 2026\n\n1. The SeAH Haiam Arts & Sciences Scholarship Foundation is holding the \"1st Next-Generation Engineering Researchers Alumni Symposium 2026\" (제1회 차세대 공학연구자 Alumni 심포지엄 2026).\n\nA. Application deadline: until midnight, Sunday, 15 November 2026\n※ Even before the deadline, applications may close early if the number of applicants exceeds the planned number.\n\nB. How to apply: Apply using the QR code on the poster.\n\nC. Date and time: Monday, 21 December 2026, 15:00 to 17:00\n\nD. Venue: 4th-floor Auditorium, SeAH Tower (Hapjeong Station)\n\nE. Main programme:\n- Lectures by foundation alumni researchers (materials, sensors, energy and AI)\n- Panel discussion\n- The foundation alumni homecoming day will follow immediately after the symposium.\n\nAttachment (1): 홍보 포스터_1.jpg (promotional poster, 305 KB). The content of this image was not read and is not included in this translation.",
+ "id": 31538,
+ "text_hash": "86eb96b3376b5832",
+ "images": 1,
+ "attachments": [
+  "홍보 포스터_1.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

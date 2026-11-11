@@ -1,0 +1,38 @@
+{
+ "title_en": "College of Engineering Busking Events (Gong Busking), November 2026",
+ "summary": "The College of Engineering will hold \"Gong Busking\" lunchtime performances for members of the College on 11 and 25 November 2026 (Wednesdays), 12:30–13:30. The 11 November event takes place at Gonghyu (in front of Building 37), and the 25 November event in the 2nd-floor hall of Building 303 (Haedong Advanced Engineering Building). Sandwiches will be provided to the first 50 attendees per performance; departments are asked to publicise the event and give advance notice of the noise.",
+ "applies_to": "Members of the College of Engineering (공과대학 구성원). The notice does not state that attendance is mandatory. Departments are asked to publicise the event and to give advance notice of noise.",
+ "dates": [
+  {
+   "what": "First Gong Busking performance, at Gonghyu (in front of Building 37)",
+   "when": "Wednesday 11 November 2026, 12:30–13:30",
+   "original_ko": "26년 11월 11일, 25일(수) 12:30 ~ 13:30",
+   "verified": true
+  },
+  {
+   "what": "Second Gong Busking performance, in the 2nd-floor hall of Building 303 (Haedong Advanced Engineering Building)",
+   "when": "Wednesday 25 November 2026, 12:30–13:30",
+   "original_ko": "26년 11월 11일, 25일(수) 12:30 ~ 13:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Sandwiches are provided only to the first 50 attendees, counted per performance team.",
+  "The events may cause noise near the venues; departments are asked to give advance notice of this."
+ ],
+ "steps": [
+  "Optionally, view the attached poster; its content was not read for this translation.",
+  "Attend the performance at the stated venue on 11 or 25 November 2026 between 12:30 and 13:30; arrive early if you wish to receive a sandwich, as only the first 50 attendees per performance receive one."
+ ],
+ "translation": "Title: Notice of the November Gong Busking Events\n\nTo discover and share the cultural capabilities and artistic potential of students of the Seoul National University College of Engineering, and to turn campus spaces into open cultural spaces in everyday life so as to create a free and lively campus culture, \"Gong Busking\" will be held as follows.\n\n1. Date and time: 11 and 25 November 2026 (Wednesdays), 12:30–13:30\n\n2. Venue: 11 November: Gonghyu (공휴, in front of Building 37); 25 November: 2nd-floor hall of Building 303 (Haedong Advanced Engineering Building, 해동첨단공학관)\n\n3. Eligible participants: Members of the College of Engineering\n\n4. Programme: Gong Busking. ※ Sandwiches will be provided to the first 50 attendees (per performance team).\n- Performers: one performer on 11 November and one on 25 November (names are given in the original notice).\n\n5. Request: Please publicise the event through each department's channels (website, notice boards, etc.).\n\n6. Cooperation requested: Please give advance notice of, and cooperate regarding, the noise caused by the event.\n\nAttachment (1 file): [Poster] College of Engineering Gong Busking.jpg (2 MB). The content of this image was not read.",
+ "id": 31558,
+ "text_hash": "17f2a235b0e62569",
+ "images": 1,
+ "attachments": [
+  "[포스터] 공과대학 공버스킹.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

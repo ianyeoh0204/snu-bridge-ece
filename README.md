@@ -43,6 +43,7 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 .venv/bin/python tools/evidence.py         # recount the Korean and English boards for the Background and Method page
 .venv/bin/python tools/korean_review.py    # every English and Korean sentence pair, as a sheet for a Korean reader
 .venv/bin/python tools/audit.py prepare    # a second reader re-reads cards against the page images (see the file's top)
+.venv/bin/python tools/survey.py count     # other engineering departments: Korean and English notices (then check, sample, aggregate)
 ```
 When two sources differ, the most recent official one is the rule: add a line to `sources/<department>/updates.json`
 with the notice number and the exact Korean line, and it appears on the card as "Added or changed by later notices".
@@ -54,3 +55,9 @@ before running `pages`, `extract`, `check` or `tools/check_quotes.py`. The daily
 
 ## Add a department
 Create `sources/<name>/`, put the official files in it, and write a `config.json` like the ECE one.
+
+**Notices only (a pilot).** A folder whose `config.json` has `"pilot": true` and a `board`, and no requirement cards,
+is shown on the Notices page as a pilot and nowhere else (`sources/AEROSPACE/` is one). The daily job reads and
+translates its notices like any other department's; delete the folder and its `data/<name>/` to stop. The list reader
+in `bridge/notices.py` and the page reader in `bridge/briefs.py` fit the board software ECE uses; a site on other
+software needs its own two readers. `tools/survey.py` shows how each of the other engineering sites lists its posts.

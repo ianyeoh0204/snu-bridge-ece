@@ -1,0 +1,42 @@
+{
+ "title_en": "Fall 2026 Application for Recognition of Credits Earned at This University Before Admission",
+ "summary": "Graduate students who earned credits in a graduate program at this university before entering their current graduate program may apply to have those credits recognised. Applicants must submit the application form and a transcript with the requested courses marked to the department office by Thursday, 8 October 2026. Students are asked to apply in their first semester of admission.",
+ "applies_to": "Graduate students who earned credits in a graduate program at this university before admission to their current graduate program, in the same or a similar department, division or major at this university, and who wish to have those credits recognised. Application is voluntary, but students are asked to apply in their first semester of admission.",
+ "dates": [
+  {
+   "what": "Deadline to submit the application form and transcript to the department office",
+   "when": "Thursday, 8 October 2026",
+   "original_ko": "2026. 10. 8.(목)까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only credits from the same or a similar department, division or major at this university are recognised.",
+  "Students are asked to apply in their first semester of admission for smooth academic administration.",
+  "Previous master's program to current master's program: up to 12 credits may be recognised.",
+  "Previous master's program to current integrated master's-doctoral program: up to 12 credits may be recognised.",
+  "Previous doctoral program to current doctoral program: up to 18 credits may be recognised.",
+  "Previous doctoral program to current integrated master's-doctoral program: up to 18 credits may be recognised.",
+  "Previous integrated master's-doctoral program to current master's program: up to 12 credits may be recognised.",
+  "Previous integrated master's-doctoral program to current doctoral program: up to 18 credits may be recognised, but only if the student completed (수료) the integrated master's-doctoral program in the same or a similar department, division or major at this university before admission to the doctoral program.",
+  "Previous integrated master's-doctoral program to current integrated master's-doctoral program: up to 18 credits may be recognised.",
+  "The transcript must have the courses you are applying for marked on it."
+ ],
+ "steps": [
+  "Download the attached application form \"입학전 본교 신청서(학생용).hwp\" (application form for students); its content was not read for this translation.",
+  "Complete the application form.",
+  "Obtain your transcript and mark the courses you are applying to have recognised.",
+  "Submit the application form and marked transcript to the department office by Thursday, 8 October 2026 (no room number is given in the notice; the contact is in the original notice)."
+ ],
+ "translation": "Fall 2026 Application for Recognition of Credits from the Same Program Taken at This University Before Admission (until Thu 10/8)\n\nInformation on \"Recognition of credits from programs taken at this university before admission,\" earned before your current graduate program, is provided as attached. Please submit the documents to the department office by Thursday, 8 October 2026. For smooth academic administration, please apply in your first semester of admission.\n\n* Documents to submit: application form, transcript (with the courses you are applying for marked)\n\n□ Scope of recognition: the same or a similar department (division) or major at this university\n\n□ Recognised credits\nPrevious program | Current program | Recognised credits\nMaster's program | Master's program | up to 12 credits\nMaster's program | Integrated master's-doctoral program | up to 12 credits\nDoctoral program | Doctoral program | up to 18 credits\nDoctoral program | Integrated master's-doctoral program | up to 18 credits\nIntegrated master's-doctoral program | Master's program | up to 12 credits\nIntegrated master's-doctoral program | Doctoral program* | up to 18 credits\nIntegrated master's-doctoral program | Integrated master's-doctoral program | up to 18 credits\n\n* However, this applies only if, before admission to the doctoral program, the student completed (수료) the integrated master's-doctoral program in the same or a similar department (division) or major at this university.\n\n* Inquiries: Department of Aerospace Engineering office (the contact details are in the original notice).\n\nAttachment (1)\n1. 입학전 본교 신청서(학생용).hwp (application form for credits taken at this university before admission, student version, 37 KB) — the content of this attachment was not read.",
+ "id": 31476,
+ "text_hash": "f6a229b27f10289b",
+ "images": 0,
+ "attachments": [
+  "1. 입학전 본교 신청서(학생용).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

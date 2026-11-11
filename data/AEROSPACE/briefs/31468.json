@@ -1,0 +1,51 @@
+{
+ "title_en": "Fall 2026 College of Engineering Hyunsong Global Scholarship: Call for Recommendations",
+ "summary": "New international graduate students from developing countries who wish to be recommended for the Fall 2026 College of Engineering Hyunsong Global Scholarship must submit the required documents by Thursday, 17 September 2026. Documents are submitted by email to the address given in the original notice, which this translation does not reproduce. Each department will recommend one student, and the College of Engineering will select one new scholar.",
+ "applies_to": "New applicants only who wish to be recommended. They must be international graduate students currently enrolled, from a developing country, and expected to register for at least two more semesters. They need a previous-semester grade point average of 3.1 or higher; incoming students must instead have been admitted to a College of Engineering graduate program. They must be recommended by their department head and must not receive an International Office living-expense scholarship (GS, SPF, GSFS, EDGE, etc.). Students facing financial difficulty in paying for their studies are to be recommended first. Applying is optional.",
+ "dates": [
+  {
+   "what": "Deadline for new applicants to submit the required documents by email",
+   "when": "Thursday, 17 September 2026",
+   "original_ko": "26.9.17.(목)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only new applicants are called for in this notice; the College of Engineering will select 1 new scholar and 11 continuing scholars.",
+  "Each department is asked to recommend only one new student.",
+  "Applicants must be from a developing country; the notice attaches an OECD DAC recipient country list, which was not read.",
+  "Applicants must have a previous-semester grade point average of 3.1 or higher; incoming students must instead have been admitted to a College of Engineering graduate program.",
+  "Applicants must be expected to register for at least two more semesters.",
+  "Applicants must be recommended by their department head.",
+  "Students receiving an International Office living-expense scholarship (GS, SPF, GSFS, EDGE, etc.) are not eligible.",
+  "Students facing financial difficulty in paying for their studies will be recommended first.",
+  "Students who have completed master's coursework (수료) cannot receive continued payments.",
+  "The scholarship pays 20,000,000 KRW per year, paid as 10,000,000 KRW per semester.",
+  "Support lasts at most 2 years for a master's program, 3 years for a doctoral program and 5 years for the integrated master's-doctoral program, provided the eligibility requirements continue to be met.",
+  "The application form and the recommendation letter must be in Korean."
+ ],
+ "steps": [
+  "Read the attached call for applications (English and Korean versions) and the OECD DAC recipient country list; these attachments were not read for this translation.",
+  "Download the attached document forms (제출서류 양식 zip file).",
+  "Prepare the scholarship application form in Korean (장학금 신청원서, 국문).",
+  "Obtain a recommendation letter in Korean (추천서, 국문); you need the recommendation of your department head.",
+  "Prepare a personal statement and study plan (자기소개서 및 학업계획서) in free format, in Korean or English.",
+  "Prepare your academic transcript (성적증명서), the consent form for the use of personal information (개인정보활용동의서) and a copy of your bankbook (통장사본).",
+  "Email all documents to the address given in the original notice by Thursday, 17 September 2026. The list of recommended candidates (추천대상자 명단) is completed by the staff member in charge, not by you."
+ ],
+ "translation": "Fall 2026 College of Engineering Hyunsong Global Scholarship Program: Call for Scholarship Recipients (until Thursday, 17 September)\n\nScholarship recipients for the Fall 2026 College of Engineering Hyunsong Global Scholarship Program will be selected as follows. New students who wish to be recommended should submit the relevant documents to [email address given in the original notice] by Thursday, 17 September 2026 (26.9.17.(목)).\n\nA. Number of recommendations\n※ Number to be selected by the College of Engineering: 1 new, 11 continuing\n1) New: College of Engineering, 1 person ※ Each department is asked to recommend 1 person.\n\nB. Eligibility for recommendation\n1) International graduate students who are currently enrolled, from developing countries and academically excellent (grade point average of 3.1 or higher in the previous semester; for incoming students, admission to a College of Engineering graduate program). They must be expected to register for at least two semesters and be recommended by the head of their department.\n2) Students who do not receive an International Office living-expense scholarship within the university (GS, SPF, GSFS, EDGE, etc.).\n3) Departments are asked to give priority to students who have difficulty paying for their studies because of financial hardship.\n※ Students who have completed master's coursework (수료생) cannot receive continued payments.\n\nC. Support: an annual study grant of 20,000,000 KRW (paid as 10,000,000 KRW per semester).\n※ If the eligibility requirements are met, support is provided for up to 2 years for a master's program, 3 years for a doctoral program and 5 years for the integrated master's-doctoral program.\n\nD. Documents to submit\n1) New: list of recommended candidates (추천대상자 명단, completed by the staff member in charge), scholarship application form (장학금 신청원서, in Korean), recommendation letter (추천서, in Korean), personal statement and study plan (자기소개서 및 학업계획서, free format, in Korean or English), academic transcript (성적증명서), consent form for the use of personal information (개인정보활용동의서), copy of bankbook (통장사본).\n\nAttachments (5) [the content of the attachments was not read]:\n1. Call for_2026-2 Hyunsong Global Scholarship.hwp (138 KB)\n1. Call for scholarship recipients, Korean version (장학생 모집 안내(국문) (8).hwp, 108 KB)\n2. Forms for the required documents (제출서류 양식 (4).zip, 106 KB)\n3. New scholar recommendation form (신규장학생 추천 서식 (4).xlsx, 11 KB)\n4. OECD DAC recipient country list (OECD DAC 수원국 목록 (4).pdf, 640 KB)\n\nThe submission email address is given in the original notice.",
+ "id": 31468,
+ "text_hash": "d666fce483cf740d",
+ "images": 0,
+ "attachments": [
+  "1. Call for_2026-2 Hyunsong Global Scholarship.hwp",
+  "1. 장학생 모집 안내(국문) (8).hwp",
+  "2. 제출서류 양식 (4).zip",
+  "3. 신규장학생 추천 서식 (4).xlsx",
+  "4. OECD DAC 수원국 목록 (4).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,32 @@
+{
+ "title_en": "2026 Seoul National University Arts Week",
+ "summary": "Seoul National University will hold the 2026 Arts Week from Monday, September 28 to Friday, October 2, 2026, at the Gwanak, Yeongeon, Pyeongchang and Siheung campuses and at community arts spaces. No action is required of students; members of the university are asked to tolerate noise during the event period and units are asked to promote the event on their online and offline notice boards. Detailed schedules for each program are given in the attached poster and leaflet, which were not read.",
+ "applies_to": "The notice is addressed to the university community in general. It does not require any student to act. The requests for cooperation (tolerating noise and promoting the event through each unit's online and offline notice boards) are addressed to members of the university and its units.",
+ "dates": [
+  {
+   "what": "2026 Seoul National University Arts Week (event period; detailed schedules for each program are in the attachment, which was not read)",
+   "when": "Monday, September 28, 2026 to Friday, October 2, 2026",
+   "original_ko": "2026. 9. 28.(월) ~ 10. 2.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Members of the university are asked to tolerate noise during the event period.",
+  "The detailed schedule of each program is given only in the attachment, which was not read."
+ ],
+ "steps": [
+  "To find the detailed schedule of each program, see the attached leaflet ([2026 예술주간] 리플렛.pdf) and poster ([2026 예술주간] 포스터.jpg) in the original notice; their contents were not read."
+ ],
+ "translation": "2026 Seoul National University Arts Week\n\nTo promote cultural and artistic activities on campus and to create an educational environment in which artistic inspiration can be experienced, the 2026 Seoul National University Arts Week will be held as follows.\n\n1. Event name: 2026 Seoul National University Arts Week\n\n2. Period: Monday, September 28, 2026 to Friday, October 2, 2026. ※ For the detailed schedule of each program, see the attachment.\n\n3. Venues: Gwanak, Yeongeon, Pyeongchang and Siheung Campuses, and arts spaces in the local community\n\n4. Programs: music performances, art exhibitions, fashion exhibitions, student performances, etc.\n\n5. Requests for cooperation: Please be understanding of noise during the event period, and please promote the event through each unit's online and offline notice boards.\n\nAttachment: One copy each of the 2026 Arts Week poster and leaflet. End.\n\nAttached files (2):\n[2026 예술주간] 리플렛.pdf (3 MB) (leaflet)\n[2026 예술주간] 포스터.jpg (14 MB) (poster)\n\n[Note: The contents of the attached leaflet and poster were not read.]",
+ "id": 31488,
+ "text_hash": "51a2bfffb4f2d5ad",
+ "images": 1,
+ "attachments": [
+  "[2026 예술주간] 리플렛.pdf",
+  "[2026 예술주간] 포스터.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-12",
+ "prompt": 2,
+ "revised": false
+}
