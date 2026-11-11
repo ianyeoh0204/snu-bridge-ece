@@ -17,7 +17,7 @@ One record is shared by everything: the card, defined in `bridge/cards.py`.
 Only `bridge/llm.py` talks to a model. Changing provider means changing that one file.
 
 ## The three screens (approved 11 Nov 2026)
-0. Home (added 12 Nov): browse before entering. Programs with one number each, and the latest notices.
+0. Home (added 11 Nov): browse before entering. Programs with one number each, and the latest notices.
 1. My roadmap: pick department, program, entry term. A strip shows what is open or expected this month.
    Cards are grouped by what they unlock, never by semester.
 2. One card: at most five short lines, then why it matters, when, the trap, and the source page with the Korean line.
@@ -63,16 +63,16 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - Site: Requirements (program switch, year of admission for undergraduate, ticks saved in the browser) and Notices
   (by month, audience filter that follows the program, translation on tap, link to the original and the related requirement).
   A fresh browser lands on Home; Requirements opens on `default_program` from the config.
-- Home view (approved look, 12 Nov): a blue band with the name and one line on what the site is, one column per program
+- Home view (approved look, 11 Nov): a blue band with the name and one line on what the site is, one column per program
   with its headline fact (`headline_cards` in the config), and the five latest notices as a board that turns once from
   Korean to English, with a language switch. Addresses: none or `#home`, `#requirements`, `#notices`, `#card-<id>`, `#notice-<id>`.
-- Look (chosen by the developer on 12 Nov, replacing the Apple-style one): Swiss signage. One typeface (Helvetica), black and
+- Look (chosen by the developer on 11 Nov, replacing the Apple-style one): Swiss signage. One typeface (Helvetica), black and
   white plus SNU blue #002c84 as the only accent, black bars for section headings, visible grid lines, no rounded corners,
   no shadows, everything left-aligned. Yellow #ffd60a marks cautions only (developer's request: important things must
   stand out). Keep new elements inside this vocabulary. The developer rejected an editorial
   "gazette" look as the worst of three: too many words.
 - Extract and check code exist; the batch extractor is untested. The first single-request run failed at the output limit.
-- Deployed (12 Nov): https://ianyeoh0204.github.io/snu-bridge-ece/ from the public repository `ianyeoh0204/snu-bridge-ece`.
+- Deployed (11 Nov): https://ianyeoh0204.github.io/snu-bridge-ece/ from the public repository `ianyeoh0204/snu-bridge-ece`.
   `.github/workflows/update.yml` reads the boards, translates, rebuilds and publishes every morning at 07:17 Seoul time;
   a push republishes only. The department's own files are deliberately not in the repository (see README).
   Unreadable attachments and images send the student to the `assistant` named in the config (ChatGPT Edu until the plugin exists).
