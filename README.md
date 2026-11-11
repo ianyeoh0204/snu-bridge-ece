@@ -29,7 +29,7 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 
 ## Taking over
 1. Get access to this repository (or fork it) and turn on Pages: Settings > Pages > Source: GitHub Actions.
-2. Add your own model key: Settings > Secrets and variables > Actions > New repository secret, named `ANTHROPIC_API_KEY`.
+2. Add your own model key: Settings > Secrets and variables > Actions > New repository secret, named `ANTHROPIC_API_KEY` (the workflow also accepts `API_KEY`).
    Translating one notice costs about 0.06 USD on Claude Opus. To use another provider, change `bridge/llm.py` only.
 3. Each semester, download the new official files into `sources/<department>/`, list them in its `config.json`,
    and update the cards. Nothing else needs a person.
