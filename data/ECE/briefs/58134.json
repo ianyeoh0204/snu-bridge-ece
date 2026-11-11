@@ -1,36 +1,43 @@
 {
- "title_en": "Extension of the Research Ethics Training Period for Graduate Students, Fall Semester (2nd Semester) 2026 (until October 31)",
- "summary": "The enrolment period for the 2026 2nd-semester online research ethics training for graduate students has been extended to Saturday, 31 October 2026. Graduate students who have not yet completed the training should take it within this period.",
- "applies_to": "Graduate students who have not yet completed the training, namely new graduate students entering in the 2nd semester of the 2026 academic year, and enrolled students who have not completed the research ethics course or the online training. Graduate students participating in BK21 may take the course until December 2026.",
+ "title_en": "Fall 2026 Graduate Research Ethics Online Training: Period Extended to October 31",
+ "summary": "Fall 2026 new graduate students, and current graduate students who have not completed the research ethics course and online training, are asked to complete the research ethics online training. The course period has been extended to Saturday, October 31, 2026; BK21 participating graduate students may take it until December 2026. The course is taken online through eTL (https://etl.snu.ac.kr) under 'SNUON-강좌목록'.",
+ "applies_to": "Graduate students who have not yet completed the training, specifically: (1) new graduate students admitted in Fall 2026 (2026학년도 2학기); and (2) current graduate students who have not completed the research ethics course (교과목) and online training. The notice asks these students to take the course within the period; it does not use the word 'mandatory' and states no penalty. BK21 participating graduate students have a later deadline.",
  "dates": [
   {
-   "what": "Extended deadline for completing the online research ethics training",
-   "when": "Saturday, 31 October 2026",
-   "original_ko": "2026. 10. 31.(토)",
-   "verified": true
-  },
-  {
-   "what": "Course period",
-   "when": "Tuesday, 1 September to Saturday, 31 October 2026",
+   "what": "Course period for the research ethics online training (all eligible students)",
+   "when": "Tuesday, September 1, 2026 to Saturday, October 31, 2026",
    "original_ko": "2026. 9. 1.(화)~10. 31.(토)",
    "verified": true
   },
   {
-   "what": "Deadline for graduate students participating in BK21",
-   "when": "Until December 2026",
+   "what": "Extended deadline to complete the training (all eligible students except BK21 participants)",
+   "when": "Saturday, October 31, 2026",
+   "original_ko": "2026. 10. 31.(토)",
+   "verified": true
+  },
+  {
+   "what": "Deadline for BK21 participating graduate students only",
+   "when": "By December 2026 (no specific day stated)",
    "original_ko": "2026년 12월까지",
    "verified": true
   }
  ],
- "steps": [
-  "Log in to eTL (https://etl.snu.ac.kr).",
-  "Click 'SNUON-Course List' ('SNUON-강좌목록') on the left side of the screen.",
-  "Search for 'Research Ethics' ('연구윤리 / Ethics').",
-  "Register for the course that matches your field (Humanities and Social Sciences, or Science and Engineering), in Korean or English.",
-  "Watch 100% of all videos and download and view the learning materials (PDF) to have completion recognised, by Saturday, 31 October 2026 (BK21 participants: by December 2026).",
-  "After completing the course, print your certificate of completion yourself."
+ "conditions": [
+  "Completion is recognised only when you watch 100% of all videos and download and view the learning materials (PDF).",
+  "BK21 participating graduate students may take the course until December 2026; all other students must finish by October 31, 2026.",
+  "You must register for the course that matches your field (Humanities and Social Sciences, or Science and Engineering).",
+  "Students who have already completed the research ethics course and online training are not included in the target group."
  ],
- "translation": "Extension of the Research Ethics Training Period for Graduate Students, 2nd Semester of the 2026 Academic Year (until October 31)\n\nThe enrolment period for the online research ethics training for graduate students for the 2nd semester of the 2026 academic year has been extended to Saturday, 31 October 2026 (2026. 10. 31.(토)). Graduate students who have not yet completed the training are asked to take it within this period.\n\nA. Course titles\n- 2026-2) Research Ethics for Graduate Students (Humanities and Social Sciences / Science and Engineering) [2026-2) 대학원생을 위한 연구윤리(인문사회계 / 이공계)]\n- 2026-2) Research ethics for graduate students (Humanities and Social Sciences / Science and Engineering)\n\nB. Who must take the course\n- New graduate students entering in the 2nd semester of the 2026 academic year\n- Enrolled students who have not completed the research ethics course (교과목) or the online training\n\nC. Course period: Tuesday, 1 September to Saturday, 31 October 2026 (2026. 9. 1.(화)~10. 31.(토))\n※ Graduate students participating in BK21 may take the course until December 2026.\n\nD. How to take the course\n- Log in to eTL (https://etl.snu.ac.kr) → click 'SNUON-Course List' ['SNUON-강좌목록'] on the left → search for 'Research Ethics' ['연구윤리 / Ethics'] → register for the course that matches your field → take the course.\n※ Completion is recognised when you have watched 100% of all videos and downloaded and viewed the learning materials (PDF). After completing the course, you can print your certificate of completion yourself.\n\nAttachment: Guide to the Research Ethics Training for Graduate Students, 2nd Semester of the 2026 Academic Year (Korean and English), one copy each.\n\nAttached files (2):\n- 2026 2nd-Semester Research Ethics course sign-up Guide for Graduate Students.pdf\n- 2026학년도 2학기 대학원생 연구윤리 교육 수강 안내.pdf (Korean version of the guide)\n\nNote from the translator: The contents of the attached PDF files were not included in the notice text and have not been read or translated. Please download them from the original notice. For questions, contact the department office; contact details, if any, are in the original notice.",
+ "steps": [
+  "Read the attached course guide (Korean and English versions); its contents were not read for this translation.",
+  "Log in to eTL at https://etl.snu.ac.kr.",
+  "Click 'SNUON-강좌목록' (SNUON course list) on the left side of the page.",
+  "Search for '연구윤리 / Ethics'.",
+  "Register for the course matching your field: '2026-2) 대학원생을 위한 연구윤리(인문사회계 / 이공계)' or '2026-2) Research ethics for graduate students (Humanities and Social Sciences / Science and Engineering)'.",
+  "Watch 100% of all videos and download and view the learning materials (PDF) by October 31, 2026 (BK21 participants: by December 2026).",
+  "After completing the course, print your certificate of completion (이수증) yourself if needed."
+ ],
+ "translation": "Fall 2026 Graduate Student Research Ethics Training: Extension of Period (until October 31)\n\nThe course period for the Fall 2026 graduate student research ethics online training has been extended to Saturday, October 31, 2026. Graduate students who have not yet completed it are asked to take the course within the period.\n\nA. Course title\n- 2026-2) 대학원생을 위한 연구윤리(인문사회계 / 이공계)\n- 2026-2) Research ethics for graduate students (Humanities and Social Sciences / Science and Engineering)\n\nB. Who should take the course\n- New graduate students in Fall 2026 (2026학년도 2학기)\n- Current students who have not completed the research ethics course (교과목) and online training\n\nC. Course period: Tuesday, September 1, 2026 to Saturday, October 31, 2026\n※ BK21 participating graduate students may take the course until December 2026.\n\nD. How to take the course\n- Access eTL (https://etl.snu.ac.kr) → click 'SNUON-강좌목록' (SNUON course list) on the left → search for '연구윤리 / Ethics' → register (수강신청) for the course matching your field → take the course\n※ Completion is recognised when you watch 100% of all videos and download and view the learning materials (PDF). After completing the course, you can print your certificate of completion (이수증) yourself.\n\nAttachment: Fall 2026 Graduate Student Research Ethics Training Course Guide (Korean/English), one copy each.\nAttached files (2):\n- 2026 2nd-Semester Research Ethics course sign-up Guide for Graduate Students.pdf (73 KB)\n- 2026학년도 2학기 대학원생 연구윤리 교육 수강 안내.pdf (87 KB)\n\n[Note: The contents of the attached files were not read for this translation.]",
  "id": 58134,
  "text_hash": "0eaced030bbb506d",
  "images": 0,
@@ -40,5 +47,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

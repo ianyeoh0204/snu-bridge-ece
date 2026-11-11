@@ -1,13 +1,20 @@
 {
- "title_en": "Guide to Course Registration for the 2026 Academic Year Winter Session",
- "summary": "The department announces course registration for the 2026 Academic Year Winter Session. Students who wish to take winter session courses should read the attached files and register according to the schedule given there.",
- "applies_to": "Students who wish to apply for the winter session (동계 계절학기).",
+ "title_en": "Course Registration for the 2026 Academic Year Winter Session",
+ "summary": "Students who wish to take courses in the winter session of the 2026 academic year must read the attached files and register for courses according to the published schedule. The schedule and precautions are not included in the text of the notice; they appear to be in the attachments or images, which were not read. Please consult the attachments or the original notice for dates and the registration location or system.",
+ "applies_to": "Students who wish to apply for the winter session (동계 계절학기) of the 2026 academic year. The notice does not state any further limit by program, year of admission or nationality. Registration is required only for students who wish to take winter session courses.",
  "dates": [],
- "steps": [
-  "Read the attached files carefully, in particular Attachment 1-1, which contains the registration guide. These attachments were not read for this translation, and the schedule is not given in the notice text.",
-  "Register for winter session courses according to the schedule in the attached files."
+ "conditions": [
+  "Students must register according to the official schedule; the schedule itself is not in the notice text and must be checked in the attachments.",
+  "The notice lists headings for a schedule (1. 일정) and precautions (2. 유의사항), but their content is not in the text and was not read.",
+  "Attachments on course registration misconduct, on changes to the registration system to prevent course reselling, and on overlapping course registration requests were not read; students should read them because they may contain further rules."
  ],
- "translation": "Title: Guide to Course Registration for the 2026 Academic Year Winter Session (2026학년도 동계 계절수업 수강신청 안내)\nPosted: 2026-10-19\n\nThe department announces the course registration schedule for the 2026 Academic Year Winter Session. Students who wish to apply for the winter session should read the attached files carefully and register according to the schedule.\n\n1. Schedule\n2. Points to Note\n\n[Translator's note: The notice text contains only these two headings. It gives no schedule details and no points to note. This information appears to be in the attached files, which were not read for this translation. Please consult the attachments or the original notice.]\n\nAttachment 1-1. Guide to Course Registration for the 2026 Academic Year Winter Session\nAttachment 1-2. Seoul National University Course Registration System User Manual (Korean/English)\nAttachment 1-3. Card news on the improved course registration system to prevent the selling of course places\nAttachment 2. Notice on misconduct in course registration\nAttachment 3. Guide to duplicate course registration requests\n\nAttached files (5). None of these files were read for this translation:\n- (붙임1-1) 2026학년도 동계 계절수업 수강신청 안내 (Guideline for 2026 Winter Session Course Registration).pdf\n- (붙임1-2) 서울대학교 수강신청 시스템 이용자 매뉴얼(국영문) (Course Registration System User Manual, Korean/English).pdf\n- (붙임1-3) 강의매매방지 수강신청제도 개선 카드뉴스 (New CRS Program for Preventing Reselling).pdf\n- (붙임2) 수강신청 부정행위 관련 알림 (Notice on Course Registration Misconduct).pdf\n- (붙임3) 중복수강신청 매뉴얼 (Course Overlap Request Manual).pdf",
+ "steps": [
+  "Read Attachment 1-1, the Guideline for 2026 Winter Session Course Registration, to find the registration schedule and precautions.",
+  "Read the other attachments: the Seoul National University course registration system user manual (Korean and English), the card news on the new course registration program for preventing reselling, the notice on course registration misconduct, and the Course Overlap Request Manual.",
+  "Register for winter session courses through the course registration system within the schedule stated in Attachment 1-1.",
+  "If you have questions, contact the department office; the contact details are in the original notice."
+ ],
+ "translation": "Course Registration for the 2026 Academic Year Winter Session\n\nWe announce the course registration schedule for the winter session of the 2026 academic year. Students who wish to apply for the winter session should read the attached files carefully and apply according to the schedule.\n\n1. Schedule\n\n2. Precautions\n\n(Note: the content under these two headings is not included in the text of the notice. It may be in an image or in the attachments, which were not read.)\n\nAttachment 1-1. Guideline for 2026 Winter Session Course Registration\nAttachment 1-2. Seoul National University Course Registration System User Manual (Korean and English)\nAttachment 1-3. Card news on the improved course registration system for preventing course reselling\nAttachment 2. Notice on course registration misconduct\nAttachment 3. Guide to overlapping course registration (중복수강신청)\n\nAttached files (5):\n(Attachment 1-1) 2026학년도 동계 계절수업 수강신청 안내 (Guideline for 2026 Winter Session Course Registration).pdf (168 KB)\n(Attachment 1-2) 서울대학교 수강신청 시스템 이용자 매뉴얼(국영문) (Seoul National University Course Registration System User Manual, Korean/English).pdf (25 MB)\n(Attachment 1-3) 강의매매방지 수강신청제도 개선 카드뉴스 (New CRS Program for Preventing Reselling).pdf (3 MB)\n(Attachment 2) 수강신청 부정행위 관련 알림 (Notice on Course Registration Misconduct).pdf (55 KB)\n(Attachment 3) 중복수강신청 매뉴얼 (Course Overlap Request Manual).pdf (3 MB)\n\n(The contents of the attachments were not read.)",
  "id": 58149,
  "text_hash": "4baa980ca4889d21",
  "images": 2,
@@ -20,5 +27,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

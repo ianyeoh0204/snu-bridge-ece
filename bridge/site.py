@@ -74,6 +74,10 @@ def build() -> Path:
         config = json.loads(config_file.read_text(encoding="utf-8"))
         cards = [c for c in json.loads(cards_file.read_text(encoding="utf-8")) if c.get("check") not in HIDDEN]
         notices = _notices(name, {c["id"] for c in cards})
+        audit = _json(ROOT / "data" / name / "audit.json")  # the second reading (tools/audit.py)
+        for c in cards:
+            read = (audit or {}).get("cards", {}).get(c["id"])
+            c["audit"] = {"status": read["status"], "reason": read["reason"], "date": audit["audited_on"]} if read else None
         departments[name] = {
             "name": config["department"], "name_ko": config.get("department_ko", ""), "programs": config["programs"],
             "default_program": config.get("default_program", config["programs"][0]),
@@ -83,6 +87,7 @@ def build() -> Path:
             # the "Why and how" page: board counts (tools/evidence.py) and hand-checked facts
             "evidence": _json(ROOT / "data" / name / "evidence.json"),
             "evidence_notes": _json(config_file.parent / "evidence_notes.json"),
+            "audit": audit and {k: audit.get(k) for k in ("audited_on", "decoys", "cards_first_reading", "notices", "notices_after")},
             "sources": {f["file"]: {k: f[k] for k in ("name", "url", "series", "entry_year") if k in f} for f in config["files"]},
             "cards": cards, "notices": notices, "board": config.get("board", {}),
         }

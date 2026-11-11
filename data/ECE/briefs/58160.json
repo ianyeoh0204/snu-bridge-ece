@@ -1,14 +1,31 @@
 {
- "title_en": "★(Subject to Change) Schedule of Public Presentations for Master's and Doctoral Thesis Examinations, 2nd Semester of the 2026 Academic Year",
- "summary": "The department announces that the public presentation schedules for master's thesis examinations and doctoral preliminary examinations for the 2nd semester of the 2026 academic year are provided in two attached files. The schedules may change at any time, so attendees must check the attached files again on the day of the examination.",
- "applies_to": "Attendees of the public presentations, such as students taking the Master's/Doctoral Seminar [석박사세미나].",
- "dates": [],
- "steps": [
-  "Download and check the attached schedule file for master's examinations [2026-2학기 석사 심사 일정.pdf] or doctoral preliminary examinations [2026-2학기 박사 초심 일정.pdf] on the notice board post.",
-  "On the day of the examination, check the attached file again, as the time, venue and other details may have changed.",
-  "Direct any questions to the department office (Building 301, Room 319); contact details are in the original notice."
+ "title_en": "Fall 2026 Master's and Doctoral Thesis Examination Public Presentation Schedule (Subject to Change)",
+ "summary": "This notice announces the Fall 2026 public presentation schedules for master's thesis examinations and doctoral preliminary examinations; the schedules are given only in two attached PDF files, which were not read for this translation. Attendees, including students taking the Master's/Doctoral Seminar course, must check the attached schedules, including on the day of the examination, because times and locations may change at any time. Questions should go to the department office (Building 301, Room 319).",
+ "applies_to": "Attendees of the Fall 2026 master's and doctoral (preliminary examination) public thesis presentations, including students taking the Master's/Doctoral Seminar course (석박사세미나). The notice does not state whether attendance is mandatory; it states that attendees must check the schedule, including on the day of the examination.",
+ "dates": [
+  {
+   "what": "Master's public presentations and doctoral preliminary examination public presentations; the specific dates, times and locations are only in the attached files, which were not read",
+   "when": "Fall 2026 semester",
+   "original_ko": "2026학년도 2학기",
+   "verified": true
+  },
+  {
+   "what": "Attendees must check the attached schedule again for any changes to time or location",
+   "when": "On the day of the examination",
+   "original_ko": "심사 당일",
+   "verified": true
+  }
  ],
- "translation": "★(Subject to Change) Schedule of Public Presentations for Master's and Doctoral Thesis Examinations, 2nd Semester of the 2026 Academic Year\n\nPosted: 2026-11-02\n\nWe announce the schedule of public presentations for master's and doctoral thesis examinations for the 2nd semester of the 2026 academic year.\n\n1. Master's public presentation schedule\n- Please refer to the attached file. (The content may change at any time.)\n\n2. Doctoral public presentation (preliminary examination [초심]) schedule\n- Please refer to the attached file. (The content may change at any time.)\n\n3. Notes\n- The public presentation schedule (attached files) is updated from time to time. As the time, venue and other details may change, attendees, including students taking the Master's/Doctoral Seminar [석박사세미나], must check the attached files again on the day of the examination.\n\n4. Inquiries\n- Department office [학부행정실] (Building 301, Room 319). The contact person, phone number and email address are given in the original notice.\n\nAttachments (2):\n- 2026-2학기 박사 초심 일정.pdf (Doctoral preliminary examination schedule, 2nd semester 2026; 153 KB)\n- 2026-2학기 석사 심사 일정.pdf (Master's examination schedule, 2nd semester 2026; 143 KB)\n\nNote from the translator: The attached files containing the actual schedules were not read; their contents are not included in this translation. Please consult the attachments on the original notice.",
+ "conditions": [
+  "The schedules in the attached files may change at any time, including times and locations.",
+  "Attendees must check the attached files even on the day of the examination, because the schedule is updated regularly."
+ ],
+ "steps": [
+  "Open and read the two files attached to the original notice: \"2026-2학기 석사 심사 일정.pdf\" (master's examination schedule) and \"2026-2학기 박사 초심 일정.pdf\" (doctoral preliminary examination schedule). Their content was not read for this translation.",
+  "Check the attached files again on the day of the examination for any change of time or location.",
+  "For questions, contact the department office (Building 301, Room 319); contact details are in the original notice."
+ ],
+ "translation": "★(Subject to change) Fall 2026 Master's/Doctoral Thesis Examination Public Presentation Schedule\n\nWe announce the schedule for the Fall 2026 public presentations for master's and doctoral thesis examinations.\n\n1. Master's public presentation schedule\n- See the attached file. (The content may change at any time.)\n\n2. Doctoral public presentation (preliminary examination, 초심) schedule\n- See the attached file. (The content may change at any time.)\n\n3. Notes\n- The public presentation schedule (attached files) is updated regularly. Because times, locations and other details may change, attendees, including students taking the Master's/Doctoral Seminar course (석박사세미나), must check the attached files even on the day of the examination.\n\n4. Inquiries\n- Department office (학부행정실), Building 301, Room 319. The contact person's details are given in the original notice.\n\nAttachments (2):\n- 2026-2학기 박사 초심 일정.pdf (Fall 2026 doctoral preliminary examination schedule, 153 KB)\n- 2026-2학기 석사 심사 일정.pdf (Fall 2026 master's examination schedule, 143 KB)\n\n[Note: The attached files were not read; the schedule details they contain are not included in this translation.]",
  "id": 58160,
  "text_hash": "f70c23f2dde62df0",
  "images": 0,
@@ -18,5 +35,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

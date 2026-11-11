@@ -1,24 +1,30 @@
 {
- "title_en": "Building Access Restrictions for the 2027 Graduate School of Engineering Practice Admissions Screening",
- "summary": "Floors 4 and 5 of Building 38 will be closed to everyone not involved in the admissions examination of the Graduate School of Engineering Practice on Friday, 23 October 2026, from 11:30 to 18:00. Students are asked to cooperate so that the admissions screening can proceed smoothly.",
- "applies_to": "All persons other than those involved in the Graduate School of Engineering Practice admissions examination.",
+ "title_en": "Building Access Restriction for the 2027 Graduate School of Engineering Practice Admissions",
+ "summary": "Everyone other than personnel involved in the 2027 Graduate School of Engineering Practice admission examination is barred from entering the 4th and 5th floors of Building 38. The restriction applies on Friday, 23 October 2026, from 11:30 to 18:00. Students are asked to cooperate so that the admission process can run smoothly.",
+ "applies_to": "Everyone except personnel involved in the Graduate School of Engineering Practice (공학전문대학원) admission examination. Compliance is required.",
  "dates": [
   {
-   "what": "Building access restriction period (Building 38, 4th and 5th floors)",
-   "when": "Friday, 23 October 2026, 11:30–18:00",
+   "what": "Access to the 4th and 5th floors of Building 38 is restricted for everyone except admission examination personnel",
+   "when": "Friday, 23 October 2026, 11:30 to 18:00",
    "original_ko": "2026. 10. 23.(금) 11:30 ~ 18:00",
    "verified": true
   }
  ],
- "steps": [
-  "Do not enter the 4th or 5th floor of Building 38 between 11:30 and 18:00 on Friday, 23 October 2026, unless you are involved in the Graduate School of Engineering Practice admissions examination."
+ "conditions": [
+  "Only personnel involved in the Graduate School of Engineering Practice admission examination may enter the restricted floors during the restriction period.",
+  "The restriction covers only the 4th and 5th floors of Building 38."
  ],
- "translation": "Building Access Restrictions for the 2027 Graduate School of Engineering Practice Admissions Screening\n\nPosted: 4 September 2026\n\nPlease be advised of the following building access restrictions for the admissions screening of new students to the Graduate School of Engineering Practice [공학전문대학원] for the 2027 academic year. We ask for your cooperation so that the admissions screening can proceed smoothly.\n\nA. Date and time of restriction: Friday, 23 October 2026, 11:30–18:00\n\nB. Restricted area: 4th and 5th floors of Building 38 [38동]\n\nC. Persons restricted: Everyone other than those involved in the Graduate School of Engineering Practice admissions examination.\n\nEnd of notice.",
+ "steps": [
+  "Do not enter the 4th or 5th floor of Building 38 between 11:30 and 18:00 on Friday, 23 October 2026, unless you are admission examination personnel.",
+  "Plan ahead for any classes, meetings or work on those floors during that time, because access will not be available."
+ ],
+ "translation": "Building Access Restriction for the 2027 Admissions of the Graduate School of Engineering Practice (공학전문대학원)\n\nPlease note the following building access restriction for the 2027 Graduate School of Engineering Practice new student admission screening. We ask for your cooperation so that the admission process can proceed smoothly.\n\nA. Date and time of restriction: Friday, 23 October 2026, 11:30 to 18:00\n\nB. Restricted area: 4th and 5th floors of Building 38\n\nC. Persons restricted: Everyone other than personnel involved in the Graduate School of Engineering Practice admission examination. End.",
  "id": 58031,
  "text_hash": "908604457a9dcf4a",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

@@ -1,28 +1,28 @@
 {
- "title_en": "College of Engineering Photo Zone and Academic Gown Rental for the 80th Late-Term (August) Degree Recipients",
- "summary": "The College of Engineering will rent academic gowns and operate photo zones for its 80th late-term degree recipients from 13 August to 31 August 2026. Gown rental requires an online application and the borrower's own identification document, and gowns must be returned by 17:00 on the day after rental.",
- "applies_to": "College of Engineering 80th late-term degree recipients (공과대학 제80회 후기 학위수여자)",
+ "title_en": "College of Engineering Photo Zone and Gown Rental for 80th August 2026 Graduates",
+ "summary": "Graduates of the College of Engineering receiving degrees at the 80th Late (August) Commencement may rent an academic gown by applying online at https://student-eng.snu.ac.kr/ and collecting it from the gown storage room next to the security office on the 1st floor of Building 39. Rentals run from 13 August to 31 August 2026, on weekdays from 10:00 to 17:00 (closed 12:00–13:00). Gowns must be returned by 17:00 on the day after rental, or on the following Monday if rented on a Friday, and a photo ID other than a student ID is required.",
+ "applies_to": "College of Engineering degree recipients at the 80th Late (August) Commencement. Gown rental is offered to them; the notice does not state that it is mandatory.",
  "dates": [
   {
-   "what": "Academic gown rental period",
+   "what": "Academic gown rental period (online application and collection)",
    "when": "Thursday 13 August 2026 to Monday 31 August 2026",
    "original_ko": "2026. 8.13.(목) ~ 2026. 8. 31.(월)",
    "verified": true
   },
   {
-   "what": "Gown rental operating hours (closed during lunch, 12:00–13:00)",
+   "what": "Gown storage room opening hours (weekdays only; closed for lunch 12:00–13:00)",
    "when": "Weekdays, 10:00 to 17:00",
    "original_ko": "평일 10시~17시 운영(점심시간 12~13시 미운영)",
    "verified": true
   },
   {
-   "what": "Gown return deadline",
+   "what": "Gown return deadline (general rule)",
    "when": "By 17:00 on the day after rental",
    "original_ko": "대여 후 익일 17시까지 반납 원칙",
    "verified": true
   },
   {
-   "what": "Gown return for Friday rentals",
+   "what": "Gown return deadline for gowns rented on a Friday",
    "when": "The following Monday",
    "original_ko": "금요일 대여 시 차주 월요일 반납",
    "verified": true
@@ -34,21 +34,33 @@
    "verified": true
   },
   {
-   "what": "Coffee truck and 'Life Four Cuts' [인생네컷]",
-   "when": "Friday 28 August 2026, the day of the degree conferment ceremony",
+   "what": "Coffee truck and Life Four Cuts photo booth, on Commencement day",
+   "when": "Friday 28 August 2026",
    "original_ko": "2026. 8. 28.(금) 학위수여식 당일",
    "verified": true
   }
  ],
- "steps": [
-  "Apply for an academic gown online at https://student-eng.snu.ac.kr/ between 13 August and 31 August 2026.",
-  "Collect the gown at the academic gown storage room next to the security office on the 1st floor of Building 39, on a weekday between 10:00 and 17:00 (not between 12:00 and 13:00).",
-  "Bring an identification document in your own name: a resident registration card, driver's licence or passport. A student ID card is not accepted.",
-  "If a proxy will rent or return the gown on your behalf, the proxy must submit the Letter of Authorisation for Receipt [수령위임장] (Attachment 2) and a copy of your (the delegator's) identification document.",
-  "Return the gown to the same storage room by 17:00 on the day after rental. If you rent on a Friday, return it on the following Monday.",
-  "For the detailed rental and return procedure, refer to Attachment 1 [붙임1] (its content was not read; it is not included in the text of the notice)."
+ "conditions": [
+  "Gowns must be applied for online at https://student-eng.snu.ac.kr/.",
+  "The storage room is open on weekdays only, 10:00–17:00, and is closed during lunch, 12:00–13:00.",
+  "Gowns must, as a rule, be returned by 17:00 on the day after rental; gowns rented on a Friday are returned the following Monday.",
+  "You must bring an ID card in your own name: a resident registration card, driver's licence or passport is accepted.",
+  "Student ID cards are not accepted as identification.",
+  "A proxy may rent and return the gown on your behalf if they submit the power of attorney for receipt (Attachment 2) and a copy of your (the delegator's) ID card.",
+  "Graduates are asked to make sure gowns are returned; failure to return a gown should be avoided."
  ],
- "translation": "The College of Engineering will conduct academic gown rental for the 80th late-term degree recipients as set out below. Eligible students are asked to review this notice.\n\nA. Eligible: College of Engineering 80th late-term degree recipients\n\nB. Detailed plan\n\n1. Academic gown rental\n- Period: Thursday 13 August 2026 to Monday 31 August 2026\n- Application method: online application (https://student-eng.snu.ac.kr/)\n- Open on weekdays from 10:00 to 17:00 (closed during lunch, 12:00 to 13:00).\n- As a rule, gowns must be returned by 17:00 on the day after rental.\n- Bring an identification document in your own name (student ID cards are not accepted).\n- Rental and return by a proxy is permitted (the proxy must submit the Letter of Authorisation for Receipt [수령위임장] (Attachment 2) and a copy of the delegator's identification document).\n- Location: academic gown storage room next to the security office, 1st floor, Building 39\n- Note: Gowns rented on a Friday are to be returned on the following Monday.\n\n2. College of Engineering photo zone\n- Period: Thursday 13 August 2026 to Monday 31 August 2026\n- Locations: Basement level 1, Building 39; 2nd-floor entrance, Building 301\n\n3. Coffee truck and 'Life Four Cuts' [인생네컷]\n- Date: Friday 28 August 2026, the day of the degree conferment ceremony\n- Locations: Building 39; 2nd floor, Building 301\n\nC. Academic gown rental and return procedure: please refer to the guide in Attachment 1 [붙임1].\n\nD. Requests for cooperation\n1) An identification document is required for rental (resident registration card, driver's licence or passport are accepted; student ID cards are not accepted).\n2) Please ensure that no gowns go unreturned.\n\nAttachments (3):\n- (Attachment) 80th Late-Term Degree Conferment Ceremony Graduate Celebration Plan (Draft), sent to departments [(붙임) 제80회 후기 학위수여식 졸업생 축하 계획(안)_학과부 발송.pdf]\n- Letter of Authorisation for Receipt [수령위임장.pdf]\n- 80th Late-Term (August 2026) Academic Gown Rental Guide, College of Engineering [제80회 후기(2026.8.)학위복 대여 안내문_공과대학.pdf]\n\nNote: The attached PDF files were not read; their content is not included in this translation.",
+ "steps": [
+  "Collecting in person: Read Attachment 1 (the gown rental guide) for the full rental and return procedure.",
+  "Collecting in person: Apply online at https://student-eng.snu.ac.kr/ between 13 and 31 August 2026.",
+  "Collecting in person: Go to the gown storage room next to the security office, 1st floor, Building 39, on a weekday between 10:00 and 17:00 (not 12:00–13:00), bringing your resident registration card, driver's licence or passport (not a student ID).",
+  "Collecting in person: Return the gown to the same storage room by 17:00 the next day, or on the following Monday if you rented it on a Friday.",
+  "Collecting by proxy: Read Attachment 1 (the gown rental guide) for the full rental and return procedure.",
+  "Collecting by proxy: Apply online at https://student-eng.snu.ac.kr/ between 13 and 31 August 2026.",
+  "Collecting by proxy: Complete the power of attorney for receipt (수령위임장, Attachment 2) and give it to your proxy together with a copy of your ID card.",
+  "Collecting by proxy: The proxy goes to the gown storage room next to the security office, 1st floor, Building 39, on a weekday between 10:00 and 17:00 (not 12:00–13:00), submits the power of attorney and the copy of your ID, and brings an ID card in their own name (not a student ID).",
+  "Collecting by proxy: The gown is returned to the same storage room by 17:00 the next day, or on the following Monday if rented on a Friday."
+ ],
+ "translation": "College of Engineering Photo Zone and Academic Gown Rental for 80th Late (August) Degree Recipients\n\nThe College of Engineering will provide academic gown rental for degree recipients of the 80th Late (August) Commencement as set out below. Eligible graduates are asked to check the details.\n\nA. Eligibility: College of Engineering degree recipients at the 80th Late (August) Commencement\n\nB. Detailed plan\n\n1) Academic gown rental\n- Schedule: Thursday 13 August 2026 to Monday 31 August 2026\n- How to apply: online application (https://student-eng.snu.ac.kr/)\n- Open on weekdays from 10:00 to 17:00 (closed during lunch, 12:00–13:00)\n- As a rule, gowns must be returned by 17:00 on the day after rental\n- Bring an ID card in your own name (student ID cards are not accepted)\n- Rental and return by a proxy are permitted (submit the power of attorney for receipt [수령위임장] (Attachment 2) and a copy of the delegator's ID card)\n- Location: gown storage room next to the security office, 1st floor, Building 39\n- Note: gowns rented on a Friday are returned on the following Monday\n\n2) College of Engineering photo zone\n- Schedule: Thursday 13 August 2026 to Monday 31 August 2026\n- Locations: Building 39, basement level 1; Building 301, 2nd-floor entrance\n\n3) Coffee truck and Life Four Cuts (인생네컷) photo booth\n- Schedule: Friday 28 August 2026, Commencement day\n- Locations: Building 39; Building 301, 2nd floor\n\nC. Gown rental and return procedure: see the guide in Attachment 1.\n\nD. Requests for cooperation\n1) An ID card (resident registration card, driver's licence or passport; student ID cards are not accepted) is required for rental.\n2) Please ensure that no gowns go unreturned.\n\nAttachments (3) (their contents were not read; only the file names are available):\n- (Attachment) Plan for congratulating graduates of the 80th Late Commencement (draft)_sent to departments.pdf (743 KB)\n- Power of attorney for receipt (수령위임장).pdf (29 KB)\n- 80th Late (August 2026) academic gown rental guide_College of Engineering.pdf (48 KB)\n\nFor questions, contact the department office; contact details are given in the original notice.",
  "id": 57960,
  "text_hash": "f6d76c19c5f12fe9",
  "images": 1,
@@ -58,6 +70,7 @@
   "제80회 후기(2026.8.)학위복 대여 안내문_공과대학.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

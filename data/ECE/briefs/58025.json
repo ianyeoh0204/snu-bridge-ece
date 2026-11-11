@@ -1,40 +1,45 @@
 {
- "title_en": "[Fall Semester 2026] Graduation Project (Electrical Engineering Design Project) Session 1 Special Lecture: \"Overview of Thesis Writing\"",
- "summary": "The department will hold the first special lecture of the Graduation Project (Electrical Engineering Design Project), \"Overview of Thesis Writing,\" on Friday, 11 September, at 18:30 in Building 301, Room 102. Attendance is compulsory for students enrolled in the course, and undergraduates who plan to take the course in future may audit it.",
- "applies_to": "Students currently enrolled in the Graduation Project (Electrical Engineering Design Project), for whom attendance counts towards the grade. Undergraduates who plan to take the Graduation Project in future may audit without restriction. Third- and fourth-year undergraduates who will soon write a graduation thesis are particularly encouraged to attend.",
+ "title_en": "Fall 2026 Graduation Project Session 1 Special Lecture: Overview of Thesis Writing",
+ "summary": "Students currently taking the Graduation Project (Electrical Engineering Design Project) in Fall 2026 must attend Session 1, the special lecture \"Overview of Thesis Writing,\" on Friday, September 11 at 18:30 in Building 301, Room 102. Attendance is checked at 18:30, and absences or late arrivals lower the grade or result in an F. Undergraduates who plan to take the Graduation Project in the future may audit and must enter before 19:00.",
+ "applies_to": "Mandatory for students currently taking the Graduation Project (Electrical Engineering Design Project) in Fall 2026. Auditing is open, without restriction, to undergraduates who plan to take the Graduation Project in the future. It is especially recommended for third- and fourth-year undergraduates who will soon need to write a graduation thesis.",
  "dates": [
   {
-   "what": "Special lecture \"Overview of Thesis Writing\" (Building 301, Room 102)",
-   "when": "Friday, 11 September, 18:30",
+   "what": "Special lecture \"Overview of Thesis Writing\" (Graduation Project Session 1)",
+   "when": "Friday, September 11, 18:30",
    "original_ko": "9월 11일 금요일 18시 30분",
    "verified": true
   },
   {
-   "what": "Attendance check for enrolled students",
-   "when": "18:30",
+   "what": "Attendance check for students taking the Graduation Project",
+   "when": "18:30 on the day of the lecture",
    "original_ko": "18시 30분",
    "verified": true
   },
   {
-   "what": "Entry may be restricted from this time",
-   "when": "19:00",
-   "original_ko": "19시부터",
-   "verified": true
-  },
-  {
-   "what": "Auditors must enter the lecture room before this time",
-   "when": "Before 19:00",
-   "original_ko": "19시 이전",
+   "what": "Entry may be restricted from this time; auditors must enter before it",
+   "when": "19:00 on the day of the lecture",
+   "original_ko": "19시",
    "verified": true
   }
  ],
- "steps": [
-  "If needed, download the lecture slides attached to the original notice.",
-  "Go to Building 301, Room 102 on Friday, 11 September for the lecture starting at 18:30.",
-  "Enrolled students: be present by 18:30, when attendance is checked. Absence or lateness lowers the grade (one absence: one grade step down; two absences: F).",
-  "Auditors: enter the room before 19:00, as entry may be restricted from 19:00, and follow any further instructions given for auditors."
+ "conditions": [
+  "For students taking the Graduation Project, one absence (or late arrival) lowers the final grade by one step (for example, A+ to A0).",
+  "For students taking the Graduation Project, two absences (or late arrivals) result in an F.",
+  "Attendance is checked at 18:30, so arriving after 18:30 may count as late.",
+  "The department warns that every year some students fail to earn the credit because of attendance problems.",
+  "Entry from 19:00 may be restricted because of the nature of the lecture.",
+  "Auditing is open to undergraduates who plan to take the Graduation Project in the future.",
+  "Because some students take the lecture as part of the regular course, there may be additional instructions for auditors."
  ],
- "translation": "[Fall Semester 2026] Graduation Project (Electrical Engineering Design Project) Session 1 Special Lecture: \"Overview of Thesis Writing\"\n\nPosted: 2026-09-02\n\nWe are announcing the first special lecture, \"Overview of Thesis Writing,\" of the Graduation Project (Electrical Engineering Design Project) [졸업프로젝트(전기공학설계프로젝트)] for the Fall Semester of the 2026 academic year.\n\nThe lecture slides are also posted; anyone who needs them may download and use them.\n\nThis special lecture is intended for students currently taking the Graduation Project.\n\nAs the topic concerns thesis writing, there will be no restriction on auditing for undergraduate students who plan to take the Graduation Project in future.\n\nIn particular, third- and fourth-year undergraduates who will soon need to write a graduation thesis are encouraged to attend.\n\n• Lecture title: Overview of Thesis Writing [논문 작성의 개요]\n• Lecturer: a professor of the department (name given in the original notice)\n• Date and time: Friday, 11 September, 18:30\n• Location: Building 301, Room 102 [301동 102호]\n\n※ Students enrolled in the course will receive an F if they are absent (or late) for two class sessions, so please be sure to attend. (One absence: grade lowered by one step, e.g. A+ → A0; two absences: F.)\n※ Attendance will be checked at 18:30.\n※ Every year some students fail to earn credit because of attendance problems, so please take care.\n\n* Due to the nature of the lecture, entry from 19:00 may be restricted. Those who wish to audit are asked to enter before 19:00.\nAs some students are attending as part of the regular course, there may be additional instructions for auditors.\n\nAttachment (1 file): lecture slides in PowerPoint format (.pptx, 3 MB), dated 20260911. The content of this attachment was not read and is not included in this translation.\n\nFor enquiries, please contact the department office; the contact details are in the original notice.",
+ "steps": [
+  "Enrolled students: If needed, download the lecture slides attached to the original notice (SNU 전기∙정보공학부 특강(장이분교수님)_20260911.pptx). Their content was not read for this translation.",
+  "Enrolled students: Go to Building 301, Room 102 on Friday, September 11, and arrive before 18:30.",
+  "Enrolled students: Be present for the attendance check at 18:30.",
+  "Auditors: If needed, download the lecture slides attached to the original notice (SNU 전기∙정보공학부 특강(장이분교수님)_20260911.pptx). Their content was not read for this translation.",
+  "Auditors: Go to Building 301, Room 102 on Friday, September 11, and enter before 19:00.",
+  "Auditors: Follow any additional instructions given for auditors. The contact is in the original notice."
+ ],
+ "translation": "[Fall 2026] Graduation Project (Electrical Engineering Design Project) Session 1 Special Lecture: \"Overview of Thesis Writing\"\n\nWe announce Session 1 of the Fall 2026 Graduation Project (Electrical Engineering Design Project), a special lecture titled \"Overview of Thesis Writing.\"\n\nThe lecture slides are also attached. Please download and use them if you need them.\n\nThis special lecture is for students currently taking the Graduation Project.\n\nBecause the topic concerns thesis writing, auditing [청강] will be open, without restriction, to undergraduates who plan to take the Graduation Project in the future.\n\nIn particular, third- and fourth-year undergraduates who will soon need to write a graduation thesis are recommended to attend.\n\n• Lecture title: Overview of Thesis Writing\n• Lecturer: a professor (the name is given in the original notice)\n• Date and time: Friday, September 11, 18:30\n• Location: Building 301, Room 102\n\n※ Students taking the course will receive an F if they miss (or arrive late to) two sessions, so you must attend. (1 absence: one-step grade deduction, A+ → A0; 2 absences: F.)\n※ Attendance is checked at 18:30.\n※ Every year some students fail to earn the credit because of attendance problems, so please take care.\n\n* Because of the nature of the lecture, entry from 19:00 may be restricted. Those who wish to audit, please enter before 19:00.\nSince some students take this lecture as part of the regular course, there may be additional instructions for auditors.\n\nAttachment (1)\nSNU 전기∙정보공학부 특강(장이분교수님)_20260911.pptx (3 MB). The content of this attachment was not read.",
  "id": 58025,
  "text_hash": "04fba2dfcb930181",
  "images": 0,
@@ -42,6 +47,7 @@
   "SNU 전기∙정보공학부 특강(교수님)_20260911.pptx"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

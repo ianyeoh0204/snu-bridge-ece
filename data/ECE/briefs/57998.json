@@ -1,16 +1,21 @@
 {
- "title_en": "2026 Jeongong Hana (전공하나) Participation Confirmation (Absence Notice)",
- "summary": "The department will issue absence notices to students who participated in the 2026 Jeongong Hana (전공하나) programme. Students must complete the attached form, have it stamped at the department office (Room 319), and submit it to the professor of each course, who will decide whether to approve it.",
- "applies_to": "Students who participated in the 2026 Jeongong Hana (전공하나) programme.",
+ "title_en": "2026 Jeongong Hana Participation Confirmation (Absence Excuse Form)",
+ "summary": "Students who participated in the 2026 Jeongong Hana (전공하나) program may obtain a participation confirmation to serve as an absence excuse (결석계). Complete the attached form with the course name, student ID and name, print it, obtain the official seal at the department office (Room 319), and submit it to the professor of each course concerned. No deadline is stated in the notice.",
+ "applies_to": "Students who participated in the 2026 Jeongong Hana (전공하나) program and wish to have absences excused. The notice does not state that submission is mandatory.",
  "dates": [],
+ "conditions": [
+  "The form is issued only to students who participated in the 2026 Jeongong Hana program.",
+  "The form must bear the official seal (직인) from the department office before it is submitted.",
+  "Each course professor will decide whether to approve the absence excuse; approval is not guaranteed."
+ ],
  "steps": [
-  "Download the attached form \"2026 전공하나 참가확인서_서식(결석계).hwp\" (2026 Jeongong Hana Participation Confirmation Form (Absence Notice)).",
-  "Fill in the course name (교과목명), student ID number (학번) and name (성명) on the form.",
+  "Open the attached form \"2026 전공하나 참가확인서_서식(결석계).hwp\" (the attachment was not read for this translation).",
+  "Fill in the form with the course name (교과목명), student ID (학번) and name (성명).",
   "Print the completed form.",
   "Take the printed form to the department office (학부사무실), Room 319, and have it stamped with the official seal (직인).",
-  "Submit the stamped form to the professor of each course concerned. Each professor will decide whether to approve it."
+  "Submit the sealed form to the professor of each course concerned."
  ],
- "translation": "Title: 2026 Jeongong Hana (전공하나) Participation Confirmation (Absence Notice) [결석계]\n\nNote: the Korean title reads \"잠가확인서\", which appears to be a typing error for \"참가확인서\" (participation confirmation).\n\nAbsence notices (결석계) will be issued to students who participated in the 2026 Jeongong Hana (전공하나) programme.\n\nPlease refer to the attached participation confirmation form, fill in [course name (교과목명), student ID number (학번), name (성명)], print it, have it stamped with the official seal (직인) at the department office (학부사무실, Room 319), and then submit it to the professor of each course.\n\n(The professor of each course will decide whether to approve it.)\n\nOther enquiries: the department administrative office (학부행정실). The contact details are given in the original notice.\n\nAttachment (1 file): 2026 전공하나 참가확인서_서식(결석계).hwp (349 KB). The content of this attachment was not read.",
+ "translation": "Title: 2026 Jeongong Hana (전공하나) Participation Confirmation (Absence Excuse [결석계])\n\nAbsence excuse forms (결석계) will be issued to students who participated in the 2026 Jeongong Hana (전공하나) program.\n\nPlease refer to the attached participation confirmation form, fill in [course name (교과목명), student ID (학번), name (성명)], print it, have it stamped with the official seal (직인) at the department office (학부사무실, Room 319), and then submit it to the professor of each course.\n\n(Each course professor will decide whether to approve it.)\n\n*Other inquiries: Department Administrative Office (학부행정실). The contact details are given in the original notice.\n\nAttachment (1 file): 2026 전공하나 참가확인서_서식(결석계).hwp (349 KB). The content of this attachment was not read.",
  "id": 57998,
  "text_hash": "5e471be0ac7bd713",
  "images": 0,
@@ -18,6 +23,7 @@
   "2026 전공하나 참가확인서_서식(결석계).hwp"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

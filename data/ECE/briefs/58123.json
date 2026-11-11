@@ -1,65 +1,80 @@
 {
- "title_en": "[Hanwha Aerospace] Notice of Planned 2026 Academic Year Winter Session Field Practice Semester (English Speaking Test Score Required)",
- "summary": "The Department of Aerospace Engineering plans to run a recruitment-linked winter session field practice (internship) semester with Hanwha Aerospace from 28 December 2026 to 28 January 2027. Eligible students must register with the department office and the Hanwha recruitment system between 15 and 19 October 2026, and the details may change when the programme is confirmed.",
- "applies_to": "Interested students majoring in Aerospace Engineering, Electrical Engineering, Mechanical Engineering, Computer Engineering or Industrial Engineering who are in their third year or above (priority is given to students expected to graduate in February or August 2027) and who hold an official English score from TOEIC Speaking or OPIc only, valid as of the document submission deadline (planned for Monday 19 October).",
+ "title_en": "Hanwha Aerospace Field Practicum, 2026 Winter Session (English Speaking Score Required)",
+ "summary": "The Department of Aerospace Engineering plans to run a recruitment-linked field practicum at Hanwha Aerospace in the 2026 academic year winter session, and eligible students who wish to take part must apply from 15 to 19 October 2026. Applicants must submit an application form to the Department of Aerospace Engineering office and, at the same time, submit documents through the Hanwha recruitment system. They must hold a valid TOEIC Speaking or OPIc score, and selected students must pay the course fee by 23 November 2026; details may change because the program is not yet confirmed.",
+ "applies_to": "Optional; for interested students only. Applicants must major in aerospace engineering, electrical engineering, mechanical engineering, computer engineering or industrial engineering, and must be in their third year or above. Students expected to graduate in February 2027 or August 2027 have priority. Applicants must hold an official English score, limited to TOEIC Speaking or OPIc, that is valid as of the document submission deadline.",
  "dates": [
   {
-   "what": "Internship period (Field Practice 3, at least 150 hours)",
-   "when": "28 December 2026 – 28 January 2027",
-   "original_ko": "2026. 12. 28. ~2027.1.28.",
-   "verified": true
-  },
-  {
-   "what": "Document submission deadline (planned); language scores must be valid as of this date",
-   "when": "Monday 19 October (planned)",
-   "original_ko": "10/19(월)예정",
-   "verified": true
-  },
-  {
-   "what": "Course registration: submit the application form to the department office and documents to the Hanwha recruitment system",
-   "when": "Thursday 15 October 2026 – Monday 19 October 2026",
+   "what": "Course registration and application period; the form must go to the department office and documents must also go to the Hanwha recruitment system",
+   "when": "Thursday 15 October 2026 to Monday 19 October 2026",
    "original_ko": "2026.10.15.(목)~10.19.(월)",
    "verified": true
   },
   {
-   "what": "Practical interview (one day within this period, planned at the Hanwha Aerospace Seoul site)",
-   "when": "One day between Wednesday 4 November 2026 and Friday 6 November 2026",
+   "what": "Document submission deadline (planned); the English score must be valid on this date",
+   "when": "Monday 19 October 2026 (planned)",
+   "original_ko": "10/19(월)예정",
+   "verified": true
+  },
+  {
+   "what": "Job interview, held on one day within this period, planned at Hanwha Aerospace's Seoul workplace",
+   "when": "One day between Wednesday 4 November and Friday 6 November 2026",
    "original_ko": "2026.11.4.(수)~11.6.(금) 중 하루",
    "verified": true
   },
   {
-   "what": "Final selection (planned)",
+   "what": "Final selection announcement (planned)",
    "when": "Friday 20 November 2026 (planned)",
    "original_ko": "2026. 11. 20.(금) 예정",
    "verified": true
   },
   {
-   "what": "Deadline for tuition fee payment",
-   "when": "By Monday 23 November",
+   "what": "Deadline for selected students to pay the course fee",
+   "when": "By Monday 23 November 2026",
    "original_ko": "11/23(월)까지",
    "verified": true
   },
   {
-   "what": "Background check result confirmation and pre-employment medical examination",
-   "when": "During December",
+   "what": "Background check results and pre-employment medical examination for selected students",
+   "when": "During December 2026",
    "original_ko": "12월 중",
+   "verified": true
+  },
+  {
+   "what": "Field practicum period (at least 150 hours)",
+   "when": "28 December 2026 to 28 January 2027",
+   "original_ko": "2026. 12. 28. ~2027.1.28.",
    "verified": true
   }
  ],
- "steps": [
-  "Check that you meet the requirements: an eligible major, third year or above, and a TOEIC Speaking or OPIc score that is valid as of the document submission deadline (planned for Monday 19 October).",
-  "Between Thursday 15 October and Monday 19 October 2026, submit the application form to the Department of Aerospace Engineering office, and at the same time submit your documents through the Hanwha recruitment system. Both submissions are mandatory.",
-  "Attend the practical interview on one day between Wednesday 4 and Friday 6 November 2026. It is planned to take place at the Hanwha Aerospace Seoul site.",
-  "If you are selected at the final selection (planned for Friday 20 November 2026), pay the tuition fee by Monday 23 November.",
-  "During December, complete the background check result confirmation and the pre-employment medical examination.",
-  "Complete the internship from 28 December 2026 to 28 January 2027 (at least 150 hours)."
+ "conditions": [
+  "The program is planned but not yet confirmed, so the details may change when it is confirmed.",
+  "Only majors in aerospace, electrical, mechanical, computer or industrial engineering are eligible.",
+  "Only students in their third year or above are eligible; expected graduates of February 2027 and August 2027 have priority.",
+  "An official English score is mandatory, and only TOEIC Speaking or OPIc is accepted.",
+  "The English score is accepted only if it is valid as of the document submission deadline (planned for 19 October).",
+  "You must submit the application form to the department office and the documents to the Hanwha recruitment system at the same time; both are required.",
+  "Selected students must pay the course fee by 23 November 2026.",
+  "Because Hanwha Aerospace is a defense company, a background check is part of the selection process as required by law.",
+  "The practicum requires at least 150 hours."
  ],
- "translation": "The Department of Aerospace Engineering plans to run a Winter Session Field Practice Semester for the 2026 academic year.\n\nInterested students should check the schedule, eligibility requirements and other details below in advance.\n(Please note that the programme is only planned at this stage, so the details may change when it is confirmed.)\n\n1. Host organisation: Hanwha Aerospace (recruitment-linked)\n\n2. Internship period: 28 December 2026 – 28 January 2027 (Field Practice 3 [현장실습 3] / at least 150 hours)\n\n3. Student requirements\n- Major: Aerospace Engineering, Electrical Engineering, Mechanical Engineering, Computer Engineering, Industrial Engineering\n- Year: third year or above (priority is given to students expected to graduate in February or August 2027)\n- An official language test score is required (TOEIC Speaking or OPIc only). *Only scores that are valid as of the document submission deadline (planned for Monday 19 October) will be accepted.\n\n4. Planned number of positions\nOrganisation | Job category | Job sub-category | Work location | Number of positions\n- Aeronautics Business Division [항공사업부] | R&D | Materials [재료/소재] | Pangyo | 2–3\n- LS Business Division [LS사업부] | R&D | Mechanical/Aerospace [기계/항공] | Changwon | 2–3\n  Electrical/Electronics [전기/전자] | 2–3\n- PGM Business Division [PGM사업부] | R&D | Mechanical/Aerospace [기계/항공] | Daejeon | 2–3\n  Electrical/Electronics [전기/전자] | 2–3\n  SW/Computer [SW/컴퓨터] | 2–3\n(The table is reproduced as it appears in the notice; the sub-category rows are listed under the division above them.)\n\n5. Schedule\n- Course registration: Thursday 15 October 2026 – Monday 19 October 2026\n  * You must submit the application form to the Department of Aerospace Engineering office AND, at the same time, submit your documents through the Hanwha recruitment system.\n- Practical interview: one day between Wednesday 4 November 2026 and Friday 6 November 2026\n  * Planned to take place at the Hanwha Aerospace Seoul site.\n- Final selection: Friday 20 November 2026 (planned)\n  * Selected students must pay the tuition fee by Monday 23 November.\n- Background check result confirmation and pre-employment medical examination: during December\n  * As a defence company, Hanwha Aerospace includes a background check in its selection process as required by law.\n\n6. Contact: Department of Aerospace Engineering office. The staff member's name, email address and phone number are given in the original notice.",
+ "steps": [
+  "Read this notice in full and check the schedule and eligibility requirements in advance.",
+  "Make sure you hold a TOEIC Speaking or OPIc score that will be valid as of the document submission deadline (planned for 19 October 2026).",
+  "Between 15 and 19 October 2026, submit the application form to the Department of Aerospace Engineering office (no room number is given in the notice).",
+  "At the same time, submit your application documents through the Hanwha recruitment system.",
+  "Attend the job interview on your assigned day between 4 and 6 November 2026, planned at Hanwha Aerospace's Seoul workplace.",
+  "Check the final selection result, planned for 20 November 2026.",
+  "If selected, pay the course fee by 23 November 2026.",
+  "If selected, complete the background check result confirmation and the pre-employment medical examination during December 2026.",
+  "If selected, complete the field practicum (at least 150 hours) from 28 December 2026 to 28 January 2027."
+ ],
+ "translation": "[Hanwha Aerospace] Notice of Planned Field Practicum Semester Program, 2026 Academic Year Winter Session (English Speaking Score Required)\n\nThe Department of Aerospace Engineering plans to run a field practicum semester program [현장실습학기제] in the 2026 academic year winter seasonal session.\n\nInterested students should check the schedule and eligibility requirements below in advance.\n\n(Please note that this program is only planned, so the details may change when it is confirmed.)\n\n1. Host organisation: Hanwha Aerospace (recruitment-linked [채용연계형])\n\n2. Practicum period: 28 December 2026 to 28 January 2027 (Field Practicum 3 [현장실습 3] / at least 150 hours)\n\n3. Student requirements\n- Major: aerospace engineering, electrical engineering, mechanical engineering, computer engineering, industrial engineering\n- Year: third year or above (priority to students expected to graduate in February 2027 and August 2027)\n- An official language test score is mandatory (limited to TOEIC Speaking or OPIc). *Only scores valid as of the document submission deadline (planned for Monday 19 October) are accepted.\n\n4. Planned number of selections (Organisation | Job category | Job sub-category | Work location | Number)\n- Aviation Business Division | R&D | Materials | Pangyo | 2–3 people\n- LS Business Division | R&D | Mechanical/Aerospace | Changwon | 2–3 people\n- Electrical/Electronic | 2–3 people\n- PGM Business Division | R&D | Mechanical/Aerospace | Daejeon | 2–3 people\n- Electrical/Electronic | 2–3 people\n- SW/Computer | 2–3 people\n(In the original table, rows that list only a sub-category and number appear to share the division, category and location of the row above.)\n\n5. Schedule\n- Course registration [수강신청]: Thursday 15 October 2026 to Monday 19 October 2026\n * You must submit the application form to the Department of Aerospace Engineering office and must also submit documents to the Hanwha recruitment system at the same time.\n- Job interview: one day between Wednesday 4 November and Friday 6 November 2026 * Planned to take place at Hanwha Aerospace's Seoul workplace.\n- Final selection: Friday 20 November 2026 (planned) * The course fee must be paid by Monday 23 November.\n- Background check result confirmation and pre-employment medical examination: during December\n * As a defense company, Hanwha Aerospace includes a background check in its selection process as required by law.\n\n6. Contact: Department of Aerospace Engineering office (the staff member's name, email address and phone number are given in the original notice).",
  "id": 58123,
  "text_hash": "59040dd4be322961",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

@@ -1,22 +1,31 @@
 {
- "title_en": "[Green Bio Innovation Convergence University Project Group] Courses Offered in the 2nd Semester of the 2026 Academic Year",
- "summary": "The Green Bio Innovation Convergence University Project Group announces the shared courses it will offer in the 2nd semester of the 2026 academic year, with course registration from 7 August to 11 August 2026 via sugang.snu.ac.kr. Interested undergraduate students are asked to refer to the attached files.",
- "applies_to": "Undergraduate students who are interested in the shared courses.",
+ "title_en": "Green Bio Innovation Convergence University: Shared Courses Offered in Fall 2026",
+ "summary": "Undergraduate students interested in the shared courses developed and run by the Green Bio Innovation Convergence University Project Group should refer to the attached poster and leaflet. Course registration is from Friday, 7 August to Tuesday, 11 August 2026 at sugang.snu.ac.kr. Requests for printed promotional leaflets are accepted at any time.",
+ "applies_to": "Undergraduate students who are interested in the shared courses offered by the Green Bio Innovation Convergence University Project Group in Fall 2026. Taking these courses is optional.",
  "dates": [
   {
-   "what": "Course registration period",
-   "when": "Friday 7 August 2026 to Tuesday 11 August 2026",
+   "what": "Course registration period for the Green Bio shared courses",
+   "when": "Friday, 7 August 2026 to Tuesday, 11 August 2026",
    "original_ko": "2026. 8. 7.(금) ~ 8. 11.(화)",
+   "verified": true
+  },
+  {
+   "what": "Requests for printed promotional leaflets",
+   "when": "At any time",
+   "original_ko": "수시 배부",
    "verified": true
   }
  ],
- "steps": [
-  "Review the attached poster and leaflet for the list of courses offered. (The attachments were not read; their content is not included here.)",
-  "Register for courses during the registration period (Friday 7 August to Tuesday 11 August 2026) through the course registration website, sugang.snu.ac.kr.",
-  "If you need printed promotional leaflets, request them; they are distributed at any time.",
-  "For further information, visit https://cossgb.snu.ac.kr/ or contact the person in charge listed in the original notice."
+ "conditions": [
+  "The full list of the 23 courses and their details is given only in the attached poster and leaflet, which were not read for this translation."
  ],
- "translation": "Title: [Green Bio Innovation Convergence University Project Group] Promotion of Courses Offered in the 2nd Semester of the 2026 Academic Year\nPosted: 27 July 2026\n\nWe are pleased to announce the shared courses developed and operated by the [Green Bio Innovation Convergence University Project Group] [그린바이오 혁신융합대학사업단]. Interested undergraduate students are asked to refer to the attached files.\n\n1. Course registration period: Friday 7 August 2026 to Tuesday 11 August 2026\n\n2. Course registration method: sugang.snu.ac.kr\n\n3. Courses offered: (Shared) Agricultural Robotics Engineering [(공유)농업로봇공학] and 22 other courses\n\n4. Requests for printed promotional leaflets: distributed at any time\n\n5. Further information and enquiries: https://cossgb.snu.ac.kr/ — the contact person's name, email address and phone number are given in the original notice.\n\nAttachment 1. Green Bio 2026 2nd Semester Course Guide Poster\nAttachment 2. Green Bio 2026 2nd Semester Course Guide Leaflet\n\nAttached files (2):\n1. 그린바이오 2026-2학기 개설 교과목 안내 포스터.pdf (Green Bio 2026 2nd Semester Course Guide Poster, 467 KB)\n2. 그린바이오 2026-2학기 개설교과목 안내 리플렛.pdf (Green Bio 2026 2nd Semester Course Guide Leaflet, 936 KB)\n\nNote: The attached files were not read, so the full list of courses and any other details they contain are not included in this translation.",
+ "steps": [
+  "Read the attached poster and leaflet (Attachments 1 and 2) for the list of courses and details; these attachments were not read for this translation.",
+  "For further information, visit https://cossgb.snu.ac.kr/; the contact person is listed in the original notice.",
+  "Register for the courses at sugang.snu.ac.kr between 7 August and 11 August 2026.",
+  "If you would like printed promotional leaflets, request them at any time through the contact listed in the original notice."
+ ],
+ "translation": "[Green Bio Innovation Convergence University Project Group] Promotion of Courses Offered in Fall 2026\n\nWe are pleased to announce the shared courses developed and run by the [Green Bio Innovation Convergence University Project Group]. Interested undergraduate students should refer to the attached files.\n\n1. Course registration [수강신청] period: Friday, 7 August 2026 to Tuesday, 11 August 2026\n\n2. How to register: sugang.snu.ac.kr\n\n3. Courses offered: (Shared) Agricultural Robotics Engineering [(공유)농업로봇공학] and 22 other courses\n\n4. Requests for printed promotional leaflets: distributed at any time\n\n5. Further information and enquiries: https://cossgb.snu.ac.kr/ (the contact person's details are given in the original notice)\n\nAttachment 1. Green Bio Fall 2026 Course Guide Poster\n\nAttachment 2. Green Bio Fall 2026 Course Guide Leaflet\n\nAttached files (2):\n1. 그린바이오 2026-2학기 개설 교과목 안내 포스터.pdf (467 KB)\n2. 그린바이오 2026-2학기 개설교과목 안내 리플렛.pdf (936 KB)\n\n(Note: The content of the attached poster and leaflet was not read for this translation.)",
  "id": 57919,
  "text_hash": "d08e9ff8024859b8",
  "images": 0,
@@ -25,6 +34,7 @@
   "2. 그린바이오 2026-2학기 개설교과목 안내 리플렛.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

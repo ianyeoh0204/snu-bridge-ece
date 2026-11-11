@@ -1,0 +1,9 @@
+{
+ "about": "Cases where the second reader did not fully agree and the author settled the question against the page. Each needs a reason a stranger can check. A card listed here is shown as settled by the author, not as agreed by the reader.",
+ "settled": {
+  "exam-basics": "The rule runs over a page break. The months and the 100-point scale are on page 9; the two-of-eight rule and the pass mark are on page 10. The reader confirmed each line on its own page.",
+  "exam-basics-phd": "The rule runs over a page break. The months, the 100-point scale and the two-of-eight rule are on page 11; the pass mark is on page 12. The reader confirmed each line on its own page.",
+  "seminar-two-semesters-phd": "The reader asked for the condition that this applies from fall 2009 entrants. The card states that condition under Applicability.",
+  "credits-undergraduate-phd": "One line and the caution come from the department's completion self-check sheet, not from the handbook page, and say so. The Korean line was found in that sheet."
+ }
+}

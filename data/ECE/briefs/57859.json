@@ -1,38 +1,50 @@
 {
- "title_en": "Course Advising Guidance for the Second Semester of the 2026 Academic Year",
- "summary": "Undergraduate students must apply for online course advising and receive advising from their academic advisor between 7 July and 21 July 2026, before registering for second-semester courses. Only applications submitted through the online system (http://sugang.snu.ac.kr) are accepted.",
- "applies_to": "Enrolled students and students scheduled to return from leave for the second semester of the 2026 academic year, excluding students expected to graduate in August 2026.",
+ "title_en": "Fall 2026 Course Registration Advising: Online Application to Academic Advisors",
+ "summary": "All undergraduate students of the department who are enrolled or expected to return from leave in Fall 2026 must receive course registration advising from their academic advisor; those expected to graduate in August 2026 are excluded. Students must apply online through the course registration website (http://sugang.snu.ac.kr) between 7 July and 21 July 2026, and applications submitted after this period will be returned. Advising by email is not accepted.",
+ "applies_to": "Undergraduate students of the department who are enrolled in Fall 2026 or are expected to return from leave in Fall 2026, excluding students expected to graduate in August 2026. Course registration advising is mandatory every semester.",
  "dates": [
   {
-   "what": "Student application period for online course advising",
+   "what": "Student application period for online course registration advising",
    "when": "Tuesday 7 July 2026 to Tuesday 21 July 2026",
    "original_ko": "2026. 7. 7.(화) ~ 2026. 7.21.(화)",
    "verified": true
   },
   {
-   "what": "Advisor (professor) advising period",
+   "what": "Period in which academic advisors review and advise on applications",
    "when": "Tuesday 7 July 2026 to Friday 24 July 2026",
    "original_ko": "2026. 7. 7.(화) ~ 2026. 7.24.(금)",
    "verified": true
   },
   {
-   "what": "Staff confirmation period",
+   "what": "Period in which department staff confirm advising records",
    "when": "Wednesday 22 July 2026 to Monday 27 July 2026",
    "original_ko": "2026. 7.22.(수) ~ 2026. 7.27.(월)",
    "verified": true
   }
  ],
- "steps": [
-  "Between 7 July and 21 July 2026, log in at http://sugang.snu.ac.kr.",
-  "Search for the courses you plan to take (Course Search [강좌검색]) and save them as Courses of Interest [관심강좌저장]. Courses must be saved as Courses of Interest before they can be registered for advising. Save all courses, but if you saved several sections of one course, include only one representative section in your application.",
-  "Go to Course Advising Consultation [수강지도상담] → Course Advising Application [수강지도신청].",
-  "Select your advising major [수강지도전공 선택] and register the courses for advising [수강지도과목 등록].",
-  "Enter your reason for taking the courses [수강사유 기재] (required).",
-  "Submit the application [신청]. You may cancel or modify it after submission. An e-mail is sent automatically to your academic advisor.",
-  "Check the advising result, either at http://sugang.snu.ac.kr → Course Advising Consultation [수강지도상담] → Detailed View for the Semester [해당학기상세조회], or at http://my.snu.ac.kr → Academic Information [학사정보] → Classes/Grades [수업/성적] → Classes [수업] → Course Advising History [수강지도내역확인] → Detailed View for the Semester [해당학기상세조회].",
-  "If your application is returned with a request to change your course plan [반려], change the courses in your Courses of Interest and reapply online to your advisor."
+ "conditions": [
+  "Course registration advising is mandatory every semester.",
+  "Students expected to graduate in August 2026 are excluded.",
+  "Only applications submitted online at http://sugang.snu.ac.kr are accepted; approval by email or other means is not accepted.",
+  "Applications submitted outside the student application period will be returned, even if the system is open and allows submission.",
+  "A course must first be saved as a course of interest (관심강좌) before it can be registered for advising.",
+  "Entering the reason for taking courses (수강사유) is required.",
+  "If several sections of the same course are saved, include only one representative section in the application; applications listing several sections may be returned.",
+  "If the advisor returns the application with a request for changes, the student must change the courses of interest and reapply online to the advisor.",
+  "Students who register for courses without receiving advising may face restrictions in scholarship recommendations.",
+  "Students who register for courses without receiving advising may face restrictions in selection as mentees for the alumni mentoring program."
  ],
- "translation": "Course Advising Guidance for the Second Semester of the 2026 Academic Year\n\nPosted: 3 July 2026\n\nOur school requires students to apply for course advising every semester so that they register for courses correctly. Online course advising for undergraduate students is announced below. Please make sure to receive advising from your academic advisor within the stated period.\n\nThe course curriculum table for the second semester of 2026 and the manual on how to apply for online course advising are attached; please refer to them when applying. (Note: the attachments were not read; their content is not included in this translation.)\n\n1. How to apply for online course advising and check approval (see the attached manual)\n\nA. How to apply: Log in at http://sugang.snu.ac.kr → Course Search [강좌검색] → Save as Course of Interest [관심강좌저장] → Course Advising Consultation [수강지도상담] → Course Advising Application [수강지도신청] → Select advising major [수강지도전공 선택] → Register advising courses [수강지도과목 등록] → Enter reason for taking the course [수강사유 기재] (required) → Submit [신청] (the submitted application can be cancelled or modified) → An e-mail notifying the advisor of the application is sent automatically.\n\nB. How to check approval: Log in at http://sugang.snu.ac.kr → Course Advising Consultation [수강지도상담] → Detailed View for the Semester [해당학기상세조회]; or log in at http://my.snu.ac.kr → Academic Information [학사정보] → Classes/Grades [수업/성적] → Classes [수업] → Course Advising History [수강지도내역확인] → Detailed View for the Semester [해당학기상세조회].\n\n2. Points to note when applying online\n\nA. After searching for the courses you will take, you must save them as Courses of Interest [관심강좌]; only then can they be registered as advising courses.\n\nB. When saving Courses of Interest, save all courses; however, if you have saved several sections of one course, apply with only the representative section. (*Applications that include several sections of the same course may be returned.)\n\nC. You must check the advising result. If there is a request to change your course registration plan (returned [반려]), change the courses in your Courses of Interest and reapply online to your advisor.\n\nD. Only online course advising applications (http://sugang.snu.ac.kr) are accepted. (Approval by other means, e.g. by e-mail, is not accepted.)\n\n3. Eligibility: Enrolled students and students scheduled to return from leave for the second semester of 2026 (excluding students expected to graduate in August 2026).\n\n4. Course advising schedule\n\nA. Student application period: Tuesday 7 July 2026 – Tuesday 21 July 2026\n* Even if the system remains open and applications can be submitted outside the student application period, applications submitted after the period will be returned.\n\nB. Advisor advising period: Tuesday 7 July 2026 – Friday 24 July 2026\n\nC. Staff confirmation period: Wednesday 22 July 2026 – Monday 27 July 2026\n\n5. Note: If you register for courses at your own discretion without receiving course advising, restrictions may be imposed regarding the following:\n\nA. Scholarship recommendation\n\nB. Selection as a mentee in the alumni mentoring program\n\n6. Inquiries: The department office [학부사무실]. The contact details are given in the original notice.\n\nAttachments (3) (not read):\n[Attachment 1] 2026학년도 2학기 수강지도 매뉴얼(학생용).hwp (Course Advising Manual for Students, 2nd Semester 2026)\n[Attachment 2] 2026학년도 2학기 학부 권장 수강 교과과정표.hwp (Recommended Undergraduate Curriculum Table, 2nd Semester 2026)\n[Attachment 3] 학번별 이수학점표.pdf (Required Credits Table by Student ID Year)",
+ "steps": [
+  "Read the attached student manual for online advising, the Fall 2026 recommended undergraduate curriculum table and the credit requirement table by student ID year (the attachments were not read for this translation).",
+  "Between 7 July and 21 July 2026, log in at http://sugang.snu.ac.kr and search for the courses you plan to take using Course Search (강좌검색).",
+  "Save each course as a course of interest (관심강좌저장); if you save several sections of one course, plan to apply with only one representative section.",
+  "Go to Course Advising Consultation (수강지도상담) → Apply for Course Advising (수강지도신청), select the advising major (수강지도전공 선택) and register the courses for advising (수강지도과목 등록).",
+  "Enter the reason for taking the courses (수강사유 기재, required) and submit the application (신청); you may cancel or modify it afterwards, and your advisor is notified by email automatically.",
+  "Check the advising result at http://sugang.snu.ac.kr → Course Advising Consultation (수강지도상담) → View Details for the Semester (해당학기상세조회), or at http://my.snu.ac.kr → Academic Information (학사정보) → Classes/Grades (수업/성적) → Classes (수업) → Check Course Advising Record (수강지도내역확인) → View Details for the Semester (해당학기상세조회).",
+  "If the application is returned (반려) with a request for changes, change your courses of interest and reapply online to your advisor.",
+  "For questions, contact the department office; contact details are in the original notice."
+ ],
+ "translation": "Fall 2026 Course Registration Advising\n\nOur department requires course registration advising every semester so that students register for courses correctly.\nWe announce the online course registration advising application for undergraduate students as follows. You must receive advising from your academic advisor within the period.\nThe Fall 2026 course curriculum table and the manual for applying for online course registration advising are attached. Please refer to them when applying online.\n\n1. How to apply online and check approval (see the attached manual)\n  a. How to apply: Log in at http://sugang.snu.ac.kr → Course Search (강좌검색) → Save Course of Interest (관심강좌저장) → Course Advising Consultation (수강지도상담) → Apply for Course Advising (수강지도신청) → Select Advising Major (수강지도전공 선택) → Register Advising Courses (수강지도과목 등록) → Enter Reason for Taking Courses (수강사유 기재, required) → Apply (신청) (the application can be cancelled or modified) → An email about the application is sent automatically to the academic advisor.\n  b. Checking approval: Log in at http://sugang.snu.ac.kr → Course Advising Consultation (수강지도상담) → View Details for the Semester (해당학기상세조회); or log in at http://my.snu.ac.kr → Academic Information (학사정보) → Classes/Grades (수업/성적) → Classes (수업) → Check Course Advising Record (수강지도내역확인) → View Details for the Semester (해당학기상세조회).\n\n2. Points to note when applying online\n  a. You can register courses for advising only after searching for them in Course Search and saving them as courses of interest (관심강좌).\n  b. Save all courses as courses of interest, but if you have saved several sections of one course, apply with only the representative section. (*Applications with several sections may be returned.)\n  c. You must check the advising result. If there is a request to change your course registration (returned, 반려), change the courses of interest and reapply online to your academic advisor.\n  d. Only online advising applications (http://sugang.snu.ac.kr) are accepted. (Approval by email, for example, is not accepted.)\n\n3. Eligibility: Students enrolled and students expected to return from leave in Fall 2026 (excluding students expected to graduate in August 2026)\n\n4. Advising schedule\n  a. Student application period: Tuesday 7 July 2026 to Tuesday 21 July 2026\n   * Even if the system is open and applications are possible outside the student application period, applications submitted after the period will be returned.\n  b. Advisor advising period: Tuesday 7 July 2026 to Friday 24 July 2026\n  c. Staff confirmation period: Wednesday 22 July 2026 to Monday 27 July 2026\n\n5. Note: Students who register for courses arbitrarily without receiving advising may be subject to the following restrictions:\n  a. Scholarship recommendations\n  b. Selection as mentees for the alumni mentoring program\n\n6. Inquiries: Department office (contact details are in the original notice)\n\nAttachments (3) (their contents were not read for this translation):\n [Attachment 1] Fall 2026 Course Registration Advising Manual (for students).hwp (785 KB)\n [Attachment 2] Fall 2026 Recommended Undergraduate Curriculum Table.hwp (85 KB)\n [Attachment 3] Required Credits Table by Student ID Year.pdf (38 KB)",
  "id": 57859,
  "text_hash": "1f972623524c7888",
  "images": 0,
@@ -42,6 +54,7 @@
   "[첨부3] 학번별 이수학점표.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

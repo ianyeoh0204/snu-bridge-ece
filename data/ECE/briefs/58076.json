@@ -1,42 +1,64 @@
 {
- "title_en": "★Schedule for Doctoral Preliminary Examination, Fall Semester 2026 (for August 2027 Graduation)",
- "summary": "Doctoral candidates expecting to receive their degree in August 2027 must complete the preliminary thesis examination in Fall Semester 2026 by submitting the required forms to the department office within the stated periods. Only students who have passed the Doctoral Thesis Qualifying Examination are eligible.",
- "applies_to": "Students expected to receive a doctoral degree in August 2027 (August 2027 graduation) who have passed the Doctoral Thesis Qualifying Examination (논문제출자격시험). The copy of the paper's first page (document ③) is required only from students who have an international journal publication.",
+ "title_en": "Fall 2026 Doctoral Preliminary Review Schedule (August 2027 Graduation)",
+ "summary": "Doctoral candidates expecting to receive their degree in August 2027 (who have passed the doctoral dissertation qualifying examination) must complete the doctoral preliminary review in Fall 2026, the semester before their initial and final reviews. They must submit the Committee Appointment Report between 12 and 26 October 2026, and the Dissertation Advising Result Report and International Journal Publication Confirmation (with a highlighted first-page copy of the paper, if applicable) between 14 December 2026 and 22 January 2027. All documents go to the Department Administrative Office (Building 301, Room 319).",
+ "applies_to": "Doctoral students expected to receive the doctoral degree in August 2027 (August 2027 graduation). Only students who have passed the doctoral dissertation qualifying examination [논문제출자격시험] are eligible for the preliminary review. The preliminary review must be completed by the semester before the initial and final dissertation reviews; for August 2027 graduates, this means by the end of Fall 2026.",
  "dates": [
   {
-   "what": "Submission period for the Committee Appointment Report [Attachment 01]",
+   "what": "Submission period for the Committee Appointment Report (Attachment 01)",
    "when": "Monday 12 October 2026 to Monday 26 October 2026",
    "original_ko": "2026. 10. 12.(월) ~ 10. 26.(월)",
    "verified": true
   },
   {
-   "what": "Submission period for the Thesis Supervision Result Report and International Journal Publication Confirmation [Attachment 02] (and the first-page copy, if applicable)",
+   "what": "Submission period for the Dissertation Advising Result Report and International Journal Publication Confirmation (Attachment 02), plus the first-page copy of the paper for students with an international journal record",
    "when": "Monday 14 December 2026 to Friday 22 January 2027",
    "original_ko": "2026. 12. 14.(월) ~ 2027. 1. 22.(금)",
    "verified": true
   },
   {
-   "what": "Expected degree conferral / graduation for the target students",
-   "when": "August 2027",
-   "original_ko": "2027년 8월",
+   "what": "Deadline to complete the preliminary review for students taking the initial and final reviews in Spring 2027 and graduating in August 2027",
+   "when": "By the end of Fall 2026",
+   "original_ko": "2026년 2학기까지는",
    "verified": true
   },
   {
-   "what": "Deadline by which the preliminary examination must be completed (example given: for students taking the first and final examinations in Spring 2027)",
-   "when": "By Fall Semester 2026",
-   "original_ko": "2026년 2학기까지",
+   "what": "Semester of the initial and final dissertation reviews for August 2027 graduates (for planning)",
+   "when": "Spring 2027",
+   "original_ko": "2027년 1학기",
+   "verified": true
+  },
+  {
+   "what": "Expected doctoral degree conferral",
+   "when": "August 2027",
+   "original_ko": "2027년 8월",
    "verified": true
   }
  ],
- "steps": [
-  "Confirm that you have passed the Doctoral Thesis Qualifying Examination (논문제출자격시험) and are expected to graduate in August 2027.",
-  "Download the two forms attached to the original notice (Committee Appointment Report form; Thesis Supervision Result Report and International Journal Publication Confirmation form).",
-  "Between 12 October and 26 October 2026, submit the Committee Appointment Report [위원위촉보고서] to the department office (Building 301, Room 319). When completing it, count all Seoul National University faculty as internal members; your supervisor serves as committee chair.",
-  "Prepare the Thesis Supervision Result Report [논문지도결과보고서] and the International Journal Publication Confirmation [국제학술지 게재확인서]. All students must submit the confirmation; if your paper is not yet published, have your supervisor sign (or stamp) the section 'If the paper has not been published' [논문이 게재되지 않은 경우] at the bottom of the form.",
-  "If you have an international journal publication, list only one publication and also prepare a copy of the paper's first page, with your name, your supervisor's name and the journal (or conference) name highlighted.",
-  "Between 14 December 2026 and 22 January 2027, submit these documents to the department office (Building 301, Room 319) in this order: ① Thesis Supervision Result Report, ② International Journal Publication Confirmation, ③ first-page copy (only if applicable). No examination fee or online application is required."
+ "conditions": [
+  "The notice may change later; check it regularly.",
+  "Only students who have passed the doctoral dissertation qualifying examination may take the preliminary review.",
+  "The preliminary review must be completed by the semester before the initial and final reviews.",
+  "All students must submit the International Journal Publication Confirmation, whether or not their paper has been published.",
+  "Students whose paper has not yet been published must complete the 'If the paper has not been published' [논문이 게재되지 않은 경우] section at the bottom of the form, with the advisor's signature (or seal).",
+  "Students with an international journal record must also submit a copy of the paper's first page; students without one submit only the first two documents.",
+  "The first-page copy must have your name, your advisor's name and the journal (or conference) name highlighted.",
+  "If you have an international journal record, write up and submit only one record.",
+  "On the Committee Appointment Report, all Seoul National University professors count as internal members.",
+  "The chair of the preliminary review committee is the advisor.",
+  "In the following semester (final review), two reviewers are added for a total of five, and the advisor becomes vice-chair.",
+  "Reviewers must be full-time, fund-supported, HK or non-full-time faculty of this university, or external experts holding a doctorate who are assistant professors or above at another institution, or researchers at a research institute with at least two years in the research field after the doctorate.",
+  "Appointing external members is permitted, and SNU emeritus professors may be appointed as reviewers.",
+  "There is no review fee and no online application for the preliminary review."
  ],
- "translation": "※ The contents of this notice may change later, so please check it regularly.\n\n★ Eligibility for the doctoral preliminary examination: students who have passed the Doctoral Thesis Qualifying Examination (논문제출자격시험).\n★ The doctoral preliminary examination must be completed by the semester before the first and final examinations.\nExample: a student who will take the first and final examinations in Spring Semester 2027 and is expected to receive the doctoral degree in August 2027 must complete the preliminary examination by Fall Semester 2026.\n\n1. Target: students expected to receive a doctoral degree in August 2027 (August 2027 graduation)\n\n2. Documents to submit\nA. [Attachment 01] Committee Appointment Report [위원위촉보고서]: Monday 12 October 2026 – Monday 26 October 2026\nB. [Attachment 02] Thesis Supervision Result Report [논문지도결과보고서] and International Journal Publication Confirmation [국제학술지게재확인서]: Monday 14 December 2026 – Friday 22 January 2027\n★ If you have an international journal publication, also submit document ③. If you have no publication, submit only documents ① and ②.\n※ Documents 1–3: please submit them in the following order.\n① Thesis Supervision Result Report\n② International Journal Publication Confirmation\n③ (Applicable students only) Copy of the first page of the paper ※ Highlighting is required: your name / your supervisor's name / the name of the journal (or conference)\n\n3. Place of submission: Department office (Building 301, Room 319). The staff contact is given in the original notice.\n\n4. Important notes\nA. When completing the Committee Appointment Report, all faculty members belonging to Seoul National University are regarded as internal members.\nB. The chair of the preliminary examination is the supervisor.\n* For reference: in the next semester (when the final thesis examination is held), two more examiners are added, making five examiners in total, and the supervisor becomes vice-chair.\n★ Examiner qualifications\n• Full-time faculty, fund-supported faculty, HK faculty, or non-full-time faculty of this university\n• External experts holding a doctoral degree who meet one of the following:\n(a) Faculty of another university: assistant professor or above\n(b) Researcher at a research institute: has worked in a research field for at least two years after obtaining the doctoral degree\n※ Appointing external members is acceptable.\n※ SNU professors emeriti may also be appointed as examiners.\nC. The International Journal Publication Confirmation must be submitted both by students who have published and by students who have not yet published. Students who have not yet published must submit it with the supervisor's signature (or stamp) in the section 'If the paper has not been published' [논문이 게재되지 않은 경우] at the bottom of the form.\nD. There is no examination fee payment and no online application for the preliminary examination.\nE. If you have an international journal publication, please list and submit only one publication.\n\n5. Reference\n① Doctoral degree conferral requirements (related to publications)\nA. Explanation of items 1 and 2: see the notice on the Fall Semester 2026 thesis examination schedule and the changed regulations on degree conferral (thesis-related).\nB. Notice on the 'List of conferences recognised as equivalent to international journals (SCI(E))': linked in the original notice (link not read).\nC. Notice on recognition of co-first authorship: linked in the original notice (link not read).\n② Internal regulation 'Abolition of the oral component of the Thesis Qualifying Examination; composition of the thesis examination committee': linked in the original notice (link not read).\n\n<Attachments>\n01. Committee Appointment Report\n02. Thesis Supervision Result Report, International Journal Publication Confirmation\n\n○ Inquiries: Department office (Building 301, Room 319). The contact person and email address are given in the original notice.\n\nAttached files (2): 1. Doctoral preliminary examination (Committee Appointment Report form).hwp; 2. Doctoral preliminary examination (Thesis Supervision Result Report, International Journal Publication Confirmation form).hwp. The contents of these attached files were not read.",
+ "steps": [
+  "Read the notice '2026학년도 2학기 논문심사 일정 안내 및 학위수여(논문 관련) 변경 규정 안내' (Fall 2026 Dissertation Review Schedule and Changes to Degree Conferral Rules) for the doctoral degree requirements on research output, and the related linked notices (not read in this translation).",
+  "Download the attached forms (Korean .hwp files): the Committee Appointment Report (Attachment 01) and the Dissertation Advising Result Report and International Journal Publication Confirmation (Attachment 02).",
+  "Complete the Committee Appointment Report with the advisor as chair, and submit it to the Department Administrative Office (Building 301, Room 319) between 12 and 26 October 2026.",
+  "Complete the Dissertation Advising Result Report and the International Journal Publication Confirmation; if your paper is not yet published, have your advisor sign (or seal) the 'If the paper has not been published' section.",
+  "If you have an international journal record, prepare a copy of the paper's first page with your name, your advisor's name and the journal (or conference) name highlighted.",
+  "Submit the documents in this order — (1) Dissertation Advising Result Report, (2) International Journal Publication Confirmation, (3) first-page copy (if applicable) — to the Department Administrative Office (Building 301, Room 319) between 14 December 2026 and 22 January 2027."
+ ],
+ "translation": "★ Fall 2026 Doctoral Preliminary Review Schedule (August 2027 Graduation)\n\n※ The content of this notice may change later, so please check it regularly.\n\n★ Eligibility for the doctoral preliminary review: students who have passed the doctoral dissertation qualifying examination [논문제출자격시험].\n\n★ The doctoral preliminary review must be completed by the semester before the initial and final reviews [초심/종심].\nExample: a student who takes the initial and final reviews in Spring 2027 and expects to receive the doctoral degree in August 2027 must complete the preliminary review by Fall 2026.\n\n1. Applies to: students expected to receive the doctoral degree in August 2027 (August 2027 graduation).\n\n2. Documents to submit\nA. [Attachment 01] Committee Appointment Report [위원위촉보고서]: Monday 12 October 2026 to Monday 26 October 2026.\nB. [Attachment 02] Dissertation Advising Result Report [논문지도결과보고서] and International Journal Publication Confirmation [국제학술지게재확인서]: Monday 14 December 2026 to Friday 22 January 2027.\n★ If you have an international journal record, also submit document ③. If you have no record, submit only documents ① and ②.\n※ Documents 1–3: please submit them in the following order.\n① Dissertation Advising Result Report\n② International Journal Publication Confirmation\n③ (Applicable students only) Copy of the first page of the paper. ※ Highlighting is required: your name / your advisor's name / the name of the journal (or conference).\n\n3. Where to submit: Department Administrative Office [학부행정실] (Building 301, Room 319). The staff contact is given in the original notice.\n\n4. Notes\nA. When completing the Committee Appointment Report, all Seoul National University professors are considered internal members.\nB. The chair of the preliminary review committee is the advisor.\n* For reference: in the following semester (final dissertation review), two reviewers are added, making five reviewers in total, and the advisor becomes vice-chair.\n★ Reviewer qualifications\n- Full-time faculty, fund-supported faculty, HK faculty or non-full-time faculty of this university.\n- External experts holding a doctoral degree who meet one of the following:\n(a) Faculty at another university: assistant professor or above.\n(b) Researcher at a research institute: has worked in the research field for at least two years after obtaining the doctorate.\n※ Appointing external members is permitted.\n※ SNU emeritus professors may also be appointed as reviewers.\nC. The International Journal Publication Confirmation must be submitted both by students who have published and by students who have not yet published. Students who have not yet published must complete the 'If the paper has not been published' [논문이 게재되지 않은 경우] section at the bottom of the form, including the advisor's signature (or seal), and submit it.\nD. There is no review fee payment and no online application for the preliminary review.\nE. If you have an international journal record, please write up and submit only one record.\n\n5. References\n① Doctoral degree requirements (regarding research output)\nA. Explanation of items 1 and 2: refer to the notice 'Fall 2026 Dissertation Review Schedule and Changes to Degree Conferral Rules (Dissertation-related)' [2026학년도 2학기 논문심사 일정 안내 및 학위수여(논문 관련) 변경 규정 안내].\nB. Notice on the 'List of conferences recognised as equivalent to international journals (SCI(E))': related notice (link; not read).\nC. Notice on recognition of co-first authorship: related notice (link; not read).\n② Internal rule 'Abolition of the oral examination in the dissertation qualifying examination; composition of the dissertation review committee': related notice (link; not read).\n\n<Attachments>\n01. Committee Appointment Report\n02. Dissertation Advising Result Report, International Journal Publication Confirmation\n\nInquiries: Department Administrative Office (Building 301, Room 319). Contact details are given in the original notice.\n\nAttached files (2): 1. Doctoral Preliminary Review (Committee Appointment Report form).hwp (29 KB); 2. Doctoral Preliminary Review (Dissertation Advising Result Report and International Journal Publication Confirmation forms).hwp (28 KB). The contents of these attachments were not read.",
  "id": 58076,
  "text_hash": "559baa7ca9a43a89",
  "images": 0,
@@ -46,5 +68,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

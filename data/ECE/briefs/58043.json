@@ -1,7 +1,7 @@
 {
- "title_en": "★Fall Semester 2026 Graduate Thesis Submission Qualifying Examination: Instructions for Examinees",
- "summary": "The major written examination of the Thesis Submission Qualifying Examination for the Fall Semester 2026 will be held on Friday, 11 September 2026, from 10:00 to 12:00, and examinees must be seated by 09:50. This notice sets out the examination rooms, required items, examination rules and how to check results.",
- "applies_to": "Examinees taking the major written examination of the graduate Thesis Submission Qualifying Examination (논자시) in the Fall Semester 2026 (master's, doctoral, and integrated master's-doctoral students).",
+ "title_en": "Fall 2026 Graduate Thesis Qualifying Examination: Instructions for Examinees",
+ "summary": "Graduate students sitting the major written examination of the Fall 2026 Thesis Qualifying Examination must take it on Friday, 11 September 2026, from 10:00 to 12:00, in the room for their program in Building 301. Examinees must be seated by 09:50, bring an ID and a black pen, and read the three attached files (instructions for examinees, answer sheet example, exam room guide) beforehand. Results will be available on MySNU after the end of October.",
+ "applies_to": "Graduate students (master's, doctoral and integrated master's-doctoral programs) sitting the major written examination of the Fall 2026 Thesis Qualifying Examination.",
  "dates": [
   {
    "what": "Major written examination (120 minutes)",
@@ -10,27 +10,46 @@
    "verified": true
   },
   {
-   "what": "Deadline for entering the examination room (no entry after the examination starts at 10:00)",
-   "when": "09:50 on the examination day",
-   "original_ko": "09:50",
+   "what": "Deadline to be seated in the exam room",
+   "when": "09:50 on the exam day",
+   "original_ko": "입실완료 시간: 09:50.",
    "verified": true
   },
   {
-   "what": "Results available on MySNU",
-   "when": "After the end of October (year not stated)",
+   "what": "No entry to the exam room after the exam starts",
+   "when": "10:00 on the exam day",
+   "original_ko": "시험이 시작되는 10:00 이후 입실 불가",
+   "verified": true
+  },
+  {
+   "what": "Earliest time an examinee may leave the room: not before one hour has passed since the exam started",
+   "when": "One hour after the start of the exam",
+   "original_ko": "시험 시작 후 1시간 경과 전에는 퇴실할 수 없습니다",
+   "verified": true
+  },
+  {
+   "what": "Exam results available on MySNU",
+   "when": "After the end of October",
    "original_ko": "10월 말 이후",
    "verified": true
   }
  ],
- "steps": [
-  "Read this notice and all three attachments (Instructions for Examinees, Answer Sheet Example, Examination Room Guide).",
-  "Prepare an identification card (a student ID card is acceptable) and a black pen.",
-  "Go to your examination room according to your programme: master's students to Building 301, Room 302; doctoral students to Building 301, Room 103; integrated master's-doctoral students to Building 301, Room 202 or 204 (see the attached Examination Room Guide).",
-  "Be in the examination room by 09:50 on Friday, 11 September 2026; entry is not permitted after the examination starts at 10:00.",
-  "Take the examination following the rules: do not use pencils or correction tape; you may use a calculator but may not share it; do not leave the room until one hour has passed after the start, even if you have finished.",
-  "After the end of October, check your result on MySNU at Mysnu > 학사정보 > 졸업 > 졸업시험 신청 > 종합시험 판정결과 조회."
+ "conditions": [
+  "Examinees who arrive after the exam starts at 10:00 will not be admitted.",
+  "Pencils and correction tape may not be used.",
+  "Calculators are allowed, but they may not be shared.",
+  "Examinees may not leave the room until one hour after the exam starts, even if they have finished their answers.",
+  "Examinees must bring an ID (a student ID card is accepted) and a black pen."
  ],
- "translation": "★Fall Semester 2026 Graduate Thesis Submission Qualifying Examination (논자시): Instructions for Examinees\n\nThis notice concerns the major written examination of the Thesis Submission Qualifying Examination. Please be sure to read the information below and the attached documents (Instructions for Examinees, How to Complete the Answer Sheet, Examination Room Guide).\n\n1. Schedule: Friday, 11 September 2026, 10:00–12:00 (120 minutes)\n※ You must be in the examination room by 09:50. (Entry is not permitted after the examination begins at 10:00!)\n\n2. Location\n- Master's students: Building 301, Room 302\n- Doctoral students: Building 301, Room 103\n- Integrated master's-doctoral students: Building 301, Rooms 202 and 204\n※ See the attachment: Examination Room Guide\n\n3. Items to bring\n- Identification card (a student ID card is acceptable)\n- Pen (black)\n\n4. Rules\n- Pencils and correction tape may not be used.\n- Calculators may be used but may not be shared.\n- Even if you have finished your answers, you may not leave the room until one hour has passed after the start of the examination.\n※ See the attachment: Instructions for Examinees\n\n5. Announcement of results\n- Results can be checked on MySNU after the end of October, under: Mysnu > 학사정보 [Academic Information] > 졸업 [Graduation] > 졸업시험 신청 [Graduation Examination Application] > 종합시험 판정결과 조회 [Comprehensive Examination Result Inquiry].\n\n6. Attachments\n- Instructions for Examinees\n- Answer Sheet Example\n- Examination Room Guide\n\nAttached files (3):\n- 고사장 안내(2026-2)_공지.pdf (Examination Room Guide, 83 KB)\n- 답안지 작성 예시.pdf (Answer Sheet Example, 149 KB)\n- 수험생 유의사항.pdf (Instructions for Examinees, 203 KB)\n\nNote: The contents of these attached PDF files were not included in the notice text and have not been read or translated. Please open the attachments in the original notice.",
+ "steps": [
+  "Read this notice and the three attached files: Instructions for Examinees, Answer Sheet Example and Exam Room Guide (the attachments were not read for this translation).",
+  "Check your exam room: master's students go to Building 301, Room 302; doctoral students to Building 301, Room 103; integrated master's-doctoral students to Building 301, Room 202 or 204 (see the attached Exam Room Guide).",
+  "Bring your ID (a student ID card is accepted) and a black pen; you may also bring your own calculator.",
+  "Be seated in your exam room in Building 301 by 09:50 on Friday, 11 September 2026.",
+  "Take the exam from 10:00 to 12:00, using only a black pen and no correction tape; stay in the room for at least one hour after the start.",
+  "After the end of October, check your result on MySNU under Mysnu > Academic Information > Graduation > Graduation Exam Application > Comprehensive Exam Result Inquiry (Mysnu > 학사정보 > 졸업 > 졸업시험 신청 > 종합시험 판정결과 조회)."
+ ],
+ "translation": "★Fall 2026 Graduate Thesis Qualifying Examination (논자시): Instructions for Examinees\n\nWe are announcing the following regarding the major written examination of the Thesis Qualifying Examination. Please be sure to read the content below and the attached files (Instructions for Examinees, How to Fill In the Answer Sheet, Exam Room Guide).\n\n1. Schedule: Friday, 11 September 2026, 10:00–12:00 (120 minutes)\n※ Examinees must be seated by 09:50. (No entry after the exam starts at 10:00!!)\n\n2. Location\n- Master's: Building 301, Room 302\n- Doctoral: Building 301, Room 103\n- Integrated master's-doctoral program: Building 301, Rooms 202 and 204\n※ Reference: [Attachment] Exam Room Guide\n\n3. What to bring\n- ID (a student ID card is accepted)\n- Pen (black)\n\n4. Rules\n- Pencils and correction tape may not be used.\n- Calculators may be used but may not be shared.\n- Even if you have finished your answers, you may not leave the room until one hour has passed since the start of the exam.\n※ Reference: [Attachment] Instructions for Examinees\n\n5. Announcement of results\n- Available on MySNU after the end of October (check under Mysnu > Academic Information > Graduation > Graduation Exam Application > Comprehensive Exam Result Inquiry ['Mysnu > 학사정보 > 졸업 > 졸업시험 신청 > 종합시험 판정결과 조회']).\n\n6. Attachments\n- Instructions for Examinees\n- Answer Sheet Example\n- Exam Room Guide\n\nAttached files (3):\n- 고사장 안내(2026-2)_공지.pdf (Exam Room Guide, 83 KB)\n- 답안지 작성 예시.pdf (Answer Sheet Example, 149 KB)\n- 수험생 유의사항.pdf (Instructions for Examinees, 203 KB)\n\n(Note: the contents of the attached files were not available and were not read for this translation.)",
  "id": 58043,
  "text_hash": "9456da0962955b56",
  "images": 0,
@@ -40,6 +59,7 @@
   "- 수험생 유의사항.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

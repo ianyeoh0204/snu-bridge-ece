@@ -1,16 +1,28 @@
 {
- "title_en": "Opening of the Online Application Menu for Duplicate Course Credit Recognition",
- "summary": "Under Article 5(1) of the Seoul National University undergraduate major completion regulations, eligible students may now apply for duplicate course credit recognition directly in the Academic Information System at any time. Applications approved by the department and college staff are applied automatically to graduation assessment and graduation simulation.",
- "applies_to": "Students taking major courses (including college-wide common courses) that are recognised in common across their primary major, double major and/or interdisciplinary major, and who wish to have those credits recognised in duplicate.",
- "dates": [],
- "steps": [
-  "Read the attached manual, 교과목 중복인정 신청 매뉴얼.pdf (Duplicate Course Credit Recognition Application Manual). Its content was not read for this translation.",
-  "Log in to the Academic Information System [학사정보시스템].",
-  "Go to Student Services > Classes/Grades > Grades > Duplicate Course Recognition Application [학생서비스>수업/성적>성적>교과목중복인정신청].",
-  "Submit the application directly in the system. Applications may be made at any time, and may also be cancelled through the same menu.",
-  "Wait for approval by the department and college staff. Once approved, the recognition is applied automatically to your graduation assessment and graduation simulation."
+ "title_en": "Opening of the Online Menu for Course Credit Double-Recognition Applications",
+ "summary": "Students whose major courses are recognised in common between their primary major, double major or interdisciplinary major may apply to have those course credits recognised for more than one major. Applications may now be submitted at any time, directly through the Academic Information System (학사정보시스템) menu Student Services > Classes/Grades > Grades > Course Double-Recognition Application (교과목중복인정신청). Once approved by the department and college staff, the recognition is reflected automatically in graduation assessment and the graduation simulation.",
+ "applies_to": "Undergraduate students whose major courses (including common courses within a college) are recognised in common between their primary major (주전공), double major (복수전공) and/or interdisciplinary major (연합전공), and who wish to have those credits recognised for more than one major. The notice asks applicable students to apply; it does not state a deadline or that the application is mandatory.",
+ "dates": [
+  {
+   "what": "Application period for course double-recognition (applications are accepted at any time; previously only during the graduation-semester graduation assessment period)",
+   "when": "At any time (rolling applications)",
+   "original_ko": "수시 신청",
+   "verified": true
+  }
  ],
- "translation": "Notice: Opening of the Duplicate Course Credit Recognition Application Menu\n\nUnder Article 5 (Duplicate Recognition of Courses), Paragraph 1, of the Seoul National University Regulations on Major Completion for Undergraduate Programmes, major courses that are recognised in common across a primary major, double major and interdisciplinary major (including college-wide common courses) may be credited in duplicate. Based on this regulation, the application procedure for duplicate course credit recognition has been improved, as explained in the attached manual. Students concerned are asked to apply.\n\n1) Improvements to the duplicate course credit recognition process\n\nApplication timing:\n- Before: Application during the graduation assessment period of the graduating semester.\n- After: Application at any time.\n\nApplication method:\n- Before: The student submitted documents, and department and college staff entered the recognition into the system manually.\n- After: The student applies directly in the Academic Information System [학사정보시스템]. When the department and college staff approve the application, it is applied automatically to the graduation assessment and graduation simulation.\n\n2) Menu location\n\n(Student application and cancellation) Academic Information System > Student Services > Classes/Grades > Grades > Duplicate Course Recognition Application [학사정보시스템>학생서비스>수업/성적>성적>교과목중복인정신청]\n\nAttachment (1 file):\n(Attached) Duplicate Course Credit Recognition Application Manual [교과목 중복인정 신청 매뉴얼.pdf] (995 KB). The content of this attachment was not read for this translation; please refer to the original notice to download it.\n\nFor questions, please contact the department office; contact details are given in the original notice.",
+ "conditions": [
+  "Only major courses (including common courses within a college) that are recognised in common between the primary major, double major and interdisciplinary major can have their credits recognised more than once, under Article 5(1) of the Seoul National University Regulations on Completion of Majors in Undergraduate Programs.",
+  "The recognition is reflected in graduation assessment and the graduation simulation only after the department and college staff approve the application.",
+  "Applications are no longer limited to the graduation assessment period of the graduation semester; they may be submitted at any time.",
+  "Students now apply directly in the Academic Information System instead of submitting documents for staff to enter manually."
+ ],
+ "steps": [
+  "Read the attached manual, \"Course Double-Recognition Application Manual\" ((붙임) 교과목 중복인정 신청 매뉴얼.pdf); its content was not read for this translation.",
+  "Log in to the Academic Information System (학사정보시스템) and go to Student Services > Classes/Grades > Grades > Course Double-Recognition Application (학생서비스>수업/성적>성적>교과목중복인정신청).",
+  "Submit the application for the courses you wish to have recognised for more than one major; the same menu is used to cancel an application.",
+  "Wait for approval by the department and college staff; once approved, it is reflected automatically in your graduation assessment and graduation simulation."
+ ],
+ "translation": "Notice: Opening of the Course Double-Recognition Application Menu\n\nUnder Article 5 (Double Recognition of Courses), Paragraph 1 of the Seoul National University Regulations on Completion of Majors in Undergraduate Programs, credits for major courses (including common courses within a college) that are recognised in common between the primary major (주전공), double major (복수전공) and interdisciplinary major (연합전공) may be recognised more than once. Based on this regulation, the course double-recognition application procedure has been improved and is explained in the attached manual. Applicable students are asked to apply.\n\n1) Improvements to the course double-recognition process\n\nApplication timing — Before: applied for during the graduation assessment period of the graduation semester. After: applications accepted at any time (수시 신청).\n\nApplication method — Before: the student submitted documents, and department and college staff entered the information into the system manually. After: the student applies directly in the Academic Information System (학사정보시스템); once department and college staff approve, the recognition is reflected automatically in graduation assessment and the graduation simulation.\n\n2) Menu location\n\n(Student application and cancellation) Academic Information System > Student Services > Classes/Grades > Grades > Course Double-Recognition Application (학사정보시스템>학생서비스>수업/성적>성적>교과목중복인정신청)\n\nAttachment (1 file)\n(Attachment) Course Double-Recognition Application Manual (교과목 중복인정 신청 매뉴얼.pdf, 995 KB) — the content of this attachment was not read for this translation.",
  "id": 57854,
  "text_hash": "ff8056f930c5fd1c",
  "images": 0,
@@ -18,6 +30,7 @@
   "(붙임) 교과목 중복인정 신청 매뉴얼.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

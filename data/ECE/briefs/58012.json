@@ -1,49 +1,59 @@
 {
- "title_en": "Course Registration Change and Cancellation for the 2nd Semester (Fall) of the 2026 Academic Year",
- "summary": "This notice announces the schedule for changing and cancelling course registrations for the 2nd semester of the 2026 academic year, including a separate over-quota request period for undergraduate courses of the 전기·정보공학부 and deadlines for related requests. The general change and cancellation period is not stated in the notice text and is referred to the attachments.",
- "applies_to": "Students changing or cancelling course registrations for the 2nd semester of the 2026 academic year. The separate over-quota request period applies only to undergraduate courses offered by the School of Electrical and Information Engineering [전기·정보공학부]. Other items apply to students in the situations described: courses requiring approval to drop, duplicate course registration, remote classes during military leave of absence, course classification changes, and the grading option for major courses of other departments.",
+ "title_en": "Fall 2026 Course Registration Change and Cancellation",
+ "summary": "Students changing or cancelling Fall 2026 course registrations must read the attached guides and act within the stated periods. Over-quota requests for undergraduate courses offered by the School of Electrical and Computer Engineering must be submitted from 1 September to 3 September 2026, 18:00, and duplicate course registration requests from 1 to 9 September 2026. Students on military leave taking remote classes must request changes on Jangbyeong e-Eum (장병e음) by 17 September 2026, and course classification changes and grading option selections for other departments' major courses must be completed by 23 September 2026.",
+ "applies_to": "Students who wish to change or cancel their Fall 2026 (2026학년도 2학기) course registrations. Specific items apply only to: students requesting over-quota registration for undergraduate courses offered by the School of Electrical and Computer Engineering (전기·정보공학부); students dropping courses that require approval to drop; students requesting duplicate course registration; students on military leave taking remote classes; students changing a course's classification; and students choosing the grading method for major courses of other departments. The notice does not limit these by program, year of admission or nationality.",
  "dates": [
   {
-   "what": "Over-quota request period for undergraduate courses offered by the 전기·정보공학부 (deadline strictly enforced)",
+   "what": "Over-quota registration request period, only for undergraduate courses offered by the School of Electrical and Computer Engineering (deadline strictly enforced)",
    "when": "Tuesday 1 September 2026 to Thursday 3 September 2026, 18:00",
-   "original_ko": "2026.09.01.(화)~09.03.(목) 18:00",
+   "original_ko": "2026.09.01.(화)~09.03.(목) 18:00 (기한 엄수)",
    "verified": true
   },
   {
    "what": "Duplicate course registration request period",
-   "when": "Tuesday 1 September to Wednesday 9 September",
+   "when": "Tuesday 1 September 2026 to Wednesday 9 September 2026",
    "original_ko": "9/1(화) ~ 9/9(수)",
    "verified": true
   },
   {
-   "what": "Deadline for students on military leave of absence to request a change to remote class registration on 장병e음",
+   "what": "Deadline for students on military leave taking remote classes to request a course registration change on Jangbyeong e-Eum (장병e음)",
    "when": "By Thursday 17 September 2026",
    "original_ko": "2026.09.17.(목)까지",
    "verified": true
   },
   {
-   "what": "Deadline for registration and approval of course classification changes (one-quarter point of instructional days)",
+   "what": "Deadline for course classification change registration and approval (one-quarter point of class days)",
    "when": "By Wednesday 23 September 2026",
    "original_ko": "2026.09.23.(수)까지",
    "verified": true
   },
   {
-   "what": "Deadline to apply in mySNU for the grading option for major courses of other departments (one-quarter point of instructional days)",
+   "what": "Deadline for students to apply in mySNU for the grading option selection for major courses of other departments (one-quarter point of class days)",
    "when": "By Wednesday 23 September 2026",
    "original_ko": "2026.09.23.(수)까지",
    "verified": true
   }
  ],
- "steps": [
-  "Read the attached files and the required-reading link in the notice for full details, including the general change and cancellation period, which is not stated in the notice text.",
-  "If you need an over-quota place in an undergraduate course offered by the 전기·정보공학부, submit the over-quota request between 1 September 2026 (Tue) and 3 September 2026 (Thu), 18:00, and make sure you understand the periods and method for each stage: request, instructor approval and enrollment confirmation.",
-  "If you wish to drop a course that requires approval, submit the course cancellation request within the period.",
-  "If you need duplicate course registration, apply at 학사정보 > 수업/성적 > 수업 > 중복수강신청 (Academic Information > Classes/Grades > Classes > Duplicate Course Registration), referring to the manual, from 9/1 (Tue) to 9/9 (Wed).",
-  "If you are on military leave of absence and taking remote classes, request the registration change yourself on 장병e음 by 17 September 2026 (Thu).",
-  "If you need to change a course classification, complete the registration and approval of the change by 23 September 2026 (Wed).",
-  "If you wish to use the grading option for major courses of other departments, check the course list at the linked spreadsheet and apply yourself in mySNU by 23 September 2026 (Wed)."
+ "conditions": [
+  "The general course registration change and cancellation period is not stated in the notice text; it appears to be given in the attachments, which were not read.",
+  "The separate over-quota request period applies only to undergraduate courses offered by the School of Electrical and Computer Engineering.",
+  "The over-quota request deadline of 3 September 2026, 18:00 is strictly enforced.",
+  "For courses that require approval to drop, students must check and submit the drop request within the period.",
+  "Students requesting over-quota registration must know the periods and methods for the request, instructor approval and registration confirmation stages.",
+  "Students on military leave taking remote classes must request the change themselves on Jangbyeong e-Eum.",
+  "Students must apply for the grading option selection themselves in mySNU."
  ],
- "translation": "We announce the schedule for course registration change and cancellation for the 2nd semester of the 2026 academic year. Please refer to the attached files for details.\n\n1. Course Registration Change and Cancellation Period\n(Note: the general change and cancellation period is not given in the text of the notice; it appears to be in the attached files, which were not read.)\n※ For undergraduate courses offered by the School of Electrical and Information Engineering [전기·정보공학부] only, the over-quota request period is operated on a separate schedule*. Please take care not to make a mistake.\n* Over-quota request period for undergraduate courses: 2026.09.01. (Tue) to 09.03. (Thu), 18:00 (deadline strictly enforced)\n[Required reading] https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57915\n\n2. Important Notes\n1) [Course Cancellation (수강신청 취소)] For courses that require approval, students must make sure to submit the course cancellation request within the period.\n2) [Over-Quota Request (정원 외 신청)] Students must be familiar with the periods and method for the request, instructor approval and enrollment confirmation stages.\n3) [Duplicate Course Registration (중복수강신청)] Apply at 학사정보 > 수업/성적 > 수업 > 중복수강신청 (Academic Information > Classes/Grades > Classes > Duplicate Course Registration) (refer to the manual), 9/1 (Tue) to 9/9 (Wed).\n3) [Remote Classes during Military Leave of Absence (군휴학 원격수업)] Students must request the course registration change themselves on 장병e음 by 2026.09.17. (Thu).\n4) [Course Classification Change (교과구분변경)] Registration and approval of course classification changes must be completed by 2026.09.23. (Wed), the one-quarter point of instructional days.\n5) [Grading Option for Major Courses of Other Departments (타 학과(부) 전공 교과목 성적평가방법 선택제)] Students must apply themselves in mySNU by 2026.09.23. (Wed), the one-quarter point of instructional days.\nCourse list ▶ https://docs.google.com/spreadsheets/d/1LNFU7Q_X_-RghkrtJ7WMsVyIdXdCHBAcbiGJ5xqcphg/edit?usp=sharing\n\n(Note: the numbering \"3)\" appears twice in the original notice.)\n\nAttachments:\nAttachment 1-1. Guide to Course Registration Change and Cancellation, 2nd Semester 2026\nAttachment 1-2. Summary Guide to Course Registration Changes, 2nd Semester 2026\nAttachment 2-1. (For students) Over-Quota Request Manual\nAttachment 2-2. (For students) Regular Semester Course Drop Manual\nAttachment 3. How to Change Course Classification and Correct Retake Classification\nAttachment 4. Guide to the Grading Option for Major Courses of Other Departments\nAttachment 5. Duplicate Course Registration Manual\n\nAttached files (7):\n(붙임1-1) 2026학년도 2학기 수강신청 변경 및 취소 안내 (2026 Fall Semester Course Change & Withdrawal).pdf\n(붙임1-2) 2026학년도 2학기 수강신청 변경 및 변경 요약 안내문.pdf\n(붙임2-1)(학생용) 정원 외 신청 매뉴얼 (Quota Exceeding Course Registration Request Manual For Students).pdf\n(붙임2-2)(학생용) 정규학기 수강취소 매뉴얼 (Course Drop Manual For Students).pdf\n(붙임3) 교과구분변경 및 재이수구분정정 방법 안내.pdf\n(붙임4) 2026학년도 2학기 타 학과(부) 전공 교과목 성적평가방법 선택제 안내문 (Guidelines for Changing Grading Option of Underg...).pdf\n(붙임5) 중복수강신청 매뉴얼 (Guideline of Course Overlap Request).pdf\n\n(Note: the contents of the attached files and linked pages were not read; only the text of the notice has been translated.)",
+ "steps": [
+  "Read the attachments to this notice (Attachments 1-1 to 5); their content was not read, so this summary does not cover it.",
+  "Over-quota request: Read the must-read notice at https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57915 and Attachment 2-1 (Quota Exceeding Course Registration Request Manual for Students).",
+  "Over-quota request: Learn the periods and methods for request, instructor approval and registration confirmation, and submit the request between 1 September and 3 September 2026, 18:00.",
+  "Course drop: Check whether your course requires approval to drop, read Attachment 2-2 (Course Drop Manual for Students), and submit the drop request within the period.",
+  "Duplicate course registration: Following Attachment 5, apply via Academic Information [학사정보] > Classes/Grades [수업/성적] > Classes [수업] > Duplicate Course Registration [중복수강신청] between 1 and 9 September 2026.",
+  "Military leave remote classes: Request the course registration change yourself on Jangbyeong e-Eum (장병e음) by 17 September 2026.",
+  "Course classification change: Following Attachment 3, complete the course classification change registration and approval by 23 September 2026.",
+  "Grading option selection: Check the course list at https://docs.google.com/spreadsheets/d/1LNFU7Q_X_-RghkrtJ7WMsVyIdXdCHBAcbiGJ5xqcphg/edit?usp=sharing, read Attachment 4, and apply yourself in mySNU by 23 September 2026."
+ ],
+ "translation": "Title: Fall 2026 Course Registration Change and Cancellation (2026학년도 2학기 수강신청 변경 및 취소 안내)\n\nWe announce the course registration change and cancellation schedule for Fall 2026. Please refer to the attachments for details.\n\n1. Course registration change and cancellation period\n(The period itself is not stated in the notice text; it appears to be in the attachments, which were not read.)\n※ For undergraduate courses offered by the School of Electrical and Computer Engineering (전기·정보공학부) only, the over-quota request period is run on a separate schedule*. Please take care not to make mistakes.\n* Over-quota request period for undergraduate courses: 2026.09.01. (Tue) to 09.03. (Thu) 18:00 (deadline strictly enforced)\n[Must read] https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57915\n\n2. Points to note\n1) [Course drop] For courses that require approval, students must check and submit the drop request within the period.\n2) [Over-quota request] Students must familiarise themselves with the periods and methods for request, instructor approval and registration confirmation.\n3) [Duplicate course registration] Apply via Academic Information [학사정보] > Classes/Grades [수업/성적] > Classes [수업] > Duplicate Course Registration [중복수강신청] (refer to the manual), 9/1 (Tue) to 9/9 (Wed).\n3) [Remote classes during military leave] Students must themselves request the course registration change on Jangbyeong e-Eum (장병e음) by 2026.09.17. (Thu).\n4) [Course classification change] Course classification change registration and approval must be completed by 2026.09.23. (Wed), the one-quarter point of class days.\n5) [Grading option selection for major courses of other departments (타 학과(부) 전공 교과목 성적평가방법 선택제)] Students must apply themselves in mySNU by 2026.09.23. (Wed), the one-quarter point of class days.\nCheck the course list ▶ https://docs.google.com/spreadsheets/d/1LNFU7Q_X_-RghkrtJ7WMsVyIdXdCHBAcbiGJ5xqcphg/edit?usp=sharing\n\nAttachment 1-1. Fall 2026 Course Registration Change and Cancellation Guide\nAttachment 1-2. Fall 2026 Course Registration Change Summary Notice\nAttachment 2-1. (For students) Over-Quota Request Manual\nAttachment 2-2. (For students) Regular Semester Course Drop Manual\nAttachment 3. Guide to Course Classification Change and Retake Classification Correction\nAttachment 4. Guide to Grading Option Selection for Major Courses of Other Departments\nAttachment 5. Duplicate Course Registration Manual\n\nAttached files (7): the seven PDF files listed above (Attachments 1-1, 1-2, 2-1, 2-2, 3, 4 and 5). The content of the attachments was not read and is not included in this translation.",
  "id": 58012,
  "text_hash": "d2834a1b83fc8a49",
  "images": 1,
@@ -57,6 +67,7 @@
   "(붙임5) 중복수강신청 매뉴얼(Guideline of Course Overlap Request).pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

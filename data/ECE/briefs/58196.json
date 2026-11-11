@@ -1,71 +1,89 @@
 {
- "title_en": "[Fall Semester 2026] Graduation Project (Electrical Engineering Design Project): Final Presentation and Poster File Submission",
- "summary": "The final presentation for the Fall 2026 Graduation Project (Electrical Engineering Design Project) will be held on Friday, 20 November, from 10:00 to 16:00 in the first-floor corridor of Building 301. Poster files must be submitted as A1 portrait PDF files by Monday, 9 November, at 23:59.",
- "applies_to": "Students taking the Graduation Project (Electrical Engineering Design Project) in the second semester of the 2026 academic year. For the panel set-up on 19 November, at least one student per laboratory must attend; students who have a class at that time are excluded. Attendance of teaching assistants is not checked; they attend only if needed.",
+ "title_en": "Fall 2026 Graduation Project Final Presentation and Poster File Submission",
+ "summary": "Students taking the Fall 2026 graduation project (Electrical Engineering Design Project) must submit their poster as an A1 portrait PDF through the online form by Monday, November 9, 23:59, and have their advisor review the draft thesis and poster by Monday, November 16. They must take part in panel setup on Thursday, November 19, at 15:00 and attend the final presentation on Friday, November 20, from 10:00 to 16:00, arriving before 10:00. Both events take place in the 1st-floor corridor of Building 301.",
+ "applies_to": "Students taking the graduation project (Electrical Engineering Design Project) in Fall 2026. Attendance at the final presentation is checked and counts towards evaluation. For panel setup, at least one student from each lab must attend; students who have a class at that time are excluded. Attendance of teaching assistants is not checked; they take part only if needed and are not required to.",
  "dates": [
   {
-   "what": "Deadline for poster file submission (also the deadline for printing supported by the department)",
-   "when": "Monday, 9 November 2026, 23:59",
+   "what": "Poster PDF submission deadline through the online form; also the deadline for free poster printing by the department",
+   "when": "Monday, November 9, 23:59",
    "original_ko": "11월 9일(월) 23:59까지",
    "verified": true
   },
   {
-   "what": "Department sends the poster print request to the printing company",
-   "when": "Tuesday, 10 November 2026, afternoon",
+   "what": "Department sends the poster print request to the printing company (posters submitted after the deadline are not included)",
+   "when": "Tuesday, November 10, afternoon",
    "original_ko": "11월 10일(화) 오후",
    "verified": true
   },
   {
-   "what": "Deadline for having the thesis draft and poster draft reviewed by your supervising professor",
-   "when": "Monday, 16 November 2026",
+   "what": "Deadline for having the draft thesis and draft poster reviewed by your advisor",
+   "when": "By Monday, November 16",
    "original_ko": "11월 16일(월)까지",
    "verified": true
   },
   {
-   "what": "Panel set-up, first-floor corridor of Building 301 (in front of Room 118)",
-   "when": "Thursday, 19 November 2026, 15:00",
+   "what": "Panel setup in the Building 301 1st-floor corridor (in front of Room 118); at least one student per lab, except students with a class",
+   "when": "Thursday, November 19, by 15:00",
    "original_ko": "11월 19일(목) 오후 3시",
    "verified": true
   },
   {
-   "what": "Final presentation (judging hours), first-floor corridor of Building 301",
-   "when": "Friday, 20 November 2026, 10:00–16:00",
-   "original_ko": "11월 20일(금) 10:00 ~ 16:00 (심사시간)",
+   "what": "Final presentation (judging time); judging may continue until all modules are judged",
+   "when": "Friday, November 20, 10:00–16:00",
+   "original_ko": "11월 20일(금) 10:00 ~ 16:00",
    "verified": true
   },
   {
-   "what": "Arrival for attendance check on the presentation day",
-   "when": "Before 10:00 on 20 November 2026",
+   "what": "Arrival cut-off for the attendance check on the presentation day",
+   "when": "Before 10:00 on Friday, November 20",
    "original_ko": "오전 10시 이전 도착",
    "verified": true
   },
   {
-   "what": "Attendance checks on the presentation day",
-   "when": "10:30, 12:00 (when collecting meals) and 15:30",
+   "what": "Attendance checks on the presentation day (by roll call or in turn); the 12:00 check is at meal pick-up",
+   "when": "10:30, 12:00 and 15:30 on Friday, November 20",
    "original_ko": "10:30/12:00(식사수령시)/15:30",
    "verified": true
   }
  ],
- "steps": [
-  "Prepare your poster as a PDF file only, A1 size (594 mm x 841 mm), portrait orientation, without an excessively large file size. PPT and HWP files cannot be printed.",
-  "Name the file \"Module name_Supervising professor's name_Student name\" (e.g. Bio_Professor KimOO_ParkOO).",
-  "Upload the poster PDF through the form link https://forms.gle/Vm9HY1ZiX9nyK5pCA by Monday, 9 November, 23:59. For team projects, one representative sends the file by email, named \"Professor in charge_names of all team members\" (the notice does not state the email address).",
-  "If needed, submit a revised version once only, adding \"[수정본]\" ([Revised]) to the file name (e.g. [수정본]Professor KimJeongi_ParkJeongbo).",
-  "If you miss the 9 November deadline, print your poster yourself at your own expense, in A1 portrait size.",
-  "Have your thesis draft and poster draft reviewed by your supervising professor by Monday, 16 November.",
-  "Come to the first-floor corridor of Building 301 (in front of Room 118) by 15:00 on Thursday, 19 November, for panel set-up (at least one student per laboratory; students with a class are excluded).",
-  "If you have another class on 20 November and need an absence confirmation, print your mySNU timetable and bring it on the day; submit it at the desk to receive the absence confirmation.",
-  "On 20 November, bring sticky tape to attach your poster to the panel, and your own power extension cord if you need power for a laptop or other device.",
-  "Arrive at the first-floor corridor of Building 301 before 10:00 for the attendance check.",
-  "Stay at your place from 10:00 to 16:00 for the professors' individual judging, and be present for the attendance checks at 10:30, 12:00 and 15:30.",
-  "After the event, take part in removing posters and tidying the panels, desks and chairs (from Room 104 of Building 301 and other designated lecture rooms); the project ends only when this is complete."
+ "conditions": [
+  "Only PDF files can be uploaded; the poster must be A1 size (594 mm x 841 mm) in portrait orientation.",
+  "PPT and HWP files cannot be printed, and the PDF file must not be too large.",
+  "A revised poster may be submitted only once, and its file name must begin with \"[수정본]\".",
+  "For team projects, only one representative submits, using the file name: advisor's name_names of all team members.",
+  "The department prints one poster per person free of charge.",
+  "Posters submitted after November 9, 23:59 must be printed by the student at their own expense.",
+  "Self-printed posters must also be A1 portrait; landscape posters may be difficult to attach to the panels.",
+  "At least one student from each lab must attend panel setup; students who have a class at that time are excluded.",
+  "If you are absent at all three attendance checks, you will be marked absent; missing one check because of a class is accepted.",
+  "If you are absent during professor judging because of a class and are therefore not evaluated, this is your own responsibility.",
+  "Stay at your panel from 10:00 to 16:00 to avoid an evaluation disadvantage; judging may continue after 15:00 depending on the judges' schedules.",
+  "The event ends only when all modules have been judged and everyone has removed the posters and tidied the panels, desks and chairs.",
+  "Students must bring their own tape and their own power extension cord if they need power for a laptop or other device.",
+  "To receive an absence confirmation for another class held that day, you must bring a printed mySNU timetable; it is issued after the timetable is checked on the day.",
+  "You must have your advisor review the draft thesis and draft poster by November 16.",
+  "Teaching assistants' attendance is not checked; their participation is optional."
  ],
- "translation": "[Fall Semester 2026] Graduation Project (Electrical Engineering Design Project): Final Presentation and Poster File Submission\nPosted: 2 November 2026\n\nFall Semester 2026 Graduation Project: Final Presentation and Poster File Submission\n\n<Final Presentation>\n- The final presentation is scheduled for Friday, 20 November, 10:00–16:00 (judging hours), in the first-floor corridor of Building 301.\n- Please arrive before 10:00 for the attendance check.\n※ If you need an absence confirmation to submit for another class held on the same day, please print and bring your mySNU timetable. It will be issued on the day after your timetable is checked.\n\n<Preparation>\n* Poster submission (by Monday, 9 November, 23:59)\nLink: https://forms.gle/Vm9HY1ZiX9nyK5pCA\n\n1. Poster submission\n- Only PDF files may be uploaded / size A1 / portrait orientation.\n- When submitting, name the file \"Module name_Supervising professor's name_Student name\", e.g. Bio_Professor KimOO_ParkOO.\n * For team projects, one representative should send it by email. (File name: Professor in charge_names of all team members)\n- A revised version may be submitted only once, and you must add \"[수정본]\" ([Revised]) to it, e.g. [수정본]Professor KimJeongi_ParkJeongbo.\n\n2. Poster printing\n- Printing of one poster per person is supported.\n- Poster size: please follow the A1 standard (594 mm x 841 mm, portrait).\n * Students who print at their own expense should also print in A1 size. A landscape poster may be difficult to attach to the panel.\n- Poster file format: PDF (not too large in file size) / A1 size (PPT and HWP files cannot be printed).\n※ After the deadline of Monday, 9 November, 23:59, you must print your poster yourself at your own expense.\n※ The poster print request will be sent to the printing company on the afternoon of Tuesday, 10 November.\n\n3. Panel set-up\n- Panel set-up will take place on Thursday, 19 November, at 15:00.\n- As this is the set-up of your own presentation panel, please come to the first-floor corridor of Building 301 (in front of Room 118) by 15:00.\n (At least one student per laboratory must come; students who have a class are excluded.)\n\n4. On the day of the project\n- You must bring sticky tape that can be used to attach your poster to the panel.\n- Power extension cords: if you need power for a laptop or other device, prepare one yourself.\n- Desks: desks and chairs from Room 104 of Building 301 and designated lecture rooms will be used, and you must also tidy them up afterwards.\n * The project ends only after everyone has together removed the posters and finished tidying the panels, desks and chairs.\n\n5. Attendance\n- Attendance will be checked at 10:30, 12:00 (when collecting meals) and 15:30 (by roll call or in sequence).\n- If you are not present at all three checks, you will be marked absent. (Missing one check because of a class is accepted.)\n- If you have an overlapping class, print your mySNU timetable, submit it at the desk on the day, and receive an absence confirmation.\n- To avoid any disadvantage in your evaluation due to being absent when professors judge your work, please remain at your place from 10:00 to 16:00.\n * Please note that, depending on the judges' schedules, judging may continue after 15:00.\n (Judging hours: 10:00–16:00 / the whole project presentation ends when judging of all modules is complete.)\n- Judging is conducted individually. If you are not present because of attending a class and therefore are not evaluated, this is your own responsibility.\n- Attendance of teaching assistants is not checked. (They attend only if needed; it is not mandatory.)\n\nFor further enquiries, please contact the department office (undergraduate office). The contact details are given in the original Korean notice.\n\nAddendum: You must have your thesis draft and poster draft reviewed by your supervising professor by Monday, 16 November.",
+ "steps": [
+  "Prepare your poster as a PDF file, A1 size (594 mm x 841 mm), portrait orientation, not too large; do not use PPT or HWP.",
+  "Name the file \"module name_advisor name_student name\" (for example: 바이오_김OO교수님_박OO); for a team project, one representative submits it named \"advisor name_names of all team members\".",
+  "Upload the PDF through the Google Form (https://forms.gle/Vm9HY1ZiX9nyK5pCA) by Monday, November 9, 23:59 to receive free printing; if you miss this deadline, print the A1 portrait poster yourself at your own expense.",
+  "If you need to revise the poster, submit the revised file once only, with \"[수정본]\" at the start of the file name (for example: [수정본]김전기 교수님_박정보).",
+  "Have your advisor review your draft thesis and draft poster by Monday, November 16.",
+  "Come to the 1st-floor corridor of Building 301 (in front of Room 118) by 15:00 on Thursday, November 19, to set up your presentation panel (at least one student per lab; students with a class are excluded).",
+  "Before the presentation day, prepare tape for attaching the poster to the panel, your own power extension cord if you need power, and a printed mySNU timetable if you need an absence confirmation for another class that day.",
+  "On Friday, November 20, arrive at the 1st-floor corridor of Building 301 before 10:00 for the attendance check.",
+  "If you have another class that day, submit your printed mySNU timetable at the desk and collect your absence confirmation.",
+  "Use desks and chairs from Building 301 Room 104 and the designated lecture rooms, and stay at your panel from 10:00 to 16:00 for the individual judging; be present at the attendance checks at 10:30, 12:00 (meal pick-up) and 15:30.",
+  "After all modules have been judged, remove the posters together with the other students and put the panels, desks and chairs back in order."
+ ],
+ "translation": "[Fall 2026] Graduation Project (Electrical Engineering Design Project) Final Presentation and Poster File Submission\n\nFall 2026 Graduation Project Final Presentation and Poster File Submission\n\n<Final Presentation>\n- The final presentation is scheduled for Friday, November 20, 10:00–16:00 (judging time), in the 1st-floor corridor of Building 301.\n- Arrive before 10:00 for the attendance check.\n※ If you need an absence confirmation to submit for another class held on that day, please bring a printed copy of your mySNU timetable. It will be issued after your timetable is checked on the day.\n\n<Preparation>\n*Poster submission (by Monday, November 9, 23:59)\nLink: https://forms.gle/Vm9HY1ZiX9nyK5pCA\n\n1. Poster submission\n- Only PDF files can be uploaded / size A1 / portrait orientation.\n- File name on submission: \"module name_advisor name_student name\", e.g. 바이오_김OO교수님_박OO\n * For team projects, one representative should send it. (File name: advisor's name_names of all team members)\n- A revised version may be submitted only once, and you must add \"[수정본]\" (revised version) to it, e.g. [수정본]김전기 교수님_박정보\n\n2. Poster printing\n- Printing of one poster per person is provided.\n- Poster size: please follow the A1 standard (594 mm x 841 mm, portrait).\n * Those printing at their own expense should also print in A1 size. A landscape poster may be difficult to attach to the panel.\n- Poster file format: PDF (not too large) / A1 size (PPT and HWP cannot be printed).\n※ After the deadline of Monday, November 9, 23:59, you must print the poster yourself at your own expense.\n※ The print request will be sent to the printing company on the afternoon of Tuesday, November 10.\n\n3. Panel setup\n- Panel setup takes place on Thursday, November 19, at 15:00.\n- As this is the setup of your own presentation panel, please come to the 1st-floor corridor of Building 301 (in front of Room 118) by 15:00.\n (At least one person per lab must come; students who have a class are excluded.)\n\n4. Project day\n- You must bring Scotch tape that can be attached to the panel.\n- Power extension: if you need power for a laptop or other device, prepare it individually.\n- Desks: use desks and chairs from Building 301 Room 104 and the designated lecture rooms, and you must also put them back afterwards.\n * The project ends after everyone together has removed the posters and finished tidying the panels, desks and chairs.\n\n5. Attendance\n- Attendance is checked at 10:30 / 12:00 (at meal pick-up) / 15:30 (by roll call or in turn).\n- If you are absent at all three checks, you will be marked absent. (Missing one check because of a class is accepted.)\n- If you have an overlapping class, print your mySNU timetable, submit it at the desk on the day, and collect an absence confirmation.\n- To avoid an evaluation disadvantage due to absence during professor judging, please remain at your place from 10:00 to 16:00.\n * Please note that, depending on the judges' schedules, judging may continue after 15:00.\n (Judging time: 10:00–16:00 / the whole project presentation event ends when judging of all modules is finished.)\n- Judging is done individually; if a student is not present because of attending a class and is therefore not evaluated, this is the student's own responsibility.\n- Teaching assistants' attendance is not checked. (Participate only if needed; not required.)\n\nFor further questions, please contact the undergraduate department office (the contact person, phone number and email address are given in the original notice).\n\nAddition) You must have your draft thesis and draft poster reviewed by your advisor by Monday, November 16.",
  "id": 58196,
  "text_hash": "5eca2889c7a1a002",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

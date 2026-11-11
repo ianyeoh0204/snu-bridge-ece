@@ -1,18 +1,25 @@
 {
- "title_en": "Important Notes on Taking Cross-Listed Courses",
- "summary": "This notice sets out how credit is recognised and how retakes must be registered when students take cross-listed courses. A cross-listed course taken under a major other than the student's own is recognised as a general elective.",
- "applies_to": "Students who take, or wish to retake, cross-listed courses.",
+ "title_en": "Notes on Taking Cross-Listed Courses",
+ "summary": "Students taking or retaking cross-listed courses should note how credit is recognised and how retakes must be registered. A cross-listed course registered under another major's course number is credited as a General Elective (일반선택). To retake a cross-listed course, students must register for the section offered under the course number they originally completed.",
+ "applies_to": "Students who take, or wish to retake, cross-listed (Cross-listing) courses. The notice gives no limit by program, year of admission or nationality. It is guidance, not a required action.",
  "dates": [],
- "steps": [
-  "When registering for a cross-listed course, note that a course from another major (not your own) that is cross-listed will be credited as a general elective [일반선택].",
-  "If you wish to retake a cross-listed course, register for the section offered under the same course number as the course you originally completed. For example, if courses A and B are cross-listed and you completed course A, you must register for course A to retake it."
+ "conditions": [
+  "If you take a cross-listed course offered under another major that is not your own, the credit is recognised as a General Elective (일반선택).",
+  "Your transcript records the course under the major's course number for which you registered.",
+  "To retake a cross-listed course, you must register for the section offered under the course number you originally completed.",
+  "Example: if courses A and B are cross-listed and you completed A, you can retake it only by registering for A; registering for B does not count as a retake."
  ],
- "translation": "Important Notes on Taking Cross-Listed Courses\n\nPlease review the following notes on taking cross-listed courses.\n\n※ Please note that if you take a cross-listed course offered under another major that is not your own, the credits will be recognised as a general elective [일반선택].\n\n○ (Credit recognition) When a student takes a cross-listed course, the grade is recorded on the transcript as completion of the course under the specific major for which the student registered.\n\n○ (Retaking a course) If a student wishes to retake a cross-listed course, the student must register for the section offered under the course number of the course previously completed.\n\n※ Example: if courses A and B are cross-listed, and a student has completed course A and wishes to retake it, the retake is possible only if the student registers for course A, the course previously completed.",
+ "steps": [
+  "When registering for a cross-listed course, check which major's course number you are registering under, because the credit and transcript entry follow that course number.",
+  "To retake a cross-listed course, register for the section offered under the course number you originally completed (for example, register for A if you completed A)."
+ ],
+ "translation": "Notes on Taking Cross-Listed Courses\n\nPlease review the following notes on completing cross-listed (Cross-listing) courses.\n\n※ Please note that if you take a cross-listed course offered under another major that is not your own, the credit will be recognised as a General Elective (일반선택).\n\n○ (Credit recognition) When a student takes a cross-listed course, the grade is recorded on the transcript as completion of the course of the major under which the student registered.\n\n○ (Retaking) A student who wishes to retake a cross-listed course must register for the section offered under the course number of the course previously completed.\n\n※ If courses A and B are cross-listed and a student who has completed course A wishes to retake it, the student can retake it only by registering for course A, the course previously completed.",
  "id": 58075,
  "text_hash": "a8743927aa0adde6",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

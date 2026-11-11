@@ -1,16 +1,16 @@
 {
- "title_en": "Graduation Thesis Submission for Undergraduate Students Expected to Graduate in February 2027",
- "summary": "Students who have applied to graduate in February 2027 as primary majors or double majors (including the College of Liberal Studies [자유전공학부]) must submit a graduation thesis to the school administrative office by Monday, 21 December 2026. Students who cannot meet this deadline must submit a Graduation Thesis Submission Date Confirmation form by the same date and then submit the thesis by Monday, 28 December 2026.",
- "applies_to": "Primary majors and double majors (including the College of Liberal Studies [자유전공학부]) among those who have applied to graduate in February 2027. A graduation thesis cannot be submitted by a student who is not graduating. Students who previously submitted a report for completion of the graduation project must also submit a thesis in the attached format.",
+ "title_en": "Graduation Thesis Submission for Undergraduates Graduating in February 2027",
+ "summary": "Undergraduate students who have applied to graduate in February 2027 as a primary major or double major (including the Faculty of Liberal Studies) must submit a graduation thesis to the department administrative office in Building 301, Room 319. Submissions are accepted from December 2026 and are due by Monday, 21 December 2026. Students who cannot meet this deadline must submit a Graduation Thesis Submission Date Confirmation form by 21 December 2026 and then submit the thesis by Monday, 28 December 2026.",
+ "applies_to": "Mandatory for undergraduate (bachelor's) students who have applied to graduate in February 2027 and are primary majors or double majors in the department, including students of the Faculty of Liberal Studies (자유전공학부). This includes students who previously submitted a report when completing the graduation project. Students who are not graduating may not submit a thesis.",
  "dates": [
   {
-   "what": "Graduation term for students covered by this notice",
+   "what": "Expected graduation; students graduating at this time must submit a thesis",
    "when": "February 2027",
    "original_ko": "2027년 2월",
    "verified": true
   },
   {
-   "what": "Earliest submission period (do not submit before December, even if the thesis is finished early)",
+   "what": "Thesis submissions accepted from this month; do not submit earlier even if the thesis is finished",
    "when": "From December 2026",
    "original_ko": "12월부터",
    "verified": true
@@ -22,27 +22,38 @@
    "verified": true
   },
   {
-   "what": "Deadline to submit the Graduation Thesis Submission Date Confirmation form (for students unable to submit the thesis on time)",
+   "what": "Deadline to submit the Graduation Thesis Submission Date Confirmation form, for students who cannot submit the thesis on time",
    "when": "By Monday, 21 December 2026",
    "original_ko": "2026. 12. 21.(월)까지",
    "verified": true
   },
   {
-   "what": "Extended thesis submission deadline for students who submitted the confirmation form",
+   "what": "Extended thesis submission deadline, only for students who submitted the confirmation form by 21 December",
    "when": "By Monday, 28 December 2026",
    "original_ko": "2026.12.28.(월)까지",
    "verified": true
   }
  ],
- "steps": [
-  "Write your graduation thesis following the attached thesis writing guidelines. If you previously submitted a report for completion of the graduation project, you must also rewrite it in the attached thesis format.",
-  "On the outer cover, write the date as \"2027.2\". On the approval page [인준지], write the year, month and day on which your thesis advisor signs it, and obtain your thesis advisor's signature.",
-  "Write your student ID number in pencil at the bottom of the cover. Double majors write \"복수\" and College of Liberal Studies students write \"자유\" in pencil before the student ID number.",
-  "Print the thesis single-sided or double-sided; the outer cover and the approval page must each be printed single-sided. Do not bind the thesis.",
-  "Submit the thesis to the school administrative office from December 2026 onward, by Monday, 21 December 2026. Do not submit before December, even if the thesis is finished early.",
-  "If you cannot submit by the deadline for unavoidable reasons, submit the Graduation Thesis Submission Date Confirmation form (attached) to the staff member in charge in Room 319, Building 301 by Monday, 21 December 2026, and then submit the thesis by Monday, 28 December 2026."
+ "conditions": [
+  "A thesis cannot be submitted by a student who is not graduating.",
+  "Do not submit the thesis before December, even if it is already written.",
+  "The extended deadline of 28 December 2026 applies only if the Graduation Thesis Submission Date Confirmation form was submitted by 21 December 2026.",
+  "Binding is not required; the department office will bind all theses together later.",
+  "Double-sided or single-sided printing is acceptable, but the outer cover and the approval page must each be printed single-sided.",
+  "Students who previously submitted a report when completing the graduation project must still write the thesis in the attached thesis format and obtain their thesis advisor's signature."
  ],
- "translation": "Title: Graduation Thesis Submission for Undergraduate Students Expected to Graduate in February 2027\n\n1. Students expected to graduate in February 2027 should refer to the attached graduation thesis writing guidelines and submit their graduation thesis to the school administrative office by the deadline.\n(1) Who must submit: Primary majors and double majors (including the College of Liberal Studies [자유전공학부]) among those who have applied to graduate in February 2027.\n※ A graduation thesis cannot be submitted alone without graduating.\n(2) Graduation thesis submission deadline: by Monday, 21 December 2026.\n* Even if your thesis has been written in advance, please do not submit it early; submit it from December onward.\n(3) Write your student ID number in pencil at the bottom of the thesis cover.\n* Double majors and College of Liberal Studies students should write \"복수\" (double major) or \"자유\" (Liberal Studies), respectively, in pencil before the student ID number.\n(4) No separate binding is required (the school office will bind all theses together later). Both double-sided and single-sided printing are acceptable. (However, the outer cover and the approval page [인준지] must each be printed single-sided.)\n\n2. Students who, for unavoidable reasons, cannot submit their graduation thesis by the deadline should submit the Graduation Thesis Submission Date Confirmation form [졸업논문제출일 확인서] (form attached) to the staff member in charge in Room 319, Building 301, by Monday, 21 December 2026.\n(1) The thesis submission deadline under the Graduation Thesis Submission Date Confirmation form is Monday, 28 December 2026.\n(2) The confirmation form must be submitted by Monday, 21 December 2026, and the thesis must be submitted by Monday, 28 December.\n\n3. How to complete the thesis\n(1) Outer cover: write \"2027.2\".\n(2) Approval page [인준지]: write the year, month and day on which your thesis advisor signed it.\n\n4. Students who previously submitted a report upon completion of the graduation project must also write their thesis according to the attached graduation thesis format, obtain their thesis advisor's signature, and submit it.\n\n* Inquiries: the department office. The contact person, email address and phone number are given in the original Korean notice.\n\nAttachments (2):\n1. 학부졸업논문 작성지침(2024.8.13).hwp (Undergraduate Graduation Thesis Writing Guidelines, dated 2024.8.13)\n2. 전기정보공학부_졸업논문_제출일_확인서.hwp (Graduation Thesis Submission Date Confirmation form)\n\nNote: The contents of the attached files were not read and are not included in this translation.",
+ "steps": [
+  "Standard submission: Read the attached Undergraduate Graduation Thesis Writing Guidelines (the attachment was not read for this translation).",
+  "Standard submission: Write the thesis following the attached thesis format; on the outer cover, write the date as \"2027.2\".",
+  "Standard submission: Have your thesis advisor sign the approval page (인준지), and write on it the year, month and day the advisor signed.",
+  "Standard submission: Print the thesis (single- or double-sided), printing the outer cover and the approval page single-sided; do not bind it.",
+  "Standard submission: In pencil, write your student ID number at the bottom of the cover; double majors write 복수 and Faculty of Liberal Studies students write 자유 in front of the student ID.",
+  "Standard submission: Submit the thesis to the department administrative office (Building 301, Room 319) in December 2026, no later than Monday, 21 December 2026.",
+  "Unable to meet the deadline: Complete the attached Graduation Thesis Submission Date Confirmation form (졸업논문 제출일 확인서) (the attachment was not read for this translation).",
+  "Unable to meet the deadline: Submit the confirmation form to the staff member in charge at the department office, Building 301, Room 319, by Monday, 21 December 2026.",
+  "Unable to meet the deadline: Prepare the thesis as described for standard submission and submit it to the department office (Building 301, Room 319) by Monday, 28 December 2026."
+ ],
+ "translation": "Graduation Thesis Submission for Bachelor's Students Expected to Graduate in February 2027\n\n1. Students expected to graduate in February 2027 should refer to the attached Graduation Thesis Writing Guidelines and submit their graduation thesis to the department administrative office (학부 행정실) by the deadline.\n(1) Who must submit: Among students who have applied to graduate in February 2027, primary majors and double majors (including the Faculty of Liberal Studies [자유전공학부]).\n※ A student may not submit only a graduation thesis without graduating.\n(2) Graduation thesis submission deadline: by Monday, 21 December 2026.\n* Even if your thesis has already been written, do not submit it early; please submit from December.\n(3) Write your student ID number in pencil at the bottom of the thesis cover.\n* Double majors and Faculty of Liberal Studies students should write, in pencil, 복수 (double major) or 자유 (Liberal Studies) in front of the student ID number.\n(4) Separate binding is not required (the department office will bind all theses together later). Both double-sided and single-sided printing are acceptable. (However, the outer cover and the approval page must each be printed single-sided.)\n\n2. Students who unavoidably cannot submit the graduation thesis by the deadline must submit the Graduation Thesis Submission Date Confirmation form (졸업논문 제출일 확인서; form attached) by Monday, 21 December 2026 to the staff member in charge in Building 301, Room 319 (the name is given in the original notice).\n(1) The thesis submission deadline under the Graduation Thesis Submission Date Confirmation form is Monday, 28 December 2026.\n(2) The confirmation form must be submitted by Monday, 21 December 2026, and the thesis must be submitted by Monday, 28 December.\n\n3. How to write\n(1) Outer cover: write \"2027.2\".\n(2) Approval page (인준지): write the year, month and day on which your thesis advisor signed it.\n\n4. Students who previously submitted a report when completing the graduation project must also write the thesis according to the attached graduation thesis format, obtain their thesis advisor's signature, and submit it.\n\n* Inquiries: the department office (contact details are given in the original notice).\n\nAttachments (2) — the contents of these attachments were not read:\n1. Undergraduate Graduation Thesis Writing Guidelines (2024.8.13) (학부졸업논문 작성지침(2024.8.13).hwp, 340 KB)\n2. Department of Electrical and Computer Engineering Graduation Thesis Submission Date Confirmation form (전기정보공학부_졸업논문_제출일_확인서.hwp, 10 KB)",
  "id": 58044,
  "text_hash": "ddbe96fea582eaca",
  "images": 0,
@@ -51,6 +62,7 @@
   "2. 전기정보공학부_졸업논문_제출일_확인서.hwp"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

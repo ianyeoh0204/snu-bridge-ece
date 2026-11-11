@@ -1,34 +1,42 @@
 {
- "title_en": "[2026 Academic Year, 2nd Semester] Graduation Project (Electrical Engineering Design Project) – 3rd Interim Presentation",
- "summary": "The third interim presentation for the Graduation Project (Electrical Engineering Design Project) will be held on Thursday, 5 November, at 18:30. Students must check their email for their assigned module and attend in the assigned room, as attendance will be taken promptly at the start time.",
- "applies_to": "Students taking the Graduation Project (Electrical Engineering Design Project) [졸업프로젝트(전기공학설계프로젝트)] in the 2nd semester of the 2026 academic year.",
+ "title_en": "Fall 2026 Graduation Project (Electrical Engineering Design Project): Third Interim Presentation",
+ "summary": "Students taking the Graduation Project (Electrical Engineering Design Project) in Fall 2026 must attend the third interim presentation on Thursday, 5 November, at 18:30 in the classroom assigned to their module. Each student's module and further notices have been sent to the email address written on the submitted meeting confirmation form. Attendance is taken exactly at the start time, and any expected absence must be reported to the person in charge in advance, not on the day.",
+ "applies_to": "Students taking the Graduation Project (Electrical Engineering Design Project) in Fall 2026. Attendance at the third interim presentation is expected; unexcused lateness or absence is to be avoided.",
  "dates": [
   {
-   "what": "3rd interim presentation of the Graduation Project",
-   "when": "Thursday, 5 November",
-   "original_ko": "11월 5일 목요일",
+   "what": "Third interim presentation of the Graduation Project (attendance checked exactly at the start time)",
+   "when": "Thursday, 5 November 2026, 18:30",
+   "original_ko": "11월 5일 (목) 18:30",
    "verified": true
   },
   {
-   "what": "3rd interim presentation start time; attendance is checked at this time",
-   "when": "Thursday, 5 November, 18:30",
-   "original_ko": "11월 5일 (목) 18:30",
+   "what": "Deadline to report an expected absence (e.g. reserve forces training or an academic conference) to the person in charge: before the presentation day; notice on the day is not accepted",
+   "when": "Before Thursday, 5 November 2026",
+   "original_ko": "11월 5일 목요일",
    "verified": true
   }
  ],
- "steps": [
-  "Check the email address you wrote on your submitted Interview Confirmation Form [면담확인서] for the notice and your assigned module.",
-  "If you did not receive the email notice, be sure to inform the staff member in charge at the department office (contact details are in the original notice).",
-  "If you wrote a Naver or other non-SNU email address and wish to change it to your SNU account, notify the staff member in charge by email.",
-  "If you cannot attend for a reason such as reserve forces training or an academic conference, notify the staff member in charge in advance. Notification on the day of the presentation is not accepted.",
-  "On Thursday, 5 November, attend the presentation in the room assigned to your module before 18:30. Attendance is checked exactly at the start time."
+ "conditions": [
+  "Attendance is checked exactly at the start time (18:30), so arriving late counts as lateness.",
+  "Unexcused lateness and absence must be avoided.",
+  "If you cannot attend for a reason such as reserve forces training or an academic conference, you must inform the person in charge in advance.",
+  "Notification of absence on the day of the presentation is not accepted.",
+  "If you did not receive the email notice with your module, you must inform the person in charge."
  ],
- "translation": "[2026 Academic Year, 2nd Semester] Graduation Project (Electrical Engineering Design Project) [졸업프로젝트(전기공학설계프로젝트)] – 3rd Interim Presentation\n\nThe third interim presentation of the Graduation Project will be held on Thursday, 5 November.\n\nThe notice and your assigned module have been sent to the email address you wrote on your submitted Interview Confirmation Form [면담확인서]. Please check that email. If you did not receive the email notice, be sure to inform the staff member in charge at the department office (the contact details are given in the original notice).\n\nIf you wrote a Naver or other email account and wish to change the address to your SNU account, please let us know by email.\n\nAttendance will be checked exactly at the start time, so please take care not to be late or absent without permission. (If you are unable to attend for a reason such as reserve forces training or an academic conference, please inform the staff member in charge in advance. Notification on the day itself is not accepted.)\n\n<Teaching Assistant in Charge and Room by Module>\n* 3rd Session: Thursday, 5 November, 18:30 *\n\nModule | Room\nSemiconductor 1 [반도체1] | Room 202\nSemiconductor 2 [반도체2] | Room 818\nElectrical Energy [전기에너지] | Room 103\nElectrophysics [전자물리] | Room 104\nCommunications [통신] | Room 201\nControl [제어] | Room 302\nComputer 1 [컴퓨터1] | Room 102\nComputer 2 [컴퓨터2] | Room 118\nBio [바이오] | Room 106\n\nEach module has an assigned teaching assistant who runs the session; their names are listed in the original notice. The notice does not state the building for these rooms.",
+ "steps": [
+  "Check the email address you wrote on your submitted meeting confirmation form (면담확인서) for the notice and your assigned module.",
+  "If you did not receive the email, inform the person in charge (contact details are in the original notice).",
+  "If you wrote a non-SNU address (for example a Naver account) and wish to change it to your SNU account, tell the person in charge by email.",
+  "If you cannot attend because of reserve forces training, an academic conference or a similar reason, inform the person in charge before the presentation day.",
+  "On Thursday, 5 November, go to your module's classroom (Semiconductor 1: Room 202; Semiconductor 2: Room 818; Electrical Energy: Room 103; Electrophysics: Room 104; Communications: Room 201; Control: Room 302; Computer 1: Room 102; Computer 2: Room 118; Bio: Room 106) and be present before 18:30 for the attendance check."
+ ],
+ "translation": "[Fall 2026] Graduation Project (Electrical Engineering Design Project) Third Interim Presentation\n\nThe third interim presentation of the Graduation Project will be held on Thursday, 5 November.\n\nThe notice and your assigned module have been sent to the email address you wrote on your submitted meeting confirmation form (면담확인서). Please check that email. If you did not receive the email notice, be sure to inform the person in charge (name and email address are in the original notice).\n\nIf you wrote a Naver or other email account and wish to change the address to your SNU account, please let us know by email.\n\nAttendance will be checked exactly at the start time, so please take care not to be late or absent without excuse. (If you have difficulty attending because of reserve forces training, an academic conference or a similar reason, please inform me in advance. Notification on the day is not accepted.)\n\n<Teaching assistant in charge and classroom for each module>\n\n* Session 3: Thursday, 5 November, 18:30 *\n\nModule | Teaching assistant | Classroom\nSemiconductor 1 (반도체1) | [name in original notice] | Room 202\nSemiconductor 2 (반도체2) | [name in original notice] | Room 818\nElectrical Energy (전기에너지) | [name in original notice] | Room 103\nElectrophysics (전자물리) | [name in original notice] | Room 104\nCommunications (통신) | [name in original notice] | Room 201\nControl (제어) | [name in original notice] | Room 302\nComputer 1 (컴퓨터1) | [name in original notice] | Room 102\nComputer 2 (컴퓨터2) | [name in original notice] | Room 118\nBio (바이오) | [name in original notice] | Room 106\n\n(The notice does not state the building.)",
  "id": 58183,
  "text_hash": "8408bf11c8502333",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

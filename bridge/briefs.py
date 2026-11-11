@@ -16,35 +16,56 @@ from pathlib import Path
 from . import llm
 from .notices import ROOT, _fetch
 
+PROMPT_VERSION = 2  # raise this when SYSTEM or BRIEF changes; every notice is then translated again
 BRIEF = {
     "type": "object", "additionalProperties": False,
-    "required": ["title_en", "summary", "applies_to", "dates", "steps", "translation"],
+    "required": ["title_en", "summary", "applies_to", "dates", "conditions", "steps", "translation"],
     "properties": {
         "title_en": {"type": "string"},
-        "summary": {"type": "string", "description": "One or two formal sentences"},
-        "applies_to": {"type": "string", "description": "Who must act, as the notice states it. Empty if not stated."},
+        "summary": {"type": "string", "description": "Two or three formal sentences: who must act, what they must do, by when and where"},
+        "applies_to": {"type": "string", "description": "Who must act, with every limit the notice states. Empty if not stated."},
         "dates": {"type": "array", "items": {
             "type": "object", "additionalProperties": False, "required": ["what", "when", "original_ko"],
             "properties": {"what": {"type": "string"}, "when": {"type": "string"},
                            "original_ko": {"type": "string", "description": "The date text copied exactly from the notice"}}}},
+        "conditions": {"type": "array", "items": {"type": "string"},
+                       "description": "Conditions, exceptions, exclusions, prohibitions and consequences. Empty if none."},
         "steps": {"type": "array", "items": {"type": "string"}, "description": "Actions in order. Empty if none."},
         "translation": {"type": "string", "description": "Full English translation, paragraphs separated by blank lines"},
     },
 }
 
+# Version 2 follows an audit (tools/audit.py) in which a second reader found no wrong dates in ten notices but found
+# that every short summary left out something a student could need: who exactly, a condition, a further date.
 SYSTEM = """You translate notices from a Korean university department's academic board for international \
-students who cannot read Korean. Write formal, plain English, as an official university page would.
+students who cannot read Korean. Many will read only the short parts (summary, who must act, dates, conditions, \
+steps) and never open the full translation, so the short parts must be complete enough to act on safely. \
+Write formal, plain English, as an official university page would.
 
-- Use only what the notice states. Never add outside knowledge, and never infer a date.
+- Use only what the notice states. Never add outside knowledge, never infer a date, and never narrow or widen who \
+a rule applies to.
 - `title_en`: short and formal, at most 14 words. Write "Fall 2026" for 2026학년도 2학기 and "Spring 2026" for 1학기.
-- `dates`: every deadline, period or event with a calendar date in the notice, and nothing else. \
-`original_ko` is the date text copied exactly as written in the notice. Do not list the date the notice was posted.
-- `steps`: what the student must do, in order, with the place and method stated in the notice. When the notice \
-describes separate cases (for example attending in person and attending online), begin every step of a case with \
-the case name and a colon, worded identically each time; the site shows the name once as a heading.
-- `applies_to`: who must act, exactly as the notice limits it. Keep every condition and exception.
+- `summary`: two or three sentences. Who must act, what they must do, by when and where.
+- `applies_to`: exactly who must act: program, year of admission, registered semester, nationality or any other \
+limit in the notice, and whether it is mandatory. Keep every condition.
+- `dates`: every date, time, period or deadline a student could need to act on or plan around: when something \
+happens, opens, closes or is due. Include times of day, entry cut-off times, fee periods, result and submission \
+deadlines, and periods stated loosely (such as "in November"). In `what`, say what it is for and, if it is only for \
+some students, for whom. `original_ko` is the date text copied exactly as written in the notice. Do not list the \
+date the notice was posted, or dates that only tell when a rule was made.
+- `conditions`: one short sentence for every condition, exception, exclusion, prohibition and consequence that \
+changes what a student should do or what happens if they do not: who is exempt, what is not accepted, what is not \
+allowed, what happens when a deadline is missed, what else must already be completed.
+- `steps`: what the student must do, in order. Each step says where (building and room number whenever the notice \
+gives them anywhere), how (the form, website or menu path) and what to bring or submit. If the notice tells \
+students to read another notice or an attachment first, that is a step. When the notice describes separate cases \
+(for example attending in person and attending online), begin every step of a case with the case name and a \
+colon, worded identically each time; the site shows the name once as a heading.
 - `translation`: the whole notice in English. Keep the structure and every condition. Keep course codes, \
 form names and system menu paths, giving the Korean term in brackets where a student must recognise it on screen.
+- Keep distinct words distinct: 날인 is a seal (stamp) and 서명 is a signature; 청강 is auditing and 수강신청 is \
+course registration; 신규교육 is the initial training for those who have not yet completed it, not training for \
+new employees; 석박통합과정 is the integrated master's-doctoral program. 필수 means must.
 - Never include a person's name, email address or phone number. Refer to "the department office" and \
 tell the reader the contact is in the original notice.
 - If the notice refers to an image or attachment whose content is not in the text, say that it was not read."""
@@ -89,21 +110,24 @@ def _translate(notice: dict, target: Path) -> str:
     source = read(notice["url"])
     time.sleep(1)
     digest = hashlib.sha256(source["text"].encode("utf-8")).hexdigest()[:16]
-    if target.exists() and json.loads(target.read_text(encoding="utf-8"))["text_hash"] == digest:
+    old = json.loads(target.read_text(encoding="utf-8")) if target.exists() else None
+    if old and old["text_hash"] == digest and old.get("prompt") == PROMPT_VERSION:
         return ""
+    changed = bool(old) and old["text_hash"] != digest  # the notice itself was edited, not just our instructions
     brief = llm.ask(SYSTEM, [llm.text(f"Title: {notice['title_ko']}\nPosted: {notice['date']}\n\n{source['text']}")],
                     BRIEF, max_tokens=32000, effort="medium")
     body = _squash(notice["title_ko"] + source["text"])  # a deadline is sometimes stated only in the title
     for date in brief["dates"]:
         date["verified"] = _squash(date["original_ko"]) in body
     brief.update(id=notice["id"], text_hash=digest, images=source["images"], attachments=source["attachments"],
-                 model=llm.MODEL, written=datetime.datetime.now(SEOUL).date().isoformat(), revised=target.exists())
+                 model=llm.MODEL, written=datetime.datetime.now(SEOUL).date().isoformat(), prompt=PROMPT_VERSION,
+                 revised=changed or bool(old and old.get("revised")))
     target.write_text(json.dumps(brief, ensure_ascii=False, indent=1), encoding="utf-8")
     unverified = sum(not d["verified"] for d in brief["dates"])
     return f"{notice['id']} {len(brief['dates'])} dates, {unverified} not found in the text, {source['images']} images unread"
 
 
-def update(department: str, limit: int = 0) -> tuple[list[str], list[str], int]:
+def update(department: str, limit: int = 0, only: set | None = None) -> tuple[list[str], list[str], int]:
     """Translate what is new or changed. Returns (written, failed, checked). One bad notice never stops the rest."""
     data = ROOT / "data" / department
     out = data / "briefs"
@@ -112,6 +136,8 @@ def update(department: str, limit: int = 0) -> tuple[list[str], list[str], int]:
     for notice in json.loads((data / "notices.json").read_text(encoding="utf-8")):
         if limit and len(written) >= limit:
             break
+        if only and notice["id"] not in only:
+            continue
         try:
             line = _translate(notice, out / f"{notice['id']}.json")
         except Exception as error:  # network trouble, a changed page layout, or a notice too long for the model

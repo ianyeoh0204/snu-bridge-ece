@@ -1,28 +1,48 @@
 {
- "title_en": "Additional Night Library Shuttle Buses and Late-Night Shuttle Route Change During Examination Periods",
- "summary": "During the examination periods, one additional bus will run on the Administration Building to Seoul National University Station night library shuttle route. The late-night shuttle will run on a new timetable and a revised route that adds the Open-Air Auditorium stop.",
- "applies_to": "",
+ "title_en": "Additional Night Library Shuttles and Late-Night Shuttle Route Change During Exam Periods, Fall 2026",
+ "summary": "During the Fall 2026 exam periods, the university will add one bus to the night library shuttle from the Administration Building to Seoul National Univ. Station and will change the late-night shuttle timetable and route. The changes apply from 12 to 30 October 2026 and from 30 November to 14 December 2026, excluding weekends and public holidays. No action is required; shuttle users should note the new late-night departure times from Building 302.",
+ "applies_to": "All users of the night library shuttle and the late-night shuttle during the stated exam periods. This is an information notice; no action is mandatory.",
  "dates": [
   {
-   "what": "Operating period, first round (excluding weekends and public holidays)",
+   "what": "First exam-period operation (extra library shuttle bus and changed late-night shuttle), weekends and public holidays excluded",
    "when": "Monday 12 October 2026 to Friday 30 October 2026",
-   "original_ko": "2026. 10. 12.(월) ~ 10. 30.(금)",
+   "original_ko": "1차: 2026. 10. 12.(월) ~ 10. 30.(금)",
    "verified": true
   },
   {
-   "what": "Operating period, second round (excluding weekends and public holidays)",
+   "what": "Second exam-period operation (extra library shuttle bus and changed late-night shuttle), weekends and public holidays excluded",
    "when": "Monday 30 November 2026 to Monday 14 December 2026",
-   "original_ko": "2026. 11. 30.(월) ~ 12. 14.(월)",
+   "original_ko": "2차: 2026. 11. 30.(월) ~ 12. 14.(월)",
+   "verified": true
+  },
+  {
+   "what": "Night library shuttle departure times from the Administration Building (unchanged)",
+   "when": "21:10, 21:40, 22:10, 22:40, 23:10",
+   "original_ko": "21:10, 21:40, 22:10, 22:40, 23:10",
+   "verified": true
+  },
+  {
+   "what": "Late-night shuttle departure times from Building 302 during the exam periods (new timetable)",
+   "when": "23:40, 00:15, 00:50, 01:25, 02:00",
+   "original_ko": "23:40 00:15 00:50 01:25 02:00",
    "verified": true
   }
  ],
+ "conditions": [
+  "The changed operation does not apply on weekends or public holidays.",
+  "Only the Administration Building to Seoul National Univ. Station library shuttle gains a bus (from 2 to 3); the Administration Building to Daehak-dong route stays at 2 buses.",
+  "Night library shuttle departure times do not change.",
+  "The late-night shuttle now departs earlier (first bus 23:40 instead of 24:00), runs every 35 minutes instead of every 30 minutes, and still uses only one bus.",
+  "The late-night shuttle route now adds a stop at the Open-Air Auditorium (노천강당) between the Graduate School of International Studies and the Dormitory."
+ ],
  "steps": [],
- "translation": "Title: Additional Night Library Shuttle Buses and Late-Night Shuttle Route Change During Examination Periods\n\nDuring the examination periods, additional buses will be added to the night library shuttle route, and the route of the late-night shuttle will be changed. The shuttles will operate as set out below. Please take note.\n\n○ Operating periods (excluding weekends and public holidays)\n- 1st round: 12 October 2026 (Mon) to 30 October 2026 (Fri)\n- 2nd round: 30 November 2026 (Mon) to 14 December 2026 (Mon)\n\n○ Night library shuttle: additional bus plan\n- Administration Building [행정관] → Seoul National University Station [서울대입구역]: 2 buses before the change; 3 buses after the change.\n- Administration Building [행정관] → Daehak-dong [대학동]: 2 buses before the change; 2 buses after the change (no change).\n- Operating times: same as at present (21:10, 21:40, 22:10, 22:40, 23:10).\n\n○ Late-night shuttle operating plan\n\nBefore the change:\n- Departure times (from Building 302 [302동]): 24:00, 00:30, 01:00, 01:30, 02:00\n- Number of buses: 1\n- Interval: 30 minutes\n- Route: Building 302 [302동] – Building 301 [301동] – Institute of New Energy and Resources Technology [에너지자원신기술연구소] – Building 38 [38동] – College of Agriculture and Life Sciences [농생대] – College of Natural Sciences [자연대] – Main Gate [정문] – Business School [경영대] – College of Veterinary Medicine [수의대] – Graduate School of International Studies [국제대학원] – Dormitory [기숙사] – BK International House [BK국제관] – Nakseongdae (Inheon Elementary School) [낙성대(인헌초)] – Seoul National University Station [서울대입구역]\n\nAfter the change:\n- Departure times (from Building 302 [302동]): 23:40, 00:15, 00:50, 01:25, 02:00\n- Number of buses: 1\n- Interval: 35 minutes\n- Route: Building 302 [302동] – Building 301 [301동] – Institute of New Energy and Resources Technology [에너지자원신기술연구소] – Building 38 [38동] – College of Agriculture and Life Sciences [농생대] – College of Natural Sciences [자연대] – Main Gate [정문] – Business School [경영대] – College of Veterinary Medicine [수의대] – Graduate School of International Studies [국제대학원] – Open-Air Auditorium [노천강당] – Dormitory [기숙사] – BK International House [BK국제관] – Nakseongdae (Inheon Elementary School) [낙성대(인헌초)] – Seoul National University Station [서울대입구역]\n\nNote: The Open-Air Auditorium [노천강당] stop has been added to the late-night shuttle route, between the Graduate School of International Studies and the Dormitory.",
+ "translation": "Notice on Additional Night Library Shuttle Buses and Change of Late-Night Shuttle Route During Exam Periods\n\nDuring the exam periods, additional buses will be added to the night library shuttle route and the route of the late-night shuttle will be changed, operating as follows. Please take note.\n\n○ Operation period (excluding weekends and public holidays)\n- 1st period: Monday 12 October 2026 – Friday 30 October 2026\n- 2nd period: Monday 30 November 2026 – Monday 14 December 2026\n\n○ Night library shuttle additional bus plan\n- Administration Building (행정관) → Seoul National Univ. Station (서울대입구역): before change 2 buses; after change 3 buses.\n- Administration Building (행정관) → Daehak-dong (대학동): before change 2 buses; after change 2 buses.\n- Operating times: same as at present (21:10, 21:40, 22:10, 22:40, 23:10).\n\n○ Late-night shuttle operation plan\n- Before change: departures from Building 302 at 24:00, 00:30, 01:00, 01:30, 02:00; 1 bus; every 30 minutes; route: Building 302 – Building 301 – Institute of Energy and Resources New Technology (에너지자원신기술연구소) – Building 38 – College of Agriculture and Life Sciences (농생대) – College of Natural Sciences (자연대) – Main Gate (정문) – Business School (경영대) – College of Veterinary Medicine (수의대) – Graduate School of International Studies (국제대학원) – Dormitory (기숙사) – BK International House (BK국제관) – Nakseongdae (Inheon Elementary School) (낙성대(인헌초)) – Seoul National Univ. Station (서울대입구역).\n- After change: departures from Building 302 at 23:40, 00:15, 00:50, 01:25, 02:00; 1 bus; every 35 minutes; route: Building 302 – Building 301 – Institute of Energy and Resources New Technology (에너지자원신기술연구소) – Building 38 – College of Agriculture and Life Sciences (농생대) – College of Natural Sciences (자연대) – Main Gate (정문) – Business School (경영대) – College of Veterinary Medicine (수의대) – Graduate School of International Studies (국제대학원) – Open-Air Auditorium (노천강당) – Dormitory (기숙사) – BK International House (BK국제관) – Nakseongdae (Inheon Elementary School) (낙성대(인헌초)) – Seoul National Univ. Station (서울대입구역).",
  "id": 58122,
  "text_hash": "a4379c4c14145ac1",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

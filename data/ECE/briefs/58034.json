@@ -1,72 +1,87 @@
 {
- "title_en": "Notice of the Multiple-Major Selection Plan for Semester 1 of the 2027 Academic Year",
- "summary": "This notice announces the selection plan for multiple majors (minor, double major, joint major, interdisciplinary major and student-designed major) for Semester 1 of the 2027 academic year, including eligibility, application periods, application method and limits on the number of multiple majors. Students from other departments applying for a double major or minor in the Department of Electrical and Computer Engineering (전기정보공학부) must also submit a transcript and a study plan by email.",
- "applies_to": "Enrolled students (including students scheduled to return from leave) who wish to apply for a multiple major for Semester 1 of 2027 and who have completed at least two regular semesters and earned at least 33 credits. Applicants for a student-designed major must have an overall GPA of 3.3 or higher. Students from other departments applying for a double major or minor in the Department of Electrical and Computer Engineering must have a GPA of 2.7 or higher and must have completed at least two of the department's prerequisite courses. Selection is for students enrolled as of 1 March 2027; results cannot be applied to the February 2027 (2027. 2. 24.) graduation.",
+ "title_en": "Spring 2027 Multiple-Major Selection Plan",
+ "summary": "Enrolled students (including those expected to return from leave) who have completed at least two regular semesters and earned at least 33 credits may apply for a multiple major (minor, double major, interdisciplinary major, linked major or student-designed major) for Spring 2027. Applications are made by the student on the portal (mysnu.ac.kr) from 12 to 16 October 2026 for double and interdisciplinary majors, and from 26 to 30 October 2026 for minors, linked majors and student-designed majors. Students from other departments applying for a double major or minor in Electrical and Computer Engineering must also email a transcript and a study plan by 18:00 on 16 October (double major) or 30 October (minor).",
+ "applies_to": "Optional (by application). Open to enrolled students, including students expected to return from leave, who have completed at least two regular semesters and earned at least 33 credits, and who will be enrolled on 1 March 2027. Students from other departments applying for a double major or minor in the Department of Electrical and Computer Engineering (전기정보공학부) must also have a GPA of at least 2.7 and have completed at least two of its prerequisite courses. Applicants for a student-designed major must have an overall GPA of at least 3.3.",
  "dates": [
   {
-   "what": "Application period for double major and joint major",
-   "when": "12 October 2026 (Mon) 09:00 to 16 October (Fri) 18:00",
+   "what": "Application period for double majors and interdisciplinary majors",
+   "when": "Monday 12 October 2026, 09:00 to Friday 16 October 2026, 18:00",
    "original_ko": "2026.10.12(월) 09:00 ~ 10.16.(금) 18:00",
    "verified": true
   },
   {
-   "what": "Application period for minor, interdisciplinary major and student-designed major",
-   "when": "26 October 2026 (Mon) 09:00 to 30 October (Fri) 18:00",
+   "what": "Application period for minors, linked majors and student-designed majors",
+   "when": "Monday 26 October 2026, 09:00 to Friday 30 October 2026, 18:00",
    "original_ko": "2026.10. 26.(월) 09:00 ~ 10. 30.(금) 18:00",
    "verified": true
   },
   {
-   "what": "Deadline for email submission of documents (transcript, study plan) by students from other departments applying for a double major in Electrical and Computer Engineering",
-   "when": "16 October (Fri), 18:00",
+   "what": "Deadline to email the transcript and study plan (students from other departments applying for the Electrical and Computer Engineering double major)",
+   "when": "Friday 16 October 2026, 18:00",
    "original_ko": "10. 16.(금) 18:00까지",
    "verified": true
   },
   {
-   "what": "Announcement of double major selection results (Electrical and Computer Engineering)",
-   "when": "By 23 October 2026 (Fri) (scheduled)",
+   "what": "Double major selection results announced (Electrical and Computer Engineering applicants from other departments)",
+   "when": "By Friday 23 October 2026",
    "original_ko": "2026. 10. 23.(금)까지",
    "verified": true
   },
   {
-   "what": "Deadline for email submission of documents (transcript, study plan) by students from other departments applying for a minor in Electrical and Computer Engineering",
-   "when": "30 October (Fri), 18:00",
+   "what": "Deadline to email the transcript and study plan (students from other departments applying for the Electrical and Computer Engineering minor)",
+   "when": "Friday 30 October 2026, 18:00",
    "original_ko": "10.30.(금) 18:00까지",
    "verified": true
   },
   {
-   "what": "Announcement of minor selection results (Electrical and Computer Engineering)",
-   "when": "By 20 November 2026 (Fri) (scheduled)",
+   "what": "Minor selection results announced (Electrical and Computer Engineering applicants from other departments)",
+   "when": "By Friday 20 November 2026",
    "original_ko": "2026. 11.20(금)까지",
    "verified": true
   },
   {
-   "what": "Selected multiple majors reflected in academic records",
-   "when": "15 January 2027 (Fri) (scheduled)",
+   "what": "Selected multiple majors expected to be entered in academic records (all selected students)",
+   "when": "Friday 15 January 2027 (planned)",
    "original_ko": "2027. 1. 15(금)",
    "verified": true
   },
   {
-   "what": "Reference date for enrolment status of applicants",
+   "what": "Selection applies to students enrolled on this date",
    "when": "1 March 2027",
    "original_ko": "2027년 3월 1일",
    "verified": true
   },
   {
-   "what": "Late (February) graduation, to which selection results cannot be applied",
+   "what": "Graduation to which Spring 2027 selection results cannot be applied",
    "when": "24 February 2027",
    "original_ko": "2027. 2. 24.",
    "verified": true
   }
  ],
- "steps": [
-  "Check the eligibility requirements and the limit on the number of multiple majors, and check the attachments for changes to these rules (the attachments were not read for this translation).",
-  "During the applicable application period, apply yourself on the portal (mysnu.ac.kr) under Academic Information [학사정보] > Changes in Academic Status [학적변동] > Application [신청] > Major/Program Application [전공/과정 신청].",
-  "If applying for a student-designed major: after applying online, submit the paper application form and related documents; approval follows submission (the place of submission is not stated in the notice).",
-  "If you are from another department and are applying for a double major or minor in Electrical and Computer Engineering: prepare one official transcript issued through certificate issuance (not the cumulative grade report), showing the department's prerequisite courses, and one study plan using the attached form [전기정보공학부 복수(부)전공_수학계획서].",
-  "Email these two documents to the department office (the address is in the original notice) by 16 October, 18:00 for a double major, or by 30 October, 18:00 for a minor. State your student number and name on each document. Documents not submitted within the period will be treated as having no intention to apply.",
-  "Wait for the selection results: double major by 23 October 2026; minor by 20 November 2026."
+ "conditions": [
+  "All applicants must have completed at least two regular semesters and earned at least 33 credits; students expected to return from leave may apply.",
+  "Selection is for students enrolled on 1 March 2027, so Spring 2027 results cannot count toward graduation on 24 February 2027.",
+  "Students from other departments applying for a double major or minor in Electrical and Computer Engineering need a GPA of at least 2.7.",
+  "They must also have completed at least two of: Physics 2 (or Honors Physics 2), Engineering Mathematics 1, Engineering Mathematics 2, and Computer Concepts and Practice.",
+  "The transcript must be issued through the certificate issuance service; a cumulative grade report is not accepted.",
+  "If the transcript and study plan are not submitted within the period, the student is treated as not wishing to apply.",
+  "A student-designed major requires an overall GPA of at least 3.3 and is approved only after the paper application form and related documents are submitted following the online application.",
+  "If you are selected for a double major or minor in a major you are already taking as a multiple major, the existing multiple major is cancelled automatically.",
+  "You cannot be selected for both a double major and a minor in the same major in the same academic year and semester; if not selected for the double major, you may apply for the minor.",
+  "You may apply for at most 3 multiple majors per semester and take at most 6 in total.",
+  "Based on the application date: 6 or more multiple majors already taken means you cannot apply; 5 means 1 application; 4 means 2; 3 or fewer means 3.",
+  "The eligibility and limit changes are explained in an attachment, which was not read."
  ],
- "translation": "Notice of the Multiple-Major Selection Plan for Semester 1 of the 2027 Academic Year\nPosted: 2026-09-04\n\nWe announce the selection plan for multiple majors (minor, double major, joint major, interdisciplinary major and student-designed major) for Semester 1 of the 2027 academic year. Eligible students should apply within the deadline.\nIn addition, the application eligibility and the number of multiple majors each student may complete are limited, so please be sure to check the changes described in the attachment. (Note: the content of the attachments was not read for this translation.)\n\nA. Eligibility\n○ Common requirement: enrolled students (including students scheduled to return from leave) who have completed at least two regular semesters and earned at least 33 credits.\n○ Students from other departments applying for a multiple major (double major or minor) in the Department of Electrical and Computer Engineering [전기정보공학부]: GPA of 2.7 or higher.\n○ Student-designed major: overall GPA of 3.3 or higher.\n\nB. Application periods\n○ Double major and joint major: 12 October 2026 (Mon) 09:00 to 16 October (Fri) 18:00\n○ Minor, interdisciplinary major and student-designed major: 26 October 2026 (Mon) 09:00 to 30 October (Fri) 18:00\n\nC. How to apply\n○ Students apply themselves on the portal (mysnu.ac.kr) under Academic Information [학사정보] > Changes in Academic Status [학적변동] > Application [신청] > Major/Program Application [전공/과정 신청].\n(However, for the student-designed major, approval is given after the online application and submission of a paper application form and related documents.)\n\nD. Students from other departments applying for a multiple major (double major or minor) in the Department of Electrical and Computer Engineering\n○ Double major documents: one transcript (an official transcript issued through certificate issuance, not the cumulative grade report) and one study plan, to be submitted by email to the department office by 16 October (Fri), 18:00.\n○ Double major selection results: scheduled to be announced by 23 October 2026 (Fri).\n○ Minor documents: one transcript (an official transcript issued through certificate issuance, not the cumulative grade report) and one study plan, to be submitted by email to the department office by 30 October (Fri), 18:00.\n○ Minor selection results: scheduled to be announced by 20 November 2026 (Fri).\n* When submitting documents, state your student number and name. Example: Transcript: \"2025-** [Name] 성적\"; Study plan: \"2025-** [Name]\".\n(The email address is given in the original notice.)\n※ If the documents (transcript and study plan) are not submitted within the submission period, you will be considered to have no intention to apply.\n※ Selected multiple majors will be reflected in academic records: scheduled for 15 January 2027 (Fri).\n※ Multiple majors for Semester 1 of 2027 are selected for students enrolled as of 1 March 2027. Therefore, the Semester 1 2027 selection results cannot be applied to the late graduation (24 February 2027).\n\nE. Criteria for students of other majors applying for a multiple major (double major or minor) in the Department of Electrical and Computer Engineering\n- Eligibility: GPA of 2.7 or higher, and completion of at least two of the department's prerequisite major courses: Physics 2 [물리학 2] (or Advanced Physics 2 [고급물리학2]), Engineering Mathematics 1 [공학수학 1], Engineering Mathematics 2 [공학수학 2], and Computer Concepts and Practice [컴퓨터의 개념 및 실습].\n- Documents: transcript (with the department's prerequisite major courses marked); study plan (using the attached form).\n\nF. Important notes\n○ If you are selected for a double major or minor in the same major as a multiple major you are already taking, the multiple major you are already taking will be cancelled automatically.\n○ You cannot be selected for both a double major and a minor in the same major in the same academic year/semester. If you are not selected for the double major, you may apply for the minor.\n○ Limit on the number of multiple majors per student:\n- Maximum number of multiple majors you may apply for per semester: 3\n- Number of multiple majors one person may complete: 6\n- Number of multiple majors you may apply for, by situation (as of the application date):\n# Taking 6 or more multiple majors: cannot apply\n# Taking 5 multiple majors: may apply for 1\n# Taking 4 multiple majors: may apply for 2\n# Taking 3 or fewer multiple majors: may apply for 3\n\n* Enquiries: the department office (contact details are in the original notice).\n\nAttachments (7) — the content of these files was not read:\n1. Student-Designed Major – Guidance [학생설계전공-안내사항.hwp]\n2. SNU Genie Service Manual for searching multiple-major criteria and designing a student-designed major [다전공 기준 검색, 학생설계전공 설계를 위한 《스누지니 서비스 매뉴얼》.hwp]\n3. How to apply for a multiple major via the app (students) [앱 다전공 신청 방법(학생).pdf]\n4. How to apply for a multiple major online (students) [온라인 다전공 신청 방법(학생).pdf]\n5. Guide to applying for a student-designed major (students) [학생설계전공 신청 방법 안내(학생).pdf]\n6. Electrical and Computer Engineering double major (minor) study plan form [전기정보공학부 복수(부)전공_수학계획서.hwp]\n7. Major Design Support Center multiple-major counselling poster [전공설계지원센터 다전공 상담 안내 포스터.pdf]",
+ "steps": [
+  "All applicants: Read the attached documents on the changes to eligibility and the limit on the number of multiple majors (attachments were not read for this translation).",
+  "All applicants: Apply yourself within your period on the portal (mysnu.ac.kr) under Academic Information > Change of Academic Status > Application > Major/Program Application (학사정보 > 학적변동 > 신청 > 전공/과정 신청).",
+  "Student-designed major applicants: After applying online, submit the paper application form and related documents for approval (the notice does not say where; see the attached guides, which were not read).",
+  "Electrical and Computer Engineering double major (other departments): By 18:00 on 16 October 2026, email one transcript (issued via certificate issuance, showing the prerequisite courses) and one study plan (attached form, 수학계획서) to the address in the original notice, labelling each file with your student ID and name.",
+  "Electrical and Computer Engineering double major (other departments): Check your result, to be announced by 23 October 2026.",
+  "Electrical and Computer Engineering minor (other departments): By 18:00 on 30 October 2026, email one transcript (issued via certificate issuance, showing the prerequisite courses) and one study plan (attached form, 수학계획서) to the address in the original notice, labelling each file with your student ID and name.",
+  "Electrical and Computer Engineering minor (other departments): Check your result, to be announced by 20 November 2026."
+ ],
+ "translation": "Spring 2027 Multiple-Major Selection Plan\n\nWe announce the selection plan for multiple majors (minor, double major, interdisciplinary major, linked major and student-designed major) for Spring 2027. Eligible students should apply within the deadline.\nIn addition, eligibility and the number of multiple majors each person may take are limited, so you must check the changes in the attachment.\n\nA. Eligibility\n○ Common requirement: enrolled students (including students expected to return from leave) who have completed at least two regular semesters and earned at least 33 credits\n○ Students from other departments applying for a multiple major (double major, minor) in the Department of Electrical and Computer Engineering (전기정보공학부): GPA of at least 2.7\n○ Student-designed major: overall GPA of at least 3.3\n\nB. Application period\n○ Double and interdisciplinary majors: Monday 12 October 2026, 09:00 to Friday 16 October 2026, 18:00\n○ Minors, linked majors and student-designed majors: Monday 26 October 2026, 09:00 to Friday 30 October 2026, 18:00\n\nC. How to apply\n○ Students apply themselves on the portal (mysnu.ac.kr) > Academic Information (학사정보) > Change of Academic Status (학적변동) > Application (신청) > Major/Program Application (전공/과정 신청)\n(However, a student-designed major is approved after the online application and submission of a paper application form and related documents.)\n\nD. Students from other departments applying for a multiple major (double major, minor) in Electrical and Computer Engineering\n○ Double major documents: one transcript (a transcript issued through certificate issuance, not a cumulative grade report) and one study plan (submit by email to the address in the original notice by Friday 16 October, 18:00)\n○ Double major selection results: to be announced by Friday 23 October 2026\n○ Minor documents: one transcript (a transcript issued through certificate issuance, not a cumulative grade report) and one study plan (submit by email to the address in the original notice by Friday 30 October, 18:00)\n○ Minor selection results: to be announced by Friday 20 November 2026\n* State your student ID and name when submitting documents, e.g. Transcript: 2025-** [Name] transcript; Study plan: 2025-** [Name]\n※ If the documents (transcript, study plan) are not submitted within the submission period, you will be considered as not wishing to apply.\n※ Selected students' multiple majors will be entered in academic records: Friday 15 January 2027 (planned)\n※ Spring 2027 multiple majors are selected for students enrolled on 1 March 2027, so Spring 2027 selection results cannot be applied to the graduation of 24 February 2027 (후기 graduation).\n\nE. Criteria for students of other majors applying for a multiple major (double major, minor) in Electrical and Computer Engineering\nEligibility: GPA of at least 2.7, and completion of at least two of the Electrical and Computer Engineering prerequisite courses (Physics 2 (or Honors Physics 2), Engineering Mathematics 1, Engineering Mathematics 2, Computer Concepts and Practice)\nRequired documents:\n- Transcript (showing the Electrical and Computer Engineering prerequisite courses)\n- Study plan (수학계획서): attached form\n\nF. Important notes\n○ If you are selected for a double major or minor in the same major you are already taking as a multiple major, the multiple major you are already taking is automatically cancelled.\n○ You cannot be selected for both a double major and a minor in the same major in the same academic year/semester. If you are not selected for the double major, you may apply for the minor.\n○ Limit on the number of multiple majors per person\n- Maximum number of multiple majors you may apply for per semester: 3\n- Number of multiple majors one person may take: 6\n- Number of applications allowed depending on your situation:\n# Taking 6 or more multiple majors as of the application date: cannot apply\n# Taking 5 multiple majors as of the application date: may apply for 1\n# Taking 4 multiple majors as of the application date: may apply for 2\n# Taking 3 or fewer multiple majors as of the application date: may apply for 3\n\n* Enquiries: the department office (contact details are in the original notice).\n\nAttachments (7) (the contents of the attachments were not read):\n1. Student-designed major information (학생설계전공-안내사항.hwp)\n2. SNU Genie service manual for searching multiple-major criteria and designing a student-designed major (다전공 기준 검색, 학생설계전공 설계를 위한 《스누지니 서비스 매뉴얼》.hwp)\n3. How to apply for a multiple major on the app (students) (앱 다전공 신청 방법(학생).pdf)\n4. How to apply for a multiple major online (students) (온라인 다전공 신청 방법(학생).pdf)\n5. How to apply for a student-designed major (students) (학생설계전공 신청 방법 안내(학생).pdf)\n6. Electrical and Computer Engineering double major (minor) study plan form (전기정보공학부 복수(부)전공_수학계획서.hwp)\n7. Major Design Support Center multiple-major counselling poster (전공설계지원센터 다전공 상담 안내 포스터.pdf)",
  "id": 58034,
  "text_hash": "8d21d887378b9ee6",
  "images": 0,
@@ -80,6 +95,7 @@
   "7. 전공설계지원센터 다전공 상담 안내 포스터.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

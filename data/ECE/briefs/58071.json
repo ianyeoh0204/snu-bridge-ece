@@ -1,106 +1,115 @@
 {
- "title_en": "[2027 Spring Semester] Electrical Engineering Design Project (Graduation Project) Information",
- "summary": "The department announces the schedule for proposing, applying for and assigning Electrical Engineering Design Project (Graduation Project) topics for the 2027 Spring semester, together with the interim and final presentations and the thesis submission. Students should prepare for the graduation project according to this schedule.",
- "applies_to": "Students preparing the 2027 Spring semester Electrical Engineering Design Project (Graduation Project). The notice states that all students must take part in the interim presentations.",
+ "title_en": "Spring 2027 Electrical Engineering Design Project (Graduation Project) Schedule",
+ "summary": "Students preparing to take the Electrical Engineering Design Project (Graduation Project) in Spring 2027 must choose and apply for a project through the department intranet (Department website > Intranet > Classes > Graduation Project Topic Check and Preference), with first-round preferences open from 21 October (Wed) to 28 October (Wed). After an interview with the preferred professor, students must submit a paper interview confirmation form to the department office in Building 301, Room 308 (the office inside the laboratory), during the interview period. All students must then attend the midterm presentations (March–May), give a poster presentation in the last week of May, and submit a graduation thesis in early to mid June.",
+ "applies_to": "Students preparing to take the Electrical Engineering Design Project (Graduation Project) in Spring 2027 (2027학년도 1학기). The notice states no further limits. Attendance at the midterm presentations is mandatory for all students.",
  "dates": [
   {
-   "what": "Project topic proposals uploaded by each laboratory (4 weeks)",
-   "when": "1 October (Thu) – 2 November (Mon)",
+   "what": "Project proposal period: each laboratory uploads its proposed projects",
+   "when": "1 October (Thu) – 2 November (Mon) (4 weeks)",
    "original_ko": "10.1(목) – 11.2(월)",
    "verified": true
   },
   {
-   "what": "Project topics posted on the intranet",
-   "when": "Until the interview deadline",
+   "what": "Project announcement on the intranet",
+   "when": "Until the end of the interview period",
    "original_ko": "면담 마감까지",
    "verified": true
   },
   {
-   "what": "1st round preference applications by students (7 days)",
-   "when": "21 October (Wed) – 28 October (Wed)",
+   "what": "First-round preference: students submit applications",
+   "when": "21 October (Wed) – 28 October (Wed) (7 days)",
    "original_ko": "10.21(수) – 10.28(수)",
    "verified": true
   },
   {
-   "what": "1st round preference changes (3 days; new applications not allowed)",
-   "when": "29 October (Thu) – 2 November (Mon)",
+   "what": "First-round change period (no new preferences allowed)",
+   "when": "29 October (Thu) – 2 November (Mon) (3 days)",
    "original_ko": "10.29(목) - 11.2(월)",
    "verified": true
   },
   {
-   "what": "1st round interviews with professors and paper submission of the Interview Confirmation Form (2 weeks)",
-   "when": "3 November (Tue) – 17 November (Tue)",
+   "what": "First-round interviews with the preferred professor and paper submission of the interview confirmation form",
+   "when": "3 November (Tue) – 17 November (Tue) (2 weeks)",
    "original_ko": "11.3(화) - 11.17(화)",
    "verified": true
   },
   {
-   "what": "1st round assignment results announced",
+   "what": "First-round assignment announcement",
    "when": "18 November (Wed)",
    "original_ko": "11.18(수)",
    "verified": true
   },
   {
-   "what": "2nd round preference applications (1 week)",
-   "when": "19 November (Thu) – 26 November (Thu)",
+   "what": "Second-round preference",
+   "when": "19 November (Thu) – 26 November (Thu) (1 week)",
    "original_ko": "11.19(목) - 11.26(목)",
    "verified": true
   },
   {
-   "what": "2nd round preference changes (2 days)",
-   "when": "27 November (Fri) – 1 December (Tue)",
+   "what": "Second-round change period",
+   "when": "27 November (Fri) – 1 December (Tue) (2 days)",
    "original_ko": "11.27(금) - 12.1(화)",
    "verified": true
   },
   {
-   "what": "2nd round interviews (2 weeks)",
-   "when": "2 December (Wed) – 16 December (Wed)",
+   "what": "Second-round interviews",
+   "when": "2 December (Wed) – 16 December (Wed) (2 weeks)",
    "original_ko": "12.2(수) - 12.16(수)",
    "verified": true
   },
   {
-   "what": "2nd round assignment results announced",
+   "what": "Second-round assignment announcement",
    "when": "17 December (Thu)",
    "original_ko": "12.17(목)",
    "verified": true
   },
   {
-   "what": "3rd round project assignment (assigned after the Interview Confirmation Form with the supervisor's signature is confirmed)",
-   "when": "18 December (Fri) – 26 February (Fri)",
+   "what": "Third-round project assignment (assignment after the interview confirmation form, signed by the supervising professor, is confirmed as submitted); a fourth-round assignment is also listed with no separate date given",
+   "when": "18 December (Fri) – 26 February (Fri) (3 months)",
    "original_ko": "12.18(금) - 2.26(금)",
    "verified": true
   },
   {
-   "what": "Interim presentations (3 sessions at 2–3 week intervals, one of which is a special lecture on thesis writing; exact dates to be announced on the homepage)",
-   "when": "During March–May",
+   "what": "Midterm presentations (3 sessions, one of which is a thesis lecture); all students must attend; exact dates will be announced on the website at the time",
+   "when": "Between March and May, at intervals of 2–3 weeks",
    "original_ko": "3~5월 중 2~3주 간격",
    "verified": true
   },
   {
-   "what": "Final presentation (poster presentation, 1 day)",
-   "when": "Last week of May",
+   "what": "Final presentation (poster presentation, Building 301, 1st-floor corridor)",
+   "when": "Last week of May (1 day)",
    "original_ko": "5월 마지막 주",
    "verified": true
   },
   {
    "what": "Graduation thesis submission (separate notice to follow)",
-   "when": "Early to mid-June",
+   "when": "Early to mid June",
    "original_ko": "6월 초중순",
    "verified": true
   }
  ],
- "steps": [
-  "Check the project topics and apply for your preferences on the intranet: Department homepage > Intranet > Class > Graduation Project Topic Check and Application [학부 홈페이지 > 인트라넷 접속 > 수업 > 졸업프로젝트 과제 확인 및 지망].",
-  "Submit your 1st round preferences between 21 October (Wed) and 28 October (Wed).",
-  "If needed, change your preferences between 29 October (Thu) and 2 November (Mon). New applications are not allowed during this period.",
-  "Between 3 November (Tue) and 17 November (Tue), meet the professor you wish to apply to, then submit the Interview Confirmation Form [면담확인서] on paper to the staff member in charge at Building 301, Room 308 (the office inside the laboratory). The form is in the attached file.",
-  "Check the 1st round assignment results on 18 November (Wed).",
-  "For the 2nd round: apply 19 November (Thu) – 26 November (Thu), change preferences 27 November (Fri) – 1 December (Tue), hold interviews 2 December (Wed) – 16 December (Wed), and check results on 17 December (Thu).",
-  "For the 3rd round assignment (18 December (Fri) – 26 February (Fri)), submit the Interview Confirmation Form signed by your supervising professor; assignment is made after the form is confirmed.",
-  "Attend all three interim presentations held during March–May; check the homepage for the exact dates.",
-  "Take part in the final poster presentation in the 1st-floor corridor of Building 301 in the last week of May.",
-  "Submit your graduation thesis in early to mid-June, following the separate notice to be posted."
+ "conditions": [
+  "New preferences cannot be submitted during the change period; only existing preferences may be changed.",
+  "The interview confirmation form must be submitted on paper (a printed hard copy), using the attached form.",
+  "Third-round assignment is made only after submission of the interview confirmation form is confirmed.",
+  "The supervising professor's signature on the interview confirmation form must be completed.",
+  "All students must attend the midterm presentations.",
+  "Students not assigned in the first round may apply in the second round, and later in the third and fourth rounds, as listed in the schedule."
  ],
- "translation": "2027 Spring Semester Electrical Engineering Design Project (Graduation Project) Schedule\n\nThe schedule for graduation project topic applications and the overall process for the 2027 Spring semester is announced below. Please refer to the schedule below and prepare for the 2027 Spring semester graduation project.\n\n※ Method: Department homepage > Intranet > Class > Graduation Project Topic Check and Application [학부 홈페이지 > 인트라넷 접속 > 수업 > 졸업프로젝트 과제 확인 및 지망]\n\nAssignment stage | Schedule | Duration | Notes\n\n- Topic proposal | 1 Oct (Thu) – 2 Nov (Mon) | 4 weeks | Each laboratory uploads its project topics.\n- Topic announcement | Until the interview deadline | – | Posted on the intranet.\n- 1st round application | 21 Oct (Wed) – 28 Oct (Wed) | 7 days | Students apply.\n- 1st round change | 29 Oct (Thu) – 2 Nov (Mon) | 3 days | New applications are not allowed.\n- 1st round interview | 3 Nov (Tue) – 17 Nov (Tue) | 2 weeks | After an interview with the professor you wish to apply to, submit the Interview Confirmation Form [면담확인서] on paper. Form: see the attached document. Office of the staff member in charge: Building 301, Room 308 (the office inside the laboratory).\n- 1st round assignment announcement | 18 Nov (Wed) | 1 day\n- 2nd round application | 19 Nov (Thu) – 26 Nov (Thu) | 1 week\n- 2nd round change | 27 Nov (Fri) – 1 Dec (Tue) | 2 days\n- 2nd round interview | 2 Dec (Wed) – 16 Dec (Wed) | 2 weeks\n- 2nd round assignment announcement | 17 Dec (Thu) | 1 day\n- 3rd round project assignment | 18 Dec (Fri) – 26 Feb (Fri) | 3 months | Assigned after submission of the Interview Confirmation Form is confirmed (the supervising professor's signature is required).\n- 4th round project assignment | (no separate date is given in the notice)\n- Interim presentations | During March–May, at 2–3 week intervals (one of the 3 sessions is a special lecture on thesis writing) | 3 sessions | All students must participate. Exact dates will be announced on the homepage at the time.\n- Final presentation | Last week of May | 1 day | Poster presentation in the 1st-floor corridor of Building 301.\n- Graduation thesis submission | Early to mid-June | – | A separate notice will follow.\n\n* For enquiries, please contact the staff member in charge at the department office; the contact details are given in the original Korean notice.\n\nAttachment (1 file): 2027학년도 1학기_면담확인서 양식.hwp (2027 Spring Semester Interview Confirmation Form, 27 KB). The content of this attachment was not read; please download it from the original notice.",
+ "steps": [
+  "Download and read the attached form \"2027학년도 1학기_면담확인서 양식.hwp\" (interview confirmation form); its content was not read for this translation.",
+  "Check the proposed projects on the department website: Department website > Intranet > Classes > Graduation Project Topic Check and Preference [학부 홈페이지 > 인트라넷 접속 > 수업 > 졸업프로젝트 과제 확인 및 지망].",
+  "Submit your first-round preference through the same intranet menu between 21 October and 28 October.",
+  "If needed, change your preference between 29 October and 2 November (new preferences are not accepted in this period).",
+  "Between 3 November and 17 November, meet the professor you wish to work with, complete the interview confirmation form, and submit it on paper to the department office in Building 301, Room 308 (the office inside the laboratory).",
+  "Check the first-round assignment result on 18 November.",
+  "If not assigned, follow the second-round schedule: preference 19–26 November, change 27 November–1 December, interviews 2–16 December, and check the result on 17 December.",
+  "If still not assigned, apply in the third-round assignment (18 December–26 February) by submitting the interview confirmation form with the supervising professor's signature completed.",
+  "Attend all three midterm presentations between March and May; watch the department website for exact dates.",
+  "Give a poster presentation in the Building 301 first-floor corridor in the last week of May.",
+  "Submit your graduation thesis in early to mid June, following the separate notice that will be posted."
+ ],
+ "translation": "[Spring 2027] Electrical Engineering Design Project (Graduation Project) Information\n\nSpring 2027 Electrical Engineering Design Project (Graduation Project) Schedule\n\nThe project preference process and the overall schedule for the Spring 2027 graduation project are announced below. Please refer to the schedule below and prepare for the Spring 2027 graduation project.\n\n※ Method: Department website > Intranet > Classes > Graduation Project Topic Check and Preference [학부 홈페이지 > 인트라넷 접속 > 수업 > 졸업프로젝트 과제 확인 및 지망]\n\nAssignment stage | Schedule | Duration | Remarks\n\nProject proposal | 10.1 (Thu) – 11.2 (Mon) | 4 weeks | Each laboratory uploads its projects\n\nProject announcement | Until the end of the interview period | | Announced on the intranet\n\n1st preference | 10.21 (Wed) – 10.28 (Wed) | 7 days | Students apply\n\n1st change | 10.29 (Thu) – 11.2 (Mon) | 3 days | New preferences not allowed\n\n1st interview | 11.3 (Tue) – 11.17 (Tue) | 2 weeks | After an interview with the professor you wish to apply to, submit the \"interview confirmation form\" [면담확인서] on paper. *Form: see attachment. Office of the staff member in charge: Building 301, Room 308 (office inside the laboratory)\n\n1st assignment announcement | 11.18 (Wed) | 1 day |\n\n2nd preference | 11.19 (Thu) – 11.26 (Thu) | 1 week |\n\n2nd change | 11.27 (Fri) – 12.1 (Tue) | 2 days |\n\n2nd interview | 12.2 (Wed) – 12.16 (Wed) | 2 weeks |\n\n2nd assignment announcement | 12.17 (Thu) | 1 day |\n\n3rd project assignment | 12.18 (Fri) – 2.26 (Fri) | 3 months | Assigned after submission of the interview confirmation form is confirmed (the supervising professor's signature must be completed)\n\n4th project assignment | (no separate date stated)\n\nMidterm presentations | Between March and May, at intervals of 2–3 weeks (one of the 3 sessions is a thesis lecture) | 3 sessions | All students must attend. Exact dates will be announced on the website at the time.\n\nFinal presentation | Last week of May | 1 day | Poster presentation in the 1st-floor corridor of Building 301\n\nGraduation thesis submission | Early to mid June | | A separate notice will be posted\n\n* For inquiries, please contact the staff member in charge at the department office (contact details are in the original notice).\n\nAttachment (1)\n2027학년도 1학기_면담확인서 양식.hwp (Spring 2027 interview confirmation form, 27 KB) — the content of this attachment was not read.",
  "id": 58071,
  "text_hash": "5b502c6fc10755c5",
  "images": 0,
@@ -108,6 +117,7 @@
   "2027학년도 1학기_면담확인서 양식.hwp"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

@@ -1,67 +1,76 @@
 {
- "title_en": "Information on the 80th Late-Term Commencement Ceremony and the Department Graduation Event",
- "summary": "The department announces the schedule and venues for the 80th Late-Term Commencement Ceremony on 28 August 2026 and the Department of Electrical and Computer Engineering graduation event, together with information on photo zones, academic gown rental and diploma collection. The graduating students concerned are asked to attend.",
- "applies_to": "The graduating students concerned (graduates of the 80th Late-Term Commencement). The diploma section mentions both undergraduate and graduate contacts.",
+ "title_en": "Fall 2026 (80th Late-Term) Degree Conferment Ceremony and Department Graduation Event",
+ "summary": "Graduating students of the Department of Electrical and Computer Engineering (전기정보공학부) are asked to attend the 80th Late-Term Degree Conferment Ceremony on Friday, 28 August 2026 at 10:30 in the Gymnasium, Building 71, Gwanak Campus, and the department graduation event the same day from 13:00 to 14:00 in Building 301, Room 118. Students attending the department event must wear an academic gown and be seated in their assigned seat by 12:50. Gowns may be rented from 13 to 31 August 2026 at Building 39, and diplomas are collected after the department event or afterwards at the department office (Building 301, Room 319).",
+ "applies_to": "The relevant graduating students (해당 졸업생) of the Department of Electrical and Computer Engineering (전기정보공학부) graduating at the 80th Late-Term Degree Conferment Ceremony. The notice asks them to attend; it does not state that attendance is mandatory.",
  "dates": [
   {
-   "what": "80th Late-Term Commencement Ceremony (streamed live on the official YouTube channel), Building 71 Gymnasium, Gwanak Campus",
-   "when": "Friday 28 August 2026, 10:30",
+   "what": "80th Late-Term Degree Conferment Ceremony (also streamed live on the official YouTube channel)",
+   "when": "Friday, 28 August 2026, 10:30",
    "original_ko": "2026. 8.28.(금) 10:30",
    "verified": true
   },
   {
-   "what": "Department of Electrical and Computer Engineering graduation event, Building 301, Room 118",
-   "when": "Friday 28 August 2026, 13:00–14:00",
+   "what": "Department of Electrical and Computer Engineering graduation event",
+   "when": "Friday, 28 August 2026, 13:00–14:00",
    "original_ko": "2026. 8.28.(금) 13:00~14:00",
    "verified": true
   },
   {
-   "what": "Deadline to be seated in your assigned seat, wearing the academic gown, for the department graduation event",
-   "when": "12:50 (on the day of the department graduation event)",
+   "what": "Deadline to be seated in your assigned seat, wearing a gown, for the department graduation event",
+   "when": "28 August 2026, by 12:50",
    "original_ko": "12시 50분까지",
    "verified": true
   },
   {
-   "what": "College of Engineering photo zones open (Building 39 B1 open space and Building 301 2nd-floor entrance)",
-   "when": "Thursday 13 August 2026 to Friday 28 August 2026",
+   "what": "College of Engineering photo zone available",
+   "when": "Thursday, 13 August 2026 to Friday, 28 August 2026",
    "original_ko": "2026.8.13.(목) ~ 8.28.(금)",
    "verified": true
   },
   {
-   "what": "Department photo zone open (lobby in front of the department administrative office, Building 301, Room 319)",
-   "when": "Friday 14 August 2026 to Friday 28 August 2026",
+   "what": "Department photo zone available",
+   "when": "Friday, 14 August 2026 to Friday, 28 August 2026",
    "original_ko": "2026.8.14.(금) ~ 8.28.(금)",
    "verified": true
   },
   {
-   "what": "Academic gown rental period (gown storage room next to the security office, Building 39, 1st floor)",
-   "when": "Thursday 13 August 2026 to Monday 31 August 2026",
+   "what": "Academic gown rental period",
+   "when": "Thursday, 13 August 2026 to Monday, 31 August 2026",
    "original_ko": "2026.8.13.(목) ~ 8.31.(월)",
    "verified": true
   },
   {
-   "what": "No gown rentals; returns only",
-   "when": "Monday 31 August",
+   "what": "Last day: gown returns only, no rentals",
+   "when": "Monday, 31 August 2026",
    "original_ko": "8.31.(월)",
    "verified": true
   },
   {
-   "what": "Earliest date diplomas can be collected before the commencement ceremony, by prior inquiry to the department office",
-   "when": "From 27 August",
-   "original_ko": "8월 27일부터",
+   "what": "Earliest date for students who must collect their diploma before the ceremony (contact the department office first)",
+   "when": "From 27 August 2026",
+   "original_ko": "8월 27일부터 가능",
    "verified": true
   }
  ],
- "steps": [
-  "Rent an academic gown at the gown storage room next to the security office on the 1st floor of Building 39 during the rental period (13–31 August 2026). Rentals are not available on Monday 31 August (returns only). Further details on gown rental will be announced later.",
-  "Attend the 80th Late-Term Commencement Ceremony at 10:30 on Friday 28 August 2026 at the Building 71 Gymnasium, Gwanak Campus. Note that the ceremony is streamed live on YouTube and you may appear in the footage.",
-  "Wearing your academic gown, be seated in your assigned seat in Building 301, Room 118 by 12:50 for the department graduation event (13:00–14:00).",
-  "Collect your diploma after the department graduation event ends. If you do not attend the event, collect it afterwards at the department administrative office.",
-  "If a proxy will collect your diploma, the proxy must bring the attached diploma collection power of attorney form (학위기 수령 위임장) and the proxy's own identification card.",
-  "If you need to collect your diploma before the commencement ceremony (possible from 27 August), contact the department office (separate contacts for undergraduate and graduate affairs are given in the original notice).",
-  "Return the rented gown to the gown storage room in Building 39; on 31 August only returns are accepted."
+ "conditions": [
+  "The ceremony will be streamed live on YouTube; attendees may appear in the video, and the footage may be used as official Seoul National University media content.",
+  "For the department event, you must be wearing an academic gown and seated in your assigned seat by 12:50.",
+  "Gowns cannot be rented on Monday, 31 August 2026; that day is for returns only.",
+  "Detailed gown rental instructions will be announced separately later.",
+  "Diplomas are available after the department graduation event ends; students who do not attend the event may collect their diploma at the department office after the event.",
+  "A proxy may collect your diploma only with the attached diploma collection power of attorney form and the proxy's own ID card.",
+  "Students who need their diploma before the ceremony (possible from 27 August) must contact the department office; contact numbers are in the original notice."
  ],
- "translation": "Information on the 80th Late-Term Commencement Ceremony and the Department Graduation Event\nPosted: 6 August 2026\n\nWe announce the commencement ceremony and graduation event as follows. The graduating students concerned are asked to attend.\n\n1. 80th Late-Term Commencement Ceremony\n(1) Date and time: Friday 28 August 2026, 10:30 (live-streamed on the official YouTube channel)\n* The ceremony will be streamed live on YouTube, so attendees may partly appear in the video, and the footage may be used as content for Seoul National University's official media.\n(2) Venue: Building 71 Gymnasium, Gwanak Campus\n\n2. Department of Electrical and Computer Engineering (전기정보공학부) Graduation Event\n(1) Date and time: Friday 28 August 2026, 13:00–14:00\n(2) Venue: Building 301, Room 118\n* Wear your academic gown and be seated in your assigned seat by 12:50.\n\n3. College of Engineering Photo Zones and Department Photo Zone\n(1) College of Engineering photo zones: Thursday 13 August 2026 to Friday 28 August 2026\n- Open space (유후공간) on basement level 1 (B1) of Building 39, and the 2nd-floor entrance of Building 301\n(2) Department photo zone: Friday 14 August 2026 to Friday 28 August 2026\n- Lobby in front of the department administrative office (학부행정실), Building 301, Room 319\n\n4. Academic Gown Rental: Thursday 13 August 2026 to Monday 31 August 2026\n- Gown storage room next to the security office (경비실), 1st floor, Building 39\n* Rentals are not available on Monday 31 August (returns only).\n* Detailed information on gown rental will be provided later.\n\n5. Collecting Your Diploma (학위기)\n(1) Diplomas can be collected after the department graduation event ends. Students who do not attend the graduation event may collect their diploma at the department administrative office after the event.\n(2) A proxy may collect the diploma. The proxy must bring the attached diploma collection power of attorney form (학위기 수령 위임장) and the proxy's identification card.\n(3) Students who, for personal reasons, need to collect their diploma before the commencement ceremony (possible from 27 August) should contact the department office.\n* Separate contacts for undergraduate affairs and graduate affairs are listed in the original notice.\n\nAttachments (2)\n- 제80회 후기 서울대학교 전기정보공학부 졸업행사.png (an image about the department graduation event; its content was not read and is not included in this translation)\n- 학위기 수령 위임장.hwp (the diploma collection power of attorney form; its content was not read)",
+ "steps": [
+  "Rent an academic gown between 13 and 31 August 2026 (rentals end before 31 August) at the gown storage room next to the security office, 1st floor, Building 39; follow the detailed rental notice to be announced later.",
+  "If you must collect your diploma before the ceremony, contact the department office (undergraduate and graduate contact numbers are in the original notice); early collection is possible from 27 August.",
+  "On 28 August 2026, attend the Degree Conferment Ceremony at 10:30 in the Gymnasium, Building 71, Gwanak Campus (it is also streamed live on the official YouTube channel).",
+  "Wearing your gown, be seated in your assigned seat in Building 301, Room 118 by 12:50 for the department graduation event (13:00–14:00).",
+  "Collect your diploma after the department event ends; if you did not attend, collect it afterwards at the department office (Building 301, Room 319).",
+  "If a proxy collects your diploma, give them the completed diploma collection power of attorney form (학위기 수령 위임장, attached to the original notice) and have them bring their own ID card.",
+  "Return your gown to the gown storage room in Building 39 by Monday, 31 August 2026."
+ ],
+ "translation": "80th Late-Term Degree Conferment Ceremony and Department Graduation Event\n\nThe degree conferment ceremony and graduation event are announced as follows. The relevant graduating students are asked to attend.\n\n1. 80th Late-Term Degree Conferment Ceremony\n(1) Date and time: Friday, 28 August 2026, 10:30 (streamed live on the official YouTube channel)\n* The ceremony will be broadcast live on YouTube. Attendees may partly appear in the video, and the footage may be used as content for Seoul National University's official media.\n(2) Venue: Gymnasium, Building 71, Gwanak Campus\n\n2. Department of Electrical and Computer Engineering (전기정보공학부) Graduation Event\n(1) Date and time: Friday, 28 August 2026, 13:00–14:00\n(2) Venue: Building 301, Room 118\n* Wear your academic gown and be seated in your assigned seat by 12:50.\n\n3. College of Engineering and Department Photo Zones\n(1) College of Engineering photo zone: Thursday, 13 August 2026 to Friday, 28 August 2026\n- Open space on basement level 1 (B1) of Building 39, and the 2nd-floor entrance of Building 301\n(2) Department photo zone: Friday, 14 August 2026 to Friday, 28 August 2026\n- Lobby in front of the department office, Building 301, Room 319\n\n4. Academic Gown Rental: Thursday, 13 August 2026 to Monday, 31 August 2026\n- Gown storage room next to the security office, 1st floor, Building 39\n* No rentals on Monday, 31 August (returns only).\n* Detailed gown rental instructions will be announced later.\n\n5. Collecting Your Diploma (학위기)\n(1) Diplomas may be collected after the department graduation event ends. Students who do not attend the graduation event may collect their diploma at the department office after the event.\n(2) A proxy may collect the diploma; the proxy must bring the attached diploma collection power of attorney form (학위기 수령 위임장) and the proxy's own ID card.\n(3) Students who, for personal reasons, need to collect their diploma before the degree conferment ceremony (possible from 27 August) should contact the department office.\n* Undergraduate and graduate office contact numbers are given in the original notice.\n\nAttachments (2)\n- 제80회 후기 서울대학교 전기정보공학부 졸업행사.png (436 KB) — an image about the department graduation event; its content was not read.\n- 학위기 수령 위임장.hwp (12 KB) — the diploma collection power of attorney form; its content was not read.",
  "id": 57950,
  "text_hash": "0657ef5aeb7f5ad2",
  "images": 0,
@@ -70,6 +79,7 @@
   "학위기 수령 위임장.hwp"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

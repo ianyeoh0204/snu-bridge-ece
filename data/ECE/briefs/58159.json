@@ -1,29 +1,39 @@
 {
- "title_en": "2026 Winter Session Internship Semester Program: Application for Field Practice in the Course \"Field Practice 3\" (『현장실습 3』) (Application Documents Accepted 10.26 (Mon) – 10.30 (Fri))",
- "summary": "The Department of Naval Architecture and Ocean Engineering is accepting applications for field practice in the 2026 Winter Session internship semester course \"Field Practice 3\" (『현장실습 3』). Application forms must be submitted by email during the first application period, 26–30 October 2026, or during a possible second period, 10–11 November 2026.",
- "applies_to": "Students interested in the 2026 Winter Session internship semester course \"Field Practice 3\" (『현장실습 3』).",
+ "title_en": "Winter Session 2026 Field Practice 3 Internship Applications (October 26–30)",
+ "summary": "Students interested in the Winter Session 2026 internship-semester course Field Practice 3 (현장실습 3) may apply by emailing the signed application form to the Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417). The first application round runs from October 26 to October 30, 2026, and a possible second round runs from November 10 to November 11, 2026. Applicants must also register for the course and must not take any other Winter Session course.",
+ "applies_to": "Students interested in the Winter Session 2026 internship-semester course Field Practice 3 (현장실습 3), announced by the Department of Naval Architecture and Ocean Engineering. Application is voluntary. Students who take part must register for the course.",
  "dates": [
   {
-   "what": "Application period (Round 1)",
-   "when": "26 October 2026 (Monday) – 30 October 2026 (Friday)",
+   "what": "First-round application submission period (deadlines strictly observed)",
+   "when": "Monday, October 26, 2026 to Friday, October 30, 2026",
    "original_ko": "(1차) 2026.10.26.(월) ~ 2026.10.30.(금)",
    "verified": true
   },
   {
-   "what": "Application period (Round 2), which may not take place depending on the results of Round 1 selection",
-   "when": "10 November 2026 (Tuesday) – 11 November 2026 (Wednesday)",
+   "what": "Second-round application submission period (may not take place, depending on first-round selection results)",
+   "when": "Tuesday, November 10, 2026 to Wednesday, November 11, 2026",
    "original_ko": "(2차) 2026.11.10.(화) ~ 2026.11.11.(수)",
    "verified": true
   }
  ],
- "steps": [
-  "Review the list of host organisations in Attachment 1 ([붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관.xlsx).",
-  "Complete the application form in Attachment 2 ([붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(한화오션).docx), using Attachment 3 ([붙임3] (한화오션) 직무별 담당 업무 소개) as a reference when writing your preferred job field.",
-  "Sign the application form at the bottom.",
-  "Submit the signed application form by email to the Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417) within the application period (Round 1: 26–30 October 2026; Round 2, if held: 10–11 November 2026). The contact details are in the original notice.",
-  "Register for the course \"Field Practice 3\" (수강신청), and check the separate notice for the course registration and tuition payment schedule, which may differ from the regular schedule."
+ "conditions": [
+  "Field Practice 3 combines the internship with course attendance, so participants must register for the course.",
+  "Participants may not take any other Winter Session course, including online (remote) courses.",
+  "Any other Winter Session courses a participant has already registered for will be cancelled.",
+  "Course registration and tuition payment dates for this course may differ from the regular schedule, so participants must check the separate notice.",
+  "Students who abandon the internship partway or participate insincerely will not receive credit, and payment of the internship allowance may be restricted.",
+  "The application form must include the applicant's signature at the bottom.",
+  "Application periods are strict deadlines.",
+  "The second-round selection may not take place, depending on the first-round selection results."
  ],
- "translation": "2026 Winter Session Internship Semester Program: Application for Field Practice in the Course \"Field Practice 3\" (『현장실습 3』) (Application Documents Accepted 10.26 (Mon) – 10.30 (Fri))\nPosted: 2026-10-22\n\nWe announce the application for field practice in the 2026 Winter Session internship semester course \"Field Practice 3\" (『현장실습 3』) as follows. Interested students are encouraged to apply.\n\n\"Field Practice 3\" combines field practice with course enrolment, so you must register for the course (수강신청). You may not take any other Winter Session course (including online/remote courses); any other course you have already registered for will be cancelled. The course registration and tuition payment schedule may differ from the regular schedule, so you must check the separate notice.\n\nPlease note that if you withdraw from the field practice partway through or participate insincerely, no credit will be awarded and payment of the practice allowance may be restricted.\n\n1. Course overview\n\n2. Schedule\n\n3. Host organisations (※ If the table below is not visible, refer to the file \"[붙임1]\" (Attachment 1))\n\n[Note from translator: The content of items 1, 2 and 3 appears to have been provided as tables or images that are not included in the text of the notice, so it was not read. The attached files were also not read.]\n\n4. How to submit the application: by email (the application form must include your signature at the bottom)\n\n5. Application period (deadlines strictly enforced)\n - (Round 1) 26 October 2026 (Mon) – 30 October 2026 (Fri)\n - (Round 2) 10 November 2026 (Tue) – 11 November 2026 (Wed) (※ Round 2 selection may not take place, depending on the results of Round 1 selection)\n\n6. Submission and enquiries: Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417). The contact person, email address and phone number are given in the original notice.\n\nAttachments (3 files, not read):\n[붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관.xlsx (Attachment 1: 2026 Winter Internship Semester – Field Practice 3 – Host Organisations)\n[붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(한화오션).docx (Attachment 2: 2026 Winter Internship Semester – Field Practice 3 – Application Form (Hanwha Ocean))\n[붙임3] (한화오션) 직무별 담당 업무 소개(희망직무분야 작성 참고용).pdf (Attachment 3: (Hanwha Ocean) Introduction to Duties by Job Role (reference for completing the preferred job field))",
+ "steps": [
+  "Read Attachment 1 (the list of internship host institutions), which also contains the table that may not display in the notice; the attachment's content was not read for this translation.",
+  "Read Attachment 3 (Hanwha Ocean job-by-job duty descriptions) to help you fill in your preferred job field; its content was not read for this translation.",
+  "Complete Attachment 2, the Field Practice 3 participation application form (Hanwha Ocean), and sign at the bottom of the form.",
+  "Email the signed application form to the Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417) during the first round (October 26–30, 2026) or, if held, the second round (November 10–11, 2026); the email address is in the original notice.",
+  "If selected, register for Field Practice 3 and pay tuition according to the separate notice on course registration and tuition payment."
+ ],
+ "translation": "Winter Session 2026 Internship Semester: Field Practice 3 (『현장실습 3』) Internship Application Guide (Application documents accepted October 26 (Mon) – October 30 (Fri))\n\nWe announce the internship application for the Winter Session 2026 internship-semester course Field Practice 3 (『현장실습 3』) as follows. Interested students are encouraged to apply.\n\nBecause Field Practice 3 combines the internship with course attendance, you must register for the course (수강신청), and you may not take any other Winter Session course (including online/remote courses). Any other courses you have already registered for will be cancelled. The course registration and tuition payment schedule may differ from the regular schedule, so be sure to check the separate notice.\n\nPlease note that if you abandon the internship partway or participate insincerely, no credit will be awarded and payment of the internship allowance may be restricted.\n\n1. Course overview\n\n2. Schedule\n\n3. Internship host institutions (※ If the table below does not display, refer to the file \"[Attachment 1]\")\n\n[Note: The content of sections 1 to 3 appears to have been provided as tables or images that are not in the notice text, so it was not read.]\n\n4. How to submit the application: by email (including your signature at the bottom of the application form)\n\n5. Application periods (deadlines strictly observed)\n - (1st round) 2026.10.26. (Mon) – 2026.10.30. (Fri)\n - (2nd round) 2026.11.10. (Tue) – 2026.11.11. (Wed) (※ Depending on the first-round selection results, the second-round selection may not take place.)\n\n6. Submission and inquiries: Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417). The contact person's email and phone number are in the original notice.\n\n[Attachment 1] 2026 (Winter) Internship Semester_Field Practice 3_Host Institutions\n[Attachment 2] 2026 (Winter) Internship Semester_Field Practice 3_Participation Application Form (Hanwha Ocean)\n[Attachment 3] (Hanwha Ocean) Introduction to Duties by Job (reference for filling in the preferred job field)\n\nAttached files (3):\n[붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관.xlsx (12 KB)\n[붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(한화오션).docx (21 KB)\n[붙임3] (한화오션) 직무별 담당 업무 소개(희망직무분야 작성 참고용).pdf (232 KB)\n\n[Note: The contents of the attached files were not read.]",
  "id": 58159,
  "text_hash": "deaf2d95af89bbd4",
  "images": 3,
@@ -34,5 +44,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

@@ -1,0 +1,77 @@
+{
+ "about": "What a later notice adds to or changes in a requirement taken from an older document. When sources differ, the most recent official one is the current rule, and the card says which notice changed it. `quote_ko` must be found word for word in that notice (tools/check_updates.py).",
+ "updates": [
+  {
+   "cards": [
+    "seminar-two-semesters",
+    "seminar-two-semesters-phd",
+    "seminar-both-integrated"
+   ],
+   "notice": 57941,
+   "text": "The presentation in the second semester is given in English.",
+   "quote_ko": "두 번째 학기에 '수강신청 및 영어 발표'를 통해 3학점을 취득하게 됨."
+  },
+  {
+   "cards": [
+    "seminar-two-semesters",
+    "seminar-two-semesters-phd",
+    "seminar-both-integrated"
+   ],
+   "notice": 57942,
+   "text": "To audit, apply by email to the teaching assistant of the seminar you choose, by the date in that semester's notice.",
+   "quote_ko": "신청방법: 희망 교과목 담당 수업조교 이메일로 신청"
+  },
+  {
+   "cards": [
+    "seminar-two-semesters",
+    "seminar-two-semesters-phd",
+    "seminar-both-integrated"
+   ],
+   "notice": 57942,
+   "text": "Take the seminar of the module you belong to.",
+   "quote_ko": "본인이 속한 모듈별 석사 및 박사 세미나가 매 학기 개설되니 수료 전 반드시 수강하여야 함."
+  },
+  {
+   "cards": [
+    "paper-requirement"
+   ],
+   "notice": 57963,
+   "text": "For students examined from Fall 2026: the paper must be published or have confirmed acceptance. Proof of submission to a journal is no longer accepted.",
+   "quote_ko": "논문지 투고를 증명하는 서류는 제출하여도 인정 불가 (종전 인정 지침 폐지)"
+  },
+  {
+   "cards": [
+    "paper-requirement"
+   ],
+   "notice": 57963,
+   "text": "A paper on which you are co-first author is not recognised, even if your name is listed first.",
+   "quote_ko": "본인의 이름이 첫 번째로 되어 있어도 공동1저자라면 인정 불가"
+  },
+  {
+   "cards": [
+    "paper-requirement-phd"
+   ],
+   "notice": 57963,
+   "text": "For students examined from Fall 2026: each paper must be published or have confirmed acceptance.",
+   "quote_ko": "(1항) 국제적으로 인정되는 논문지(SCI(E)급)에 1편 이상의 논문을 게재 또는 게재확정"
+  },
+  {
+   "cards": [
+    "paper-requirement",
+    "paper-requirement-phd"
+   ],
+   "notice": 57963,
+   "text": "The proof of publication or acceptance must be a document that can be issued before the date for submitting the defense result documents.",
+   "quote_ko": "심사 학기의 논문심사 결과서류 제출일자 이전까지 발급 가능한 서류여야 합니다."
+  },
+  {
+   "cards": [
+    "paper-requirement",
+    "paper-requirement-phd"
+   ],
+   "notice": 57963,
+   "text": "A conference that accepts only an abstract can count if it has peer review and a preliminary-committee member confirms it by signature.",
+   "quote_ko": "풀페이퍼가 아닌 초록(Abstract)만 제출하는 학술대회도 아래 요건 충족 시 인정 가능합니다."
+  }
+ ]
+}

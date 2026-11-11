@@ -36,6 +36,17 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 4. GitHub pauses scheduled workflows in a repository with no activity for 60 days; it emails first. Press
    "Run workflow" once to resume.
 
+## Checks
+```bash
+.venv/bin/python tools/check_quotes.py     # undergraduate cards: Korean quote and course codes found in every entry year's file
+.venv/bin/python tools/check_updates.py    # "later notices" on cards: each Korean quote found in the notice it cites
+.venv/bin/python tools/evidence.py         # recount the Korean and English boards for the Background and Method page
+.venv/bin/python tools/korean_review.py    # every English and Korean sentence pair, as a sheet for a Korean reader
+.venv/bin/python tools/audit.py prepare    # a second reader re-reads cards against the page images (see the file's top)
+```
+When two sources differ, the most recent official one is the rule: add a line to `sources/<department>/updates.json`
+with the notice number and the exact Korean line, and it appears on the card as "Added or changed by later notices".
+
 ## The department's own files
 The official PDFs and spreadsheets are not in this repository, because they are the department's documents, not ours.
 `sources/<department>/config.json` lists each file with the page it was downloaded from. Download them into that folder

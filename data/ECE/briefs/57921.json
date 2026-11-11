@@ -1,28 +1,35 @@
 {
- "title_en": "Notice of Fall Semester 2026 Course Offerings Being Imported into eTL",
- "summary": "Course offering information for the second semester of the 2026 academic year, including course registration information, will be imported into the eTL system on 18 August 2026 from 10:00 to 18:00. All eTL services will remain available without interruption, and the course information can be checked in eTL from 18:00 on the same day.",
- "applies_to": "",
+ "title_en": "Fall 2026 Course Offering Data Transfer to eTL",
+ "summary": "Course offering information for Fall 2026, including course registration information, will be transferred into the eTL system on Tuesday, 18 August 2026, from 10:00 to 18:00; the work time may change depending on circumstances. Users may check the course offering information on eTL (https://etl.snu.ac.kr) from 18:00 on 18 August 2026. No action is required, and all eTL services remain available during the work.",
+ "applies_to": "Not stated. The notice is for general reference by eTL users; no group is required to act.",
  "dates": [
   {
-   "what": "Import of second-semester 2026 course offering information into eTL (times may change depending on circumstances)",
+   "what": "Transfer of Fall 2026 course offering information into eTL (work time may change depending on circumstances)",
    "when": "Tuesday, 18 August 2026, 10:00–18:00",
    "original_ko": "2026. 8. 18.(화) 10:00~18:00",
    "verified": true
   },
   {
-   "what": "Course offering information can be checked in eTL",
+   "what": "Course offering information can be checked on eTL",
    "when": "From Tuesday, 18 August 2026, 18:00",
    "original_ko": "2026. 8. 18.(화) 18:00 ~",
    "verified": true
   }
  ],
- "steps": [],
- "translation": "Title: Notice of Fall Semester 2026 Course Offerings Being Imported into eTL\nPosted: 2026-07-28\n\nTo support the operation of the second semester of the 2026 academic year, course offering information will be imported into the eTL system. Please take note of this when using the system.\n\n1. Scope: All course offering information for the second semester of the 2026 academic year (including course registration information)\n\n2. Schedule: Tuesday, 18 August 2026, 10:00–18:00\n   ※ The time of the work may change depending on circumstances.\n\n3. Administrative matters\n   - Checking course offering information in eTL (https://etl.snu.ac.kr): from Tuesday, 18 August 2026, 18:00\n   - All services remain available; the system will not be shut down.",
+ "conditions": [
+  "The work time may change depending on circumstances.",
+  "The system will not be shut down; all services remain available during the work."
+ ],
+ "steps": [
+  "From 18:00 on Tuesday, 18 August 2026, check the Fall 2026 course offering information on eTL at https://etl.snu.ac.kr."
+ ],
+ "translation": "Title: Notice of Transfer of Fall 2026 Course Offerings to eTL\n\nTo support operations for Fall 2026, course offering information will be transferred into the eTL system. Please take this into account when using the system.\n\n1. Content: All Fall 2026 course offering information (including course registration [수강신청] information)\n\n2. Schedule: Tuesday, 18 August 2026, 10:00–18:00\n※ The work time may change depending on circumstances.\n\n3. Administrative matters\n- Checking course offering information on eTL (https://etl.snu.ac.kr): from Tuesday, 18 August 2026, 18:00\n- All services remain available without any system shutdown.",
  "id": 57921,
  "text_hash": "538c67a561e91672",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

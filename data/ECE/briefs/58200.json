@@ -1,20 +1,25 @@
 {
- "title_en": "Notice on Tuition Payment and Refund Schedule for the 2026 Academic Year Winter Session",
- "summary": "This notice announces the tuition payment and refund schedule for the 2026 Academic Year Winter Session and asks students to pay within the payment period. Courses with fewer than 20 paid students will be finally cancelled on 8 December 2026 (Tuesday); the tuition amounts, payment period and refund details are given only in the attached files.",
- "applies_to": "",
+ "title_en": "Winter Session 2026: Tuition Payment and Refund Schedule",
+ "summary": "Students taking 2026 Winter Session (seasonal) courses must pay the session tuition within the payment period, through any bank or by virtual account. The fee amounts, payment period and refund schedule appear only in the attached guides (Korean and English), which were not read. Courses with fewer than 20 paid students will be finally cancelled on Tuesday, 8 December 2026.",
+ "applies_to": "The notice does not name the students explicitly. It concerns tuition for 2026 Winter Session (seasonal) courses and asks that payment be made within the period, so it applies to students taking those courses.",
  "dates": [
   {
-   "what": "Final course cancellation (courses with fewer than 20 students who have paid tuition)",
-   "when": "8 December 2026 (Tuesday)",
+   "what": "Final cancellation of Winter Session courses with fewer than 20 paid students",
+   "when": "Tuesday, 8 December 2026",
    "original_ko": "2026.12.08.(화)",
    "verified": true
   }
  ],
- "steps": [
-  "Read the attached payment guide to find the tuition amount, the payment period and the refund details. An English version is attached: \"[Eng] Winter 2026 Session Payment & Refunds Information.pdf\".",
-  "Pay the tuition within the payment period at any bank or by virtual account transfer (전 은행 및 가상계좌 납부)."
+ "conditions": [
+  "Tuition must be paid within the payment period. The period is given only in the attachments, which were not read.",
+  "A course will be finally cancelled on 8 December 2026 if fewer than 20 students have paid for it.",
+  "Refund periods and refund amounts are given only in the attachments, which were not read."
  ],
- "translation": "Notice on Tuition Payment and Refund Schedule for the 2026 Academic Year Winter Session\n\nWe hereby announce the tuition payment and refund schedule for the 2026 Academic Year Winter Session (동계 계절수업). Please pay your tuition within the payment period.\n\n1. Tuition and Payment Period\n[The tuition amounts and the payment period are not given in the text of the notice. This content appears to be in an image or in the attached files, which were not read.]\n※ Final course cancellation (courses with fewer than 20 students who have paid tuition): 8 December 2026 (Tuesday) [2026.12.08.(화)]\n\n2. Payment Method: Payment at any bank or by virtual account (가상계좌).\n\n3. Refund Period and Refund Amount\n[The refund period and refund amounts are not given in the text of the notice. This content appears to be in an image or in the attached files, which were not read.]\n\nAttachment: 2026 Academic Year Winter Session Tuition Payment Guide (Korean/English)\nAttached files (2):\n- [Eng] Winter 2026 Session Payment & Refunds Information.pdf (39 KB)\n- [국문] 2026학년도 동계 계절수업 수강료 납부 안내.pdf (Korean version, 80 KB)\n\nThe attached files were not read. Please check them for the full details. For questions, contact the department office; the contact details are in the original notice.",
+ "steps": [
+  "Read the attached guide. An English version is provided: \"[Eng] Winter 2026 Session Payment & Refunds Information.pdf\". It gives the fee amounts, the payment period and the refund schedule.",
+  "Pay the Winter Session tuition within the payment period, at any bank or by virtual account."
+ ],
+ "translation": "2026 Winter Session Tuition Payment and Refund Schedule\n\nWe announce the tuition payment and refund schedule for the 2026 Winter Session (seasonal courses). Please pay within the payment period.\n\n1. Tuition and payment period\n※ Final course cancellation (fewer than 20 paid students): Tuesday, 8 December 2026 (2026.12.08.(화))\n[The tuition amounts and payment period are not given in the notice text. They appear to be in the attachments, which were not read.]\n\n2. Payment method: any bank, or by virtual account\n\n3. Refund period and refund amounts\n[The details are not given in the notice text. They appear to be in the attachments, which were not read.]\n\nAttachment: 2026 Winter Session Tuition Payment Guide (Korean/English)\nAttached files (2):\n[Eng] Winter 2026 Session Payment & Refunds Information.pdf (39 KB)\n[Korean] 2026학년도 동계 계절수업 수강료 납부 안내.pdf (80 KB)\n\n[The contents of the attached files were not read.]",
  "id": 58200,
  "text_hash": "c106b1b425af7aa5",
  "images": 2,
@@ -24,5 +29,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

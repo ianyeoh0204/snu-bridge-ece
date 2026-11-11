@@ -101,4 +101,20 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   "English · 한국어" for labels inside a sentence. `tools/korean_review.py` writes `out/korean-review.md`, every pair with a
   prompt for a Korean check (ChatGPT first, then a Korean reader).
   The page once called "Why and how" is now "Background and Method" (more formal, the developer's request); its address stays `#about`.
-- Not built: calendar file, plugin, model check of the hand-written cards.
+- Audit (11 Nov, local only until the developer approves): `tools/audit.py` has a second reader from a different maker
+  (GPT through `codex exec -s read-only -i page.png --output-schema`) re-read 40 graduate cards against the handbook page
+  images, with cards carrying a deliberately wrong number mixed in. First reading: 27 of 40 agreed in full. After
+  corrections and re-reading: 36 agreed, 4 settled by the author with a reason (`sources/ECE/audit_notes.json`), 0 open;
+  6 of 6 planted errors caught. Results live in `data/ECE/audit.json`; a card shows "Re-read by a second reader on <date>".
+  Ten notices with deadlines were compared with the Korean original: 0 wrong dates, but every summary left out something
+  (who exactly must act, conditions, further dates). Most of it is in the stored `applies_to` and the full translation.
+- Two sourcing rules from the developer (11 Nov): (1) never delete a true fact because its cited page does not state it;
+  cite the place that does. (2) When sources differ, the most recent official one is the rule. Both are carried by
+  `sources/ECE/updates.json`: lines shown on a card as "Added or changed by later notices", each with the notice and a
+  Korean quote that `tools/check_updates.py` finds word for word in that notice.
+- Notice instructions, version 2 (12 Nov): after the audit, `SYSTEM` in `bridge/briefs.py` requires who exactly must act,
+  every date a student could need, and a `conditions` list; `PROMPT_VERSION` makes every notice translate again when the
+  instructions change. The site shows "Who must act" and "Conditions and exceptions" on each notice. The same ten notices
+  were read again by the second reader: points that could mislead fell from 66 to 4.
+  Never push a new `PROMPT_VERSION` without the re-translated briefs, or the daily job will redo them all on GitHub.
+- Not built: calendar file, plugin. In progress: the second reading of the remaining 58 cards.

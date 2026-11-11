@@ -1,59 +1,66 @@
 {
- "title_en": "Notice of Class Cancellations and Building Access Restrictions for the College of Engineering Early Admission (수시모집) Interviews for the 2027 Academic Year",
- "summary": "Because of the interviews (and oral examinations) for the 2027 early admission (수시모집) rounds, certain classes will be cancelled and Building 302 and Building 39 will be closed to general access on the dates and times stated below. Make-up classes must be held for all cancelled classes.",
- "applies_to": "For the General Admission interviews: all courses offered by the College of Engineering, and anyone needing access to Building 302. For the Regional Balance Selection and Opportunity Balance Selection Special Admission interviews: courses taught by interview committee members, all courses held in Building 39, and anyone needing access to Building 39. Examination personnel are exempt from the access restrictions; department, division and major offices operate normally.",
+ "title_en": "Class Cancellations and Building Closures for 2027 Early Admission Interviews, College of Engineering",
+ "summary": "Because of the 2027 early admission interviews, all College of Engineering courses are cancelled from 26 November 2026, 09:00, to 27 November 2026, 20:00, and Building 302 is closed in full; it reopens after 8:00 p.m. on 27 November. Courses taught by interview committee members and all courses held in Building 39 are cancelled from 3 December 2026, 09:00, to 4 December 2026, 20:00, and Building 39 is closed in full; it reopens after 8:00 p.m. on 4 December. Make-up classes must be held for every cancelled course, and only examination staff may enter examination rooms in the closed buildings.",
+ "applies_to": "All students and others in the College of Engineering. First period (General Admission interviews): everyone taking any course offered by the College of Engineering, and everyone who uses Building 302. Second period (Regional Balance and Opportunity Balance Special Admission interviews): everyone taking a course taught by an interview committee member or any course held in Building 39, and everyone who uses Building 39. The building access restrictions are mandatory for everyone except examination staff.",
  "dates": [
   {
-   "what": "General Admission interview date",
-   "when": "Friday, 27 November 2026",
+   "what": "General Admission interview day",
+   "when": "Friday 27 November 2026",
    "original_ko": "2026. 11. 27.(금)",
    "verified": true
   },
   {
-   "what": "Class cancellation period for General Admission (all College of Engineering courses)",
-   "when": "Thursday, 26 November 2026, 09:00 to Friday, 27 November 2026, 20:00",
+   "what": "Class cancellation period for all courses offered by the College of Engineering (General Admission interviews)",
+   "when": "Thursday 26 November 2026, 09:00 to Friday 27 November 2026, 20:00",
    "original_ko": "2026. 11. 26.(목) 09:00 ~ 11. 27.(금) 20:00",
    "verified": true
   },
   {
-   "what": "Building 302 access resumes",
-   "when": "After 8:00 p.m., Friday, 27 November 2026",
+   "what": "Building 302 becomes accessible again",
+   "when": "After 8:00 p.m., Friday 27 November 2026",
    "original_ko": "11. 27.(금) 오후 8시 이후",
    "verified": true
   },
   {
-   "what": "Regional Balance Selection and Opportunity Balance Selection Special Admission interview date",
-   "when": "Friday, 4 December 2026",
+   "what": "Regional Balance Admission and Opportunity Balance Special Admission interview day",
+   "when": "Friday 4 December 2026",
    "original_ko": "2026. 12. 4.(금)",
    "verified": true
   },
   {
-   "what": "Class cancellation period for Regional Balance Selection and Opportunity Balance Selection Special Admission (courses taught by interviewers and all courses held in Building 39)",
-   "when": "Thursday, 3 December 2026, 09:00 to Friday, 4 December 2026, 20:00",
+   "what": "Class cancellation period for courses taught by interview committee members and all courses held in Building 39 (Regional Balance and Opportunity Balance Special Admission interviews)",
+   "when": "Thursday 3 December 2026, 09:00 to Friday 4 December 2026, 20:00",
    "original_ko": "2026. 12. 3.(목) 09:00 ~ 12. 4.(금) 20:00",
    "verified": true
   },
   {
-   "what": "Building 39 access resumes",
-   "when": "After 8:00 p.m., Friday, 4 December 2026",
+   "what": "Building 39 becomes accessible again",
+   "when": "After 8:00 p.m., Friday 4 December 2026",
    "original_ko": "12. 4.(금) 오후 8시 이후",
    "verified": true
   }
  ],
- "steps": [
-  "Note that all courses offered by the College of Engineering are cancelled from Thursday, 26 November 2026, 09:00 to Friday, 27 November 2026, 20:00; make-up classes must be held.",
-  "Do not enter Building 302 (the entire building) during this period; access is possible again after 8:00 p.m. on Friday, 27 November 2026.",
-  "Note that courses taught by interview committee members and all courses held in Building 39 are cancelled from Thursday, 3 December 2026, 09:00 to Friday, 4 December 2026, 20:00; make-up classes must be held.",
-  "Do not enter Building 39 (the entire building) during this period; access is possible again after 8:00 p.m. on Friday, 4 December 2026.",
-  "Do not enter any examination rooms (lecture rooms, professors' offices, seminar rooms, meeting rooms, etc.) in the restricted buildings during these periods unless you are examination personnel.",
-  "Cooperate so that the early admission process can proceed smoothly."
+ "conditions": [
+  "From 26 November 09:00 to 27 November 20:00, all courses offered by the College of Engineering are cancelled.",
+  "From 3 December 09:00 to 4 December 20:00, only courses taught by interview committee members and all courses held in Building 39 are cancelled.",
+  "Make-up classes must be held for every cancelled course.",
+  "All of Building 302 is closed for the General Admission interviews; it may be entered again after 8:00 p.m. on 27 November.",
+  "All of Building 39 is closed for the Regional Balance and Opportunity Balance Special Admission interviews; it may be entered again after 8:00 p.m. on 4 December.",
+  "During these periods, no one other than examination staff may enter the examination rooms (lecture rooms, professors' offices, seminar rooms, meeting rooms, etc.) in the closed buildings.",
+  "Department, school and major offices remain open as usual, with staff working normally."
  ],
- "translation": "Notice of Class Cancellations and Building Access Restrictions for the College of Engineering Early Admission (수시모집) Interviews for the 2027 Academic Year\n\nPosted: 8 October 2026\n\nIn connection with the interviews (and oral examinations) for the 2027 early admission (수시모집) General Admission (일반전형), Regional Balance Admission (지역균형전형) and Opportunity Balance Special Admission (기회균형특별전형), classes will be cancelled and access to buildings will be restricted as set out below. Your active cooperation is requested so that the early admission process can proceed smoothly.\n\nA. Class cancellations and access restrictions\n\nGeneral Admission (일반전형) – Friday, 27 November 2026\n- Class cancellation period: Thursday, 26 November 2026, 09:00 to Friday, 27 November, 20:00\n- Courses cancelled: all courses offered by the College of Engineering (make-up classes must be held)\n- Access restriction: all of Building 302 (302동) (1 building)\n※ Building 302 may be entered after 8:00 p.m. on Friday, 27 November.\n\nRegional Balance Selection Admission (지역균형선발전형) and Opportunity Balance Selection Special Admission (기회균형선발특별전형) – Friday, 4 December 2026\n- Class cancellation period: Thursday, 3 December 2026, 09:00 to Friday, 4 December, 20:00\n- Courses cancelled: courses taught by interview committee members and all courses held in Building 39 (39동) (make-up classes must be held)\n- Access restriction: all of Building 39 (39동) (1 building)\n※ Building 39 may be entered after 8:00 p.m. on Friday, 4 December.\n\n※ During these periods, no one other than examination personnel may enter the examination rooms (lecture rooms, professors' offices, seminar rooms, meeting rooms, etc.) located in the restricted buildings.\n※ Offices (departments/divisions, majors, etc.) will operate normally (staff will be working as usual).\n\nThe notice does not list a contact; for questions, please contact the department office.",
+ "steps": [
+  "Check whether your courses are affected: all College of Engineering courses are cancelled from 26 November 09:00 to 27 November 20:00, and courses taught by interview committee members or held in Building 39 are cancelled from 3 December 09:00 to 4 December 20:00.",
+  "Do not enter Building 302 during the closure; you may enter again after 8:00 p.m. on 27 November 2026.",
+  "Do not enter Building 39 during the closure; you may enter again after 8:00 p.m. on 4 December 2026."
+ ],
+ "translation": "Class Cancellations and Building Access Restrictions for the 2027 College of Engineering Early Admission (Susi) Interviews\n\nIn connection with the interviews (and oral examinations) for the 2027 early admission (Susi) General Admission, Regional Balance Admission and Opportunity Balance Special Admission, classes will be cancelled and access to buildings will be restricted as set out below. We ask for your full cooperation so that the admission process runs smoothly.\n\nA. Class cancellations and access restrictions\n\nGeneral Admission (일반전형), Friday 27 November 2026\n- Class cancellation period: Thursday 26 November 2026, 09:00 to Friday 27 November, 20:00\n- Courses cancelled: all courses offered by the College of Engineering (make-up classes must be held)\n- Access restriction: all of Building 302 (one building)\n※ Building 302 may be entered after 8:00 p.m. on Friday 27 November.\n\nRegional Balance Admission (지역균형선발전형) and Opportunity Balance Special Admission (기회균형선발특별전형), Friday 4 December 2026\n- Class cancellation period: Thursday 3 December 2026, 09:00 to Friday 4 December, 20:00\n- Courses cancelled: courses taught by interview committee members and all courses held in Building 39 (make-up classes must be held)\n- Access restriction: all of Building 39 (one building)\n※ Building 39 may be entered after 8:00 p.m. on Friday 4 December.\n\n※ During these periods, no one other than examination staff may enter the examination rooms (lecture rooms, professors' offices, seminar rooms, meeting rooms, etc.) located in the restricted buildings.\n\n※ Offices (departments/schools, majors, etc.) operate as normal (staff work normally).",
  "id": 58126,
  "text_hash": "d8cab806d2daf442",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

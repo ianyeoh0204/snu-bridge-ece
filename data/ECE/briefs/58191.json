@@ -1,33 +1,43 @@
 {
- "title_en": "November 2026 Schedule for Safety and Environment Training for Research Activity Workers (New Training)",
- "summary": "The new-employee Safety and Environment Training for research activity workers will be held on 20 November 2026 at the Environmental Safety Institute, Building 98, Room 101. Applications are made by email, and seats may close early if the session is full.",
- "applies_to": "Research activity workers who have not completed the new Safety and Environment Training (a requirement for graduate school / thesis qualifying examination eligibility).",
+ "title_en": "November 2026 Schedule: Safety and Environment Initial Training for Research Workers",
+ "summary": "Research workers who have not yet completed the initial Safety and Environment Training must take it; the notice lists it as a requirement for graduate school and for eligibility for the thesis qualifying examination. The November session is on Friday, 20 November 2026, from 09:30 to 18:30 at the Environmental Safety Institute, Building 98, Room 101. Apply by email to the address given in the original notice; registration may close early if seats run out.",
+ "applies_to": "Research activity workers who have not yet completed the initial Safety and Environment Training. The notice states this training is a requirement for graduate school and for eligibility for the thesis qualifying examination.",
  "dates": [
   {
-   "what": "Safety and Environment Training (new training) session",
-   "when": "Friday, 20 November 2026, 09:30–18:30",
+   "what": "November initial training session (Environmental Safety Institute, Building 98, Room 101)",
+   "when": "Friday, 20 November 2026, 09:30 to 18:30",
    "original_ko": "2026. 11. 20.(금) 09:30~18:30",
    "verified": true
   },
   {
-   "what": "Additional training sessions planned",
-   "when": "During December or January",
+   "what": "Planned additional training sessions (details not yet given)",
+   "when": "During December 2026 or January 2027",
    "original_ko": "12월 또는 1월 중",
    "verified": true
   }
  ],
- "steps": [
-  "Apply by sending an email that states your affiliation, name, portal ID and personal contact details. The email address is given in the original notice.",
-  "Apply early, as registration may close early if seats run out.",
-  "On Friday, 20 November 2026, attend the training from 09:30 to 18:30 at the Environmental Safety Institute, Building 98, Room 101, bringing bottled water and writing materials.",
-  "Remain for the entire session; attendance is checked at random times, and leaving without permission will result in the training being recorded as not completed."
+ "conditions": [
+  "Only research workers who have not yet completed the initial Safety and Environment Training are eligible.",
+  "Only bottled water may be brought in; other drinks are not allowed.",
+  "No parking discount vouchers or lunch will be provided.",
+  "Attendance will be checked at random times during the session.",
+  "Anyone who leaves without permission will be recorded as not having completed the training.",
+  "Registration will close early if seats run out.",
+  "No application deadline is stated in the notice."
  ],
- "translation": "November 2026 Schedule for Safety and Environment Training for Research Activity Workers (New Training)\n\n1. Who must attend\n- Research activity workers who have not completed the new Safety and Environment Training (a requirement for graduate school / thesis qualifying examination [논자시] eligibility).\n\n2. Date, time and venue\n- Friday, 20 November 2026, 09:30–18:30 (Environmental Safety Institute [환경안전원], Building 98, Room 101)\n\n3. What to bring\n- Bottled water (no other beverages are permitted) and writing materials. (Parking discount vouchers and lunch will not be provided.)\n\n4. Application and enquiries\n- Send an email stating your affiliation, name, portal ID and personal contact details. The email address is given in the original notice.\n\n5. Other information\n- Attendance will be checked at random times. Leaving without permission will result in the training being recorded as not completed.\n- Registration will close early if seats run out.\n- Additional training sessions are planned for December or January.",
+ "steps": [
+  "Send an application email to the address given in the original notice, stating your affiliation, name, portal ID and personal contact details.",
+  "Prepare bottled water and writing materials to bring with you.",
+  "Attend the training on Friday, 20 November 2026, from 09:30 to 18:30 at the Environmental Safety Institute, Building 98, Room 101.",
+  "Remain for the entire session, as attendance is checked at random times."
+ ],
+ "translation": "November 2026 Schedule for Safety and Environment Training for Research Activity Workers (Initial Training)\n\n1. Who should attend\n- Research activity workers who have not yet completed the initial Safety and Environment Training (a requirement for graduate school and for eligibility for the thesis qualifying examination)\n\n2. Date, time and place\n- Friday, 20 November 2026, 09:30 to 18:30 (Environmental Safety Institute, Building 98, Room 101)\n\n3. What to bring\n- Bottled water (no other drinks may be brought in) and writing materials (no parking discount vouchers or lunch will be provided)\n\n4. Application and enquiries\n- Send an email stating your affiliation, name, portal ID and personal contact details. (The email address is given in the original notice.)\n\n5. Other information\n- Attendance will be checked at random times (anyone who leaves without permission will be recorded as not having completed the training).\n- Registration will close early if seats run out.\n- Additional training sessions are planned for December or January.",
  "id": 58191,
  "text_hash": "5233a7030fded763",
  "images": 0,
  "attachments": [],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

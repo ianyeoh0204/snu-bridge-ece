@@ -1,35 +1,52 @@
 {
- "title_en": "Registration for Graduate Research Students, Fall Semester (2nd Semester) of the 2026 Academic Year",
- "summary": "Graduate students who have completed their coursework and who meet one of the conditions listed in the notice must register as research students by paying a fee of KRW 200,000 within one of two registration periods. Registration is not possible after the periods end.",
- "applies_to": "Graduate students who have completed their coursework (수료생) and who meet condition A, B or C below. Current enrolled students (재학생) are not affected. Students expected to complete their coursework in August 2026 who meet A, B or C must also register. (A) Those who have completed a graduate programme and wish to use university facilities (library, laboratories and practice rooms, graduate research rooms, Gwanak Residence Halls, etc.) or submit a degree thesis in the 1st semester of the 2026 academic year, as written in the notice; without research student registration, an application for thesis examination is not possible (doctoral preliminary examination is still possible). (B) Those who will work as lecture/research support scholarship students or work-study scholarship students in the 2nd semester of 2026 after completion; these students must register in the 1st registration period. (C) Those participating in the BK Plus programme after completion, or who are principal investigators or participating researchers on a research project; registration is mandatory.",
+ "title_en": "Fall 2026 Graduate Research Student Registration",
+ "summary": "Graduate students who have completed their coursework (수료생), including those expected to complete in August 2026, must register as research students if they fall under one of the categories in the notice, such as using university facilities, submitting a thesis, working as a scholarship student, or participating in BK Plus or research projects. Registration is completed only by paying the KRW 200,000 fee at any NongHyup Bank or Shinhan Bank branch or by transfer to the personal virtual account on the payment bill. The first period runs from 19 August 2026, 09:00 to 2 September 2026, 17:00, and the second and final period runs from 14 September 2026, 09:00 to 28 September 2026, 17:00; late registration is not possible.",
+ "applies_to": "Graduate students who have completed their coursework (수료생), including those expected to complete in August 2026, who fall under at least one of the following: (a) those who wish to use university facilities (library, laboratories and practice rooms, graduate research rooms, Gwanak Residence Halls, etc.) or to submit a degree thesis in the semester the notice states as 'the first semester of 2026' (this appears in a Fall 2026 notice; please confirm with the department office); (b) those who will work as Lecture and Research Support Scholarship students or Work-Study Scholarship students in Fall 2026 after completion (must register in the first period); (c) those participating in the BK Plus program after completion, or serving as principal investigators or participating researchers on research projects (registration is mandatory). Currently enrolled students are not affected.",
  "dates": [
   {
-   "what": "1st registration (payment) period; mandatory period for lecture/research support and work-study scholarship students",
+   "what": "First registration period (fee payment)",
    "when": "Wednesday 19 August 2026, 09:00 to Wednesday 2 September 2026, 17:00",
    "original_ko": "2026. 8. 19.(수) 09:00 ~ 9. 2.(수) 17:00",
    "verified": true
   },
   {
-   "what": "Earliest payment date for students completing coursework in August 2026",
+   "what": "Earliest payment date for students completing their coursework in August 2026 (first period)",
    "when": "From Tuesday 1 September 2026",
-   "original_ko": "9. 1.(화)부터",
+   "original_ko": "9. 1.(화)부터 수납 가능",
    "verified": true
   },
   {
-   "what": "2nd (final) registration (payment) period",
-   "when": "Monday 14 September 2026, 09:00 to 28 September 2026 (given as Tuesday in the notice), 17:00",
+   "what": "Payment hours during both periods: 24 hours on weekdays, closing at 17:00 on the last day",
+   "when": "Weekdays, 24 hours; last day closes at 17:00",
+   "original_ko": "평일 24시간 납부 가능(마지막날 17:00 마감)",
+   "verified": true
+  },
+  {
+   "what": "Second and final registration period (fee payment); not available to scholarship students under category (b), who must register in the first period",
+   "when": "Monday 14 September 2026, 09:00 to 28 September 2026 (shown as Tuesday in the notice), 17:00",
    "original_ko": "2026. 9. 14.(월) 09:00 ~ 9. 28.(화) 17:00 (최종)",
    "verified": true
   }
  ],
- "steps": [
-  "Check that you are a student who has completed coursework (or will complete it in August 2026) and that you meet condition A, B or C in the notice. If you are a lecture/research support or work-study scholarship student, you must register in the 1st period.",
-  "Print your payment bill: log in to mySNU (mysnu.ac.kr) → 학사/정보 (Academic/Information) → 등록 (Registration) → 고지서/내역조회 (Bill/History Inquiry) → select '연구생부담금고지서' (Research Student Fee Bill) and print it.",
-  "Pay KRW 200,000 within a registration period, either (1) at any branch of NH NongHyup Bank or Shinhan Bank using the printed bill, or (2) by bank transfer to the personal virtual account shown on the bill. Payment is possible 24 hours on weekdays, but closes at 17:00 on the last day. No separate application is required beyond payment.",
-  "If you need proof of payment, log in to mySNU (mysnu.ac.kr) → 학사/정보 (Academic/Information) → 증명/확인서 (Certificates/Confirmations) → 증명/확인서 발급 (Issue Certificate/Confirmation) to issue a payment confirmation.",
-  "For refund applications and other details, refer to the attached files, or contact the department office (contact details are in the original notice)."
+ "conditions": [
+  "Students who do not register within the registration periods cannot register afterwards.",
+  "Currently enrolled students do not need to register.",
+  "Students who do not register as research students cannot apply for thesis review, although the doctoral preliminary review is still possible.",
+  "Students who will work as Lecture and Research Support Scholarship students or Work-Study Scholarship students in Fall 2026 must register in the first period.",
+  "Registration is mandatory for students participating in the BK Plus program and for principal investigators and participating researchers on research projects.",
+  "Students completing their coursework in August 2026 can pay only from 1 September 2026.",
+  "Payment is the only step; there is no separate application.",
+  "The fee is KRW 200,000.",
+  "Refund requests and other details are in the attachments, which were not read."
  ],
- "translation": "Registration for Graduate Research Students, 2nd Semester of the 2026 Academic Year\nPosted: 5 August 2026\n\n※ If you do not register within the registration period, additional (late) registration is not possible.\n\n1. Eligible students\nAmong graduate students who have completed their coursework (수료생), only those who fall under A, B or C below should register.\n★ This does not apply to currently enrolled students (재학생)! Students expected to complete their coursework in August 2026 who fall under A, B or C must register!\n\nA. Those who have completed a graduate programme and who wish to use university facilities (library, laboratories and practice rooms, graduate research rooms, Gwanak Residence Halls, etc.) or to submit a degree thesis in the 1st semester of the 2026 academic year [as written in the notice].\n※ If you do not register as a research student, you cannot apply for thesis examination (the doctoral preliminary examination is still possible).\n\nB. Those who will work as lecture/research support scholarship students (강의연구지원장학생) or work-study scholarship students (근로장학생) in the 2nd semester of the 2026 academic year after completion must register in the 1st registration period.\n\nC. Those participating in the BK Plus programme after completion, or those who are principal investigators or participating researchers on a research project: research student registration is mandatory.\n\n2. Registration periods\nA. 1st period: Wednesday 19 August 2026, 09:00 to Wednesday 2 September, 17:00 ★ Check the dates!!\n※ Students completing their coursework in August 2026 can pay from Tuesday 1 September.\n※ Payment is possible 24 hours a day on weekdays (closes at 17:00 on the last day).\n\nB. 2nd period: Monday 14 September 2026, 09:00 to 28 September (given as Tuesday in the notice), 17:00 (final) ★ Check the dates!!\n※ Payment is possible 24 hours a day on weekdays (closes at 17:00 on the last day).\n\n3. Amount: KRW 200,000 (two hundred thousand won)\n\n4. Place and method of payment (※ There is no separate application procedure other than payment.)\nA. Place: any branch of NH NongHyup Bank or Shinhan Bank\nB. Method:\nMethod 1) Pay at a designated bank using the system-printed payment bill.\nMethod 2) Pay by bank transfer to the personal virtual account stated on the payment bill.\n\n5. How to print the payment bill\nLog in to mySNU (mysnu.ac.kr) → 학사/정보 (Academic/Information) → 등록 (Registration) → 고지서/내역조회 (Bill/History Inquiry) → select '연구생부담금고지서' (Research Student Fee Bill) and print it.\n\n6. Issuing a payment confirmation\nLog in to mySNU (mysnu.ac.kr) → 학사/정보 (Academic/Information) → 증명/확인서 (Certificates/Confirmations) → 증명/확인서 발급 (Issue Certificate/Confirmation).\n\n7. For refund applications and other details, please refer to the attached files.\n\n● Enquiries: the department office (학부행정실), Building 301, Room 319. The staff contact details are given in the original notice.\n\nAttachments (3) — the contents of these files were not read and are not included in this translation:\n- 2026학년도 2학기 대학원연구생 등록 안내문.hwp (Graduate Research Student Registration Guide, 2nd Semester 2026)\n- Registration for Graduate Research Students Fall 2026.hwp\n- 서울대학교 대학원 연구생 규정.pdf (Seoul National University Graduate Research Student Regulations)",
+ "steps": [
+  "Read the attached guidance (2026학년도 2학기 대학원연구생 등록 안내문.hwp, an English version, and the Graduate Research Student Regulations) for refund procedures and other details.",
+  "Print the payment bill: log in to mySNU (mysnu.ac.kr) → Academic Affairs/Information [학사/정보] → Registration [등록] → Bill/History Inquiry [고지서/내역조회] → select 'Research Student Fee Bill' [연구생부담금고지서] and print it.",
+  "Pay KRW 200,000 within a registration period, either by taking the printed bill to any NongHyup Bank or Shinhan Bank branch, or by transferring the amount to the personal virtual account shown on the bill.",
+  "If you need proof of payment, log in to mySNU (mysnu.ac.kr) → Academic Affairs/Information [학사/정보] → Certificates/Confirmations [증명/확인서] → Issue Certificate/Confirmation [증명/확인서 발급].",
+  "For questions, contact the department office (Building 301, Room 319); contact details are in the original notice."
+ ],
+ "translation": "Fall 2026 Graduate Research Student Registration\n\n※ Students who do not register within the registration periods cannot register afterwards.\n\n1. Eligible students\nOnly graduate students who have completed their coursework (수료생) and fall under item a, b or c below should register.\n★ Currently enrolled students are not affected! Students expected to complete their coursework in August 2026 who fall under a, b or c must register!\na. Those who have completed a graduate program and wish to use university facilities (library, laboratories and practice rooms, graduate research rooms, Gwanak Residence Halls, etc.) or to submit a degree thesis in the first semester of the 2026 academic year [as written in the notice]\n※ Students who do not register as research students cannot apply for thesis review (the doctoral preliminary review is still possible).\nb. Those who will work as Lecture and Research Support Scholarship students or Work-Study Scholarship students in Fall 2026 after completion must register in the first registration period.\nc. Those participating in the BK Plus program after completion, or principal investigators and participating researchers on research projects: research student registration is mandatory.\n\n2. Registration periods\na. First period: Wednesday 19 August 2026, 09:00 to Wednesday 2 September, 17:00 ★Check the dates!!\n※ Students completing their coursework in August 2026 can pay from Tuesday 1 September.\n※ Payment is possible 24 hours a day on weekdays (closing at 17:00 on the last day).\nb. Second period: Monday 14 September 2026, 09:00 to Tuesday 28 September, 17:00 (final) ★Check the dates!!\n※ Payment is possible 24 hours a day on weekdays (closing at 17:00 on the last day).\n\n3. Amount: KRW 200,000 (two hundred thousand won)\n\n4. Place and method of payment (※ There is no separate application procedure apart from payment.)\na. Place: All branches of NongHyup Bank and Shinhan Bank\nb. Method:\nMethod 1) Pay at a designated bank with the computer-printed payment bill.\nMethod 2) Pay by transfer to the personal virtual account stated on the payment bill.\n\n5. How to print the payment bill\nLog in to mySNU (mysnu.ac.kr) → Academic Affairs/Information [학사/정보] → Registration [등록] → Bill/History Inquiry [고지서/내역조회] → select 'Research Student Fee Bill' [연구생부담금고지서] and print.\n\n6. Issuing a payment confirmation\nLog in to mySNU (mysnu.ac.kr) → Academic Affairs/Information [학사/정보] → Certificates/Confirmations [증명/확인서] → Issue Certificate/Confirmation [증명/확인서 발급].\n\n7. For refund requests and other details, refer to the attachments.\n\n● Inquiries: Department office (Building 301, Room 319). The contact person and email address are given in the original notice.\n\nAttachments (3) — not read:\n2026학년도 2학기 대학원연구생 등록 안내문.hwp (131 KB)\nRegistration for Graduate Research Students Fall 2026.hwp (53 KB)\n서울대학교 대학원 연구생 규정.pdf (Seoul National University Graduate Research Student Regulations) (63 KB)",
  "id": 57940,
  "text_hash": "a7b7644484c7da67",
  "images": 0,
@@ -39,6 +56,7 @@
   "서울대학교 대학원 연구생 규정.pdf"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

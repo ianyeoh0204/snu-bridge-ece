@@ -1,24 +1,34 @@
 {
- "title_en": "Application for Credit Recognition of Distance Courses Taken During Military Service, Fall Semester 2026",
- "summary": "Students returning from military service in the Fall Semester 2026 who wish to receive credit for military distance courses taken during their service must apply through mySNU within the stated period. Supporting documents must be uploaded with the application.",
- "applies_to": "Students returning from military service in the Fall Semester of the 2026 academic year who wish to receive credit recognition for military distance courses taken during their military service. Applications are accepted only during the semester of return; applicants who apply after that semester will see a message stating that they are not eligible.",
+ "title_en": "Fall 2026 Application for Credit Recognition of Military Service Remote Courses",
+ "summary": "Students returning from military service in Fall 2026 who wish to have credit recognised for military remote courses taken during their service should apply on mySNU. Applications run from one week after the semester begins until the week before it ends, and applying between 7 September 2026 and 11 December 2026 is recommended. A military transcript or the completed form attached to the notice must be uploaded as supporting evidence.",
+ "applies_to": "Students returning from military service in Fall 2026 (2026학년도 2학기 군 복학자) who wish to have credit recognised for military remote courses (군 원격수업) taken during their military service. Application is optional and only for those who wish credit recognition.",
  "dates": [
   {
-   "what": "Application period: from one week after the first day of classes until the week before the last day of classes",
-   "when": "Recommended application period: Monday, 7 September 2026 to Friday, 11 December 2026",
+   "what": "Application period for credit recognition of military remote courses: from one week after the semester begins until the week before the semester ends; applying within the stated dates is recommended",
+   "when": "Monday 7 September 2026 to Friday 11 December 2026 (recommended)",
    "original_ko": "개강일로부터 일주일 후부터 종강일 전주까지 신청 (2026. 9. 7.(월) ~ 2026. 12. 11.(금) 신청 권장)",
    "verified": true
   }
  ],
- "steps": [
-  "Prepare a supporting document. If you already have one, use your transcript from the Narasarang Portal [나라사랑포털] or Jangbyeong e-eum [장병e음]. For grades from Spring Semester 2026 onward, the transcript can be printed from the Jangbyeong e-eum site. If you do not have one, complete the form attached to the notice ((서식) 군복무 학점인정 신청서.hwp): check the course and grade details shown under \"Load from Previously Earned Grades\" [기취득성적에서 불러오기], enter the same details on the form, and delete the grey example text before filling it in.",
-  "Log in to mySNU and go to Academic Information [학사정보] > Classes/Grades [수업/성적] > Grades [성적] > Credit Recognition Application [학점인정신청], then click \"Apply\" [신청] under [Military Leave Distance Courses] [군휴학 원격수업].",
-  "On the [Military Leave Distance Courses] [군휴학 원격수업] screen, click \"Load from Previously Earned Grades\" [기취득성적에서불러오기].",
-  "From the courses displayed, select the courses for which you wish to receive credit.",
-  "Upload the supporting document as an attachment.",
-  "Save temporarily [임시저장] and then submit the application [신청]."
+ "conditions": [
+  "If you apply after your returning semester has passed, the system will show a message that you are not eligible to apply.",
+  "If you already have a transcript issued from the Narasarang Portal (나라사랑포털) or Jangbyeong e-Eum (장병e음), you must upload that transcript as evidence.",
+  "If you do not have a previously issued transcript, you must complete the form attached to the notice and upload it instead.",
+  "For grades from Spring 2026 onward, transcripts can be printed normally from the Jangbyeong e-Eum (장병e음) site, so you should use that transcript.",
+  "When completing the form, you must delete the example text shown in grey before filling it in.",
+  "The information on the form must be identical to the course and grade information shown under \"Load from previously earned grades\"."
  ],
- "translation": "Application for Credit Recognition of Distance Courses Taken During Military Service, Fall Semester 2026 (posted 2 September 2026)\n\nStudents returning from military service in the Fall Semester of the 2026 academic year who wish to receive credit recognition for military distance courses taken during their military service should refer to the application period and procedure below.\n\n<Application Period>\n- Apply from one week after the first day of classes until the week before the last day of classes (recommended application period: Monday, 7 September 2026 to Friday, 11 December 2026).\n\n<Application Procedure>\n1. Application path: mySNU > Academic Information [학사정보] > Classes/Grades [수업/성적] > Grades [성적] > Credit Recognition Application [학점인정신청] — click \"Apply\" [신청] under [Military Leave Distance Courses] [군휴학 원격수업].\n\n2. How to apply:\n① On the [Military Leave Distance Courses] [군휴학 원격수업] screen, click \"Load from Previously Earned Grades\" [기취득성적에서불러오기].\n② From the courses displayed, select the courses for which you wish to receive credit.\n③ Upload the material described in item 3 below as supporting documentation in the attachment field.\n④ Save temporarily [임시저장] and submit [신청].\n\n3. Supporting documents for upload:\n- If you already have a previously issued document: transcript from the Narasarang Portal [나라사랑포털] / Jangbyeong e-eum [장병e음].\n- If you do not have a previously issued document: complete the 'form' attached to this notice and upload it.\n* From Spring Semester 2026 grades onward, transcripts can be printed normally from the Jangbyeong e-eum [장병e음] site, so please use that document.\n\n4. How to complete the form: View \"Load from Previously Earned Grades\" [기취득성적에서 불러오기] → check the courses for which you wish to receive credit and the related grade information → enter the same information on the attached form and upload it.\n* Please note that if you apply after your semester of return has passed, a message will appear stating that you are not eligible to apply. Delete the example text written in grey on the form before filling it in.\n\nAttachment (1 file): (서식) 군복무 학점인정 신청서.hwp [Form: Application for Credit Recognition for Military Service] (60 KB). The content of this attachment was not read; please download it from the original notice. For enquiries, contact the department office; contact details are given in the original notice.",
+ "steps": [
+  "Go to mySNU > Academic Information (학사정보) > Classes/Grades (수업/성적) > Grades (성적) > Credit Recognition Application (학점인정신청), and click \"Apply\" (신청) under [Military Leave Remote Courses] (군휴학 원격수업).",
+  "On the [Military Leave Remote Courses] (군휴학 원격수업) screen, click \"Load from previously earned grades\" (기취득성적에서불러오기).",
+  "From the courses displayed, select the courses for which you wish credit recognition.",
+  "Transcript already issued: Upload your Narasarang Portal (나라사랑포털) or Jangbyeong e-Eum (장병e음) transcript in the attachment field as evidence.",
+  "No transcript issued: Download the form attached to the original notice, (서식) 군복무 학점인정 신청서.hwp (Military Service Credit Recognition Application Form).",
+  "No transcript issued: Check the courses and grade information shown under \"Load from previously earned grades\" (기취득성적에서 불러오기), delete the grey example text in the form, and enter the same information in the form.",
+  "No transcript issued: Upload the completed form in the attachment field as evidence.",
+  "Click Save Temporarily (임시저장), then submit the application (신청)."
+ ],
+ "translation": "Fall 2026 Application for Credit Recognition of Military Service Remote Courses\n\nStudents returning from military service in Fall 2026 who wish to have credit recognised for military remote courses taken during their military service should refer to the application period and method below.\n\n<Application Period>\n- Apply from one week after the first day of the semester until the week before the last day of the semester (applying between Monday 7 September 2026 and Friday 11 December 2026 is recommended).\n\n<Application Method>\n1. Application path: mySNU > Academic Information (학사정보) > Classes/Grades (수업/성적) > Grades (성적) > Credit Recognition Application (학점인정신청) – click \"Apply\" (신청) under [Military Leave Remote Courses] (군휴학 원격수업).\n\n2. How to apply:\n① On the [Military Leave Remote Courses] (군휴학 원격수업) screen, click \"Load from previously earned grades\" (기취득성적에서불러오기).\n② From the courses displayed, select the courses for which you wish credit recognition.\n③ In the attachment field, submit the material described in item 3 below as supporting evidence.\n④ Save temporarily (임시저장) and apply (신청).\n\n3. Supporting evidence to upload as an attachment\nCase | Document to submit\nIf you have a previously issued document | Narasarang Portal (나라사랑포털) / Jangbyeong e-Eum (장병e음) transcript\nIf you do not have a previously issued document | Complete the 'form' attached to this notice and upload it\n* From Spring 2026 grades onward, transcripts can be printed normally from the Jangbyeong e-Eum (장병e음) site, so please use that document.\n\n4. How to complete the form: Look up \"Load from previously earned grades\" (기취득성적에서 불러오기) → check the courses for which you wish credit recognition and the related grade information → enter the same information in the [attached] form and upload it.\n* Please note that if you apply after your returning semester has passed, a message will appear stating that you are not eligible to apply. Delete the example text shown in grey in the form before filling it in.\n\nAttachment (1 file)\n(서식) 군복무 학점인정 신청서.hwp (Military Service Credit Recognition Application Form, 60 KB) – the content of this attachment was not read.",
  "id": 58026,
  "text_hash": "093434ee637329dc",
  "images": 0,
@@ -26,6 +36,7 @@
   "(서식) 군복무 학점인정 신청서.hwp"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }

@@ -1,0 +1,1482 @@
+{
+ "audited_on": "2026-11-12",
+ "reader": "A second AI model from a different maker (OpenAI, through the Codex command-line tool), which did not write the cards",
+ "selection": "Every card whose source is page 8, 9, 10, 12, 20 of the graduate handbook, fixed before any result was seen; page 11 was added because an audited rule continues from it.",
+ "decoys": {
+  "check-b": "caught",
+  "check-a": "caught",
+  "check-c": "caught",
+  "check-d": "caught",
+  "check-e": "caught",
+  "check-f": "caught",
+  "check-h": "caught",
+  "check-g": "caught",
+  "notice": "caught",
+  "notice2": "caught"
+ },
+ "rules_on_these_pages_without_a_card": 51,
+ "cards_first_reading": {
+  "agree": 69,
+  "of": 89,
+  "contradicted": 3
+ },
+ "cards": {
+  "exam-basics": {
+   "pass": 3,
+   "key": "not_stated",
+   "lines": {
+    "Held once in March and once in September.": "supported",
+    "A written exam marked out of 100.": "supported",
+    "You answer 2 of the 8 subjects.": "supported",
+    "Pass mark: 60 or higher.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "settled_by_author",
+   "reason": "The rule runs over a page break. The months and the 100-point scale are on page 9; the two-of-eight rule and the pass mark are on page 10. The reader confirmed each line on its own page."
+  },
+  "defense-schedule": {
+   "pass": 3,
+   "key": "supported",
+   "lines": {
+    "Apply: March to April, or September to October.": "supported",
+    "Defense: May, or November.": "supported",
+    "Hand in 3 copies of the thesis 1 to 2 weeks before the defense.": "supported",
+    "Results due: early June, or early December.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "thesis-deadline": {
+   "pass": 3,
+   "key": "supported",
+   "lines": {
+    "Within 4 years after finishing coursework.": "supported",
+    "A 2-year extension is possible on request.": "supported",
+    "If the thesis has still not been examined after the extension, a further period of up to 3 years can be approved once, with added registration and credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "seminar-two-semesters-phd": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Required to finish coursework: the doctoral module seminar, 3 credits.": "not_stated",
+    "First semester: audit only, without registering.": "supported",
+    "Next semester: register, then present in class.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "settled_by_author",
+   "reason": "The reader asked for the condition that this applies from fall 2009 entrants. The card states that condition under Applicability."
+  },
+  "credits-total-phd": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Earn 36 or more course credits.": "supported",
+    "Grade average 3.0 or higher, both overall and in major courses, on a 4.3 scale.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-ece-phd": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Take 12 or more credits of ECE graduate courses.": "supported",
+    "The module seminar counts toward these 12.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-thesis-research-phd": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "At most 12 thesis research credits count toward coursework.": "supported",
+    "Anything above 12 is not counted.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-common-phd": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "At most 3 credits of graduate common-competency courses count.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-undergraduate-phd": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Up to 6 credits of undergraduate major courses can count.": "supported",
+    "The major must match. General-education courses are excluded.": "supported",
+    "The department's completion self-check sheet adds that the 6 is a total across graduate programs, so check what was used in the master's.": "not_stated"
+   },
+   "why": "supported",
+   "caution": "not_stated",
+   "agrees": false,
+   "quote_found": true,
+   "status": "settled_by_author",
+   "reason": "One line and the caution come from the department's completion self-check sheet, not from the handbook page, and say so. The Korean line was found in that sheet."
+  },
+  "registration-count-phd": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "At least 4 registered semesters, at most 12.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "seminar-both-integrated": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Both the master's and the doctoral module seminar are required: 6 credits in total.": "supported",
+    "Each one: audit a semester, then register and present the next.": "supported",
+    "Start the doctoral seminar from semester 4, after finishing the master's seminar.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-basics-phd": {
+   "pass": 3,
+   "key": "not_stated",
+   "lines": {
+    "Held once in March and once in September.": "supported",
+    "A written exam marked out of 100.": "supported",
+    "You answer 2 of the 8 subjects.": "supported",
+    "Pass mark: 70 or higher.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "settled_by_author",
+   "reason": "The rule runs over a page break. The months, the 100-point scale and the two-of-eight rule are on page 11; the pass mark is on page 12. The reader confirmed each line on its own page."
+  },
+  "credits-total-integrated": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Earn 60 or more course credits, including those from the master's stage.": "supported",
+    "Grade average 3.0 or higher, both overall and in major courses, on a 4.3 scale.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-undergraduate-integrated": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Up to 6 credits of undergraduate major courses can count.": "supported",
+    "The major must match. General-education courses are excluded.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "registration-count-integrated": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "At least 6 registered semesters, at most 16.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "preliminary-defense": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "The preliminary defense is held in the semester before the thesis defense (first and final review).": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "defense-schedule-phd": {
+   "pass": 3,
+   "key": "supported",
+   "lines": {
+    "Apply: March to April, or September to October.": "supported",
+    "Defense: May, or November.": "supported",
+    "Give 5 copies of the thesis to the committee members 1 to 2 weeks before.": "supported",
+    "Results due: end of June, or end of December.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "thesis-deadline-phd": {
+   "pass": 3,
+   "key": "supported",
+   "lines": {
+    "Within 6 years after finishing coursework.": "supported",
+    "A 2-year extension is possible on request.": "supported",
+    "If the thesis has still not been examined after the extension, a further period of up to 3 years can be approved once, with added registration and credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "language-korean-test": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Run by the Office of Academic Affairs every March and September.": "supported",
+    "After failing once, an oral test is possible with your advisor's recommendation.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "language-korean-class": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Take Korean Language and Culture 1 or 2 when it is offered as the substitute for the test, in a regular semester or a seasonal session.": "supported",
+    "A grade of C- or higher, or S, in that course waives the Korean test.": "supported",
+    "These credits do not count toward your coursework credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "seminar-two-semesters": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Required to finish coursework: 3 credits.": "supported",
+    "First semester: take part in the seminar without registering for it.": "supported",
+    "The following semester: register, then present in class and take part.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "registration-count": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "At least 4 registered semesters, at most 8.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-two-semesters": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "You need at least 2 registered semesters to sit the exam.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-six-credits": {
+   "pass": 4,
+   "key": "supported",
+   "lines": {
+    "Earn 6 or more credits of ECE graduate courses after admission.": "supported",
+    "Not counted: thesis research, S/U courses, module master's and doctoral seminars in special-lecture format, credits carried over between programs.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "cert-safety": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Complete the Environmental Safety Institute's safety training.": "supported",
+    "It must be the new-researcher course.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "cert-life-respect": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Complete the life-respect (suicide prevention) course.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "cert-human-rights": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Complete the human rights and gender equality course.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "language-english-auto": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Automatic pass if your admission score met the mark.": "supported",
+    "New TEPS 327, old TEPS 601, or TOEFL iBT 96, or higher.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-total": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Earn 24 or more course credits.": "supported",
+    "Grade average 3.0 or higher, both overall and in major courses, on a 4.3 scale.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-ece": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Take 9 or more credits of ECE graduate courses.": "supported",
+    "The module seminar counts toward these 9.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-thesis-research": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "At most 6 thesis research credits count toward coursework.": "supported",
+    "Anything above 6 is not counted.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-common": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "At most 3 credits of graduate common-competency courses count.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-undergraduate": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Up to 6 credits of undergraduate major courses can count.": "supported",
+    "The major must match. General-education courses are excluded.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "self-check-sheet": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Consulting the completion self-check sheet on the department website is mandatory when checking the completion requirements.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "degree-conditions": {
+   "pass": 1,
+   "key": "supported",
+   "lines": {
+    "Pass the qualification exam: language test plus major test.": "supported",
+    "Meet every coursework requirement.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "paper-requirement": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Present 1 or more conference papers, or publish 1 or more journal papers.": "supported",
+    "Your name must be first among the authors, not counting your advisor.": "supported",
+    "Your advisor must be a co-author.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-six-credits-phd": {
+   "pass": 4,
+   "key": "supported",
+   "lines": {
+    "Earn 6 or more credits of ECE graduate courses after entering the PhD.": "supported",
+    "Not counted: thesis research, S/U courses, module master's and doctoral seminars in special-lecture format, credits carried over between programs.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-repeated-course": {
+   "pass": 3,
+   "key": "supported",
+   "lines": {
+    "A course taken in an SNU master's and taken again in the PhD is not counted.": "supported",
+    "The same course appears on the transcript without a retake mark.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "degree-conditions-phd": {
+   "pass": 2,
+   "key": "supported",
+   "lines": {
+    "Pass the doctoral qualification exam: language test plus major test.": "supported",
+    "Meet every coursework requirement.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "paper-requirement-phd": {
+   "pass": 4,
+   "key": "supported",
+   "lines": {
+    "One or more papers in an internationally recognised journal of SCI(E) level.": "supported",
+    "Entrants from 2008 also need one of: an international conference paper, a domestic journal paper, or a registered international patent.": "supported",
+    "Your advisor must be a co-author.": "supported",
+    "Your name must be first among the authors, not counting your advisor.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-english-placement-2023": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "New TEPS 453 to 525: take Advanced English.": "supported",
+    "New TEPS 387 to 452: take College English 2.": "supported",
+    "New TEPS 298 to 386: take College English 1.": "supported",
+    "New TEPS 297 or below: take Basic English, then College English 1.": "supported",
+    "New TEPS 526 or above: Advanced English is not required.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-ge-total-2023": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "53 or more general-education credits in total.": "supported",
+    "Foundations of Scholarship (학문의 기초): 41 credits.": "supported",
+    "Worlds of Knowledge (학문의 세계): 12 credits from at least 3 of the 5 areas.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-foreign-language-lectures-2023": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Take 3 or more courses taught in a foreign language, including 1 or more major course.": "supported",
+    "College English 1 and 2 and Advanced English are not counted.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "continue-or-quit-form": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Hand in either the continue form or the give-up form at the end of semester 2.": "supported",
+    "After a continue form you can still switch to give-up, until one semester before finishing coursework.": "supported",
+    "After a give-up form you cannot switch back.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "masters-exit-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "In principle the integrated program awards only a PhD.": "supported",
+    "To receive a master's, you must first give up the integrated PhD.": "supported",
+    "After receiving the master's, the integrated PhD can no longer be awarded.": "supported",
+    "The master's thesis is then due within 4 years of finishing coursework, with a 2-year extension possible.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "seminar-consecutive": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Audit and enrolment should be in two consecutive semesters.": "supported",
+    "If that is not possible, you must tell the course assistant.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "seminar-attendance": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Miss one session while auditing and you get an F when you take the seminar.": "supported",
+    "The professor may change the number of absences allowed.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "seminar-subtitle": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "The same course name is not enough.": "supported",
+    "The sub-title and its code must match the seminar you audited.": "supported"
+   },
+   "why": "supported",
+   "caution": "contradicted",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "research-ethics": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Take at least one of three research ethics courses.": "supported",
+    "M2480.000100 (1 credit), M1570.000300 (2 credits), or 990.501A (3 credits).": "supported",
+    "Taken during an SNU master's, it need not be repeated in the PhD.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-ge-total-2024": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "53 or more general-education credits in total.": "supported",
+    "Foundations of Scholarship (학문의 기초): 41 credits.": "supported",
+    "Worlds of Knowledge (학문의 세계): 12 credits from at least 4 of the 5 areas.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-intro-engineering-earlier": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "All introduction courses are accepted, such as those of mechanical, industrial, materials, civil, chemical and energy resources engineering.": "supported",
+    "Introduction to Computer Engineering is excluded.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-life-respect": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Complete the College of Engineering's life-respect (suicide prevention) education while enrolled in the first year.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-prerequisites": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Basic Electromagnetics and Practice (430.202B): Physics 2 and Engineering Mathematics 2 first.": "supported",
+    "Basic Circuit Theory and Lab (430.213A): Physics 2 and Engineering Mathematics 1 first.": "supported",
+    "Basic Electronic Circuits and Lab (430.207B): 430.202B and 430.213A first.": "supported",
+    "Signals and Systems (430.306): Engineering Mathematics 1 first.": "supported",
+    "Programming Methodology (430.211): Computer Concepts and Practice first.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "not_stated",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-recommended-timing": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Computer Concepts and Practice: recommended in year 1, semester 1.": "supported",
+    "Engineering Mathematics 1: recommended in year 1, semester 2.": "supported",
+    "Engineering Mathematics 2: recommended in year 2, semester 1.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-english-placement": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "New TEPS 453 to 525: take Advanced English.": "supported",
+    "New TEPS 387 to 452: take College English 2.": "supported",
+    "New TEPS 268 to 386: take College English 1.": "supported",
+    "New TEPS 267 or below: take Basic English, then College English 1.": "supported",
+    "New TEPS 526 or above: Advanced English is not required.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-ge-total": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "53 or more general-education credits in total.": "supported",
+    "Foundations of Scholarship (학문의 기초): 41 credits.": "supported",
+    "Keys of Intellect (지성의 열쇠): 9 credits, 3 from each of three areas.": "supported",
+    "Veritas (베리타스): 3 credits or more.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-ge-foundation": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "College Writing 1 and College Writing 2: Science and Technology Writing (2 credits each).": "supported",
+    "Two foreign-language courses (3 credits each).": "supported",
+    "Mathematics 1 and 2 with practice (3 each); Physics 1 and 2 with labs (4 each).": "supported",
+    "Two further basic science courses with labs (4 credits each).": "supported",
+    "Computer Concepts and Practice, Engineering Mathematics 1 and 2 (3 credits each).": "supported"
+   },
+   "why": "not_stated",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-english-required": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Students whose New TEPS score at admission is 525 or below must complete one English course.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": false,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-basic-science": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "A basic science course must be taken together with the lab of the same name, in the same semester.": "supported",
+    "Physics, Basics of Physics 1 and Basics of Physics 2 do not count toward graduation.": "supported",
+    "A year-long course and its one-semester version in the same area count only once.": "not_stated"
+   },
+   "why": "not_stated",
+   "caution": "supported",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "ug-major-total": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "63 or more major credits.": "supported",
+    "Including 32 required credits and 13 or more selective-elective credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-major-required": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Introduction to Engineering (3); Logic Design and Lab (4); Programming Methodology (4).": "supported",
+    "Basic Electromagnetics and Practice (4); Basic Circuit Theory and Lab (4); Basic Electronic Circuits and Lab (4).": "supported",
+    "Signals and Systems (3); Electrical Engineering Design Project (3).": "supported",
+    "Electrical and Computer Engineering Seminar 1, 2 and 3 (1 credit each).": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-major-selective": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "13 or more credits from the 15 designated courses.": "supported",
+    "Creative Engineering Design (400.018) is compulsory and must be the class offered by ECE.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-intro-engineering": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Introduction courses whose code starts with 400 are accepted, such as those of mechanical, industrial, materials, civil, chemical and energy resources engineering.": "supported",
+    "Introduction to Computer Engineering is excluded.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-other-department": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Major courses of other engineering departments (including Computer Science and Engineering), Natural Sciences and Business count as major electives, up to 9 credits.": "supported",
+    "Business courses: up to 3 credits, from nine designated courses.": "supported",
+    "Taking other-department electives is not compulsory.": "supported",
+    "Confirm with the department which courses are accepted.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-cse-duplicates": {
+   "pass": 5,
+   "key": "contradicted",
+   "lines": {
+    "Designated ECE and CSE courses have the same content and are treated as duplicates.": "supported",
+    "If both are taken, only the ECE course counts as a major course.": "supported",
+    "One CSE course is treated as a general elective; credits of further CSE duplicates are not recognised.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "ug-excluded-course": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "M2177.005800 (Basic Mathematics and Programming Practice for Machine Learning) is not counted toward this department's graduation credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-engineering-common": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "College of Engineering common courses count as major electives without a credit limit.": "supported",
+    "Some of them may not be counted toward this department's graduation credits; ask the department.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-multiple-major": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "With a double, combined or student-designed major in another department: 45 or more major credits.": "supported",
+    "With a minor or linked major: 48 or more major credits.": "supported",
+    "Both include 32 required credits and 13 or more selective-elective credits, with Creative Engineering Design.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-graduate-courses": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "From year 3, credits earned in master's-level courses can count toward the bachelor's degree, or later toward a master's degree.": "supported",
+    "To count toward the bachelor's degree: change the course category to major elective.": "supported",
+    "To count toward a master's degree: 130 credits are still required without those credits.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-retake": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "A course can be retaken only if the grade was C+ or below.": "supported",
+    "The later grade is the one recognised.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-category-change": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "A change of course category or a retake correction takes one week after the request.": "supported",
+    "Check that the change was made, and contact the department office if it was not.": "supported",
+    "No change is possible after graduation.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-foreign-language-lectures": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Take 3 or more courses taught in a foreign language, including 1 or more major course.": "supported",
+    "College English 1 and 2 and Advanced English are not counted.": "supported",
+    "The document marks this item as recommended.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-degree-total": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "130 or more credits.": "supported",
+    "Grade average 2.0 or higher, both overall and in major courses.": "supported",
+    "2.0 or higher in each minor, double, combined, linked or student-designed major.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-thesis": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "A student who has not submitted the graduation thesis is removed from the list of graduates and recorded as having completed coursework only.": "supported",
+    "Whether the thesis was submitted can be checked on the university library website (library.snu.ac.kr).": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ug-audit-card": {
+   "pass": 5,
+   "key": "not_stated",
+   "lines": {
+    "The department issues a graduation audit card (졸업사정 이수과목 확인카드) for each entry year.": "not_stated",
+    "It lists every general-education and major course to be confirmed, including courses planned for the current semester.": "supported",
+    "It ends with a signed statement that the graduation application is submitted as attached.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "registration": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Registration is in February and August.": "supported",
+    "Exact dates are announced on the SNU and department notice boards.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "extra-semesters": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "From semester 5 for master's and PhD, semester 9 for integrated, tuition depends on the credits you take.": "supported",
+    "Registering for 0 credits means removal for non-registration.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "leave-of-absence": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Up to 4 semesters in total.": "supported",
+    "One leave request is valid for up to 1 year.": "not_stated",
+    "Apply on mySNU. Your advisor approves online after a meeting.": "not_stated"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "leave-of-absence-phd": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Up to 6 semesters in total.": "supported",
+    "One leave request is valid for up to 1 year.": "not_stated",
+    "Apply on mySNU. Your advisor approves online after a meeting.": "not_stated"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "return-from-leave": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Apply within the set period: mid December or mid June.": "supported",
+    "Apply on mySNU, then register in the registration period.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-from-masters": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Master's credits earned beyond that program's requirement can count toward the PhD, up to 12.": "supported",
+    "Only courses with grade B0 or higher. S/U courses cannot be used.": "supported",
+    "They do not count toward the exam's 6 credits.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "leave-of-absence-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Up to 8 semesters in total.": "contradicted",
+    "One leave request is valid for up to 1 year.": "supported",
+    "Apply on mySNU. Your advisor approves online after a meeting.": "supported"
+   },
+   "why": "supported",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "credits-before-admission": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Credits earned elsewhere before admission can count: up to 6 for master's, 9 for PhD, 15 for integrated.": "supported",
+    "Grade B0 or higher, within the last 10 years, same or similar subject.": "supported",
+    "Needs your advisor's recommendation and committee approval.": "not_stated"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": false,
+   "quote_found": true,
+   "status": "open",
+   "reason": ""
+  },
+  "exam-six-credits-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Earn 6 or more credits of ECE graduate courses after entering the integrated program.": "supported",
+    "Not counted: thesis research, S/U courses, module master's and doctoral seminars in special-lecture format, credits carried over between programs.": "supported"
+   },
+   "why": "supported",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "exam-timing-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "You must sit the exam at the start of your third semester.": "supported",
+    "The number of attempts is limited to one.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "supported",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-ece-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "Take 21 or more credits of ECE graduate courses.": "supported",
+    "The module seminars count toward these 21.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-thesis-research-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "At most 18 thesis research credits count toward coursework.": "supported",
+    "Anything above 18 is not counted.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "credits-common-integrated": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "At most 6 credits of graduate common-competency courses count.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "phd-stage-from-semester-4": {
+   "pass": 5,
+   "key": "supported",
+   "lines": {
+    "The start of semester 4 is treated as the start of the PhD stage.": "supported",
+    "Condition: registered through semester 3 with 24 credits taken.": "supported"
+   },
+   "why": "not_stated",
+   "caution": "empty",
+   "agrees": true,
+   "quote_found": true,
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ },
+ "notices": {
+  "57932": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "wrong_audience": 1,
+    "dropped_condition": 6,
+    "missing_step": 3,
+    "missing_date": 2
+   },
+   "minor": 4,
+   "wrong_dates": 0
+  },
+  "57938": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "dropped_condition": 2
+   },
+   "minor": 1,
+   "wrong_dates": 0
+  },
+  "57941": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "missing_step": 1,
+    "missing_date": 1,
+    "wrong_audience": 1,
+    "dropped_condition": 1
+   },
+   "minor": 2,
+   "wrong_dates": 0
+  },
+  "57942": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "missing_step": 1,
+    "missing_date": 1,
+    "dropped_condition": 1
+   },
+   "minor": 1,
+   "wrong_dates": 0
+  },
+  "57986": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "wrong_audience": 1,
+    "wrong_step": 1
+   },
+   "minor": 0,
+   "wrong_dates": 0
+  },
+  "58022": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "wrong_step": 1,
+    "missing_step": 1
+   },
+   "minor": 0,
+   "wrong_dates": 0
+  },
+  "58067": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "missing_date": 2,
+    "wrong_audience": 1,
+    "dropped_condition": 2,
+    "missing_step": 1
+   },
+   "minor": 0,
+   "wrong_dates": 0
+  },
+  "58072": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "dropped_condition": 13,
+    "missing_date": 5,
+    "wrong_audience": 1,
+    "missing_step": 11
+   },
+   "minor": 6,
+   "wrong_dates": 0
+  },
+  "58076": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "dropped_condition": 1,
+    "missing_step": 1
+   },
+   "minor": 4,
+   "wrong_dates": 0
+  },
+  "58191": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "wrong_audience": 1,
+    "dropped_condition": 2
+   },
+   "minor": 1,
+   "wrong_dates": 0
+  }
+ },
+ "notices_after": {
+  "57932": {
+   "overall": "minor_issues",
+   "could_mislead": {},
+   "minor": 2,
+   "wrong_dates": 0
+  },
+  "57938": {
+   "overall": "minor_issues",
+   "could_mislead": {},
+   "minor": 2,
+   "wrong_dates": 0
+  },
+  "57941": {
+   "overall": "minor_issues",
+   "could_mislead": {},
+   "minor": 2,
+   "wrong_dates": 0
+  },
+  "57942": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "wrong_audience": 1
+   },
+   "minor": 3,
+   "wrong_dates": 0
+  },
+  "57986": {
+   "overall": "minor_issues",
+   "could_mislead": {},
+   "minor": 1,
+   "wrong_dates": 0
+  },
+  "58022": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "dropped_condition": 1
+   },
+   "minor": 1,
+   "wrong_dates": 0
+  },
+  "58067": {
+   "overall": "minor_issues",
+   "could_mislead": {},
+   "minor": 1,
+   "wrong_dates": 0
+  },
+  "58072": {
+   "overall": "could_mislead",
+   "could_mislead": {
+    "missing_date": 1,
+    "wrong_step": 1
+   },
+   "minor": 2,
+   "wrong_dates": 0
+  },
+  "58076": {
+   "overall": "accurate",
+   "could_mislead": {},
+   "minor": 0,
+   "wrong_dates": 0
+  },
+  "58191": {
+   "overall": "minor_issues",
+   "could_mislead": {},
+   "minor": 2,
+   "wrong_dates": 0
+  }
+ }
+}

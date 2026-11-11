@@ -1,46 +1,52 @@
 {
- "title_en": "Public Thesis Defense Presentations, Graduate School, Fall Semester (2nd Semester) of the 2026 Academic Year: How Master's/Doctoral Seminar Students Can Attend",
- "summary": "This notice explains how students enrolled in the Master's/Doctoral Seminar in the 2nd semester of the 2026 academic year may attend public thesis defense presentations in person or online. It also explains how to submit the attendance confirmation form.",
- "applies_to": "Students enrolled in the Master's/Doctoral Seminar (석박사세미나) in the 2nd semester of the 2026 academic year.",
+ "title_en": "Fall 2026 Thesis Defense Public Presentations: Attendance Procedures for Master's/Doctoral Seminar Students",
+ "summary": "Students enrolled in the Fall 2026 Master's/Doctoral Seminar (석박사세미나) who attend a public thesis defense presentation must follow the procedure for in-person or online attendance. In-person attendees go directly to the venue, have the attached attendance confirmation form signed by the candidate's supervisor on site, and submit it to the seminar teaching assistant. Online attendees must apply by email to the department office at least one week before the defense, and after attending must submit the attendance confirmation form to the department office (Building 301, Room 319).",
+ "applies_to": "Students enrolled in the Master's/Doctoral Seminar (석박사세미나) in Fall 2026 who attend a public thesis defense presentation in person or online. The notice does not state whether attendance is mandatory.",
  "dates": [
   {
-   "what": "Semester to which this notice applies",
-   "when": "2nd semester of the 2026 academic year",
-   "original_ko": "2026학년도 2학기",
-   "verified": true
-  },
-  {
-   "what": "Check the latest schedule attachment, as the schedule may change",
+   "what": "Check the latest schedule attachment again, as schedules may change at any time (all attendees)",
    "when": "On the day of attendance",
    "original_ko": "참석 당일",
    "verified": true
   },
   {
-   "what": "Deadline to apply by email for online attendance",
+   "what": "Deadline to apply by email to the department office for online attendance (online attendees only)",
    "when": "No later than one week before the defense date",
    "original_ko": "심사일 1주일 전까지",
    "verified": true
   },
   {
-   "what": "Deadline to notify by email if you can no longer attend after applying for online attendance",
-   "when": "By the day before the defense",
+   "what": "Deadline to notify the department office by email if you cannot attend after applying (online attendees only)",
+   "when": "No later than the day before the defense",
    "original_ko": "심사 전날까지",
    "verified": true
   }
  ],
- "steps": [
-  "Check the date, time, venue and online participation link of the defense you will attend in the attachment to the Master's and Doctoral Public Thesis Defense Schedule notice. Check the latest attachment again on the day, as the schedule may change at any time.",
-  "In-person attendance: Go to the venue. No separate application to the department office is needed.",
-  "In-person attendance: Complete the attached Seminar Attendance Confirmation form (세미나 참석 확인서). At the venue, have it signed by the supervising professor of the student whose thesis is being examined.",
-  "In-person attendance: Submit the signed form to the seminar teaching assistant.",
-  "Online attendance: Confirm that the public defense allows online participation.",
-  "Online attendance: Apply by email to the department office no later than one week before the defense date. The address is in the original notice. Include your name and student ID number, the name of the student being examined, their program (Master's or Doctoral), and the date and time of the defense.",
-  "Online attendance: If you cannot attend after applying, notify the department office by email by the day before the defense.",
-  "Online attendance: Join using the participation link shown in the public schedule attachment. If the link is marked as being confirmed, check the latest schedule.",
-  "Online attendance: Set your display name in the online meeting to your student ID number and name, and turn on your camera so your attendance can be confirmed.",
-  "Online attendance: After the defense, complete the attached Seminar Attendance Confirmation form and submit it to the department office (Building 301, Room 319)."
+ "conditions": [
+  "Dates, times, venues and online links for each defense are given in the attachment to the separate notice on the master's and doctoral thesis defense public presentation schedule, not in this notice.",
+  "The schedule may change at any time, so check the latest attachment on the day you attend.",
+  "In-person attendees do not need to apply to the department office in advance.",
+  "In-person attendees must have the attendance confirmation form signed (서명) on site by the supervisor of the student whose thesis is being examined.",
+  "Online attendance is possible only for public defenses that allow online participation.",
+  "Online attendance requires an email application at least one week before the defense date.",
+  "If you have applied for online attendance and cannot attend, you must notify the department office by email by the day before the defense.",
+  "If the online link is shown as still being confirmed, check the latest schedule.",
+  "Online attendees must set their display name to their student ID number and name and must turn on their camera so attendance can be confirmed.",
+  "The department office confirms online attendance by comparing your submitted form against the attendee list submitted by the defense committee."
  ],
- "translation": "Title: Public Thesis Defense Presentations, Graduate School, 2nd Semester of the 2026 Academic Year: How Master's/Doctoral Seminar Students Can Attend\nPosted: 2026-11-06\n\nThis notice explains how students enrolled in the Master's/Doctoral Seminar (석박사세미나) in the 2nd semester of the 2026 academic year can attend public thesis defense presentations.\n\nPlease check the date, time and venue of the defense you will attend, and its online participation link, in the attachment to the Master's and Doctoral Public Thesis Defense Schedule notice. The schedule may change at any time, so please check the latest attachment on the day of attendance as well. (That schedule attachment is not included in this notice and was not read.)\n\n1. In-person attendance\nAttend at the relevant venue. You do not need to apply separately to the department office.\nComplete the attached attendance confirmation form. At the venue, have it signed by the supervising professor of the student whose thesis is being examined. Then submit it to the teaching assistant in charge of the seminar.\n\n2. Online attendance\nFirst confirm which public defenses allow online participation. Then apply for attendance by email to the department office no later than one week before the defense date. The email address is given in the original notice.\nIn your application email, state your name and student ID number. Also state the name of the student being examined, their program (Master's or Doctoral), and the date and time of the defense. If you are unable to attend after applying, please notify the office by email by the day before the defense.\nTo join, use the participation link shown in the public schedule attachment. If the link is shown as still being confirmed, please check the latest schedule.\nSet your display name in the online meeting to your student ID number and name. Turn on your camera so that your attendance can be confirmed.\n\n3. Submitting the attendance confirmation form for online attendance\nAfter attending the defense, complete the attached attendance confirmation form and submit it to the department office (Building 301, Room 319).\nThe department office will confirm your attendance by checking your form against the list of attendees submitted by the examining side.\n\nAttachment: Seminar Attendance Confirmation form (세미나 참석 확인서 양식), 1 copy.\n\nInquiries: Department office, School of Electrical and Information Engineering (전기·정보공학부 학부행정실). Contact details are given in the original notice.\n\nAttached file (1): [Attachment 1] 세미나 참석 확인서 양식.pdf (Seminar Attendance Confirmation form, 124 KB). The content of this file was not read.",
+ "steps": [
+  "Read the attachment to the notice on the master's and doctoral thesis defense public presentation schedule (석사·박사 논문심사 공개발표 일정) to find the date, time, venue and online link of the defense you will attend, and check the latest version again on the day.",
+  "Download the attached Seminar Attendance Confirmation Form ([붙임1] 세미나 참석 확인서 양식.pdf); its content was not read for this translation.",
+  "In-person attendance: Go directly to the defense venue without applying to the department office.",
+  "In-person attendance: Complete the attendance confirmation form and have it signed on site by the supervisor of the student whose thesis is being examined.",
+  "In-person attendance: Submit the signed form to the seminar teaching assistant.",
+  "Online attendance: Confirm that the defense allows online participation.",
+  "Online attendance: At least one week before the defense, email the department office (address in the original notice) with your name, student ID number, and the candidate's name, program (master's or doctoral) and defense date and time.",
+  "Online attendance: If you can no longer attend, notify the department office by email by the day before the defense.",
+  "Online attendance: Join using the link shown in the schedule attachment, set your display name to your student ID number and name, and turn on your camera.",
+  "Online attendance: After the defense, complete the attendance confirmation form and submit it to the department office (Building 301, Room 319)."
+ ],
+ "translation": "Fall 2026 Graduate Thesis Defense Public Presentations – Attendance Procedures for Master's/Doctoral Seminar (석박사세미나) Students\n\nThis notice explains how students enrolled in the Master's/Doctoral Seminar in Fall 2026 may attend public thesis defense presentations.\n\nPlease check the date, time and venue of the defense you will attend, and the online participation link, in the attachment to the master's and doctoral thesis defense public presentation schedule (석사·박사 논문심사 공개발표 일정). The schedule may change at any time, so please also check the latest attachment on the day you attend.\n\n1. In-person attendance\n\nAttend at the venue without applying separately to the department office.\n\nComplete the attached attendance confirmation form, have it signed on site by the supervisor of the student whose thesis is being examined, and submit it to the teaching assistant in charge of the seminar.\n\n2. Online attendance\n\nAfter confirming which public defenses allow online participation, apply to attend by emailing the department office (email address in the original notice) no later than one week before the defense date.\n\nIn your application email, state your name and student ID number, and the name of the student being examined, their program (master's or doctoral) and the date and time of the defense. If you cannot attend after applying, please notify the office by email by the day before the defense.\n\nPlease join using the participation link shown in the published schedule attachment. If the link is shown as still being confirmed, please check the latest schedule.\n\nSet your online meeting display name to your student ID number and name, and turn on your camera so that your attendance can be confirmed.\n\n3. Submission of the attendance confirmation form for online attendance\n\nAfter attending the defense, complete the attached attendance confirmation form and submit it to the department office (Building 301, Room 319).\n\nThe department office will confirm attendance by comparing the form with the attendee list submitted by the defense committee.\n\nAttachment: Seminar Attendance Confirmation Form, 1 copy.\n\nInquiries: Department office, School of Electrical and Information Engineering (전기·정보공학부). Contact details are in the original notice.\n\nAttachment (1 file): [붙임1] 세미나 참석 확인서 양식.pdf (124 KB) – the content of this file was not read.",
  "id": 58203,
  "text_hash": "6a8f3ea77c382c31",
  "images": 0,
@@ -49,5 +55,6 @@
  ],
  "model": "claude-opus-5-5",
  "written": "2026-11-11",
+ "prompt": 2,
  "revised": false
 }

@@ -9,21 +9,21 @@ C = "수료 자가진단 체크리스트.xlsx"
 M, ALL, MP = ["masters"], ["masters", "phd", "integrated"], ["masters", "phd"]
 
 
-def card(id, programs, group, title, rule, why, page, quote, when="", trap="", applies_from="", file=H, events=()):
-    """events: (label, [months]) pairs, only where the source states the months."""
+def card(id, programs, group, title, rule, why, page, quote, when="", trap="", applies_from="", file=H, events=(), also=0):
+    """events: (label, [months]) pairs, only where the source states the months.
+    also: a second page, when the rule runs over a page break; the quote is on `page`."""
     return {"id": id, "programs": programs, "group": group, "title": title, "rule": rule, "why": why,
             "when": when, "trap": trap, "applies_from": applies_from,
             "events": [{"label": label, "months": months} for label, months in events],
-            "source_file": file, "source_page": page, "source_quote_ko": quote, "check": "unchecked"}
+            "source_file": file, "source_page": page, "source_page_also": also, "source_quote_ko": quote, "check": "unchecked"}
 
 
 CARDS = [
     # ---- start early
     card("seminar-two-semesters", M, "start_early", "Seminar: audit one semester, then take it",
          ["Required to finish coursework: 3 credits.",
-          "First semester: audit only. Apply to the course assistant, do not register online.",
-          "Next semester: register online and present in English.",
-          "Take the seminar of your own module."],
+          "First semester: take part in the seminar without registering for it.",
+          "The following semester: register, then present in class and take part."],
          "Coursework cannot be finished without it, and it takes two semesters.", 8,
          "2) 이수 방법: 수강생은 2개 학기를 청강 및 수강해야 3학점 취득 가능함.",
          when="Offered every semester", applies_from="Entrants from fall 2009"),
@@ -46,11 +46,12 @@ CARDS = [
     # ---- before the qualification exam
     card("exam-basics", M, "before_exam", "Qualification exam: two written subjects",
          ["Held once in March and once in September.",
-          "Written exam. You answer 2 of 8 subjects.",
-          "Pass mark: 60 out of 100."],
-         "You cannot submit a thesis without passing.", 10,
+          "A written exam marked out of 100.",
+          "You answer 2 of the 8 subjects.",
+          "Pass mark: 60 or higher."],
+         "Passing the qualification examination is a condition for the degree.", 10,
          "3) 합격판정: 필답고사 점수 60점이상이면 석사학위 논문제출 자격시험에 합격으로 판정한다.",
-         when="March and September", events=[("Qualification exam", [3, 9])]),
+         when="March and September", events=[("Qualification exam", [3, 9])], also=9),
     card("exam-subjects", ALL, "before_exam", "The eight exam subjects",
          ["Circuit theory. Electronic circuits. Electromagnetics. Data structures and algorithms.",
           "Logic design. Basics of programming. Random variables and random processes. Signals and systems.",
@@ -62,10 +63,10 @@ CARDS = [
          "Sets the earliest semester you can take the exam.", 9, "1) 2학기 이상 등록"),
     card("exam-six-credits", M, "before_exam", "Exam: 6 ECE graduate credits first",
          ["Earn 6 or more credits of ECE graduate courses after admission.",
-          "Not counted: thesis research, S/U courses, module seminars, credits carried over between programs."],
+          "Not counted: thesis research, S/U courses, module master's and doctoral seminars in special-lecture format, credits carried over between programs."],
          "Without these 6 credits you cannot sit the exam.", 9,
          "5) 석사학위논문 제출 자격시험에 응시하려면 석사과정 입학 후 전기·정보공학부의 대학원 교과목 중 6학점 이상을 이수하여야 한다.",
-         trap="Seminar credits count toward coursework but not toward these 6."),
+         trap="Module seminars count toward the 9 ECE credits for completion, but special-lecture module seminars do not count toward these 6."),
     card("cert-safety", ALL, "before_exam", "Safety training for new researchers",
          ["Complete the Environmental Safety Institute's safety training.",
           "It must be the new-researcher course."],
@@ -79,7 +80,7 @@ CARDS = [
     card("language-english-auto", ALL, "before_exam", "English: your entry score may already pass",
          ["Automatic pass if your admission score met the mark.",
           "New TEPS 327, old TEPS 601, or TOEFL iBT 96, or higher."],
-         "The language test is half of the qualification exam.", 9,
+         "The qualification examination has a foreign-language part and a major part.", 9,
          "(나) 외국어시험 (입학 시 성적이 아래 합격점 이상이면 자동합격 인정됨) 개정 TEPS 327점 이상 / 기존 TEPS 601점 이상 / TOEFL iBT 96점 이상"),
     card("language-score-validity", ALL, "before_exam", "English scores are valid for 2 years",
          ["Only TEPS or TOEFL scores earned within 2 years of submission count.",
@@ -98,8 +99,8 @@ CARDS = [
          "제10조(외국인학생의 한국어시험) ① 외국인학생의 한국어시험은 교무처가 매년 3월과 9월에 주관하여 시행하는 시험으로 한다.",
          when="March and September", events=[("Korean test for international students", [3, 9])]),
     card("language-korean-class", ALL, "before_exam", "Korean class instead of the Korean test",
-         ["Take Korean Language and Culture 1 or 2.",
-          "A grade of C- or higher, or S, waives the Korean test.",
+         ["Take Korean Language and Culture 1 or 2 when it is offered as the substitute for the test, in a regular semester or a seasonal session.",
+          "A grade of C- or higher, or S, in that course waives the Korean test.",
           "These credits do not count toward your coursework credits."],
          "The other way to pass the language requirement.", 20,
          "③ 정규학기 또는 계절수업에서 논문제출자격시험의 대체과목으로 개설된 한국어 과목(한국어와 한국문화 1 또는 2)을 수강하고, 그 성적이 “C-이상” 또는 “S”의 성적을 취득한 경우에는 한국어시험을 면제하되, 수료학점에는 포함하지 않는다.",
@@ -151,10 +152,10 @@ CARDS = [
          when="Details announced each semester"),
     card("registration-count", M, "finish_coursework", "Register for 4 to 8 semesters",
          ["At least 4 registered semesters, at most 8."],
-         "Sets the shortest and longest time in the program.", 8, "(1) 등록 횟수: 4회 이상 8회까지"),
+         "Completion requires a number of registrations within this range.", 8, "(1) 등록 횟수: 4회 이상 8회까지"),
     card("self-check-sheet", ALL, "finish_coursework", "Use the completion self-check sheet",
-         ["The department says checking the self-check sheet is mandatory before you finish coursework."],
-         "Catches a missing requirement before your last semester.", 9,
+         ["Consulting the completion self-check sheet on the department website is mandatory when checking the completion requirements."],
+         "The department marks it as mandatory.", 9,
          "(자) 대학원 수료 요건 확인 시 학부 홈페이지 내 “수료 자가 진단 체크리스트” 참고 필수"),
     # ---- for the degree
     card("degree-conditions", M, "for_degree", "Pass the exam and finish coursework",
@@ -166,21 +167,22 @@ CARDS = [
          ["Present 1 or more conference papers, or publish 1 or more journal papers.",
           "Your name must be first among the authors, not counting your advisor.",
           "Your advisor must be a co-author."],
-         "Required for the degree, and a paper takes months.", 9,
+         "Listed among the degree conferral requirements.", 9,
          "(2) 본인의 이름이 지도교수를 제외한 논문저자 중 첫 번째로 되어 있는 학술대회 논문을 1편 이상 발표하였거나 논문지 논문을 1편 이상 게재하여야 함. 단, 지도교수가 해당 논문의 공동저자로 포함되어야 함."),
     card("defense-schedule", M, "for_degree", "Thesis defense: the semester timeline",
          ["Apply: March to April, or September to October.",
           "Defense: May, or November.",
           "Hand in 3 copies of the thesis 1 to 2 weeks before the defense.",
           "Results due: early June, or early December."],
-         "Miss the application window and the defense moves a semester.", 10,
+         "Exact dates and forms are announced each semester and may change.", 10,
          "(1) 심사 접수일: 3~4월 (1학기) / 9~10월 (2학기)",
          when="Apply March-April or September-October",
          events=[("Apply for thesis defense", [3, 4, 9, 10]), ("Thesis defense", [5, 11]), ("Defense results due", [6, 12])]),
     card("thesis-deadline", M, "for_degree", "Submit the thesis within 4 years",
          ["Within 4 years after finishing coursework.",
-          "A 2-year extension is possible on request."],
-         "After the deadline the thesis is no longer accepted.", 10, "- 과정 수료 후 4년 이내"),
+          "A 2-year extension is possible on request.",
+          "If the thesis has still not been examined after the extension, a further period of up to 3 years can be approved once, with added registration and credits."],
+         "The time allowed for submitting the thesis is limited.", 10, "- 과정 수료 후 4년 이내"),
     # ---- every semester
     card("registration", ALL, "every_semester", "Register and pay tuition",
          ["Registration is in February and August.",

@@ -113,8 +113,16 @@ details.done .title { color:var(--muted); }
 .body li { margin-bottom:2px; }
 .body p { margin:0 0 6px; }
 .body b { font-weight:700; }
+.later { margin:4px 0 14px; padding:12px 14px; border:2px solid var(--blue); }
+.later > b { display:block; margin-bottom:6px; color:var(--blue); }
+.later ul { margin:0; padding-left:18px; }
+.later li { margin-bottom:8px; }
+.later li small { display:block; margin-top:2px; font-size:13px; color:var(--muted); }
+.later li a { display:block; margin-top:2px; font-size:13px; color:var(--blue); font-weight:700; text-decoration:none; }
+.later li a::after { content:" \2192"; }
 .trapline { margin-top:12px !important; padding:10px 12px; background:var(--caution); color:#000; }
 .source { margin-top:16px; padding-top:14px; border-top:1px solid var(--hair); font-size:13px; color:var(--muted); }
+.source .reason { display:block; margin-top:4px; }
 .source blockquote { margin:8px 0; padding:10px 12px; background:var(--tint); color:var(--ink); font-size:14px; }
 .related { margin-top:12px; }
 .related a { display:block; padding:2px 0; }
@@ -131,6 +139,7 @@ details.done .title { color:var(--muted); }
 .notice td:first-child { padding-right:14px; }
 .notice td small { display:block; font-size:13px; color:var(--muted); }
 .notice ol { margin:4px 0 12px; padding-left:20px; }
+.conds { margin:4px 0 12px; } .conds ul { margin:6px 0 0; padding-left:18px; } .conds li { margin-bottom:3px; }
 .notice h4 { margin:14px 0 4px; font-size:16px; font-weight:700; }
 .notice .full summary { min-height:0; padding:8px 0; font-size:14px; font-weight:700; color:var(--blue); }
 .notice .full summary::after { font-size:18px; }
@@ -412,9 +421,11 @@ function renderNotices() {
             el("p", { class: "ko", lang: "ko" }, n.title_ko),
             ...(b ? [
               el("p", null, b.summary),
+              b.applies_to ? el("p", null, el("b", null, L("Who must act") + ". "), b.applies_to) : null,
               b.dates.length ? el("table", null, ...b.dates.map((d) => el("tr", null,
                 el("td", null, d.what), el("td", null, d.when,
                   el("small", { lang: "ko" }, d.original_ko + (d.verified ? "" : "  (" + L("not found in the notice text") + ")")))))) : null,
+              (b.conditions || []).length ? el("div", { class: "conds" }, el("b", null, B("Conditions and exceptions")), el("ul", null, ...b.conditions.map((x) => el("li", null, x)))) : null,
               ...stepBlocks(b.steps),
               b.images ? el("p", { class: "trapline" }, el("b", null, L("Caution") + ". "),
                 dept.assistant ? B("Images in this notice that could not be read: {n}. For English, paste a screenshot into {assistant}.", { n: b.images, assistant: assistantLink() }, { assistant: dept.assistant.name })
@@ -507,6 +518,10 @@ function renderAbout() {
     return side.url ? out(side.url, inside) : el("a", { href: side.card ? "#card-" + side.card : "#notice-" + side.notice }, inside); };
   const byId = Object.fromEntries(notes.chain.notices.map((n) => [n.id, n]));
   const chainYears = notes.chain.notices.map((n) => n.date.slice(0, 4)).sort();
+  const audited = dept.cards.filter((c) => c.audit), checkedNotices = Object.values((dept.audit || {}).notices || {});
+  const recheckedNotices = Object.values((dept.audit || {}).notices_after || {});
+  const misleading = (list) => list.reduce((a, n) => a + Object.values(n.could_mislead).reduce((x, y) => x + y, 0), 0);
+  const caught = Object.values((dept.audit || {}).decoys || {}).filter((v) => v === "caught").length;
   const status = (n) => n.english_board === "found" ? B("Identified") : n.english_board ? B("None identified") : B("Not compared");
   root.replaceChildren(
     el("section", { class: "band" }, el("p", null, B("Department of {name}", { name: dept.name }, { name: dept.name_ko })), el("h1", null, B("Background and Method")),
@@ -573,9 +588,25 @@ function renderAbout() {
           B("{a} of {b} dates matched", { a: num(dates.filter((d) => d.verified).length), b: num(dates.length) })),
         step("4", B("Publish"), B("The site is rebuilt and published. Every notice links to the original; every requirement cites its file, page and Korean line."), B("{n} requirements with a source", { n: num(dept.cards.length) })))),
 
+    audited.length ? el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Independent check")), el("span", null, B("Checked {date}", ...day(dept.audit.audited_on)))),
+      el("div", { class: "figs four", "data-reveal": "" },
+        fig(num(audited.length), "", B("requirements re-read against the handbook page by a second reader")),
+        fig(num(dept.audit.cards_first_reading.agree), `of ${dept.audit.cards_first_reading.of}`, B("agreed in full at the first reading")),
+        fig(num(audited.filter((c) => c.audit.status === "reader_agrees").length), `of ${audited.length}`, B("have the second reader's full agreement after corrections")),
+        fig(num(caught), `of ${Object.keys(dept.audit.decoys).length}`, B("deliberately wrong entries, mixed in as a test, were caught"))),
+      el("div", { class: "figs four", "data-reveal": "" },
+        fig(num(checkedNotices.length), "", B("notices with deadlines compared with the Korean original")),
+        fig(num(checkedNotices.concat(recheckedNotices).reduce((a, n) => a + n.wrong_dates, 0)), "", B("dates that were wrong")),
+        fig(num(checkedNotices.filter((n) => n.overall === "could_mislead").length), `of ${checkedNotices.length}`, B("summaries left out something a student could need, at the first reading")),
+        recheckedNotices.length ? fig(num(recheckedNotices.filter((n) => n.overall === "could_mislead").length), `of ${recheckedNotices.length}`, B("still did after the translation instructions were tightened")) : ""),
+      recheckedNotices.length ? el("p", { class: "aboutnote" }, B("Across those notices, the points that could mislead a student fell from {a} to {b}.", { a: misleading(checkedNotices), b: misleading(recheckedNotices) })) : "",
+      el("p", { class: "aboutnote" }, B("Of the rest, {s} were settled by the author against the page, with the reason shown on the requirement, and {o} are still open.",
+        { s: audited.filter((c) => c.audit.status === "settled_by_author").length, o: audited.filter((c) => c.audit.status === "open").length })),
+      el("p", { class: "aboutnote" }, B("The second reader is an AI model from a different maker than the one that drafted the requirements. It read each page image itself. This is not a check by a person or by the department."))) : "",
+
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("What it does not do yet"))),
       el("ul", { class: "plain" },
-        el("li", null, B("The {n} requirements were written by hand from the official documents. A second, independent check has not been run, so each one says \"Verification pending\".", { n: num(dept.cards.length) })),
+        el("li", null, B("The {n} requirements were written by hand from the official documents. {a} of them have been re-read by a second reader; the others say \"Verification pending\".", { n: num(dept.cards.length), a: num(audited.filter((c) => c.audit.status !== "open").length) })),
         el("li", null, B("Images and attachments are not read. The notice says so and sends the student to {assistant}.", { assistant: dept.assistant ? dept.assistant.name : "the original notice" })),
         el("li", null, B("It covers one department and notices since {date}. Month boxes come from the handbook; exact dates are in each notice.", ...day(dept.board.since))),
         el("li", null, B("Translations are made by AI and can be wrong. It is a student project, not an official Seoul National University website.")))),
@@ -629,6 +660,15 @@ function show(view, keepScroll) {
   if (!keepScroll) window.scrollTo(0, 0);
 }
 
+// What later notices add or change. When sources differ, the most recent official one is the current rule.
+function laterNotices(c) {
+  if (!(c.updates || []).length) return null;
+  return el("div", { class: "later" }, el("b", null, B("Added or changed by later notices")),
+    el("ul", null, ...c.updates.map((u) => { const n = dept.notices.find((x) => x.id === u.notice);
+      return el("li", null, u.text, el("small", { lang: "ko" }, u.quote_ko),
+        n ? el("a", { href: "#notice-" + n.id }, `${n.title_en || n.title_ko} (${fullDate(n.date)})`) : ""); })));
+}
+
 function cardNode(c) {
   const recurring = c.group === "every_semester";
   const isDone = !recurring && !!store.get(doneKey(c.id));
@@ -646,6 +686,7 @@ function cardNode(c) {
       c.trap ? el("span", { class: "tag trap" }, L("Caution")) : null),
     el("div", { class: "body" },
       el("ul", null, ...c.rule.map((line) => el("li", null, line))),
+      laterNotices(c),
       el("p", null, el("b", null, L("Relevance") + ". "), c.why),
       c.when ? el("p", null, el("b", null, L("Schedule") + ". "), c.when) : null,
       c.applies_from ? el("p", null, el("b", null, L("Applicability") + ". "), c.applies_from) : null,
@@ -653,7 +694,8 @@ function cardNode(c) {
       relatedNotices(c),
       el("div", { class: "source" },
         el("b", null, L("Source") + ". "), `${src.name}, ${L("page {n}", { n: c.source_page })}. `,
-        c.check === "confirmed" ? L("Verified against the source page") + "." : L("Verification pending") + ".",
+        c.audit && c.audit.status !== "open" ? L("Re-read by a second reader on {date}", { date: fullDate(c.audit.date) }, { date: koDate(c.audit.date) }) + "." : L("Verification pending") + ".",
+        c.audit && c.audit.reason ? el("span", { class: "reason" }, " " + c.audit.reason) : "",
         el("blockquote", { lang: "ko" }, c.source_quote_ko),
         src.url ? el("a", { href: src.url, target: "_blank", rel: "noopener" }, L("Official page where this document is published")) : null)));
   return node;

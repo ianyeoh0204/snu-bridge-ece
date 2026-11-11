@@ -1,10 +1,18 @@
 {
- "title_en": "Notice on Changing the Grading Method for Common Curriculum Courses Offered in the 2nd Semester of the 2026 Academic Year",
- "summary": "This notice announces the period and procedure for changing the grading method for eligible Common Curriculum (공통교육과정) courses offered in the 2nd semester of the 2026 academic year. The period, procedure, and list of eligible courses are given only in the two attached files, which were not read.",
- "applies_to": "",
+ "title_en": "Fall 2026 Common Curriculum Courses: Change of Grading Method",
+ "summary": "Students taking Fall 2026 common curriculum courses may change the grading method for eligible courses during a set period. The change period and procedure are given only in the two attachments, which were not read for this translation. Students who wish to change should consult the attachments in the original notice.",
+ "applies_to": "Students enrolled in common curriculum (공통교육과정) courses offered in Fall 2026 whose course is one that allows a change of grading method. The notice does not say whether a change is mandatory; it describes a change that is available for eligible courses.",
  "dates": [],
- "steps": [],
- "translation": "Title: Notice on Changing the Grading Method for Common Curriculum Courses Offered in the 2nd Semester of the 2026 Academic Year\n\nPosted: 2026-08-31\n\nThis notice announces the period and method for changing the grading method (성적평가방법) for those Common Curriculum (공통교육과정) courses offered in the 2nd semester of the 2026 academic year whose grading method may be changed.\n\nAttachment 1. List of Courses Eligible for a Change of Grading Method, 2nd Semester of 2026 ([붙임1] 2026. 2학기 성적평가방법 변경 가능 강좌 목록.xlsx, 23 KB)\n\nAttachment 2. Manual for Changing the Grading Method of Common Curriculum Courses ([붙임2] 공통교육과정 교과목 성적평가방법 변경 매뉴얼.hwp, 282 KB)\n\n[Translator's note: The text of the notice does not state the change period, the procedure, or which courses are eligible. This information appears to be contained in the two attachments, which were not read and are not translated here. Please download the attachments from the original notice or contact the department office; contact details are in the original notice.]",
+ "conditions": [
+  "Only courses whose grading method may be changed (listed in Attachment 1) are eligible.",
+  "The change period and method are stated only in the attachments, which were not read; this translation contains no deadline."
+ ],
+ "steps": [
+  "Open Attachment 1, the list of Fall 2026 courses eligible for a change of grading method (an Excel file in the original notice), and check whether your course is listed.",
+  "Read Attachment 2, the manual for changing the grading method of common curriculum courses (a .hwp file in the original notice), for the change period and procedure.",
+  "Follow the procedure in Attachment 2 within the period it states. For questions, contact the department office; contact details are in the original notice."
+ ],
+ "translation": "Notice on Changing the Grading Method for Common Curriculum Courses Offered in Fall 2026\n\nWe announce the period and method for changing the grading method for those common curriculum (공통교육과정) courses offered in Fall 2026 whose grading method may be changed.\n\nAttachment 1. List of Fall 2026 courses eligible for a change of grading method\n\nAttachment 2. Manual for changing the grading method of common curriculum courses\n\nAttached files (2):\n[Attachment 1] 2026. 2학기 성적평가방법 변경 가능 강좌 목록.xlsx (23 KB)\n[Attachment 2] 공통교육과정 교과목 성적평가방법 변경 매뉴얼.hwp (282 KB)\n\n(Translator's note: the contents of the attachments, including the change period and method, were not available and were not read.)",
  "id": 58015,
  "text_hash": "dd33164f8f94fd5c",
  "images": 1,
@@ -13,6 +21,7 @@
   "[붙임2] 공통교육과정 교과목 성적평가방법 변경 매뉴얼.hwp"
  ],
  "model": "claude-opus-5-5",
- "written": "2026-11-11",
+ "written": "2026-11-12",
+ "prompt": 2,
  "revised": false
 }
