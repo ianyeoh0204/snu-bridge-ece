@@ -41,8 +41,12 @@ def _main() -> None:
     _load_env()
     if command == "briefs":
         from . import briefs
-        written = briefs.update(department, int(sys.argv[3]) if len(sys.argv) == 4 else 0)
-        print(f"{len(written)} briefs written")
+        written, failed, checked = briefs.update(department, int(sys.argv[3]) if len(sys.argv) == 4 else 0)
+        print(f"{checked} notices checked, {len(written)} translated, {len(failed)} failed")
+        for line in failed:
+            print(f"::warning::{line}")  # shown on the run's page on GitHub
+        if failed and not checked:
+            sys.exit("No notice could be read. The department site may be down or its page layout may have changed.")
         return
     from . import cards, check, extract, llm, sources, table  # after .env, so settings apply
 

@@ -51,6 +51,9 @@ tell the reader the contact is in the original notice.
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
 PHONE = re.compile(r"\b0\d{1,2}[-)\s]\d{3,4}-\d{4}\b|\b880-\d{4}\b")
+# The page prints a download counter beside each attachment. It rises all day, so it must not count as a change to the notice.
+COUNTER = re.compile(r",\s*download:\s*\d+")
+SEOUL = datetime.timezone(datetime.timedelta(hours=9))
 
 
 def read(url: str) -> dict:
@@ -65,7 +68,7 @@ def read(url: str) -> dict:
     text = re.sub(r"<br\s*/?>|</p>|</div>|</li>|</tr>|</h\d>", "\n", text)
     text = html.unescape(re.sub(r"<[^>]+>", "", re.sub(r"</t[dh]>", " | ", text)))
     text = re.sub(r"[ \t　]+", " ", re.sub(r"\n\s*\n+", "\n", text)).strip()
-    text = re.sub(r"^조회수\s*\d+\s*", "", text)
+    text = COUNTER.sub("", re.sub(r"^조회수\s*\d+\s*", "", text))
     return {
         "text": PHONE.sub("[phone]", EMAIL.sub("[email]", text)),
         "images": len(re.findall(r'<img[^>]+src="(?!/_skin/)', region)),
@@ -81,30 +84,42 @@ def _squash(value: str) -> str:
     return re.sub(r"\s+", "", value)
 
 
-def update(department: str, limit: int = 0) -> list[str]:
+def _translate(notice: dict, target: Path) -> str:
+    """Write the brief for one notice if it is new or its text changed. Returns a log line, or "" if nothing was needed."""
+    source = read(notice["url"])
+    time.sleep(1)
+    digest = hashlib.sha256(source["text"].encode("utf-8")).hexdigest()[:16]
+    if target.exists() and json.loads(target.read_text(encoding="utf-8"))["text_hash"] == digest:
+        return ""
+    brief = llm.ask(SYSTEM, [llm.text(f"Title: {notice['title_ko']}\nPosted: {notice['date']}\n\n{source['text']}")],
+                    BRIEF, max_tokens=32000, effort="medium")
+    body = _squash(notice["title_ko"] + source["text"])  # a deadline is sometimes stated only in the title
+    for date in brief["dates"]:
+        date["verified"] = _squash(date["original_ko"]) in body
+    brief.update(id=notice["id"], text_hash=digest, images=source["images"], attachments=source["attachments"],
+                 model=llm.MODEL, written=datetime.datetime.now(SEOUL).date().isoformat(), revised=target.exists())
+    target.write_text(json.dumps(brief, ensure_ascii=False, indent=1), encoding="utf-8")
+    unverified = sum(not d["verified"] for d in brief["dates"])
+    return f"{notice['id']} {len(brief['dates'])} dates, {unverified} not found in the text, {source['images']} images unread"
+
+
+def update(department: str, limit: int = 0) -> tuple[list[str], list[str], int]:
+    """Translate what is new or changed. Returns (written, failed, checked). One bad notice never stops the rest."""
     data = ROOT / "data" / department
     out = data / "briefs"
     out.mkdir(parents=True, exist_ok=True)
-    log = []
+    written, failed, checked = [], [], 0
     for notice in json.loads((data / "notices.json").read_text(encoding="utf-8")):
-        if limit and len(log) >= limit:
+        if limit and len(written) >= limit:
             break
-        target = out / f"{notice['id']}.json"
-        source = read(notice["url"])
-        time.sleep(1)
-        digest = hashlib.sha256(source["text"].encode("utf-8")).hexdigest()[:16]
-        if target.exists() and json.loads(target.read_text(encoding="utf-8"))["text_hash"] == digest:
+        try:
+            line = _translate(notice, out / f"{notice['id']}.json")
+        except Exception as error:  # network trouble, a changed page layout, or a notice too long for the model
+            failed.append(f"{notice['id']} not translated ({type(error).__name__}: {error})")
+            print(failed[-1], flush=True)
             continue
-        brief = llm.ask(SYSTEM, [llm.text(f"Title: {notice['title_ko']}\nPosted: {notice['date']}\n\n{source['text']}")],
-                        BRIEF, max_tokens=16000, effort="medium")
-        body = _squash(notice["title_ko"] + source["text"])  # a deadline is sometimes stated only in the title
-        for date in brief["dates"]:
-            date["verified"] = _squash(date["original_ko"]) in body
-        brief.update(id=notice["id"], text_hash=digest, images=source["images"], attachments=source["attachments"],
-                     model=llm.MODEL, written=datetime.date.today().isoformat(),
-                     revised=target.exists())
-        target.write_text(json.dumps(brief, ensure_ascii=False, indent=1), encoding="utf-8")
-        unverified = sum(not d["verified"] for d in brief["dates"])
-        log.append(f"{notice['id']} {len(brief['dates'])} dates, {unverified} not found in the text, {source['images']} images unread")
-        print(log[-1], flush=True)
-    return log
+        checked += 1
+        if line:
+            written.append(line)
+            print(line, flush=True)
+    return written, failed, checked
