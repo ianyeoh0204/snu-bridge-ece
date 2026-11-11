@@ -1,0 +1,492 @@
+{
+ "counted_on": "2026-11-11",
+ "since": "2024-01-01",
+ "korean_board": "https://ece.snu.ac.kr/community/academics",
+ "english_board": "https://ece.snu.ac.kr/en/community/notice",
+ "korean_by_year": {
+  "2024": {
+   "posts": 170,
+   "views": 262265
+  },
+  "2025": {
+   "posts": 165,
+   "views": 276077
+  },
+  "2026": {
+   "posts": 165,
+   "views": 206455
+  }
+ },
+ "english_by_year": {
+  "2024": {
+   "posts": 24,
+   "views": 27663
+  },
+  "2025": {
+   "posts": 18,
+   "views": 19640
+  },
+  "2026": {
+   "posts": 22,
+   "views": 10647
+  }
+ },
+ "most_read_korean": [
+  {
+   "id": 57626,
+   "date": "2026-03-18",
+   "title_ko": "★2026학년도 1학기 대학원 논문 심사 일정 안내",
+   "audience_ko": "대학원",
+   "views": 8853
+  },
+  {
+   "id": 56747,
+   "date": "2026-02-26",
+   "title_ko": "★[대학원 필독] 학점, 수료, 졸업 등 주요사항 및 자주 묻는 질문 안내",
+   "audience_ko": "대학원",
+   "views": 7758
+  },
+  {
+   "id": 57151,
+   "date": "2026-01-05",
+   "title_ko": "★2026년 2월 석사, 박사과정 수료/졸업예정자 명단 안내",
+   "audience_ko": "대학원",
+   "views": 6013
+  },
+  {
+   "id": 57441,
+   "date": "2026-02-10",
+   "title_ko": "★2026학년도 1학기 대학원 논문제출자격시험(논자시) 일정 안내",
+   "audience_ko": "대학원",
+   "views": 5569
+  },
+  {
+   "id": 57376,
+   "date": "2026-01-14",
+   "title_ko": "2026학년도 1학기 수강신청 안내 (전기·정보공학부 학사교과목 '정원 외 신청기간' 조정 운영 안내 포함)",
+   "audience_ko": "학부&대학원",
+   "views": 4526
+  },
+  {
+   "id": 57606,
+   "date": "2026-03-13",
+   "title_ko": "★[내규] 대학원(석사, 박사, 석박통합 과정) 학위수여(논문 관련) 변경 규정 안내",
+   "audience_ko": "대학원",
+   "views": 4300
+  },
+  {
+   "id": 57627,
+   "date": "2026-03-18",
+   "title_ko": "2026학년도 1학기 박사 예비심사 일정 안내(2027년 2월 졸업)",
+   "audience_ko": "대학원",
+   "views": 4158
+  },
+  {
+   "id": 57796,
+   "date": "2026-06-05",
+   "title_ko": "2026학년도 2학기 등록, 복학, 재입학 및 휴학 안내",
+   "audience_ko": "학부&대학원",
+   "views": 4073
+  },
+  {
+   "id": 57700,
+   "date": "2026-04-22",
+   "title_ko": "2026학년도 하계 계절수업 수강신청 안내",
+   "audience_ko": "학부&대학원",
+   "views": 3828
+  },
+  {
+   "id": 58072,
+   "date": "2026-09-15",
+   "title_ko": "★2026학년도 2학기 대학원 논문 심사 일정 안내",
+   "audience_ko": "대학원",
+   "views": 3715
+  }
+ ],
+ "english_posts": [
+  {
+   "id": 58215,
+   "date": "2026-11-09",
+   "title": "정부초청외국인장학생 「Asia K-Banker School」 참가 신청 안내",
+   "views": 22
+  },
+  {
+   "id": 58118,
+   "date": "2026-10-03",
+   "title": "[deadline extended] SNU Global EDGE Fellowship Program for Fall 2026",
+   "views": 158
+  },
+  {
+   "id": 58105,
+   "date": "2026-09-29",
+   "title": "TOPIK Registration Fee Support for International Undergraduate Students in the College of Engineerin...",
+   "views": 137
+  },
+  {
+   "id": 58090,
+   "date": "2026-09-19",
+   "title": "2026 Fall International Student Writing Tutoring Program",
+   "views": 142
+  },
+  {
+   "id": 58088,
+   "date": "2026-09-18",
+   "title": "SNU Global EDGE Fellowship Program for Fall 2026",
+   "views": 176
+  },
+  {
+   "id": 58049,
+   "date": "2026-09-09",
+   "title": "SNU Plus Mentoring Program",
+   "views": 432
+  },
+  {
+   "id": 57964,
+   "date": "2026-08-12",
+   "title": "Fall 2026 ECE Courses Offered in English",
+   "views": 394
+  },
+  {
+   "id": 57903,
+   "date": "2026-07-22",
+   "title": "2026 The first Required R&D Training(Research Safety, Ethics, and Security) for International STEM G...",
+   "views": 301
+  },
+  {
+   "id": 57852,
+   "date": "2026-06-30",
+   "title": "SNU Visitng Student Researcher Service Fe Payment Guidelines",
+   "views": 453
+  },
+  {
+   "id": 57834,
+   "date": "2026-06-19",
+   "title": "「The 3rd 2026 Career Support Program for International STEM Graduate Students (제 3회 2026 외국인 대학원생 경력...",
+   "views": 319
+  },
+  {
+   "id": 57799,
+   "date": "2026-06-05",
+   "title": "Enrolled/Returning/Research Students 2026학년도 가을학기 표준입학허가서 신청 안내(재학생/복학생/연구생)",
+   "views": 655
+  },
+  {
+   "id": 57789,
+   "date": "2026-06-02",
+   "title": "[Internship Recruitment Seminar] 서울대 공과대학 외국인 유학생 인턴십 채용설명회 (한국어 가능자 우대, 김밥 제공)",
+   "views": 309
+  },
+  {
+   "id": 57737,
+   "date": "2026-05-08",
+   "title": "SNU Global EDGE Fellowship Program for Spring 2026",
+   "views": 844
+  },
+  {
+   "id": 57707,
+   "date": "2026-04-23",
+   "title": "Request for Nomination of Outstanding Candidates for the “K-STAR Visa Track”, Spring Semester 2026, ...",
+   "views": 940
+  },
+  {
+   "id": 57677,
+   "date": "2026-04-14",
+   "title": "Call for Leaders (Group Facilitators) Global R&D Career Salon in Korea (2026)",
+   "views": 606
+  },
+  {
+   "id": 57656,
+   "date": "2026-04-01",
+   "title": "SOS Guide for International Students on Sexual Harassment and Sexual Violence",
+   "views": 434
+  },
+  {
+   "id": 57638,
+   "date": "2026-03-24",
+   "title": "2026 Spring Semester International Student Writing Tutoring Program",
+   "views": 467
+  },
+  {
+   "id": 57597,
+   "date": "2026-03-12",
+   "title": "SNU Plus Mentoring Program",
+   "views": 306
+  },
+  {
+   "id": 57559,
+   "date": "2026-03-06",
+   "title": "2026년 정부초청 외국인 장학생(GKS) 버디 모집 안내",
+   "views": 382
+  },
+  {
+   "id": 57534,
+   "date": "2026-02-27",
+   "title": "[You're Invited] 2026 Spring ECE Int'l Student Welcome & Networking Event",
+   "views": 270
+  },
+  {
+   "id": 57430,
+   "date": "2026-02-09",
+   "title": "Tuition Payment Guide for Enrolled Students, Spring Semester 2026",
+   "views": 1804
+  },
+  {
+   "id": 57424,
+   "date": "2026-02-05",
+   "title": "Spring 2026 ECE Courses Offered in English",
+   "views": 1096
+  },
+  {
+   "id": 57049,
+   "date": "2025-11-19",
+   "title": "Enrolled/Returning/Research Students 2026학년도 봄학기 표준입학허가서 신청 안내(재학생/복학생/연구생)",
+   "views": 1880
+  },
+  {
+   "id": 57045,
+   "date": "2025-11-18",
+   "title": "[GSIS Career Seminar]Employment Workshop for International Students",
+   "views": 357
+  },
+  {
+   "id": 56948,
+   "date": "2025-10-13",
+   "title": "Call for Best Practices in Multicultural STEM Research Teams",
+   "views": 538
+  },
+  {
+   "id": 56891,
+   "date": "2025-09-19",
+   "title": "SNU Plus Mentoring Program",
+   "views": 645
+  },
+  {
+   "id": 56885,
+   "date": "2025-09-18",
+   "title": "International Forum We, the Youth comes to South Korea!",
+   "views": 1336
+  },
+  {
+   "id": 56880,
+   "date": "2025-09-16",
+   "title": "2025 삼성전자 DS부문 외국인 경력사원채용",
+   "views": 726
+  },
+  {
+   "id": 56799,
+   "date": "2025-08-27",
+   "title": "Notice on the Operation of a Dedicated Service Desk for International Students",
+   "views": 784
+  },
+  {
+   "id": 56758,
+   "date": "2025-08-12",
+   "title": "Fall 2025 ECE Courses Offered in English",
+   "views": 1781
+  },
+  {
+   "id": 56340,
+   "date": "2025-03-12",
+   "title": "Invitation for Citadel’s Asia Terminal Spring 2025 for Electrical and Computer Engineering Students",
+   "views": 1656
+  },
+  {
+   "id": 56279,
+   "date": "2025-03-04",
+   "title": "2025년 정부초청 외국인 장학생(GKS) 버디 모집 안내",
+   "views": 825
+  },
+  {
+   "id": 56295,
+   "date": "2025-03-01",
+   "title": "[Dept. of ECE] Join Us! 2025 Spring ECE Int'l Student Welcome & Networking",
+   "views": 895
+  },
+  {
+   "id": 56261,
+   "date": "2025-02-25",
+   "title": "International Students K-WORK Platform Resume Registration",
+   "views": 716
+  },
+  {
+   "id": 56260,
+   "date": "2025-02-25",
+   "title": "Online Recruitment Information Session for GKS Students",
+   "views": 690
+  },
+  {
+   "id": 56259,
+   "date": "2025-02-25",
+   "title": "Samsung Electronics DS Division R&D Foreign Student Recruitment",
+   "views": 1792
+  },
+  {
+   "id": 56225,
+   "date": "2025-02-13",
+   "title": "Call for GSFS Scholarship Program of Spring 2025",
+   "views": 1354
+  },
+  {
+   "id": 56223,
+   "date": "2025-02-13",
+   "title": "[Graduate School] Announcement of the Foreign Language Examination for International Students’ Thesi...",
+   "views": 1520
+  },
+  {
+   "id": 56200,
+   "date": "2025-02-06",
+   "title": "Registration of Graduate Research Students for the 2025 Spring Semester",
+   "views": 1214
+  },
+  {
+   "id": 56140,
+   "date": "2025-01-09",
+   "title": "[Graduate School] Schedule for Qualification Test(QT), 2025 1st semester",
+   "views": 931
+  },
+  {
+   "id": 56077,
+   "date": "2024-12-06",
+   "title": "SNU Global Scholarship (GS) for Spring 2025",
+   "views": 1402
+  },
+  {
+   "id": 56023,
+   "date": "2024-11-18",
+   "title": "2024 SNU CoEIO K-Culture day - KIMJANG (김장)",
+   "views": 348
+  },
+  {
+   "id": 55995,
+   "date": "2024-11-07",
+   "title": "Global Internship Program Information Session",
+   "views": 383
+  },
+  {
+   "id": 55993,
+   "date": "2024-11-07",
+   "title": "SNU Global EDGE Fellowship Program for Fall 2024",
+   "views": 913
+  },
+  {
+   "id": 55943,
+   "date": "2024-10-21",
+   "title": "Postdoc positions in Large Language Models at Mila",
+   "views": 1112
+  },
+  {
+   "id": 55877,
+   "date": "2024-09-26",
+   "title": "[Graduate School] Fall 2024 Preliminary Examination Schedule",
+   "views": 1103
+  },
+  {
+   "id": 55876,
+   "date": "2024-09-26",
+   "title": "[Graduate School] Dissertation Defense Schedule for Fall 2024",
+   "views": 4447
+  },
+  {
+   "id": 55782,
+   "date": "2024-08-22",
+   "title": "SNU 2024 Fall Guidelines for Online Group Application for Foreigner Registration·Visa Extension·Chan...",
+   "views": 2904
+  },
+  {
+   "id": 55722,
+   "date": "2024-07-31",
+   "title": "Registration of Graduate Research Students for the 2024 Fall Semester",
+   "views": 844
+  },
+  {
+   "id": 55713,
+   "date": "2024-07-26",
+   "title": "[Graduate School] Announcement of the Foreign Language Examination for International Students’ Thesi...",
+   "views": 1136
+  },
+  {
+   "id": 55692,
+   "date": "2024-07-19",
+   "title": "[Graduate School] Schedule for Qualification Test(QT), 2024 2nd semester",
+   "views": 992
+  },
+  {
+   "id": 55486,
+   "date": "2024-04-04",
+   "title": "2024 Online Education for Human Rights and Gender Equality",
+   "views": 663
+  },
+  {
+   "id": 55480,
+   "date": "2024-04-03",
+   "title": "[Graduate School] Spring 2024 Preliminary Examination Schedule",
+   "views": 1552
+  },
+  {
+   "id": 55479,
+   "date": "2024-04-03",
+   "title": "[Graduate School] Dissertation Defense Schedule for Spring 2024",
+   "views": 1562
+  },
+  {
+   "id": 55478,
+   "date": "2024-04-02",
+   "title": "SNU Global EDGE Fellowship Program for Spring 2024",
+   "views": 834
+  },
+  {
+   "id": 55425,
+   "date": "2024-03-15",
+   "title": "Guidebook For SNU International Students",
+   "views": 801
+  },
+  {
+   "id": 55417,
+   "date": "2024-03-04",
+   "title": "Spring 2024 SNU Plus Mentoring Program",
+   "views": 754
+  },
+  {
+   "id": 55335,
+   "date": "2024-02-15",
+   "title": "[Graduate School] Announcement of the 2024 Spring Semester Foreign Language Examination for Internat...",
+   "views": 1386
+  },
+  {
+   "id": 55334,
+   "date": "2024-02-15",
+   "title": "[Undergraduate & Graduate] Announcement for the 78th Degree Conferral Ceremony",
+   "views": 733
+  },
+  {
+   "id": 55333,
+   "date": "2024-02-08",
+   "title": "Call for GSFS Scholarship Program of Fall 2024",
+   "views": 827
+  },
+  {
+   "id": 55332,
+   "date": "2024-02-07",
+   "title": "Registration of Graduate Research Students for the 2024 Spring Semester",
+   "views": 670
+  },
+  {
+   "id": 55331,
+   "date": "2024-02-01",
+   "title": "[Scholarship] Announcement of Fall 2024 SNU President Fellowship (SPF)",
+   "views": 829
+  },
+  {
+   "id": 55330,
+   "date": "2024-01-25",
+   "title": "Notice of 2024 Increase in National Health Insurance Premiums for International Students",
+   "views": 786
+  },
+  {
+   "id": 55329,
+   "date": "2024-01-08",
+   "title": "Schedule for Qualification Test(QT), 2024 1st semester",
+   "views": 682
+  }
+ ]
+}

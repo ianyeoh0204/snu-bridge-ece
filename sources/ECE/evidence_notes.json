@@ -1,0 +1,226 @@
+{
+ "about": "Hand-checked facts and judgements shown on the 'Why and how' page. tools/evidence.py counts the boards; this file holds what a person compared or read. Re-check each item and update `checked_on` before relying on it.",
+ "checked_on": "2026-11-11",
+ "most_read": {
+  "57626": {
+   "title_en": "Spring 2026 graduate thesis defense schedule",
+   "english_board": "not found"
+  },
+  "56747": {
+   "title_en": "[Graduate must-read] Credits, completion and graduation: key points and frequent questions",
+   "english_board": "not found"
+  },
+  "57151": {
+   "title_en": "List of master's and PhD students due to complete or graduate in February 2026",
+   "english_board": "not found"
+  },
+  "57441": {
+   "title_en": "Spring 2026 graduate thesis qualification examination schedule",
+   "english_board": "not found"
+  },
+  "57376": {
+   "title_en": "Spring 2026 course registration guide",
+   "english_board": "not found"
+  },
+  "57606": {
+   "title_en": "[Internal rule] Revised rules on degree conferral (thesis-related) for graduate programs",
+   "english_board": "not found"
+  },
+  "57627": {
+   "title_en": "Spring 2026 PhD preliminary defense schedule (for graduation in February 2027)",
+   "english_board": "not found"
+  },
+  "57796": {
+   "title_en": "Fall 2026 registration, return from leave, readmission and leave of absence",
+   "english_board": "not found"
+  },
+  "57700": {
+   "title_en": "Summer 2026 session course registration",
+   "english_board": "not found"
+  },
+  "58072": {
+   "title_en": "Fall 2026 graduate thesis defense schedule",
+   "english_board": "not found"
+  }
+ },
+ "handbook": {
+  "name": {
+   "en": "Graduate handbook 2026",
+   "ko": "2026년 대학원 학사안내서"
+  },
+  "pages": 38,
+  "text_characters": 0,
+  "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=56747"
+ },
+ "differences": [
+  {
+   "item": {
+    "en": "Master's program: number of registered semesters",
+    "ko": "석사과정: 등록 횟수"
+   },
+   "korean": {
+    "quote": "석사 4회이상 8회까지 가능",
+    "url": "https://ece.snu.ac.kr/academics/graduate/requirements",
+    "label": {
+     "en": "Korean requirements page",
+     "ko": "한국어 이수규정 페이지"
+    }
+   },
+   "english": {
+    "quote": "M.S. Over 4 - to 16",
+    "url": "https://ece.snu.ac.kr/en/academics/graduate/requirements",
+    "label": {
+     "en": "Separate English requirements page",
+     "ko": "별도의 영문 이수규정 페이지"
+    }
+   },
+   "also": {
+    "label": {
+     "en": "Graduate handbook 2026, page 8",
+     "ko": "2026년 대학원 학사안내서 8쪽"
+    },
+    "quote": "(1) 등록 횟수: 4회 이상 8회까지",
+    "card": "registration-count"
+   }
+  },
+  {
+   "item": {
+    "en": "PhD program: number of registered semesters",
+    "ko": "박사과정: 등록 횟수"
+   },
+   "korean": {
+    "quote": "박사 4회이상 12회까지 가능",
+    "url": "https://ece.snu.ac.kr/academics/graduate/requirements",
+    "label": {
+     "en": "Korean requirements page",
+     "ko": "한국어 이수규정 페이지"
+    }
+   },
+   "english": {
+    "quote": "Ph.D. Over 4 - to 16",
+    "url": "https://ece.snu.ac.kr/en/academics/graduate/requirements",
+    "label": {
+     "en": "Separate English requirements page",
+     "ko": "별도의 영문 이수규정 페이지"
+    }
+   },
+   "also": {
+    "label": {
+     "en": "Graduate handbook 2026, page 10",
+     "ko": "2026년 대학원 학사안내서 10쪽"
+    },
+    "quote": "(1) 등록 횟수: 4회 이상 12회까지",
+    "card": "registration-count-phd"
+   }
+  },
+  {
+   "item": {
+    "en": "Integrated MS-PhD program, in the notice on the Korean test for international students",
+    "ko": "석박사통합과정: 외국인 학생 한국어시험 공지의 표기"
+   },
+   "korean": {
+    "quote": "석박통합과정은 박사과정 응시대상임",
+    "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57938",
+    "label": {
+     "en": "Korean wording",
+     "ko": "한국어 원문"
+    }
+   },
+   "english": {
+    "quote": "The integrated stone foil course is subject to the Ph.D. program",
+    "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57938",
+    "label": {
+     "en": "English wording in the same notice",
+     "ko": "같은 공지의 영문 표기"
+    }
+   },
+   "also": {
+    "label": {
+     "en": "SNU Bridge translation (AI)",
+     "ko": "SNU Bridge 번역(AI)"
+    },
+    "quote": "Students in the integrated master's-doctoral programme take the examination as doctoral students.",
+    "notice": 57938
+   }
+  }
+ ],
+ "chain": {
+  "topic": {
+   "en": "Credits from other departments and from undergraduate courses",
+   "ko": "타학과 및 학사과정 교과목 이수 학점"
+  },
+  "notices": [
+   {
+    "id": 56747,
+    "date": "2026-02-26",
+    "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=56747",
+    "points_to": [
+     56284
+    ],
+    "title": {
+     "en": "Graduate must-read notice",
+     "ko": "★[대학원 필독] 학점, 수료, 졸업 등 주요사항 및 자주 묻는 질문 안내"
+    }
+   },
+   {
+    "id": 56284,
+    "date": "2025-03-04",
+    "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=56284",
+    "points_to": [
+     50926,
+     52637
+    ],
+    "title": {
+     "en": "Spring 2025 approval of other-department and undergraduate courses",
+     "ko": "2025학년도 1학기 타학과 및 학사과정 교과목 이수 승인 신청 안내"
+    }
+   },
+   {
+    "id": 50926,
+    "date": "2021-01-29",
+    "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=50926",
+    "points_to": [],
+    "title": {
+     "en": "Thesis research and other-major courses (entrants from 2021)",
+     "ko": "대학원 논문연구 과목 및 타전공 교과목 이수 관련 안내 (2021학번부터 해당)"
+    }
+   },
+   {
+    "id": 52637,
+    "date": "2022-07-27",
+    "url": "https://ece.snu.ac.kr/community/academics?md=v&bbsidx=52637",
+    "points_to": [
+     50926
+    ],
+    "title": {
+     "en": "Course registration notes (entrants from 2021)",
+     "ko": "[2021학번 부터 해당] 수강신청 관련 안내 (대학원 논문연구 교과목 - 수료학점포함, 전기정보공학부 교과목 미포함)"
+    }
+   }
+  ]
+ },
+ "no_own_notice": {
+  "topic": {
+   "en": "Human rights and gender equality course, a requirement for the qualification examination and the thesis defense",
+   "ko": "인권/성평등교육: 논문제출자격시험과 논문심사의 요건"
+  },
+  "latest_titled_notice": "2017-08-10",
+  "method": {
+   "en": "title search for 인권 on the academic board: 5 notices, 2014 to 2017",
+   "ko": "학사 게시판 제목 검색 ‘인권’: 5건, 2014~2017년"
+  },
+  "search_url": "https://ece.snu.ac.kr/community/academics?sc=y&qt=t&q=%EC%9D%B8%EA%B6%8C",
+  "now_inside": [
+   57932,
+   58072
+  ]
+ },
+ "match_method": {
+  "en": "Titles compared by a person with every post on the English notice board in the same year. Images and attachments were not inspected.",
+  "ko": "사람이 해당 제목들을 같은 해 영문 공지 게시판의 모든 게시글 제목과 직접 비교했습니다. 이미지와 첨부파일은 확인하지 않았습니다."
+ },
+ "english_since_note": {
+  "en": "By their titles, none is about the qualification examination, the thesis defense or the required seminars",
+  "ko": "제목으로 볼 때 논문제출자격시험, 논문심사, 필수 세미나에 관한 글은 없습니다"
+ }
+}

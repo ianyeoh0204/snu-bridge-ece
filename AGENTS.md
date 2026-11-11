@@ -69,7 +69,11 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - Look (chosen by the developer on 11 Nov, replacing the Apple-style one): Swiss signage. One typeface (Helvetica), black and
   white plus SNU blue #002c84 as the only accent, black bars for section headings, visible grid lines, no rounded corners,
   no shadows, everything left-aligned. Yellow #ffd60a marks cautions only (developer's request: important things must
-  stand out). Keep new elements inside this vocabulary. The developer rejected an editorial
+  stand out). Keep new elements inside this vocabulary.
+- Motion (developer's request, 11 Nov): on Home and on "Why and how", parts move into place once when they scroll into view
+  (section bars slide in, squares and bars fill, board rows turn, numbers count up). Plain CSS transitions and one small
+  scroll check, no library. The finished page is the resting state, so nothing is hidden if the script fails, and
+  reduced-motion users get it at once. Requirements and Notices stay still: they are for reading, not for show. The developer rejected an editorial
   "gazette" look as the worst of three: too many words.
 - Extract and check code exist; the batch extractor is untested. The first single-request run failed at the output limit.
 - Deployed (11 Nov): https://ianyeoh0204.github.io/snu-bridge-ece/ from the public repository `ianyeoh0204/snu-bridge-ece`.
@@ -79,4 +83,22 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   (`COUNTER` in `bridge/briefs.py`), otherwise most notices would be translated again every day.
   First full run on GitHub passed on 11 Nov: 75 checked, 0 translated, 0 failed. The model key is the secret `API_KEY`.
   Unreadable attachments and images send the student to the `assistant` named in the config (ChatGPT Edu until the plugin exists).
-- Not built: calendar file, plugin, "why and how" page, model check of the hand-written cards.
+- "Why and how" page (`#about`, built 11 Nov, awaiting the developer's approval before it is pushed): counted evidence
+  first, then the method. `tools/evidence.py` counts posts and views per year on the Korean academic board and the English
+  notice board into `data/ECE/evidence.json`; `sources/ECE/evidence_notes.json` holds what a person compared or read
+  (the ten most-read notices against the English board, the pages where Korean and English differ, the chain of notices),
+  each with its link and the date checked. No number on that page is typed into the template. The comparison is shown three ways
+  the developer chose: one square per notice (500 against 64), the two boards side by side for the period the site covers,
+  and bars by year. English only so far;
+  a Korean version needs a Korean reader's check. Re-run the count and re-check the notes before 20 Nov and 30 Nov.
+- Two languages on one page (developer's idea, 11 Nov): every sentence the site itself says is shown in English with the
+  Korean beneath it in small type. No language switch, so one language can never be updated without the other being seen.
+  The pairs live in `bridge/text.json` (English sentence to Korean sentence); the page asks for them with `B("...")`.
+  `python -m bridge site` stops if the page uses a sentence with no Korean, or if a pair is no longer used. Labels in
+  `sources/<department>/evidence_notes.json` are `{"en", "ko"}` pairs and are checked the same way.
+  Rules and notices are never rewritten in Korean by us: the Korean shown for them is the department's own text.
+  Done on every page (122 pairs). `B(...)` puts the Korean on its own small line; `L(...)` gives the one-line form
+  "English · 한국어" for labels inside a sentence. `tools/korean_review.py` writes `out/korean-review.md`, every pair with a
+  prompt for a Korean check (ChatGPT first, then a Korean reader).
+  The page once called "Why and how" is now "Background and Method" (more formal, the developer's request); its address stays `#about`.
+- Not built: calendar file, plugin, model check of the hand-written cards.
