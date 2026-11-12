@@ -47,6 +47,7 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 .venv/bin/python tools/korean_review.py    # every English and Korean sentence pair, as a sheet for a Korean reader
 .venv/bin/python tools/audit.py prepare    # a second reader re-reads cards against the page images (see the file's top)
 .venv/bin/python tools/survey.py count     # other engineering departments: Korean and English notices (then check, sample, aggregate)
+.venv/bin/python tools/poster.py          # the competition poster as a PDF in out/poster/, drawn from the same data as the site
 ```
 `sources/context.json` holds the facts and links for the first step of the Background page (what the university has said
 and done this year). Re-read each cited page before changing a line there.

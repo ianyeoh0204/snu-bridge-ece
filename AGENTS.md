@@ -185,3 +185,13 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   to set a notification in their own app. Calendar apps also fetch on their own schedule, so say nothing about speed.
 - An event keeps its identifier while its date line and notice stay the same, so a rebuild does not duplicate it.
 - The developer has not yet subscribed on a phone with Apple and with Google. Do that before the booth demo.
+
+## Poster (12 Nov 2026, first draft with the developer for comments)
+- `tools/poster.py` draws the poster (1445 mm wide, 1400 mm high, one page) from the same data as the site and prints
+  it to `out/poster/poster.pdf` with Chrome, then measures the page. Six numbered panels in the site's look: Why now,
+  The gap, What it does, How it works, Checked, Try it. Rebuild it just before sending so "Figures as of" is that day.
+- The author's name is read from `out/poster/author.txt` and never written in a published file.
+- Korean lines written only for the poster are in `POSTER_KO` and listed in `out/poster/korean-review.md`. None has been
+  read by a Korean speaker; that must happen before the poster is sent (20 Nov).
+- The developer finds long text tiring. Add a line only by removing or shortening another, and check that no panel
+  overflows after any change (each panel's `.body` must not scroll).

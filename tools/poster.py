@@ -1,0 +1,350 @@
+# -*- coding: utf-8 -*-
+"""The competition poster, drawn from the site's own data so its figures cannot drift from the site.
+
+    .venv/bin/pip install segno            (QR code; needed for this script only)
+    .venv/bin/python tools/poster.py       writes out/poster/poster.html, poster.pdf, preview.png and korean-review.md
+
+Size: 1445 mm wide by 1400 mm high, one page, as the competition asks. The PDF is printed by Google Chrome and then
+measured. Everything is text and shapes (no screenshots), so the file stays small enough to email.
+The author's name is read from out/poster/author.txt (one line; that folder is not published), never from this file.
+Korean lines already on the site come from bridge/text.json; lines written only for the poster are in POSTER_KO below
+and are listed in korean-review.md for a Korean reader before the poster is sent.
+"""
+import datetime
+import glob
+import html
+import json
+import pathlib
+import subprocess
+import sys
+import tempfile
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from bridge import deadlines  # noqa: E402
+OUT = ROOT / "out" / "poster"
+SITE = "https://ianyeoh0204.github.io/snu-bridge-ece/"
+CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+WIDTH_MM, HEIGHT_MM = 1445, 1400
+SEOUL = datetime.timezone(datetime.timedelta(hours=9))
+
+# Korean written for the poster only. Not yet read by a Korean speaker.
+POSTER_KO = {
+    "The 2nd SNU Generative AI Competition": "제2회 서울대학교 생성형 AI 경진대회",
+    "One department's graduation requirements and notices, in English, each with its source. Kept current every morning from the department's own notices.":
+        "한 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 학과 공지를 바탕으로 매일 아침 최신 상태로 유지됩니다.",
+    "Scan to open the site": "QR 코드로 사이트 열기",
+    "The university set two directions this year.": "올해 대학은 두 가지 방향을 밝혔습니다.",
+    "Internationalisation: the base of all the university's work, not an added project.": "국제화: “대학의 부가적인 사업이 아니라 모든 일의 기반”",
+    "AI Native Campus: {n} action plans in education, research, administration and governance.": "AI Native Campus: 교육·연구·행정·거버넌스 분야 실행계획 {n}개",
+    "QS rank, 2026 and 2027 editions ({n} in 2025)": "QS 순위, 2026·2027년판 (2025년판 {n}위)",
+    "rank for share of international students, 2026 edition": "외국인 학생 비율 지표 순위, 2026년판",
+    "international students in Korea, 2026": "2026년 국내 외국인 유학생",
+    "Our reading, not the university's: a student who cannot read the department's notices is left out of both.":
+        "대학의 입장이 아닌 저희의 해석입니다. 학과 공지를 읽지 못하는 학생은 두 방향 모두에서 소외됩니다.",
+    "Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.":
+        "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
+    "The gap": "격차",
+    "Korean notices on {n} engineering departments' boards since {date}": "{date} 이후 공과대학 {n}개 학과 게시판의 한국어 공지",
+    "have a title in English": "제목이 영어인 공지",
+    "This department's academic board since {date}": "{date} 이후 본 학과 학사 게시판",
+    "Korean notices": "한국어 공지",
+    "posts on the English board": "영문 게시판 게시물",
+    "Counted from the public boards. Titles only; method and limits are on the site.": "공개 게시판을 집계했습니다. 제목만 확인했으며, 방법과 한계는 사이트에 있습니다.",
+    "What it does": "하는 일",
+    "{n} requirements for four programs. Each cites its file, page and Korean line.": "네 개 과정의 요건 {n}개. 항목마다 파일, 쪽, 한국어 원문을 밝힙니다.",
+    "{n} notices in English: who must act, dates, conditions, steps, and the full translation.": "영어로 제공하는 공지 {n}건: 조치 대상, 날짜, 조건, 절차, 전문 번역",
+    "Source": "출처",
+    "page {n}": "{n}쪽",
+    "Every morning a scheduled job reads the department's Korean board.": "매일 아침 예약된 작업이 학과의 한국어 게시판을 읽습니다.",
+    "An AI model writes the English. Plain code checks every quoted date against the notice.": "AI 모델이 영어로 옮기고, 인용된 모든 날짜를 코드가 공지 원문과 대조합니다.",
+    "A second AI model, from another maker, re-read every requirement against its page.": "개발사가 다른 두 번째 AI 모델이 모든 요건을 해당 쪽과 대조해 다시 읽었습니다.",
+    "The site is rebuilt and published. No one's computer is needed.": "사이트를 다시 만들어 게시합니다. 누구의 컴퓨터도 필요하지 않습니다.",
+    "Re-read": "재판독",
+    "every day": "매일",
+    "a notice": "공지 1건당",
+    "Claude translates. An OpenAI model, through ChatGPT Edu, re-reads.": "번역은 Claude가, 재판독은 ChatGPT Edu를 통한 OpenAI 모델이 맡습니다.",
+    "Checked": "검증",
+    "requirements re-read by a second reader": "2차 판독자가 다시 읽은 요건",
+    "deliberately wrong entries caught": "일부러 넣은 오류 적발",
+    "dates found word for word in the notice": "공지 원문에서 그대로 확인된 날짜",
+    "points that could mislead, in ten notices, after the instructions were tightened": "지침을 강화한 뒤, 공지 10건에서 오해를 부를 수 있는 지점",
+    "The second reader is an AI model. It is not a check by a person or by the department.": "2차 판독자는 AI 모델입니다. 사람이나 학과가 검증한 것은 아닙니다.",
+    "Try it": "직접 해 보기",
+    "Choose your program. See what to finish before graduation, and the page each item comes from.": "과정을 고르면 졸업 전에 마쳐야 할 항목과 각 항목의 출처 쪽을 볼 수 있습니다.",
+    "Open a notice. Compare its dates with the Korean beside them, then open the original.": "공지를 열어 날짜를 옆의 한국어와 비교하고, 원문을 열어 보세요.",
+    "Add the deadlines to your calendar: {n} dated events, each checked against the weekday the notice prints.":
+        "마감일을 내 캘린더에 추가해 보세요. 날짜가 있는 일정 {n}건이며, 각각 공지에 적힌 요일과 대조했습니다.",
+    "Switch to {name}: another department's notices, added in one day as a pilot.": "{name}(으)로 바꿔 보세요. 하루 만에 시범으로 추가한 다른 학과의 공지입니다.",
+    "Where it extends": "확장 방향",
+    "Notices: one small reader for each kind of board software. The eleven department sites read use six kinds.": "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램 하나가 필요합니다. 읽어 본 11개 학과 사이트는 여섯 종류를 씁니다.",
+    "Requirements: written by hand from each department's documents, then re-read.": "요건: 학과의 공식 문서를 바탕으로 직접 작성한 뒤 다시 읽습니다.",
+    "What it does not do": "하지 않는 일",
+    "It does not read images or attachments; it sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.":
+        "이미지와 첨부파일은 읽지 않으며, 학생을 ChatGPT Edu로 안내합니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
+    "A student project. Not an official Seoul National University website. Figures as of {date}.": "학생 프로젝트이며 서울대학교 공식 웹사이트가 아닙니다. 수치 기준일: {date}.",
+}
+
+
+def load(path):
+    return json.loads((ROOT / path).read_text(encoding="utf-8"))
+
+
+TEXT = load("bridge/text.json")["pairs"]
+used_new = []
+
+
+def fill(text, values):
+    for key, value in (values or {}).items():
+        text = text.replace("{" + key + "}", str(value))
+    return text
+
+
+def bi(english, values=None, korean_values=None, tag="span"):
+    """An English line with its Korean beneath. Korean comes from the site where the sentence exists there."""
+    if english in TEXT:
+        korean = TEXT[english]
+    else:
+        korean = POSTER_KO[english]
+        if english not in used_new:
+            used_new.append(english)
+    ko_values = dict(values or {}, **(korean_values or {}))
+    return f'<{tag}>{html.escape(fill(english, values))}<small class="ko" lang="ko">{html.escape(fill(korean, ko_values))}</small></{tag}>'
+
+
+def num(n):
+    return f"{n:,}"
+
+
+def day(iso):
+    d = datetime.date.fromisoformat(iso)
+    return {"date": f"{d.day} {d.strftime('%B')} {d.year}"}, {"date": f"{d.year}년 {d.month}월 {d.day}일"}
+
+
+def bar(title, crit):
+    return f'<div class="bar">{bi(title)}<em>{html.escape(crit)}</em></div>'
+
+
+def fig(big, caption, small=""):
+    return f'<div class="fig"><b>{big}{f"<i>{small}</i>" if small else ""}</b><p>{caption}</p></div>'
+
+
+def build():
+    import segno
+
+    ece, aero = load("sources/ECE/config.json"), load("sources/AEROSPACE/config.json")
+    cards, audit = load("data/ECE/cards.json"), load("data/ECE/audit.json")
+    notices, aero_notices = load("data/ECE/notices.json"), load("data/AEROSPACE/notices.json")
+    survey, evidence, context = load("data/survey.json"), load("data/ECE/evidence.json"), load("sources/context.json")
+    briefs = [json.loads(pathlib.Path(f).read_text(encoding="utf-8")) for f in glob.glob(str(ROOT / "data/ECE/briefs/*.json"))]
+    dates = [d for b in briefs for d in b["dates"]]
+    reread = sum(1 for c in audit["cards"].values() if c["status"] != "open")
+    caught = sum(1 for v in audit["decoys"].values() if v == "caught")
+    mislead = lambda group: sum(sum(n["could_mislead"].values()) for n in audit.get(group, {}).values())
+    korean = sum(y["posts"] for y in evidence["korean_by_year"].values())
+    english = sum(y["posts"] for y in evidence["english_by_year"].values())
+    f = context["figures"]
+    today = datetime.datetime.now(SEOUL).date().isoformat()
+    calendar = deadlines.build("ECE", ece["short"], ece["site"])[1]  # the same count the site shows
+    author = (OUT / "author.txt").read_text(encoding="utf-8").strip() if (OUT / "author.txt").exists() else ""
+
+    # one real requirement and one real notice, redrawn as the site shows them
+    card = next(c for c in cards if c["id"] == ece["headline_cards"]["masters"])
+    source = next(s for s in ece["files"] if s["file"] == card["source_file"])
+    newest = next(b for n in notices for b in briefs if b["id"] == n["id"] and len(b["dates"]) >= 2)
+    notice = next(n for n in notices if n["id"] == newest["id"])
+    rows = sorted((d for d in newest["dates"] if d["verified"]), key=lambda d: len(d["what"]))[:2]
+
+    qr = segno.make(SITE, error="m").svg_inline(omitsize=True, border=2, dark="#000", light="#fff")
+    sv_since, ev_since = day(survey["since"]), day(evidence["since"])
+    share = max(0.12, 100 * survey["totals"]["english_titled"] / survey["totals"]["korean"])
+    stamp = day(today)
+
+    panels = [
+        # 1. policy applicability
+        bar("Why now", "1") + '<div class="body">'
+        + f'<p class="lead">{bi("The university set two directions this year.")}</p>'
+        + f'<ul class="rule"><li>' + bi("Internationalisation: the base of all the university's work, not an added project.") + f'</li>'
+        + f'<li>{bi("AI Native Campus: {n} action plans in education, research, administration and governance.", {"n": f["action_plans"]})}</li></ul>'
+        + '<div class="figs three">'
+        + fig(f["qs_rank"], bi("QS rank, 2026 and 2027 editions ({n} in 2025)", {"n": f["qs_rank_before"]}))
+        + fig(num(f["qs_student_ratio_rank"]), bi("rank for share of international students, 2026 edition"))
+        + fig(num(f["students_in_korea"]), bi("international students in Korea, 2026")) + "</div>"
+        + f'<p class="stand">' + bi("Our reading, not the university's: a student who cannot read the department's notices is left out of both.") + f'</p>'
+        + f'<p class="note">' + bi("Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.") + f'</p></div>',
+
+        # 2. performance and impact
+        bar("The gap", "2") + '<div class="body">'
+        + f'<div class="hero"><b>{num(survey["totals"]["english_titled"])}<i>of {num(survey["totals"]["korean"])}</i></b></div>'
+        + f'<p>' + bi("Korean notices on {n} engineering departments' boards since {date}", dict(sv_since[0], n=len(survey["departments"])), sv_since[1]) + f'</p>'
+        + f'<div class="track"><i style="width:{share:.2f}%"></i></div>'
+        + f'<p class="cap blue">{bi("have a title in English")}</p>'
+        + f'<p class="sub">' + bi("This department's academic board since {date}", ev_since[0], ev_since[1]) + f'</p>'
+        + f'<div class="pair"><div><b>{num(korean)}</b>{bi("Korean notices")}<div class="track full"></div></div>'
+        + f'<div><b class="blue">{num(english)}</b>{bi("posts on the English board")}<div class="track"><i style="width:{100 * english / korean:.1f}%"></i></div></div></div>'
+        + f'<p class="note">{bi("Counted from the public boards. Titles only; method and limits are on the site.")}</p></div>',
+
+        # 3. completeness
+        bar("What it does", "3") + '<div class="body">'
+        + f'<p>{bi("{n} requirements for four programs. Each cites its file, page and Korean line.", {"n": len(cards)})}</p>'
+        + f'<div class="mock"><h4>{html.escape(card["title"])}</h4><p class="key">{html.escape(card["key"])}</p>'
+        + f'<p class="src">{bi("Source")}: {html.escape(source["name"])}, {fill("page {n}", {"n": card["source_page"]})} · <span lang="ko">{html.escape(card["source_quote_ko"])}</span></p></div>'
+        + f'<p>{bi("{n} notices in English: who must act, dates, conditions, steps, and the full translation.", {"n": len(notices)})}</p>'
+        + f'<div class="mock"><p class="meta">{notice["date"]}</p><h4>{html.escape(newest["title_en"])}</h4><p class="kotitle" lang="ko">{html.escape(notice["title_ko"])}</p><table>'
+        + "".join(f'<tr><td>{html.escape(d["what"])}</td><td>{html.escape(d["when"])}<small lang="ko">{html.escape(d["original_ko"])}</small></td></tr>' for d in rows)
+        + f'</table><p class="src">{bi("Original notice")} →</p></div></div>',
+
+        # 4. quality: how it is made
+        bar("How it works", "4") + '<div class="body"><ol class="steps">'
+        + f'<li><b>1</b><h4>{bi("Collect")}</h4><p>' + bi("Every morning a scheduled job reads the department's Korean board.") + f'</p></li>'
+        + f'<li><b>2</b><h4>{bi("Translate")}</h4><p>{bi("An AI model writes the English. Plain code checks every quoted date against the notice.")}</p></li>'
+        + f'<li><b>3</b><h4>{bi("Re-read")}</h4><p>{bi("A second AI model, from another maker, re-read every requirement against its page.")}</p></li>'
+        + f'<li><b>4</b><h4>{bi("Publish")}</h4><p>' + bi("The site is rebuilt and published. No one's computer is needed.") + f'</p></li></ol>'
+        + '<div class="figs two">' + fig("07:17", bi("every day")) + fig("0.06<i>USD</i>", bi("a notice")) + "</div>"
+        + f'<p class="stand">{bi("Claude translates. An OpenAI model, through ChatGPT Edu, re-reads.")}</p></div>',
+
+        # 5. quality: how it was checked
+        bar("Checked", "5") + '<div class="body"><div class="figs two tall">'
+        + fig(reread, bi("requirements re-read by a second reader"), f"of {len(cards)}")
+        + fig(caught, bi("deliberately wrong entries caught"), f"of {len(audit['decoys'])}")
+        + fig(num(sum(d["verified"] for d in dates)), bi("dates found word for word in the notice"), f"of {num(len(dates))}")
+        + fig(f'{mislead("notices")}<i>→ {mislead("notices_after")}</i>', bi("points that could mislead, in ten notices, after the instructions were tightened"))
+        + f'</div><p class="note">{bi("The second reader is an AI model. It is not a check by a person or by the department.")}</p></div>',
+
+        # 6. demonstration
+        bar("Try it", "6") + '<div class="body"><ol class="try">'
+        + f'<li><b>1</b><p>{bi("Choose your program. See what to finish before graduation, and the page each item comes from.")}</p></li>'
+        + f'<li><b>2</b><p>{bi("Open a notice. Compare its dates with the Korean beside them, then open the original.")}</p></li>'
+        + f'<li><b>3</b><p>{bi("Add the deadlines to your calendar: {n} dated events, each checked against the weekday the notice prints.", {"n": calendar["events"]})}</p></li>'
+        + f'<li><b>4</b><p>' + bi("Switch to {name}: another department's notices, added in one day as a pilot.", {"name": aero["department"]}, {"name": aero["department_ko"]}) + f'</p></li></ol>'
+        + f'<h5>{bi("Where it extends")}</h5>'
+        + f'<p class="small">{bi("Notices: one small reader for each kind of board software. The eleven department sites read use six kinds.")}</p>'
+        + f'<p class="small">' + bi("Requirements: written by hand from each department's documents, then re-read.") + f'</p></div>',
+    ]
+
+    page = f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SNU Bridge poster</title>
+<style>
+@page {{ size: {WIDTH_MM}mm {HEIGHT_MM}mm; margin: 0; }}
+* {{ box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
+html, body {{ margin: 0; width: {WIDTH_MM}mm; height: {HEIGHT_MM}mm; overflow: hidden; }}
+body {{ font: 400 12.6mm/1.26 "Helvetica Neue", Helvetica, "Apple SD Gothic Neo", Arial, sans-serif; color: #000; background: #fff; }}
+p, h1, h4, h5, ul, ol {{ margin: 0; padding: 0; }}
+.ko {{ display: block; margin-top: 1.2mm; font-size: 9.2mm; font-weight: 400; line-height: 1.32; letter-spacing: 0; color: #555; text-transform: none; }}
+.blue {{ color: #002c84; }}
+.band {{ height: 300mm; padding: 34mm 44mm 0; display: grid; grid-template-columns: 1fr 230mm; gap: 50mm; background: #002c84; color: #fff; }}
+.band .ko, .bar .ko, .stand .ko {{ color: inherit; opacity: .8; }}
+.band .eyebrow {{ font-size: 13mm; font-weight: 500; }}
+.band .eyebrow .ko {{ display: inline; margin-left: 5mm; font-size: 10mm; }}
+.band h1 {{ margin: 6mm 0 12mm -1mm; font-size: 138mm; font-weight: 700; line-height: .9; letter-spacing: -.045em; }}
+.band .tag {{ max-width: 1010mm; font-size: 17.5mm; line-height: 1.22; }}
+.band .tag .ko {{ font-size: 11.5mm; margin-top: 3mm; }}
+.band aside {{ display: flex; flex-direction: column; gap: 5mm; font-size: 9.5mm; line-height: 1.25; }}
+.band aside svg {{ display: block; width: 168mm; height: 168mm; background: #fff; }}
+.band aside .ko {{ font-size: 8.6mm; }}
+.who {{ position: absolute; left: 44mm; top: 34mm; }}
+.grid {{ height: 1000mm; padding: 28mm 44mm 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 24mm 26mm; }}
+.panel {{ display: flex; flex-direction: column; min-height: 0; border-bottom: 1.2mm solid #000; }}
+.bar {{ display: flex; justify-content: space-between; align-items: flex-start; padding: 6mm 9mm 7mm; background: #000; color: #fff; font-size: 17mm; font-weight: 700; line-height: 1.1; }}
+.bar em {{ font-style: normal; font-weight: 400; opacity: .7; }}
+.body {{ flex: 1; min-height: 0; padding: 10mm 10mm 9mm; display: flex; flex-direction: column; justify-content: space-between; gap: 6mm; border-left: .5mm solid #000; border-right: .5mm solid #000; }}
+.lead {{ font-size: 16mm; font-weight: 700; line-height: 1.15; }}
+.rule {{ list-style: none; border-top: .5mm solid #000; }}
+.rule li {{ padding: 4.5mm 0; border-bottom: .3mm solid #bbb; }}
+.figs {{ display: grid; gap: 0; border-left: .5mm solid #000; }}
+.figs.three {{ grid-template-columns: minmax(0, .8fr) minmax(0, .9fr) minmax(0, 1.4fr); }}
+.figs.two {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
+.figs.two:not(.tall) .fig b {{ font-size: 46mm; }}
+.fig {{ padding: 4mm 6mm 5mm; border-right: .5mm solid #000; border-top: .5mm solid #000; border-bottom: .5mm solid #000; }}
+.figs.tall .fig:nth-child(n+3) {{ border-top: 0; }}
+.fig b {{ display: block; font-size: 45mm; font-weight: 700; line-height: 1; letter-spacing: -.035em; color: #002c84; white-space: nowrap; }}
+.figs.tall {{ flex: 1; grid-auto-rows: 1fr; }}
+.figs.tall .fig {{ display: flex; flex-direction: column; justify-content: center; }}
+.figs.tall .fig b {{ font-size: 76mm; }}
+.figs.tall .fig p {{ font-size: 11.5mm; }}
+.fig b i {{ margin-left: 3mm; font-style: normal; font-size: .3em; font-weight: 400; letter-spacing: 0; color: #000; }}
+.fig p {{ margin-top: 3mm; font-size: 10.4mm; line-height: 1.22; }}
+.stand {{ padding: 6mm 8mm; background: #002c84; color: #fff; font-size: 13.4mm; font-weight: 700; line-height: 1.2; }}
+.stand .ko {{ font-weight: 400; }}
+.note {{ font-size: 9.2mm; line-height: 1.3; color: #333; }}
+.hero b {{ display: block; font-size: 150mm; font-weight: 700; line-height: .88; letter-spacing: -.045em; color: #002c84; }}
+.hero b i {{ margin-left: 5mm; font-style: normal; font-size: .26em; font-weight: 400; letter-spacing: 0; color: #000; }}
+.track {{ height: 15mm; background: #000; }}
+.track i {{ display: block; height: 100%; min-width: 1.4mm; background: #6f9bff; outline: .6mm solid #fff; }}
+.cap {{ margin-top: -3mm; font-weight: 700; }}
+.sub {{ margin-top: 3mm; padding-top: 6mm; border-top: .5mm solid #000; font-weight: 700; }}
+.pair {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10mm; }}
+.pair b {{ display: block; font-size: 60mm; line-height: 1; letter-spacing: -.035em; }}
+.pair .track {{ margin-top: 4mm; height: 9mm; }}
+.pair .track.full {{ background: #000; }}
+.pair div:last-child .track {{ background: #ddd; }}
+.pair div:last-child .track i {{ background: #002c84; outline: 0; }}
+.mock {{ padding: 6mm 8mm; border: .5mm solid #000; border-left: 3mm solid #002c84; }}
+.mock h4 {{ font-size: 14.5mm; line-height: 1.15; }}
+.mock .key {{ margin-top: 1.5mm; font-size: 13mm; color: #002c84; font-weight: 700; }}
+.mock .src, .mock .meta, .mock .kotitle {{ margin-top: 2.5mm; font-size: 9.4mm; color: #444; }}
+.mock .src .ko {{ display: inline; margin-left: 2mm; }}
+.mock table {{ width: 100%; margin-top: 3mm; border-collapse: collapse; font-size: 9.8mm; line-height: 1.22; }}
+.mock td {{ width: 50%; padding: 2.5mm 4mm 2.5mm 0; border-top: .3mm solid #999; vertical-align: top; }}
+.mock td small {{ display: block; margin-top: 1mm; color: #555; font-size: 9mm; }}
+.steps, .try {{ list-style: none; display: grid; gap: 0; border-top: .5mm solid #000; }}
+.steps li, .try li {{ display: grid; grid-template-columns: 20mm minmax(0, 1fr); column-gap: 6mm; padding: 4.6mm 0; border-bottom: .3mm solid #bbb; }}
+.steps li b, .try li b {{ grid-row: span 2; font-size: 32mm; line-height: .95; color: #002c84; }}
+.steps h4 {{ font-size: 15mm; line-height: 1.1; }}
+.steps h4 .ko {{ display: inline; margin-left: 3mm; }}
+.steps p {{ margin-top: 1.5mm; font-size: 11.4mm; line-height: 1.22; }}
+.try li {{ padding: 5.5mm 0 !important; }}
+.try li p {{ font-size: 15mm; line-height: 1.2; }}
+.try li .ko {{ font-size: 10.4mm; }}
+h5 {{ margin-top: 2mm; padding-top: 6mm; border-top: .5mm solid #000; font-size: 15mm; }}
+h5 .ko {{ display: inline; margin-left: 3mm; }}
+.small {{ font-size: 12.6mm; line-height: 1.24; }}
+.foot {{ height: 72mm; margin: 0 44mm; padding-top: 9mm; display: grid; grid-template-columns: 2fr 1fr; gap: 26mm; font-size: 10.4mm; line-height: 1.26; }}
+.foot b {{ display: block; margin-bottom: 1.5mm; font-size: 11.5mm; }}
+.foot b .ko {{ display: inline; margin-left: 3mm; }}
+.foot div:last-child {{ text-align: right; color: #333; }}
+</style></head><body>
+<header class="band">
+  <div>
+    <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
+    <h1>SNU Bridge</h1>
+    <p class="tag">{bi("One department's graduation requirements and notices, in English, each with its source. Kept current every morning from the department's own notices.")}</p>
+  </div>
+  <aside>{qr}<p>{bi("Scan to open the site")}</p><p>{html.escape(SITE.replace("https://", "").rstrip("/"))}</p><p><b>{html.escape(author)}</b></p></aside>
+</header>
+<main class="grid">{"".join(f'<section class="panel">{p}</section>' for p in panels)}</main>
+<footer class="foot">
+  <div><b>{bi("What it does not do")}</b>{bi("It does not read images or attachments; it sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
+  <div>{bi("A student project. Not an official Seoul National University website. Figures as of {date}.", stamp[0], stamp[1])}</div>
+</footer>
+</body></html>"""
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "poster.html").write_text(page, encoding="utf-8")
+    review = ["# Korean lines written for the poster only", "",
+              "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]
+    for english in used_new:
+        review += [f"- {english}", f"  - {POSTER_KO[english]}"]
+    (OUT / "korean-review.md").write_text("\n".join(review) + "\n", encoding="utf-8")
+    return OUT / "poster.html"
+
+
+def print_pdf(page):
+    import fitz
+
+    pdf = OUT / "poster.pdf"
+    with tempfile.TemporaryDirectory() as profile:
+        subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={profile}",
+                        f"--print-to-pdf={pdf}", page.as_uri()], check=True, capture_output=True, timeout=180)
+    doc = fitz.open(pdf)
+    size = doc[0].rect
+    width_mm, height_mm = size.width / 72 * 25.4, size.height / 72 * 25.4
+    fonts = {f[3] for p in doc for f in p.get_fonts()}
+    doc[0].get_pixmap(matrix=fitz.Matrix(0.42, 0.42)).save(OUT / "preview.png")
+    print(f"{pdf.relative_to(ROOT)}: {len(doc)} page(s), {width_mm:.1f} x {height_mm:.1f} mm, {pdf.stat().st_size // 1024} KB, fonts: {sorted(fonts)}")
+    if len(doc) != 1 or abs(width_mm - WIDTH_MM) > 1 or abs(height_mm - HEIGHT_MM) > 1:
+        sys.exit("The PDF is not one page of the required size.")
+
+
+if __name__ == "__main__":
+    print_pdf(build())
+    print(f"{len(used_new)} Korean lines are new on the poster: out/poster/korean-review.md")
