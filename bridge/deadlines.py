@@ -98,6 +98,8 @@ def read(original_ko: str, when_en: str, posted: str) -> dict | None:
         time = None  # the English does not show the same time: keep the day, drop the time
     until = period or "까지" in after[:12] or bool(re.search(RANGE + r"\s*$", before))
     end = None
+    if time and until and re.match(r"\s*" + RANGE, rest):
+        time = None  # "~ 11. 20.(금) 09:00~18:00": daily hours, not a closing time. Keep the day only.
     if time and not until and re.match(r"\s*" + RANGE, rest):  # "10:00 ~ 16:00" on one day
         end = _time(re.sub(r"^\s*" + RANGE, "", rest))[0]
         if not (end and end > time and _says(when_en, *end)):
