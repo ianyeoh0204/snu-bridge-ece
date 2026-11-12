@@ -284,3 +284,14 @@ start a second department's requirements before 20 Nov was lifted by the develop
   The code check never reads `why`, `when` or `trap`: keep those fields to what a quote says.
 - Decided with the developer on 12 Nov: stop at two departments. Nuclear and Naval are not built before 20 Nov; one
   extra department proves the setup carries over, and each further one adds risk under a real department's name.
+
+## Proposal against the build (12 Nov 2026)
+- The proposal the judges accepted promised, for the finals: (1) a Navigator in ChatGPT Edu, (2) a collector with change
+  detection and one alert channel, (3) a web page with briefs reviewed by the applicant and a Korean-speaking labmate,
+  (4) a pilot with 30 notices scored and about five students timed, then (5) one guide, "before you graduate".
+  Built: 2 (daily, calendar instead of alerts), the page of 3, and 5 far beyond (98 cards, plus a second department).
+  Not done: the human review in 3, the pilot in 4. Changed: translation is by Claude, not ChatGPT Edu, and the page says so.
+- Two gaps being closed: `navigator/instructions.md` (the ChatGPT Edu part, rewritten from the September GPT, not yet run;
+  the developer tries it with the quota kept for the demo), and `tools/reader_sheet.py`, which writes a sheet of ten
+  notices for the developer's Korean-speaking labmate. Until that reading happens, never call a brief "reviewed by a person".
+- Source for the 20th: `git archive` of HEAD into `out/snu-bridge-source.zip`. Rebuild it on the day it is sent.

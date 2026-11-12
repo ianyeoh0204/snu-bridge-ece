@@ -49,6 +49,7 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 .venv/bin/python tools/audit.py prepare    # a second reader re-reads cards against the page images (see the file's top)
 .venv/bin/python tools/survey.py count     # other engineering departments: Korean and English notices (then check, sample, aggregate)
 .venv/bin/python tools/poster.py          # the competition poster as a PDF in out/poster/, drawn from the same data as the site
+.venv/bin/python tools/reader_sheet.py       # ten notices beside their Korean originals, as a sheet for a Korean-speaking reader (out/review/)
 .venv/bin/python tools/pages_aerospace.py   # Aerospace: read its rule pages (two rule sets per page, separated by entry year)
 .venv/bin/python tools/cards_aerospace.py   # Aerospace: check every card against those pages and write data/AEROSPACE/cards.json
 ```
@@ -70,3 +71,13 @@ is shown on the Notices page as a pilot and nowhere else (`sources/AEROSPACE/` i
 translates its notices like any other department's; delete the folder and its `data/<name>/` to stop. The list reader
 in `bridge/notices.py` and the page reader in `bridge/briefs.py` fit the board software ECE uses; a site on other
 software needs its own two readers. `tools/survey.py` shows how each of the other engineering sites lists its posts.
+
+## The part done in ChatGPT Edu
+`navigator/instructions.md` holds the instructions for the assistant a student uses for what this site does not read:
+images, attachments, and their own questions about a notice. Paste them into a ChatGPT Edu project. They are plain text
+so they can move to a plugin or skill when the workspace offers one.
+
+## Sending the source
+`git archive --format=zip --prefix=snu-bridge/ -o out/snu-bridge-source.zip HEAD` packs exactly what is in the repository:
+no key, no downloaded department documents, nothing from `out/`.
+
