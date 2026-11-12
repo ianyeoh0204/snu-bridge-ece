@@ -2,7 +2,12 @@
 """The competition poster, drawn from the site's own data so its figures cannot drift from the site.
 
     .venv/bin/pip install segno            (QR code; needed for this script only)
-    .venv/bin/python tools/poster.py       writes out/poster/poster.html, poster.pdf, preview.png and korean-review.md
+    .venv/bin/python tools/poster.py       writes out/poster/poster.html, poster.pdf, poster.png and korean-review.md
+
+Six panels, evidence first (the developer's choice of three drafts): why now, the gap, what it does, how it works,
+checked, try it. The gap panel is the tall one and Checked is one short row, at the developer's request.
+Board counts cover one closed period (tools/survey.py and tools/evidence.py share it); live counts carry "as of".
+The lab logo is read from out/poster/lab-logo.png, like the author's name, and is left out if the file is missing.
 
 Size: 1445 mm wide by 1400 mm high, one page, as the competition asks. The PDF is printed by Google Chrome and then
 measured. Everything is text and shapes (no screenshots), so the file stays small enough to email.
@@ -15,6 +20,7 @@ import glob
 import html
 import json
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -31,8 +37,8 @@ SEOUL = datetime.timezone(datetime.timedelta(hours=9))
 # Korean written for the poster only. Not yet read by a Korean speaker.
 POSTER_KO = {
     "The 2nd SNU Generative AI Competition": "제2회 서울대학교 생성형 AI 경진대회",
-    "One department's graduation requirements and notices, in English, each with its source. Kept current every morning from the department's own notices.":
-        "한 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 학과 공지를 바탕으로 매일 아침 최신 상태로 유지됩니다.",
+    "One department's graduation requirements and notices, in English, each with its source. Updated daily from the department's own notices.":
+        "한 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 학과 공지를 바탕으로 매일 갱신됩니다.",
     "Scan to open the site": "QR 코드로 사이트 열기",
     "The university set two directions this year.": "올해 대학은 두 가지 방향을 밝혔습니다.",
     "Internationalisation: the base of all the university's work, not an added project.": "국제화: “대학의 부가적인 사업이 아니라 모든 일의 기반”",
@@ -45,6 +51,28 @@ POSTER_KO = {
     "Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.":
         "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
     "The gap": "격차",
+    "English board posts": "영어 게시판 게시물",
+    "{a}'s English board: no post since {year}. {b}'s: {n} posts, all with Korean titles.":
+        "{a} 영어 게시판: {year}년 이후 게시물 없음. {b} 영어 게시판: 게시물 {n}건 모두 한국어 제목.",
+    "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
+        "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
+    "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
+        "–: 별도 영어 게시판 없음. 취업·장학·세미나 게시판은 어느 학과에서도 집계하지 않았습니다.",
+    "A sample of {m} Korean-titled notices was opened: {n} held a line of English, none an English version.":
+        "한국어 제목의 공지 {m}건을 표본으로 열어 보았습니다. {n}건에 영어로 된 줄이 있었고, 영어본이 있는 공지는 없었습니다.",
+    "SNU is working to bring in more international students.": "서울대학교는 더 많은 외국인 학생을 유치하려 하고 있습니다.",
+    "2026: {won} billion won to {n} colleges and schools to recruit international students and support their settlement.":
+        "2026년: 외국인 학생 유치와 정착 지원을 위해 {n}개 단과대학·전문대학원에 총 {won}억 원 지원",
+    "{year}: a new undergraduate division for international students, about {n} new students expected.":
+        "{year}년: 외국인 대상 학부 신설, 신입생 약 {n}명 예상",
+    "Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can close that gap.":
+        "저희의 해석: 이 학생들이 따라야 할 공지는 한국어로 게시됩니다. AI Native Campus가 지향하는 행정 분야의 AI 활용으로 이 격차를 줄일 수 있습니다.",
+    "Sources: News1, 27 April 2026; President's New Year address; SNU Alumni Association newspaper. Links on the site.":
+        "출처: 뉴스1(2026년 4월 27일), 총장 신년사, 서울대학교총동창신문. 링크는 사이트에 있습니다.",
+    "new notices read and translated": "새 공지를 읽고 번역",
+    "Board counts: {from} to {to}. Site figures as of {date}.": "게시판 집계 기간: {from} ~ {to}. 사이트 수치 기준일: {date}.",
+    "Korean board": "한국어 게시판",
+    "English title": "영어 제목",
     "Korean notices on {n} engineering departments' boards since {date}": "{date} 이후 공과대학 {n}개 학과 게시판의 한국어 공지",
     "have a title in English": "제목이 영어인 공지",
     "This department's academic board since {date}": "{date} 이후 본 학과 학사 게시판",
@@ -56,7 +84,7 @@ POSTER_KO = {
     "{n} notices in English: who must act, dates, conditions, steps, and the full translation.": "영어로 제공하는 공지 {n}건: 조치 대상, 날짜, 조건, 절차, 전문 번역",
     "Source": "출처",
     "page {n}": "{n}쪽",
-    "Every morning a scheduled job reads the department's Korean board.": "매일 아침 예약된 작업이 학과의 한국어 게시판을 읽습니다.",
+    "Once a day a scheduled job reads the department's Korean board.": "하루 한 번 예약된 작업이 학과의 한국어 게시판을 읽습니다.",
     "An AI model writes the English. Plain code checks every quoted date against the notice.": "AI 모델이 영어로 옮기고, 인용된 모든 날짜를 코드가 공지 원문과 대조합니다.",
     "A second AI model, from another maker, re-read every requirement against its page.": "개발사가 다른 두 번째 AI 모델이 모든 요건을 해당 쪽과 대조해 다시 읽었습니다.",
     "The site is rebuilt and published. No one's computer is needed.": "사이트를 다시 만들어 게시합니다. 누구의 컴퓨터도 필요하지 않습니다.",
@@ -82,8 +110,61 @@ POSTER_KO = {
     "What it does not do": "하지 않는 일",
     "It does not read images or attachments; it sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.":
         "이미지와 첨부파일은 읽지 않으며, 학생을 ChatGPT Edu로 안내합니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
-    "A student project. Not an official Seoul National University website. Figures as of {date}.": "학생 프로젝트이며 서울대학교 공식 웹사이트가 아닙니다. 수치 기준일: {date}.",
+    "A student project. Not an official Seoul National University website.": "학생 프로젝트이며 서울대학교 공식 웹사이트가 아닙니다.",
 }
+
+
+# Lines rewritten on 12 Nov 2026 after an outside review (an OpenAI model through Codex, read-only) found no wrong number
+# but a dozen lines that made a narrow check look like a broader claim. Not yet read by a Korean speaker.
+POSTER_KO.update({
+    "One department's graduation requirements and notices, in English, each with its source. New notices are translated daily.":
+        "한 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 새 공지는 매일 번역됩니다.",
+    "Master's program": "석사과정",
+    "of them, English title": "이 중 영어 제목",
+    "of them have a title in English": "이 가운데 제목이 영어인 공지",
+    "The {k} separate English boards: {n} posts in the same period, {m} with an English title.":
+        "별도 영어 게시판 {k}곳: 같은 기간 게시물 {n}건, 이 중 영어 제목 {m}건",
+    "–: no English board of its own. Separate job, scholarship, news and seminar boards are not counted; such notices can still appear on the boards counted.":
+        "–: 별도 영어 게시판 없음. 따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았으며, 그런 공지가 집계한 게시판에 올라올 수는 있습니다.",
+    "A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.":
+        "제목에 한글이 없으면 영어 제목으로 셌습니다. {n}건 전체를 링크와 함께 사이트에 실었습니다.",
+    "Planned for September {year}: a new undergraduate division for international students, about {n} entrants expected.":
+        "{year}년 9월 예정: 외국인 대상 학부 신설, 신입생 약 {n}명 예상",
+    "President's 2026 address: internationalisation must be the base of all the university's work.":
+        "2026년 총장 신년사: 국제화는 대학의 모든 일의 기반이 되어야 한다",
+    "QS 2026 rank for share of international students, as reported by the SNU Alumni Association newspaper":
+        "QS 2026년판 외국인 학생 비율 지표 순위 (서울대학교총동창신문 보도)",
+    "Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can narrow that gap.":
+        "저희의 해석: 이 학생들이 따라야 할 공지는 한국어로 게시됩니다. AI Native Campus가 지향하는 행정 분야의 AI 활용으로 이 격차를 줄일 수 있습니다.",
+    "{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.":
+        "전기·정보공학부 네 개 과정의 요건 카드 {n}개 (학부: {a}~{b}학번). 카드마다 파일, 쪽, 한국어 원문을 밝힙니다.",
+    "{n} academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
+        "{date} 이후 학사 공지 {n}건을 영어로 제공: 조치 대상, 날짜, 조건, 절차, 전문 번역",
+    "GitHub rebuilds and publishes the site, without the developer's laptop.": "개발자의 노트북 없이 GitHub에서 사이트를 다시 만들어 게시합니다.",
+    "Requirements, separately": "요건은 별도로",
+    "Written once from the official documents, then re-read once by a second AI model from another maker.":
+        "공식 문서를 바탕으로 한 번 작성한 뒤, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
+    "scheduled check for new notices": "매일 예약된 새 공지 확인",
+    "estimated cost to translate one notice": "공지 1건 번역 비용 추정치",
+    "Claude translates the notices. An OpenAI model, through ChatGPT Edu, re-read the requirement cards once.":
+        "공지 번역은 Claude가 맡습니다. 요건 카드는 ChatGPT Edu를 통한 OpenAI 모델이 한 번 다시 읽었습니다.",
+    "Checks performed": "수행한 확인",
+    "requirements agreed by the second AI reader; the other {n} settled by the author":
+        "2차 AI 판독자가 동의한 요건. 나머지 {n}개는 작성자가 판단",
+    "planted errors caught in those tests": "그 시험에서 적발한 일부러 넣은 오류",
+    "quoted dates found word for word in the Korean notice (the quote, not the translation)":
+        "한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
+    "In ten notices re-read after the instructions were tightened, {n} doubtful points remained.":
+        "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
+    "Choose your program and year of entry. See the requirements covered, and the page each comes from.":
+        "과정과 입학 연도를 고르면 다루는 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
+    "Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.":
+        "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
+    "Switch to {name}: another department's notices, added as a pilot.": "{name}로 바꿔 보세요. 시범으로 추가한 다른 학과의 공지입니다.",
+    "Notices: each kind of board software needs its own small reader. Translation and publishing are reused.":
+        "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시는 그대로 다시 씁니다.",
+    "Requirements: written from each department's own documents, then re-read.": "요건: 각 학과의 공식 문서를 바탕으로 작성한 뒤 다시 읽습니다.",
+})
 
 
 def load(path):
@@ -91,7 +172,7 @@ def load(path):
 
 
 TEXT = load("bridge/text.json")["pairs"]
-used_new = []
+used_new, missing = [], []
 
 
 def fill(text, values):
@@ -101,13 +182,15 @@ def fill(text, values):
 
 
 def bi(english, values=None, korean_values=None, tag="span"):
-    """An English line with its Korean beneath. Korean comes from the site where the sentence exists there."""
-    if english in TEXT:
-        korean = TEXT[english]
-    else:
-        korean = POSTER_KO[english]
-        if english not in used_new:
-            used_new.append(english)
+    """An English line with its Korean beneath. Korean comes from the site where the sentence exists there.
+    A line with no Korean yet is drawn in English only and listed, so a draft can be judged before it is translated."""
+    korean = TEXT.get(english) or POSTER_KO.get(english)
+    if english not in TEXT and english in POSTER_KO and english not in used_new:
+        used_new.append(english)
+    if not korean:
+        if english not in missing:
+            missing.append(english)
+        return f'<{tag}>{html.escape(fill(english, values))}</{tag}>'
     ko_values = dict(values or {}, **(korean_values or {}))
     return f'<{tag}>{html.escape(fill(english, values))}<small class="ko" lang="ko">{html.escape(fill(korean, ko_values))}</small></{tag}>'
 
@@ -118,7 +201,7 @@ def num(n):
 
 def day(iso):
     d = datetime.date.fromisoformat(iso)
-    return {"date": f"{d.day} {d.strftime('%B')} {d.year}"}, {"date": f"{d.year}년 {d.month}월 {d.day}일"}
+    return f"{d.day} {d.strftime('%B')} {d.year}", f"{d.year}년 {d.month}월 {d.day}일"
 
 
 def bar(title, crit):
@@ -132,96 +215,120 @@ def fig(big, caption, small=""):
 def build():
     import segno
 
+    used_new.clear(), missing.clear()
     ece, aero = load("sources/ECE/config.json"), load("sources/AEROSPACE/config.json")
     cards, audit = load("data/ECE/cards.json"), load("data/ECE/audit.json")
-    notices, aero_notices = load("data/ECE/notices.json"), load("data/AEROSPACE/notices.json")
-    survey, evidence, context = load("data/survey.json"), load("data/ECE/evidence.json"), load("sources/context.json")
+    notices = load("data/ECE/notices.json")
+    survey, context = load("data/survey.json"), load("sources/context.json")
     briefs = [json.loads(pathlib.Path(f).read_text(encoding="utf-8")) for f in glob.glob(str(ROOT / "data/ECE/briefs/*.json"))]
     dates = [d for b in briefs for d in b["dates"]]
     reread = sum(1 for c in audit["cards"].values() if c["status"] != "open")
     caught = sum(1 for v in audit["decoys"].values() if v == "caught")
     mislead = lambda group: sum(sum(n["could_mislead"].values()) for n in audit.get(group, {}).values())
-    korean = sum(y["posts"] for y in evidence["korean_by_year"].values())
-    english = sum(y["posts"] for y in evidence["english_by_year"].values())
-    f = context["figures"]
+    f, totals = context["figures"], survey["totals"]
     today = datetime.datetime.now(SEOUL).date().isoformat()
     calendar = deadlines.build("ECE", ece["short"], ece["site"])[1]  # the same count the site shows
     author = (OUT / "author.txt").read_text(encoding="utf-8").strip() if (OUT / "author.txt").exists() else ""
+    since, until = day(survey["since"]), day(survey["until"])
+    period = bi("{from} to {to}", {"from": since[0], "to": until[0]}, {"from": since[1], "to": until[1]})
 
-    # one real requirement and one real notice, redrawn as the site shows them
-    card = next(c for c in cards if c["id"] == ece["headline_cards"]["masters"])
+    # One real requirement and one real notice, redrawn as the site shows them. The requirement is one whose every number
+    # can be seen in the Korean line quoted beside it, so the example shows what it claims to show.
+    digits = lambda text: set(re.findall(r"\d+(?:\.\d+)?", text))
+    shown = [c for c in cards if "masters" in c["programs"] and digits(c["key"]) and digits(c["key"]) <= digits(c["source_quote_ko"])]
+    card = next((c for c in shown if c["id"] == ece["headline_cards"]["masters"]), shown[0])
     source = next(s for s in ece["files"] if s["file"] == card["source_file"])
     newest = next(b for n in notices for b in briefs if b["id"] == n["id"] and len(b["dates"]) >= 2)
     notice = next(n for n in notices if n["id"] == newest["id"])
     rows = sorted((d for d in newest["dates"] if d["verified"]), key=lambda d: len(d["what"]))[:2]
-
     qr = segno.make(SITE, error="m").svg_inline(omitsize=True, border=2, dark="#000", light="#fff")
-    sv_since, ev_since = day(survey["since"]), day(evidence["since"])
-    share = max(0.12, 100 * survey["totals"]["english_titled"] / survey["totals"]["korean"])
+
+    program = bi("Master's program")
+    requirement = (f'<div class="mock"><p class="meta">{program}</p><h4>{html.escape(card["title"])}</h4><p class="key">{html.escape(card["key"])}</p>'
+                   f'<p class="src">{bi("Source")}: {html.escape(source["name"])}, {fill("page {n}", {"n": card["source_page"]})} · <span lang="ko">{html.escape(card["source_quote_ko"])}</span></p></div>')
+    date_rows = "".join(f'<tr><td>{html.escape(d["what"])}</td><td>{html.escape(d["when"])}<small lang="ko">{html.escape(d["original_ko"])}</small></td></tr>' for d in rows)
+    translated = (f'<div class="mock"><p class="meta">{notice["date"]}</p><h4>{html.escape(newest["title_en"])}</h4><p class="kotitle" lang="ko">{html.escape(notice["title_ko"])}</p>'
+                  f'<table>{date_rows}</table><p class="src">{bi("Original notice")} →</p></div>')
+
+    # The departments, largest first, this site's own marked. One period. Each column is one plain count: notices on the
+    # Korean boards, how many of those have an English title, and posts on the department's own English board.
+    # (An earlier draft added the two boards into one "English" figure; a reviewer showed it read as a share of the first.)
+    most = max(d["korean"] for d in survey["departments"])
+    def drow(d):
+        mark = " (this site)" if d["this_site"] else ""
+        mark_ko = " (본 사이트)" if d["this_site"] else ""
+        board = num(d["english_posts"]) if d["english_side"] == "separate" else "–"
+        return (f'<div class="drow {"own" if d["this_site"] else ""}"><span class="dn">{html.escape(d["name"] + mark)}<small lang="ko">{html.escape(d["name_ko"] + mark_ko)}</small></span>'
+                f'<span class="dbar"><i style="width:{74 * d["korean"] / most:.1f}%"></i><b>{num(d["korean"])}</b></span><em>{num(d["english_titled"])}</em><u>{board}</u></div>')
+    chart = ('<div class="chart"><div class="drow head"><span></span>' + bi("Korean board") + bi("of them, English title", tag="em") + bi("English board posts", tag="u") + "</div>"
+             + "".join(drow(d) for d in sorted(survey["departments"], key=lambda d: -d["korean"])) + "</div>")
+    heropair = (f'<div class="heropair"><div><b>{num(totals["korean"])}</b><p>' + bi("notices on the Korean boards of {n} engineering departments", {"n": len(survey["departments"])}) + "</p></div>"
+                f'<div><b class="blue">{num(totals["english_titled"])}</b><p>{bi("of them have a title in English")}</p></div></div>')
+    silent = min((d for d in survey["departments"] if d["english_side"] == "separate" and not d["english_posts"]), key=lambda d: d["english_last_post"])
+    korean_only = max((d for d in survey["departments"] if d["english_posts"] and not d["english_posts_titled"]), key=lambda d: d["english_posts"])
+    english_boards = bi("The {k} separate English boards: {n} posts in the same period, {m} with an English title.",
+                        {"k": totals["english_boards"], "n": totals["english_posts"], "m": totals["english_posts_titled"]})
+    boards_line = bi("{a}'s English board: no post since {year}. {b}'s: {n} posts, all with Korean titles.",
+                     {"a": silent["name"], "year": silent["english_last_post"][:4], "b": korean_only["name"], "n": korean_only["english_posts"]},
+                     {"a": silent["name_ko"], "b": korean_only["name_ko"]})
+    legend = bi("–: no English board of its own. Separate job, scholarship, news and seminar boards are not counted; such notices can still appear on the boards counted.")
+    counted = f'<p class="note">{legend}</p><p class="note">' + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p>"
+
+    funded = bi("2026: {won} billion won to {n} colleges and schools to recruit international students and support their settlement.",
+                {"won": f["college_fund_billion_won"], "n": f["colleges_funded"]}, {"won": 10 * f["college_fund_billion_won"]})  # 1 billion won is 10억 원
+    division = bi("Planned for September {year}: a new undergraduate division for international students, about {n} entrants expected.",
+                  {"year": f["new_division_year"], "n": f["new_division_students"]})
+    reading = bi("Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can narrow that gap.")
+    why_figs = '<div class="figs rows">' + fig(num(f["qs_student_ratio_rank"]), bi("QS 2026 rank for share of international students, as reported by the SNU Alumni Association newspaper")) + "</div>"
+    why = ('<div class="body">' + f'<p class="lead">{bi("SNU is working to bring in more international students.")}</p>'
+           + f'<ul class="rule"><li>{funded}</li><li>{division}</li><li>' + bi("President's 2026 address: internationalisation must be the base of all the university's work.") + "</li></ul>"
+           + why_figs + f'<p class="stand">{reading}</p>'
+           + '<p class="note">' + bi("Sources: News1, 27 April 2026; President's New Year address; SNU Alumni Association newspaper. Links on the site.") + "</p></div>")
+
+    gap = f'<div class="body"><p class="period">{period}</p>{heropair}{chart}<p class="stand">{english_boards}</p><p class="cap">{boards_line}</p><div>{counted}</div></div>'
+
+    years = sorted({y for c in cards for y in (c.get("entry_years") or [])})
+    covered = day(ece["board"]["since"])
+    line_req = bi("{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.",
+                  {"n": len(cards), "a": years[0], "b": years[-1]})
+    line_notices = bi("{n} academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.",
+                      {"n": len(notices), "date": covered[0]}, {"date": covered[1]})
+    does = f'<div class="body"><p>{line_req}</p>{requirement}<p>{line_notices}</p>{translated}</div>'
+
+    step = lambda n, title, text: f'<li><b>{n}</b><h4>{bi(title)}</h4><p>{text}</p></li>'
+    steps = ('<ol class="steps">' + step(1, "Collect", bi("Once a day a scheduled job reads the department's Korean board."))
+             + step(2, "Translate", bi("An AI model writes the English. Plain code checks every quoted date against the notice."))
+             + step(3, "Publish", bi("GitHub rebuilds and publishes the site, without the developer's laptop."))
+             + step("+", "Requirements, separately", bi("Written once from the official documents, then re-read once by a second AI model from another maker.")) + "</ol>")
+    daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig("≈0.06<i>USD</i>", bi("estimated cost to translate one notice"))
+    who = f'<p class="stand">{bi("Claude translates the notices. An OpenAI model, through ChatGPT Edu, re-read the requirement cards once.")}</p>'
+    how = f'<div class="body">{steps}<div class="figs two">{daily}{cost}</div>{who}</div>'
+
+    agreed = sum(1 for c in audit["cards"].values() if c["status"] == "reader_agrees")
+    checks = [fig(agreed, bi("requirements agreed by the second AI reader; the other {n} settled by the author", {"n": reread - agreed}), f"of {len(cards)}"),
+              fig(caught, bi("planted errors caught in those tests"), f"of {len(audit['decoys'])}"),
+              fig(num(sum(d["verified"] for d in dates)), bi("quoted dates found word for word in the Korean notice (the quote, not the translation)"), f"of {num(len(dates))}")]
+    ai_note = f'<p class="note">{bi("The second reader is an AI model. It is not a check by a person or by the department.")}</p>'
+    checked = f'<div class="body"><div class="figs three even">{"".join(checks)}</div><div>{ai_note}</div></div>'
+
+    tries = [bi("Choose your program and year of entry. See the requirements covered, and the page each comes from."),
+             bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
+             bi("Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.", {"n": calendar["events"]}),
+             bi("Switch to {name}: another department's notices, added as a pilot.", {"name": aero["department"]}, {"name": aero["department_ko"]})]
+    try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
+    extends = (f'<h5>{bi("Where it extends")}</h5>'
+               + f'<p class="small">{bi("Notices: each kind of board software needs its own small reader. Translation and publishing are reused.")}</p>'
+               + '<p class="small">' + bi("Requirements: written from each department's own documents, then re-read.") + "</p>")
+    try_it = f'<div class="body">{try_list}{extends}</div>'
+
+    columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
+               [bar("The gap", "2") + gap, bar("Checks performed", "5") + checked],
+               [bar("What it does", "3") + does, bar("Try it", "6") + try_it]]
+    grid = "".join(f'<div class="col{" mid" if i == 1 else ""}">' + "".join(f'<section class="panel">{p}</section>' for p in column) + "</div>"
+                   for i, column in enumerate(columns))
+    logo = '<img class="logo" src="lab-logo.png" alt="">' if (OUT / "lab-logo.png").exists() else ""
+
     stamp = day(today)
-
-    panels = [
-        # 1. policy applicability
-        bar("Why now", "1") + '<div class="body">'
-        + f'<p class="lead">{bi("The university set two directions this year.")}</p>'
-        + f'<ul class="rule"><li>' + bi("Internationalisation: the base of all the university's work, not an added project.") + f'</li>'
-        + f'<li>{bi("AI Native Campus: {n} action plans in education, research, administration and governance.", {"n": f["action_plans"]})}</li></ul>'
-        + '<div class="figs three">'
-        + fig(f["qs_rank"], bi("QS rank, 2026 and 2027 editions ({n} in 2025)", {"n": f["qs_rank_before"]}))
-        + fig(num(f["qs_student_ratio_rank"]), bi("rank for share of international students, 2026 edition"))
-        + fig(num(f["students_in_korea"]), bi("international students in Korea, 2026")) + "</div>"
-        + f'<p class="stand">' + bi("Our reading, not the university's: a student who cannot read the department's notices is left out of both.") + f'</p>'
-        + f'<p class="note">' + bi("Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.") + f'</p></div>',
-
-        # 2. performance and impact
-        bar("The gap", "2") + '<div class="body">'
-        + f'<div class="hero"><b>{num(survey["totals"]["english_titled"])}<i>of {num(survey["totals"]["korean"])}</i></b></div>'
-        + f'<p>' + bi("Korean notices on {n} engineering departments' boards since {date}", dict(sv_since[0], n=len(survey["departments"])), sv_since[1]) + f'</p>'
-        + f'<div class="track"><i style="width:{share:.2f}%"></i></div>'
-        + f'<p class="cap blue">{bi("have a title in English")}</p>'
-        + f'<p class="sub">' + bi("This department's academic board since {date}", ev_since[0], ev_since[1]) + f'</p>'
-        + f'<div class="pair"><div><b>{num(korean)}</b>{bi("Korean notices")}<div class="track full"></div></div>'
-        + f'<div><b class="blue">{num(english)}</b>{bi("posts on the English board")}<div class="track"><i style="width:{100 * english / korean:.1f}%"></i></div></div></div>'
-        + f'<p class="note">{bi("Counted from the public boards. Titles only; method and limits are on the site.")}</p></div>',
-
-        # 3. completeness
-        bar("What it does", "3") + '<div class="body">'
-        + f'<p>{bi("{n} requirements for four programs. Each cites its file, page and Korean line.", {"n": len(cards)})}</p>'
-        + f'<div class="mock"><h4>{html.escape(card["title"])}</h4><p class="key">{html.escape(card["key"])}</p>'
-        + f'<p class="src">{bi("Source")}: {html.escape(source["name"])}, {fill("page {n}", {"n": card["source_page"]})} · <span lang="ko">{html.escape(card["source_quote_ko"])}</span></p></div>'
-        + f'<p>{bi("{n} notices in English: who must act, dates, conditions, steps, and the full translation.", {"n": len(notices)})}</p>'
-        + f'<div class="mock"><p class="meta">{notice["date"]}</p><h4>{html.escape(newest["title_en"])}</h4><p class="kotitle" lang="ko">{html.escape(notice["title_ko"])}</p><table>'
-        + "".join(f'<tr><td>{html.escape(d["what"])}</td><td>{html.escape(d["when"])}<small lang="ko">{html.escape(d["original_ko"])}</small></td></tr>' for d in rows)
-        + f'</table><p class="src">{bi("Original notice")} →</p></div></div>',
-
-        # 4. quality: how it is made
-        bar("How it works", "4") + '<div class="body"><ol class="steps">'
-        + f'<li><b>1</b><h4>{bi("Collect")}</h4><p>' + bi("Every morning a scheduled job reads the department's Korean board.") + f'</p></li>'
-        + f'<li><b>2</b><h4>{bi("Translate")}</h4><p>{bi("An AI model writes the English. Plain code checks every quoted date against the notice.")}</p></li>'
-        + f'<li><b>3</b><h4>{bi("Re-read")}</h4><p>{bi("A second AI model, from another maker, re-read every requirement against its page.")}</p></li>'
-        + f'<li><b>4</b><h4>{bi("Publish")}</h4><p>' + bi("The site is rebuilt and published. No one's computer is needed.") + f'</p></li></ol>'
-        + '<div class="figs two">' + fig("07:17", bi("every day")) + fig("0.06<i>USD</i>", bi("a notice")) + "</div>"
-        + f'<p class="stand">{bi("Claude translates. An OpenAI model, through ChatGPT Edu, re-reads.")}</p></div>',
-
-        # 5. quality: how it was checked
-        bar("Checked", "5") + '<div class="body"><div class="figs two tall">'
-        + fig(reread, bi("requirements re-read by a second reader"), f"of {len(cards)}")
-        + fig(caught, bi("deliberately wrong entries caught"), f"of {len(audit['decoys'])}")
-        + fig(num(sum(d["verified"] for d in dates)), bi("dates found word for word in the notice"), f"of {num(len(dates))}")
-        + fig(f'{mislead("notices")}<i>→ {mislead("notices_after")}</i>', bi("points that could mislead, in ten notices, after the instructions were tightened"))
-        + f'</div><p class="note">{bi("The second reader is an AI model. It is not a check by a person or by the department.")}</p></div>',
-
-        # 6. demonstration
-        bar("Try it", "6") + '<div class="body"><ol class="try">'
-        + f'<li><b>1</b><p>{bi("Choose your program. See what to finish before graduation, and the page each item comes from.")}</p></li>'
-        + f'<li><b>2</b><p>{bi("Open a notice. Compare its dates with the Korean beside them, then open the original.")}</p></li>'
-        + f'<li><b>3</b><p>{bi("Add the deadlines to your calendar: {n} dated events, each checked against the weekday the notice prints.", {"n": calendar["events"]})}</p></li>'
-        + f'<li><b>4</b><p>' + bi("Switch to {name}: another department's notices, added in one day as a pilot.", {"name": aero["department"]}, {"name": aero["department_ko"]}) + f'</p></li></ol>'
-        + f'<h5>{bi("Where it extends")}</h5>'
-        + f'<p class="small">{bi("Notices: one small reader for each kind of board software. The eleven department sites read use six kinds.")}</p>'
-        + f'<p class="small">' + bi("Requirements: written by hand from each department's documents, then re-read.") + f'</p></div>',
-    ]
-
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>SNU Bridge poster</title>
 <style>
@@ -303,48 +410,91 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .foot b {{ display: block; margin-bottom: 1.5mm; font-size: 11.5mm; }}
 .foot b .ko {{ display: inline; margin-left: 3mm; }}
 .foot div:last-child {{ text-align: right; color: #333; }}
+.period {{ font-size: 13mm; font-weight: 700; }}
+.heropair {{ display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 8mm; }}
+.heropair b {{ display: block; font-size: 56mm; font-weight: 700; line-height: .95; letter-spacing: -.04em; }}
+.heropair p {{ margin-top: 2mm; font-size: 11mm; line-height: 1.2; }}
+.chart {{ border-top: .5mm solid #000; }}
+.drow {{ display: grid; grid-template-columns: 166mm minmax(0, 1fr) 34mm 52mm; column-gap: 5mm; align-items: center; padding: 1.6mm 0; border-bottom: .3mm solid #bbb; font-size: 10.2mm; line-height: 1.12; }}
+.drow .dn small {{ display: block; margin-top: .6mm; font-size: 8.6mm; color: #555; }}
+.drow .dbar {{ display: flex; align-items: center; gap: 3mm; }}
+.drow .dbar i {{ display: block; height: 9mm; background: #000; }}
+.drow .dbar b {{ font-size: 10.6mm; }}
+.drow em {{ font-style: normal; font-weight: 700; font-size: 15mm; color: #002c84; text-align: right; }}
+.drow u {{ text-decoration: none; font-size: 11mm; text-align: right; color: #333; }}
+.drow.head {{ align-items: end; font-size: 8.6mm; color: #333; }}
+.drow.head em {{ font-size: 8.6mm; font-weight: 400; color: #002c84; line-height: 1.12; white-space: nowrap; justify-self: end; }}
+.drow.head u {{ font-size: 8.6mm; line-height: 1.12; }}
+.drow.head .ko {{ display: block; margin: 0; font-size: 8.6mm; }}
+.drow.own {{ margin: 0 -3mm; padding: 2.6mm 3mm; background: #002c84; color: #fff; border-bottom: 0; }}
+.drow.own .dn small, .drow.own em, .drow.own u {{ color: #fff; }}
+.drow.own .dbar i {{ background: #fff; }}
+.grid {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); }}
+.col {{ display: flex; flex-direction: column; gap: 24mm; min-height: 0; }}
+.col .panel {{ flex: 1 1 0; }}
+.col.mid .panel:first-child {{ flex: 3.55 1 0; }}
+.col.mid .panel:first-child .body {{ gap: 4.2mm; }}
+.col.mid .cap {{ margin-top: 0; font-size: 11.6mm; line-height: 1.2; }}
+.col.mid .note + .note {{ margin-top: 2mm; }}
+.figs.rows {{ grid-template-columns: minmax(0, 1fr); }}
+.figs.rows .fig {{ display: grid; grid-template-columns: 112mm minmax(0, 1fr); column-gap: 6mm; align-items: center; padding: 3mm 6mm; }}
+.figs.rows .fig + .fig {{ border-top: 0; }}
+.figs.rows .fig b {{ font-size: 40mm; }}
+.figs.rows .fig p {{ margin-top: 0; font-size: 10.8mm; }}
+.col:first-child .panel:first-child .rule li {{ padding: 3.2mm 0; }}
+.col:first-child .panel:first-child .body {{ gap: 4.5mm; }}
+.figs.three.even {{ grid-template-columns: repeat(3, minmax(0, 1fr)); }}
+.figs.three.even .fig b {{ font-size: 36mm; }}
+.figs.three.even .fig {{ padding: 3mm 5mm 4mm; }}
+.figs.three.even .fig p {{ font-size: 9.6mm; }}
+.foot {{ grid-template-columns: 1.9fr 1fr auto; }}
+.foot .logo {{ display: block; height: 46mm; width: auto; }}
+.foot div:nth-child(2) span {{ display: block; margin-bottom: 2mm; }}
 </style></head><body>
 <header class="band">
   <div>
     <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
     <h1>SNU Bridge</h1>
-    <p class="tag">{bi("One department's graduation requirements and notices, in English, each with its source. Kept current every morning from the department's own notices.")}</p>
+    <p class="tag">{bi("One department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")}</p>
   </div>
   <aside>{qr}<p>{bi("Scan to open the site")}</p><p>{html.escape(SITE.replace("https://", "").rstrip("/"))}</p><p><b>{html.escape(author)}</b></p></aside>
 </header>
-<main class="grid">{"".join(f'<section class="panel">{p}</section>' for p in panels)}</main>
+<main class="grid">{grid}</main>
 <footer class="foot">
   <div><b>{bi("What it does not do")}</b>{bi("It does not read images or attachments; it sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
-  <div>{bi("A student project. Not an official Seoul National University website. Figures as of {date}.", stamp[0], stamp[1])}</div>
+  <div>{bi("A student project. Not an official Seoul National University website.")}{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
+  {logo}
 </footer>
 </body></html>"""
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "poster.html").write_text(page, encoding="utf-8")
-    review = ["# Korean lines written for the poster only", "",
-              "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]
-    for english in used_new:
-        review += [f"- {english}", f"  - {POSTER_KO[english]}"]
-    (OUT / "korean-review.md").write_text("\n".join(review) + "\n", encoding="utf-8")
-    return OUT / "poster.html"
+    target = OUT / "poster.html"
+    target.write_text(page, encoding="utf-8")
+    return target
 
 
 def print_pdf(page):
     import fitz
 
-    pdf = OUT / "poster.pdf"
+    pdf = page.with_suffix(".pdf")
     with tempfile.TemporaryDirectory() as profile:
         subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={profile}",
                         f"--print-to-pdf={pdf}", page.as_uri()], check=True, capture_output=True, timeout=180)
     doc = fitz.open(pdf)
     size = doc[0].rect
     width_mm, height_mm = size.width / 72 * 25.4, size.height / 72 * 25.4
-    fonts = {f[3] for p in doc for f in p.get_fonts()}
-    doc[0].get_pixmap(matrix=fitz.Matrix(0.42, 0.42)).save(OUT / "preview.png")
-    print(f"{pdf.relative_to(ROOT)}: {len(doc)} page(s), {width_mm:.1f} x {height_mm:.1f} mm, {pdf.stat().st_size // 1024} KB, fonts: {sorted(fonts)}")
+    doc[0].get_pixmap(matrix=fitz.Matrix(0.42, 0.42)).save(page.with_suffix(".png"))
+    words = len(doc[0].get_text().split())
+    print(f"{pdf.relative_to(ROOT)}: {len(doc)} page(s), {width_mm:.1f} x {height_mm:.1f} mm, {pdf.stat().st_size // 1024} KB, {words} words in all (both languages)")
     if len(doc) != 1 or abs(width_mm - WIDTH_MM) > 1 or abs(height_mm - HEIGHT_MM) > 1:
         sys.exit("The PDF is not one page of the required size.")
 
 
 if __name__ == "__main__":
     print_pdf(build())
-    print(f"{len(used_new)} Korean lines are new on the poster: out/poster/korean-review.md")
+    review = ["# Korean lines written for the poster only", "",
+              "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]
+    review += [line for english in used_new for line in (f"- {english}", f"  - {POSTER_KO[english]}")]
+    if missing:
+        sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))
+    print(f"{len(used_new)} Korean lines are written for the poster only: out/poster/korean-review.md")
+    (OUT / "korean-review.md").write_text("\n".join(review) + "\n", encoding="utf-8")

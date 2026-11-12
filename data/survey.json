@@ -1,7 +1,7 @@
 {
  "counted_on": "2026-11-12",
  "since": "2025-01-01",
- "until": "2026-11-11",
+ "until": "2026-10-31",
  "departments": [
   {
    "name": "Aerospace Engineering",
@@ -10,14 +10,36 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 991,
+   "this_site": false,
+   "korean": 969,
    "approximate": false,
    "english_side": "separate",
-   "english_posts": 0,
    "english_titled": 3,
+   "english_posts": 0,
    "english_posts_titled": 0,
+   "english_last_post": "2021-08-24",
+   "in_english": 3,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2026-10-19",
+     "title": "[KASI Colloquium] Oct. 21 (Wed.) 4:00 pm - Prof. [name] (Seoul National University)",
+     "url": "https://aerospace.snu.ac.kr/board/notice?bm=v&bbsidx=31524"
+    },
+    {
+     "date": "2026-07-22",
+     "title": "2026 The first Required R&D Training(Research Safety, Ethics, and Security) for International STE...",
+     "url": "https://aerospace.snu.ac.kr/board/notice?bm=v&bbsidx=31367"
+    },
+    {
+     "date": "2025-12-10",
+     "title": "SNU Tech Seminar(Dec. 12) - Dr. [name], Founder of Firefly Aerospace",
+     "url": "https://aerospace.snu.ac.kr/board/notice?bm=v&bbsidx=30964"
+    }
+   ],
    "sample": {
-    "opened": 10,
+    "opened": 9,
     "with_english_passage": 0,
     "english_menu_is_korean": null
    }
@@ -29,14 +51,26 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 812,
+   "this_site": false,
+   "korean": 793,
    "approximate": false,
    "english_side": "separate",
-   "english_posts": 1,
    "english_titled": 1,
+   "english_posts": 1,
    "english_posts_titled": 1,
+   "english_last_post": "2025-05-26",
+   "in_english": 2,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2025-01-02",
+     "title": "Special Seminar(The Manta project: Academic programs to advance fusion pilot plan design)",
+     "url": "https://nucleng.snu.ac.kr/community/notice?md=v&bbsidx=23191"
+    }
+   ],
    "sample": {
-    "opened": 10,
+    "opened": 9,
     "with_english_passage": 0,
     "english_menu_is_korean": null
    }
@@ -48,12 +82,24 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 967,
+   "this_site": false,
+   "korean": 949,
    "approximate": false,
    "english_side": "none",
-   "english_posts": null,
    "english_titled": 1,
+   "english_posts": null,
    "english_posts_titled": null,
+   "english_last_post": null,
+   "in_english": 1,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2025-11-12",
+     "title": "Power Electronics Day 2025 [IEEE Seoul Section PELS Chapter — An Academy and Industry Connection]",
+     "url": "https://naoe.snu.ac.kr/news/notice?md=v&bbsidx=21070"
+    }
+   ],
    "sample": {
     "opened": 10,
     "with_english_passage": 1,
@@ -67,12 +113,54 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 1279,
+   "this_site": false,
+   "korean": 1251,
    "approximate": false,
    "english_side": "same_posts",
-   "english_posts": null,
    "english_titled": 7,
+   "english_posts": null,
    "english_posts_titled": null,
+   "english_last_post": null,
+   "in_english": 7,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2026-07-08",
+     "title": "SNU AIIS × Simular: Computer-Use Agents Research Forum",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/25287"
+    },
+    {
+     "date": "2026-06-02",
+     "title": "2026 Optimization Grand Challenge",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/25190"
+    },
+    {
+     "date": "2026-06-01",
+     "title": "Optimization Grand Challenge 2026",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/25182"
+    },
+    {
+     "date": "2026-05-06",
+     "title": "[Peking University] Guanghua School of Management DBIC Program 2026 (~5/15)",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/25094"
+    },
+    {
+     "date": "2025-12-04",
+     "title": "UMD Electrical and Computer Engineering PhD Application Fee Waiver - Fall 2026",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/24505"
+    },
+    {
+     "date": "2025-08-20",
+     "title": "TEST",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/24145"
+    },
+    {
+     "date": "2025-07-02",
+     "title": "[SNU AI Institute-Pioneering Innovation Research Center Seminar] Recent Results on 3D Vision in Dynamics Scenes",
+     "url": "https://cse.snu.ac.kr/ko/community/notice/24031"
+    }
+   ],
    "sample": {
     "opened": 10,
     "with_english_passage": 0,
@@ -86,14 +174,46 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 1022,
+   "this_site": false,
+   "korean": 985,
    "approximate": false,
    "english_side": "same_posts",
-   "english_posts": null,
    "english_titled": 5,
+   "english_posts": null,
    "english_posts_titled": null,
+   "english_last_post": null,
+   "in_english": 5,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2026-09-29",
+     "title": "TOPIK Registration Fee Support for International Undergraduate Students in the College of Engineerin…",
+     "url": "https://cuee.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4703"
+    },
+    {
+     "date": "2026-09-15",
+     "title": "2026 Fall Semester College of Engineering: Call for Nominations for the“K-STAR Visa Track”",
+     "url": "https://cuee.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4688"
+    },
+    {
+     "date": "2026-09-01",
+     "title": "International Graduate Program in Civil Engineering and Infrastructure Studies at the University of …",
+     "url": "https://cuee.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4656"
+    },
+    {
+     "date": "2026-05-19",
+     "title": "[Career Mentoring] Working in Korea after SNU Graduation - Meet Your Seniors",
+     "url": "https://cuee.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4465"
+    },
+    {
+     "date": "2026-04-23",
+     "title": "Request for Nomination of Outstanding Candidates for the “K-STAR Visa Track”, Spring Semester 2026, …",
+     "url": "https://cuee.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4425"
+    }
+   ],
    "sample": {
-    "opened": 10,
+    "opened": 9,
     "with_english_passage": 1,
     "english_menu_is_korean": true
    }
@@ -106,12 +226,29 @@
     "공지사항",
     "대학원 공지"
    ],
-   "korean": 681,
+   "this_site": false,
+   "korean": 661,
    "approximate": false,
    "english_side": "separate",
-   "english_posts": 0,
    "english_titled": 2,
+   "english_posts": 0,
    "english_posts_titled": 0,
+   "english_last_post": "2024-02-19",
+   "in_english": 2,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2025-09-15",
+     "title": "Q-SYSTEM, AND VARIOUS DEVELOPMENTS USING Q DURING THE LAST 5…",
+     "url": "https://ere.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=1705"
+    },
+    {
+     "date": "2025-02-17",
+     "title": "Recruitment of graduate students/postdoc for SNU ERE Global …",
+     "url": "https://ere.snu.ac.kr/bbs/board.php?bo_table=sub5_2&wr_id=223"
+    }
+   ],
    "sample": {
     "opened": 10,
     "with_english_passage": 0,
@@ -125,12 +262,18 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 751,
+   "this_site": false,
+   "korean": 726,
    "approximate": false,
    "english_side": "separate",
-   "english_posts": 33,
    "english_titled": 0,
+   "english_posts": 33,
    "english_posts_titled": 0,
+   "english_last_post": "2026-02-12",
+   "in_english": 0,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [],
    "sample": {
     "opened": 10,
     "with_english_passage": 0,
@@ -144,14 +287,26 @@
    "korean_boards": [
     "공지사항"
    ],
-   "korean": 536,
+   "this_site": false,
+   "korean": 515,
    "approximate": false,
    "english_side": "separate",
-   "english_posts": 1,
    "english_titled": 1,
+   "english_posts": 1,
    "english_posts_titled": 1,
+   "english_last_post": "2025-11-06",
+   "in_english": 2,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2026-02-06",
+     "title": "2026 SNU Mechano Intelligence conference(26. 3. 13.)",
+     "url": "https://me.snu.ac.kr/공통-공지사항/?mod=document&uid=21584"
+    }
+   ],
    "sample": {
-    "opened": 10,
+    "opened": 9,
     "with_english_passage": 0,
     "english_menu_is_korean": null
    }
@@ -165,27 +320,129 @@
     "학부 공지",
     "대학원 공지"
    ],
-   "korean": 752,
-   "approximate": true,
+   "this_site": false,
+   "korean": 737,
+   "approximate": false,
    "english_side": "separate",
-   "english_posts": 6,
    "english_titled": 1,
+   "english_posts": 6,
    "english_posts_titled": 2,
+   "english_last_post": "2026-05-08",
+   "in_english": 3,
+   "translated_board": null,
+   "tabs": null,
+   "english_titles": [
+    {
+     "date": "2026-04-15",
+     "title": "Asian Deans’ Forum 2026 THE RISING STARS Women in Engineering Workshop",
+     "url": "https://cbe.snu.ac.kr/cbe/bbs/BMSR00058/view.do?boardId=25629&menuNo=300052"
+    }
+   ],
    "sample": {
     "opened": 10,
     "with_english_passage": 0,
     "english_menu_is_korean": null
    }
+  },
+  {
+   "name": "Electrical and Computer Engineering",
+   "name_ko": "전기·정보공학부",
+   "site": "https://ece.snu.ac.kr",
+   "korean_boards": [
+    "학사",
+    "입시",
+    "대학생활",
+    "기타"
+   ],
+   "this_site": true,
+   "korean": 891,
+   "approximate": false,
+   "english_side": "separate",
+   "english_titled": 4,
+   "english_posts": 39,
+   "english_posts_titled": 32,
+   "english_last_post": "2026-11-09",
+   "in_english": 35,
+   "translated_board": {
+    "name": "학사",
+    "korean": 325,
+    "english_titled": 0
+   },
+   "tabs": [
+    {
+     "name": "학사",
+     "name_en": "Academic",
+     "url": "https://ece.snu.ac.kr/community/academics",
+     "korean": 325,
+     "english_titled": 0,
+     "counted": true
+    },
+    {
+     "name": "입시",
+     "name_en": "Admissions",
+     "url": "https://ece.snu.ac.kr/community/admissions",
+     "korean": 30,
+     "english_titled": 0,
+     "counted": true
+    },
+    {
+     "name": "대학생활",
+     "name_en": "Campus life",
+     "url": "https://ece.snu.ac.kr/community/campus-life",
+     "korean": 455,
+     "english_titled": 1,
+     "counted": true
+    },
+    {
+     "name": "기타",
+     "name_en": "Other",
+     "url": "https://ece.snu.ac.kr/community/etc",
+     "korean": 81,
+     "english_titled": 3,
+     "counted": true
+    },
+    {
+     "name": "장학",
+     "name_en": "Scholarships",
+     "url": "https://ece.snu.ac.kr/community/schoarships",
+     "korean": 345,
+     "english_titled": 12,
+     "counted": false
+    },
+    {
+     "name": "취업ㆍ진로",
+     "name_en": "Jobs and careers",
+     "url": "https://ece.snu.ac.kr/community/job-openings",
+     "korean": 211,
+     "english_titled": 3,
+     "counted": false
+    }
+   ],
+   "english_titles": [
+    {
+     "date": "2026-03-30",
+     "title": "Announcement of the 2026 University Student Selection Plan for the Korea–Japan Academic, Cultural, a...",
+     "url": "https://ece.snu.ac.kr/community/etc?md=v&bbsidx=57653"
+    },
+    {
+     "date": "2025-03-18",
+     "title": "Join the 2025 Global K-Heritage Ambassadors",
+     "url": "https://ece.snu.ac.kr/community/etc?md=v&bbsidx=56366"
+    },
+    {
+     "date": "2025-03-11",
+     "title": "Invitation for Citadel’s Asia Terminal Spring 2025 for Industrial Engineering Students",
+     "url": "https://ece.snu.ac.kr/community/etc?md=v&bbsidx=56332"
+    },
+    {
+     "date": "2025-03-01",
+     "title": "[Dept. of ECE] Join Us! 2025 Spring ECE Int'l Student Welcome & Networking",
+     "url": "https://ece.snu.ac.kr/community/campus-life?md=v&bbsidx=56296"
+    }
+   ],
+   "sample": null
   }
  ],
- "own": {
-  "name": "Electrical and Computer Engineering",
-  "korean_board": "학사 (academic board only)",
-  "korean": 330,
-  "english_titled": 0,
-  "english_posts": 40,
-  "english_posts_titled": 32
- },
  "not_counted": [
   {
    "name": "Materials Science and Engineering",
@@ -201,9 +458,14 @@
   }
  ],
  "totals": {
-  "korean": 7791,
-  "english_titled": 21,
-  "sample_opened": 90,
+  "korean": 8477,
+  "in_english": 60,
+  "english_titled": 25,
+  "english_boards": 7,
+  "english_posts": 80,
+  "english_posts_titled": 36,
+  "sample_departments": 9,
+  "sample_opened": 86,
   "sample_with_english_passage": 2
  }
 }

@@ -18,7 +18,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from bridge.notices import _fetch, _rows  # noqa: E402
 
-SINCE = "2024-01-01"
+SINCE = "2025-01-01"  # the same closed period as tools/survey.py, so every count on the site and poster covers the same months
+UNTIL = "2026-10-31"
 KOREAN = "https://ece.snu.ac.kr/community/academics"
 ENGLISH = "https://ece.snu.ac.kr/en/community/notice"
 MONTH = {m: i + 1 for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())}
@@ -82,16 +83,18 @@ def by_year(posts: list[dict]) -> dict:
 
 
 if __name__ == "__main__":
-    ko, en = korean(), english()
+    ko, en_all = korean(), english()
+    ko, en = [n for n in ko if n["date"] <= UNTIL], [n for n in en_all if n["date"] <= UNTIL]
     today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat()
     this_year = today[:4]
     result = {
-        "counted_on": today, "since": SINCE, "korean_board": KOREAN, "english_board": ENGLISH,
+        "counted_on": today, "since": SINCE, "until": UNTIL, "korean_board": KOREAN, "english_board": ENGLISH,
         "korean_by_year": by_year(ko), "english_by_year": by_year(en),
         "most_read_korean": sorted((n for n in ko if n["date"][:4] == this_year), key=lambda n: -n["views"])[:10],
-        "english_posts": en,  # every post of the period, so any later start date can be compared
+        "english_titled": sum(bool(re.search(r"[A-Za-z]{3}", n["title"])) and not re.search(r"[가-힣]", n["title"]) for n in en),
+        "english_posts": en_all,  # every post since the start, later ones included: the page compares the months this site covers
     }
     target = ROOT / "data" / "ECE" / "evidence.json"
     target.write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{len(ko)} Korean and {len(en)} English posts since {SINCE}; written to {target.relative_to(ROOT)}")
+    print(f"{len(ko)} Korean and {len(en)} English posts from {SINCE} to {UNTIL}; written to {target.relative_to(ROOT)}")
     print(json.dumps({"korean": result["korean_by_year"], "english": result["english_by_year"]}, indent=1))

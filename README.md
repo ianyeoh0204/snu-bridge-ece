@@ -26,7 +26,8 @@ The requirement cards are currently written by hand: `cd tools && ../.venv/bin/p
 `data/ECE/cards.json`, and `.venv/bin/python tools/check_quotes.py` checks the undergraduate quotes.
 
 ## How it stays up to date without anyone's laptop
-`.github/workflows/update.yml` runs on GitHub every morning (07:17 in Seoul). It reads each department's board, translates
+`.github/workflows/update.yml` runs on GitHub once a day. It is scheduled for 07:17 in Seoul, but GitHub starts scheduled
+jobs late (the run of 12 Nov 2026 began at 12:08), so nothing on the site or poster promises a time. It reads each department's board, translates
 notices that are new or changed, saves them to `data/`, rebuilds the site and publishes it with GitHub Pages.
 Pushing to `main` republishes the site without reading the board. The "Run workflow" button does a full run on demand.
 

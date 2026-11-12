@@ -123,6 +123,9 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - Not built: plugin. (The calendar file was built on 12 Nov, see the end of this file.)
 
 ## Other departments (12 Nov 2026)
+(The counts in this section, 7,791 and 21, and the "500 against 64" in the Status section above, were replaced later the same
+day. The current figures and rules are in "One period, one measure, ten departments" below. The instruction here not to
+start a second department's requirements before 20 Nov was lifted by the developer on 12 Nov.)
 - Survey: `tools/survey.py` counted the public notice boards of nine other engineering departments for 1 Jan 2025 to
   11 Nov 2026: 7,791 Korean notices, 21 of them with a title in English. Totals are in `data/survey.json` and on
   the About page ("Other engineering departments"); the full post lists and every fetched page stay in `out/survey/`
@@ -195,3 +198,59 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   read by a Korean speaker; that must happen before the poster is sent (20 Nov).
 - The developer finds long text tiring. Add a line only by removing or shortening another, and check that no panel
   overflows after any change (each panel's `.body` must not scroll).
+
+## One period, one measure, ten departments, and the chosen poster (12 Nov 2026, published)
+- The developer found the numbers unconvincing, and was right: the departments table mixed two measures (English-titled
+  notices on Korean boards beside posts on English boards, so "40" sat next to a total of "21"), two periods (the other
+  departments from 2025, this department from 2024), and it kept this department outside the total.
+- One closed period everywhere: 1 January 2025 to 31 October 2026 (`WINDOW`/`UNTIL` in `tools/survey.py`, `SINCE`/`UNTIL`
+  in `tools/evidence.py`). The start cannot be earlier: Mechanical Engineering's board begins on 2 January 2025.
+- One test for English everywhere: the title is in English (Latin letters, no Korean), on either board, a notice posted
+  on both counted once (`in_english`). The table's middle column adds up to the headline.
+- One rule for all ten departments, this one included (the developer: "ECE is also engineering, make it uniform"):
+  a department's notice boards are counted; boards it keeps apart for jobs, scholarships, news or seminars are not.
+  A first attempt counted all six ECE boards and called that uniform; reading the other departments' menus showed six
+  of them have a separate job board and three a separate scholarship board, none counted. So ECE is counted on four
+  boards (academic, admissions, campus life, other). Ten departments: 8,477 notices on Korean boards, 60 with an English
+  title. ECE: 891 and 35; its English board has 39 posts, 32 titled in English. The board this site translates, ECE's
+  academic board, has 325 notices and none titled in English; the ECE step looks at that board alone and says so.
+  Before any claim that departments were treated alike, check each one's menu, not only this department's.
+- Do not generalise about English boards (ECE's is mostly English). State the two facts: Aerospace's last post is from August 2021 (seen on the page), Industrial's 33
+  posts all have Korean titles. All numbered boards match their own row numbering inside the period; Computer Science
+  prints none. The sample is 86 opened notices in the nine other departments, 2 with a line of English.
+- Do not say "every morning" or "07:17": the scheduled run of 12 Nov started at 12:08 Seoul time. Say "once a day" or "daily".
+- The live counts (notices, calendar events, requirements) are not board counts; the poster footer labels both.
+- `sources/context.json` also holds the recruiting figures from the News1 report (re-read 12 Nov): 1 billion won to
+  27 colleges and schools, a new undergraduate division from September 2027 with about 36 new students expected.
+- Poster: the developer chose the evidence-first version of three drafts. `tools/poster.py` now draws only that one
+  (`out/poster/poster.pdf`). Their further requests, all done: "Why now" is about SNU bringing in more international
+  students; no clock time, "Daily" and the cost per notice instead; the gap panel is the tall one with all ten
+  departments as rows; Checked is one short row of three figures (they found four large figures too much); the lab logo
+  (`out/poster/lab-logo.png`, not published, like the author's name) sits in the footer in its red-on-white form.
+  Every line has Korean again (46 poster-only lines in `out/poster/korean-review.md`, none read by a Korean speaker).
+
+## Outside review of the poster (12 Nov 2026, late; page changes published)
+- The developer suspected "illusions" on the poster and asked for a ChatGPT check (their explicit request, so the quota
+  rule did not block it). One read-only Codex run (`out/poster/review-prompt.md`, answer in `out/poster/review-chatgpt.md`)
+  reproduced every number, found none wrong, and found about a dozen lines that made a narrow check look like a broader
+  claim. All were rewritten. The lessons, for every later line on the poster and the page:
+  - Never put two counts side by side that are not part and whole. The "English title, either board" figure (60 beside
+    8,477) is gone: the page and poster now show notices on Korean boards (8,477), how many of them have an English title
+    (25), and posts on the separate English boards as their own column (80, of which 36 titled in English).
+  - "0 of 325" was true and still misleading (a title test read as "nothing in English"); it is removed.
+  - Say what a check measured: 91 of 98 cards agreed by the second AI reader and 7 settled by the author, not "98 of 98";
+    dates "found word for word" check the quote, not the translation; the sample is a text test, not proof that no
+    English version exists; the cost is an estimate ("about 0.06 USD").
+  - The daily job translates notices only. Requirement cards were written and re-read once; do not draw them as a step
+    of the daily chain. "Without the developer's laptop", not "no one's computer".
+  - Attribute and qualify borrowed facts (QS rank "as reported by", the new division "planned for September 2027").
+  - `codex exec` waits on standard input and hangs: run it with `< /dev/null`.
+- Still open from that review, for the site: the requirement example and the calendar wording on the Notices page.
+- The developer read "325" beside "39" on the ECE step as "39 of 325", and had seen English titles on the department's
+  site that a bare "0" seemed to deny. Each number now names its page ("Page 1: Korean site, Academic tab", "Page 2:
+  English site, Notice board", both linked), a line says the second is not a part of the first, and a table lists
+  every tab of the Korean site with its notices and English titles (`tabs` in `data/survey.json`): the English titles
+  are on the Scholarships tab (12), not the Academic one (0). Never show a count without saying which page it is from.
+- Showing where a number comes from (the developer's question): name the page and the period beside the number, and
+  where the things counted are few, list every one with its link. The engineering step lists all 25 English-titled
+  notices (`english_titles` in `data/survey.json`), and the poster points to that list.

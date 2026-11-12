@@ -205,17 +205,21 @@ details.done .title { color:var(--muted); }
 .nextstep { display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-top:40px; padding:20px 16px; background:var(--blue); color:#fff; text-decoration:none; font-size:clamp(20px, 3vw, 28px); font-weight:700; line-height:1.15; }
 .nextstep small { font-size:14px; font-weight:400; }
 .survey { border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); margin-top:16px; }
-.survey .row { display:grid; grid-template-columns:minmax(0, 2.4fr) minmax(0, 1fr) minmax(0, 2.2fr) minmax(0, 1fr); gap:0 16px; padding:10px 16px; border-top:1px solid var(--hair); align-items:baseline; font-size:16px; }
+.survey .row { display:grid; grid-template-columns:minmax(0, 2.2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2.4fr); gap:0 16px; padding:10px 16px; border-top:1px solid var(--hair); align-items:baseline; font-size:16px; }
 .survey .row:first-child { border-top:0; }
 .survey .head { font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
 .survey .n { text-align:right; font-variant-numeric:tabular-nums; font-weight:700; }
 .survey .own { background:var(--ink); color:var(--bg); }
 .survey .lab { display:none; }
+.plain.titles li { padding:8px 0; font-size:15px; }
+.plain.titles .links { display:block; margin-top:2px; font-size:12px; color:var(--muted); }
+.grids .where { margin:0 0 6px; font-size:13px; letter-spacing:.02em; }
+.grids .where a { color:inherit; }
+.survey .own a { color:inherit; }
 @media (max-width:700px) {
   .survey .row { grid-template-columns:minmax(0, 1fr) minmax(0, 1fr); gap:6px 16px; }
-  .survey .row > :first-child, .survey .row > :nth-child(3) { grid-column:1 / -1; }
+  .survey .row > :first-child, .survey .row > :nth-child(4) { grid-column:1 / -1; }
   .survey .row > :first-child { font-weight:700; }
-  .survey .row > :nth-child(3) { order:3; }
   .survey .head { display:none; }
   .survey .n { text-align:left; }
   .survey .lab { display:block; font-size:11px; font-weight:400; letter-spacing:.04em; text-transform:uppercase; opacity:.7; }
@@ -590,7 +594,7 @@ function renderAbout() {
   const hwp = (a) => /\.hwpx?$/i.test(a);
   const dates = briefs.flatMap((b) => b.dates);
   const year = ev.counted_on.slice(0, 4);
-  const englishYear = ev.english_posts.filter((n) => n.date.slice(0, 4) === year), englishSince = ev.english_posts.filter((n) => n.date >= dept.board.since);
+  const englishYear = ev.english_posts.filter((n) => n.date.slice(0, 4) === year && n.date <= ev.until), englishSince = ev.english_posts.filter((n) => n.date >= dept.board.since);
   const day = (iso) => [{ date: fullDate(iso) }, { date: koDate(iso) }];
   const bar = (label, cls, y) => el("div", { class: "line " + cls }, el("span", null, label), el("i", { style: `width:${(100 * y.posts) / most}%` }),
     el("span", null, B("{n} notices · {v} views", { n: num(y.posts), v: num(y.views) })));
@@ -611,11 +615,16 @@ function renderAbout() {
   const status = (n) => n.english_board === "found" ? B("Identified") : n.english_board ? B("None identified") : B("Not compared");
   // The same count on other departments' boards (tools/survey.py), with this department's own boards for the same period.
   const sv = DATA.survey;
-  const svRow = (cls, name, korean, side, titled) => el("div", { class: "row " + cls }, el("div", null, ...name),
-    el("div", { class: "n" }, el("small", { class: "lab" }, L("Korean notices")), korean), el("div", null, ...side),
-    el("div", { class: "n" }, el("small", { class: "lab" }, L("Of those, titled in English")), titled));
-  const svSide = { separate: (d) => B("Its own English board. Posts in the period: {n}", { n: num(d.english_posts) }), same_posts: () => B("The English menu lists the same Korean posts"),
-    none: () => B("No English site; a browser translation button") };
+  // One period for every count (tools/survey.py and tools/evidence.py share it), and one test for English: the title.
+  // The "in English" column counts a title in English on either board, so the rows add up to the figure above the table.
+  const span = (from, to) => [{ from: fullDate(from), to: fullDate(to) }, { from: koDate(from), to: koDate(to) }];
+  const svRow = (cls, name, korean, english, side) => el("div", { class: "row " + cls }, el("div", null, ...name),
+    el("div", { class: "n" }, el("small", { class: "lab" }, L("Notices on the Korean board")), korean),
+    el("div", { class: "n" }, el("small", { class: "lab" }, L("Of them, with an English title")), english), el("div", null, ...side));
+  const svSide = (d) => d.english_side === "same_posts" ? B("No separate English board: the English menu shows the Korean one")
+    : d.english_side === "none" ? B("No English site; a browser translation button")
+    : d.english_posts ? B("Posts on its English board: {n}. With an English title: {m}", { n: num(d.english_posts), m: num(d.english_posts_titled) })
+    : B("English board: no post in the period. Last post: {date}", { date: fullDate(d.english_last_post) }, { date: koDate(d.english_last_post) });
   // The page is read as five short steps, widest first: other departments, this department, examples, method, checks.
   // Only the step on screen is built, so its parts move into place when the reader arrives at it.
   // The first step is the setting: what the university itself has said and done this year (sources/context.json).
@@ -650,35 +659,53 @@ function renderAbout() {
     sv ? { key: "engineering",
       lead: B("Across the engineering departments counted here, notices are posted in Korean. Few have an English title, and the English boards carry few posts."),
       parts: () => [
-    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("{n} engineering departments, counted", { n: sv.departments.length })), el("span", null, B("Counted {date}", ...day(sv.counted_on)))),
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("{n} engineering departments, counted", { n: sv.departments.length })), el("span", null, B("{from} to {to}", ...span(sv.since, sv.until)))),
       el("div", { class: "figs", "data-reveal": "" },
-        fig(num(sv.totals.korean), "", B("Korean notices on the boards of {n} engineering departments since {date}", { n: sv.departments.length, date: fullDate(sv.since) }, { date: koDate(sv.since) })),
+        fig(num(sv.totals.korean), "", B("notices on the Korean boards of {n} engineering departments", { n: sv.departments.length })),
         fig(num(sv.totals.english_titled), `of ${num(sv.totals.korean)}`, B("of them have a title in English")),
-        fig(num(sv.totals.sample_with_english_passage), `of ${sv.totals.sample_opened}`, B("Korean-titled notices, opened as a sample, contained a line of English (a programme or conference name). None had an English version."))),
+        fig(num(sv.totals.sample_with_english_passage), `of ${sv.totals.sample_opened}`, B("Korean-titled notices, opened as a sample in the nine other departments, had English text detected in them (a programme name, a conference name). This is a text test, not a check for full English versions."))),
       el("div", { class: "survey", "data-reveal": "" },
-        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Korean notices")), el("div", null, B("English side")), el("div", { class: "n" }, B("Of those, titled in English"))),
-        ...sv.departments.map((d) => svRow("", [d.name, below(d.name_ko)], (d.approximate ? "≈ " : "") + num(d.korean), svSide[d.english_side](d), num(d.english_titled))),
-        svRow("own", B("{name} (this site, academic board only)", { name: dept.name }, { name: dept.name_ko }), num(sv.own.korean), svSide.separate(sv.own), num(sv.own.english_titled))),
+        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", { class: "n" }, B("Of them, with an English title")), el("div", null, B("Its English board in the same period"))),
+        ...sv.departments.map((d) => svRow(d.this_site ? "own" : "", d.this_site ? B("{name} (this site)", { name: d.name }, { name: d.name_ko }) : [d.name, below(d.name_ko)],
+          (d.approximate ? "≈ " : "") + num(d.korean), num(d.english_titled), svSide(d)))),
+      el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("All {n} of them, to open and check", { n: num(sv.totals.english_titled) })), el("span", null, B("Newest first"))),
+      el("ul", { class: "plain titles" }, ...sv.departments.flatMap((d) => d.english_titles.map((t) => Object.assign({ dept: d }, t))).sort((a, b) => (a.date < b.date ? 1 : -1))
+        .map((t) => el("li", null, out(t.url, t.title), el("span", { class: "links" }, `${t.date} · ${t.dept.name} · ${t.dept.name_ko}`)))),
+      el("p", { class: "aboutnote" }, B("Each line opens the notice on the department's own site. Most are seminars and outside programmes; one is a test post. A speaker's name is replaced with [name].")),
       el("ul", { class: "plain" },
+        el("li", null, B("How English is counted: a title counts as English when it has no Korean in it. Bodies and attachments were not read. The middle column adds up to {n}; posts on the separate English boards are shown beside it and are not added in.", { n: num(sv.totals.english_titled) })),
+        el("li", null, B("Every figure covers the same period, {from} to {to}. The boards were read on {date}.", Object.assign({ date: fullDate(sv.counted_on) }, span(sv.since, sv.until)[0]), Object.assign({ date: koDate(sv.counted_on) }, span(sv.since, sv.until)[1]))),
         el("li", null, B("Only titles were tested for every notice. Attachments and images were not read.")),
-        el("li", null, B("These boards carry every kind of notice, including job and event announcements. Their totals cannot be compared with this department's academic board.")),
-        el("li", null, B("Each count was repeated from the board's own post numbering. Seven sites matched exactly, Chemical and Biological Engineering differs by up to 11 posts, and Computer Science and Engineering prints no numbering.")),
+        el("li", null, B("What is counted: each department's notice boards. Boards kept apart for jobs, scholarships, news or seminars are not counted for any department. For this department that leaves {n} boards: academic, admissions, campus life and other.", { n: sv.departments.find((d) => d.this_site).korean_boards.length })),
+        el("li", null, B("Each count was repeated from the board's own post numbering. Nine sites matched exactly, and Computer Science and Engineering prints no numbering.")),
         el("li", null, B("Two departments are not counted. The Materials Science and Engineering site permits automated reading of its first page only, and the Architecture site permits none.")))),
       ] } : null,
     { key: "department", title: () => [dept.name, below(dept.name_ko)],
-      lead: B("The same count for this department: its Korean academic board and its English notice board since {date}.", ...day(ev.since)),
+      lead: B("A closer look at this department's academic board, the one this site translates, beside its English notice board, {from} to {to}.", ...span(ev.since, ev.until)),
       parts: () => [
-    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Two boards, counted")), el("span", null, B("Since {date}", ...day(ev.since)))),
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Two boards, counted")), el("span", null, B("{from} to {to}", ...span(ev.since, ev.until)))),
       el("div", { class: "grids", "data-reveal": "" },
-        el("div", null, el("h3", null, counted(total(ev.korean_by_year, "posts")), B("notices on the Korean academic board")), squares(total(ev.korean_by_year, "posts"), "", 0)),
-        el("div", null, el("h3", null, counted(total(ev.english_by_year, "posts")), B("posts on the English notice board")),
+        el("div", null, el("p", { class: "where" }, out(ev.korean_board, B("Page 1: Korean site, Academic tab (학사)"))),
+          el("h3", null, counted(total(ev.korean_by_year, "posts")), B("notices on the Korean academic board")), squares(total(ev.korean_by_year, "posts"), "", 0)),
+        el("div", null, el("p", { class: "where" }, out(ev.english_board, B("Page 2: English site, Notice board"))),
+          el("h3", null, counted(total(ev.english_by_year, "posts")), B("posts on the English notice board")),
           squares(total(ev.english_by_year, "posts"), "en", total(ev.korean_by_year, "posts")))),
+      el("p", { class: "aboutnote" }, B("These are two different pages, each counted on its own. The second number is not a part of the first, and the English board is not a translation of the Korean one.")),
       el("p", { class: "aboutnote" }, B("One square is one notice. Black is the Korean academic board, blue is the English notice board.")),
+      el("p", { class: "aboutnote" }, B("{n} of the {m} posts on the English notice board have a title in English.", { n: num(ev.english_titled), m: num(total(ev.english_by_year, "posts")) })),
+      sv ? el("p", { class: "aboutnote" }, B("The academic board is one of this department's {n} notice boards. The step before counts all of them: {m} notices.", { n: sv.departments.find((d) => d.this_site).korean_boards.length, m: num(sv.departments.find((d) => d.this_site).korean) })) : "",
       el("div", { class: "years", "data-reveal": "" }, ...Object.keys(ev.korean_by_year).map((y) =>
-        el("div", { class: "year" }, el("b", null, y, y === year ? el("small", null, B("to {date}", { date: fullDate(ev.counted_on).replace(/ \d{4}$/, "") }, { date: koDate(ev.counted_on).replace(/^\d+년 /, "") })) : ""),
+        el("div", { class: "year" }, el("b", null, y, y === ev.until.slice(0, 4) ? el("small", null, B("to {date}", { date: fullDate(ev.until).replace(/ \d{4}$/, "") }, { date: koDate(ev.until).replace(/^\d+년 /, "") })) : ""),
           el("div", null, bar(B("Korean"), "ko", ev.korean_by_year[y]), bar(B("English"), "en", ev.english_by_year[y] || { posts: 0, views: 0 }))))),
       el("p", { class: "aboutnote" }, B("Counted on {date} from the list pages of both boards. The two boards cover different subjects, so these are counts of what was posted, not a measure of how much was translated.", ...day(ev.counted_on))),
       el("p", { class: "links" }, out(ev.korean_board, B("Korean academic board")), out(ev.english_board, B("English notice board")))),
+
+    sv && sv.departments.find((d) => d.this_site).tabs ? el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("The Korean site, tab by tab")), el("span", null, B("{from} to {to}", ...span(sv.since, sv.until)))),
+      el("div", { class: "survey", "data-reveal": "" },
+        el("div", { class: "row head" }, el("div", null, B("Tab on the Korean site")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", { class: "n" }, B("Of them, with an English title")), el("div", null, B("In the departments table"))),
+        ...sv.departments.find((d) => d.this_site).tabs.map((t) => svRow(t.name === "학사" ? "own" : "", [out(t.url, t.name_en), below(t.name)], num(t.korean), num(t.english_titled),
+          t.counted ? B("Counted") : B("Not counted: other departments keep these on separate boards")))),
+      el("p", { class: "aboutnote" }, B("An English title is one with no Korean in it. Titles such as \"Study Abroad Program (SAP) 참가자 모집 안내\" are Korean notices and are not counted as English. The highlighted tab is the one this site translates."))) : "",
 
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("The ten most-read Korean notices of {year}", { year })), el("span", null, B("Match on the English board"))),
       el("div", { class: "figs one" }, fig(String(found), `of ${compared}`, B("had a post on the same subject identified on the English notice board"))),
@@ -727,7 +754,7 @@ function renderAbout() {
     { key: "method",
       lead: B("How the site is made and kept up to date, and what another department would need."),
       parts: () => [
-    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("How SNU Bridge works")), el("span", null, B("Every morning, 07:17"))),
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("How SNU Bridge works")), el("span", null, B("Once a day"))),
       el("div", { class: "figs four", "data-reveal": "" },
         step("1", B("Collect"), B("A scheduled job reads the list of the Korean academic board. A person downloads the department's official files once a semester."), B("{n} notices on record", { n: num(dept.notices.length) })),
         step("2", B("Translate"), B("Each new or changed notice is translated by AI into a title, a summary, dates, steps and the full text."), B("{n} notices translated", { n: num(briefs.length) })),

@@ -29,10 +29,22 @@ CACHE = OUT / "cache"
 AGENT = "SNU-Bridge/0.1 (student project; one request per second)"
 SINCE = "2024-01-01"      # how far back the boards are read
 WINDOW = "2025-01-01"     # what is reported: two of the boards only begin in late 2024 or January 2025
+UNTIL = "2026-10-31"      # the last day reported: a closed period (22 months), so no figure moves from day to day
 TODAY = datetime.date(2026, 11, 12)  # the day of the count; a board that prints only a time means "today"
 MONTH = {m: i + 1 for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())}
 TAGS = re.compile(r"<[^>]+>")
 HANGUL = re.compile(r"[가-힣]")
+
+
+def in_english(title):
+    """The title test used everywhere: Latin letters and no Korean."""
+    return bool(re.search(r"[A-Za-z]{3}", title)) and not HANGUL.search(title)
+
+
+def either(on_korean, on_english):
+    """Notices with an English title on either board. One posted on both boards under the same title is one notice."""
+    plain = lambda titles: {re.sub(r"\W+", "", t).lower() for t in titles}
+    return len(on_korean) + len(on_english) - len(plain(on_korean) & plain(on_english))
 
 
 def get(url):
@@ -167,7 +179,53 @@ KBOARD = r'uid=(\d+)"[^>]*>(.*?)</a>'
 CBE = r'boardId=(\d+)[^"]*"[^>]*>(.*?)</a>'
 CSE = r'/community/notice/(\d+)[^"]*"[^>]*>(.*?)</a>'
 
+# The rule for every department: its notice boards are counted; boards it keeps apart for jobs, scholarships, news or
+# seminars are not. Six of the other departments have a separate job board and three a separate scholarship board
+# (seen in their menus on 12 November 2026); none of those is counted. So this site's own department is counted on its
+# four notice boards, without its scholarship board (장학), its job board (취업ㆍ진로) and its seminar calendar (행사).
+ECE_BOARDS = (("학사", "academics"), ("입시", "admissions"), ("대학생활", "campus-life"), ("기타", "etc"))
+# Every tab of this department's Korean community menu, for the breakdown its own page shows (the developer browsed the
+# site, saw English titles, and could not tell which tab a "0" referred to). The last two are not in the comparison.
+ECE_TABS = (("학사", "Academic", "academics"), ("입시", "Admissions", "admissions"), ("대학생활", "Campus life", "campus-life"),
+            ("기타", "Other", "etc"), ("장학", "Scholarships", "schoarships"), ("취업ㆍ진로", "Jobs and careers", "job-openings"))
+
+
+# Where one notice of a given board opens, so every English-titled notice can be listed with its link and checked by anyone.
+OPENS = {
+    ("Energy Resources Engineering", "대학원 공지"): "https://ere.snu.ac.kr/bbs/board.php?bo_table=sub5_2&wr_id={id}",
+    ("Chemical and Biological Engineering", "학부 공지"): "https://cbe.snu.ac.kr/cbe/bbs/BMSR00059/view.do?boardId={id}&menuNo=300053",
+    ("Chemical and Biological Engineering", "대학원 공지"): "https://cbe.snu.ac.kr/cbe/bbs/BMSR00060/view.do?boardId={id}&menuNo=300054",
+    **{("Electrical and Computer Engineering", name): f"https://ece.snu.ac.kr/community/{b}?md=v&bbsidx={{id}}"
+       for name, b in (("학사", "academics"), ("입시", "admissions"), ("대학생활", "campus-life"), ("기타", "etc"))},
+}
+
+
+def listed(dept, boards):
+    """Every notice on the department's Korean boards with an English title: date, title and link. Few enough to show them all.
+    A speaker's name after a title such as "Prof." is replaced, as everywhere on the site."""
+    sys.path.insert(0, str(ROOT))
+    from bridge.notices import NAMED
+    out = []
+    for board in boards:
+        opens = OPENS.get((dept, board["board"])) or DETAIL[dept][0]
+        for post in board["posts"]:
+            if WINDOW <= post["date"] <= UNTIL and in_english(post["title"]):
+                out.append({"date": post["date"], "title": NAMED.sub(lambda m: m.group(1) + " [name]", post["title"]), "url": opens.format(id=post["id"])})
+    return sorted({item["url"]: item for item in out}.values(), key=lambda item: item["date"], reverse=True)
+
+
+def tabs():
+    counted, out = {b for _, b in ECE_BOARDS}, []
+    for name, name_en, b in ECE_TABS:
+        posts = [p for p in walk(f"https://ece.snu.ac.kr/community/{b}?page={{n}}", TR, BBS, first=0)["posts"] if WINDOW <= p["date"] <= UNTIL]
+        out.append({"name": name, "name_en": name_en, "url": f"https://ece.snu.ac.kr/community/{b}", "korean": len(posts),
+                    "english_titled": sum(in_english(p["title"]) for p in posts), "counted": b in counted})
+    return out
 BOARDS = {
+    "Electrical and Computer Engineering": {
+        "ko": [(name, (lambda b=b: walk(f"https://ece.snu.ac.kr/community/{b}?page={{n}}", TR, BBS, first=0))) for name, b in ECE_BOARDS],
+        "en": [("Notice", lambda: walk("https://ece.snu.ac.kr/en/community/notice?page={n}", TR, BBS, first=0))],
+    },
     "Aerospace Engineering": {
         "ko": [("공지사항", lambda: walk("https://aerospace.snu.ac.kr/board/notice?page={n}", TR, BBS))],
         "en": [("International Students bulletin board", lambda: walk("https://aerospace.snu.ac.kr/en/board/notice?page={n}", TR, BBS))],
@@ -216,7 +274,9 @@ BOARDS = {
 #   separate    its own English board with its own posts
 #   same_posts  the English menu lists the Korean board's posts (the same post numbers, Korean text)
 #   none        no English site; the Korean site carries a browser translation button
+THIS_SITE = "Electrical and Computer Engineering"
 SIDE = {
+    "Electrical and Computer Engineering": ("전기·정보공학부", "https://ece.snu.ac.kr", "separate"),
     "Aerospace Engineering": ("항공우주공학과", "https://aerospace.snu.ac.kr", "separate"),
     "Nuclear Engineering": ("원자핵공학과", "https://nucleng.snu.ac.kr", "separate"),
     "Naval Architecture and Ocean Engineering": ("조선해양공학과", "https://naoe.snu.ac.kr", "none"),
@@ -245,8 +305,9 @@ DETAIL = {
     "Chemical and Biological Engineering": ["https://cbe.snu.ac.kr/cbe/bbs/BMSR00058/view.do?boardId={id}&menuNo=300052"],
 }
 SEED = 20261112
-# The row-number check (`check`) differs by up to 11 posts on two of this department's three boards, so its total is "about".
-APPROXIMATE = {"Chemical and Biological Engineering"}
+# Departments whose row-number check (`check`) does not match inside the reported period; their totals are shown as "about".
+# None for 1 January 2025 to 31 October 2026 (Chemical and Biological Engineering differed only in November 2026).
+APPROXIMATE = set()
 
 
 def count(only):
@@ -296,59 +357,58 @@ def sample():
     (OUT / "sample.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-def own(until):
-    """This site's own department for the same period: its Korean academic board and its English notice board."""
-    sys.path.insert(0, str(ROOT))
-    from bridge.notices import _rows
-    korean, english = {}, {}
-    for page in range(200):
-        rows = _rows(get(f"https://ece.snu.ac.kr/community/academics?page={page}"))
-        korean.update({r["id"]: r for r in rows if WINDOW <= r["date"] <= until})
-        dated = [r["date"] for r in rows if not r["pinned"]]
-        if not rows or (dated and max(dated) < WINDOW):
-            break
-    for page in range(100):
-        rows = rows_of(get(f"https://ece.snu.ac.kr/en/community/notice?page={page}"), TR, BBS)
-        dates = [iso(row) for _, row, _ in rows]
-        english.update({pid: title for (pid, row, title), date in zip(rows, dates) if WINDOW <= date <= until})
-        if not rows or max(dates) < WINDOW:
-            break
-    return {"name": "Electrical and Computer Engineering", "korean_board": "학사 (academic board only)", "korean": len(korean),
-            "english_titled": sum(not HANGUL.search(r["title_ko"]) for r in korean.values()),
-            "english_posts": len(english), "english_posts_titled": sum(not HANGUL.search(t) for t in english.values())}
+def last_post(dept):
+    """The newest date on a department's English board, from the stored list or, if that is empty, its first page."""
+    data = json.loads((OUT / "survey.json").read_text(encoding="utf-8"))
+    dates = [p["date"] for b in data[dept]["en"] for p in b["posts"]]
+    if not dates and dept == "Aerospace Engineering":
+        dates = [iso(row) for _, row, _ in rows_of(get("https://aerospace.snu.ac.kr/en/board/notice?page=1"), TR, BBS)]
+    return max(dates) if dates else None
 
 
 def aggregate():
     data = json.loads((OUT / "survey.json").read_text(encoding="utf-8"))
     sampled = json.loads((OUT / "sample.json").read_text(encoding="utf-8"))
     departments = []
-    for dept, (name_ko, site, side) in SIDE.items():
+    for dept, (name_ko, site, side) in sorted(SIDE.items(), key=lambda item: item[0] == THIS_SITE):  # this site's department last
         boards = data[dept]
         for board in boards["ko"] + boards["en"]:
             if "error" in board:
                 raise SystemExit(f"{dept} / {board['board']} could not be read: {board['error']}")
-        korean = [p for b in boards["ko"] for p in b["posts"] if p["date"] >= WINDOW]
-        english = [p for b in boards["en"] for p in b["posts"] if p["date"] >= WINDOW]
-        titled = sum(not HANGUL.search(p["title"]) for p in korean)
-        rows = sampled[dept]
+        once = lambda posts: list({p["id"]: p for p in posts if WINDOW <= p["date"] <= UNTIL}.values())  # a notice shown on two boards is one notice
+        korean = once(p for b in boards["ko"] for p in b["posts"])
+        english = once(p for b in boards["en"] for p in b["posts"]) if side == "separate" else []
+        on_korean, on_english = [p["title"] for p in korean if in_english(p["title"])], [p["title"] for p in english if in_english(p["title"])]
+        rows = [r for r in sampled.get(dept, []) if r["date"] <= UNTIL]
         departments.append({
-            "name": dept, "name_ko": name_ko, "site": site, "korean_boards": [b["board"] for b in boards["ko"]],
+            "name": dept, "name_ko": name_ko, "site": site, "korean_boards": [b["board"] for b in boards["ko"]], "this_site": dept == THIS_SITE,
             "korean": len(korean), "approximate": dept in APPROXIMATE, "english_side": side,
-            "english_posts": len(english) if side == "separate" else None,
-            "english_titled": titled,  # of the Korean board's notices, those whose title has no Korean in it
-            "english_posts_titled": sum(not HANGUL.search(p["title"]) for p in english) if side == "separate" else None,
+            "english_titled": len(on_korean),  # of the Korean board's notices, those with a title in English
+            "english_posts": len(english) if side == "separate" else None,  # every post on its own English board
+            "english_posts_titled": len(on_english) if side == "separate" else None,  # of those, titled in English
+            "english_last_post": last_post(dept) if side == "separate" else None,
+            "in_english": either(on_korean, on_english),  # a title in English on either board, each notice once
+            # the board this site translates, on its own: the first Korean board listed for this site's department
+            "translated_board": ({"name": boards["ko"][0]["board"], "korean": len(once(boards["ko"][0]["posts"])),
+                                  "english_titled": sum(in_english(p["title"]) for p in once(boards["ko"][0]["posts"]))} if dept == THIS_SITE else None),
+            "tabs": tabs() if dept == THIS_SITE else None,
+            "english_titles": listed(dept, boards["ko"]),
             "sample": {"opened": len(rows), "with_english_passage": sum(r["english_passages"] > 0 for r in rows),
-                       "english_menu_is_korean": all(r["english_menu"]["hangul"] > 100 for r in rows) if "english_menu" in rows[0] else None},
+                       "english_menu_is_korean": all(r["english_menu"]["hangul"] > 100 for r in rows) if "english_menu" in rows[0] else None} if rows else None,
         })
-    until = max(p["date"] for d in data.values() for b in d["ko"] for p in b["posts"])
-    out = {"counted_on": TODAY.isoformat(), "since": WINDOW, "until": until,
-           "departments": departments, "own": own(until), "not_counted": NOT_COUNTED,
-           "totals": {"korean": sum(d["korean"] for d in departments), "english_titled": sum(d["english_titled"] for d in departments),
-                      "sample_opened": sum(d["sample"]["opened"] for d in departments),
-                      "sample_with_english_passage": sum(d["sample"]["with_english_passage"] for d in departments)}}
+    add = lambda key: sum(d[key] or 0 for d in departments)
+    out = {"counted_on": TODAY.isoformat(), "since": WINDOW, "until": UNTIL,
+           "departments": departments, "not_counted": NOT_COUNTED,
+           "totals": {"korean": add("korean"), "in_english": add("in_english"), "english_titled": add("english_titled"),
+                      "english_boards": sum(d["english_side"] == "separate" for d in departments),
+                      "english_posts": add("english_posts"), "english_posts_titled": add("english_posts_titled"),
+                      "sample_departments": sum(bool(d["sample"]) for d in departments),
+                      "sample_opened": sum(d["sample"]["opened"] for d in departments if d["sample"]),
+                      "sample_with_english_passage": sum(d["sample"]["with_english_passage"] for d in departments if d["sample"])}}
     (ROOT / "data" / "survey.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     for d in departments:
-        print(f"{d['name']}: {d['korean']} Korean notices, English side {d['english_side']}, English posts {d['english_posts']}, titled in English {d['english_titled']}")
+        print(f"{d['name'][:30]:30} Korean {d['korean']:5}  in English {d['in_english']:3}  (Korean board {d['english_titled']}, English board "
+              f"{d['english_posts_titled']} of {d['english_posts']} posts, last post {d['english_last_post']}; {d['english_side']})")
     print(out["totals"])
 
 
@@ -359,8 +419,9 @@ def check():
     for dept, sides in BOARDS.items():
         for name, run in sides["ko"]:
             board = next(b for b in data[dept]["ko"] if b["board"] == name)
-            window = {p["id"] for p in board["posts"]}
-            numbers = {p["id"]: p["row_number"] for p in board["posts"] if p.get("row_number")}
+            posts = [p for p in board["posts"] if WINDOW <= p["date"] <= UNTIL]
+            window = {p["id"] for p in posts}
+            numbers = {p["id"]: p["row_number"] for p in posts if p.get("row_number")}
             if not numbers:
                 print(f"{dept} / {name}: {len(window)} counted; this board prints no row numbers")
                 continue
