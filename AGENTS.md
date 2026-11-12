@@ -9,8 +9,8 @@ official page that says so. Users are international students whose Korean is wea
 1. `sources/<department>/` holds official files, downloaded by a person. `config.json` lists which to read.
 2. Extract: a model reads every page, pictures included, and writes cards (`bridge/extract.py`).
 3. Check: a second reading of each page against its cards. Disagreements are flagged, never published (`bridge/check.py`).
-4. Notices: a daily job reads the department board, ties each notice to a card, updates its dates. (not built)
-5. Publish: `python -m bridge site` rebuilds `site/index.html` from the cards (`bridge/site.py`). Calendar file: not built.
+4. Notices: a daily job reads the department board, translates each new notice and ties it to a card (`bridge/notices.py`, `bridge/briefs.py`).
+5. Publish: `python -m bridge site` rebuilds `site/index.html` from the cards (`bridge/site.py`), and the calendar file of deadlines (`bridge/deadlines.py`).
 6. Plugin: the ChatGPT plugin reads the same cards and any screenshot a student pastes. (not built)
 
 One record is shared by everything: the card, defined in `bridge/cards.py`.
@@ -120,7 +120,7 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - Audit complete for all 98 cards (12 Nov): 74 agreed at the first reading; after corrections the second reader agrees
   with 91, and 7 are settled by the author with a reason on the card (mostly rules that run over a page break);
   11 of 11 planted errors were caught. Re-run it after any change to card text: `tools/audit.py prepare-rest <prefix> <snapshot>`.
-- Not built: calendar file, plugin.
+- Not built: plugin. (The calendar file was built on 12 Nov, see the end of this file.)
 
 ## Other departments (12 Nov 2026)
 - Survey: `tools/survey.py` counted the public notice boards of nine other engineering departments for 1 Jan 2025 to
@@ -168,3 +168,20 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
 - Each department's notice page is labelled a pilot until its requirements are written. The developer asked about a home
   page per major: wait until a second department has requirements; for now Home carries one line to each pilot.
 
+## Calendar of deadlines (12 Nov 2026, published)
+- `bridge/deadlines.py` writes `site/<department in lower case>.ics` (ECE: `ece.ics`) on every build, for a department whose config has `site` (the
+  public address) and that is not a pilot. The Notices page shows one line with three links: Apple Calendar or Outlook
+  (`webcal:`), Google Calendar, and the plain file. Students subscribe once; the daily build keeps the file current.
+- No model is asked for a date. Code reads the Korean date line that was already confirmed word for word in the notice,
+  and keeps it only if it prints a weekday the date really falls on, the English line names the same day, month and
+  year, and the line is one date or a period (then the event is the last day, titled "Last day: ..."). A time is kept
+  only if the English shows the same one. ECE on 12 Nov: 149 events from 243 date lines in 75 notices.
+- Two errors the first version made, both fixed and worth remembering: a notice that printed the wrong weekday was
+  placed a year later, where the weekday happened to fit (now a date without a printed year must lie within 300 days
+  of the notice and agree with any year in the English); and the first day of a period passed as a deadline when the
+  last day could not be read (now left out).
+- Do not promise reminders. Each event carries an alarm, but Google Calendar ignores alarms in subscribed calendars
+  (found in users' reports, not tested here). The page and poster say "deadlines in your calendar" and tell the student
+  to set a notification in their own app. Calendar apps also fetch on their own schedule, so say nothing about speed.
+- An event keeps its identifier while its date line and notice stay the same, so a rebuild does not duplicate it.
+- The developer has not yet subscribed on a phone with Apple and with Google. Do that before the booth demo.

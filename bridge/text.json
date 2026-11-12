@@ -190,6 +190,11 @@
   "SNU Bridge is one working case of generative AI in administration: a department's notices and requirements in English, kept current without anyone's computer.": "SNU Bridge는 행정에 생성형 AI를 활용한, 실제로 작동하는 하나의 사례입니다. 한 학과의 공지와 요건을 영어로 제공하고, 누구의 컴퓨터 없이도 최신 상태로 유지합니다.",
   "Which AI does what: translations are made by Claude through its API. An OpenAI model, used through ChatGPT Edu, was the second reader, and ChatGPT Edu is where the site sends students to read attachments.": "어떤 AI가 무엇을 하는가: 번역은 Claude가 API를 통해 수행합니다. 2차 판독은 ChatGPT Edu를 통해 사용한 OpenAI 모델이 맡았으며, 첨부파일을 읽을 때는 학생을 ChatGPT Edu로 안내합니다.",
   "Pilot: {name} notices in English, {n} since {date}": "시범: {name} 공지 영어 제공, {date} 이후 {n}건",
-  "Extra: Korean, in blocks": "부록: 블록으로 배우는 한국어"
+  "Extra: Korean, in blocks": "부록: 블록으로 배우는 한국어",
+  "Deadlines as a calendar: {n} dated events from these notices. Subscribe once and it follows the notices.": "캘린더로 보는 마감일: 이 공지들에서 가져온 날짜 {n}건입니다. 한 번 구독하면 공지에 맞춰 갱신됩니다.",
+  "Apple Calendar or Outlook": "Apple 캘린더 또는 Outlook",
+  "Google Calendar": "Google 캘린더",
+  "Calendar file": "캘린더 파일",
+  "Only dates the notice prints with a weekday are included, and each was checked against that weekday. To be reminded, set a notification for this calendar in your calendar app.": "공지에 요일과 함께 적힌 날짜만 포함했으며, 각 날짜를 그 요일과 대조해 확인했습니다. 알림을 받으려면 캘린더 앱에서 이 캘린더의 알림을 설정하세요."
  }
 }

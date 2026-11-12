@@ -17,8 +17,11 @@ cp .env.example .env   # then put your own key in .env
 .venv/bin/python -m bridge table ECE     # out/ECE-<program>.md for a person to review
 .venv/bin/python -m bridge notices ECE   # read the department board; records new and changed notices
 .venv/bin/python -m bridge briefs ECE    # translate notices that are new or changed (uses the model)
-.venv/bin/python -m bridge site          # build site/index.html and site/cards.json
+.venv/bin/python -m bridge site          # build site/index.html, site/cards.json and the calendar site/ece.ics
 ```
+The calendar (`bridge/deadlines.py`) holds only the dates a notice prints with a weekday, each checked by code against that
+weekday and against the English line; no model is asked. It is written for a department whose `config.json` has `site`,
+the public address of the page. Students subscribe to it from the Notices page.
 The requirement cards are currently written by hand: `cd tools && ../.venv/bin/python build_ece.py` writes
 `data/ECE/cards.json`, and `.venv/bin/python tools/check_quotes.py` checks the undergraduate quotes.
 

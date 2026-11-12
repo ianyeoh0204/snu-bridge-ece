@@ -319,6 +319,7 @@ details.done .title { color:var(--muted); }
     </section>
     <p class="trapline" id="pilot-note" hidden></p>
     <p class="note" id="notice-note"></p>
+    <p class="note" id="calendar-note" hidden></p>
     <div id="notice-list"></div>
   </div>
   <div id="view-about" hidden></div>
@@ -459,6 +460,17 @@ function renderNotices() {
   const shown = nd.notices.filter((n) => !options[audience] || options[audience].includes(n.audience));
   document.getElementById("notice-note").replaceChildren(...B("{n} notices since {date}. English titles are unofficial translations; the original notices are in Korean.",
     { n: shown.length, date: fullDate(nd.board.since) }, { date: koDate(nd.board.since) }));
+  // Deadlines as a calendar the student subscribes to once. Shown for the department whose notices are checked.
+  const cal = !pilot && dept.calendar, calNote = document.getElementById("calendar-note");
+  calNote.hidden = !cal;
+  if (cal) {
+    const file = location.origin + location.pathname.replace(/[^/]*$/, "") + cal.file, feed = file.replace(/^https?:/, "webcal:");
+    calNote.replaceChildren(...B("Deadlines as a calendar: {n} dated events from these notices. Subscribe once and it follows the notices.", { n: cal.events }),
+      el("span", { class: "links" }, el("a", { href: feed }, L("Apple Calendar or Outlook")),
+        el("a", { href: "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(feed), target: "_blank", rel: "noopener" }, L("Google Calendar")),
+        el("a", { href: cal.file }, L("Calendar file"))),
+      ...B("Only dates the notice prints with a weekday are included, and each was checked against that weekday. To be reminded, set a notification for this calendar in your calendar app."));
+  }
   const byMonth = new Map();
   for (const n of shown) { const k = n.date.slice(0, 7); byMonth.set(k, [...(byMonth.get(k) || []), n]); }
   document.getElementById("notice-list").replaceChildren(...[...byMonth].map(([k, list]) =>

@@ -69,7 +69,7 @@ def _both_languages(value, where: str) -> None:
 
 
 def build() -> Path:
-    departments, pilots = {}, {}
+    departments, pilots, calendars = {}, {}, {}
     for config_file in sorted((ROOT / "sources").glob("*/config.json")):
         name = config_file.parent.name
         cards_file = ROOT / "data" / name / "cards.json"
@@ -101,6 +101,12 @@ def build() -> Path:
             "sources": {f["file"]: {k: f[k] for k in ("name", "url", "series", "entry_year") if k in f} for f in config["files"]},
             "cards": cards, "notices": notices, "board": config.get("board", {}),
         }
+        # Deadlines as a calendar file students can subscribe to (bridge/deadlines.py). Dates come from the Korean by code.
+        if config.get("site") and notices:
+            from . import deadlines
+            text, count = deadlines.build(name, config.get("short") or name, config["site"])
+            calendars[f"{name.lower()}.ics"] = text
+            departments[name]["calendar"] = dict(count, file=f"{name.lower()}.ics")
     template = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8")
     for name, department in departments.items():
         _both_languages(department["evidence_notes"], f"sources/{name}/evidence_notes.json")
@@ -113,6 +119,8 @@ def build() -> Path:
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     (site / "index.html").write_text(template.replace("__DATA__", payload), encoding="utf-8")
     (site / "cards.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    for file, text in calendars.items():
+        (site / file).write_bytes(text.encode("utf-8"))  # bytes, so the CRLF line ends the format requires are kept
     # An extra page with its own look: Korean grammar as building blocks, a student's study notes in English.
     extra = Path(__file__).parent / "korean_blocks.html"
     if extra.exists():
