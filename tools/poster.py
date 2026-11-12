@@ -117,8 +117,8 @@ POSTER_KO = {
 # Lines rewritten on 12 Nov 2026 after an outside review (an OpenAI model through Codex, read-only) found no wrong number
 # but a dozen lines that made a narrow check look like a broader claim. Not yet read by a Korean speaker.
 POSTER_KO.update({
-    "One department's graduation requirements and notices, in English, each with its source. New notices are translated daily.":
-        "한 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 새 공지는 매일 번역됩니다.",
+    "A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.":
+        "학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 새 공지는 매일 번역됩니다.",
     "Master's program": "석사과정",
     "of them, English title": "이 중 영어 제목",
     "of them have a title in English": "이 가운데 제목이 영어인 공지",
@@ -160,7 +160,8 @@ POSTER_KO.update({
         "과정과 입학 연도를 고르면 다루는 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
     "Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.":
         "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
-    "Switch to {name}: another department's notices, added as a pilot.": "{name}로 바꿔 보세요. 시범으로 추가한 다른 학과의 공지입니다.",
+    "Switch to {name}: a second department, with {n} requirements from its own web pages.":
+        "{name}로 바꿔 보세요. 학과 웹페이지를 바탕으로 요건 {n}개를 실은 두 번째 학과입니다.",
     "Notices: each kind of board software needs its own small reader. Translation and publishing are reused.":
         "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시는 그대로 다시 씁니다.",
     "Requirements: written from each department's own documents, then re-read.": "요건: 각 학과의 공식 문서를 바탕으로 작성한 뒤 다시 읽습니다.",
@@ -314,7 +315,8 @@ def build():
     tries = [bi("Choose your program and year of entry. See the requirements covered, and the page each comes from."),
              bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
              bi("Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.", {"n": calendar["events"]}),
-             bi("Switch to {name}: another department's notices, added as a pilot.", {"name": aero["department"]}, {"name": aero["department_ko"]})]
+             bi("Switch to {name}: a second department, with {n} requirements from its own web pages.",
+                {"name": aero["department"], "n": len(load("data/AEROSPACE/cards.json"))}, {"name": aero["department_ko"]})]
     try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
     extends = (f'<h5>{bi("Where it extends")}</h5>'
                + f'<p class="small">{bi("Notices: each kind of board software needs its own small reader. Translation and publishing are reused.")}</p>'
@@ -400,7 +402,7 @@ p, h1, h4, h5, ul, ol {{ margin: 0; padding: 0; }}
 .steps h4 {{ font-size: 15mm; line-height: 1.1; }}
 .steps h4 .ko {{ display: inline; margin-left: 3mm; }}
 .steps p {{ margin-top: 1.5mm; font-size: 11.4mm; line-height: 1.22; }}
-.try li {{ padding: 5.5mm 0 !important; }}
+.try li {{ padding: 3.9mm 0 !important; }}
 .try li p {{ font-size: 15mm; line-height: 1.2; }}
 .try li .ko {{ font-size: 10.4mm; }}
 h5 {{ margin-top: 2mm; padding-top: 6mm; border-top: .5mm solid #000; font-size: 15mm; }}
@@ -455,7 +457,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
   <div>
     <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
     <h1>SNU Bridge</h1>
-    <p class="tag">{bi("One department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")}</p>
+    <p class="tag">{bi("A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")}</p>
   </div>
   <aside>{qr}<p>{bi("Scan to open the site")}</p><p>{html.escape(SITE.replace("https://", "").rstrip("/"))}</p><p><b>{html.escape(author)}</b></p></aside>
 </header>

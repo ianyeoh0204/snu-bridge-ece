@@ -1,4 +1,5 @@
 {
+  "main": true,
   "department": "Electrical and Computer Engineering",
   "department_ko": "전기·정보공학부",
   "short": "ECE",

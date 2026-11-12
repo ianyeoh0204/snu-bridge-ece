@@ -37,6 +37,8 @@ h1 { margin:0; font-size:clamp(40px, 6.6vw, 64px); font-weight:700; line-height:
 
 /* controls */
 .seg { display:inline-flex; flex-wrap:wrap; border:2px solid var(--ink); }
+.deptbar { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; max-width:var(--wide, 1180px); margin:0 auto; padding:10px 24px; border-bottom:1px solid var(--hair); font-size:13px; }
+.deptbar .seg button { min-height:32px; padding:4px 12px; font-size:13px; }
 .seg button { min-height:40px; padding:8px 18px; border:0; background:none; color:var(--ink); font:inherit; font-size:15px; cursor:pointer; }
 .seg button[aria-pressed="true"] { background:var(--ink); color:var(--bg); font-weight:700; }
 .pick { display:flex; align-items:center; flex-wrap:wrap; gap:8px 16px; margin-top:16px; font-size:14px; color:var(--muted); }
@@ -291,6 +293,7 @@ details.done .title { color:var(--muted); }
 </head>
 <body>
 <header class="nav"><div><a class="brand" href="#home" aria-label="SNU Bridge home">SNU Bridge</a><nav aria-label="Sections"><a href="#requirements" id="tab-requirements"></a><a href="#notices" id="tab-notices"></a><span class="menu" id="menu-about"><a href="#about" id="tab-about" aria-haspopup="true"></a><span class="drop" id="drop-about"></span></span></nav></div></header>
+<div class="deptbar" id="deptbar" hidden></div>
 <main>
   <div id="view-home" hidden></div>
   <div id="view-requirements">
@@ -332,12 +335,17 @@ details.done .title { color:var(--muted); }
 <script>
 const DATA = __DATA__;
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const deptId = Object.keys(DATA.departments)[0];
-const dept = DATA.departments[deptId];
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} },
 };
+// More than one department can have requirements. The page shows one at a time: the first ("main") unless the reader
+// chose another, which is remembered. Changing department reloads the page, so every view is built for that department.
+// The Background page is about the main department's boards and always opens on it.
+const deptIds = Object.keys(DATA.departments), mainId = deptIds[0];
+const deptId = deptIds.includes(store.get("bridge:dept")) ? store.get("bridge:dept") : mainId;
+const dept = DATA.departments[deptId];
+const switchTo = (id, hash) => { store.set("bridge:dept", id === mainId ? null : id); if (hash !== undefined) history.replaceState(null, "", hash || location.pathname); location.reload(); };
 let program = dept.programs.includes(store.get("bridge:program")) ? store.get("bridge:program") : dept.default_program;
 // Entry years exist only where the rules differ by year of admission (undergraduate). The latest year is the default.
 const yearsOf = (p) => [...new Set(dept.cards.filter((c) => c.programs.includes(p)).flatMap((c) => c.entry_years || []))].sort();
@@ -453,10 +461,11 @@ function renderNotices() {
   boards.replaceChildren(...[deptId, ...Object.keys(pilots)].map((k) =>
     el("button", { type: "button", "aria-pressed": String(k === board), onclick: () => { board = k; audience = "All"; history.replaceState(null, "", k === deptId ? "#notices" : "#notices-" + k); renderNotices(); } },
       k === deptId ? `${dept.name} · ${dept.name_ko}` : L("{name} (pilot)", { name: pilots[k].name }, { name: pilots[k].name_ko }))));
-  pilotNote.hidden = !pilot;
-  pilotNote.replaceChildren(...(pilot ? B("Pilot. Notices only: this department's requirements have not been written, and these translations have not been re-read by the second reader.") : []));
+  pilotNote.hidden = !(pilot || dept.reread === false);
+  pilotNote.replaceChildren(...(pilot ? B("Pilot. Notices only: this department's requirements have not been written, and these translations have not been re-read by the second reader.")
+    : dept.reread === false ? B("These translations have not been re-read by the second reader.") : []));
   document.getElementById("eyebrow-notices").replaceChildren(...B("Department of {name}", { name: nd.name }, { name: nd.name_ko }));
-  document.getElementById("lede-notices").replaceChildren(...(pilot ? B("Notices from the department's notice board, with English titles. Each entry links to the original notice.")
+  document.getElementById("lede-notices").replaceChildren(...(pilot || deptId !== mainId ? B("Notices from the department's notice board, with English titles. Each entry links to the original notice.")
     : B("Notices from the department's academic board, with English titles. Each entry links to the original notice.")));
   const options = { Graduate: ["Graduate", "All students"], Undergraduate: ["Undergraduate", "All students"], All: null };
   document.getElementById("audiences").replaceChildren(...Object.keys(options).map((a) =>
@@ -571,6 +580,8 @@ function renderHome() {
       el("p", { class: "note" }, B("From the department's academic board, as of {date}. Unofficial translations.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) })),
       el("a", { class: "more", href: "#notices" }, B("All {n} notices since {date}", { n: dept.notices.length, date: fullDate(dept.board.since) }, { date: koDate(dept.board.since) })),
       // A department with notices only gets one line here; the rest of Home stays this department's.
+      ...deptIds.filter((k) => k !== deptId).map((k) => el("a", { class: "more", href: "#requirements", onclick: (ev) => { ev.preventDefault(); switchTo(k, "#requirements"); } },
+        B("Also on this site: {name}, {n} requirements and {m} notices", { name: DATA.departments[k].name, n: DATA.departments[k].cards.length, m: DATA.departments[k].notices.length }, { name: DATA.departments[k].name_ko }))),
       ...Object.entries(DATA.pilots || {}).map(([k, d]) => el("a", { class: "more", href: "#notices-" + k }, B("Pilot: {name} notices in English, {n} since {date}", { name: d.name, n: d.notices.length, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) })))));
   const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   setBoardLang(boardPlayed || still ? "en" : "ko");
@@ -767,6 +778,8 @@ function renderAbout() {
       el("ul", { class: "plain" },
         el("li", null, B("Notices: each site needs a small reader for its own board software. The eleven department sites read here use six kinds. Translation, the date check and publishing stay the same.")),
         el("li", null, B("Requirements: written by hand from that department's official documents and re-read by a second reader, as they were here.")),
+        ...deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]).map((d) => el("li", null, B("A second department, {name}: {n} requirements written from its own web pages, and its notices since {date}. Its requirements were checked by code and by one independent AI reading, not by the second reader.",
+          { name: d.name, n: d.cards.length, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }))),
         ...Object.entries(pilots).map(([k, d]) => el("li", null, B("Pilot: {name} notices since {date} are on this site in English. Its board runs on the same software as this department's.", { name: d.name, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }),
           el("span", { class: "links" }, el("a", { href: "#notices-" + k }, L("Open the pilot"))))))) : "",
 
@@ -888,8 +901,9 @@ function cardNode(c) {
       c.trap ? el("p", { class: "trapline" }, el("b", null, L("Caution") + ". "), c.trap) : null,
       relatedNotices(c),
       el("div", { class: "source" },
-        el("b", null, L("Source") + ". "), `${src.name}, ${L("page {n}", { n: c.source_page })}. `,
-        c.audit && c.audit.status !== "open" ? L("Re-read by a second reader on {date}", { date: fullDate(c.audit.date) }, { date: koDate(c.audit.date) }) + "." : L("Verification pending") + ".",
+        el("b", null, L("Source") + ". "), c.source_page ? `${src.name}, ${L("page {n}", { n: c.source_page })}. ` : `${src.name}. `,
+        dept.reread === false ? L("Checked by code and one independent AI reading; not re-read by the second reader from another maker") + "."
+          : c.audit && c.audit.status !== "open" ? L("Re-read by a second reader on {date}", { date: fullDate(c.audit.date) }, { date: koDate(c.audit.date) }) + "." : L("Verification pending") + ".",
         c.audit && c.audit.reason ? el("span", { class: "reason" }, " " + c.audit.reason) : "",
         el("blockquote", { lang: "ko" }, c.source_quote_ko),
         src.url ? el("a", { href: src.url, target: "_blank", rel: "noopener" }, L("Official page where this document is published")) : null)));
@@ -921,7 +935,17 @@ render();
 // Addresses: (none) or #home, #requirements, #notices, #about, #card-<id>, #notice-<id>;
 // for a pilot department, #notices-<DEPARTMENT> and #notice-<DEPARTMENT>-<id>; for a step of the About page, #about-<step>.
 function route() {
-  const h = location.hash;
+  const h = location.hash, named = (prefix) => deptIds.find((k) => k !== deptId && (h === prefix + k || h.startsWith(prefix + k + "-")));
+  // An address that names another department (older links to a pilot, or a link shared from it) opens that department.
+  if (h === "#notices-" + deptId || h.startsWith(`#notice-${deptId}-`)) return (history.replaceState(null, "", h === "#notices-" + deptId ? "#notices" : "#notice-" + h.slice(9 + deptId.length)), route());
+  if (named("#notices-")) return switchTo(named("#notices-"), "#notices");
+  if (named("#notice-")) return switchTo(named("#notice-"), "#notice-" + h.slice(9 + named("#notice-").length));
+  if ((h === "#about" || h.startsWith("#about-")) && deptId !== mainId) return switchTo(mainId, h);
+  const bar = document.getElementById("deptbar"), about = h === "#about" || h.startsWith("#about-");
+  bar.hidden = deptIds.length < 2 || about;
+  if (!bar.hidden && !bar.childElementCount) bar.append(el("span", null, L("Department")), el("div", { class: "seg", role: "group" }, ...deptIds.map((k) =>
+    el("button", { type: "button", "aria-pressed": String(k === deptId), onclick: () => { if (k !== deptId) switchTo(k); } }, `${DATA.departments[k].name} · ${DATA.departments[k].name_ko}`))),
+    dept.reread === false ? el("span", { class: "tag trap" }, ...B("Written from the department's web pages on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.", { date: fullDate(dept.read_on) }, { date: koDate(dept.read_on) })) : "");
   if (h.startsWith("#card-")) { show("requirements", true); openCard(h.slice(6)); }
   else if (h.startsWith("#notice-")) { board = Object.keys(pilots).find((k) => h.startsWith(`#notice-${k}-`)) || deptId; audience = "All"; show("notices", true); openNotice(h.slice(8)); }
   else if (h.startsWith("#notices-") && pilots[h.slice(9)]) { board = h.slice(9); audience = "All"; show("notices"); }

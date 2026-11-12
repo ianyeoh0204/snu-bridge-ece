@@ -49,6 +49,8 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 .venv/bin/python tools/audit.py prepare    # a second reader re-reads cards against the page images (see the file's top)
 .venv/bin/python tools/survey.py count     # other engineering departments: Korean and English notices (then check, sample, aggregate)
 .venv/bin/python tools/poster.py          # the competition poster as a PDF in out/poster/, drawn from the same data as the site
+.venv/bin/python tools/pages_aerospace.py   # Aerospace: read its rule pages (two rule sets per page, separated by entry year)
+.venv/bin/python tools/cards_aerospace.py   # Aerospace: check every card against those pages and write data/AEROSPACE/cards.json
 ```
 `sources/context.json` holds the facts and links for the first step of the Background page (what the university has said
 and done this year). Re-read each cited page before changing a line there.

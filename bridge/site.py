@@ -70,10 +70,11 @@ def _both_languages(value, where: str) -> None:
 
 def build() -> Path:
     departments, pilots, calendars = {}, {}, {}
-    for config_file in sorted((ROOT / "sources").glob("*/config.json")):
+    # The department marked "main" in its config comes first: the page opens on it, and the Background page is about it.
+    configs = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in (ROOT / "sources").glob("*/config.json")]
+    for config_file, config in sorted(configs, key=lambda item: (not item[1].get("main"), item[0].parent.name)):
         name = config_file.parent.name
         cards_file = ROOT / "data" / name / "cards.json"
-        config = json.loads(config_file.read_text(encoding="utf-8"))
         if not cards_file.exists():
             # Notices only: no requirements have been written for this department, so it never becomes the site's
             # department. It is offered on the Notices page, marked as a pilot.
@@ -97,6 +98,8 @@ def build() -> Path:
             # the "Why and how" page: board counts (tools/evidence.py) and hand-checked facts
             "evidence": _json(ROOT / "data" / name / "evidence.json"),
             "evidence_notes": _json(config_file.parent / "evidence_notes.json"),
+            "reread": bool(audit),  # False: cards written from the sources and checked by code only
+            "read_on": config.get("read_on", ""),
             "audit": audit and {k: audit.get(k) for k in ("audited_on", "decoys", "cards_first_reading", "notices", "notices_after")},
             "sources": {f["file"]: {k: f[k] for k in ("name", "url", "series", "entry_year") if k in f} for f in config["files"]},
             "cards": cards, "notices": notices, "board": config.get("board", {}),

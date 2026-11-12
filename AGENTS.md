@@ -254,3 +254,33 @@ start a second department's requirements before 20 Nov was lifted by the develop
 - Showing where a number comes from (the developer's question): name the page and the period beside the number, and
   where the things counted are few, list every one with its link. The engineering step lists all 25 English-titled
   notices (`english_titles` in `data/survey.json`), and the poster points to that list.
+
+## A second department with requirements: Aerospace (12 Nov 2026, published on the developer's yes)
+- The developer asked for two or three more departments built like ECE but without the second reader (the ChatGPT Edu
+  quota is kept for the demo). Aerospace is first because its graduate rules are plain text on its own website.
+- `tools/pages_aerospace.py` reads four rule pages into `out/aerospace/` (not published). Each page holds two rule sets,
+  `tab-2020` (entrants up to 2020) and `tab-2021` (entrants from 2021), with different numbers: other-department credits
+  for a master's are 12 in the old set and 9 in the new. They are separated by element id with a real HTML parser.
+  Cutting the raw text at the first mention of the id put both sets in one file, and the tab captions in the page text
+  are in a misleading order. Checked against the page's DOM in a browser.
+- `tools/cards_aerospace.py` holds 30 hand-written cards for entrants from 2021 (master's 16, PhD 16, integrated 14) and
+  writes `data/AEROSPACE/cards.json` only if every Korean quote is in the 2021 tab of the page it cites and every number
+  in the English is in a quote. A deliberately wrong number was rejected. This replaces the second reader; it does not
+  catch a wrong reading of the Korean, and at ECE the second reader disagreed with 24 of 98 cards at first reading.
+  Course names stay in Korean with their numbers (the pages give no English names). Not covered: entrants up to 2020,
+  undergraduate rules, research-student registration.
+- Site: `bridge/site.py` puts the department marked `"main": true` first. The page shows one department at a time; a bar
+  under the header switches (stored as `bridge:dept`, then a reload). A department without an audit shows a yellow line
+  ("checked by code only, not re-read") in that bar, on each card's source line and on its notices. The Background page
+  always opens on the main department. Older addresses `#notices-AEROSPACE` and `#notice-AEROSPACE-<id>` switch department.
+- Before publishing: the poster's "One department's…" tagline and its "added as a pilot" step become untrue; fix them and
+  freeze the department list before the Korean reader gets the lines. Nuclear and Naval publish their rules as files, so
+  the developer has to download those into `sources/` first.
+- An independent read then stood in for the second reader: a separate Claude session, given only the four source texts and
+  the cards, found no wrong or swapped number and no card on the wrong program, but flagged 12 of the 30 cards: dropped
+  conditions (the PhD thesis card had lost its document window and the research-student condition), "why" and "trap"
+  lines the Korean does not support, one mistranslated trap, and two rules no card covered. All were applied; there are
+  now 32 cards. The page says "checked by code and one independent AI reading from the same maker", which is what happened.
+  The code check never reads `why`, `when` or `trap`: keep those fields to what a quote says.
+- Decided with the developer on 12 Nov: stop at two departments. Nuclear and Naval are not built before 20 Nov; one
+  extra department proves the setup carries over, and each further one adds risk under a real department's name.

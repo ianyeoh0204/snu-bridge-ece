@@ -1,13 +1,52 @@
 {
   "department": "Aerospace Engineering",
   "department_ko": "항공우주공학과",
-  "pilot": true,
-  "note": "Notices only. No requirement cards have been written for this department, so the site shows it as a pilot.",
+  "short": "Aerospace",
+  "note": "Graduate requirements for entrants from 2021, written from the department's own web pages (tools/pages_aerospace.py, tools/cards_aerospace.py) and checked by code only: no second reader has re-read them. Notices from its notice board.",
+  "read_on": "2026-11-12",
+  "programs": [
+    "masters",
+    "phd",
+    "integrated"
+  ],
+  "default_program": "masters",
+  "headline_cards": {
+    "masters": "ae-ms-completion",
+    "phd": "ae-phd-completion",
+    "integrated": "ae-int-completion"
+  },
+  "files": [
+    {
+      "file": "completion",
+      "name": "Completion rules on the department's website",
+      "url": "https://aerospace.snu.ac.kr/graduate/completion/graduate"
+    },
+    {
+      "file": "qualifying",
+      "name": "Thesis qualifying examination rules on the department's website",
+      "url": "https://aerospace.snu.ac.kr/graduate/completion/qualifying-examination"
+    },
+    {
+      "file": "committee",
+      "name": "Doctoral thesis advisory committee rules on the department's website",
+      "url": "https://aerospace.snu.ac.kr/graduate/completion/committee"
+    },
+    {
+      "file": "thesis",
+      "name": "Thesis examination rules on the department's website",
+      "url": "https://aerospace.snu.ac.kr/graduate/completion/examination-thesis"
+    }
+  ],
   "board": {
     "name": "Aerospace notices (공지사항)",
     "list_url": "https://aerospace.snu.ac.kr/board/notice",
     "detail_url": "https://aerospace.snu.ac.kr/board/notice?bm=v&bbsidx={id}",
     "since": "2026-09-01",
     "first_page": 1
-  }
+  },
+  "assistant": {
+    "name": "ChatGPT Edu",
+    "url": "https://chatgpt.com"
+  },
+  "repository": "https://github.com/ianyeoh0204/snu-bridge-ece"
 }
