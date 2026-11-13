@@ -109,23 +109,20 @@ POSTER_KO = {
         "{d}개 학과의 공지를 영어로 제공합니다. 공지마다 조치 대상, 날짜, 조건, 절차, 전문 번역을 보여 줍니다.",
     "dates from ECE's notices, ready for your calendar, past ones included. Each matches the weekday the notice prints.":
         "전기·정보공학부 공지의 날짜로, 지난 일정을 포함하며 캘린더에 추가할 수 있습니다. 모두 공지에 적힌 요일과 일치합니다.",
-    "Add the notices' dates to your calendar.": "공지의 날짜를 내 캘린더에 추가해 보세요.",
-    "Departments post their notices in Korean.": "학과 공지는 한국어로 게시됩니다.",
-    "SNU Bridge shows each notice in English.": "SNU Bridge는 각 공지를 영어로 보여 줍니다.",
-    "Each graduation requirement shows its source.": "졸업 요건마다 출처를 보여 줍니다.",
-    "It runs by itself, once a day.": "하루 한 번, 스스로 실행됩니다.",
-    "A second AI and plain code check the first.": "두 번째 AI와 코드가 첫 번째 AI를 검증합니다.",
-    "What it does not do yet, and what comes next.": "아직 하지 않는 일과 다음 단계",
-    "Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item links to its Korean source.":
-        "공과대학 {d}개 학과의 공지와 졸업 요건을 외국인 학생을 위해 영어로 제공합니다. 새 공지는 매일 번역하며, 항목마다 한국어 원문으로 연결됩니다.",
-    "The academic board of Electrical and Computer Engineering, {date}.": "전기·정보공학부 학사 게시판, {date}.",
-    "{n} notices in English so far, from {d} departments. Each date sits beside its Korean, and each notice links to the original.":
-        "지금까지 {d}개 학과의 공지 {n}건을 영어로 제공합니다. 날짜마다 한국어 원문을 함께 보여 주고, 공지마다 원문으로 연결합니다.",
-    "ECE's dates can also be added to a calendar.": "전기·정보공학부의 날짜는 캘린더에도 추가할 수 있습니다.",
-    "{n} requirements to graduate, in {d} departments, by program and year of entry. Each cites its file, page and Korean line.":
-        "{d}개 학과의 졸업 요건 {n}개를 과정과 입학 연도별로 제공합니다. 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
-    "For images and attachments, use ChatGPT Edu. The site does not read them.": "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다.",
-    "It does not replace the department office. Translations are made by AI and can be wrong.": "학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
+    "The website shows all the information at a glance.": "웹사이트에서 모든 정보를 한눈에 볼 수 있습니다.",
+    "Calendar": "캘린더",
+    "Ask ChatGPT Edu": "ChatGPT Edu에 묻기",
+    "Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its file, page and Korean line.":
+        "과정과 입학 연도별로 졸업에 필요한 모든 것을 보여 줍니다. {d}개 학과의 요건 {n}개이며, 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
+    "Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.":
+        "새 공지를 영어로 제공하며, 조치 대상, 날짜, 조건, 절차를 보여 줍니다. 지금까지 {d}개 학과의 공지 {n}건입니다.",
+    "The dates from ECE's notices, in the student's own calendar: {n} so far.":
+        "전기·정보공학부 공지의 날짜를 학생의 캘린더에서 볼 수 있습니다. 지금까지 {n}건입니다.",
+    "For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment.":
+        "더 궁금한 점은 공지마다 있는 버튼으로 ChatGPT Edu용 질문을 복사해 물어볼 수 있으며, 스크린샷이나 첨부파일도 함께 올릴 수 있습니다.",
+    "Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu.": "공지의 ChatGPT Edu 버튼을 누르고, 복사된 질문을 ChatGPT Edu에 붙여 넣어 보세요.",
+    "Translations are made by AI. Every notice links to its Korean original, and every requirement cites its source.":
+        "번역은 AI가 합니다. 모든 공지는 한국어 원문으로 연결되고, 모든 요건에는 출처가 표시됩니다.",
     "Separate job, scholarship, news and seminar boards are not counted.": "따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
 }
 
@@ -239,7 +236,7 @@ LOWER_BAND = """
 .drow.head, .drow.head u, .drow.head .ko { font-size: 9.6mm !important; }
 .bar .ko { display: inline; margin-left: 5mm; }
 """
-CHOSEN = "equal"
+CHOSEN = "product"
 LAYOUTS = {
     "first": "",
     "equal": LOWER_BAND + """
@@ -249,7 +246,6 @@ LAYOUTS = {
 .foot { grid-template-columns: 1.6fr 1.15fr auto auto; }
 """,
     "product": "",  # filled in below: the chosen layout plus its own rules
-    "talk": "",
     "balanced": LOWER_BAND + """
 .ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
 .drow .dn small, .mock td small, .drow.head .ko, .band aside .ko { font-size: max(.85em, 8.6mm) !important; }
@@ -262,58 +258,23 @@ LAYOUTS = {
 # one large number and one example for each of the three, and "The gap" is an ordinary panel. The top row reads
 # Why now, The gap, What it does; the bottom row How it works, Try it, Checks performed.
 LAYOUTS["product"] = LAYOUTS["equal"] + """
-.col.mid .panel:first-child { flex: 1.85 1 0; }
-.col:last-child .panel:first-child { flex: 4.6 1 0; }
-.col:last-child .panel:first-child .body { gap: 6mm; }
-.does .figs.rows .fig { grid-template-columns: 138mm minmax(0, 1fr); padding: 4mm 6mm; }
-.does .figs.rows .fig b { font-size: 54mm; }
-.does .figs.rows .fig p { font-size: 12.6mm; line-height: 1.2; }
-.does .mock h4 { font-size: 16mm; }
+.col.mid .panel:first-child { flex: 1.62 1 0; }
+.col:last-child .panel:first-child { flex: 4.7 1 0; }
+.col:last-child .panel:first-child .body { gap: 4mm; }
+.does { justify-content: flex-start; }
+.does .part h5 { margin-top: 0; color: #002c84; font-size: 16mm; }
+.does .part .cap2 { margin: 2mm 0 4mm; font-size: 12.6mm; line-height: 1.24; }
+.does .part .mock { margin-bottom: 1mm; }
+.does .mock h4 { font-size: 15mm; }
 .does .mock .key { font-size: 14.5mm; }
 .does .mock .src, .does .mock .meta, .does .mock .kotitle { font-size: 11mm; }
-.does .mock table { font-size: 11.4mm; }
+.does .mock table { font-size: 10.6mm; }
+.does .part h5 + .small { margin-top: 2mm; }
 .small-gap .heropair b { font-size: 48mm; }
 .small-gap .drow { grid-template-columns: 190mm minmax(0, 1fr) 50mm; font-size: 10.6mm; }
 .small-gap .drow:not(.own):not(.head) { padding: 1.7mm 0; }
 .small-gap .drow.own { padding: 1.6mm 3mm; }
 .small-gap .stand { font-size: 12.4mm; padding: 4mm 6mm; }
-"""
-
-
-# "talk" (to compare, 14 Nov 2026): the developer said the poster looked nice but did not help to explain the project,
-# and a reader with no history agreed: there was no picture of the site on it. Here each panel is headed by a sentence
-# the presenter says and holds one thing to point at: the department's Korean board, the same notice in English, a
-# requirement with its source (three real screenshots from tools/poster_shots.py), the daily flow, the checks, the limits.
-LAYOUTS["talk"] = LAYOUTS["equal"] + """
-.bar { font-size: 15.5mm; }
-.bar .ko { display: block; margin: 1.5mm 0 0; font-size: 12.5mm !important; }
-.col .panel, .col.mid .panel:first-child, .col:first-child .panel:first-child { flex: 0 0 auto; }
-.col .panel:last-child { flex: 1 1 0; }
-.body { justify-content: flex-start; gap: 7mm; }
-.shot { overflow: hidden; border: .6mm solid #000; }
-.shot img { display: block; width: 100%; }
-.shot.board { aspect-ratio: 662 / 384; }
-.shot.notice { aspect-ratio: 600 / 782; }
-.shot.card { aspect-ratio: 600 / 600; }
-.shot.board img { width: 166.2%; margin: -94.6% 0 0 -41.2%; }
-.cap2 { font-size: 13.4mm; line-height: 1.24; }
-.where { font-size: 9.6mm; color: #444; margin-top: -4mm; }
-.heropair b { font-size: 50mm; }
-.flow { list-style: none; }
-.flow li { position: relative; margin-bottom: 13mm; padding: 5mm 7mm 6mm; border: .7mm solid #000; }
-.flow li:last-child { margin-bottom: 0; border-style: dashed; }
-.flow li:nth-child(-n+2)::after { content: ""; position: absolute; left: 50%; bottom: -11.5mm; margin-left: -8mm; border: 8mm solid transparent; border-top: 9mm solid #002c84; border-bottom: 0; }
-.foot { grid-template-columns: 1fr auto auto; }
-.foot div:first-child { display: none; }
-.foot div:nth-child(2) { text-align: left; }
-.checks .figs.rows .fig { grid-template-columns: 150mm minmax(0, 1fr); padding: 4mm 6mm; }
-.checks .figs.rows .fig b { font-size: 44mm; }
-.checks .figs.rows .fig p { font-size: 12.8mm; line-height: 1.22; }
-.limits li { padding: 6mm 0; font-size: 14mm; line-height: 1.24; }
-.flow h4 { font-size: 17mm; }
-.flow p { font-size: 13mm; }
-.flow li b { font-size: 36mm; }
-.checks .stand { font-size: 14mm; }
 """
 
 
@@ -347,9 +308,11 @@ def build(variant=CHOSEN):
     shown = [c for c in cards if "masters" in c["programs"] and digits(c["key"]) and digits(c["key"]) <= digits(c["source_quote_ko"])]
     card = next((c for c in shown if c["id"] == ece["headline_cards"]["masters"]), shown[0])
     source = next(s for s in ece["files"] if s["file"] == card["source_file"])
-    newest = next(b for n in notices for b in briefs if b["id"] == n["id"] and len(b["dates"]) >= 2)
+    weekday = lambda d: d["verified"] and re.search(r"[월화수목금토일]\s*(요일)?\s*\)", d["original_ko"])
+    by_id = {b["id"]: b for b in briefs}
+    newest = max((by_id[n["id"]] for n in notices[:6] if n["id"] in by_id), key=lambda b: sum(1 for d in b["dates"] if weekday(d)))
     notice = next(n for n in notices if n["id"] == newest["id"])
-    rows = sorted((d for d in newest["dates"] if d["verified"]), key=lambda d: len(d["what"]))[:2]
+    rows = ([d for d in newest["dates"] if weekday(d)] or [d for d in newest["dates"] if d["verified"]])[:2 if variant != "product" else 1]
     qr = segno.make(SITE, error="m").svg_inline(omitsize=True, border=2, dark="#000", light="#fff")
 
     program = bi("Master's program")
@@ -449,46 +412,21 @@ def build(variant=CHOSEN):
                    f'<p class="src">{bi("Source")}: {html.escape(head_source["name"])}, {fill("page {n}", {"n": head["source_page"]})} · <span lang="ko">{html.escape(head["source_quote_ko"])}</span></p></div>')
         translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
                              if (d.parent / "briefs" / f"{n['id']}.json").exists())
-        row = lambda big, caption: f'<div class="figs rows">{fig(num(big), caption)}</div>'
-        does = ('<div class="body does">'
-                + row(all_cards, bi("requirements to graduate, in {d} departments. Each cites its file, page and Korean line.", {"d": len(audits)})) + example
-                + row(translated_all, bi("department notices in English, in {d} departments. Each gives who must act, the dates, the conditions, the steps and the full translation.", {"d": len(audits)})) + translated
-                + row(calendar["events"], bi("dates from ECE's notices, ready for your calendar, past ones included. Each matches the weekday the notice prints."))
-                + f"<div>{extends}</div></div>")
+        part = lambda label, sentence, example="": f'<div class="part"><h5>{bi(label)}</h5><p class="cap2">{sentence}</p>{example}</div>'
+        does = ('<div class="body does">' + f'<p class="lead">{bi("The website shows all the information at a glance.")}</p>'
+                + part("Requirements", bi("Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its file, page and Korean line.", {"n": all_cards, "d": len(audits)}), example)
+                + part("Notices", bi("Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.", {"n": translated_all, "d": len(audits)}), translated)
+                + part("Calendar", bi("The dates from ECE's notices, in the student's own calendar: {n} so far.", {"n": calendar["events"]}))
+                + part("Ask ChatGPT Edu", bi("For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment."))
+                + f'<div class="part">{extends}</div></div>')
         gap = (f'<div class="body small-gap"><p class="period">{period}</p>{heropair}{chart}<p class="stand">{english_boards}</p><p class="note">'
                + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p></div>")
-        tries[2] = bi("Add the notices' dates to your calendar.")
+        tries[2] = bi("Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu.")
         try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
         try_it = f'<div class="body">{try_list}</div>'
     tagline = bi("A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")
-    foot_left = f'<b>{bi("What it does not do")}</b>' + bi("For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.")
-    if variant == "talk":
-        shots = OUT / "shots"
-        if not all((shots / f"{name}.png").exists() for name in ("board", "notice", "card")):
-            sys.exit("The screenshots are missing: run tools/poster_shots.py first.")
-        shot = lambda name: f'<div class="shot {name}"><img src="shots/{name}.png" alt=""></div>'
-        translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
-                             if (d.parent / "briefs" / f"{n['id']}.json").exists())
-        taken = day(datetime.date.fromtimestamp((shots / "board.png").stat().st_mtime).isoformat())
-        tagline = bi("Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item links to its Korean source.", {"d": len(audits)})
-        p1 = ('<div class="body">' + shot("board") + f'<p class="where">{bi("The academic board of Electrical and Computer Engineering, {date}.", {"date": taken[0]}, {"date": taken[1]})}</p>'
-              + heropair + f'<p class="where">{period}</p>'
-              + f'<p class="cap2">{bi("SNU is working to bring in more international students.")}</p><p class="cap2">{funded}</p></div>')
-        p2 = ('<div class="body">' + shot("notice")
-              + f'<p class="cap2">{bi("{n} notices in English so far, from {d} departments. Each date sits beside its Korean, and each notice links to the original.", {"n": translated_all, "d": len(audits)})}</p>'
-              + '<p class="cap2">' + bi("ECE's dates can also be added to a calendar.") + "</p></div>")
-        p3 = ('<div class="body">' + shot("card")
-              + f'<p class="cap2">{bi("{n} requirements to graduate, in {d} departments, by program and year of entry. Each cites its file, page and Korean line.", {"n": all_cards, "d": len(audits)})}</p></div>')
-        p4 = '<div class="body">' + steps.replace('<ol class="steps">', '<ol class="steps flow">') + "</div>"
-        p5 = ('<div class="body checks"><div class="figs rows">' + "".join(checks) + f"</div>{who}</div>")
-        p6 = ('<div class="body"><ul class="rule limits">'
-              + f'<li>{bi("For images and attachments, use ChatGPT Edu. The site does not read them.")}</li>'
-              + f'<li>{bi("It does not replace the department office. Translations are made by AI and can be wrong.")}</li>'
-              + f'<li>{bi("Notices need a small reader for each kind of board software. Translation and publishing are reused.")}</li></ul></div>')
-        foot_left = ""
-    columns = [[bar("Departments post their notices in Korean.", "1") + p1, bar("It runs by itself, once a day.", "4") + p4],
-               [bar("SNU Bridge shows each notice in English.", "2") + p2, bar("What it does not do yet, and what comes next.", "5") + p6],
-               [bar("Each graduation requirement shows its source.", "3") + p3, bar("A second AI and plain code check the first.", "6") + p5]] if variant == "talk" else [[bar("Why now", "1") + why, bar("How it works", "4") + how],
+    foot_left = bi("Translations are made by AI. Every notice links to its Korean original, and every requirement cites its source.")
+    columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Try it", "5") + try_it],
                [bar("What it does", "3") + does, bar("Checks performed", "6") + checked]] if variant == "product" else [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Checks performed", "5") + checked],

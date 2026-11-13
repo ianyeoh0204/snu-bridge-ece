@@ -556,3 +556,16 @@ The developer read the page and found three places where the site and the poster
   source, not "shows" it, which is not exact for a notice's full translation. Not taken, left for the developer: label
   headings ("The problem", "What a student gets"), a two-pane Korean and English notice drawn from the Korean text, and
   dropping "11 of 11". One broken sentence in a notice summary (58196, left by a correction on 13 Nov) was repaired.
+- The developer rejected the screenshot layout (14 Nov, night) and it is removed, with `tools/poster_shots.py`:
+  "you built the webpage, do you still need to screenshot?", and no panel about what the site does not do ("why see
+  things in a bad perspective?"). Their framing, to keep: the website is for knowing all the information at a glance,
+  and ChatGPT Edu is for further questions. So ChatGPT Edu is shown as a feature, never as a limit.
+  The lesson: when the developer names the parts that need changing, change those parts. An outside reviewer's advice
+  is input for the developer to weigh, not a reason to replace a layout they chose.
+- The poster that is sent is now the "product" layout (`CHOSEN` in `tools/poster.py`): "What it does" is four named
+  parts (Requirements, Notices, Calendar, Ask ChatGPT Edu) under the developer's sentence "The website shows all the
+  information at a glance", each example drawn from the data, then "Where it extends". "Try it" step 3 is the ChatGPT
+  Edu button. The footer's "What it does not do" block is one line: "Translations are made by AI. Every notice links to
+  its Korean original, and every requirement cites its source."
+- Say "an assistant in ChatGPT Edu" or "the ChatGPT Edu button", not "plugin": what exists is a button on each notice
+  that copies a question, and `navigator/instructions.md` for a ChatGPT Edu project. No plugin has been built.
