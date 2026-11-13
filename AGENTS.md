@@ -550,3 +550,9 @@ The developer read the page and found three places where the site and the poster
   picture is cropped to titles and dates; check it for a person's name before printing, since titles change daily.
 - The poster that is sent is still `poster.pdf` (the "equal" layout) until the developer picks. "Not an official Seoul
   National University website" is off the poster at the developer's request; the site's footer keeps it.
+- A second fresh model proposed a structure; taken from it: the example notice must carry real dates that print a
+  weekday, so that the picture shows what the date check does (`tools/poster_shots.py` now picks, among the six rows
+  the board picture shows, the notice with the most such dates), and the tagline says every item "links to" its Korean
+  source, not "shows" it, which is not exact for a notice's full translation. Not taken, left for the developer: label
+  headings ("The problem", "What a student gets"), a two-pane Korean and English notice drawn from the Korean text, and
+  dropping "11 of 11". One broken sentence in a notice summary (58196, left by a correction on 13 Nov) was repaired.

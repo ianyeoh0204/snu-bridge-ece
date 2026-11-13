@@ -13,6 +13,7 @@ import functools
 import http.server
 import json
 import pathlib
+import re
 import subprocess
 import tempfile
 import threading
@@ -49,7 +50,12 @@ if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     ece = json.loads((ROOT / "sources/ECE/config.json").read_text(encoding="utf-8"))
     notices = json.loads((ROOT / "data/ECE/notices.json").read_text(encoding="utf-8"))
-    newest = notices[0]  # the first row of the board, which the first picture shows too
+    # Among the six rows the board picture shows, the notice with the most dates that print a weekday and were found
+    # word for word in the Korean: its picture then shows what the date check does.
+    def weekday_dates(notice):
+        brief = json.loads((ROOT / "data/ECE/briefs" / f"{notice['id']}.json").read_text(encoding="utf-8"))
+        return sum(1 for d in brief["dates"] if d["verified"] and re.search(r"[월화수목금토일]\s*(요일)?\s*\)", d["original_ko"]))
+    newest = max(notices[:6], key=weekday_dates)
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "site"))
     handler.log_message = lambda *a, **k: None
     server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)

@@ -116,8 +116,8 @@ POSTER_KO = {
     "It runs by itself, once a day.": "하루 한 번, 스스로 실행됩니다.",
     "A second AI and plain code check the first.": "두 번째 AI와 코드가 첫 번째 AI를 검증합니다.",
     "What it does not do yet, and what comes next.": "아직 하지 않는 일과 다음 단계",
-    "Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item shows its Korean source.":
-        "공과대학 {d}개 학과의 공지와 졸업 요건을 외국인 학생을 위해 영어로 제공합니다. 새 공지는 매일 번역하며, 항목마다 한국어 원문을 함께 보여 줍니다.",
+    "Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item links to its Korean source.":
+        "공과대학 {d}개 학과의 공지와 졸업 요건을 외국인 학생을 위해 영어로 제공합니다. 새 공지는 매일 번역하며, 항목마다 한국어 원문으로 연결됩니다.",
     "The academic board of Electrical and Computer Engineering, {date}.": "전기·정보공학부 학사 게시판, {date}.",
     "{n} notices in English so far, from {d} departments. Each date sits beside its Korean, and each notice links to the original.":
         "지금까지 {d}개 학과의 공지 {n}건을 영어로 제공합니다. 날짜마다 한국어 원문을 함께 보여 주고, 공지마다 원문으로 연결합니다.",
@@ -470,7 +470,7 @@ def build(variant=CHOSEN):
         translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
                              if (d.parent / "briefs" / f"{n['id']}.json").exists())
         taken = day(datetime.date.fromtimestamp((shots / "board.png").stat().st_mtime).isoformat())
-        tagline = bi("Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item shows its Korean source.", {"d": len(audits)})
+        tagline = bi("Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item links to its Korean source.", {"d": len(audits)})
         p1 = ('<div class="body">' + shot("board") + f'<p class="where">{bi("The academic board of Electrical and Computer Engineering, {date}.", {"date": taken[0]}, {"date": taken[1]})}</p>'
               + heropair + f'<p class="where">{period}</p>'
               + f'<p class="cap2">{bi("SNU is working to bring in more international students.")}</p><p class="cap2">{funded}</p></div>')
