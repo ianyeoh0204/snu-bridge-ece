@@ -256,10 +256,14 @@ if __name__ == "__main__":
     problems, only_new = check()
     if problems:
         sys.exit("Nothing was written.\n" + "\n".join(problems))
+    # the undergraduate cards live in their own file and are checked against the four yearly rule documents
+    from cards_aerospace_undergraduate import CARDS as UNDERGRADUATE, TEXTS as UNDERGRADUATE_TEXTS
+    from cards_pdf import verify
+    everything = verify(UNDERGRADUATE, UNDERGRADUATE_TEXTS) + CARDS
     target = ROOT / "data" / "AEROSPACE" / "cards.json"
-    target.write_text(json.dumps(CARDS, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    by = {p: sum(p in c["programs"] for c in CARDS) for p in ALL}
-    print(f"{len(CARDS)} cards written to {target.relative_to(ROOT)}: {by}")
+    target.write_text(json.dumps(everything, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    by = {p: sum(p in c["programs"] for c in everything) for p in ["undergraduate"] + ALL}
+    print(f"{len(everything)} cards written to {target.relative_to(ROOT)}: {by}")
     print(f"Every quote is in the tab for entrants from 2021, and every number in the English is in a quote.")
     print(f"{only_new} cards rest on a line that the rules for entrants up to 2020 do not contain.")
     print("Sources:", ", ".join(SITE + path for path in PAGES.values()))

@@ -2,7 +2,7 @@
   "department": "Nuclear Engineering",
   "department_ko": "원자핵공학과",
   "short": "Nuclear",
-  "note": "Graduate requirements for entrants from 2021, written from the department's own rule document (downloaded by a person, not republished) and checked by code and one independent AI reading. Notices from its notice board.",
+  "note": "Graduate requirements for entrants from 2021, written from the department's own rule document (downloaded by a person, not republished) and checked by code and one independent AI reading. Notices from its notice board. Undergraduate requirements cover 2023 to 2025 entrants; the department has not published a guide for 2026 entrants.",
   "board": {
     "name": "Nuclear Engineering notices (공지사항)",
     "list_url": "https://nucleng.snu.ac.kr/community/notice",
@@ -16,6 +16,7 @@
   "repository": "https://github.com/ianyeoh0204/snubridge",
   "read_on": "2026-11-13",
   "programs": [
+    "undergraduate",
     "masters",
     "phd",
     "integrated"
@@ -24,13 +25,35 @@
   "headline_cards": {
     "masters": "ne-comprehensive-ms",
     "phd": "ne-comprehensive-phd",
-    "integrated": "ne-comprehensive-phd"
+    "integrated": "ne-comprehensive-phd",
+    "undergraduate": "ne-ug-total"
   },
   "files": [
     {
       "file": "rules",
       "name": "Graduate graduation requirements of the department (entrants from 2021), rule document",
       "url": "https://nucleng.snu.ac.kr/graduate/rule"
+    },
+    {
+      "file": "ug-2023",
+      "name": "Guide to the major and curriculum for 2023 entrants (전공및교과과정 이수안내)",
+      "url": "https://nucleng.snu.ac.kr/undergraduate/rule",
+      "series": "undergraduate-guide",
+      "entry_year": 2023
+    },
+    {
+      "file": "ug-2024",
+      "name": "Guide to the major and curriculum for 2024 entrants (전공및교과과정 이수안내)",
+      "url": "https://nucleng.snu.ac.kr/undergraduate/rule",
+      "series": "undergraduate-guide",
+      "entry_year": 2024
+    },
+    {
+      "file": "ug-2025",
+      "name": "Guide to the major and curriculum for 2025 entrants (전공및교과과정 이수안내)",
+      "url": "https://nucleng.snu.ac.kr/undergraduate/rule",
+      "series": "undergraduate-guide",
+      "entry_year": 2025
     }
   ]
 }

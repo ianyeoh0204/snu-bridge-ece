@@ -5,6 +5,7 @@
   "note": "Graduate requirements for entrants from 2021, written from the department's own web pages (tools/pages_aerospace.py, tools/cards_aerospace.py) and checked by code only: no second reader has re-read them. Notices from its notice board.",
   "read_on": "2026-11-12",
   "programs": [
+    "undergraduate",
     "masters",
     "phd",
     "integrated"
@@ -13,7 +14,8 @@
   "headline_cards": {
     "masters": "ae-ms-completion",
     "phd": "ae-phd-completion",
-    "integrated": "ae-int-completion"
+    "integrated": "ae-int-completion",
+    "undergraduate": "ae-ug-total"
   },
   "files": [
     {
@@ -35,6 +37,34 @@
       "file": "thesis",
       "name": "Thesis examination rules on the department's website",
       "url": "https://aerospace.snu.ac.kr/graduate/completion/examination-thesis"
+    },
+    {
+      "file": "ug-2023",
+      "name": "Graduation requirements for 2023 entrants (학과졸업이수규정)",
+      "url": "https://aerospace.snu.ac.kr/undergraduate/requirements",
+      "series": "undergraduate-rules",
+      "entry_year": 2023
+    },
+    {
+      "file": "ug-2024",
+      "name": "Graduation requirements for 2024 entrants (학과졸업이수규정)",
+      "url": "https://aerospace.snu.ac.kr/undergraduate/requirements",
+      "series": "undergraduate-rules",
+      "entry_year": 2024
+    },
+    {
+      "file": "ug-2025",
+      "name": "Graduation requirements for 2025 entrants (학과졸업이수규정)",
+      "url": "https://aerospace.snu.ac.kr/undergraduate/requirements",
+      "series": "undergraduate-rules",
+      "entry_year": 2025
+    },
+    {
+      "file": "ug-2026",
+      "name": "Graduation requirements for 2026 entrants (학과졸업이수규정)",
+      "url": "https://aerospace.snu.ac.kr/undergraduate/requirements",
+      "series": "undergraduate-rules",
+      "entry_year": 2026
     }
   ],
   "board": {

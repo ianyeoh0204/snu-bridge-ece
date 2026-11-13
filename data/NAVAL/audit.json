@@ -181,6 +181,138 @@
   "na-withdrawal-integrated": {
    "status": "reader_agrees",
    "reason": ""
+  },
+  "na-ug-timing": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-physics-placement": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-ge": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-ge-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-writing": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-foreign-language": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-math": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-science": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-science-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-computing": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-computing-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-keys": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-veritas": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-worlds": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-worlds-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-major-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-major-credits-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-other-major": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-other-major-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-required": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-electives": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "na-ug-common-required": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-recognised": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-recognised-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-leadership": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-computing-exemption": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-total": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-total-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-foreign-taught": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-life-respect": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-thesis-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ },
+ "undergraduate": {
+  "audited_on": "2026-11-13",
+  "reader": "OpenAI GPT-5.6 Terra through the Kiro command line, read-only, against the department's undergraduate rule documents",
+  "cards_first_reading": {
+   "agreed": 30,
+   "of": 31
   }
  }
 }

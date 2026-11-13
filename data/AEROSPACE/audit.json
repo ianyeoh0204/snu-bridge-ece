@@ -133,6 +133,166 @@
   "ae-thesis-phd": {
    "status": "reader_agrees",
    "reason": ""
+  },
+  "ae-ug-total": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-grades": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-major-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-major-kinds": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-major-required": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-major-required-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-design": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-design-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-design-c": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-intro-engineering": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-intro-engineering-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-intro-engineering-c": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-internal-rules": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-elective-recognised": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-elective-recognised-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-elective-recognised-c": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-leadership": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-ge-total": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-ge-total-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-writing": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "ae-ug-writing-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-foreign-language": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-math": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-math-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-science": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-science-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-computing": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-computing-exemption": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-worlds": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-worlds-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-keys": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-veritas": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-recommended-semesters": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-physics-placement": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-semester-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-foreign-lectures": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-foreign-lectures-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ug-life-respect": {
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ },
+ "undergraduate": {
+  "audited_on": "2026-11-13",
+  "reader": "OpenAI GPT-5.6 Terra through the Kiro command line, read-only, against the department's undergraduate rule documents",
+  "cards_first_reading": {
+   "agreed": 37,
+   "of": 38
   }
  }
 }

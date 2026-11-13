@@ -11,7 +11,7 @@ Its supplementary provisions say from which semester some paragraphs apply; the 
 that for the integrated program the semester of selection counts as entry (석·박통합과정은 선발 진입학기를 입학으로 한다).
 The checks are in tools/cards_pdf.py.
 """
-from cards_pdf import DOCTORAL, card, pages, write
+from cards_pdf import DOCTORAL, card, pages, verify, write
 
 NAME, TEXT = pages("NUCLEAR", "2021학년도 입학생 이후")
 A = "Entrants from 2021"
@@ -78,4 +78,6 @@ CARDS = [
 ]
 
 if __name__ == "__main__":
-    write("NUCLEAR", CARDS, {"rules": TEXT})
+    # the undergraduate cards live in their own file and are checked against their own documents
+    from cards_nuclear_undergraduate import CARDS as UNDERGRADUATE, TEXTS as UNDERGRADUATE_TEXTS
+    write("NUCLEAR", verify(UNDERGRADUATE, UNDERGRADUATE_TEXTS) + verify(CARDS, {"rules": TEXT}))

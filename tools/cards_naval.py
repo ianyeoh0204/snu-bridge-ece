@@ -18,7 +18,7 @@ cards for entrants up to March 2026 and cite "rules-before". Every other card ci
 Left out: the section for Navy (조함병과) commissioned master's students, the blank forms, the table of contents.
 The document says nothing on seminars or on how an advisor is chosen. The checks are in tools/cards_pdf.py.
 """
-from cards_pdf import ALL, DOCTORAL, card, pages, write
+from cards_pdf import ALL, DOCTORAL, card, pages, write, verify
 
 NAME, TEXT = pages("NAVAL", "2026.09.01")
 NAME_BEFORE, TEXT_BEFORE = pages("NAVAL", "2025.09.01")
@@ -352,4 +352,6 @@ CARDS = [
 ]
 
 if __name__ == "__main__":
-    write("NAVAL", CARDS, {"rules": TEXT, "rules-before": TEXT_BEFORE})
+    # the undergraduate cards live in their own file and are checked against their own document
+    from cards_naval_undergraduate import CARDS as UNDERGRADUATE, TEXTS as UNDERGRADUATE_TEXTS
+    write("NAVAL", verify(UNDERGRADUATE, UNDERGRADUATE_TEXTS) + verify(CARDS, {"rules": TEXT, "rules-before": TEXT_BEFORE}))

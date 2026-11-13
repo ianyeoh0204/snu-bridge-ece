@@ -45,6 +45,110 @@
   "ne-publication-phd": {
    "status": "reader_agrees",
    "reason": ""
+  },
+  "ne-ug-writing": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-ge-total": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-ge-total-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-ge-total-c": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-ge-foundation": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-ge-foundation-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-science": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-science-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-foreign-language": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-engineering-ge": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-major-total": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-major-total-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-major-required": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-major-required-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-major-required-c": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-lab": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-lab-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-department-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-total": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-thesis": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-thesis-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-foreign-lectures": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-foreign-lectures-b": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-ug-life-respect": {
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ },
+ "undergraduate": {
+  "audited_on": "2026-11-13",
+  "reader": "OpenAI GPT-5.6 Terra through the Kiro command line, read-only, against the three guides (2023 to 2025 entrants)",
+  "cards_first_reading": {
+   "agreed": 24,
+   "of": 24
   }
  }
 }

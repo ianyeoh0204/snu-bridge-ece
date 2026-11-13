@@ -393,3 +393,23 @@ start a second department's requirements before 20 Nov was lifted by the develop
   Nuclear's rule document gives no credit numbers (it leaves them to the university's regulations), so its boxes lead
   with the examination pass mark. Do not add credit numbers for Nuclear without a source that states them.
 - The second full manual run of the daily job passed (15 min 46 s, all four departments read, saved and published).
+
+## Undergraduate requirements for Aerospace, Naval and Nuclear (13 Nov 2026, published)
+- The developer asked why those three had no undergraduate information ("make it complete") and downloaded the rule
+  files, which sit in each `sources/<DEPARTMENT>/` (never uploaded). Three helper sessions drafted
+  `tools/cards_<department>_undergraduate.py` from `out/undergrad/brief.md`; each department's main card script imports
+  and saves them with its graduate cards. GPT-5.6 Terra through Kiro then read every card against the Korean.
+  - Aerospace: 38 cards, 2023 to 2026 entrants, one rule file per year. Reader agreed with 37.
+  - Naval: 31 cards, 2023 to 2026, from one 50-page file that covers every year from 2013 (pages 3 to 11 are the years
+    covered). Reader agreed with 30. Its "45 major credits with another major" for 2023 and 2024 comes from merged table
+    cells seen on the rendered page; the card says so and sends the student to the office.
+  - Nuclear: 24 cards, 2023 to 2025 only: the department has posted no guide for 2026 entrants. Reader agreed with all.
+    In the 2023 guide the two thesis courses carry no required mark although the stated required credits need them;
+    the cards report that without deciding.
+  Totals now: 277 cards in four departments, 258 agreed by the second reader, 19 settled by the author.
+- `tools/cards_pdf.py`: `verify` checks cards; a card with `entry_years` whose source is "ug" is checked against the
+  file of every year it lists when the texts are named "ug-<year>", and the site then cites the reader's own year's file
+  (`series` and `entry_year` in the config's `files`). An undergraduate card without `entry_years` is refused.
+- A program's `headline_cards` entry may be a list, for a total that differs by year of admission.
+- None of these documents states a rule for international students, a thesis requirement, or (Nuclear, Naval) a grade
+  average; the total cards say what the document leaves out rather than borrow it from elsewhere.

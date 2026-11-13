@@ -1,5 +1,1372 @@
 [
  {
+  "id": "ae-ug-total",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "finish_coursework",
+  "title": "Total credits to graduate",
+  "key": "130 credits; 2.0 grade average overall and in the major",
+  "rule": [
+   "At least 130 credits to graduate (or to complete the course of study).",
+   "Of these, at least 49 credits in liberal education (교양).",
+   "Major credits: at least 62 if this is your only major, or at least 42 if you also take another major.",
+   "The remainder is shown as 'other' (기타); the document gives no number for it.",
+   "To graduate, the grade average must be 2.0 or higher over all courses and 2.0 or higher over major courses."
+  ],
+  "why": "The document draws it as a sum: liberal education, plus the main major, plus other credits.",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "졸업(수료)학점 130학점 이상",
+  "quotes_ko": [
+   "졸업(수료)학점 130학점 이상",
+   "교양 49학점 이상",
+   "단일전공이수 62학점이상",
+   "다른전공병행이수★ 42학점이상",
+   "① 학사과정에서는 교과목별 성적이 \"D-\" 이상일 때 학점을 취득한 것으로 인정하며, 전 교과목 및 전공교과목(복수전공·연합전공·연계전공·학생설계전공·부전공포함)의 성적 평점평균이 각각 2.0 이상이어야 졸업할 수 있다.",
+   "기 타 = 졸업(수료)학점 130학점 이상"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-grades",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "finish_coursework",
+  "title": "Passing grade and grade averages",
+  "key": "D- or above earns the credit; 2.0 average to graduate",
+  "rule": [
+   "Credit for a course is earned when the grade is D- or above.",
+   "To graduate, the grade average of all courses and the grade average of major courses must each be 2.0 or higher.",
+   "The document adds in brackets that major courses include those of a double major, combined major (연합전공), linked major (연계전공), student-designed major and minor.",
+   "The document quotes this from Article 83 of the university regulations (학칙)."
+  ],
+  "why": "Both averages are conditions for graduating, not only the number of credits.",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "① 학사과정에서는 교과목별 성적이 \"D-\" 이상일 때 학점을 취득한 것으로 인정하며, 전 교과목 및 전공교과목(복수전공·연합전공·연계전공·학생설계전공·부전공포함)의 성적 평점평균이 각각 2.0 이상이어야 졸업할 수 있다.",
+  "quotes_ko": [
+   "① 학사과정에서는 교과목별 성적이 \"D-\" 이상일 때 학점을 취득한 것으로 인정하며, 전 교과목 및 전공교과목(복수전공·연합전공·연계전공·학생설계전공·부전공포함)의 성적 평점평균이 각각 2.0 이상이어야 졸업할 수 있다.",
+   "※ 서울대학교 학칙 제83조 (취득학점의 인정)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-major-credits",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Major credits",
+  "key": "62 credits as a single major; 42 with another major",
+  "rule": [
+   "If Aerospace Engineering is your only major: at least 62 credits in the main major.",
+   "If you take another major alongside it: at least 42 credits in the main major.",
+   "'Another major' here means a double major, minor, combined major (연합전공), linked major (연계전공) or student-designed major.",
+   "The document does not say how these credits divide between required and elective major courses."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "주전공 학점 단일전공이수 62학점이상",
+  "quotes_ko": [
+   "주전공 학점 단일전공이수 62학점이상",
+   "다른전공병행이수★ 42학점이상",
+   "★ 복수전공, 부전공, 연합전공, 연계전공, 학생설계전공자"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-major-kinds",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Kinds of major course",
+  "key": "Required (전공필수) and elective (전공선택)",
+  "rule": [
+   "Major courses (전공과목) are either required major courses (전공필수) or elective major courses (전공선택).",
+   "Under elective major courses the document names three kinds: 전공선택필수, 전공선택일반 and 전공선택인정 (courses recognised as major electives).",
+   "In the course table, * marks a required major course.",
+   "The document does not say which courses are 전공선택필수, and it sets no separate number of elective credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "전공과목 전공필수 전공선택 전공선택필수 전공선택일반 전공선택인정",
+  "quotes_ko": [
+   "전공과목 전공필수 전공선택 전공선택필수 전공선택일반 전공선택인정",
+   "*는 전공필수 교과목임."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-major-required",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Required major courses of years 1 to 3",
+  "key": "The courses marked * in years 1 to 3 of the course table",
+  "rule": [
+   "The course table marks these courses with *, which means required major course (전공필수). The year is the row of the table the course stands in.",
+   "Year 1: M3229.002900 항공우주공학입문.",
+   "Year 2: M3229.001900 항공우주 고체역학 1; M2795.001800 항공역학; M3229.002600 항공우주열역학; M2795.002100 운동체역학; M3229.003000 항공우주혁신설계입문.",
+   "Year 3: M2795.002300 압축성유체역학; M2795.002500 제트추진; M2795.002600 비행체제어원리; M2795.002400 항공기구조역학; M3229.002700 항공우주공학실험 1; M3229.002800 항공우주공학실험 2.",
+   "The document gives no credits for these courses. 항공우주 통합 시스템 설계 및 제작 1 and 2 are also required and have their own card."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "1학년 M3229.002900* 항공우주공학입문*",
+  "quotes_ko": [
+   "1학년 M3229.002900* 항공우주공학입문*",
+   "2학년 M3229.001900* 항공우주 고체역학 1*",
+   "M2795.001800* (446.323A) 항공역학*",
+   "M3229.002600* 항공우주열역학*",
+   "M2795.002100* 운동체역학*",
+   "M3229.003000* 항공우주혁신설계입문*",
+   "3학년 M2795.002300* (446.321) 압축성유체역학*",
+   "M2795.002500* (446.340) 제트추진*",
+   "M2795.002600* (446.341) 비행체제어원리*",
+   "M2795.002400* (446.322) 항공기구조역학*",
+   "M3229.002700* 항공우주공학실험 1*",
+   "M3229.002800* 항공우주공학실험 2*",
+   "*는 전공필수 교과목임.",
+   "항공우주 통합 시스템 설계 및 제작 1",
+   "항공우주 통합 시스템 설계 및 제작 2"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-major-required-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Required major courses of years 1 to 3",
+  "key": "The courses marked * in years 1 to 3 of the course table",
+  "rule": [
+   "The course table marks these courses with *, which means required major course (전공필수). The year is the row of the table the course stands in.",
+   "Year 1: M3229.002900 항공우주공학입문.",
+   "Year 2: M3229.001900 항공우주 고체역학 1; M2795.001800 항공역학; M3229.002600 항공우주열역학; M2795.002100 운동체역학; M3229.003000 항공우주혁신설계입문.",
+   "Year 3: M2795.002300 압축성유체역학; M2795.002500 제트추진; M2795.002600 비행체제어원리; M2795.002400 항공기구조역학; M3229.002700 항공우주공학실험 1; M3229.002800 항공우주공학실험 2.",
+   "The document gives no credits for these courses. 항공우주 통합 시스템 설계 및 제작 1 and 2 are also required and have their own card."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "1학년 M3229.004100 항공드론융합콜로키움 M3229.002900* 항공우주공학입문*",
+  "quotes_ko": [
+   "1학년 M3229.004100 항공드론융합콜로키움 M3229.002900* 항공우주공학입문*",
+   "2학년 M3229.001900* 항공우주 고체역학 1*",
+   "M2795.001800* 항공역학*",
+   "M3229.002600* 항공우주열역학*",
+   "M2795.002100* 운동체역학*",
+   "M3229.003000* 항공우주혁신설계입문*",
+   "3학년 M2795.002300* 압축성유체역학*",
+   "M2795.002500* 제트추진*",
+   "M2795.002600* 비행체제어원리*",
+   "M2795.002400* 항공기구조역학*",
+   "M3229.002700* 항공우주공학실험 1*",
+   "M3229.002800* 항공우주공학실험 2*",
+   "*는 전공필수 교과목임.",
+   "항공우주 통합 시스템 설계 및 제작 1",
+   "항공우주 통합 시스템 설계 및 제작 2"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-design",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "항공우주 통합 시스템 설계 및 제작 1 and 2",
+  "key": "Both courses are required",
+  "rule": [
+   "M3229.002100 항공우주 통합 시스템 설계 및 제작 1 and M3229.002200 항공우주 통합 시스템 설계 및 제작 2 [Aerospace Integrated System Design and Build 1 and 2] must both be completed as required courses.",
+   "In the course table of this year they carry no * mark; the written rule below the table makes them required.",
+   "They stand in the year 4 rows of the course table.",
+   "The document does not call them a graduation thesis or project, and gives no credits for them."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "They are required although the table does not mark them with *.",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "② 항공우주공학과는 M3229.002100 항공우주 통합 시스템 설계 및 제작 1, M3229.002200 항공우주 통합 시스템 설계 및 제작 2를 필수과목으로 이수하여야 한다.",
+  "quotes_ko": [
+   "② 항공우주공학과는 M3229.002100 항공우주 통합 시스템 설계 및 제작 1, M3229.002200 항공우주 통합 시스템 설계 및 제작 2를 필수과목으로 이수하여야 한다.",
+   "4학년"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-design-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "항공우주 통합 시스템 설계 및 제작 1 and 2",
+  "key": "Both courses are required",
+  "rule": [
+   "M3229.002100 항공우주 통합 시스템 설계 및 제작 1 and M3229.002200 항공우주 통합 시스템 설계 및 제작 2 [Aerospace Integrated System Design and Build 1 and 2] must both be completed as required courses.",
+   "In the course table of this year they carry no * mark; the written rule below the table makes them required.",
+   "They stand in the year 4 rows of the course table.",
+   "The document does not call them a graduation thesis or project, and gives no credits for them."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "They are required although the table does not mark them with *.",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "② 항공우주공학과는 M3229.002100 항공우주 통합 시스템 설계 및 제작 1, M3229.002200 항공우주 통합 시스템 설계 및 제작 2를 필수로 이수하여야 한다.",
+  "quotes_ko": [
+   "② 항공우주공학과는 M3229.002100 항공우주 통합 시스템 설계 및 제작 1, M3229.002200 항공우주 통합 시스템 설계 및 제작 2를 필수로 이수하여야 한다.",
+   "4학년"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-design-c",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "항공우주 통합 시스템 설계 및 제작 1 and 2",
+  "key": "Both courses are required",
+  "rule": [
+   "M3229.002100 항공우주 통합 시스템 설계 및 제작 1 and M3229.002200 항공우주 통합 시스템 설계 및 제작 2 [Aerospace Integrated System Design and Build 1 and 2] are marked * in the course table, which means required major course (전공필수).",
+   "They stand in the year 4 rows of the course table.",
+   "The document does not call them a graduation thesis or project, and gives no credits for them."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "*는 전공필수 교과목임.",
+  "quotes_ko": [
+   "*는 전공필수 교과목임.",
+   "M3229.002100*",
+   "M3229.002200*",
+   "항공우주 통합 시스템 설계 및 제작 1",
+   "항공우주 통합 시스템 설계 및 제작 2",
+   "4학년"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-intro-engineering",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Introduction-to-engineering course (공학개론)",
+  "key": "1 course from the listed courses is required",
+  "rule": [
+   "Complete 1 course from the introduction-to-engineering area (공학개론 영역) of the College of Engineering common courses.",
+   "The courses listed: 400.015 산업공학개론 [introduction to industrial engineering]; 400.019A 전기.정보공학개론 [introduction to electrical and computer engineering]; 400.020 재료공학개론 [introduction to materials engineering]; 400.023 화학생물공학개론 [introduction to chemical and biological engineering]; M2177.004900 IoT인공지능 빅데이터 개론 및 실습."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "① 아래 공과대학 공통교과목 공학개론 영역 중 1과목을 필수로 이수하여야 함.",
+  "quotes_ko": [
+   "① 아래 공과대학 공통교과목 공학개론 영역 중 1과목을 필수로 이수하여야 함.",
+   "- 400.015 산업공학개론, 400.019A 전기.정보공학개론, 400.020 재료공학개론, 400.023 화학생물공학개론, M2177.004900 IoT인공지능 빅데이터 개론 및 실습"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-intro-engineering-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Introduction-to-engineering courses (공학개론)",
+  "key": "3 credits; 400.013 기계공학개론 is excluded",
+  "rule": [
+   "Complete 3 credits in the introduction-to-engineering area (공학개론 영역) of the College of Engineering common courses.",
+   "400.013 기계공학개론 [introduction to mechanical engineering] is excluded.",
+   "3 credits from among: 400.015 산업공학개론; 400.019A 전기⋅정보공학개론; 400.020 재료공학개론; 400.022 건설환경공학개론; 400.023 화학생물공학개론; 400.024 에너지자원공학개론; M2177.008600 인공지능 개론 (formerly M2177.004900); M2177.008700 정보 보호 및 블록체인 개론 (formerly M2177.006300); M2177.007800 VR/AR의 개론 및 실습.",
+   "M2177.008100 공학 전공 탐색 is listed after these, with the note that it is a major-exploration course for students admitted through 광역모집 (admission to a broad unit and not to one department).",
+   "The document does not say whether M2177.008100 counts toward the 3 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "- 공학개론 영역에서 3학점을 이수하여야 함. (단, 공학개론 영역의 400.013 기계공학개론 제외)",
+  "quotes_ko": [
+   "- 공학개론 영역에서 3학점을 이수하여야 함. (단, 공학개론 영역의 400.013 기계공학개론 제외)",
+   "400.015 산업공학개론, 400.019A 전기⋅ 정보공학개론, 400.020 재료공학개론, 400.022 건설환경공학개론, 400.023 화학생물공학개론, 400.024 에너지자원공학개론, M2177.008600 인공지능 개론(舊 M2177.004900 IoT⋅인공지능⋅빅테이터 개론 및 실습), M2177.008700 정보 보호 및 블록체인 개론(舊 M2177.006300 사이버 보안과 블록체인 개론 및 실습), M2177.007800 VR/AR의 개론 및 실습 중 3학점 이수",
+   "M2177.008100 공학 전공 탐색 (*광역모집 입학생을 위한 전공탐색과목)",
+   "① 공과대학 공통교과목"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-intro-engineering-c",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Introduction-to-engineering courses (공학개론)",
+  "key": "3 credits; 400.013 기계공학개론 is excluded",
+  "rule": [
+   "Complete 3 credits in the introduction-to-engineering area (공학개론 영역) of the College of Engineering common courses.",
+   "400.013 기계공학개론 [introduction to mechanical engineering] is excluded.",
+   "The courses listed: 400.015 산업공학개론; 400.019A 전기⋅정보공학개론; 400.020 재료공학개론; 400.022 건설환경공학개론; 400.023 화학생물공학개론; 400.024 에너지자원공학개론; M2177.007800 VR/AR의 개론 및 실습; M2177.008100 공학 전공 탐색; M2177.008600 인공지능 개론; M2177.008700 정보 보호 및 블록체인 개론.",
+   "M2177.008100 공학 전공 탐색 carries the note that it is a major-exploration course for students admitted through 광역모집 (admission to a broad unit and not to one department).",
+   "The document does not say whether M2177.008100 counts for other students."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "- 공학개론 영역에서 3학점을 이수하여야 함. (단, 공학개론 영역의 400.013 기계공학개론 제외)",
+  "quotes_ko": [
+   "- 공학개론 영역에서 3학점을 이수하여야 함. (단, 공학개론 영역의 400.013 기계공학개론 제외)",
+   "400.015 산업공학개론, 400.019A 전기⋅ 정보공학개론, 400.020 재료공학개론, 400.022 건설환경공학개론, 400.023 화학생물공학개론, 400.024 에너지자원공학개론, M2177.007800 VR/AR의 개론 및 실습 M2177.008100 공학 전공 탐색 (*광역모집 입학생을 위한 전공탐색과목) M2177.008600 인공지능 개론, M2177.008700 정보 보호 및 블록체인 개론",
+   "① 공과대학 공통교과목"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-internal-rules",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Department's internal rules (학과 내규); double major and minor",
+  "key": "Double-major and minor requirements are not in this document",
+  "rule": [
+   "The course requirements in the department's internal rules (학과 내규) must also be followed.",
+   "Requirements for a double major (복수전공): 'according to the department's internal rules'.",
+   "Requirements for a minor (부전공): 'according to the department's internal rules'.",
+   "The document does not contain those internal rules and says nothing more about them."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "학과 내규에 의한 이수규정을 따라야 함.",
+  "quotes_ko": [
+   "학과 내규에 의한 이수규정을 따라야 함.",
+   "※ 복수전공 이수규정: 학과내규에 의함.",
+   "※ 부전공 이수규정: 학과내규에 의함."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-elective-recognised",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "credit_rules",
+  "title": "Courses recognised as major electives (전공선택 인정)",
+  "key": "Course numbers starting with 400 or M2177, and approved others",
+  "rule": [
+   "All College of Engineering common courses: courses whose number starts with 400 or M2177.",
+   "The next item reads: major courses of the College of Engineering and the College of Natural Sciences, and, among 10 designated courses of the Department of Business Administration (경영학과), the courses approved by the head of the school (학부장), are recognised as major electives.",
+   "The sentence does not make clear whether the approval is also needed for the engineering and natural-science courses or only for the business courses.",
+   "The 10 business courses: 251.101 경영학원론; 251.204A 중급회계1; 251.205 회계원리; 251.209 조직행위론; 251.215 조직구조론; 251.301 재무관리; 251.303 인사관리; 251.332 현대경영이론; 251.321 마케팅관리; 251.322 국제경영."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "①공과대학 공통교과목 전체",
+  "quotes_ko": [
+   "①공과대학 공통교과목 전체",
+   "교과목번호가 400 또는 M2177로 시작하는 교과목",
+   "②공과대학 및 자연과학대학 전공과목, 경영학과 과목 중 지정된 10과목 중에서 학부장이 승인하는 과목을 전공선택과목으로 인정함.",
+   ": 251.101 경영학원론 , 251.204A 중급회계1, 251.205 회계원리, 251.209 조직행위론, 251.215 조직구조론, 251.301 재무관리, 251.303 인사관리, 251.332 현대경영이론, 251.321 마케팅관리, 251.322 국제경영",
+   "※ 전공선택 인정 교과목"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-elective-recognised-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "credit_rules",
+  "title": "Courses recognised as major electives (전공선택 인정)",
+  "key": "Course numbers starting with 400 or M2177, and listed others",
+  "rule": [
+   "All College of Engineering common courses: courses whose number starts with 400 or M2177.",
+   "Major courses of the College of Engineering and the College of Natural Sciences.",
+   "Among 10 designated courses of the Department of Business Administration (경영학과), the courses approved by the head of the department (학과장).",
+   "The 10 business courses: 251.101 경영학원론; 251.204A 중급회계1; 251.205 회계원리; 251.209 조직행위론; 251.215 조직구조론; 251.301 재무관리; 251.303 인사관리; 251.332 현대경영이론; 251.321 마케팅관리; 251.322 국제경영."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "① 공과대학 공통과목 전체",
+  "quotes_ko": [
+   "① 공과대학 공통과목 전체",
+   "교과목번호가 400 또는 M2177로 시작하는 교과목",
+   "② 공과대학 및 자연과학대학 전공과목",
+   "③ 경영학과 과목 중 지정된 10과목 중에서 학과장이 승인하는 과목",
+   ": 251.101 경영학원론, 251.204A 중급회계1, 251.205 회계원리, 251.209 조직행위론, 251.215 조직구조론, 251.301 재무관리, 251.303 인사관리, 251.332 현대경영이론, 251.321 마케팅관리, 251.322 국제경영",
+   "※ 전공선택 인정 교과목"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-elective-recognised-c",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "credit_rules",
+  "title": "Courses recognised as major electives (전공선택 인정)",
+  "key": "Course numbers starting with 400 or M2177, and listed others",
+  "rule": [
+   "All College of Engineering common courses: courses whose number starts with 400 or M2177.",
+   "Major courses of the College of Engineering and the College of Natural Sciences.",
+   "Among the courses offered by 혁신공유학부, those approved by the head of the department (학과장).",
+   "Among 9 designated courses of the Department of Business Administration (경영학과), the courses approved by the head of the department.",
+   "The 9 business courses: 251.204A 중급회계1; 251.205 회계원리; M1338.004000 조직행동론; M1338.004100 조직이론; 251.301 재무관리; 251.303 인사관리; 251.321 마케팅관리; 251.322 국제경영; 251.332 현대경영이론."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "① 공과대학 공통과목 전체",
+  "quotes_ko": [
+   "① 공과대학 공통과목 전체",
+   "교과목번호가 400 또는 M2177로 시작하는 교과목",
+   "② 공과대학 및 자연과학대학 전공과목",
+   "③ 혁신공유학부 개설 교과목 중 학과장이 승인하는 과목",
+   "④ 경영학과 과목 중 지정된 9과목 중에서 학과장이 승인하는 과목",
+   ": 251.204A 중급회계1, 251.205 회계원리, M1338.004000 조직행동론, M1338.004100 조직이론 251.301 재무관리, 251.303 인사관리, 251.321 마케팅관리, 251.322 국제경영, 251.332 현대경영이론",
+   "※ 전공선택 인정 교과목"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-leadership",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "credit_rules",
+  "title": "공학도의 도전과 리더십 courses",
+  "key": "At most 3 credits count as major credits",
+  "rule": [
+   "공학도의 도전과 리더십 is a set of 3 courses, of 1, 2 and 3 credits.",
+   "If you take all 3, at most 3 credits are recognised as major credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "③「공학도의 도전과 리더십」해당 3개 과목(각 1,2,3학점)을 모두 수강할 경우, 최대 3학점까지만 전공학점으로 인정함.",
+  "quotes_ko": [
+   "③「공학도의 도전과 리더십」해당 3개 과목(각 1,2,3학점)을 모두 수강할 경우, 최대 3학점까지만 전공학점으로 인정함."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-ge-total",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Liberal-education credits (교양)",
+  "key": "At least 49 credits",
+  "rule": [
+   "At least 49 liberal-education credits.",
+   "The document names three parts: 학문의 기초 (the required foundation courses), 학문의 세계 (12 credits) and 선택교양 (elective liberal education).",
+   "For the elective part, further courses are chosen freely from all liberal-education courses.",
+   "The table prints the credits of each required row; it prints no subtotal for 학문의 기초."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "교양 49학점 이상",
+  "quotes_ko": [
+   "교양 49학점 이상",
+   "교양과목 학문의 기초 학문의 세계 선택교양",
+   "학문의 세계 언어와 문학 12",
+   "• 전체 교양 교과목 중 학생이 자유롭게 추가로 선택"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-ge-total-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Liberal-education credits (교양)",
+  "key": "At least 49 credits",
+  "rule": [
+   "At least 49 liberal-education credits.",
+   "The first page names four parts: 학문의 토대, 지성의 열쇠, 베리타스 and 선택교양 (elective liberal education).",
+   "The requirements table calls the first part 학문의 기초, not 학문의 토대; the document uses both names.",
+   "For the elective part, courses are chosen freely from all liberal-education courses."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "교양 49학점 이상",
+  "quotes_ko": [
+   "교양 49학점 이상",
+   "교양과목 학문의 토대 지성의 열쇠 베리타스 선택교양",
+   "학문의 기초 글쓰기와 말하기",
+   "• 전체 교양 교과목 중 학생이 자유롭게 선택"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-writing",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Writing courses (대학글쓰기)",
+  "key": "4 credits: 대학글쓰기1 and one 대학글쓰기2 course",
+  "rule": [
+   "대학글쓰기1 [College Writing 1].",
+   "One of the three 대학글쓰기2 [College Writing 2] courses: 인문학글쓰기 [humanities writing], 사회과학글쓰기 [social-science writing] or 과학기술글쓰기 [science and technology writing].",
+   "The row is 4 credits.",
+   "The document lists one of the choices as 대학글쓰기2:사화과학글쓰기 and does not explain the name further."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[1-1] 대학글쓰기1 [1-2] 대학글쓰기2:인문학글쓰기, 대학글쓰기2:사화과학글쓰기, 대학글쓰기2:과학기술글쓰기 중 택1 4",
+  "quotes_ko": [
+   "[1-1] 대학글쓰기1 [1-2] 대학글쓰기2:인문학글쓰기, 대학글쓰기2:사화과학글쓰기, 대학글쓰기2:과학기술글쓰기 중 택1 4",
+   "사고와 표현"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-writing-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Writing courses (대학글쓰기)",
+  "key": "4 credits: 대학글쓰기1 and 대학글쓰기2:과학기술글쓰기",
+  "rule": [
+   "대학글쓰기1 [College Writing 1].",
+   "대학글쓰기2:과학기술글쓰기 [College Writing 2: science and technology writing]. No other 대학글쓰기2 course is listed.",
+   "The row is 4 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[1-1] 대학글쓰기1 [1-2] 대학글쓰기2:과학기술글쓰기 4",
+  "quotes_ko": [
+   "[1-1] 대학글쓰기1 [1-2] 대학글쓰기2:과학기술글쓰기 4",
+   "글쓰기와 말하기"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-foreign-language",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Foreign-language courses",
+  "key": "2 courses, 6 credits; English required at New TEPS 525 or below",
+  "rule": [
+   "Complete 2 foreign-language courses, 6 credits.",
+   "A student whose score at admission was TEPS 900 (New TEPS 525) or below must complete 1 English course.",
+   "The document does not say which English course, and does not say what applies to a student who has no TEPS score."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "외국어 2개 교과목 6",
+  "quotes_ko": [
+   "외국어 2개 교과목 6",
+   "• 입학 시 TEPS 900점(New TEPS 525점) 이하인 학생은 영어 1과목 필수 이수"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-math",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Mathematics courses",
+  "key": "수학 1, 2 and 공학수학 1, 2; 3 credits for each row",
+  "rule": [
+   "수학1 [Mathematics 1] with 수학연습1 [Mathematics Practice 1], or 고급수학1 [Advanced Mathematics 1] with 고급수학연습1.",
+   "수학2 [Mathematics 2] with 수학연습2, or 고급수학2 [Advanced Mathematics 2] with 고급수학연습2.",
+   "공학수학 1 [Engineering Mathematics 1] and 공학수학 2 [Engineering Mathematics 2].",
+   "As a rule, a course that has a practice course (연습) is taken in the same semester as that practice course.",
+   "Each of these rows of the table (수학 1, 수학 2, 공학수학 1, 공학수학 2) is 3 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[1-1] 수학1과 수학연습1 또는 고급수학1과 고급수학연습1 3",
+  "quotes_ko": [
+   "[1-1] 수학1과 수학연습1 또는 고급수학1과 고급수학연습1 3",
+   "[1-2] 수학2와 수학연습2 또는 고급수학2와 고급수학연습2 3",
+   "[2-1] 공학수학 1 3",
+   "[2-2] 공학수학 2 3",
+   "• 연습이 있는 교과목을 수강하는 학생은 해당학기에 연습교과목을 동시에 수강하는 것을 원칙으로 함.(수학1은 수학연습1을, 수학2는 수학연습2를 동시에 수강하고, 고급수학1은 고급수학연습1, 고급수학2는 고급수학연습2를 동시에 수강)",
+   "수량적 분석과 추론"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-math-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Mathematics courses",
+  "key": "12 credits",
+  "rule": [
+   "수학1 [Mathematics 1] with 수학연습1 [Mathematics Practice 1], or 고급수학1 [Advanced Mathematics 1] with 고급수학연습1.",
+   "수학2 [Mathematics 2] with 수학연습2, or 고급수학2 [Advanced Mathematics 2] with 고급수학연습2.",
+   "공학수학 1 [Engineering Mathematics 1] and 공학수학 2 [Engineering Mathematics 2].",
+   "As a rule, a course that has a practice course (연습) is taken in the same semester as that practice course.",
+   "The mathematics block is 12 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[수학] [1-1] 수학1과 수학연습1 또는 고급수학1과 고급수학연습1 [1-2] 수학2와 수학연습2 또는 고급수학2와 고급수학연습2 [2-1] 공학수학 1 [2-2] 공학수학 2 12",
+  "quotes_ko": [
+   "[수학] [1-1] 수학1과 수학연습1 또는 고급수학1과 고급수학연습1 [1-2] 수학2와 수학연습2 또는 고급수학2와 고급수학연습2 [2-1] 공학수학 1 [2-2] 공학수학 2 12",
+   "• 연습이 있는 교과목을 수강하는 학생은 해당학기에 연습교과목을 동시에 수강하는 것을 원칙으로 함.(수학1은 수학연습1을, 수학2는 수학연습2를 동시에 수강하고, 고급수학1은 고급수학연습1, 고급수학2는 고급수학연습2를 동시에 수강)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-science",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Science courses with laboratories",
+  "key": "Physics 1 and 2 with laboratories, and 4 more credits",
+  "rule": [
+   "물리학 1 [Physics 1] with 물리학실험 1 [Physics Laboratory 1]. 물리의기본1 or 고급물리학1 may replace 물리학 1.",
+   "물리학 2 [Physics 2] with 물리학실험 2 [Physics Laboratory 2]. 물리의기본2 or 고급물리학2 may replace 물리학 2.",
+   "A further 4 credits in total from: 화학1 with 화학실험1; 화학2 with 화학실험2; 생물학1 with 생물학실험1; 생물학2 with 생물학실험2; 화학 (or 고급화학) with 화학실험; 생물학 with 생물학실험; 통계학 with 통계학실험.",
+   "As a rule, a theory course and its laboratory course are taken in the same semester.",
+   "Each of these rows of the table is 4 credits.",
+   "통계학 and 통계학실험 belong to the area 수량적 분석과 추론 but are recognised for this area (과학적 사고와 실험)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[1-1] 물리학 1 (물리의기본1 또는 고급물리학1로 대체 가능) 과 물리학실험 1 4",
+  "quotes_ko": [
+   "[1-1] 물리학 1 (물리의기본1 또는 고급물리학1로 대체 가능) 과 물리학실험 1 4",
+   "[1-2] 물리학 2 (물리의기본2 또는 고급물리학2로 대체 가능) 와 물리학실험 2 4",
+   "[1-1,2] 화학1과 화학실험1, 화학2와 화학실험2,생물학1과 생물학실험1, 생물학2와 생물학실험2, 화학(또는 고급화학)과 화학실험, 생물학과 생물학실험, 통계학과 통계학실험 중 총 4학점 4",
+   "• 과학적 사고와 실험 영역(통계학 포함)은 이론교과목과 해당 교과의 실험교과목을 동시에 수강하는 것을 원칙으로 함",
+   "※ 통계학, 통계학실험은 수량적 분석과 추론 영역에 속하는 교과목이나 과학적 사고와 실험 영역 이수로 인정함."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-science-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Science courses with laboratories",
+  "key": "12 credits: Physics 1 and 2 with laboratories, and 4 more",
+  "rule": [
+   "물리학 1 [Physics 1] with 물리학실험 1 [Physics Laboratory 1]. 물리의기본1 or 고급물리학1 may replace 물리학 1.",
+   "물리학 2 [Physics 2] with 물리학실험 2 [Physics Laboratory 2]. 물리의기본2 or 고급물리학2 may replace 물리학 2.",
+   "A further 4 credits in total from: 화학1 with 화학실험1; 화학2 with 화학실험2; 생물학1 with 생물학실험1; 생물학2 with 생물학실험2; 화학 (or 고급화학) with 화학실험; 생물학 with 생물학실험; 통계학 with 통계학실험.",
+   "As a rule, a theory course and its laboratory course are taken in the same semester.",
+   "The science block is 12 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[과학] [1-1] 물리학 1*(물리의기본1 또는 고급 물리학1로 대체 가능)과 물리학 실험 1 [1-2] 물리학 2*(물리의기본2 또는 고급 물리학2로 대체 가능)와 물리학 실험 2",
+  "quotes_ko": [
+   "[과학] [1-1] 물리학 1*(물리의기본1 또는 고급 물리학1로 대체 가능)과 물리학 실험 1 [1-2] 물리학 2*(물리의기본2 또는 고급 물리학2로 대체 가능)와 물리학 실험 2",
+   "[1-1,1-2] 화학1과 화학실험1, 화학2와 화학실험2,생물학1과 생물학실험1, 생물학2와 생물학실험2, 화학(또는 고급화학)과 화학실험, 생물학과 생물학실험, 통계학과 통계학실험 중 총 4학점 12",
+   "• [과학] 영역은 이론 교과목과 해당 교과의 실험 교과목을 동시에 수강하는 것을 원칙으로 함"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-computing",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Computing course",
+  "key": "컴퓨터의 개념 및 실습, 3 credits",
+  "rule": [
+   "컴퓨터의 개념 및 실습 [Computer Concepts and Practice], 3 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[2-1] 컴퓨터의 개념 및 실습 3",
+  "quotes_ko": [
+   "[2-1] 컴퓨터의 개념 및 실습 3"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-computing-exemption",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Exemption from the computing course",
+  "key": "The area counts as met; the liberal-education total does not shrink",
+  "rule": [
+   "A student exempted through a separate procedure from the courses '컴퓨터의 기초, 컴퓨터의 개념 및 실습' is treated as having met the minimum credits of the computing area (컴퓨터와 정보 활용) of 학문의 기초, even without those credits.",
+   "The minimum total of liberal-education credits must still be met.",
+   "The document does not describe the exemption procedure."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "The exemption does not lower the total of liberal-education credits required.",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "※ 별도의 절차를 통해‘컴퓨터의 기초, 컴퓨터의 개념 및 실습’교과목을 면제 받은 경우 학문의 기초(컴퓨터와 정보 활용)에서 이수학점을 충족하지 못하더라도 학문의 기초(컴퓨터와 정보 활용) 최저이수학점을 이수한 것으로 인정함. 단 전체 교양최저이수학점은 충족시켜야 함.",
+  "quotes_ko": [
+   "※ 별도의 절차를 통해‘컴퓨터의 기초, 컴퓨터의 개념 및 실습’교과목을 면제 받은 경우 학문의 기초(컴퓨터와 정보 활용)에서 이수학점을 충족하지 못하더라도 학문의 기초(컴퓨터와 정보 활용) 최저이수학점을 이수한 것으로 인정함. 단 전체 교양최저이수학점은 충족시켜야 함."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-worlds",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "학문의 세계 (areas of liberal education)",
+  "key": "12 credits from at least 3 of 5 areas",
+  "rule": [
+   "12 credits from at least 3 of these 5 areas: 언어와 문학 [language and literature], 문화와 예술 [culture and arts], 역사와 철학 [history and philosophy], 정치와 경제 [politics and economics], 인간과 사회 [humans and society].",
+   "The table also lists the areas 자연과 기술 and 생명과 환경, but the rule does not name them among the 5."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "• 5개영역 (언어와 문학, 문화와 예술, 역사와 철학, 정치와 경제, 인간과 사회)중 3개 영역 이상에서 12학점 이수",
+  "quotes_ko": [
+   "• 5개영역 (언어와 문학, 문화와 예술, 역사와 철학, 정치와 경제, 인간과 사회)중 3개 영역 이상에서 12학점 이수",
+   "자연과 기술 생명과 환경"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-worlds-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "학문의 세계 (areas of liberal education)",
+  "key": "12 credits from at least 4 of 5 areas",
+  "rule": [
+   "12 credits from at least 4 of these 5 areas: 언어와 문학 [language and literature], 문화와 예술 [culture and arts], 역사와 철학 [history and philosophy], 정치와 경제 [politics and economics], 인간과 사회 [humans and society].",
+   "The table also lists the areas 자연과 기술 and 생명과 환경, but the rule does not name them among the 5."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "• 5개영역 (언어와 문학, 문화와 예술, 역사와 철학, 정치와 경제, 인간과 사회)중 4개 영역 이상에서 12학점 이수",
+  "quotes_ko": [
+   "• 5개영역 (언어와 문학, 문화와 예술, 역사와 철학, 정치와 경제, 인간과 사회)중 4개 영역 이상에서 12학점 이수",
+   "자연과 기술 생명과 환경"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-keys",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "지성의 열쇠 (areas of liberal education)",
+  "key": "3 credits in each of three areas",
+  "rule": [
+   "3 credits in 문화 해석과 상상 [interpreting culture and imagination].",
+   "3 credits in 역사적 탐구와 철학적 사유 [historical inquiry and philosophical thought].",
+   "3 credits in 인간의 이해와 사회 분석 [understanding humans and analysing society].",
+   "A fourth area, 과학적 사고와 응용 [scientific thinking and application], is listed with no credits beside it."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "지성의 열쇠 문화 해석과 상상 3 역사적 탐구와 철학적 사유 3 인간의 이해와 사회 분석 3 과학적 사고와 응용",
+  "quotes_ko": [
+   "지성의 열쇠 문화 해석과 상상 3 역사적 탐구와 철학적 사유 3 인간의 이해와 사회 분석 3 과학적 사고와 응용"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-veritas",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "베리타스 (Veritas) area",
+  "key": "At least 3 credits",
+  "rule": [
+   "At least 3 credits in the 베리타스 area.",
+   "The table lists 베리타스 강좌 1, 베리타스 강좌 2 and 베리타스 실천 under this area."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "• 베리타스 영역에서 3학점 이상 이수",
+  "quotes_ko": [
+   "• 베리타스 영역에서 3학점 이상 이수",
+   "베리타스 강좌 1",
+   "베리타스 강좌 2 베리타스 실천"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-recommended-semesters",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "start_early",
+  "title": "Recommended semesters of the required liberal-education courses",
+  "key": "From year 1, semester 1; a recommendation",
+  "rule": [
+   "The year and semester printed beside a required course are a recommendation.",
+   "Year 1, semester 1: 대학글쓰기1, 수학1 (or 고급수학1) and 물리학 1.",
+   "Year 1, semester 2: 대학글쓰기2, 수학2 (or 고급수학2) and 물리학 2.",
+   "Year 2, semester 1: 공학수학 1 and 컴퓨터의 개념 및 실습.",
+   "Year 2, semester 2: 공학수학 2."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "※ 필수과목에 병기된 이수학기는 권장사항임",
+  "quotes_ko": [
+   "※ 필수과목에 병기된 이수학기는 권장사항임",
+   "필수과목 [학년-학기]",
+   "[1-1] 대학글쓰기1",
+   "[1-1] 수학1과 수학연습1 또는 고급수학1과 고급수학연습1",
+   "[1-1] 물리학 1",
+   "[1-2] 대학글쓰기2",
+   "[1-2] 수학2와 수학연습2 또는 고급수학2와 고급수학연습2",
+   "[1-2] 물리학 2",
+   "[2-1] 공학수학 1",
+   "[2-1] 컴퓨터의 개념 및 실습",
+   "[2-2] 공학수학 2"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-physics-placement",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "start_early",
+  "title": "Which physics courses to take",
+  "key": "물리학 1, 2 after high-school Physics 2; otherwise 물리의 기본 1, 2",
+  "rule": [
+   "As a rule, a student who completed high-school Physics 2 (물리2), or a physics course of the same or a higher level, takes 물리학 1 and 2.",
+   "As a rule, a student who did not takes 물리의 기본 1 and 2.",
+   "A student who should take 물리의 기본 1, 2 but wishes to take 물리학 1, 2 must sit the physics achievement test (물리학성취도평가) and obtain a certain score.",
+   "The document does not give that score."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "고교과정 물리2(고교과정 물리2와 동급 또는 더 높은 수준의 물리과목)를 이수한 학생은 ‘물리학1,2’를, 이수하지 않은 학생은 ‘물리의 기본1,2’를 이수하는 것을 원칙으로 함",
+  "quotes_ko": [
+   "고교과정 물리2(고교과정 물리2와 동급 또는 더 높은 수준의 물리과목)를 이수한 학생은 ‘물리학1,2’를, 이수하지 않은 학생은 ‘물리의 기본1,2’를 이수하는 것을 원칙으로 함",
+   "• ‘물리의 기본1,2’를 이수해야 하는 학생이 ‘물리학 1,2’를 수강하고자 할 경우 물리학성취도평가에 응시하여 일정 점수를 취득해야함"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-semester-credits",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "every_semester",
+  "title": "Credits per semester",
+  "key": "At most 18 credits as a rule; up to 21 with prior approval",
+  "rule": [
+   "As a rule, at most 18 credits are earned per semester.",
+   "A college may set this differently where the running of its curriculum requires it.",
+   "Up to 21 credits are possible when the grade average of the previous 2 semesters is 3.3 or higher, or when it is judged necessary for the running of the curriculum.",
+   "This needs the prior approval of the academic advisor (지도교수) and the head of the department.",
+   "The document quotes this from Article 75 of the university regulations (학칙)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "The approval must be obtained beforehand.",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "① 학사과정의 학기당 취득학점은 18학점 이내를 원칙으로 한다. 다만, 교과과정 운영상 필요한 경우에는 대학별로 따로 정할 수 있다.",
+  "quotes_ko": [
+   "① 학사과정의 학기당 취득학점은 18학점 이내를 원칙으로 한다. 다만, 교과과정 운영상 필요한 경우에는 대학별로 따로 정할 수 있다.",
+   "② 제1항에도 불구하고 직전 2개학기 성적 평점평균이 3.3 이상일 때 또는 교과과정운영상 필요하다고 인정될 때에는 대학별 학기당 취득학점을 초과하여 21학점까지 취득할 수 있다. 다만, 이 경우 지도교수와 학과(부)장의 사전 승인을 얻어야 한다.",
+   "※ 서울대학교 학칙 제4절 수강신청 및 학점취득 - 제75조(학사과정의 학기당 취득학점)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-foreign-lectures",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Courses taught in a foreign language",
+  "key": "Compulsory: 3 courses, including 1 major course",
+  "rule": [
+   "Taking at least 3 courses taught in a foreign language, including at least 1 major course, is compulsory.",
+   "대학영어 [College English] courses are not counted.",
+   "The document states this for students who entered from 2008, with reference to Articles 2 and 3 of a College of Engineering guideline."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "① 2008학년도 신입생부터 1과목 이상의 전공교과목을 포함하여 3과목 이상의 외국어 진행 강좌 (대학영어 제외) 수강을 의무화 한다.",
+  "quotes_ko": [
+   "① 2008학년도 신입생부터 1과목 이상의 전공교과목을 포함하여 3과목 이상의 외국어 진행 강좌 (대학영어 제외) 수강을 의무화 한다.",
+   "※ 서울대학교 공과대학 수업 편성 운영에 관한 지침 제2조, 제3조 관련"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-foreign-lectures-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Courses taught in a foreign language",
+  "key": "Recommended: 3 courses, including 1 major course",
+  "rule": [
+   "For students who entered as undergraduates from 2024, taking at least 3 courses taught in a foreign language, including at least 1 major course, is recommended.",
+   "대학영어 [College English] courses are not counted.",
+   "The sentence before it states the same as an obligation for students who entered from 2008; the 2024 sentence is written as its exception."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "(단, 2024학년도 학부 신입생부터 1과목 이상의 전공교과목을 포함하여 3과목 이상의 외국어 진행 강좌(대학영어 제외) 수강을 권장한다.)",
+  "quotes_ko": [
+   "(단, 2024학년도 학부 신입생부터 1과목 이상의 전공교과목을 포함하여 3과목 이상의 외국어 진행 강좌(대학영어 제외) 수강을 권장한다.)",
+   "① 2008학년도 신입생부터 1과목 이상의 전공교과목을 포함하여 3과목 이상의 외국어 진행 강좌 (대학영어 제외)를 수강하여야 한다."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "ae-ug-life-respect",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Life-respect (suicide-prevention) education",
+  "key": "Must be completed; provided by the College of Engineering",
+  "rule": [
+   "Complete the life-respect (suicide-prevention) education (생명존중(자살예방)교육) provided by the College of Engineering.",
+   "This applies to undergraduates who entered from 2016.",
+   "The document does not say when or how it is to be completed."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2026",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "② 2016학년도 학부 신입생부터 공과대학에서 제공하는 생명존중(자살예방)교육을 이수하여야 한다.",
+  "quotes_ko": [
+   "② 2016학년도 학부 신입생부터 공과대학에서 제공하는 생명존중(자살예방)교육을 이수하여야 한다."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
   "id": "ae-ms-completion",
   "programs": [
    "masters"

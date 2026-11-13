@@ -1,5 +1,910 @@
 [
  {
+  "id": "ne-ug-writing",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "start_early",
+  "title": "College writing courses",
+  "key": "대학 글쓰기 1 at [1-1], 대학 글쓰기 2 at [1-2]; 4 credits in total",
+  "rule": [
+   "The guide's note reads: [1-1] 대학 글쓰기 1 (College Writing 1), [1-2] 대학 글쓰기 2: 과학기술 글쓰기 (College Writing 2: Science and Technology Writing), 4 credits in total.",
+   "Each of the two courses is 2 credits in the course table.",
+   "The guide does not explain [1-1] and [1-2]. They are read here as year 1, semester 1 and year 1, semester 2."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "[1-1] 대학 글쓰기 1, [1-2] 대학 글쓰기 2: 과학기술 글쓰기 총 4학점",
+  "quotes_ko": [
+   "[1-1] 대학 글쓰기 1, [1-2] 대학 글쓰기 2: 과학기술 글쓰기 총 4학점",
+   "대학 글쓰기 1 (2)²",
+   "대학 글쓰기 2: 과학기술 글쓰기 (2)²"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-ge-total",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Liberal-education credits",
+  "key": "53 credits: 학문의 기초 41 and 학문의 세계 12",
+  "rule": [
+   "Required liberal-education (교양필수) courses: 53 credits.",
+   "학문의 기초 (foundations of scholarship): 41 credits.",
+   "학문의 세계 (worlds of knowledge): 12 credits, from at least 3 of these 5 areas: 언어와 문학 (language and literature), 문화와 예술 (culture and arts), 역사와 철학 (history and philosophy), 정치와 경제 (politics and economy), 인간과 사회 (humans and society).",
+   "The guide says the area rule applies from 2020 entrants."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "교양필수 교과목 [53학점",
+  "quotes_ko": [
+   "교양필수 교과목 [53학점",
+   "1. 학문의기초 …………  41",
+   "2. 학문의 세계 ……..  12",
+   "5개영역 (언어와 문학, 문화와 예술, 역사와 철학, 정치와 경제, 인간과 사회)중 3개 영역 이상에서 12학점 이수 - 2020학번부터"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-ge-total-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Liberal-education credits",
+  "key": "53 credits: 학문의 기초 41 and 학문의 세계 12",
+  "rule": [
+   "Required liberal-education (교양필수) courses: 53 credits.",
+   "학문의 기초 (foundations of scholarship): 41 credits.",
+   "학문의 세계 (worlds of knowledge): 12 credits, from at least 4 of these 5 areas: 언어와 문학 (language and literature), 문화와 예술 (culture and arts), 역사와 철학 (history and philosophy), 정치와 경제 (politics and economy), 인간과 사회 (humans and society).",
+   "The guide says the area rule applies from 2024 entrants."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "교양필수 교과목 [53학점]",
+  "quotes_ko": [
+   "교양필수 교과목 [53학점]",
+   "1. 학문의 기초 ………… 41",
+   "2. 학문의 세계 ………… 12",
+   "5개 영역(언어와 문학, 문화와 예술, 역사와 철학, 정치와 경제, 인간과 사회) 중 4개 영역 이상에서 12학점 이수 - 2024학번부터"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-ge-total-c",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Liberal-education credits",
+  "key": "53 credits: 학문의 토대 41, 지성의 열쇠 9, 베리타스 3",
+  "rule": [
+   "Required liberal-education (교양필수) courses: 53 credits.",
+   "학문의 토대 (foundations of scholarship): 41 credits.",
+   "지성의 열쇠 (keys of intellect): 9 credits in total, 3 credits from each of 3 areas: 문화 해석과 상상 (interpreting culture and imagination), 역사적 탐구와 철학적 사유 (historical inquiry and philosophical thought), 인간의 이해와 사회 분석 (understanding humans and analysing society).",
+   "베리타스 (Veritas): 3 credits from its 3 areas, 베리타스 강좌 1, 베리타스 강좌 2 and 베리타스 실천. The course table words this slot as 베리타스 강좌 1 or 2 or 실천.",
+   "The guide says both area rules apply from 2025 entrants."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "교양필수 교과목 [53학점]",
+  "quotes_ko": [
+   "교양필수 교과목 [53학점]",
+   "1. 학문의 토대 ………… 41",
+   "2. 지성의 열쇠 ………… 9",
+   "- 3개 영역(문화 해석과 상상, 역사적 탐구와 철학적 사유, 인간의 이해와 사회 분석) 에서 각 3학점씩 총 9학점 이수 - 2025학번부터",
+   "3. 베리타스 ………..…… 3",
+   "- 3개 영역(베리타스 강좌 1, 2, 베리타스 실천) 에서 3학점 이수 - 2025학번부터",
+   "베리타스 강좌1 또는 2 또는 실천"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-ge-foundation",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "학문의 기초 (foundations of scholarship) courses",
+  "key": "41 credits: languages, mathematics, science, computing, writing",
+  "rule": [
+   "학문의 기초: 41 credits.",
+   "Foreign language: 2 courses, or 고급영어 (Advanced English); the guide does not explain this 'or'.",
+   "수학 및 연습 1 and 2 (Mathematics and Practice 1, 2), or 고급수학 및 연습 1 and 2 (Advanced Mathematics and Practice 1, 2).",
+   "010.140 공학수학 1 and 010.141 공학수학 2 (Engineering Mathematics 1, 2), and 010.133 컴퓨터의 개념 및 실습; 3 credits each.",
+   "과학적 사고와 실험 (scientific thinking and experiments) courses: 16 credits, with the lab taken in the same semester.",
+   "대학 글쓰기 1 and 대학 글쓰기 2: 과학기술 글쓰기 (College Writing 1 and 2)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "1. 학문의 기초 ………… 41",
+  "quotes_ko": [
+   "1. 학문의 기초 ………… 41",
+   "- 외국어 2개 교과목 or 고급영어, 수학및연습 1ㆍ2 or 고급수학및연습1ㆍ2,",
+   "공학수학 1ㆍ2, 컴퓨터의개념 및 실습(3),",
+   "과학적사고와실험과목(16)/해당학기에 실험 동시수강",
+   "- 대학 글쓰기 1, 대학 글쓰기 2: 과학기술 글쓰기",
+   "010.140 공학수학1 (3)²",
+   "010.141 공학수학2 (3)²",
+   "010.133 컴퓨터의 개념 및 실습 (3)²"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-ge-foundation-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "학문의 토대 (foundations of scholarship) courses",
+  "key": "41 credits: writing 4, languages 6, maths 12, science 16, computing 3",
+  "rule": [
+   "학문의 토대: 41 credits.",
+   "Writing and speaking area (글쓰기와 말하기): 대학 글쓰기 1 and 대학 글쓰기 2: 과학기술글쓰기 (College Writing 1 and 2), 4 credits.",
+   "Foreign-language area: 2 foreign-language courses, 6 credits.",
+   "Mathematics, 12 credits: 수학 및 연습 1 and 2 or 고급수학 및 연습 1 and 2, with the practice class (연습교과목) taken in the same semester, and 010.140 공학수학 1 and 010.141 공학수학 2.",
+   "Science: 16 credits.",
+   "Computing: 010.133 컴퓨터의 개념 및 실습, 3 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "1. 학문의 토대 ………… 41",
+  "quotes_ko": [
+   "1. 학문의 토대 ………… 41",
+   "- 글쓰기와 말하기 영역: 대학 글쓰기 1, 대학 글쓰기 2: 과학기술글쓰기 (4학점)",
+   "- 외국어 영역: 외국어 2개 교과목 (6학점)",
+   "수학 및 연습 1ㆍ2 or 고급수학 및 연습 1ㆍ2 (동일학기에 연습교과목과 동시수강) / 공학수학 1ㆍ2 (수학 12학점)",
+   "(과학 16학점)",
+   "컴퓨터의 개념 및 실습 (컴퓨팅 3학점)",
+   "010.140 공학수학 1 (3)²",
+   "010.141 공학수학 2 (3)²",
+   "010.133 컴퓨터의 개념 및 실습 (3)²"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-science",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Science courses and their labs",
+  "key": "16 credits, labs included; lab in the same semester as its course",
+  "rule": [
+   "과학적 사고와 실험 (scientific thinking and experiments) courses: 16 credits, labs included.",
+   "Take the lab at the same time, in the same semester.",
+   "Physics: 물리학 1 or 고급물리학 1 (3 credits) with 물리학실험 1 (1 credit), and 물리학 2 or 고급물리학 2 (3) with 물리학실험 2 (1).",
+   "Chemistry or biology: 화학 1 or 생물학 1 (3) with 화학실험 1 or 생물학실험 1 (1).",
+   "Then 화학 2, 생물학 2 or 통계학 (statistics) (3) with 화학실험 2, 생물학실험 2 or 통계학실험 (1)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "과학적사고와실험 16학점",
+  "quotes_ko": [
+   "과학적사고와실험 16학점",
+   "이수(실험포함)",
+   "과학적사고와실험과목(16)/해당학기에 실험 동시수강",
+   "물리학1(또는 고급물리학1) (3)",
+   "물리학 실험1 (1)",
+   "물리학2(또는 고급물리학2) (3)",
+   "물리학 실험2 (1)",
+   "화학1 (3)/생물학1 (3)",
+   "화학 실험1 (1)/생물학실험1 (1)",
+   "화학2 / 생물학2 / 통계학 (3)",
+   "화학실험2 / 생물학실험2 / 통계학실험 (1)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-science-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Science courses and their labs",
+  "key": "16 credits, labs included; lab in the same semester as its course",
+  "rule": [
+   "Science area: 16 credits, labs included.",
+   "Take the lab course (실험교과목) at the same time, in the same semester.",
+   "The summary names 물리학 및 실험 1 and 2, 화학 및 실험 1 and 2, 생물학 및 실험 1 and 2, and 통계학 및 실험, without saying which combination makes up the 16 credits; the course table lays it out as follows.",
+   "Physics: 물리학 1 or 고급물리학 1 (3 credits) with 물리학실험 1 (1 credit), and 물리학 2 or 고급물리학 2 (3) with 물리학실험 2 (1).",
+   "Chemistry or biology: 화학 1 or 생물학 1 (3) with 화학실험 1 or 생물학실험 1 (1).",
+   "Then 화학 2, 생물학 2 or 통계학 (statistics) (3) with 화학실험 2, 생물학실험 2 or 통계학실험 (1)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "과학영역 16학점(실험 포함)",
+  "quotes_ko": [
+   "과학영역 16학점(실험 포함)",
+   "(과학 16학점)",
+   "물리학 및 실험 1ㆍ2 / 화학 및 실험 1ㆍ2  (동일학기에 실험교과목과 동시수강)",
+   "생물학 및 실험 1ㆍ2 / 통계학 및 실험 (동일학기에 실험교과목과 동시수강)",
+   "물리학1(또는 고급물리학1) (3)",
+   "물리학 실험1 (1)",
+   "물리학2(또는 고급물리학2) (3)",
+   "물리학 실험2 (1)",
+   "화학1 (3)/생물학1 (3)",
+   "화학 실험1 (1)/생물학실험1 (1)",
+   "화학2 / 생물학2 / 통계학 (3)",
+   "화학실험2 / 생물학실험2 / 통계학실험 (1)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-foreign-language",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "Foreign-language courses",
+  "key": "2 courses; 1 English course if TEPS at admission was 900 or below",
+  "rule": [
+   "Complete 2 foreign-language courses.",
+   "A student whose TEPS score at admission was 900 or below must complete 1 English course."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "The guide writes only 'TEPS 900' and does not say which TEPS scale it means.",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "¹ 외국어 2개 교과목 이수 (입학 시 TEPS 900점 이하인 학생은 영어 1과목 필수 이수)",
+  "quotes_ko": [
+   "¹ 외국어 2개 교과목 이수 (입학 시 TEPS 900점 이하인 학생은 영어 1과목 필수 이수)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-engineering-ge",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "general_education",
+  "title": "College of Engineering required liberal-education courses (공대필수교양)",
+  "key": "Rows marked ² in the course table",
+  "rule": [
+   "The mark ² in the course table means a College of Engineering required liberal-education course (공대필수교양).",
+   "Named courses that carry it: 010.133 컴퓨터의 개념 및 실습 (3 credits), 010.140 공학수학 1 (3), 010.141 공학수학 2 (3), 대학 글쓰기 1 (2) and 대학 글쓰기 2: 과학기술 글쓰기 (2)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "²  공대필수교양",
+  "quotes_ko": [
+   "²  공대필수교양",
+   "010.133 컴퓨터의 개념 및 실습 (3)²",
+   "010.140 공학수학1 (3)²",
+   "010.141 공학수학2 (3)²",
+   "대학 글쓰기 1 (2)²",
+   "대학 글쓰기 2: 과학기술 글쓰기 (2)²"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-major-total",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Major credits",
+  "key": "62 credits: 34 required and 28 elective",
+  "rule": [
+   "Major courses: 62 credits.",
+   "Required major courses (전필): 34 credits.",
+   "Elective major courses (전선): 28 credits."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "전필34 + 전선28 = 전공62",
+  "quotes_ko": [
+   "전필34 + 전선28 = 전공62"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-major-total-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Major credits",
+  "key": "62 credits; every required major course must be taken",
+  "rule": [
+   "Major courses: 62 credits, required (전필) plus elective (전선).",
+   "All required major courses must be taken.",
+   "This year's guide does not print how the 62 credits divide between required and elective."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "전공 [62학점] (전필 + 전선)",
+  "quotes_ko": [
+   "전공 [62학점] (전필 + 전선)",
+   "- 전필은 모두 수강해야함"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-major-required",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Required major courses",
+  "key": "Courses marked * in the course table; 34 credits stated",
+  "rule": [
+   "Courses marked * in the course table are required major courses (전공필수교과목).",
+   "409.201 핵공학개론 1, 409.202 핵공학개론 2, 409.214 공학물리기초, 409.209A 플라즈마전자역학 1 (3 credits each).",
+   "409.223 핵공학기초실험, M1509.000900A 원자력열유체공학, M1509.000200 핵공학현대물리 (3 credits each).",
+   "409.301A 원자로이론, 409.307A 플라즈마기초, M1509.001000 방사선 물리와 방호 (3 credits each).",
+   "409.328 원자핵공학세미나 1 (1 credit).",
+   "The guide states 34 required credits, but the courses it marks with * carry fewer; the two thesis-research courses are listed without the mark (see the card on them)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "*  전공필수교과목",
+  "quotes_ko": [
+   "*  전공필수교과목",
+   "409.201* 핵공학개론1 (3)",
+   "409.202* 핵공학개론2 (3)",
+   "409.214* 공학물리기초 (3)",
+   "409.209A* 플라즈마전자역학1 (3)",
+   "409.223* 핵공학기초실험 (3)",
+   "M1509.000900A* 원자력열유체공학 (3)",
+   "M1509.000200* 핵공학현대물리 (3)",
+   "409.301A* 원자로이론 (3)",
+   "409.307A* 플라즈마기초 (3)",
+   "M1509.001000* 방사선 물리와 방호 (3)",
+   "409.328* 원자핵공학세미나1 (1)",
+   "전필34 + 전선28 = 전공62"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-major-required-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Required major courses",
+  "key": "Courses marked * in the course table; 34 credits",
+  "rule": [
+   "Courses marked * in the course table are required major courses (전공필수교과목); the guide states 34 required credits.",
+   "409.201 핵공학개론 1, 409.202 핵공학개론 2, 409.214 공학물리 기초, 409.209A 플라즈마전자역학 1 (3 credits each).",
+   "409.223 핵공학기초실험, M1509.000200 핵공학 현대물리, M1509.000900A 원자력열유체공학 (3 credits each).",
+   "409.301A 원자로이론, 409.307A 플라즈마기초, M1509.001000 방사선 물리와 방호 (3 credits each).",
+   "409.328 원자핵공학세미나 1 (1 credit).",
+   "M1509.000500 원자핵공학 학사논문연구 1 (2 credits) and M1509.000600 원자핵공학 학사논문연구 2 (1 credit)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2024",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "* 전공필수교과목",
+  "quotes_ko": [
+   "* 전공필수교과목",
+   "409.201* 핵공학개론 1 (3)",
+   "409.202* 핵공학개론 2 (3)",
+   "409.214* 공학물리 기초 (3)",
+   "409.209A* 플라즈마전자역학 1 (3)",
+   "409.223* 핵공학기초실험 (3)",
+   "M1509.000200* 핵공학 현대물리 (3)",
+   "M1509.000900A* 원자력열유체공학 (3)",
+   "409.301A* 원자로이론 (3)",
+   "409.307A* 플라즈마기초 (3)",
+   "M1509.001000* 방사선 물리와 방호 (3)",
+   "409.328* 원자핵공학세미나1 (1)",
+   "M1509.000500* 원자핵공학 학사논문연구 1 (2)",
+   "M1509.000600* 원자핵공학 학사논문연구 2 (1)",
+   "전필34 + 전선28 = 전공62"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-major-required-c",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Required major courses",
+  "key": "Courses marked * in the course table; all must be taken",
+  "rule": [
+   "Courses marked * in the course table are required major courses (전공필수교과목), and all of them must be taken.",
+   "409.201 핵공학개론 1, 409.202 핵공학개론 2, M1509.001800 핵공학 물리 기초, 409.209A 플라즈마전자역학 1 (3 credits each).",
+   "409.223 핵공학기초실험, M1509.000900 원자력열유체공학 (3 credits each).",
+   "409.301A 원자로이론, 409.307A 플라즈마기초, M1509.001000 방사선 물리와 방호 (3 credits each).",
+   "409.328 원자핵공학세미나 1 (1 credit).",
+   "M1509.000500 원자핵공학 학사논문연구 1 (2 credits) and M1509.000600 원자핵공학 학사논문연구 2 (1 credit)."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "* 전공필수교과목",
+  "quotes_ko": [
+   "* 전공필수교과목",
+   "- 전필은 모두 수강해야함",
+   "409.201* 핵공학개론 1 (3)",
+   "409.202* 핵공학개론 2 (3)",
+   "M1509.001800* 핵공학 물리 기초 (3)",
+   "409.209A* 플라즈마전자역학 1 (3)",
+   "409.223* 핵공학기초실험 (3)",
+   "M1509.000900* 원자력열유체공학 (3)",
+   "409.301A* 원자로이론 (3)",
+   "409.307A* 플라즈마기초 (3)",
+   "M1509.001000* 방사선 물리와 방호 (3)",
+   "409.328* 원자핵공학세미나1 (1)",
+   "M1509.000500* 원자핵공학 학사논문연구 1 (2)",
+   "M1509.000600* 원자핵공학 학사논문연구 2 (1)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-lab",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Lab courses (실험교과목)",
+  "key": "9 credits from the guide's list of lab courses",
+  "rule": [
+   "Lab courses (실험교과목): 9 credits.",
+   "The guide's list: 핵공학기초실험, 시스템에너지전달공학, 핵융합플라즈마실험, 원자로열유체실험, 원자력시스템실습, 원자로물리실험, 핵공학시뮬레이션실습.",
+   "Their numbers in the course table: 409.223 핵공학기초실험, 409.313A 핵융합플라즈마 실험, M1509.000100 원자로열유체실험, 409.402F 원자력시스템실습, M1509.000400 원자로물리 실험, M1509.001100 핵공학 시뮬레이션 실습 (3 credits each).",
+   "시스템에너지전달공학 is on the list but is not in this year's course table, so the guide gives no number for it."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "1. 실험교과목 …….. 9학점",
+  "quotes_ko": [
+   "1. 실험교과목 …….. 9학점",
+   "- 핵공학기초실험,시스템에너지전달공학,핵융합플라즈마실험, 원자로열유체실험, 원자력시스템실습, 원자로물리실험, 핵공학시뮬레이션실습",
+   "409.223* 핵공학기초실험 (3)",
+   "409.313A 핵융합플라즈마 실험 (3)",
+   "M1509.000100 원자로열유체실험 (3)",
+   "409.402F 원자력시스템실습 (3)",
+   "M1509.000400 원자로물리 실험 (3)",
+   "M1509.001100 핵공학 시뮬레이션 실습 (3)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-lab-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "major_courses",
+  "title": "Lab courses (실험교과목)",
+  "key": "9 credits: 3 courses required from the guide's list",
+  "rule": [
+   "Lab courses (실험교과목): 9 credits. 3 courses from the guide's list are required.",
+   "The list: 409.223 핵공학기초실험, 409.313A 핵융합 플라즈마 실험, 409.402F 원자력시스템실습, M1509.000100 원자로 열유체 실험, M1509.000400 원자로물리 실험, M1509.001100 핵공학 시뮬레이션 실습, M1509.001700 원자력 재료 실험, 400.018 창의공학설계.",
+   "원자력 재료 실험 is a new course; the guide says it applies from the second semester of 2024.",
+   "400.018 창의공학설계 is recognised as a lab course only for students who took it from the second semester of 2024 onward."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "창의공학설계 taken before the second semester of 2024 is not recognised as a lab course.",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "1. 실험교과목 ………… 9학점",
+  "quotes_ko": [
+   "1. 실험교과목 ………… 9학점",
+   "- 핵공학기초실험, 핵융합 플라즈마 실험, 원자력시스템실습, 원자로 열유체 실험, 원자로물리 실험, 핵공학 시뮬레이션 실습, 원자력 재료 실험, 창의공학설계 ----- 3과목 필수",
+   "원자력 재료 실험(신설)은 2024학년도 2학기부터 적용함.",
+   "400.018 창의공학설계는 2024학년도 2학기부터 수강한 학생의 경우만 해당 교과목을 <실험교과목>으로 인정함.",
+   "409.223* 핵공학기초실험 (3)",
+   "409.313A 핵융합 플라즈마 실험 (3)",
+   "409.402F 원자력시스템실습 (3)",
+   "M1509.000100 원자로 열유체 실험 (3)",
+   "M1509.000400 원자로물리 실험 (3)",
+   "M1509.001100 핵공학 시뮬레이션 실습 (3)",
+   "M1509.001700 원자력 재료 실험 (3)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-department-credits",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "credit_rules",
+  "title": "Credits from the department's own courses",
+  "key": "At least 48 credits in department-offered courses",
+  "rule": [
+   "Complete at least 48 credits in courses offered by the department (학과개설교과목).",
+   "Courses can also be completed elsewhere in the College of Engineering and in the College of Natural Sciences.",
+   "The guide does not list which courses outside the department are accepted."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "학과개설교과목 48학점이상 이수, 기타 공과대학 및 자연과학대학에서도 이수가능",
+  "quotes_ko": [
+   "학과개설교과목 48학점이상 이수, 기타 공과대학 및 자연과학대학에서도 이수가능"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-total",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "finish_coursework",
+  "title": "Total credits to graduate",
+  "key": "130 credits; 53 of them required liberal education",
+  "rule": [
+   "130 credits in total.",
+   "Required liberal-education (교양필수) courses: 53 credits.",
+   "Major credits are on the card 'Major credits'.",
+   "This guide states no grade-average requirement and no limit on credits per semester."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "○  총 130학점",
+  "quotes_ko": [
+   "○  총 130학점",
+   "교양필수 교과목 [53학점"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-thesis",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Bachelor's thesis research courses",
+  "key": "학사논문연구 1 (2 credits) and 2 (1 credit) are required major courses",
+  "rule": [
+   "M1509.000500 원자핵공학 학사논문연구 1 (2 credits) and M1509.000600 원자핵공학 학사논문연구 2 (1 credit) carry the * that marks required major courses.",
+   "The guide says nothing else about a graduation thesis: no rule on submitting it, its form or a deadline."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "M1509.000500* 원자핵공학 학사논문연구 1 (2)",
+  "quotes_ko": [
+   "M1509.000500* 원자핵공학 학사논문연구 1 (2)",
+   "M1509.000600* 원자핵공학 학사논문연구 2 (1)",
+   "* 전공필수교과목"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-thesis-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Bachelor's thesis research courses",
+  "key": "Listed without the * that marks required major courses",
+  "rule": [
+   "M1509.000500 원자핵공학 학사논문연구 1 (2 credits) and M1509.000600 원자핵공학 학사논문연구 2 (1 credit) are in the course table without the * that marks required major courses.",
+   "The guide's text does not say whether these two courses are required; compare the 34 required major credits it states with the marked courses on the card 'Required major courses'.",
+   "The guide says nothing else about a graduation thesis: no rule on submitting it, its form or a deadline."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "M1509.000500 원자핵공학 학사논문연구1 (2)",
+  "quotes_ko": [
+   "M1509.000500 원자핵공학 학사논문연구1 (2)",
+   "M1509.000600 원자핵공학 학사논문연구2 (1)",
+   "*  전공필수교과목",
+   "전필34 + 전선28 = 전공62"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-foreign-lectures",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Courses taught in a foreign language",
+  "key": "Obligation: 3 courses, including 1 major course",
+  "rule": [
+   "Stated as an obligation (수강의무): take at least 3 courses taught in a foreign language, including 1 major course.",
+   "The guide says this applies from 2008 entrants.",
+   "From 2012 entrants, '대학영어' is excluded from the English-taught courses that count."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2023",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "※ 외국어진행강좌 수강의무 : 2008학번부터 전공 1과목 포함하여 3과목이상의 외국어 진행강좌 수강",
+  "quotes_ko": [
+   "※ 외국어진행강좌 수강의무 : 2008학번부터 전공 1과목 포함하여 3과목이상의 외국어 진행강좌 수강",
+   "(2012학번부터 영어강좌에서‘대학영어’제외)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-foreign-lectures-b",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Courses taught in a foreign language",
+  "key": "Recommended: 3 courses, including 1 major course",
+  "rule": [
+   "Stated as a recommendation (권장), not an obligation: take at least 3 courses taught in a foreign language, including 1 major course.",
+   "The guide says the recommendation applies from 2024 entrants.",
+   "From 2012 entrants, '대학영어' is excluded from the English-taught courses that count."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "※ 외국어 진행강좌 수강 권장: 2024학번부터 전공 1과목 포함하여 3과목 이상의 외국어 진행강좌 수강 권장",
+  "quotes_ko": [
+   "※ 외국어 진행강좌 수강 권장: 2024학번부터 전공 1과목 포함하여 3과목 이상의 외국어 진행강좌 수강 권장",
+   "(2012학번부터 영어강좌에서 ‘대학영어’ 제외)"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
+  "id": "ne-ug-life-respect",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Life-respect (suicide prevention) education",
+  "key": "Compulsory; certificate copy due when applying to graduate",
+  "rule": [
+   "Life-respect (suicide prevention) education (생명존중(자살예방) 교육) is compulsory for new students of the College of Engineering, undergraduate and graduate, from the 2016 academic year.",
+   "When applying for graduation, submit a copy of the certificate of completion (이수증) to the department."
+  ],
+  "why": "",
+  "when": "The certificate copy is handed in when applying for graduation.",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-2025",
+  "source_page": 0,
+  "source_page_also": 0,
+  "source_quote_ko": "※ 생명존중(자살예방) 교육: 2016학년도 공과대학 학사과정 및 대학원과정 신입생부터 생명존중(자살예방) 교육 이수가 의무이며, 졸업 신청 시 생명존중(자살예방)교육 이수증 사본을 학과(부)에 제출하여야 함",
+  "quotes_ko": [
+   "※ 생명존중(자살예방) 교육: 2016학년도 공과대학 학사과정 및 대학원과정 신입생부터 생명존중(자살예방) 교육 이수가 의무이며, 졸업 신청 시 생명존중(자살예방)교육 이수증 사본을 학과(부)에 제출하여야 함"
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025
+  ],
+  "updates": []
+ },
+ {
   "id": "ne-credits",
   "programs": [
    "masters",

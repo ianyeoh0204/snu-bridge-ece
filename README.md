@@ -75,6 +75,8 @@ Background page is about its boards. Aerospace, Naval and Nuclear were each adde
    uploaded). An AI assistant writes `tools/cards_<name>.py` from `prompts/write-cards.md`; the checks in
    `tools/cards_pdf.py` refuse a card whose Korean quote is not in the document or whose numbers are not in a quote.
    Rules published as web pages are read as in `tools/pages_aerospace.py`.
+   Undergraduate rules differ by year of admission: each card lists its `entry_years`, and where every year has its own
+   file the card's quotes must be in each of them (`tools/cards_nuclear_undergraduate.py` is the shortest example).
 3. **Second reading.** A model from another maker reads every card against the Korean with `prompts/read-cards.md`.
    Correct the cards and repeat until the findings stop mattering, then record the result in `data/<NAME>/audit.json`.
 4. Add `programs`, `headline_cards` and `files` to the config, run `python -m bridge site`, look at the department in

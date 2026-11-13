@@ -569,7 +569,8 @@ function openNotice(id) {
 const longDay = (iso) => `${iso.slice(8)} ${MONTHS[Number(iso.slice(5, 7)) - 1].slice(0, 3)}`;
 function programFacts(p) {
   const cards = cardsOf(p), years = yearsOf(p);
-  const fact = cards.find((c) => c.id === dept.headline_cards[p]);
+  const headline = [].concat(dept.headline_cards[p] || []);  // one card, or one per year of admission when the fact differs by year
+  const fact = cards.find((c) => headline.includes(c.id));
   const parts = fact ? fact.key.match(/^(\d+)\s+([^;]+)(?:;\s*(.+))?$/) : null;  // "24 credits; 3.0 average"
   return { label: PROGRAM[p] ? PROGRAM[p]() : DATA.program_labels[p], count: cards.length, number: parts ? parts[1] : "", unit: parts ? parts[2] : "",
     rest: [parts ? parts[3] : fact ? fact.key : "", years.length ? el("span", { class: "sub" }, B("Admitted {from} to {to}", { from: years[0], to: years[years.length - 1] })) : ""],

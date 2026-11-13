@@ -18,6 +18,7 @@
   "repository": "https://github.com/ianyeoh0204/snubridge",
   "read_on": "2026-11-13",
   "programs": [
+    "undergraduate",
     "masters",
     "phd",
     "integrated"
@@ -26,7 +27,11 @@
   "headline_cards": {
     "masters": "na-credits-ms",
     "phd": "na-credits-phd",
-    "integrated": "na-credits-integrated"
+    "integrated": "na-credits-integrated",
+    "undergraduate": [
+      "na-ug-total",
+      "na-ug-total-b"
+    ]
   },
   "files": [
     {
@@ -38,6 +43,11 @@
       "file": "rules-before",
       "name": "Graduate graduation rules of the department (1 September 2025)",
       "url": "https://naoe.snu.ac.kr/graduate/rule"
+    },
+    {
+      "file": "ug",
+      "name": "Course completion rules of the department, 2026 academic year (교과목 이수규정)",
+      "url": "https://naoe.snu.ac.kr/department/rule"
     }
   ]
 }
