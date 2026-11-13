@@ -195,10 +195,10 @@ def fig(big, caption, small=""):
     return f'<div class="fig"><b>{big}{f"<i>{small}</i>" if small else ""}</b><p>{caption}</p></div>'
 
 
-# Other layouts to compare (`python tools/poster.py equal` or `balanced`, written to out/poster/poster-<name>.*).
-# Both have a lower blue band. The judges read Korean, so the Korean is larger than on the first poster:
-# "equal" sets it at the size of the English above it; "balanced" at 85% of it, which looks the same size to the eye
-# because Korean characters fill their box, and never smaller than on the first poster.
+# Three layouts. The developer compared them on 14 Nov 2026 and chose "equal": the judges read Korean, so every Korean
+# line is the size of the English above it, and a lower blue band pays for the room. `python tools/poster.py` draws it
+# as out/poster/poster.*. The other two are kept to compare (`python tools/poster.py first` or `balanced`, written to
+# out/poster/poster-<name>.*): "first" is the tall band with small Korean, "balanced" has Korean at 85% of the English.
 LOWER_BAND = """
 .band { height: 196mm; padding: 22mm 44mm 0; grid-template-columns: 1fr auto; }
 .band h1 { margin: 3mm 0 8mm -1mm; font-size: 96mm; }
@@ -209,11 +209,14 @@ LOWER_BAND = """
 .grid { height: 1104mm; }
 .bar .ko { display: inline; margin-left: 5mm; }
 """
+CHOSEN = "equal"
 LAYOUTS = {
+    "first": "",
     "equal": LOWER_BAND + """
 .ko, .drow .dn small, .mock td small, .mock .kotitle { font-size: 1em !important; line-height: 1.24; }
 .col:first-child .panel:first-child { flex: 1.11 1 0; }
 .steps li { padding: 3.6mm 0; }
+.foot { grid-template-columns: 1.6fr 1.15fr auto; }
 """,
     "balanced": LOWER_BAND + """
 .ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
@@ -222,7 +225,7 @@ LAYOUTS = {
 }
 
 
-def build(variant=""):
+def build(variant=CHOSEN):
     import segno
 
     used_new.clear(), missing.clear()
@@ -448,7 +451,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .drow u {{ text-decoration: none; font-size: 11mm; text-align: right; color: #333; }}
 .drow.head {{ align-items: end; font-size: 8.6mm; color: #333; }}
 .drow.head em {{ font-size: 8.6mm; font-weight: 400; color: #002c84; line-height: 1.12; white-space: nowrap; justify-self: end; }}
-.drow.head u {{ font-size: 8.6mm; line-height: 1.12; }}
+.drow.head u {{ font-size: 8.6mm; line-height: 1.12; white-space: nowrap; justify-self: end; }}
 .drow.head .ko {{ display: block; margin: 0; font-size: 8.6mm; word-break: keep-all; }}
 .drow.own {{ margin: 0 -3mm; padding: 2.6mm 3mm; background: #002c84; color: #fff; border-bottom: 0; }}
 .drow.own .dn small, .drow.own em, .drow.own u {{ color: #fff; }}
@@ -491,7 +494,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 </footer>
 </body></html>"""
     OUT.mkdir(parents=True, exist_ok=True)
-    target = OUT / (f"poster-{variant}.html" if variant else "poster.html")
+    target = OUT / ("poster.html" if variant == CHOSEN else f"poster-{variant}.html")
     target.write_text(page, encoding="utf-8")
     return target
 
@@ -514,14 +517,24 @@ def print_pdf(page):
 
 
 if __name__ == "__main__":
-    variant = sys.argv[1] if len(sys.argv) > 1 else ""
-    if variant and variant not in LAYOUTS:
+    variant = sys.argv[1] if len(sys.argv) > 1 else CHOSEN
+    if variant not in LAYOUTS:
         sys.exit(f"No layout named {variant}. Choose from: {', '.join(LAYOUTS)}.")
     page = build(variant)
     if missing:  # before anything is printed: a poster with a line in English only must never be written
         sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))
     print_pdf(page)
-    if variant:  # a layout to compare: the sheet for the Korean reader belongs to the poster that is sent
+    if variant == CHOSEN and (ROOT / "site").is_dir():
+        # The same page scaled to fit a browser pane, for the developer to click on a part and say what to change
+        # (http://localhost:8770/poster/ with the local preview running). site/ is built again on GitHub and never
+        # uploaded from here, so the author's name and the lab logo stay on this machine.
+        preview = ROOT / "site" / "poster"
+        preview.mkdir(exist_ok=True)
+        (preview / "index.html").write_text(page.read_text(encoding="utf-8").replace(
+            "</style>", "html { zoom: .14; overflow: auto !important; height: auto !important; } body { overflow: visible !important; }</style>", 1), encoding="utf-8")
+        if (OUT / "lab-logo.png").exists():
+            (preview / "lab-logo.png").write_bytes((OUT / "lab-logo.png").read_bytes())
+    if variant != CHOSEN:  # a layout to compare: the sheet for the Korean reader belongs to the poster that is sent
         sys.exit()
     review = ["# Korean lines written for the poster only", "",
               "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]

@@ -509,3 +509,8 @@ The developer read the page and found three places where the site and the poster
 - A third layout (14 Nov): `python tools/poster.py balanced`, the lower band with Korean at 85% of its English and never
   smaller than on the first poster. It leaves room in every panel (146 to 393 px between parts at screen scale), which
   could go to larger small type in both languages. Three files to compare: `poster`, `poster-equal`, `poster-balanced`.
+- The developer chose the "equal" layout (14 Nov): it is now what `python tools/poster.py` draws as `out/poster/poster.*`.
+  `first` and `balanced` remain as arguments, to compare. The chart's column headings keep each language on one line.
+  Every build also writes a scaled copy to `site/poster/` (local only): with the preview running, the developer opens
+  http://localhost:8770/poster/ and clicks the part to change, as on the site. The developer asked why not Canva: the
+  poster is drawn by code so that every number comes from the same data as the site and is right on the day it is built.
