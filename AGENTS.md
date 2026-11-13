@@ -365,3 +365,12 @@ start a second department's requirements before 20 Nov was lifted by the develop
   "nothing new". `board.pause` in a config sets the seconds between requests (Naval: 5).
 - The developer had the cost per notice ("about 0.06 USD") removed from the poster and the site: it depends on the model
   used, and the point is that the flow is automatic by design. Do not put a cost figure back.
+- Older repositories (13 Nov, on the developer's yes): the daily jobs of `ianyeoh0204/snu-bridge` and
+  `ianyeoh0204/snu-bridge-students` are disabled and the Pages sites `snu-bridge-site` and `snu-bridge-students` are
+  unpublished (nothing deleted; both can be switched back on). They were still reading the ECE site daily and spending
+  the developer's SNU gateway credit. The developer had asked the older project to read images and attachments while
+  waiting for the office's permission; this project does not, and that stays so until permission arrives.
+- Each notice has a button that copies a question for ChatGPT Edu carrying the ORIGINAL notice's address (the
+  developer's point: the assistant should read the department's own page, not pass through this site's translation).
+  Ideas from the older repositories the developer declined: a "due next" list (not relevant to every student), and a
+  booth script for now (after 20 Nov).

@@ -217,6 +217,9 @@
   "Also on this site: {name}, {n} requirements and {m} notices": "이 사이트의 다른 학과: {name}, 요건 {n}개와 공지 {m}건",
   "Written from the department's own rules on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.": "{date}에 학과의 자체 규정을 바탕으로 작성했습니다. 코드와 같은 개발사의 독립적인 AI 판독 1회로 확인했으며, 개발사가 다른 2차 판독자는 읽지 않았습니다.",
   "Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were re-read by a second reader from another maker; its notices were not.": "다른 학과 {name}: 학과의 자체 규정을 바탕으로 작성한 요건 {n}개와 {date} 이후의 공지. 요건은 개발사가 다른 2차 판독자가 다시 읽었으며, 공지는 다시 읽지 않았습니다.",
-  "Changing the AI provider means changing one file.": "AI 제공업체를 바꾸려면 파일 하나만 바꾸면 됩니다."
+  "Changing the AI provider means changing one file.": "AI 제공업체를 바꾸려면 파일 하나만 바꾸면 됩니다.",
+  "Copy a question about the original notice for {assistant}": "{assistant}에 붙여 넣을 원문 공지 질문 복사",
+  "Copied. Paste it into {assistant}.": "복사했습니다. {assistant}에 붙여 넣으세요.",
+  "Copy this question": "이 질문을 복사하세요"
  }
 }
