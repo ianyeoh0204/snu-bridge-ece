@@ -464,6 +464,8 @@ The developer read the page and found three places where the site and the poster
 - **Departments table.** The column "Of them, with an English title" is gone from both tables on the site, as on the
   poster. One row showed two different "English title" counts (Korean board and English board). The total of 25 stays
   above the table with its list of links. Do not bring a per-department English-title column back.
+  Each row's English side is one count (posts on its English board), and the poster's two sentences under its chart
+  (80 posts on 7 boards, 36 titled in English; Aerospace and Industrial Engineering) stand under the site's table.
 - **The sample.** `tools/survey.py sample` counts pages with a run of eight or more English words beyond the site's own
   menus. The sentence says that and no more: "had a passage of English in the page text".
 - The two links under one item ran together on a narrow screen (`.plain li > span` made the link row a block).

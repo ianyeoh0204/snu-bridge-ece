@@ -52,8 +52,6 @@ POSTER_KO = {
         "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
     "The gap": "격차",
     "English board posts": "영어 게시판 게시물",
-    "{a}'s English board: last post in {month} {year}. {b}'s: {n} posts, all with Korean titles.":
-        "{a} 영어 게시판: 마지막 게시물 {year}년 {month}월. {b} 영어 게시판: 게시물 {n}건 모두 한국어 제목.",
     "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
         "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
     "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
@@ -119,8 +117,6 @@ POSTER_KO.update({
     "Master's program": "석사과정",
     "of them, English title": "이 중 영어 제목",
     "of them have a title in English": "이 가운데 제목이 영어인 공지",
-    "The {k} separate English boards: {n} posts in the same period, {m} with an English title.":
-        "별도 영어 게시판 {k}곳: 같은 기간 게시물 {n}건, 이 중 영어 제목 {m}건",
     "same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.":
         "same: 영어 메뉴에 한국어 게시판의 공지가 한국어 그대로 표시됩니다. –: 영어 사이트 없음. 따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
     "A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.":

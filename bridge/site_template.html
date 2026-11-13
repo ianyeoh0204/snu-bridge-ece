@@ -649,13 +649,14 @@ function renderAbout() {
   // The same count on other departments' boards (tools/survey.py), with this department's own boards for the same period.
   const sv = DATA.survey;
   // One period for every count (tools/survey.py and tools/evidence.py share it), and one test for English: the title.
-  // The "in English" column counts a title in English on either board, so the rows add up to the figure above the table.
+  // Each row shows two plain counts, as the poster does: notices on the Korean boards, and posts on the English board.
+  // English titles are counted once for all departments (the figure above the table), never per row.
   const span = (from, to) => [{ from: fullDate(from), to: fullDate(to) }, { from: koDate(from), to: koDate(to) }];
   const svRow = (cls, name, korean, side) => el("div", { class: "row " + cls }, el("div", null, ...name),
     el("div", { class: "n" }, el("small", { class: "lab" }, L("Notices on the Korean board")), korean), el("div", null, ...side));
   const svSide = (d) => d.english_side === "same_posts" ? B("The English menu shows the Korean board's own notices, in Korean")
     : d.english_side === "none" ? B("No English site; a browser translation button")
-    : d.english_posts ? B("Posts on its English board: {n}. With an English title: {m}", { n: num(d.english_posts), m: num(d.english_posts_titled) })
+    : d.english_posts ? B("Posts on its English board: {n}", { n: num(d.english_posts) })
     : B("English board: no post in the period. Last post: {date}", { date: fullDate(d.english_last_post) }, { date: koDate(d.english_last_post) });
   // The page is read as five short steps, widest first: other departments, this department, examples, method, checks.
   // Only the step on screen is built, so its parts move into place when the reader arrives at it.
@@ -702,6 +703,12 @@ function renderAbout() {
         el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", null, B("Its English board in the same period"))),
         ...sv.departments.map((d) => svRow(d.this_site ? "own" : "", [d.name, below(d.name_ko)],
           (d.approximate ? "≈ " : "") + num(d.korean), svSide(d)))),
+      el("p", { class: "aboutnote" }, B("The {k} separate English boards: {n} posts in the same period, {m} with an English title.", { k: sv.totals.english_boards, n: sv.totals.english_posts, m: sv.totals.english_posts_titled })),
+      (() => { const apart = sv.departments.filter((d) => d.english_side === "separate"), by = (f) => (a, b) => (f(a) < f(b) ? -1 : 1);
+        const silent = apart.filter((d) => !d.english_posts).sort(by((d) => d.english_last_post))[0], korean = apart.filter((d) => d.english_posts && !d.english_posts_titled).sort(by((d) => -d.english_posts))[0];
+        return silent && korean ? el("p", { class: "aboutnote" }, B("{a}'s English board: last post in {month} {year}. {b}'s: {n} posts, all with Korean titles.",
+          { a: silent.name, month: MONTHS[Number(silent.english_last_post.slice(5, 7)) - 1], year: silent.english_last_post.slice(0, 4), b: korean.name, n: korean.english_posts },
+          { a: silent.name_ko, month: Number(silent.english_last_post.slice(5, 7)), b: korean.name_ko })) : ""; })(),
       el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("All {n} of them, to open and check", { n: num(sv.totals.english_titled) })), el("span", null, B("Newest first"))),
       el("ul", { class: "plain titles" }, ...sv.departments.flatMap((d) => d.english_titles.map((t) => Object.assign({ dept: d }, t))).sort((a, b) => (a.date < b.date ? 1 : -1))
         .map((t) => el("li", null, out(t.url, t.title), el("span", { class: "links" }, `${t.date} · ${t.dept.name} · ${t.dept.name_ko}`)))),
