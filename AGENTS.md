@@ -527,3 +527,10 @@ The developer read the page and found three places where the site and the poster
   12 mm). The note "The second reader is an AI model. It is not a check by a person or by the department." is off the
   poster: the developer found it redundant beside "agreed by the second AI reader". The room it freed went to a larger
   chart. The site keeps its own sentence, because there no other line says the second reader is an AI model.
+- A product-first layout to compare (14 Nov, night): `python tools/poster.py product` writes `out/poster/poster-product.*`.
+  The developer could not find the requirements, the notices or the calendar on the poster and thought the missing
+  English notices were overstated. In this layout "What it does" is the tall panel with three large numbers (279
+  requirements, 295 notices in English, 149 calendar dates), each with a real example; the requirement example is the
+  master's credit card (24 credits), not the module seminar; "The gap" is an ordinary panel without the two notes on
+  Aerospace's and Industrial's boards, which stay on the site. The poster that is sent is still `poster.pdf` (the
+  "equal" layout) until the developer picks.

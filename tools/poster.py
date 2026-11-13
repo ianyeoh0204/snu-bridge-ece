@@ -104,6 +104,13 @@ POSTER_KO = {
     "For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.":
         "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
     "Not an official Seoul National University website.": "서울대학교 공식 웹사이트가 아닙니다.",
+    "requirements to graduate, in {d} departments. Each cites its file, page and Korean line.":
+        "{d}개 학과의 졸업 요건입니다. 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
+    "department notices in English, in {d} departments. Each gives who must act, the dates, the conditions, the steps and the full translation.":
+        "{d}개 학과의 공지를 영어로 제공합니다. 공지마다 조치 대상, 날짜, 조건, 절차, 전문 번역을 보여 줍니다.",
+    "dates from ECE's notices, ready for your calendar, past ones included. Each matches the weekday the notice prints.":
+        "전기·정보공학부 공지의 날짜로, 지난 일정을 포함하며 캘린더에 추가할 수 있습니다. 모두 공지에 적힌 요일과 일치합니다.",
+    "Add the notices' dates to your calendar.": "공지의 날짜를 내 캘린더에 추가해 보세요.",
     "Separate job, scholarship, news and seminar boards are not counted.": "따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
 }
 
@@ -226,11 +233,35 @@ LAYOUTS = {
 .steps li { padding: 3.6mm 0; }
 .foot { grid-template-columns: 1.6fr 1.15fr auto auto; }
 """,
+    "product": "",  # filled in below: the chosen layout plus its own rules
     "balanced": LOWER_BAND + """
 .ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
 .drow .dn small, .mock td small, .drow.head .ko, .band aside .ko { font-size: max(.85em, 8.6mm) !important; }
 """,
 }
+
+
+# "product" (to compare, 14 Nov 2026): the developer found the requirements, the notices and the calendar hard to find
+# on the poster, and the missing English notices overstated. Here "What it does" is the tall panel, on the right, with
+# one large number and one example for each of the three, and "The gap" is an ordinary panel. The top row reads
+# Why now, The gap, What it does; the bottom row How it works, Try it, Checks performed.
+LAYOUTS["product"] = LAYOUTS["equal"] + """
+.col.mid .panel:first-child { flex: 1.85 1 0; }
+.col:last-child .panel:first-child { flex: 4.6 1 0; }
+.col:last-child .panel:first-child .body { gap: 6mm; }
+.does .figs.rows .fig { grid-template-columns: 138mm minmax(0, 1fr); padding: 4mm 6mm; }
+.does .figs.rows .fig b { font-size: 54mm; }
+.does .figs.rows .fig p { font-size: 12.6mm; line-height: 1.2; }
+.does .mock h4 { font-size: 16mm; }
+.does .mock .key { font-size: 14.5mm; }
+.does .mock .src, .does .mock .meta, .does .mock .kotitle { font-size: 11mm; }
+.does .mock table { font-size: 11.4mm; }
+.small-gap .heropair b { font-size: 48mm; }
+.small-gap .drow { grid-template-columns: 190mm minmax(0, 1fr) 50mm; font-size: 10.6mm; }
+.small-gap .drow:not(.own):not(.head) { padding: 1.7mm 0; }
+.small-gap .drow.own { padding: 1.6mm 3mm; }
+.small-gap .stand { font-size: 12.4mm; padding: 4mm 6mm; }
+"""
 
 
 def build(variant=CHOSEN):
@@ -356,7 +387,29 @@ def build(variant=CHOSEN):
                + f'<p class="small">{bi("Notices need a small reader for each kind of board software. Translation and publishing are reused.")}</p>')
     try_it = f'<div class="body">{try_list}{extends}</div>'
 
+    if variant == "product":
+        # the example requirement: the master's headline card, with the rule line whose every number is in its Korean quote
+        head = next(c for c in cards if c["id"] == ece["headline_cards"]["masters"])
+        line = next(r for r in head["rule"] if digits(r) and digits(r) <= digits(head["source_quote_ko"]))
+        head_source = next(x for x in ece["files"] if x["file"] == head["source_file"])
+        example = (f'<div class="mock"><p class="meta">{program}</p><h4>{html.escape(head["title"])}</h4><p class="key">{html.escape(line)}</p>'
+                   f'<p class="src">{bi("Source")}: {html.escape(head_source["name"])}, {fill("page {n}", {"n": head["source_page"]})} · <span lang="ko">{html.escape(head["source_quote_ko"])}</span></p></div>')
+        translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
+                             if (d.parent / "briefs" / f"{n['id']}.json").exists())
+        row = lambda big, caption: f'<div class="figs rows">{fig(num(big), caption)}</div>'
+        does = ('<div class="body does">'
+                + row(all_cards, bi("requirements to graduate, in {d} departments. Each cites its file, page and Korean line.", {"d": len(audits)})) + example
+                + row(translated_all, bi("department notices in English, in {d} departments. Each gives who must act, the dates, the conditions, the steps and the full translation.", {"d": len(audits)})) + translated
+                + row(calendar["events"], bi("dates from ECE's notices, ready for your calendar, past ones included. Each matches the weekday the notice prints."))
+                + f"<div>{extends}</div></div>")
+        gap = (f'<div class="body small-gap"><p class="period">{period}</p>{heropair}{chart}<p class="stand">{english_boards}</p><p class="note">'
+               + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p></div>")
+        tries[2] = bi("Add the notices' dates to your calendar.")
+        try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
+        try_it = f'<div class="body">{try_list}</div>'
     columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
+               [bar("The gap", "2") + gap, bar("Try it", "5") + try_it],
+               [bar("What it does", "3") + does, bar("Checks performed", "6") + checked]] if variant == "product" else [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Checks performed", "5") + checked],
                [bar("What it does", "3") + does, bar("Try it", "6") + try_it]]
     grid = "".join(f'<div class="col{" mid" if i == 1 else ""}">' + "".join(f'<section class="panel">{p}</section>' for p in column) + "</div>"
