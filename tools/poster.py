@@ -103,7 +103,6 @@ POSTER_KO = {
     "What it does not do": "하지 않는 일",
     "For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.":
         "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
-    "Not an official Seoul National University website.": "서울대학교 공식 웹사이트가 아닙니다.",
     "requirements to graduate, in {d} departments. Each cites its file, page and Korean line.":
         "{d}개 학과의 졸업 요건입니다. 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
     "department notices in English, in {d} departments. Each gives who must act, the dates, the conditions, the steps and the full translation.":
@@ -111,6 +110,22 @@ POSTER_KO = {
     "dates from ECE's notices, ready for your calendar, past ones included. Each matches the weekday the notice prints.":
         "전기·정보공학부 공지의 날짜로, 지난 일정을 포함하며 캘린더에 추가할 수 있습니다. 모두 공지에 적힌 요일과 일치합니다.",
     "Add the notices' dates to your calendar.": "공지의 날짜를 내 캘린더에 추가해 보세요.",
+    "Departments post their notices in Korean.": "학과 공지는 한국어로 게시됩니다.",
+    "SNU Bridge shows each notice in English.": "SNU Bridge는 각 공지를 영어로 보여 줍니다.",
+    "Each graduation requirement shows its source.": "졸업 요건마다 출처를 보여 줍니다.",
+    "It runs by itself, once a day.": "하루 한 번, 스스로 실행됩니다.",
+    "A second AI and plain code check the first.": "두 번째 AI와 코드가 첫 번째 AI를 검증합니다.",
+    "What it does not do yet, and what comes next.": "아직 하지 않는 일과 다음 단계",
+    "Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item shows its Korean source.":
+        "공과대학 {d}개 학과의 공지와 졸업 요건을 외국인 학생을 위해 영어로 제공합니다. 새 공지는 매일 번역하며, 항목마다 한국어 원문을 함께 보여 줍니다.",
+    "The academic board of Electrical and Computer Engineering, {date}.": "전기·정보공학부 학사 게시판, {date}.",
+    "{n} notices in English so far, from {d} departments. Each date sits beside its Korean, and each notice links to the original.":
+        "지금까지 {d}개 학과의 공지 {n}건을 영어로 제공합니다. 날짜마다 한국어 원문을 함께 보여 주고, 공지마다 원문으로 연결합니다.",
+    "ECE's dates can also be added to a calendar.": "전기·정보공학부의 날짜는 캘린더에도 추가할 수 있습니다.",
+    "{n} requirements to graduate, in {d} departments, by program and year of entry. Each cites its file, page and Korean line.":
+        "{d}개 학과의 졸업 요건 {n}개를 과정과 입학 연도별로 제공합니다. 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
+    "For images and attachments, use ChatGPT Edu. The site does not read them.": "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다.",
+    "It does not replace the department office. Translations are made by AI and can be wrong.": "학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
     "Separate job, scholarship, news and seminar boards are not counted.": "따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
 }
 
@@ -234,6 +249,7 @@ LAYOUTS = {
 .foot { grid-template-columns: 1.6fr 1.15fr auto auto; }
 """,
     "product": "",  # filled in below: the chosen layout plus its own rules
+    "talk": "",
     "balanced": LOWER_BAND + """
 .ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
 .drow .dn small, .mock td small, .drow.head .ko, .band aside .ko { font-size: max(.85em, 8.6mm) !important; }
@@ -261,6 +277,43 @@ LAYOUTS["product"] = LAYOUTS["equal"] + """
 .small-gap .drow:not(.own):not(.head) { padding: 1.7mm 0; }
 .small-gap .drow.own { padding: 1.6mm 3mm; }
 .small-gap .stand { font-size: 12.4mm; padding: 4mm 6mm; }
+"""
+
+
+# "talk" (to compare, 14 Nov 2026): the developer said the poster looked nice but did not help to explain the project,
+# and a reader with no history agreed: there was no picture of the site on it. Here each panel is headed by a sentence
+# the presenter says and holds one thing to point at: the department's Korean board, the same notice in English, a
+# requirement with its source (three real screenshots from tools/poster_shots.py), the daily flow, the checks, the limits.
+LAYOUTS["talk"] = LAYOUTS["equal"] + """
+.bar { font-size: 15.5mm; }
+.bar .ko { display: block; margin: 1.5mm 0 0; font-size: 12.5mm !important; }
+.col .panel, .col.mid .panel:first-child, .col:first-child .panel:first-child { flex: 0 0 auto; }
+.col .panel:last-child { flex: 1 1 0; }
+.body { justify-content: flex-start; gap: 7mm; }
+.shot { overflow: hidden; border: .6mm solid #000; }
+.shot img { display: block; width: 100%; }
+.shot.board { aspect-ratio: 662 / 384; }
+.shot.notice { aspect-ratio: 600 / 782; }
+.shot.card { aspect-ratio: 600 / 600; }
+.shot.board img { width: 166.2%; margin: -94.6% 0 0 -41.2%; }
+.cap2 { font-size: 13.4mm; line-height: 1.24; }
+.where { font-size: 9.6mm; color: #444; margin-top: -4mm; }
+.heropair b { font-size: 50mm; }
+.flow { list-style: none; }
+.flow li { position: relative; margin-bottom: 13mm; padding: 5mm 7mm 6mm; border: .7mm solid #000; }
+.flow li:last-child { margin-bottom: 0; border-style: dashed; }
+.flow li:nth-child(-n+2)::after { content: ""; position: absolute; left: 50%; bottom: -11.5mm; margin-left: -8mm; border: 8mm solid transparent; border-top: 9mm solid #002c84; border-bottom: 0; }
+.foot { grid-template-columns: 1fr auto auto; }
+.foot div:first-child { display: none; }
+.foot div:nth-child(2) { text-align: left; }
+.checks .figs.rows .fig { grid-template-columns: 150mm minmax(0, 1fr); padding: 4mm 6mm; }
+.checks .figs.rows .fig b { font-size: 44mm; }
+.checks .figs.rows .fig p { font-size: 12.8mm; line-height: 1.22; }
+.limits li { padding: 6mm 0; font-size: 14mm; line-height: 1.24; }
+.flow h4 { font-size: 17mm; }
+.flow p { font-size: 13mm; }
+.flow li b { font-size: 36mm; }
+.checks .stand { font-size: 14mm; }
 """
 
 
@@ -407,7 +460,35 @@ def build(variant=CHOSEN):
         tries[2] = bi("Add the notices' dates to your calendar.")
         try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
         try_it = f'<div class="body">{try_list}</div>'
-    columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
+    tagline = bi("A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")
+    foot_left = f'<b>{bi("What it does not do")}</b>' + bi("For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.")
+    if variant == "talk":
+        shots = OUT / "shots"
+        if not all((shots / f"{name}.png").exists() for name in ("board", "notice", "card")):
+            sys.exit("The screenshots are missing: run tools/poster_shots.py first.")
+        shot = lambda name: f'<div class="shot {name}"><img src="shots/{name}.png" alt=""></div>'
+        translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
+                             if (d.parent / "briefs" / f"{n['id']}.json").exists())
+        taken = day(datetime.date.fromtimestamp((shots / "board.png").stat().st_mtime).isoformat())
+        tagline = bi("Notices and graduation requirements of {d} engineering departments, in English, for international students. New notices are translated daily, and every item shows its Korean source.", {"d": len(audits)})
+        p1 = ('<div class="body">' + shot("board") + f'<p class="where">{bi("The academic board of Electrical and Computer Engineering, {date}.", {"date": taken[0]}, {"date": taken[1]})}</p>'
+              + heropair + f'<p class="where">{period}</p>'
+              + f'<p class="cap2">{bi("SNU is working to bring in more international students.")}</p><p class="cap2">{funded}</p></div>')
+        p2 = ('<div class="body">' + shot("notice")
+              + f'<p class="cap2">{bi("{n} notices in English so far, from {d} departments. Each date sits beside its Korean, and each notice links to the original.", {"n": translated_all, "d": len(audits)})}</p>'
+              + '<p class="cap2">' + bi("ECE's dates can also be added to a calendar.") + "</p></div>")
+        p3 = ('<div class="body">' + shot("card")
+              + f'<p class="cap2">{bi("{n} requirements to graduate, in {d} departments, by program and year of entry. Each cites its file, page and Korean line.", {"n": all_cards, "d": len(audits)})}</p></div>')
+        p4 = '<div class="body">' + steps.replace('<ol class="steps">', '<ol class="steps flow">') + "</div>"
+        p5 = ('<div class="body checks"><div class="figs rows">' + "".join(checks) + f"</div>{who}</div>")
+        p6 = ('<div class="body"><ul class="rule limits">'
+              + f'<li>{bi("For images and attachments, use ChatGPT Edu. The site does not read them.")}</li>'
+              + f'<li>{bi("It does not replace the department office. Translations are made by AI and can be wrong.")}</li>'
+              + f'<li>{bi("Notices need a small reader for each kind of board software. Translation and publishing are reused.")}</li></ul></div>')
+        foot_left = ""
+    columns = [[bar("Departments post their notices in Korean.", "1") + p1, bar("It runs by itself, once a day.", "4") + p4],
+               [bar("SNU Bridge shows each notice in English.", "2") + p2, bar("What it does not do yet, and what comes next.", "5") + p6],
+               [bar("Each graduation requirement shows its source.", "3") + p3, bar("A second AI and plain code check the first.", "6") + p5]] if variant == "talk" else [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Try it", "5") + try_it],
                [bar("What it does", "3") + does, bar("Checks performed", "6") + checked]] if variant == "product" else [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Checks performed", "5") + checked],
@@ -546,14 +627,14 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
   <div>
     <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
     <h1>SNU Bridge</h1>
-    <p class="tag">{bi("A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")}</p>
+    <p class="tag">{tagline}</p>
   </div>
   <aside>{qr}<p>{bi("Scan to open the site")}</p><p>{html.escape(SITE.replace("https://", "").rstrip("/"))}</p><p class="author"><b>{html.escape(author.split(" · ")[0])}</b><span>{html.escape(" · ".join(author.split(" · ")[1:]))}</span></p></aside>
 </header>
 <main class="grid">{grid}</main>
 <footer class="foot">
-  <div><b>{bi("What it does not do")}</b>{bi("For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
-  <div>{bi("Not an official Seoul National University website.")}{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
+  <div>{foot_left}</div>
+  <div>{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
   {logo}
 </footer>
 </body></html>"""

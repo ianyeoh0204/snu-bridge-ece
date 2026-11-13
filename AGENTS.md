@@ -534,3 +534,19 @@ The developer read the page and found three places where the site and the poster
   master's credit card (24 credits), not the module seminar; "The gap" is an ordinary panel without the two notes on
   Aerospace's and Industrial's boards, which stay on the site. The poster that is sent is still `poster.pdf` (the
   "equal" layout) until the developer picks.
+
+## The poster as something to point at (14 Nov 2026, night)
+- The developer: the poster "looks nice but does not help me explain to the audience", and small edits were not fixing
+  it. A fresh model with no history, playing a judge, said the same and why: no picture of the site anywhere, eleven
+  large numbers of equal weight, every number needing a footnote, the scope changing from panel to panel (one
+  department, ten, four, ECE), and a third of the sheet spent on things nobody needs to point at.
+- The rule that replaces line-by-line editing: the poster follows the spoken explanation. Each panel is headed by a
+  sentence the presenter says and holds one thing to point at. Anything the presenter would not say or point at comes
+  off (so: no "student project", no "not an official website", no "the second reader is an AI model", no "Try it"
+  instructions, no ten-row chart; the chart and the Why-now detail stay on the site).
+- `python tools/poster.py talk` draws that layout to `out/poster/poster-talk.*`, to compare. Its three pictures are
+  real screenshots taken by `tools/poster_shots.py` (run `python -m bridge site` first): the ECE Korean academic board
+  as the department shows it, the newest notice as this site shows it, and a requirement with its source. The board
+  picture is cropped to titles and dates; check it for a person's name before printing, since titles change daily.
+- The poster that is sent is still `poster.pdf` (the "equal" layout) until the developer picks. "Not an official Seoul
+  National University website" is off the poster at the developer's request; the site's footer keeps it.
