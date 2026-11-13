@@ -41,10 +41,10 @@ def korean() -> list[dict]:
             if row["date"] >= SINCE:
                 found[row["id"]] = {"id": row["id"], "date": row["date"], "title_ko": row["title_ko"],
                                     "audience_ko": row["audience_ko"], "views": views.get(row["id"], 0)}
-        dated = [r["date"] for r in rows if not r["pinned"]]
-        if not dated:  # a maintenance page or a changed layout must never pass as the end of the board
+        if not rows:  # a maintenance page or a changed layout must never pass as the end of the board
             raise RuntimeError(f"No notices could be read on page {page} of the Korean board. Nothing was written.")
-        if max(dated) < SINCE:
+        dated = [r["date"] for r in rows if not r["pinned"]]
+        if dated and max(dated) < SINCE:  # a page of pinned notices only is not the end
             break
     return sorted(found.values(), key=lambda n: (n["date"], n["id"]), reverse=True)
 
