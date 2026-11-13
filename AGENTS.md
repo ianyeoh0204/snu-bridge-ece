@@ -7,8 +7,9 @@ official page that says so. Users are international students whose Korean is wea
 
 ## How it works
 1. `sources/<department>/` holds official files, downloaded by a person. `config.json` lists which to read.
-2. Extract: a model reads every page, pictures included, and writes cards (`bridge/extract.py`).
-3. Check: a second reading of each page against its cards. Disagreements are flagged, never published (`bridge/check.py`).
+2. Cards: requirement cards are written with an AI assistant from those files, one small script per department in `tools/`,
+   and checked by code against the Korean (`tools/build_ece.py`, `tools/cards_*.py`).
+3. Second reading: a model from another maker re-reads every card against its source (`tools/audit.py`, `prompts/read-cards.md`).
 4. Notices: a daily job reads the department board, translates each new notice and ties it to a card (`bridge/notices.py`, `bridge/briefs.py`).
 5. Publish: `python -m bridge site` rebuilds `site/index.html` from the cards (`bridge/site.py`), and the calendar file of deadlines (`bridge/deadlines.py`).
 6. Plugin: the ChatGPT plugin reads the same cards and any screenshot a student pastes. (not built)
@@ -76,7 +77,7 @@ Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 
   reduced-motion users get it at once. Requirements and Notices stay still: they are for reading, not for show. The developer rejected an editorial
   "gazette" look as the worst of three: too many words.
 - Extract and check code exist; the batch extractor is untested. The first single-request run failed at the output limit.
-- Deployed (11 Nov): https://ianyeoh0204.github.io/snu-bridge-ece/ from the public repository `ianyeoh0204/snu-bridge-ece`.
+- Deployed (11 Nov) from the public repository, renamed `ianyeoh0204/snubridge` on 13 Nov: https://ianyeoh0204.github.io/snubridge/ (the old address `snu-bridge-ece` no longer serves the site).
   `.github/workflows/update.yml` reads the boards, translates, rebuilds and publishes every morning at 07:17 Seoul time;
   a push republishes only. The department's own files are deliberately not in the repository (see README).
   A notice counts as changed only when its text changes; the attachment download counter is stripped first
@@ -350,3 +351,10 @@ start a second department's requirements before 20 Nov was lifted by the develop
   international student dropout 7.9% and 6.8%; all students 2.3% (2025). Its "180" and "200" degree-seeking students
   cannot be the whole university (a university post puts Engineering alone at about 220) and are probably the
   undergraduate disclosure only. Nothing from it is on the poster or the site.
+
+## Wrap-up (13 Nov 2026)
+- The repository is `ianyeoh0204/snubridge` (the developer: "snu-bridge-ece" read as ECE only). The site address changed with
+  it, so the poster's QR code, the calendar address and the assistant's instructions were rebuilt; anyone subscribed to
+  the old calendar address must subscribe again.
+- Removed as unused: `bridge/extract.py`, `bridge/check.py`, `bridge/table.py` and their commands (an automatic card
+  extractor that was never run to completion; cards are written per department instead), and `data/ECE/notice_titles_en.json`.

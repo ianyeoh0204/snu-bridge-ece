@@ -11,10 +11,6 @@ cp .env.example .env   # then put your own key in .env
 
 ## Run
 ```bash
-.venv/bin/python -m bridge pages ECE     # list what will be read (no model call)
-.venv/bin/python -m bridge extract ECE   # pages -> data/ECE/cards.json
-.venv/bin/python -m bridge check ECE     # second reading; flags disagreements and gaps
-.venv/bin/python -m bridge table ECE     # out/ECE-<program>.md for a person to review
 .venv/bin/python -m bridge notices ECE   # read the department board; records new and changed notices
 .venv/bin/python -m bridge briefs ECE    # translate notices that are new or changed (uses the model)
 .venv/bin/python -m bridge site          # build site/index.html, site/cards.json and the calendar site/ece.ics

@@ -1,4 +1,4 @@
-"""Usage: python -m bridge pages|extract|check|table|notices DEPARTMENT
+"""Usage: python -m bridge notices DEPARTMENT
        python -m bridge briefs DEPARTMENT [HOW_MANY]
        python -m bridge site"""
 from __future__ import annotations
@@ -48,12 +48,6 @@ def _main() -> None:
         if failed and not checked:
             sys.exit("No notice could be read. The department site may be down or its page layout may have changed.")
         return
-    from . import cards, check, extract, llm, sources, table  # after .env, so settings apply
-
-    data = ROOT / "data" / department
-    data.mkdir(parents=True, exist_ok=True)
-    cards_file, gaps_file = data / "cards.json", data / "gaps.json"
-
     if command == "notices":
         from . import notices
         found, changes = notices.update(department)
@@ -61,35 +55,7 @@ def _main() -> None:
         for line in changes[:200]:
             print(" ", line)
         return
-    if command == "pages":
-        units = sources.load(department)
-        for unit in units:
-            size = f"{len(unit['png']) // 1024} KB image" if "png" in unit else f"{len(unit['text'])} chars text"
-            print(f"{unit['name']:<45} page {unit['page']:>2}  {size}")
-        print(f"{len(units)} units ready to send")
-    elif command == "extract":
-        result = extract.run(department, data / "extract_state.json")
-        cards_file.write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
-        print(f"{len(result)} cards written to {cards_file.relative_to(ROOT)}")
-    elif command == "check":
-        result = json.loads(cards_file.read_text(encoding="utf-8"))
-        gaps = check.run(department, result)
-        cards_file.write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
-        gaps_file.write_text(json.dumps(gaps, ensure_ascii=False, indent=1), encoding="utf-8")
-        tally: dict[str, int] = {}
-        for card in result:
-            tally[card["check"]] = tally.get(card["check"], 0) + 1
-        print(f"checked {len(result)} cards: {tally}; {len(gaps)} rules found with no card")
-    elif command == "table":
-        result = json.loads(cards_file.read_text(encoding="utf-8"))
-        gaps = json.loads(gaps_file.read_text(encoding="utf-8")) if gaps_file.exists() else []
-        out = ROOT / "out"
-        out.mkdir(exist_ok=True)
-        for program in cards.PROGRAMS:
-            (out / f"{department}-{program}.md").write_text(table.render(result, gaps, program), encoding="utf-8")
-        print(f"tables written to out/ for {', '.join(cards.PROGRAMS)}")
-    else:
-        sys.exit(__doc__)
+    sys.exit(__doc__)
 
 
 if __name__ == "__main__":

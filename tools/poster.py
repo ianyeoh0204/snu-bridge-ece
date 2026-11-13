@@ -29,7 +29,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from bridge import deadlines  # noqa: E402
 OUT = ROOT / "out" / "poster"
-SITE = "https://ianyeoh0204.github.io/snu-bridge-ece/"
+SITE = "https://ianyeoh0204.github.io/snubridge/"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 WIDTH_MM, HEIGHT_MM = 1445, 1400
 SEOUL = datetime.timezone(datetime.timedelta(hours=9))
