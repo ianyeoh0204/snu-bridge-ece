@@ -385,3 +385,6 @@ start a second department's requirements before 20 Nov was lifted by the develop
   lost, rightly, when the notice changes and is translated again.
   What may be said now: every requirement card and every notice translated up to 13 Nov 2026 was written by one model
   and re-read by a model from another maker; new notices are translated daily by one model with dates checked by code.
+- A manual full run on 13 Nov read all four departments without a failure (Naval at five seconds a request) but then
+  could not save: commits had been pushed to `main` during its 16 minutes. The save step now rebases onto those before
+  pushing. Avoid pushing while a scheduled run is in progress all the same.
