@@ -363,3 +363,5 @@ start a second department's requirements before 20 Nov was lifted by the develop
   notices are translated per department per run, the page is always rebuilt, and the run is marked failed at the end
   (GitHub emails the owner) if any department could not be read. A first list page with no rows is an error, not
   "nothing new". `board.pause` in a config sets the seconds between requests (Naval: 5).
+- The developer had the cost per notice ("about 0.06 USD") removed from the poster and the site: it depends on the model
+  used, and the point is that the flow is automatic by design. Do not put a cost figure back.

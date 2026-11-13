@@ -789,7 +789,7 @@ function renderAbout() {
       el("ul", { class: "plain" },
         el("li", null, B("It runs on GitHub with no one's computer. The code, the data and these counts are public."), dept.repository ? el("span", { class: "links" }, out(dept.repository, dept.repository.replace("https://", ""))) : ""),
         el("li", null, B("Each semester a person puts the new official files in one folder and updates the requirements. Another department's files go in one more folder.")),
-        el("li", null, B("Translating one notice costs about 0.06 USD. Changing the AI provider means changing one file.")))),
+        el("li", null, B("Changing the AI provider means changing one file.")))),
       ] },
     { key: "checks",
       lead: B("What a second reader checked, and what the site does not do yet."),

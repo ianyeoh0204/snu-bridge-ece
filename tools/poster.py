@@ -145,7 +145,7 @@ POSTER_KO.update({
     "Written once from the official documents, then re-read once by a second AI model from another maker.":
         "공식 문서를 바탕으로 한 번 작성한 뒤, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
     "scheduled check for new notices": "매일 예약된 새 공지 확인",
-    "estimated cost to translate one notice": "공지 1건 번역 비용 추정치",
+    "departments read by one automatic job": "하나의 자동 작업이 읽는 학과 수",
     "Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).":
         "공지 번역은 Claude가 맡습니다. 모든 요건 카드는 OpenAI 모델이 다시 읽었습니다(전기·정보공학부는 ChatGPT Edu를 통해).",
     "Checks performed": "수행한 확인",
@@ -304,7 +304,8 @@ def build():
              + step(2, "Translate", bi("An AI model writes the English. Plain code checks every quoted date against the notice."))
              + step(3, "Publish", bi("GitHub rebuilds and publishes the site, without the developer's laptop."))
              + step("+", "Requirements, separately", bi("Written once from the official documents, then re-read once by a second AI model from another maker.")) + "</ol>")
-    daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig("≈0.06<i>USD</i>", bi("estimated cost to translate one notice"))
+    # the point of this panel is that the flow runs by itself, so the second figure is how much it covers, not what it costs
+    daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig(len(others) + 1, bi("departments read by one automatic job"))
     who = f'<p class="stand">{bi("Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).")}</p>'
     how = f'<div class="body">{steps}<div class="figs two">{daily}{cost}</div>{who}</div>'
 

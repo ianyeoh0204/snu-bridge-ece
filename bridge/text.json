@@ -69,7 +69,6 @@
   "Passing it on": "인수인계",
   "It runs on GitHub with no one's computer. The code, the data and these counts are public.": "개인 컴퓨터 없이 GitHub에서 실행됩니다. 코드와 데이터, 이 집계 수치는 모두 공개되어 있습니다.",
   "Each semester a person puts the new official files in one folder and updates the requirements. Another department's files go in one more folder.": "학기마다 담당자가 새 공식 문서를 폴더 하나에 넣고 요건을 갱신합니다. 다른 학과의 자료는 별도 폴더 하나에 넣습니다.",
-  "Translating one notice costs about 0.06 USD. Changing the AI provider means changing one file.": "공지 한 건의 번역 비용은 약 미화 0.06달러입니다. AI 제공업체를 바꾸려면 파일 하나만 수정하면 됩니다.",
   "Background and Method": "배경 및 방법",
   "A guide for international students, prepared in English from official department documents. Each item cites its source.": "외국인 학생을 위한 안내로, 학과 공식 문서를 바탕으로 영어로 작성했습니다. 각 항목에 출처를 밝혔습니다.",
   "Year of admission": "입학 연도",
@@ -217,6 +216,7 @@
   "Checked by code and one independent AI reading; not re-read by the second reader from another maker": "코드와 독립적인 AI 판독 1회로 확인했으며, 개발사가 다른 2차 판독자는 다시 읽지 않았습니다",
   "Also on this site: {name}, {n} requirements and {m} notices": "이 사이트의 다른 학과: {name}, 요건 {n}개와 공지 {m}건",
   "Written from the department's own rules on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.": "{date}에 학과의 자체 규정을 바탕으로 작성했습니다. 코드와 같은 개발사의 독립적인 AI 판독 1회로 확인했으며, 개발사가 다른 2차 판독자는 읽지 않았습니다.",
-  "Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were re-read by a second reader from another maker; its notices were not.": "다른 학과 {name}: 학과의 자체 규정을 바탕으로 작성한 요건 {n}개와 {date} 이후의 공지. 요건은 개발사가 다른 2차 판독자가 다시 읽었으며, 공지는 다시 읽지 않았습니다."
+  "Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were re-read by a second reader from another maker; its notices were not.": "다른 학과 {name}: 학과의 자체 규정을 바탕으로 작성한 요건 {n}개와 {date} 이후의 공지. 요건은 개발사가 다른 2차 판독자가 다시 읽었으며, 공지는 다시 읽지 않았습니다.",
+  "Changing the AI provider means changing one file.": "AI 제공업체를 바꾸려면 파일 하나만 바꾸면 됩니다."
  }
 }
