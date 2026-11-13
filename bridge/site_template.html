@@ -657,10 +657,9 @@ function renderAbout() {
   const span = (from, to) => [{ from: fullDate(from), to: fullDate(to) }, { from: koDate(from), to: koDate(to) }];
   const svRow = (cls, name, korean, side) => el("div", { class: "row " + cls }, el("div", null, ...name),
     el("div", { class: "n" }, el("small", { class: "lab" }, L("Notices on the Korean board")), korean), side);
-  // The English side is one plain count, as on the poster: posts on the department's own English board in the period;
-  // "same" where the English menu shows the Korean board's own notices; "–" where there is no English site.
-  const svSide = (d) => el("div", { class: "n" }, el("small", { class: "lab" }, L("English board posts")),
-    d.english_side === "same_posts" ? "same" : d.english_side === "none" ? "–" : num(d.english_posts));
+  // The English side is one number in every row, as on the poster: posts on the department's separate English board in
+  // the period. A department without one counts 0; a line in the notes under the table says which those are and why.
+  const svSide = (d) => el("div", { class: "n" }, el("small", { class: "lab" }, L("Separate English board posts")), num(d.english_posts || 0));
   // The page is read as five short steps, widest first: other departments, this department, examples, method, checks.
   // Only the step on screen is built, so its parts move into place when the reader arrives at it.
   // The first step is the setting: what the university itself has said and done this year (sources/context.json).
@@ -703,10 +702,9 @@ function renderAbout() {
         fig(num(sv.totals.english_titled), `of ${num(sv.totals.korean)}`, B("of them have a title in English")),
         fig(num(sv.totals.sample_with_english_passage), `of ${sv.totals.sample_opened}`, B("Korean-titled notices, in a sample from the other nine departments, had a passage of English in the page text."))),
       el("div", { class: "survey counts", "data-reveal": "" },
-        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", { class: "n" }, B("English board posts"))),
+        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", { class: "n" }, B("Separate English board posts"))),
         ...sv.departments.map((d) => svRow(d.this_site ? "own" : "", [d.name, below(d.name_ko)],
           (d.approximate ? "≈ " : "") + num(d.korean), svSide(d)))),
-      el("p", { class: "aboutnote" }, B("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")),
       el("p", { class: "aboutnote" }, B("The {k} separate English boards had {n} posts in the same period, {m} with an English title.", { k: sv.totals.english_boards, n: sv.totals.english_posts, m: sv.totals.english_posts_titled })),
       (() => { const apart = sv.departments.filter((d) => d.english_side === "separate"), by = (f) => (a, b) => (f(a) < f(b) ? -1 : 1);
         const silent = apart.filter((d) => !d.english_posts).sort(by((d) => d.english_last_post))[0], korean = apart.filter((d) => d.english_posts && !d.english_posts_titled).sort(by((d) => -d.english_posts))[0];
@@ -719,6 +717,9 @@ function renderAbout() {
       el("p", { class: "aboutnote" }, B("Each line opens the notice on the department's own site. Most are seminars and outside programmes, and one is a test post. This page replaces a speaker's name with [name].")),
       el("ul", { class: "plain" },
         el("li", null, B("A title counts as English when it has no Korean in it. Posts on the separate English boards are counted apart and are not added to the {n}.", { n: num(sv.totals.english_titled) })),
+        el("li", null, B("{n} departments have no separate English board and count 0. Under the English menu of {a}, the Korean board's own notices appear. {b} has no English site.",
+          { n: sv.departments.filter((d) => d.english_side !== "separate").length, a: sv.departments.filter((d) => d.english_side === "same_posts").map((d) => d.name).join(" and "), b: sv.departments.filter((d) => d.english_side === "none").map((d) => d.name).join(" and ") },
+          { a: sv.departments.filter((d) => d.english_side === "same_posts").map((d) => d.name_ko).join(", "), b: sv.departments.filter((d) => d.english_side === "none").map((d) => d.name_ko).join(", ") })),
         el("li", null, B("Every figure covers the same period, {from} to {to}. This project read the boards on {date}.", Object.assign({ date: fullDate(sv.counted_on) }, span(sv.since, sv.until)[0]), Object.assign({ date: koDate(sv.counted_on) }, span(sv.since, sv.until)[1]))),
         el("li", null, B("This project tested only the title of every notice. It did not read attachments or images.")),
         el("li", null, B("The count covers each department's notice boards. It leaves out boards kept apart for jobs, scholarships, news or seminars, in every department. For Electrical and Computer Engineering that leaves {n} boards: academic, admissions, campus life and other.", { n: sv.departments.find((d) => d.this_site).korean_boards.length })),
@@ -847,7 +848,7 @@ function renderAbout() {
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("What it does not do yet"))),
       el("ul", { class: "plain" },
         el("li", null, B("The site does not read images or attachments. The notice says so and sends the student to {assistant}.", { assistant: dept.assistant ? dept.assistant.name : "the original notice" })),
-        el("li", null, B("Translations are made by AI and can be wrong. It is a student project, not an official Seoul National University website.")))),
+        el("li", null, B("Translations are made by AI and can be wrong. This is not an official Seoul National University website.")))),
       ] },
   ].filter(Boolean);
   const at = Math.max(0, steps.findIndex((s) => s.key === aboutStep)), here = steps[at], next = steps[at + 1];
@@ -996,7 +997,7 @@ for (const [id, label] of [["tab-requirements", B("Requirements")], ["tab-notice
   ["h1-requirements", B("Graduation requirements")], ["lede-requirements", B("A guide for international students, prepared in English from official department documents. Each item cites its source.")],
   ["years-label", B("Year of admission")], ["months-note", B("Months are taken from the graduate handbook. Exact dates are announced in each semester's notices.")],
   ["progress-note", B("Progress is stored on this device only.")], ["h1-notices", B("Department notices")]]) document.getElementById(id).replaceChildren(...label.flat());
-document.getElementById("footer").replaceChildren(...B("SNU Bridge is a student project for the 2nd SNU Generative AI Competition. It is not an official Seoul National University website. English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
+document.getElementById("footer").replaceChildren(...B("SNU Bridge was made for the 2nd SNU Generative AI Competition. It is not an official Seoul National University website. English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
 // One link out to the extra page, which has its own look: Korean grammar as building blocks.
 document.getElementById("footer").append(el("a", { class: "extra", href: "korean-blocks.html" }, L("Extra: Korean, in blocks")));
 route();

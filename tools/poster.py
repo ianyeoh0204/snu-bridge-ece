@@ -7,7 +7,8 @@
 Six panels, evidence first (the developer's choice of three drafts): why now, the gap, what it does, how it works,
 checked, try it. The gap panel is the tall one and Checked is one short row, at the developer's request.
 Board counts cover one closed period (tools/survey.py and tools/evidence.py share it); live counts carry "as of".
-The lab logo is read from out/poster/lab-logo.png, like the author's name, and is left out if the file is missing.
+The lab logo and the university emblem are read from out/poster/ (lab-logo.png, snu-logo.png), like the author's name,
+and each is left out if its file is missing. The emblem is for the poster only: the site must not look official.
 
 Size: 1445 mm wide by 1400 mm high, one page, as the competition asks. The PDF is printed by Google Chrome and then
 measured. Everything is text and shapes (no screenshots), so the file stays small enough to email.
@@ -103,7 +104,8 @@ POSTER_KO = {
     "What it does not do": "하지 않는 일",
     "For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.":
         "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
-    "A student project. Not an official Seoul National University website.": "학생 프로젝트이며 서울대학교 공식 웹사이트가 아닙니다.",
+    "Not an official Seoul National University website.": "서울대학교 공식 웹사이트가 아닙니다.",
+    "Separate job, scholarship, news and seminar boards are not counted.": "따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
 }
 
 
@@ -203,7 +205,7 @@ LOWER_BAND = """
 .band { height: 196mm; padding: 22mm 44mm 0; grid-template-columns: 1fr auto; }
 .band h1 { margin: 3mm 0 8mm -1mm; font-size: 96mm; }
 .band .tag { max-width: none; font-size: 15mm; }
-.band aside { display: grid; grid-template-columns: 210mm 150mm; grid-template-rows: auto auto 1fr; gap: 4mm 8mm; text-align: right; }
+.band aside { display: grid; grid-template-columns: 270mm 150mm; grid-template-rows: auto auto 1fr; gap: 4mm 8mm; text-align: right; }
 .band aside svg { grid-column: 2; grid-row: 1 / span 3; width: 150mm; height: 150mm; }
 .band aside p { grid-column: 1; }
 .grid { height: 1104mm; }
@@ -216,7 +218,7 @@ LAYOUTS = {
 .ko, .drow .dn small, .mock td small, .mock .kotitle { font-size: 1em !important; line-height: 1.24; }
 .col:first-child .panel:first-child { flex: 1.11 1 0; }
 .steps li { padding: 3.6mm 0; }
-.foot { grid-template-columns: 1.6fr 1.15fr auto; }
+.foot { grid-template-columns: 1.6fr 1.15fr auto auto; }
 """,
     "balanced": LOWER_BAND + """
 .ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
@@ -273,12 +275,13 @@ def build(variant=CHOSEN):
     most = max(d["korean"] for d in survey["departments"])
     def drow(d):
         mark = mark_ko = ""  # the developer: no "(this site)" after the department's name; the row is highlighted instead
-        # the English side: posts on a separate English board; "same" where the English menu shows the Korean board's
-        # own posts (checked live for Computer Science on 13 Nov 2026: same notices, Korean titles); "–" where there is no English site
-        board = num(d["english_posts"]) if d["english_side"] == "separate" else "same" if d["english_side"] == "same_posts" else "–"
+        # the English side is one number in every row: posts on the department's separate English board. A department
+        # without one counts 0 (Computer Science and Civil show the Korean board's own notices under their English menu,
+        # checked live for Computer Science on 13 Nov 2026; Naval has no English site). The site says which these are.
+        board = num(d["english_posts"] or 0)
         return (f'<div class="drow {"own" if d["this_site"] else ""}"><span class="dn">{html.escape(d["name"] + mark)}<small lang="ko">{html.escape(d["name_ko"] + mark_ko)}</small></span>'
                 f'<span class="dbar"><i style="width:{74 * d["korean"] / most:.1f}%"></i><b>{num(d["korean"])}</b></span><u>{board}</u></div>')
-    chart = ('<div class="chart"><div class="drow head"><span></span>' + bi("Korean board") + bi("English board posts", tag="u") + "</div>"
+    chart = ('<div class="chart"><div class="drow head"><span></span>' + bi("Korean board") + bi("Separate English board posts", tag="u") + "</div>"
              + "".join(drow(d) for d in sorted(survey["departments"], key=lambda d: -d["korean"])) + "</div>")
     heropair = (f'<div class="heropair"><div><b>{num(totals["korean"])}</b><p>' + bi("notices on the Korean boards of {n} engineering departments", {"n": len(survey["departments"])}) + "</p></div>"
                 f'<div><b class="blue">{num(totals["english_titled"])}</b><p>{bi("of them have a title in English")}</p></div></div>')
@@ -290,7 +293,7 @@ def build(variant=CHOSEN):
     boards_line = bi("{a}'s English board last had a post in {month} {year}. {b}'s has {n} posts, all with Korean titles.",
                      {"a": silent["name"], "month": last.strftime("%B"), "year": last.year, "b": korean_only["name"], "n": korean_only["english_posts"]},
                      {"a": silent["name_ko"], "month": last.month, "b": korean_only["name_ko"]})
-    legend = bi("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")
+    legend = bi("Separate job, scholarship, news and seminar boards are not counted.")
     counted = f'<p class="note">{legend}</p><p class="note">' + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p>"
 
     funded = bi("In 2026 the university put {won} billion won into {n} colleges and schools to recruit international students and help them settle.",
@@ -353,7 +356,8 @@ def build(variant=CHOSEN):
                [bar("What it does", "3") + does, bar("Try it", "6") + try_it]]
     grid = "".join(f'<div class="col{" mid" if i == 1 else ""}">' + "".join(f'<section class="panel">{p}</section>' for p in column) + "</div>"
                    for i, column in enumerate(columns))
-    logo = '<img class="logo" src="lab-logo.png" alt="">' if (OUT / "lab-logo.png").exists() else ""
+    # both marks are read from out/poster/ (not published) and left out if the file is missing
+    logo = "".join(f'<img class="logo" src="{name}" alt="">' for name in ("snu-logo.png", "lab-logo.png") if (OUT / name).exists())
 
     stamp = day(today)
     page = f"""<!doctype html>
@@ -474,7 +478,9 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .figs.three.even .fig b {{ font-size: 36mm; }}
 .figs.three.even .fig {{ padding: 3mm 5mm 4mm; }}
 .figs.three.even .fig p {{ font-size: 9.6mm; }}
-.foot {{ grid-template-columns: 1.9fr 1fr auto; }}
+.foot {{ grid-template-columns: 1.9fr 1fr auto auto; column-gap: 14mm; }}
+.band .author b {{ display: block; font-size: 17mm; line-height: 1.1; }}
+.band .author span {{ display: block; margin-top: 2mm; font-size: 10.5mm; }}
 .foot .logo {{ display: block; height: 62mm; width: auto; margin-top: -3mm; }}
 .foot div:nth-child(2) span {{ display: block; margin-bottom: 2mm; }}
 {LAYOUTS.get(variant, '')}</style></head><body>
@@ -484,12 +490,12 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
     <h1>SNU Bridge</h1>
     <p class="tag">{bi("A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")}</p>
   </div>
-  <aside>{qr}<p>{bi("Scan to open the site")}</p><p>{html.escape(SITE.replace("https://", "").rstrip("/"))}</p><p><b>{html.escape(author)}</b></p></aside>
+  <aside>{qr}<p>{bi("Scan to open the site")}</p><p>{html.escape(SITE.replace("https://", "").rstrip("/"))}</p><p class="author"><b>{html.escape(author.split(" · ")[0])}</b><span>{html.escape(" · ".join(author.split(" · ")[1:]))}</span></p></aside>
 </header>
 <main class="grid">{grid}</main>
 <footer class="foot">
   <div><b>{bi("What it does not do")}</b>{bi("For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
-  <div>{bi("A student project. Not an official Seoul National University website.")}{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
+  <div>{bi("Not an official Seoul National University website.")}{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
   {logo}
 </footer>
 </body></html>"""
@@ -532,8 +538,9 @@ if __name__ == "__main__":
         preview.mkdir(exist_ok=True)
         (preview / "index.html").write_text(page.read_text(encoding="utf-8").replace(
             "</style>", "html { zoom: .14; overflow: auto !important; height: auto !important; } body { overflow: visible !important; }</style>", 1), encoding="utf-8")
-        if (OUT / "lab-logo.png").exists():
-            (preview / "lab-logo.png").write_bytes((OUT / "lab-logo.png").read_bytes())
+        for name in ("snu-logo.png", "lab-logo.png"):
+            if (OUT / name).exists():
+                (preview / name).write_bytes((OUT / name).read_bytes())
     if variant != CHOSEN:  # a layout to compare: the sheet for the Korean reader belongs to the poster that is sent
         sys.exit()
     review = ["# Korean lines written for the poster only", "",

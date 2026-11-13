@@ -514,3 +514,12 @@ The developer read the page and found three places where the site and the poster
   Every build also writes a scaled copy to `site/poster/` (local only): with the preview running, the developer opens
   http://localhost:8770/poster/ and clicks the part to change, as on the site. The developer asked why not Canva: the
   poster is drawn by code so that every number comes from the same data as the site and is right on the day it is built.
+- Poster and site, the developer's requests of 14 Nov (later):
+  - The chart shows a number in every row. A department with no separate English board counts 0 (Computer Science,
+    Civil, Naval), and the column is headed "Separate English board posts" so that the 0 is exact. Do not show the
+    Korean board's count there: it would read as 1,251 English posts. The "same" and "–" legend is gone from both; the
+    site keeps one line in the notes under the table saying which three departments these are and why.
+  - "A student project" is gone from the poster and the site (the developer: it reads as written by AI, and everyone
+    at the competition knows). "Not an official Seoul National University website" stays in all three places.
+  - The poster carries the university emblem (`out/poster/snu-logo.png`, not published) beside the lab logo, and the
+    author's name at 17 mm. The emblem is never used on the site, which must not look official.
