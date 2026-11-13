@@ -30,6 +30,14 @@ from cards_pdf import card, pages, verify
 
 NAME, PAGES = pages("NAVAL", "교과목 이수규정(2026학년도)")
 TEXTS = {"ug": PAGES}
+# A second, short document, "학부 졸업" (attached to the post "졸업관련 규정" on the same page): how to apply for the
+# bachelor's thesis. The file itself was not downloaded; the developer pasted its text on 13 November 2026, and the paste
+# breaks off partway through section 2 (prizes for graduates, which is not a requirement). The cards below use section 1
+# only. If the PDF is later put in sources/NAVAL/, it is read instead of the pasted text.
+import pathlib  # noqa: E402
+_FOLDER = pathlib.Path(__file__).resolve().parent.parent / "sources" / "NAVAL"
+_PDF = [f for f in _FOLDER.glob("*.pdf") if "학부 졸업" in f.name]
+TEXTS["ug-graduation"] = pages("NAVAL", "학부 졸업")[1] if _PDF else [f.read_text(encoding="utf-8") for f in _FOLDER.glob("학부 졸업*.txt")]
 
 ALL = [2023, 2024, 2025, 2026]
 NEW, OLD = [2025, 2026], [2023, 2024]
@@ -284,6 +292,18 @@ CARDS = [
         "This document does not say whether a graduation thesis is required in order to graduate. " + ASK],
        ["M1513.002200 조선해양 학사논문연구 1 (1-1-0) M1513.002300 조선해양 학사논문연구 2 (2-2-0)", "4 M1513.002100 친환경선박추진시스템", STAR],
        ALL),
+    card("na-ug-thesis-application", ["undergraduate"], "for_degree", "ug-graduation", "Applying for the bachelor's thesis", "At least 2 semesters before you graduate",
+         ["Apply for the bachelor's thesis while at least 2 semesters remain before your graduation.",
+          "The document's example: to graduate in February 2021, apply in the 1st semester of 2020 at the latest; applying in the 2nd semester of 2020 is not allowed.",
+          "If this is not kept, your graduation may be delayed."],
+         ["○ 학부 졸업 논문 신청은 본인의 졸업 잔여 학기가 최소 2개 학기 이전에 해야 합니다.",
+          "(예, 2021년 2월 졸업 => 늦어도 2020년 1학기 신청해야 함. 2020년 2학기에 신청하는 것은 불허)", "* 이 사항이 지켜지지 않을 경우 졸업시기가 늦춰질 수 있음."],
+         "", entry_years=ALL),
+    card("na-ug-thesis-advisor", ["undergraduate"], "for_degree", "ug-graduation", "Advisor for the bachelor's thesis", "Your preference counts, but you may be assigned",
+         ["When the thesis advisor is chosen, your preference is taken into account as far as possible.",
+          "If students' applications are concentrated, you may be assigned an advisor other than the one you asked for."],
+         ["○ 지도 교수 선정 시 학생의 희망을 최대한 고려하되, 학생들의 신청 결과가 편중될 경우 본인의 희망과 달리 강제 배정될 수 있습니다."],
+         "", entry_years=ALL),
 ]
 
 if __name__ == "__main__":

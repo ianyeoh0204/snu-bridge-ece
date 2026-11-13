@@ -48,6 +48,11 @@
       "file": "ug",
       "name": "Course completion rules of the department, 2026 academic year (교과목 이수규정)",
       "url": "https://naoe.snu.ac.kr/department/rule"
+    },
+    {
+      "file": "ug-graduation",
+      "name": "Notes on undergraduate graduation of the department (학부 졸업, attached to the post 졸업관련 규정)",
+      "url": "https://naoe.snu.ac.kr/department/rule"
     }
   ]
 }

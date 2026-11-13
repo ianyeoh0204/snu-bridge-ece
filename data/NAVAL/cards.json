@@ -1181,6 +1181,75 @@
   "updates": []
  },
  {
+  "id": "na-ug-thesis-application",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Applying for the bachelor's thesis",
+  "key": "At least 2 semesters before you graduate",
+  "rule": [
+   "Apply for the bachelor's thesis while at least 2 semesters remain before your graduation.",
+   "The document's example: to graduate in February 2021, apply in the 1st semester of 2020 at the latest; applying in the 2nd semester of 2020 is not allowed.",
+   "If this is not kept, your graduation may be delayed."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-graduation",
+  "source_page": 1,
+  "source_page_also": 0,
+  "source_quote_ko": "○ 학부 졸업 논문 신청은 본인의 졸업 잔여 학기가 최소 2개 학기 이전에 해야 합니다.",
+  "quotes_ko": [
+   "○ 학부 졸업 논문 신청은 본인의 졸업 잔여 학기가 최소 2개 학기 이전에 해야 합니다.",
+   "(예, 2021년 2월 졸업 => 늦어도 2020년 1학기 신청해야 함. 2020년 2학기에 신청하는 것은 불허)",
+   "* 이 사항이 지켜지지 않을 경우 졸업시기가 늦춰질 수 있음."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
+  "id": "na-ug-thesis-advisor",
+  "programs": [
+   "undergraduate"
+  ],
+  "group": "for_degree",
+  "title": "Advisor for the bachelor's thesis",
+  "key": "Your preference counts, but you may be assigned",
+  "rule": [
+   "When the thesis advisor is chosen, your preference is taken into account as far as possible.",
+   "If students' applications are concentrated, you may be assigned an advisor other than the one you asked for."
+  ],
+  "why": "",
+  "when": "",
+  "trap": "",
+  "applies_from": "",
+  "events": [],
+  "source_file": "ug-graduation",
+  "source_page": 1,
+  "source_page_also": 0,
+  "source_quote_ko": "○ 지도 교수 선정 시 학생의 희망을 최대한 고려하되, 학생들의 신청 결과가 편중될 경우 본인의 희망과 달리 강제 배정될 수 있습니다.",
+  "quotes_ko": [
+   "○ 지도 교수 선정 시 학생의 희망을 최대한 고려하되, 학생들의 신청 결과가 편중될 경우 본인의 희망과 달리 강제 배정될 수 있습니다."
+  ],
+  "check": "unchecked",
+  "entry_years": [
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "updates": []
+ },
+ {
   "id": "na-registration-ms",
   "programs": [
    "masters"

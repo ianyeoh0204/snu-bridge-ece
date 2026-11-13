@@ -264,8 +264,8 @@ def build():
         # own posts (checked live for Computer Science on 13 Nov 2026: same notices, Korean titles); "–" where there is no English site
         board = num(d["english_posts"]) if d["english_side"] == "separate" else "same" if d["english_side"] == "same_posts" else "–"
         return (f'<div class="drow {"own" if d["this_site"] else ""}"><span class="dn">{html.escape(d["name"] + mark)}<small lang="ko">{html.escape(d["name_ko"] + mark_ko)}</small></span>'
-                f'<span class="dbar"><i style="width:{74 * d["korean"] / most:.1f}%"></i><b>{num(d["korean"])}</b></span><em>{num(d["english_titled"])}</em><u>{board}</u></div>')
-    chart = ('<div class="chart"><div class="drow head"><span></span>' + bi("Korean board") + bi("of them, English title", tag="em") + bi("English board posts", tag="u") + "</div>"
+                f'<span class="dbar"><i style="width:{74 * d["korean"] / most:.1f}%"></i><b>{num(d["korean"])}</b></span><u>{board}</u></div>')
+    chart = ('<div class="chart"><div class="drow head"><span></span>' + bi("Korean board") + bi("English board posts", tag="u") + "</div>"
              + "".join(drow(d) for d in sorted(survey["departments"], key=lambda d: -d["korean"])) + "</div>")
     heropair = (f'<div class="heropair"><div><b>{num(totals["korean"])}</b><p>' + bi("notices on the Korean boards of {n} engineering departments", {"n": len(survey["departments"])}) + "</p></div>"
                 f'<div><b class="blue">{num(totals["english_titled"])}</b><p>{bi("of them have a title in English")}</p></div></div>')
@@ -428,7 +428,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .heropair b {{ display: block; font-size: 56mm; font-weight: 700; line-height: .95; letter-spacing: -.04em; }}
 .heropair p {{ margin-top: 2mm; font-size: 11mm; line-height: 1.2; }}
 .chart {{ border-top: .5mm solid #000; }}
-.drow {{ display: grid; grid-template-columns: 166mm minmax(0, 1fr) 34mm 52mm; column-gap: 5mm; align-items: center; padding: 1.6mm 0; border-bottom: .3mm solid #bbb; font-size: 10.2mm; line-height: 1.12; }}
+.drow {{ display: grid; grid-template-columns: 176mm minmax(0, 1fr) 62mm; column-gap: 5mm; align-items: center; padding: 1.6mm 0; border-bottom: .3mm solid #bbb; font-size: 10.2mm; line-height: 1.12; }}
 .drow .dn small {{ display: block; margin-top: .6mm; font-size: 8.6mm; color: #555; }}
 .drow .dbar {{ display: flex; align-items: center; gap: 3mm; }}
 .drow .dbar i {{ display: block; height: 9mm; background: #000; }}

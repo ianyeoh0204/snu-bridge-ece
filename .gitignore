@@ -13,3 +13,5 @@ sources/**/*.pdf
 sources/**/*.xlsx
 sources/**/*.hwp
 sources/**/*.hwpx
+# text of a department document pasted by the developer in place of the file
+sources/**/*.txt

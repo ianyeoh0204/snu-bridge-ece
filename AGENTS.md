@@ -413,3 +413,10 @@ start a second department's requirements before 20 Nov was lifted by the develop
 - A program's `headline_cards` entry may be a list, for a total that differs by year of admission.
 - None of these documents states a rule for international students, a thesis requirement, or (Nuclear, Naval) a grade
   average; the total cards say what the document leaves out rather than borrow it from elsewhere.
+- Poster chart (the developer, 13 Nov): the middle column "of them, English title" was removed as confusing; a row now
+  shows the Korean board's notices and what the English side holds. Computer Science and Civil show "same": their
+  English menu lists the Korean board's own notices (checked live for Computer Science: same notices, same day, Korean
+  titles), which is why a student there says both boards update together. No "(this site)" after ECE's name.
+- Naval's two bachelor's-thesis cards (apply at least 2 semesters before graduating; advisor assignment) rest on text of
+  the department's "학부 졸업" document that the developer pasted on 13 Nov; the paste is kept, not uploaded, beside the
+  PDFs and is read by `tools/cards_naval_undergraduate.py` until the PDF itself is put there. 279 cards in all.

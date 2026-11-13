@@ -305,6 +305,14 @@
   "na-ug-thesis-courses": {
    "status": "reader_agrees",
    "reason": ""
+  },
+  "na-ug-thesis-application": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-ug-thesis-advisor": {
+   "status": "reader_agrees",
+   "reason": ""
   }
  },
  "undergraduate": {
