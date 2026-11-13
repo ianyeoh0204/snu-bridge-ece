@@ -1,0 +1,41 @@
+{
+ "title_en": "Fall 2026 Mid-Semester Course Feedback Survey (Deadline Extended)",
+ "summary": "Students taking undergraduate and graduate courses in Fall 2026 are invited to complete the Mid-Semester Course Feedback Survey, which will be used to improve courses. The survey period has been extended and now runs from Thursday, October 29 to Thursday, November 12, 2026. Responses are submitted through the mySNU portal under Course Evaluation [강의평가].",
+ "applies_to": "Students taking courses offered at the undergraduate or graduate level in Fall 2026. All such courses are included except the graduate course 'Thesis Research' [논문연구]. The notice encourages participation but does not state that it is mandatory.",
+ "dates": [
+  {
+   "what": "Extended survey period (current period)",
+   "when": "Thursday, October 29, 2026 to Thursday, November 12, 2026",
+   "original_ko": "연장: 2026.10.29.(목)~11.12.(목)",
+   "verified": true
+  },
+  {
+   "what": "Original survey period (replaced by the extended period)",
+   "when": "Thursday, October 29, 2026 to Thursday, November 5, 2026",
+   "original_ko": "기존: 2026.10.29.(목)~11. 5.(목)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The graduate course 'Thesis Research' [논문연구] is not included in the survey.",
+  "The two questions about non-face-to-face (online) classes need to be answered only if they apply to the course.",
+  "The survey period has been extended to November 12, 2026; the original end date of November 5 no longer applies."
+ ],
+ "steps": [
+  "Read the attachment 'Guide to the Mid-Semester Course Feedback Survey Program' attached to the original notice (its contents were not read for this translation).",
+  "Between October 29 and November 12, 2026, log in to the mySNU portal and go to Basic Information [기본정보] > Classes/Grades [수업/성적] > Grades [성적] > Course Evaluation [강의평가].",
+  "For each course, answer the free-text questions on what was good or memorable and what could be improved.",
+  "If the course included non-face-to-face (online) teaching, also answer the two questions on whether the online teaching methods suited the course and on your overall satisfaction and suggested improvements."
+ ],
+ "translation": "Fall 2026 'Mid-Semester Course Feedback Survey' [강의 중간 수강소감 조사] (Deadline Extended)\n\nThe Fall 2026 'Mid-Semester Course Feedback Survey' will be conducted, and the results will be used to improve courses.\n\nThe survey period has been extended as shown below. We encourage all students to participate.\n\n1. Survey period\n - Original: Thursday, October 29, 2026 to Thursday, November 5, 2026\n - Extended: Thursday, October 29, 2026 to Thursday, November 12, 2026\n\n2. Method: Portal mySNU [마이스누] - Basic Information [기본정보] - Classes/Grades [수업/성적] - Grades [성적] - Course Evaluation [강의평가]\n\n3. Courses covered: All courses offered at the undergraduate and graduate levels (excluding the graduate course 'Thesis Research' [논문연구])\n\n4. Survey questions: four free-text questions (the two questions on non-face-to-face classes are to be answered if applicable)\n ○ Please describe anything that was particularly good or memorable about this course.\n ○ If there is anything in this course that could be improved, please describe it.\n ○ Please describe whether the non-face-to-face teaching methods (live video classes, lecture videos, documents, assignments, etc.) were suitable for the nature of the course.\n ○ Please describe your overall satisfaction with the non-face-to-face classes and any points for improvement.\n\n[Attachment] Guide to the Mid-Semester Course Feedback Survey Program\nAttached file (1): [Attachment] Guide to the Mid-Semester Course Feedback Survey Program.pdf (153 KB). The content of this attachment was not read for this translation.",
+ "id": 21601,
+ "text_hash": "c45e74870610a03b",
+ "images": 0,
+ "attachments": [
+  "[붙임] 강의 중간 수강소감 조사 프로그램 안내.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

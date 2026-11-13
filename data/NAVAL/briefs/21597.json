@@ -1,0 +1,57 @@
+{
+ "title_en": "Promotion: Visiting the National Incheon Maritime Museum's Permanent and International Exchange Exhibitions",
+ "summary": "This is a promotional notice; no student is required to act. Anyone interested may visit the National Incheon Maritime Museum (294 Wolmi-ro, Jemulpo-gu, Incheon) free of charge, and the international exchange exhibition \"Greece, A Great Civilization Shaped by the Sea\" runs until Sunday 6 December 2026. Groups of 20 or more must reserve in advance on the museum website (www.inmm.or.kr).",
+ "applies_to": "Not mandatory. This is a promotional notice open to anyone interested. The notice suggests the exhibitions may be useful for field study for students of history, archaeology, art history, Western classics, maritime studies, shipbuilding, shipping, culture and tourism, and other majors. Advance reservation applies only to groups of 20 or more.",
+ "dates": [
+  {
+   "what": "Last day of the international exchange exhibition \"Greece, A Great Civilization Shaped by the Sea\"",
+   "when": "Sunday 6 December 2026",
+   "original_ko": "2026. 12. 6.(일)까지",
+   "verified": true
+  },
+  {
+   "what": "Viewing hours (stated for the period up to 6 December)",
+   "when": "10:00 to 18:00",
+   "original_ko": "10:00~18:00",
+   "verified": true
+  },
+  {
+   "what": "Entry cut-off time",
+   "when": "17:30",
+   "original_ko": "입장 마감 17:30",
+   "verified": true
+  },
+  {
+   "what": "Museum closed",
+   "when": "Every Monday",
+   "original_ko": "매주 월요일 휴관",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Admission is free.",
+  "The museum is closed every Monday.",
+  "Entry closes at 17:30, although the museum is open until 18:00.",
+  "Groups of 20 or more must make an advance reservation on the museum website.",
+  "The three attachments (museum general guides in Korean and English, and an exhibition leaflet) were not read for this translation."
+ ],
+ "steps": [
+  "All visitors: Optionally read the attached guides; the English-language general guide is attachment 2 (their content was not read for this translation).",
+  "Groups of 20 or more: Make an advance reservation on the museum website (www.inmm.or.kr) before visiting.",
+  "All visitors: Visit the National Incheon Maritime Museum at 294 Wolmi-ro, Jemulpo-gu, Incheon, on any day except Monday, between 10:00 and 18:00 (entry closes at 17:30), no later than Sunday 6 December 2026 for the international exchange exhibition.",
+  "All visitors: For enquiries about exhibition commentary (guided explanation), contact the curator of the museum's Exhibition Planning Department; the contact details are in the original notice."
+ ],
+ "translation": "[Promotion] Information on Visiting the Permanent Exhibition and International Exchange Exhibition of the National Incheon Maritime Museum\n\nThe National Incheon Maritime Museum, the first national maritime cultural facility in the Seoul metropolitan area, is operating permanent exhibitions under the theme \"Sea of Exchange, the Beginning of Connection,\" including the Maritime Exchange History Gallery (the history of maritime exchange), the Shipping and Ports Gallery (the development of shipping and ports) and the Maritime Culture Gallery (life and culture alongside the sea).\n\nIn addition, to commemorate the 65th anniversary of diplomatic relations between Korea and Greece, the museum is holding the international exchange exhibition \"Greece, A Great Civilization Shaped by the Sea\" until Sunday 6 December 2026. It is the largest Greek special exhibition ever held in Korea, presenting 348 artifacts from 15 national and public museums in Greece. It is expected to be a valuable field-study opportunity for students of various majors, including history, archaeology, art history and Western classics, as well as maritime studies, shipbuilding, shipping, culture and tourism. We encourage your interest.\n\nA. Viewing hours (until Sunday 6 December): 10:00–18:00 (entry closes at 17:30); closed every Monday\nB. Admission: Free\nC. Group visits: Advance reservation via the website (www.inmm.or.kr) (groups of 20 or more)\nD. Location: 294 Wolmi-ro, Jemulpo-gu, Incheon\nE. Enquiries about exhibition commentary: Curator, Exhibition Planning Department (contact details are in the original notice)\n\nAttachments\n1. 2026 National Incheon Maritime Museum General Guide (Korean), 1 copy\n2. 2026 National Incheon Maritime Museum General Guide (English), 1 copy\n3. 2026 National Incheon Maritime Museum International Exchange Exhibition \"A Great Civilization Shaped by the Sea\", 1 copy\n\nAttached files (3): the three PDF files listed above. The content of these attachments was not read for this translation.",
+ "id": 21597,
+ "text_hash": "07cc2dfa108e9944",
+ "images": 0,
+ "attachments": [
+  "1. 2026년 국립인천해양박물관 종합 안내서(국문).pdf",
+  "2. 2026년 국립인천해양박물관 종합 안내서(영문).pdf",
+  "3. 2026년 국립인천해양박물관_국제교류전_바다가 빚은 위대한 문명.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

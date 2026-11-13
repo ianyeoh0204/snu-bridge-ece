@@ -1,0 +1,23 @@
+{
+ "title_en": "Call for Participants: 2026 HD Hyundai GRC Career Mentoring",
+ "summary": "HD Hyundai is recruiting participants for the 2026 HD Hyundai GRC Career Mentoring programme, addressed to women engineers. Interested students should apply through the Google Form linked in the notice, which also gives the event details. The notice does not state an application deadline or event date.",
+ "applies_to": "Optional (voluntary participation). The notice is addressed to women engineers. It states no other limits, such as program, year or nationality.",
+ "dates": [],
+ "conditions": [
+  "The notice states no deadline, event date, eligibility rules or selection criteria; these may be on the linked application form, which was not read."
+ ],
+ "steps": [
+  "Open the application form at https://forms.gle/vs6N8Vrafj9eL34s5 and read the event details given there.",
+  "Complete and submit the application through the same form.",
+  "For questions, use the contact details in the original Korean notice (contact details are omitted here)."
+ ],
+ "translation": "Call for Participants: 2026 HD Hyundai GRC Career Mentoring\n\nWe announce the recruitment of participants for the 2026 HD Hyundai GRC Career Mentoring as follows.\n\n\"Where the future moves: HD Hyundai\"\n\nWe welcome women engineers who will lead the future together with HD Hyundai.\n\n1. Application and event details: https://forms.gle/vs6N8Vrafj9eL34s5 (the content of this form was not read)\n\n2. Inquiries: please refer to the contact details in the original notice.",
+ "id": 21584,
+ "text_hash": "ce37c391c9d5cc79",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

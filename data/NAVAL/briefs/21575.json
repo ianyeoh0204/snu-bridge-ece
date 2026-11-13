@@ -1,0 +1,23 @@
+{
+ "title_en": "Opening Ceremony of the SNU Commons Administration Building",
+ "summary": "The university is holding an opening ceremony for the SNU Commons Administration Building, and all are invited to take an interest and participate. Those who wish to attend are asked to complete the attendance survey form linked in the original notice. The notice does not state the date, time or location of the ceremony.",
+ "applies_to": "The notice does not limit who may attend; it is a general invitation, and attendance is not mandatory.",
+ "dates": [],
+ "conditions": [
+  "Souvenirs and refreshments are given only to those who attend on the day of the event.",
+  "Souvenirs and refreshments are limited to the first 100 attendees."
+ ],
+ "steps": [
+  "Complete the attendance survey form titled 'SNU Commons Administration Building Opening Ceremony Attendance Application' (『SNU Commons 행정관』 개관식 참석 신청) using the link in the original notice. The link address was not included in the text provided.",
+  "Attend the opening ceremony on the day of the event. The notice does not state the date, time or location; contact the department office (contact details are in the original notice) if you need this information."
+ ],
+ "translation": "Notice: Opening Ceremony of the SNU Commons Administration Building\n\nWe are holding the opening ceremony of the SNU Commons Administration Building (「SNU Commons 행정관」), a key space that completes the SNU Commons Project (「SNU Commons 사업」) and has been created as a new space for communication and exchange. We hope for your interest and participation.\n\n※ Souvenirs and refreshments will be given only to those who attend on the day of the event (first come, first served, 100 people). Attendance survey form (link): 'SNU Commons Administration Building Opening Ceremony Attendance Application' (『SNU Commons 행정관』 개관식 참석 신청)\n\n[Translator's note: The link address was not included in the text provided and was not read. The notice text does not state the date, time or location of the ceremony.]",
+ "id": 21575,
+ "text_hash": "37444d595001003d",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

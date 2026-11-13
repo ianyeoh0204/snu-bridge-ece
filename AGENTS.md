@@ -308,3 +308,21 @@ start a second department's requirements before 20 Nov was lifted by the develop
   people, staff included; only dates a student acts on; three short lines first).
 - The developer downloaded Nuclear's and Naval's graduate rule files into the older folder
   `../snu-ece-notice-navigator/sources/Nuclear` and `/Naval`, after agreeing to stop at two departments. Ask before building.
+- Later on 13 Nov the developer asked for Nuclear and Naval "today" after all. Both are published. The rule PDFs were
+  downloaded by the developer and sit in `sources/NUCLEAR/` and `sources/NAVAL/` (never uploaded).
+  `tools/cards_pdf.py` holds the shared checks: each quote in the file it cites, every number in the English (and in
+  why, when, trap) in a quote, and the page shown is the page the first quote is found on.
+  - Nuclear (`tools/cards_nuclear.py`): 10 cards, entrants from 2021. The independent read found no wrong number and
+    flagged 6 cards: dates of application in the supplementary provisions (부칙) that the cards had dropped, and 초심, a
+    term the document never defines. The card now says so and sends the student to the office.
+  - Naval (`tools/cards_naval.py`): 44 cards, drafted by a helper session from the 18-page rules and then read by a
+    separate one, which found no wrong number or program and four real problems (a timing, a dropped "general
+    admission track" qualifier, an unusable literal line, an unsupported "applies to"). The 2026 and 2025 versions
+    differ only in the comprehensive examination subjects, so those have a card per version. Several lines in the
+    document are ambiguous in Korean; the cards quote them and say the document does not settle it.
+  - Notices: 52 (Nuclear) and 54 (Naval) since 1 Oct 2026. Nuclear's notice pages end with a different button row
+    (`class="function"`), now accepted by `bridge/briefs.py`. Naval's site returned HTTP 500 and then refused
+    connections at one request a second from three workers; `out/translate_gently.py` (one request every five
+    seconds, a minute's pause after a failure) finished it. If the daily job fails on Naval, that is the first suspect.
+  - A helper that writes cards must be followed by a different one that only reads; the writer's own report listed 18
+    doubtful readings, and the reader settled or confirmed each.

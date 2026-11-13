@@ -1,0 +1,49 @@
+{
+ "title_en": "Winter Session 2026 Field Practice 3 (Samsung Heavy Industries): Second-Round Application",
+ "summary": "Students who wish to take the Winter Session 2026 practicum-semester course Field Practice 3 (현장실습 3) at Samsung Heavy Industries may apply in the second round. Applicants must email the completed application form, signed at the bottom, to the Department of Naval Architecture and Ocean Engineering office between Tuesday 10 November and Wednesday 11 November 2026; the deadline is strictly enforced. Students selected in the first round may not apply.",
+ "applies_to": "Any student interested in taking the Winter Session 2026 practicum-semester course Field Practice 3 (현장실습 3) at Samsung Heavy Industries in the second round. Application is voluntary. Students selected in the first round may not apply.",
+ "dates": [
+  {
+   "what": "Second-round application period (strictly enforced)",
+   "when": "Tuesday 10 November 2026 to Wednesday 11 November 2026",
+   "original_ko": "2026.11.10.(화) ~ 2026.11.11.(수)",
+   "verified": true
+  },
+  {
+   "what": "Announcement of first-round selection results (students selected in the first round may not apply in the second round)",
+   "when": "Monday 9 November 2026",
+   "original_ko": "2026. 11. 9.(월)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Field Practice 3 combines field practice with course attendance, so selected students must register for the course.",
+  "Students taking Field Practice 3 may not take any other Winter Session course, including online (remote) courses.",
+  "Any other Winter Session course a student has already registered for will be cancelled.",
+  "The course registration and tuition payment schedule may differ from the regular schedule; students must check the separate notice.",
+  "Students who withdraw from the field practice partway through or participate insincerely will receive no credit.",
+  "Students who withdraw partway through or participate insincerely may also have their practicum allowance restricted.",
+  "Students selected in the first round may not apply in the second round.",
+  "The application deadline is strictly enforced.",
+  "The application form must include a signature at the bottom."
+ ],
+ "steps": [
+  "Read Attachment 1 ([붙임1], the list of second-round practicum host organisations), as the table of organisations may not appear in the notice itself.",
+  "Download Attachment 2 ([붙임2], the Samsung Heavy Industries Field Practice 3 application form, 참가신청서) and complete it.",
+  "Sign at the bottom of the application form.",
+  "Email the signed application form to the Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417) between 10 and 11 November 2026; the email address is in the original notice.",
+  "If selected, check the separate notice on course registration and tuition payment and register for Field Practice 3 and pay tuition according to that schedule."
+ ],
+ "translation": "Winter Session 2026 Practicum Semester: Second-Round Application for Field Practice 3 (『현장실습 3』) (Samsung Heavy Industries)\n\nThe second-round application for field practice in the Winter Session 2026 practicum-semester course Field Practice 3 (『현장실습 3』) is announced as follows. Interested students are encouraged to apply.\n\nBecause Field Practice 3 combines field practice with course attendance, students must register for the course (수강신청), and they may not take any other Winter Session course (including online/remote courses). Any other course already registered for will be cancelled. The course registration and tuition payment schedule may differ from the regular schedule, so students must check the separate notice.\n\nPlease note that students who withdraw from the field practice partway through or participate insincerely will not be awarded credit, and payment of the practicum allowance may be restricted.\n\n1. Course overview [no content appears in the text of the notice; it may have been an image or table, which was not read]\n\n2. Schedule [no content appears in the text of the notice; it may have been an image or table, which was not read]\n\n3. Practicum host organisations (※ If the table below is not visible, see the file \"[Attachment 1]\") [the table was not included in the text and was not read]\n\n4. How to submit the application: by email (with a signature at the bottom of the application form)\n\n5. Application period (deadline strictly enforced)\n - (Second round) Tuesday 10 November 2026 to Wednesday 11 November 2026\n\n6. Other information\n - Students selected in the first round may not apply in the second round.\n (※ First-round selection results announced: Monday 9 November 2026)\n\n7. Submission and enquiries: Department of Naval Architecture and Ocean Engineering office (Building 34, Room 417). The staff contact, email address and phone number are given in the original notice.\n\n[Attachment 1] 2026 (Winter) Practicum Semester Field Practice 3 Host Organisations (Second Round)\n[Attachment 2] (Samsung Heavy Industries) 2026 (Winter) Practicum Semester Field Practice 3 Application Form (참가신청서)\n\nAttached files (2):\n[붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관(2차).xlsx (12 KB)\n[붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(삼성중공업).docx (21 KB)\n\n(The contents of the attached files were not read.)",
+ "id": 21620,
+ "text_hash": "2ecf39e59d24f8ab",
+ "images": 3,
+ "attachments": [
+  "[붙임1] 2026(동계) 현장실습학기제_현장실습3_실습기관(2차).xlsx",
+  "[붙임2] 2026(동계) 현장실습학기제_현장실습3_참가신청서(삼성중공업).docx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

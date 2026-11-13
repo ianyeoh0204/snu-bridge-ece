@@ -1,0 +1,23 @@
+{
+ "title_en": "Busan Port Authority Maritime Startup Idea Competition \"Spark-Up 1876\"",
+ "summary": "The department is sharing an announcement from the Busan Port Authority about the maritime startup idea competition \"Spark-Up 1876\". The notice text gives no eligibility, deadlines or application method. These details appear to be in the attached PDF, which was not read for this translation.",
+ "applies_to": "",
+ "dates": [],
+ "conditions": [
+  "The notice text states no eligibility rules, deadlines or application requirements. These may be in the attached PDF, which was not read."
+ ],
+ "steps": [
+  "Open the attached file \"[붙임 2] (모집공고) 해양 창업아이디어 공모전 “Spark-up 1876” 지원자 모집 (최종).pdf\" on the original notice to check eligibility, deadlines and how to apply. This attachment was not read for this translation."
+ ],
+ "translation": "[Busan Port Authority] Announcement of the Maritime Startup Idea Competition \"Spark-Up 1876\"\n\nAttachments (1)\n[Attachment 2] (Recruitment Announcement) Maritime Startup Idea Competition \"Spark-up 1876\" Call for Applicants (Final).pdf (131 KB)\n\n(Translator's note: The notice has no body text beyond the title and the attachment. The content of the attached PDF was not read and is not included in this translation.)",
+ "id": 21595,
+ "text_hash": "a79551a50796b3ee",
+ "images": 1,
+ "attachments": [
+  "[붙임 2] (모집공고) 해양 창업아이디어 공모전 “Spark-up 1876” 지원자 모집 (최종).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

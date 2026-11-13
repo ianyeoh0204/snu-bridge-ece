@@ -1,0 +1,22 @@
+{
+ "title_en": "Launch of the SNU Credit Exchange Portal",
+ "summary": "The SNU Credit Exchange (SNU 학점교류) portal is now open at https://exchange.snu.ac.kr and can also be reached through the mySNU portal. It provides information on exchange study at other universities in Korea, interest settings and notifications, and records of participation. The notice does not set any deadline or require any action; students are referred to the attached student manual for details.",
+ "applies_to": "",
+ "dates": [],
+ "conditions": [],
+ "steps": [
+  "Read the attached manual, \"Seoul National University Credit Exchange Portal Manual (for Students)\" (서울대학교 학점교류포털 매뉴얼(학생용).pdf), for details. Its content was not read for this translation.",
+  "Access the portal at https://exchange.snu.ac.kr, or through the mySNU portal using the top menu or the \"SNU 학점교류\" link under '이런 서비스 어떠세요?' (How about these services?)."
+ ],
+ "translation": "Launch of the 「SNU Credit Exchange」 (「SNU 학점교류」) Portal\n\nThe 「SNU Credit Exchange」 portal has opened, and we inform you as follows.\nPlease refer to the attached manual for details.\n\n1. System address: SNU Credit Exchange (SNU 학점교류) https://exchange.snu.ac.kr\n※ The portal can also be accessed through the top menu of the mySNU portal or through \"SNU 학점교류\" under '이런 서비스 어떠세요?' (How about these services?).\n\n2. Main functions\nA. Provides recruitment information for exchange study at other universities in Korea and supports searching by criteria.\nB. Setting regions, consortia and universities of interest; saving (scrapping) announcements; and notifications of new announcements from universities of interest.\nC. Management of records of participation in exchange study at other universities in Korea.\n\n[Attachment] Seoul National University Credit Exchange Portal Manual (for Students)\nAttached file (1): [붙임] 서울대학교 학점교류포털 매뉴얼(학생용).pdf (5 MB)\n\n(Note: The content of the attached PDF manual was not available and was not read for this translation.)",
+ "id": 21580,
+ "text_hash": "ec0b6053a964412d",
+ "images": 0,
+ "attachments": [
+  "[붙임] 서울대학교 학점교류포털 매뉴얼(학생용).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

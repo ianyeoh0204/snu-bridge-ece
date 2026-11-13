@@ -1,0 +1,29 @@
+{
+ "title_en": "Seoul National University Student Reserve Forces Training Schedule, Second Half of 2026",
+ "summary": "Seoul National University has announced its student reserve forces training schedule for the second half of 2026. The training targets Seoul National University students and faculty/staff. It is Basic Training, Second Session (8 hours), held on 28–29 October 2026 at the Seocho Scientific Reserve Forces Training Ground, Gangdong-Songpa Training Ground, Naegok-dong, Seocho-gu, Seoul, with each participant assigned to one of the two days.",
+ "applies_to": "Seoul National University students and faculty/staff, as listed under training participants. The notice does not state any further limits or say whether attendance is mandatory.",
+ "dates": [
+  {
+   "what": "Basic Training, Second Session (8 hours); each participant is assigned to one of the two days",
+   "when": "Wednesday 28 October 2026 to Thursday 29 October 2026",
+   "original_ko": "’26. 10. 28.(수) ~ 29.(목), 2일중 1일편성",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Each participant attends only one of the two training days (28 or 29 October), as assigned.",
+  "The training is 8 hours long.",
+  "The notice does not explain how the training day is assigned.",
+  "The notice is inconsistent about the period: the body says the second half of 2026, but the schedule heading says the first half and the title omits the half. The listed dates are in October 2026."
+ ],
+ "steps": [],
+ "translation": "Title: 2026 Seoul National University [Half-Year] Student Reserve Forces Training Schedule\n\n(Note: the original title reads \"반기\" (half-year) without specifying first or second half.)\n\nWe are announcing the training schedule for the Seoul National University student reserve forces training for the second half of 2026. Please refer to it.\n\n• Seoul National University Student Reserve Forces Training Schedule, First Half of 2026\n(Note: the original heading says \"first half\" (상반기), although the opening sentence says \"second half\" (하반기).)\n\n- Training type: Basic Training, Second Session (8 hours)\n\n- Training participants: Seoul National University students and faculty/staff\n\n- Training location: Seocho Scientific Reserve Forces Training Ground, Gangdong-Songpa Training Ground, Naegok-dong, Seocho-gu, Seoul (서울시 서초구 내곡동 서초과학화예비군훈련장 강동송파훈련장)\n\n- Training schedule: Wednesday 28 October 2026 to Thursday 29 October 2026; each participant is assigned to one of the two days.",
+ "id": 21573,
+ "text_hash": "67308116a4d29f06",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,40 @@
+{
+ "title_en": "Updating Laboratory Personnel Information in the Research Safety System (SAFE)",
+ "summary": "Every laboratory registered in the Research Safety Integrated Information System (SAFE) must keep its personnel information up to date. Laboratories must enter any change, such as graduation, admission, retirement or a new member (including external researchers), in SAFE immediately when it occurs. Updates are made under SAFE → Laboratory [연구실] → Laboratory List [연구실목록] → Basic Information [기본정보].",
+ "applies_to": "All laboratories registered in SAFE, including their external researchers. Research workers who enter the shared-space laboratory on basement level 1 of Building 34 must also be entered in SAFE; this is mandatory.",
+ "dates": [
+  {
+   "what": "Deadline for entering personnel changes (graduation, admission, retirement, new members, including external researchers) in SAFE",
+   "when": "Immediately, whenever a change occurs",
+   "original_ko": "즉시",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Research workers who enter the shared-space laboratory on basement level 1 of Building 34 must be entered in SAFE.",
+  "Only the Principal Investigator [연구실책임자] or the currently registered Laboratory Safety Manager [연구실안전관리담당자] can designate or change the Laboratory Safety Manager.",
+  "If you do not have permission to make this entry, you must ask the department office.",
+  "A laboratory whose approval status [결재상태] is not 'Approved' [승인] cannot designate a manager or change its personnel information.",
+  "If the Principal Investigator no longer meets the requirements for that role, for example because of retirement, leave of absence or non-tenure-track status, the laboratory must file a laboratory change report [연구실 변경신고].",
+  "A laboratory whose research activities have ended must file a closure report [폐쇄신고].",
+  "Out-of-date personnel information hinders safety inspections and the delivery of inspection findings, and could delay contact and response if a laboratory accident occurs."
+ ],
+ "steps": [
+  "Read pages 35–36 of the attachment 'SAFE Laboratory Registration and Management Manual' (SAFE 연구실 등록·관리매뉴얼.pdf). Its content was not read for this translation.",
+  "Log in to SAFE and go to Laboratory [연구실] → Laboratory List [연구실목록] → Basic Information [기본정보].",
+  "Enter every personnel change immediately (graduation, admission, retirement, new members, including external researchers). Include all research workers who enter the shared-space laboratory on basement level 1 of Building 34.",
+  "If the Laboratory Safety Manager must be designated or changed, have the Principal Investigator or the current Laboratory Safety Manager make the change. If you lack permission, send the request to the department office.",
+  "If the Principal Investigator no longer meets the requirements, file a laboratory change report [연구실 변경신고]. If research activities have ended, file a closure report [폐쇄신고]."
+ ],
+ "translation": "Title: Updating Laboratory Personnel Information in the Research Safety Integrated Information System (SAFE)\n\nLaboratory personnel information registered in the Research Safety Integrated Information System (hereinafter \"SAFE\") is used for laboratory safety inspections, safety training, emergency contact in the event of a laboratory accident, and similar purposes.\n\nDuring recent laboratory safety inspections, many cases were found in which the registration of research workers in SAFE had not been updated after changes such as graduation, admission, retirement or the arrival of new members (including external researchers). This makes inspections and the delivery of inspection findings difficult, and it may hinder prompt contact and response if a laboratory accident occurs.\n\nWhenever a personnel change such as graduation, retirement or a new member occurs, each laboratory is asked to enter it in SAFE immediately, so that the registered information is always kept up to date.\n\nA. Applies to: all laboratories registered in SAFE\n※ Research workers who enter the shared-space laboratory on basement level 1 of Building 34 must also be entered.\n\nB. Registration path: SAFE → Laboratory [연구실] → Laboratory List [연구실목록] → Basic Information [기본정보] (see pages 35–36 of the attachment)\n\nC. Other matters\n1) The Laboratory Safety Manager [연구실안전관리담당자] can be designated or changed by the Principal Investigator [연구실책임자] or by the currently registered Laboratory Safety Manager. If you do not have permission to make the entry, send a request to the department office.\n2) A laboratory whose approval status [결재상태] is not 'Approved' [승인] cannot designate a manager or change its personnel information.\n3) If the Principal Investigator no longer meets the requirements for designation as Principal Investigator, for example because of retirement, leave of absence or non-tenure-track status, a laboratory change report [연구실 변경신고] is required. A laboratory whose research activities have ended must file a closure report [폐쇄신고].\n\nIn addition, a guide to safe research activities has been distributed and a generative AI chatbot is now in operation, as described below. Please make full use of them.\n\nD. Guide to Safe Research Activities [안전한 연구활동 안내서]\n- How to access: Log in to the mySNU portal → Education & Research Support [교육·연구지원] → Research Safety (SAFE, Research Safety Integrated Information System) [연구안전(SAFE, 연구안전통합정보시스템)] → on the main screen, click the 'Guide to Safe Research Activities' [안전한 연구활동 안내서] menu.\n\nE. 'Safe Research Activities Guide' [안전한 연구활동 안내] generative AI chatbot\n- How to access: Log in to the mySNU portal → Education & Research Support [교육·연구지원] → Research Safety (SAFE, Research Safety Integrated Information System) [연구안전(SAFE, 연구안전통합정보시스템)] → click the 'Research Safety AIChat' [연구안전 AIChat] icon at the lower right of the main screen.\n※ Alternatively, you can access the chatbot directly through the QR code at the bottom of the original notice. The QR code is an image and was not read for this translation.\n\nAttachment (1)\nAttachment 1. SAFE Laboratory Registration and Management Manual [SAFE 연구실 등록·관리매뉴얼.pdf] (6 MB). The content of this attachment was not read for this translation.",
+ "id": 21622,
+ "text_hash": "4e240cdc1c168b97",
+ "images": 1,
+ "attachments": [
+  "붙임1. SAFE 연구실 등록·관리매뉴얼.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

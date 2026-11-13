@@ -1,0 +1,45 @@
+{
+ "title_en": "KIMST Recruitment of Trainees for Research Equipment Use Training, 2026",
+ "summary": "Those wishing to train on research equipment at the Korea Institute of Marine Science & Technology Promotion (KIMST) research infrastructure specialised operation partner institutions must apply online through the Badabom website. Applications are accepted from 09:00 on 16 November 2026 to 18:00 on 20 November 2026 on a first-come, first-served basis and may close early. Applicants should read the attached recruitment notice for full details.",
+ "applies_to": "Anyone wishing to apply as a trainee for the research equipment use training; this is an application-based recruitment, not a mandatory requirement. The notice text does not state eligibility limits; these may be in the attached recruitment notice, which was not read.",
+ "dates": [
+  {
+   "what": "Announcement period of the recruitment",
+   "when": "Wednesday 11 November 2026 to Friday 20 November 2026",
+   "original_ko": "2026. 11. 11.(수) ~ 11. 20.(금)",
+   "verified": true
+  },
+  {
+   "what": "Application period (first-come, first-served; may close early)",
+   "when": "Monday 16 November 2026, 09:00 to Friday 20 November 2026, 18:00",
+   "original_ko": "2026. 11. 16.(월) 09:00 ~ 11. 20.(금) 18:00까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications are accepted on a first-come, first-served basis, so the application period may close early.",
+  "Each applicant may apply for a maximum of two types of equipment.",
+  "A first-choice equipment is required; a second choice is optional.",
+  "If you want only one type of equipment, enter 'Do not apply' ('신청하지 않음') for the second choice.",
+  "Each practical session lasts 90 minutes per equipment, with a maximum of five trainees per session per equipment.",
+  "Equipment will be assigned according to your order of preference, taking into account the number of applications and the session capacity for each equipment.",
+  "Your final equipment and practical session time will be notified separately when trainees are selected."
+ ],
+ "steps": [
+  "Read the attached recruitment notice ([붙임2] 2026년 해양 연구인프라 전문운영 협력기관 연구장비 활용 교육생 모집 공고문-게시용.hwp) for full details; its content was not read for this translation.",
+  "Between 09:00 on 16 November 2026 and 18:00 on 20 November 2026, go to the Badabom website (https://badabom.go.kr) and select Workforce Development [인력양성] → Marine Research Equipment Use [해양연구장비활용] → Submit Application [신청서 제출].",
+  "In the application, enter your first-choice equipment (required) and either a second choice or 'Do not apply' ('신청하지 않음') if you want only one type of equipment.",
+  "Wait for the separate notification of your final equipment and practical session time if you are selected."
+ ],
+ "translation": "[Korea Institute of Marine Science & Technology Promotion (KIMST)] Recruitment of Trainees for Research Equipment Use at Research Infrastructure Specialised Operation Partner Institutions\n\n□ Announcement and Application Period\n - Announcement period: Wednesday 11 November 2026 to Friday 20 November 2026\n - Application period: Monday 16 November 2026, 09:00 to Friday 20 November 2026, 18:00 ※ Applications are accepted on a first-come, first-served basis and may close early.\n\n□ How to Apply\n - Badabom website (https://badabom.go.kr) → Workforce Development [인력양성] → Marine Research Equipment Use [해양연구장비활용] → Submit Application [신청서 제출]\n\n□ Notes on Applying\n - Each person may apply for up to two types of equipment for practical training. The first choice is required and the second choice is optional.* * If you want only one type of equipment, please enter 'Do not apply' ['신청하지 않음'].\n - Each practical session is 90 minutes per equipment, and each session for each equipment is limited to a maximum of five trainees.\n - Equipment will be assigned according to order of preference, taking into account the applications received and the session capacity for each equipment.\n ※ The final equipment and practical session time will be notified separately when trainees are selected.\n※ Please check the attached recruitment notice for details.\n\nAttachment (1)\n[붙임2] 2026년 해양 연구인프라 전문운영 협력기관 연구장비 활용 교육생 모집 공고문-게시용.hwp (531 KB) (2026 Recruitment Notice for Trainees in Research Equipment Use at Marine Research Infrastructure Specialised Operation Partner Institutions – for posting). The content of this attachment was not read.",
+ "id": 21624,
+ "text_hash": "552800d0f47665b8",
+ "images": 1,
+ "attachments": [
+  "[붙임2] 2026년 해양 연구인프라 전문운영 협력기관 연구장비 활용 교육생 모집 공고문-게시용.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

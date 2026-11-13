@@ -1,0 +1,35 @@
+{
+ "title_en": "Korea Offshore and Shipbuilding Association: November 2025 Professional Workforce Training Programs",
+ "summary": "The Korea Offshore and Shipbuilding Association has announced the professional workforce training programs of its Future Innovation Talent Development Center for November 2025. The notice consists only of a title and three attachments, so eligibility, deadlines and the application method are not stated in the text. Interested students should consult the attachments, which were not read for this translation.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Month in which the professional workforce training programs of the Future Innovation Talent Development Center take place, as stated in the notice title",
+   "when": "November 2025",
+   "original_ko": "2025년 11월",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The notice text does not state who is eligible, whether participation is required, or any application deadline; these details may appear only in the attachments, which were not read.",
+  "The notice title refers to November 2025, while the notice was posted in October 2026 and the brochure refers to 2026; the notice does not explain this difference, so confirm the dates with the department office (contact details are in the original notice)."
+ ],
+ "steps": [
+  "Read the attached brochure, '(Brochure) Introduction to the 2026 Shipbuilding and Offshore Future Innovation Talent Development Center Project' (PDF); its content was not read for this translation.",
+  "Open the training information file for your region: '1. Future Innovation Talent Development Center November Training Information (Capital Region, Southeast Region)' (ZIP) or '2. Future Innovation Talent Development Center November Training Information (Southwest Region)' (ZIP); their contents were not read for this translation.",
+  "Follow the eligibility, schedule and application instructions given in those attachments, and contact the department office (contact details are in the original notice) if anything is unclear."
+ ],
+ "translation": "[Korea Offshore and Shipbuilding Association (한국조선해양플랜트협회)] Information on the Professional Workforce Training Programs of the Future Innovation Talent Development Center (미래혁신인재양성센터), November 2025\n\nAttachments (3):\n\n(Brochure) Introduction to the 2026 Shipbuilding and Offshore Future Innovation Talent Development Center Project ((브로슈어) 2026년 조선해양미래혁신인재양성센터사업 소개.pdf, 17 MB)\n\n1. Future Innovation Talent Development Center November Training Information (Capital Region, Southeast Region) (1. 미래혁신인재양성센터 11월 교육 안내자료(수도권, 동남권).zip, 4 MB)\n\n2. Future Innovation Talent Development Center November Training Information (Southwest Region) (2. 미래혁신인재양성센터 11월 교육 안내자료(서남권).zip, 2 MB)\n\n[Translator's note: The notice contains no body text beyond the title and the list of attachments. The contents of the attachments were not read.]",
+ "id": 21586,
+ "text_hash": "56a5d6fd097b36b9",
+ "images": 1,
+ "attachments": [
+  "(브로슈어) 2026년 조선해양미래혁신인재양성센터사업 소개.pdf",
+  "1. 미래혁신인재양성센터 11월 교육 안내자료(수도권, 동남권).zip",
+  "2. 미래혁신인재양성센터 11월 교육 안내자료(서남권).zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,30 @@
+{
+ "title_en": "Gong Busking Event: Wednesday 14 October, 12:30–13:30, Red Square",
+ "summary": "The College of Engineering is holding a busking performance event, \"Gong Busking\" (공버스킹), on Wednesday 14 October from 12:30 to 13:30 at the Red Square (붉은광장). All interested members of the community are invited to attend. Attendance is optional, and the notice gives no registration procedure.",
+ "applies_to": "Interested members of the Seoul National University College of Engineering community (구성원). Attendance is optional, not mandatory.",
+ "dates": [
+  {
+   "what": "Gong Busking event at the Red Square (붉은광장), open to all interested members",
+   "when": "Wednesday 14 October, 12:30–13:30",
+   "original_ko": "10/14(수) 12:30~13:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Attendance is voluntary.",
+  "The notice says details follow \"as below\", but no further details appear in the text. Any attached image or file was not read, so performer sign-up rules, if any, are not known."
+ ],
+ "steps": [
+  "Go to the Red Square (붉은광장) on Wednesday 14 October between 12:30 and 13:30 if you wish to attend.",
+  "For further details, check the original notice and any attachment, which were not read, or contact the department office. The contact details are in the original notice."
+ ],
+ "translation": "Title: Notice of the \"Gong Busking\" Event (Wednesday 10/14, 12:30–13:30, Red Square [붉은광장])\n\nThe College of Engineering is holding \"Gong Busking\" (공버스킹) as described below. The event aims to discover and share the cultural abilities and artistic potential of Seoul National University College of Engineering students. It also aims to turn campus spaces into open cultural spaces in everyday life and to create a free and lively campus culture. We encourage all interested members of the community to take part.\n\n[Translator's note: The notice says the details follow, but no further details appear in the text. Any attached image or file was not read.]",
+ "id": 21577,
+ "text_hash": "773e2e3339109300",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,42 @@
+{
+ "title_en": "Additional Recommendations for the 3rd IPESK Next-Generation Engineers and Engineering Researchers",
+ "summary": "Interested currently enrolled students may apply for an additional round of recommendations for the 3rd IPESK Next-Generation Engineer (3rd- or 4th-year undergraduates with a cumulative GPA of 3.5 or higher) or Next-Generation Engineering Researcher (graduate students with outstanding paper publication, presentation or award records). Applicants must complete the recommendation list form, the personal information consent form and the required supporting documents. They must email these to the department office by Friday, 13 November 2026.",
+ "applies_to": "Optional; for interested students only. Next-Generation Engineer: currently enrolled 3rd-year or 4th-year undergraduate students with a grade point average of 3.5 or higher across all semesters. Next-Generation Engineering Researcher: currently enrolled graduate students with an outstanding paper publication, presentation or award record. Detailed requirements are in Attachment 1, which was not read.",
+ "dates": [
+  {
+   "what": "Deadline to email the application documents to the department office (both categories)",
+   "when": "Friday, 13 November 2026",
+   "original_ko": "2026.11.13(금)까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Next-Generation Engineer applicants must be currently enrolled 3rd-year or 4th-year undergraduates with a GPA of 3.5 or higher across all semesters.",
+  "Next-Generation Engineering Researcher applicants must be currently enrolled graduate students with an outstanding paper publication, presentation or award record.",
+  "Detailed eligibility requirements are set out in Attachment 1, whose content was not read for this translation.",
+  "Each department may recommend at most 10 Next-Generation Engineers (per 60 places in its admission quota) and at most 5 Next-Generation Engineering Researchers.",
+  "Departmental recommendations will undergo an internal review by the College of Engineering before the final recommendation is made, so being recommended by the department does not guarantee final recommendation."
+ ],
+ "steps": [
+  "Read the earlier notice on the 3rd IPESK Next-Generation Engineer (Researcher) recommendation (linked in the original notice) and Attachment 1, which gives the detailed requirements.",
+  "Download and complete the recommendation list form (Attachment 3, [붙임3] 추천명단(서식), Excel file).",
+  "Download and complete the personal information collection, use and provision consent form for your category: the Next-Generation Engineer form ([붙임4] 차세대 공학자 개인정보 수집 및 이용 동의서) or the Next-Generation Engineering Researcher form ([붙임5] 차세대 공학연구자 개인정보 수집 및 이용 동의서).",
+  "Next-Generation Engineer applicants: also prepare one academic transcript.",
+  "Next-Generation Engineering Researcher applicants: also prepare one document each describing your representative paper record and your award record.",
+  "Email all documents to the department office by Friday, 13 November 2026. The email address is in the original notice."
+ ],
+ "translation": "Additional Recommendations for the 3rd IPESK Next-Generation Engineers (Researchers)\n\nIPESK (사단법인 한국이공학진흥원, an incorporated association) intends to receive recommendations of outstanding currently enrolled students and to certify them as IPESK Next-Generation Engineers (Researchers), in order to promote engineering education and to develop outstanding engineers and engineering researchers. This is a notice of an additional round of recommendations; students interested in the programme are asked to apply.\n\nLink to the earlier notice: [Recommendation list form changed] Recommendations for the 3rd IPESK Next-Generation Engineers (Researchers) (by Fri 3/20) - Notices - Department News - Department of Naval Architecture and Ocean Engineering, Seoul National University.\n\nA. Recommendation requirements for IPESK Next-Generation Engineers (Researchers). ※ For detailed requirements and information, see the information sheet [Attachment 1].\n- Engineer (공학자): currently enrolled 3rd-year or 4th-year undergraduate students with excellent grades (grade point average of 3.5 or higher across all semesters).\n- Engineering Researcher (공학연구자): currently enrolled graduate students with an outstanding paper publication, presentation or award record.\n\nB. Number of students who may be recommended. ※ The final recommendation will be made after an internal College of Engineering review of each department's recommendations.\n- Engineer: at most 10 per department (per 60 places in the admission quota).\n- Engineering Researcher: at most 5 per department.\n\nC. Submission deadline and method:\n- Engineer: one copy each of the recommendation list form [Attachment 3], the personal information collection, use and provision consent form [Attachment 4] and an academic transcript.\n- Engineering Researcher: one copy each of the recommendation list form [Attachment 3], the personal information collection, use and provision consent form [Attachment 4], the representative paper record and the award record.\nComplete these and send them to the department office by email by Fri 13 November 2026. (The email address is in the original notice.)\n\nAttachments:\n1. One copy each of the official recommendation request letter and the information sheet.\n2. One copy each of the submission document forms.\n\nAttached files (4):\n- (Attachment 3) 3rd Next-Generation Engineer (Researcher) recommendation list (form) (Excel, 33 KB)\n- [Attachment 1] Additional recommendations for the 3rd IPESK Next-Generation Engineers (Researchers) (PDF, 138 KB)\n- [Attachment 4] 3rd Next-Generation Engineer personal information collection and use consent form (HWP, 51 KB)\n- [Attachment 5] 3rd Next-Generation Engineering Researcher personal information collection and use consent form (HWP, 52 KB)\n\nNote from the translator: the attached files were not read. The notice text refers to the consent form as Attachment 4 for both categories, but the file list shows a separate consent form for Engineering Researchers as Attachment 5.",
+ "id": 21587,
+ "text_hash": "f14423f7a9f41cbd",
+ "images": 0,
+ "attachments": [
+  "(붙임3) 제3기 차세대 공학(연구)자 추천명단(서식)_복구.xlsx",
+  "[붙임1] 제3기 IPESK 차세대 공학(연구)자 추가 추천 안내.pdf",
+  "[붙임4] 제3기 차세대 공학자 개인정보 수집 및 이용 동의서(서식).hwp",
+  "[붙임5] 제3기 차세대 공학연구자 개인정보 수집 및 이용 동의서(서식).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

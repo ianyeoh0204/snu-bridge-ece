@@ -1,0 +1,34 @@
+{
+ "title_en": "Korea Shipbuilding & Offshore Plant Association: October 2025 Specialist Training Programme",
+ "summary": "The Korea Shipbuilding & Offshore Plant Association has announced the operation of specialist workforce training by its Future Innovation Talent Training Center in October 2025 (the year as stated in the notice title, although the notice was posted in October 2026). The notice consists only of a title and three attachments, which were not read; interested students should consult the attachments for course details, eligibility, dates, locations and application procedures.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Period during which the Future Innovation Talent Training Center specialist workforce training is operated (as stated in the title; details are in the attachments, which were not read)",
+   "when": "October 2025",
+   "original_ko": "2025년 10월",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The notice text does not state who may attend, whether participation is mandatory, or any conditions; any such details are in the attachments, which were not read."
+ ],
+ "steps": [
+  "Read the attached October training information for your region: the Capital Area and Southeast region file, or the Southwest region file (the attachments were not read for this translation).",
+  "Read the attached brochure introducing the 2026 Shipbuilding and Offshore Future Innovation Talent Training Center project for background information.",
+  "For questions, contact the department office; contact details, if any, are in the original notice."
+ ],
+ "translation": "[Korea Shipbuilding & Offshore Plant Association (한국조선해양플랜트협회)] Notice on the Operation of Specialist Workforce Training by the Future Innovation Talent Training Center (미래혁신인재양성센터), October 2025\n\n(Translator's note: the title states October 2025, although the notice was posted on 6 October 2026. The notice contains no body text other than the attachments listed below.)\n\nAttachments (3):\n\n(Brochure) Introduction to the 2026 Shipbuilding and Offshore Future Innovation Talent Training Center Project (2026년 조선해양미래혁신인재양성센터사업 소개.pdf, 17 MB)\n\n1. Future Innovation Talent Training Center October training information (Capital Area, Southeast region) (미래혁신인재양성센터 10월 교육 안내자료(수도권, 동남권).zip, 5 MB)\n\n2. Future Innovation Talent Training Center October training information (Southwest region) (미래혁신인재양성센터 10월 교육 안내자료(서남권).zip, 3 MB)\n\n(The contents of the attachments were not read and are not included in this translation.)",
+ "id": 21572,
+ "text_hash": "81e4246530728e37",
+ "images": 2,
+ "attachments": [
+  "(브로슈어) 2026년 조선해양미래혁신인재양성센터사업 소개.pdf",
+  "1. 미래혁신인재양성센터 10월 교육 안내자료(수도권, 동남권).zip",
+  "2. 미래혁신인재양성센터 10월 교육 안내자료(서남권).zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

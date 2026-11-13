@@ -1,0 +1,85 @@
+{
+ "title_en": "Mirae Asset Financial Services TAMS Global Financial Professional Training Program, Cohort 17: Recruitment",
+ "summary": "Students currently enrolled in the second semester of their second year or above, students on leave of absence and graduates may apply to Cohort 17 of the TAMS Global Financial Professional Training Program, an external activity run by Mirae Asset Financial Services. Applications are accepted from 1 October 2026 (Thursday) to 30 November 2026 (Monday) through the pre-application website http://miraeassetfptams.com. Applicants must choose only one session (Round 1, Round 2 or Busan), and applying to more than one is not allowed.",
+ "applies_to": "Students currently enrolled in the second semester of their second year or above, students on leave of absence, and graduates. Participation is voluntary; this is an external activity program, not a department requirement.",
+ "dates": [
+  {
+   "what": "Application period",
+   "when": "1 October 2026 (Thursday) to 30 November 2026 (Monday)",
+   "original_ko": "2026년 10월 1일(목) ~ 11월 30일(월)",
+   "verified": true
+  },
+  {
+   "what": "Announcement of applicants who pass the document screening",
+   "when": "Early December 2026",
+   "original_ko": "2026년 12월 초",
+   "verified": true
+  },
+  {
+   "what": "Final interview",
+   "when": "Mid-December 2026",
+   "original_ko": "2026년 12월 중순",
+   "verified": true
+  },
+  {
+   "what": "Announcement of final successful applicants",
+   "when": "Late December 2026",
+   "original_ko": "2026년 12월 말",
+   "verified": true
+  },
+  {
+   "what": "Round 1 training period (weekdays only), for those selected for Round 1. The notice also describes Round 1 as two weeks during January 2027.",
+   "when": "Two weeks in early January 2027",
+   "original_ko": "2027년 1월초 2주간",
+   "verified": true
+  },
+  {
+   "what": "Round 1 period as stated in the recruitment section (the training section gives early January)",
+   "when": "Two weeks during January 2027",
+   "original_ko": "27년 1월중 2주",
+   "verified": true
+  },
+  {
+   "what": "Round 2 training period (weekdays only), for those selected for Round 2. The notice also describes Round 2 as two weeks during February 2027.",
+   "when": "Two weeks in early February 2027",
+   "original_ko": "2027년 2월초 2주간",
+   "verified": true
+  },
+  {
+   "what": "Round 2 period as stated in the recruitment section (the training section gives early February)",
+   "when": "Two weeks during February 2027",
+   "original_ko": "27년 2월중 2주",
+   "verified": true
+  },
+  {
+   "what": "Busan session training period (weekdays only), for those selected for the Busan session",
+   "when": "Two weeks in late January 2027",
+   "original_ko": "2027년 1월말 2주간",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applying to more than one session is not allowed; you must choose one session (Round 1, Round 2 or Busan).",
+  "Training takes place on weekdays only.",
+  "Selection does not consider grade point average, language test scores or internship experience; it focuses on the applicant's potential.",
+  "About 100 participants will be selected for each of Round 1, Round 2 and the Busan session.",
+  "Participants who complete the program receive a certificate of completion and a small completion allowance.",
+  "The notice gives slightly different timings for Rounds 1 and 2 in different sections (mid-month in one, early month in another); check with the organiser if this matters to you."
+ ],
+ "steps": [
+  "Decide which single session you wish to attend: Round 1 (January 2027, Seoul), Round 2 (February 2027, Seoul) or the Busan session (late January 2027).",
+  "Submit your pre-application on the website http://miraeassetfptams.com between 1 October and 30 November 2026.",
+  "Check for the document screening results in early December 2026 and, if you pass, attend the final interview in mid-December 2026.",
+  "Check for the final results in late December 2026.",
+  "For questions, contact the program manager at Mirae Asset Financial Services; the contact details are in the original notice."
+ ],
+ "translation": "[Mirae Asset Financial Services] TAMS Global Financial Professional Training Program, Cohort 17: Recruitment\n\nWe announce the recruitment for Cohort 17 of the [Mirae Asset Financial Services] TAMS Global Financial Professional Training Program as follows.\n\nThis is an external activity program run by the global financial company Mirae Asset Financial Services. Through this program, made up of substantial content over two weeks of the winter vacation, discover your limitless potential and an inspiring vision.\n\nSelection excludes credentials such as grade point average, language test scores and internship experience, and focuses on your potential!\n\n□ Eligibility\n - Students currently enrolled in the second semester of their second year or above, students on leave of absence, and graduates.\n - Round 1 (two weeks during January 2027): about 100 participants; Round 2 (two weeks during February 2027): about 100 participants to be selected.\n - Busan (two weeks in late January 2027): about 100 participants to be selected.\n\n□ Application schedule\n - Application period: 1 October 2026 (Thursday) to 30 November 2026 (Monday)\n - Announcement of document screening results: early December 2026\n - Final interview: mid-December 2026\n - Announcement of final successful applicants: late December 2026\n\n□ Training period (weekdays only) *Applying to more than one session is not allowed; you must choose one session.\n - Round 1: two weeks in early January 2027\n - Round 2: two weeks in early February 2027\n - Busan: two weeks in late January 2027\n\n□ Training venues\n - Gangnam YBM the biz: 48 Teheran-ro 1-gil, Gangnam-gu, Seoul\n - Busan Port International Exhibition & Convention Center: 206 Chungjang-daero, Dong-gu, Busan\n\n□ Training content: the growth story of the Mirae Asset Group, global financial market trends, portfolio management including stocks, bonds, insurance and real estate, understanding financial processes, conversations with current Mirae Asset employees, business manners, team assignments, and more.\n * On completion, a certificate of completion and a small completion allowance will be provided.\n\n■ Pre-application: http://miraeassetfptams.com\n (Clicking the link above takes you to the pre-application page.)\n\n□ Inquiries: the program manager at Mirae Asset Financial Services (contact details are given in the original notice).",
+ "id": 21578,
+ "text_hash": "5a904ea30c54345e",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

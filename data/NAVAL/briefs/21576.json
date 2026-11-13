@@ -1,0 +1,42 @@
+{
+ "title_en": "Recruitment for the 2027 FSU Disney Internship Program (Deadline: 12 November)",
+ "summary": "Undergraduate students interested in the FSU (Florida State University) Disney Internship Program may apply; up to 15 students will be selected for a paid internship from July 2027 to January 2028. Applications are due by Thursday, 12 November. The application method and detailed schedule are given in the attached files, which were not read; please read them and contact the International Cooperation Support Team (국제협력지원과) with any questions.",
+ "applies_to": "Undergraduate students who are interested in the FSU Disney Internship Program. Application is voluntary, not mandatory. No other limits are stated in the notice text; further eligibility details may be in the attached recruitment notice, which was not read.",
+ "dates": [
+  {
+   "what": "Application deadline",
+   "when": "By Thursday, 12 November (the year is not stated; the notice was posted in October 2026)",
+   "original_ko": "~11/12(목)까지",
+   "verified": true
+  },
+  {
+   "what": "Internship period (6 months), for selected students",
+   "when": "July 2027 to January 2028",
+   "original_ko": "2027년 7월 ~ 2028년 1월(6개월간)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "No more than 15 undergraduate students will be selected.",
+  "The internship is a paid, dispatched (on-site) work placement lasting 6 months.",
+  "The detailed schedule and application procedure are only in the attachments, which were not read; students must check them before applying."
+ ],
+ "steps": [
+  "Read the attached recruitment notice (2027년 FSU 디즈니 인턴십 프로그램_모집 공고문.pdf) for the detailed schedule, eligibility and how to submit; its content was not read for this translation.",
+  "Download the application form file (붙임 디즈니 인턴십 지원 양식.zip) from the notice and complete the forms.",
+  "Submit the application as instructed in the attached recruitment notice by Thursday, 12 November.",
+  "For questions, contact the International Cooperation Support Team (국제협력지원과); the contact details are in the original notice."
+ ],
+ "translation": "Recruitment for Participants in the 2027 FSU Disney Internship Program (until Thursday, 12 November)\n\nUnder its agreement with FSU (Florida State University), the Office of International Affairs (국제처) is recruiting participants to work as interns in the FSU Disney Program, as set out below. Interested students are invited to apply.\n\nA. Internship overview\n- Number of participants: up to 15 undergraduate students\n- Internship period: July 2027 to January 2028 (6 months)\n- Working conditions: dispatched work (paid)\n\nB. Main schedule (see the attachment for the detailed schedule)\n\nC. Enquiries: International Cooperation Support Team (국제협력지원과) (contact details are given in the original notice)\n\nAttachments\n1. 2027 FSU Disney Internship Program recruitment notice, 1 copy.\n2. Disney Internship application forms, 1 copy each.\n\nAttached files (2)\n1. 2027년 FSU 디즈니 인턴십 프로그램_모집 공고문.pdf (195 KB)\n2. 붙임 디즈니 인턴십 지원 양식.zip (63 KB)\n\n[Note: The contents of the attached files were not read and are not included in this translation.]",
+ "id": 21576,
+ "text_hash": "3b69eb0f8af7a5d6",
+ "images": 1,
+ "attachments": [
+  "1. 2027년 FSU 디즈니 인턴십 프로그램_모집 공고문.pdf",
+  "2. 붙임 디즈니 인턴십 지원 양식.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

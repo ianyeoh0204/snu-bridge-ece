@@ -1,0 +1,24 @@
+{
+ "title_en": "Promotion: November Gong-Busking (공버스킹) Event",
+ "summary": "This is a promotional notice announcing that a Gong-Busking (공버스킹) event will be held in November. The notice as provided contains only its title; it gives no exact date, time, location, eligibility or participation procedure. Students who are interested should consult the original notice or the department office for details.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Month in which the Gong-Busking (공버스킹) event is to be held (exact date, time and place not stated)",
+   "when": "November",
+   "original_ko": "11월",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [],
+ "translation": "[Promotion] Notice of the November Gong-Busking (공버스킹) Event\n\n(Only the title of this notice was provided. No body text, image or attachment was available, so no further details were read or translated.)",
+ "id": 21614,
+ "text_hash": "e3b0c44298fc1c14",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

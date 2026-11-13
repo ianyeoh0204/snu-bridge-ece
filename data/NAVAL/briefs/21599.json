@@ -1,0 +1,33 @@
+{
+ "title_en": "2027 Education Demand and Outcome Survey by the Shipbuilding and Ocean Talent Center",
+ "summary": "The Shipbuilding and Ocean Future Innovation Talent Development Center invites enrolled students to take part in the 2027 Shipbuilding Industry Education Demand Survey and the 2026 Education Outcome Survey. Responses are submitted online through the survey link given in the notice, from 26 October (Monday) to 6 November (Friday). Participation is encouraged; the notice does not state that it is mandatory.",
+ "applies_to": "Enrolled students (재학생) of shipbuilding and ocean engineering related departments are encouraged to participate; the survey also covers education demand across the shipbuilding industry as a whole. The notice does not state that participation is mandatory.",
+ "dates": [
+  {
+   "what": "Survey response period (online)",
+   "when": "26 October (Monday) to 6 November (Friday); the year is not written in the notice",
+   "original_ko": "10.26(월) ~ 11.6.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Responses are collected only online, through the survey URL given in the notice.",
+  "The notice encourages participation but does not state that it is mandatory or that there is any consequence for not responding."
+ ],
+ "steps": [
+  "Open the survey link: https://svybx.kr/?pid=S21606s355c9&grpid=rdn&nd=",
+  "Complete and submit the online survey between 26 October (Monday) and 6 November (Friday).",
+  "For questions, contact the Korea Offshore & Shipbuilding Association or the survey agency, Uperence Co., Ltd.; the contact details are in the original notice."
+ ],
+ "translation": "2027 Shipbuilding and Ocean Future Innovation Talent Development Center Education Demand Survey and Outcome Survey\n\nThe Shipbuilding and Ocean Future Innovation Talent Development Center (조선해양미래혁신인재양성센터) is conducting the \"2027 Education Demand Survey and Outcome Survey\" in order to draw up its education plan for next year.\n\nThis survey is being carried out to identify education demand across the shipbuilding industry as a whole, including enrolled students in shipbuilding and ocean engineering related departments, and to reflect it in the education plan.\n\nWe ask enrolled students for their interest and participation.\n\n1. Survey title: 2027 Shipbuilding Industry Education Demand Survey and 2026 Education Outcome Survey\n\n2. Survey period: 26 October (Monday) to 6 November (Friday)\n\n3. Survey method:\n - Online response via the URL link (URL: https://svybx.kr/?pid=S21606s355c9&grpid=rdn&nd= )\n\n4. Conducting organisation: Korea Offshore & Shipbuilding Association (한국조선해양플랜트협회)\n\n5. Survey agency: Uperence Co., Ltd. (㈜유퍼런스)\n\n6. Enquiries: a staff member of the Korea Offshore & Shipbuilding Association and a staff member of Uperence Co., Ltd. (names and contact details are given in the original notice).\n\nAttachment (1 file)\n[Attachment] Brochure_Introduction to the 2026 Shipbuilding and Ocean Future Innovation Talent Development Center Project.pdf (17 MB) — the content of this attachment was not read.",
+ "id": 21599,
+ "text_hash": "c53df9b3289e1e33",
+ "images": 0,
+ "attachments": [
+  "[붙임] 브로슈어_2026년_조선해양미래혁신인재양성센터사업_소개.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

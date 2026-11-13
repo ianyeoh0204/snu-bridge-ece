@@ -52,6 +52,8 @@ Pushing to `main` republishes the site without reading the board. The "Run workf
 .venv/bin/python tools/reader_sheet.py       # ten notices beside their Korean originals, as a sheet for a Korean-speaking reader (out/review/)
 .venv/bin/python tools/pages_aerospace.py   # Aerospace: read its rule pages (two rule sets per page, separated by entry year)
 .venv/bin/python tools/cards_aerospace.py   # Aerospace: check every card against those pages and write data/AEROSPACE/cards.json
+.venv/bin/python tools/cards_nuclear.py     # Nuclear: the same from its rule PDF in sources/NUCLEAR/ (run from tools/, needs PyMuPDF)
+.venv/bin/python tools/cards_naval.py       # Naval: the same from its two rule PDFs in sources/NAVAL/
 ```
 `sources/context.json` holds the facts and links for the first step of the Background page (what the university has said
 and done this year). Re-read each cited page before changing a line there.

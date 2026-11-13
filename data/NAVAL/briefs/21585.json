@@ -1,0 +1,53 @@
+{
+ "title_en": "Call for Applications: 2027 Undergraduate Startup and Advanced Research Innovator Support Program",
+ "summary": "Interested undergraduates who will be in the first semester of their second year (third registered semester) of the bachelor's program in the 2027 academic year may apply to the 2027 Undergraduate Startup and Advanced Research Innovator Support Program. Applicants must complete Form 1 (Recommendation Letter) and Form 2 (Proposal), one copy each, and email them to the department office by Wednesday, November 11, at 17:00; the deadline is strictly enforced. Applicants whose status is 'on leave of absence' during the application period must also submit a separate certificate of enrollment by Tuesday, March 2, 2027.",
+ "applies_to": "Undergraduate students of the College (the notice says 'our college' and comes from the Seoul National University College of Engineering Research Administration Office) who meet all of the following at the same time: (1) as of the 2027 academic year, they are or will be enrolled in the first semester of the second year of the bachelor's program (3rd registered semester); (2) they fit the purpose of the program and its profile of the ideal candidate; (3) they are willing to participate actively in the program. Application is voluntary (for interested students). Students who plan a leave of absence, withdrawal, exchange study or similar in the 2027 academic year, and others listed under the restrictions, may not apply.",
+ "dates": [
+  {
+   "what": "Deadline to email Form 1 (Recommendation Letter) and Form 2 (Proposal) to the department office (strictly enforced)",
+   "when": "Wednesday, November 11 (2026), 17:00",
+   "original_ko": "11/11(수) 17시 까지",
+   "verified": true
+  },
+  {
+   "what": "Deadline to separately submit a certificate of enrollment, only for applicants whose academic status is 'on leave of absence' during the application period",
+   "when": "Tuesday, March 2, 2027",
+   "original_ko": "2027. 3. 2.(화)까지",
+   "verified": true
+  },
+  {
+   "what": "Interim evaluation of selected students, which decides whether support continues",
+   "when": "At the end of each academic year",
+   "original_ko": "매 학년도 말",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must meet all eligibility requirements at the same time.",
+  "Applicants whose academic status is 'on leave of absence' during the application period must submit a separate certificate of enrollment by March 2, 2027.",
+  "Students planning a leave of absence, withdrawal, exchange study or similar in the 2027 academic year may not apply.",
+  "Students who have received support on the same topic from an on-campus or off-campus research support program (for example, the former Basic Education Institute Student Self-Directed Education, the College of Liberal Studies Undergraduate Research Support (Type 1) Independent Research, the College of Agriculture and Life Sciences Student Creative Research, the College of Engineering Undergraduate Research Internship, the Korea Foundation for the Advancement of Science and Creativity Undergraduate Research Program, or the X-Corps of the Practical Problem Research Foundation) may not apply.",
+  "Students receiving support from a similar talent development program (for example, the Kim Jaechul AI Class) may not apply.",
+  "Students otherwise ineligible to receive support (for example, due to disciplinary action) may not apply.",
+  "The submission deadline is strictly enforced.",
+  "Selection is held once a year for up to 30 students; support lasts one year and continuation is decided by an interim evaluation at the end of each academic year, for a maximum of three years."
+ ],
+ "steps": [
+  "Read the attached call for applications and forms (붙임1, .hwp file) for further details; the attachment was not read for this translation.",
+  "Complete one copy each of Form 1 (Recommendation Letter, [서식1] 추천서) and Form 2 (Proposal, [서식2] 제안서).",
+  "Email both forms to the department office by Wednesday, November 11, at 17:00; the email address is in the original notice.",
+  "If your academic status is 'on leave of absence' during the application period, separately submit a certificate of enrollment (재학증명서) by Tuesday, March 2, 2027.",
+  "For questions, email the College of Engineering Research Administration Office; the contact is in the original notice."
+ ],
+ "translation": "2027 'Undergraduate Startup and Advanced Research Innovator Support Program': Call for Applications\n\nThe Seoul National University College of Engineering Research Administration Office announces, as follows, the Undergraduate Startup and Advanced Research Innovator Support Program for undergraduate students of our college, which aims to develop 'Future-Shaping Innovators'. Interested students are invited to apply.\n\nA. Program Overview\n1) Selection frequency and number: once a year, up to 30 students\n2) Support period: 1 year\n※ Whether support continues is decided through an interim evaluation at the end of each academic year; support is available for up to 3 years.\n※ Please refer to the attached document for other details.\n\nB. Eligibility [all must be met at the same time]\n1) As of the 2027 academic year, a student enrolled (or expected to be enrolled) in the first semester of the second year of the bachelor's program (3rd registered semester)\n※ If your academic status as of the application period is 'on leave of absence', you must separately submit a certificate of enrollment by Tuesday, March 2, 2027.\n2) A student who fits the purpose of this program and its profile of the ideal candidate\n3) A student willing to participate actively in this program\n\nC. Application Restrictions\n1) Students planning a leave of absence, withdrawal, exchange study or similar in the 2027 academic year\n2) Students who have received support on the same topic from an on-campus or off-campus research support program\n[On campus] e.g., (former) Basic Education Institute Student Self-Directed Education, College of Liberal Studies Undergraduate Research Support (Type 1) Independent Research, College of Agriculture and Life Sciences Student Creative Research, College of Engineering Undergraduate Research Internship Program\n[Off campus] e.g., Korea Foundation for the Advancement of Science and Creativity Undergraduate Research Program, X-Corps of the Practical Problem Research Foundation\n3) Students receiving support from a similar talent development program (e.g., Kim Jaechul AI Class)\n4) Students otherwise ineligible to receive support (e.g., disciplinary action)\n\nD. Submission Deadline and Method: Complete one copy each of [Form 1] Recommendation Letter ([서식1] 추천서) and [Form 2] Proposal ([서식2] 제안서), and send them by email to the department office by Wednesday, November 11, 17:00 (※ the deadline is strictly enforced). The email address is given in the original notice.\n\nE. Inquiries: College of Engineering Research Administration Office (inquiries by email; the address is given in the original notice).\n\nAttachment\n1. Undergraduate Startup and Advanced Research Innovator Support Program (2027 academic year) Call for Applications and Forms, 1 copy\nAttached file (1)\nAttachment 1. 학부생 창업·심화연구 혁신 인재 지원사업(2027학년도) 선발 공고문 및 서식.hwp (147 KB) — the content of this attachment was not read.",
+ "id": 21585,
+ "text_hash": "78900ca882f05473",
+ "images": 0,
+ "attachments": [
+  "붙임1. 학부생 창업·심화연구 혁신 인재 지원사업(2027학년도) 선발 공고문 및 서식.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

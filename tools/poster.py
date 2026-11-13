@@ -160,8 +160,8 @@ POSTER_KO.update({
         "과정과 입학 연도를 고르면 다루는 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
     "Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.":
         "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
-    "Switch to {name}: a second department, with {n} requirements from its own web pages.":
-        "{name}로 바꿔 보세요. 학과 웹페이지를 바탕으로 요건 {n}개를 실은 두 번째 학과입니다.",
+    "Switch department: {names} are here too, with {n} requirements written from their own rules.":
+        "학과를 바꿔 보세요. {names}도 있으며, 각 학과의 자체 규정을 바탕으로 요건 {n}개를 작성했습니다.",
     "Notices: each kind of board software needs its own small reader. Translation and publishing are reused.":
         "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시는 그대로 다시 씁니다.",
     "Requirements: written from each department's own documents, then re-read.": "요건: 각 학과의 공식 문서를 바탕으로 작성한 뒤 다시 읽습니다.",
@@ -229,6 +229,9 @@ def build():
     f, totals = context["figures"], survey["totals"]
     today = datetime.datetime.now(SEOUL).date().isoformat()
     calendar = deadlines.build("ECE", ece["short"], ece["site"])[1]  # the same count the site shows
+    # the other departments that have requirement cards, as the site lists them
+    others = [dict(load(f"sources/{f.parent.name}/config.json"), cards=len(load(f"data/{f.parent.name}/cards.json")))
+              for f in sorted((ROOT / "data").glob("*/cards.json")) if f.parent.name != "ECE"]
     author = (OUT / "author.txt").read_text(encoding="utf-8").strip() if (OUT / "author.txt").exists() else ""
     since, until = day(survey["since"]), day(survey["until"])
     period = bi("{from} to {to}", {"from": since[0], "to": until[0]}, {"from": since[1], "to": until[1]})
@@ -315,12 +318,12 @@ def build():
     tries = [bi("Choose your program and year of entry. See the requirements covered, and the page each comes from."),
              bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
              bi("Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.", {"n": calendar["events"]}),
-             bi("Switch to {name}: a second department, with {n} requirements from its own web pages.",
-                {"name": aero["department"], "n": len(load("data/AEROSPACE/cards.json"))}, {"name": aero["department_ko"]})]
+             bi("Switch department: {names} are here too, with {n} requirements written from their own rules.",
+                {"names": " and ".join([", ".join(o["short"] for o in others[:-1]), others[-1]["short"]]) + " Engineering", "n": sum(o["cards"] for o in others)},
+                {"names": ", ".join(o["department_ko"] for o in others)})]
     try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
     extends = (f'<h5>{bi("Where it extends")}</h5>'
-               + f'<p class="small">{bi("Notices: each kind of board software needs its own small reader. Translation and publishing are reused.")}</p>'
-               + '<p class="small">' + bi("Requirements: written from each department's own documents, then re-read.") + "</p>")
+               + f'<p class="small">{bi("Notices: each kind of board software needs its own small reader. Translation and publishing are reused.")}</p>')
     try_it = f'<div class="body">{try_list}{extends}</div>'
 
     columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],

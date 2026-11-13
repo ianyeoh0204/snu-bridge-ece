@@ -1,0 +1,26 @@
+{
+ "title_en": "International Maritime AI Mobility Competition: Regatta X 2026",
+ "summary": "Korea Maritime & Ocean University (국립한국해양대학교) is holding the International Maritime AI Mobility Competition: Regatta X 2026, with faculty and students from the University of Oxford taking part. Faculty, researchers, undergraduate and graduate students, and interested staff in maritime AI and mobility fields are invited to attend. The event takes place on Wednesday, 18 November 2026 at 14:00 at the university's breakwater road, seawater stream and marine training area in Yeongdo-gu, Busan.",
+ "applies_to": "Faculty members, researchers, undergraduate and graduate students in fields related to maritime AI and mobility, and any interested faculty and staff. Attendance is an invitation, not a requirement; the notice does not state that participation is mandatory.",
+ "dates": [
+  {
+   "what": "Competition and event (opening ceremony, competition and demonstration viewing, networking)",
+   "when": "Wednesday, 18 November 2026, 14:00",
+   "original_ko": "2026.11.18.(수) 14:00",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "If you wish to attend, go to the breakwater road, seawater stream and marine training area of Korea Maritime & Ocean University (Yeongdo-gu, Busan) by 14:00 on Wednesday, 18 November 2026. The notice does not describe any registration procedure."
+ ],
+ "translation": "Notice: International Maritime AI Mobility Competition: Regatta X 2026\n\nKorea Maritime & Ocean University (국립한국해양대학교), drawing on its excellent sea-area infrastructure, will hold Korea's first International Maritime AI Mobility Competition: Regatta X 2026, with participation by faculty and students of the University of Oxford, in order to create a global venue for demonstrating maritime AI, where the world's top universities can validate their technologies.\n\nThe competition will open with congratulatory addresses from distinguished guests, including the Mayor of Busan, a member of the National Assembly, the Vice-Chair of the National AI Strategy Committee, and a professor and research fellow of the University of Oxford. Guests will also include government officials, including a ministry minister; representatives of the Ministry of Oceans and Fisheries, Busan Port Authority and maritime cluster institutions; and representatives of companies in the maritime AI, shipbuilding and defence sectors. At the event, attended by delegations from Oxford and Stanford together with Korean and international students, attendees can see demonstrations of autonomous navigation and autonomous driving technology first-hand, and there will be time for exchange. We look forward to your interest and participation.\n\nA. Event: International Maritime AI Mobility Competition: Regatta X 2026\n\nB. Date and time: Wednesday, 18 November 2026, 14:00\n\nC. Venue: Breakwater road, seawater stream and marine training area, Korea Maritime & Ocean University (Yeongdo-gu, Busan)\n\nD. Intended attendees: Faculty, researchers, undergraduate and graduate students in fields related to maritime AI and mobility, and interested faculty and staff\n\nE. Main programme\n- Opening ceremony\n- Regatta X 2026 maritime AI mobility competition and demonstration viewing\n- Academic and technical exchange network among Korean and international universities",
+ "id": 21609,
+ "text_hash": "a75c9b951393b002",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

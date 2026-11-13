@@ -1,0 +1,30 @@
+{
+ "title_en": "On-Site Career Counselling at the 2026 Korean Society of Oceanography Fall Conference",
+ "summary": "The Korea Institute of Marine Science and Technology Promotion is holding an on-site career counselling event linked to the 2026 Fall Conference of the Korean Society of Oceanography. Interested students are invited to attend on 9 November 2026, 10:00–12:00, at Lecture Hall 1 (Rooms 101 and 102) of UECO in Ulsan. Attendance is voluntary.",
+ "applies_to": "The notice does not limit who may attend. It is a general invitation, and participation is voluntary, not mandatory.",
+ "dates": [
+  {
+   "what": "On-site career counselling event (the notice gives the weekday as Thursday; please confirm the date before attending)",
+   "when": "9 November 2026, 10:00–12:00",
+   "original_ko": "2026.11.9(목)  10:00~12:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Participation is voluntary.",
+  "The notice does not state any registration requirement or procedure."
+ ],
+ "steps": [
+  "Go to Lecture Hall 1 (Rooms 101 and 102) at UECO in Ulsan on 9 November 2026 between 10:00 and 12:00.",
+  "Visit the counselling desks of the participating institutions you are interested in."
+ ],
+ "translation": "[Korea Institute of Marine Science and Technology Promotion] Promotion of the On-Site Career Counselling Event Linked to the 2026 Fall Conference of the Korean Society of Oceanography\n\nUnder the strategy for developing core talent in marine and fisheries science and technology, an on-site career counselling event will be held in connection with the 2026 Fall Conference of the Korean Society of Oceanography. Details are given below. We encourage your interest and participation.\n\n- Event: On-Site Career Counselling Linked to the 2026 Fall Conference of the Korean Society of Oceanography\n- Date, time and venue: 9 November 2026 (Thursday), 10:00–12:00 / UECO, Ulsan, Lecture Hall 1 (Rooms 101 and 102)\n- Institutions offering counselling: National Institute of Fisheries Science, Korea Institute of Ocean Science and Technology, National Marine Biodiversity Institute of Korea, Korea Polar Research Institute, Korea Research Institute of Ships and Ocean Engineering, Korea Marine Environment Management Corporation, Korea Institute of Marine Science and Technology Promotion",
+ "id": 21603,
+ "text_hash": "beae42b078ff629f",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

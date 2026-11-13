@@ -1,0 +1,41 @@
+{
+ "title_en": "Change of Thesis Advisor and Application for Joint Thesis Advisor",
+ "summary": "Graduate students who wish to change their thesis advisor, select a joint thesis advisor, or select a faculty member from another department as their advisor must submit the applicable attached form. Students making such a change after more than three semesters from admission must give detailed reasons, because the request will be reviewed by the Academic Affairs Committee, and must submit within the deadline: the first week of April for the first semester, or by the first week of October for the second semester. The notice does not state where to submit the form.",
+ "applies_to": "Graduate students who wish to change their thesis advisor, select a joint thesis advisor, or select a faculty member from another department (or division) as their thesis advisor. Submitting the form is required only for students who wish to make one of these changes. Additional requirements (detailed reasons, Academic Affairs Committee review, deadline) apply to students making the change after more than three semesters from admission.",
+ "dates": [
+  {
+   "what": "Deadline to submit the application in the first semester (stated for students changing advisor, including selecting a joint advisor, after more than three semesters from admission)",
+   "when": "First week of April",
+   "original_ko": "1학기-4월 첫째주",
+   "verified": true
+  },
+  {
+   "what": "Deadline to submit the application in the second semester (stated for students changing advisor, including selecting a joint advisor, after more than three semesters from admission)",
+   "when": "By the end of the first week of October",
+   "original_ko": "2학기-10월 첫째주까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "A change of thesis advisor (including selecting a joint thesis advisor) made after more than three semesters from admission is subject to review by the Academic Affairs Committee (학사위원회).",
+  "Students in that case must write the reasons for the change in detail on the application.",
+  "Students in that case must submit the application within the deadline: first week of April for the first semester, or by the first week of October for the second semester."
+ ],
+ "steps": [
+  "Download the applicable form from the notice attachments: the Application for Change of Thesis Advisor (논문지도교수 변경 신청서, .hwp file) or the Application for Joint Thesis Advisor (공동논문지도교수 신청서, .xlsx file). The content of these attached forms was not read.",
+  "Complete the form. If more than three semesters have passed since your admission, write the reasons for the change in detail.",
+  "Submit the form by the deadline (first week of April for the first semester; by the first week of October for the second semester). The notice does not state where or how to submit; ask the department office."
+ ],
+ "translation": "Change of Thesis Advisor and Application for Joint Thesis Advisor\n\n<Notice on Change of Thesis Advisor> (including selection of a joint thesis advisor)\n\nGraduate students who wish to change their thesis advisor, select a joint thesis advisor, or select a faculty member from another department (or division) as their thesis advisor are asked to submit the \"Application for Change of Thesis Advisor\" (논문지도교수 변경신청서) or the \"Application for Joint Thesis Advisor\" (공동논문지도교수 신청서) provided in the attached files.\n\n※ A change of thesis advisor (including selection of a joint thesis advisor) made after more than three semesters from admission is subject to review by the Academic Affairs Committee (학사위원회). Therefore, please write the reasons for the change in detail and submit the application within the deadline (first semester: first week of April / second semester: by the first week of October).\n\nAttachments (2) [the content of the attachments was not read]:\n- 공동논문지도교수신청서(양식).xlsx (Application for Joint Thesis Advisor, form) (12 KB)\n- 논문지도교수 변경 신청서 (양식).hwp (Application for Change of Thesis Advisor, form) (39 KB)",
+ "id": 21569,
+ "text_hash": "8263a7e8be58ca31",
+ "images": 0,
+ "attachments": [
+  "공동논문지도교수신청서(양식).xlsx",
+  "교수 변경 신청서 (양식).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

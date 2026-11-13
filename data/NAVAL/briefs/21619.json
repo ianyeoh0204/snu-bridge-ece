@@ -1,0 +1,106 @@
+{
+ "title_en": "2026 Winter Session: Tuition Payment and Refund Schedule",
+ "summary": "Students registered for 2026 academic year winter session courses must pay tuition through a bank, virtual account or ATM during the first round (18–23 November 2026) or the second and final round (26–27 November 2026); bills can be printed from mySNU. Course registration is automatically cancelled if tuition is not paid within the payment period, and courses with fewer than 20 students are closed. Cancellations and refunds are requested through mySNU between 11 December 2026 and 7 January 2027, with the refund amount decreasing over time; a bank account in the student's own name must be registered in mySNU to receive a refund.",
+ "applies_to": "All students who have registered for courses in the 2026 academic year winter session. Payment within the payment period is required to keep the registration. Refund rules apply to students who cancel their registration or whose paid course is closed.",
+ "dates": [
+  {
+   "what": "First round: tuition payment and bill printing",
+   "when": "Wednesday 18 November 2026 to Monday 23 November 2026",
+   "original_ko": "1차: 2026. 11. 18.(수) ~ 11. 23.(월)",
+   "verified": true
+  },
+  {
+   "what": "Second (final) round: tuition payment and bill printing",
+   "when": "Thursday 26 November 2026 to Friday 27 November 2026",
+   "original_ko": "2차(최종): 2026. 11. 26.(목) ~ 11. 27.(금)",
+   "verified": true
+  },
+  {
+   "what": "Payment at a bank counter (hours may vary by branch)",
+   "when": "Weekdays within the payment period, 09:00 to 16:00",
+   "original_ko": "납부기간 내 평일 09:00 ~ 16:00",
+   "verified": true
+  },
+  {
+   "what": "Virtual account payment, first round (Saturdays and Sundays excluded); closes at 17:00 on the last day",
+   "when": "18 November 2026, 09:00 to 23 November 2026, 17:00",
+   "original_ko": "2026. 11. 18.(수) 09:00 ~ 11. 23.(월) 17:00 (토·일 제외) *납부 마지막일(11. 23.)은 17:00 마감",
+   "verified": true
+  },
+  {
+   "what": "Virtual account payment, second round; closes at 17:00 on the last day",
+   "when": "26 November 2026, 09:00 to 27 November 2026, 17:00",
+   "original_ko": "2026. 11. 26.(목) 09:00 ~ 11. 27.(금) 17:00 *납부 마지막일(11. 27.)은 17:00 마감",
+   "verified": true
+  },
+  {
+   "what": "Announcement of courses closed after payment, on the mySNU board",
+   "when": "Tuesday 1 December 2026",
+   "original_ko": "2026. 12. 1.(화)",
+   "verified": true
+  },
+  {
+   "what": "Cancellation with full refund (before classes start); cancel through the mySNU cancellation/refund menu",
+   "when": "Friday 11 December 2026 to Monday 21 December 2026",
+   "original_ko": "2026. 12. 11.(금) ~ 2026. 12. 21.(월)",
+   "verified": true
+  },
+  {
+   "what": "Cancellation with refund of two-thirds of the amount paid (up to one-third of class days)",
+   "when": "Tuesday 22 December 2026 to Friday 1 January 2027",
+   "original_ko": "2026. 12. 22.(화) ~ 2027. 1. 1.(금)",
+   "verified": true
+  },
+  {
+   "what": "Cancellation with refund of half of the amount paid (up to half of class days)",
+   "when": "Saturday 2 January 2027 to Thursday 7 January 2027",
+   "original_ko": "2027. 1. 2.(토) ~ 2027. 1. 7.(목)",
+   "verified": true
+  },
+  {
+   "what": "No cancellation or refund is possible from this date",
+   "when": "From Friday 8 January 2027",
+   "original_ko": "2027. 1. 8.(금)부터",
+   "verified": true
+  },
+  {
+   "what": "Refund deposit into the student's account",
+   "when": "About three weeks after the application deadline",
+   "original_ko": "신청마감일 이후 약 3주 정도 소요",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "If tuition is not paid within the payment period, course registration is automatically cancelled.",
+  "Courses with fewer than 20 students are closed, and registration for them is cancelled.",
+  "Any transaction fees are paid by the student.",
+  "Tuition cannot be paid separately course by course (no partial payment by course).",
+  "After payment, courses cannot be changed, except that if a course is closed you may move to another course with the same credits and the same fee.",
+  "If a paid course is closed, you may either move to another course with the same credits and fee or request a refund.",
+  "Cancellation from 11 to 21 December 2026 gives a full refund; from 22 December 2026 to 1 January 2027, two-thirds; from 2 to 7 January 2027, one-half.",
+  "From 8 January 2027, cancellation and refunds are not possible.",
+  "Refunds can only be made to a bank account in the student's own name registered in mySNU; registering it is mandatory.",
+  "After classes start, some cancellations require approval by the course instructor before the cancellation is complete.",
+  "Payment confirmation by SMS is sent only if you agreed to receive SMS in your personal information settings.",
+  "Bank counter hours may differ slightly by branch."
+ ],
+ "steps": [
+  "Print your winter session bill during a payment period from mySNU > Log in > Academic Information (학사정보) > Registration (등록) > Bill/History Inquiry (고지서/내역조회) > Seasonal Session Bill (계절학기 고지서), or mySNU > Academic Services (학사서비스) at the bottom > Print Tuition Bill (등록금고지서 출력).",
+  "Pay the full tuition (KRW 40,500 per credit for theory courses, KRW 45,500 per credit for practical courses) by 23 November 2026 (first round) or by 27 November 2026 (final round), at a bank counter (weekdays 09:00–16:00), by virtual account (closes 17:00 on the last day), or by ATM.",
+  "If you have no bill or do not know your virtual account number, pay at an ATM: Utility bills (공과금) > University tuition (대학등록금) > enter approval code (NongHyup 079695, Shinhan 88105) > enter student ID > check student name and amount > pay.",
+  "Confirm payment by SMS (if consented) or print a payment certificate from mySNU > Internet Certificate Issuance (인터넷증명서 발급).",
+  "Check the list of courses closed after payment on the mySNU board on 1 December 2026; if your course is closed, move to another course with the same credits and fee or request a refund.",
+  "Register and check a bank account in your own name in mySNU > Academic Information (학사정보) > My Information (나의정보) > Edit Personal Information (개인정보수정); this is required for any refund.",
+  "Cancelling before classes start: by 21 December 2026, go to mySNU > Academic Administration (학사행정) > Seasonal Session (계절학기) > Cancel Registration/Request Refund (수강신청취소/환불신청) and apply for cancellation and tuition refund.",
+  "Cancelling after classes start: from 22 December 2026 to 7 January 2027, apply in mySNU > Seasonal Session Course Cancellation Request (계절학기 수강취소 신청); where approval is required, the cancellation is completed after the course instructor approves; where approval is not required, apply for cancellation and refund directly."
+ ],
+ "translation": "2026 Academic Year Winter Session: Tuition Payment and Refund Schedule\n\nThe tuition payment and refund schedule for the 2026 academic year winter session is announced below. Please make sure you do not lose your place in a course because of unpaid tuition or cancellation due to course closure (fewer than 20 students enrolled).\n\nPlease also note that if you do not pay within the payment period, your course registration will be automatically cancelled.\n\n1. Payment and bill printing periods\n□ 1st round: Wed 18 November 2026 – Mon 23 November 2026\n□ 2nd round (final): Thu 26 November 2026 – Fri 27 November 2026\n※ How to print the bill: mySNU > Log in > Academic Information (학사정보) > Registration (등록) > Bill/History Inquiry (고지서/내역조회) > Seasonal Session Bill (계절학기 고지서)\nor mySNU > Academic Services (학사서비스) at the bottom > Print Tuition Bill (등록금고지서 출력)\n\n2. Tuition (per credit): theory KRW 40,500; practical KRW 45,500\n\n3. Payment methods: bank, virtual account and ATM\n□ Payment at the counter of any bank: weekdays within the payment period, 09:00–16:00 (*may differ slightly by branch)\n□ Virtual account payment\n- Wed 18 November 2026, 09:00 – Mon 23 November 2026, 17:00 (excluding Saturdays and Sundays) *On the last payment day (23 November), payment closes at 17:00.\n- Thu 26 November 2026, 09:00 – Fri 27 November 2026, 17:00 *On the last payment day (27 November), payment closes at 17:00.\n□ ATM payment\n- Use this if you do not have a bill or do not know your virtual account number.\n- Utility bills (공과금) > University tuition (대학등록금) > Enter approval code (NongHyup 079695, Shinhan 88105) > Enter student ID > Inquiry (check student name and amount) > Pay\n□ Notes on payment\n- Any fees incurred are borne by the student.\n- Payment cannot be split by course.\n- Courses cannot be changed after tuition is paid (however, if a course is closed, you may move to a course with the same credits and the same fee).\n\n4. Payment confirmation\n□ SMS notification: to your own mobile phone (if you agreed to receive SMS in your personal information)\n□ Payment certificate: mySNU > Internet Certificate Issuance (인터넷증명서 발급)\n\n5. Checking course closures\n□ For a course closed after payment, move to another course with the same credits and the same fee, or request a refund.\n□ Announcement of courses closed after payment: Tue 1 December 2026, on the mySNU board\n\n6. Cancellation periods and refund method\n□ Cancellation periods\nFri 11 December 2026 – Mon 21 December 2026 | Full refund of the amount paid | Before classes start\nTue 22 December 2026 – Fri 1 January 2027 | Refund of two-thirds of the amount paid | Up to 1/3 of class days\nSat 2 January 2027 – Thu 7 January 2027 | Refund of one-half of the amount paid | Up to 1/2 of class days\n※ From Fri 8 January 2027, cancellation and refunds are not possible. Refunds are deposited about three weeks after the application deadline.\n□ Cancellation and refund method\n- Before classes start (until 21 December): apply for cancellation of registration and refund of tuition at mySNU > Academic Administration (학사행정) > Seasonal Session (계절학기) > Cancel Registration/Request Refund (수강신청취소/환불신청).\n- After classes start (from 22 December):\n· (If approval is required) mySNU > Seasonal Session Course Cancellation Request (계절학기 수강취소 신청) > cancellation is completed after approval by the course instructor\n· (If approval is not required) mySNU > Seasonal Session Course Cancellation Request (계절학기 수강취소 신청) and refund request\n※ Registering and checking a bank account in the student's own name (mandatory): mySNU > Academic Information (학사정보) > My Information (나의정보) > Edit Personal Information (개인정보수정). A refund is possible only if an account number in your own name is registered.",
+ "id": 21619,
+ "text_hash": "9cdc8b5139ec1cba",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

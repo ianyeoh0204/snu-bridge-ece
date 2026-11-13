@@ -1,0 +1,41 @@
+{
+  "department": "Naval Architecture and Ocean Engineering",
+  "department_ko": "조선해양공학과",
+  "short": "Naval",
+  "note": "Graduate requirements written from the department's own graduation rules (downloaded by a person, not republished) and checked by code and one independent AI reading. Notices from its notice board.",
+  "board": {
+    "name": "Naval Architecture and Ocean Engineering notices (공지사항)",
+    "list_url": "https://naoe.snu.ac.kr/news/notice",
+    "detail_url": "https://naoe.snu.ac.kr/news/notice?md=v&bbsidx={id}",
+    "since": "2026-10-01"
+  },
+  "assistant": {
+    "name": "ChatGPT Edu",
+    "url": "https://chatgpt.com"
+  },
+  "repository": "https://github.com/ianyeoh0204/snu-bridge-ece",
+  "read_on": "2026-11-13",
+  "programs": [
+    "masters",
+    "phd",
+    "integrated"
+  ],
+  "default_program": "masters",
+  "headline_cards": {
+    "masters": "na-credits-ms",
+    "phd": "na-credits-phd",
+    "integrated": "na-credits-integrated"
+  },
+  "files": [
+    {
+      "file": "rules",
+      "name": "Graduate graduation rules of the department (1 September 2026)",
+      "url": "https://naoe.snu.ac.kr/graduate/rule"
+    },
+    {
+      "file": "rules-before",
+      "name": "Graduate graduation rules of the department (1 September 2025)",
+      "url": "https://naoe.snu.ac.kr/graduate/rule"
+    }
+  ]
+}

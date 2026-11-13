@@ -1,0 +1,233 @@
+{
+ "title_en": "2026 Winter Session Course Registration Guide",
+ "summary": "Students who wish to take 2026 winter session courses must read the attached guides and register through the course registration system according to the schedule below. Course baskets are submitted from 27 October 2026 (09:00) to 28 October 2026 (16:00), first-come registration runs on 30 October, 2 November and 3 November 2026 (08:30–16:30), and tuition must be paid by the stated deadlines (first period 18–23 November 2026, final period 26–27 November 2026), or the registration is automatically cancelled. Classes run from 22 December 2026 to 25 January 2027.",
+ "applies_to": "Optional. Applies to students who wish to take the 2026 winter session: currently enrolled students and students on leave of absence at this university, and students from other universities in Korea or abroad who have been approved for credit exchange. Students expecting to graduate may graduate after taking winter session courses only if they registered for Fall 2026 and are expected to graduate in February 2027. Students in military service must first confirm with their service authority that they may take courses. (The opening sentence of the notice refers to students wishing to apply for the 'summer' session, but the rest of the notice concerns the winter session.)",
+ "dates": [
+  {
+   "what": "Preliminary (mock) registration: preliminary course basket submission",
+   "when": "20 October 2026 (Tuesday), 09:00–16:00",
+   "original_ko": "2026. 10. 20.(화) 09:00 ~ 16:00",
+   "verified": true
+  },
+  {
+   "what": "Preliminary (mock) registration: preliminary course basket confirmed by the system",
+   "when": "21 October 2026 (Wednesday)",
+   "original_ko": "2026. 10. 21.(수)",
+   "verified": true
+  },
+  {
+   "what": "Preliminary (mock) first-come registration",
+   "when": "22 October 2026 (Thursday) to 23 October 2026 (Friday), 08:30–16:30",
+   "original_ko": "2026. 10. 22.(목) ~ 10. 23.(금)\n08:30 ~ 16:30",
+   "verified": true
+  },
+  {
+   "what": "Actual registration: course basket submission period (not available to domestic credit-exchange students)",
+   "when": "27 October 2026 (Tuesday) 09:00–23:59 and 28 October 2026 (Wednesday) 00:00–16:00",
+   "original_ko": "2026. 10. 27.(화) 09:00 ~ 23:59 \n2026. 10. 28.(수) 00:00 ~ 16:00",
+   "verified": true
+  },
+  {
+   "what": "Course basket confirmed by the system (Academic Affairs); baskets cannot be submitted or changed",
+   "when": "29 October 2026 (Thursday)",
+   "original_ko": "2026. 10. 29.(목)",
+   "verified": true
+  },
+  {
+   "what": "First-come course registration, days 1–3 (domestic credit-exchange students may apply)",
+   "when": "30 October 2026 (Friday), 2 November 2026 (Monday), 3 November 2026 (Tuesday), 08:30–16:30",
+   "original_ko": "2026. 10. 30.(금), 11. 2.(월), 11. 3(화)\n08:30 ~ 16:30",
+   "verified": true
+  },
+  {
+   "what": "Cancelled-seat release times during main registration (only registration possible, no cancellation; all registration and cancellation blocked for the 10 minutes before each)",
+   "when": "10:00–11:00, 13:00–14:00, 15:00–16:00",
+   "original_ko": "본수강신청: 10:00~11:00, 13:00~14:00, 15:00~16:00",
+   "verified": true
+  },
+  {
+   "what": "Cancelled-seat release times during the registration change period (only registration possible, no cancellation; all registration and cancellation blocked for the 10 minutes before each)",
+   "when": "10:00–11:00, 13:00–14:00, 17:00–18:00",
+   "original_ko": "수강신청변경: 10:00~11:00, 13:00~14:00, 17:00~18:00",
+   "verified": true
+  },
+  {
+   "what": "Extended registration closing time (30 minutes later): main registration closes at 16:30, registration change closes at 18:30",
+   "when": "16:30 (main registration); 18:30 (registration change)",
+   "original_ko": "본수강신청 16:30, 수강신청변경 18:30",
+   "verified": true
+  },
+  {
+   "what": "First announcement of cancelled (closed) courses",
+   "when": "10 November 2026 (Tuesday)",
+   "original_ko": "2026. 11. 10.(화)",
+   "verified": true
+  },
+  {
+   "what": "Course registration change period",
+   "when": "11 November 2026 (Wednesday) to 13 November 2026 (Friday), 09:00–18:30",
+   "original_ko": "2026. 11. 11.(수) ~ 11. 13.(금)\n09:00 ~ 18:30",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request period (overall)",
+   "when": "11 November 2026 (Wednesday) to 13 November 2026 (Friday)",
+   "original_ko": "2026. 11. 11.(수) ~ 11. 13.(금)",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request: student application",
+   "when": "11 November 2026 (Wednesday), 08:30–23:59",
+   "original_ko": "11. 11.(수) 08:30 ~ 23:59",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request: instructor approval",
+   "when": "11 November (Wednesday) to 12 November (Thursday) 2026",
+   "original_ko": "11. 11.(수) ~ 11. 12.(목)",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request: student must complete registration of the approved course themselves",
+   "when": "11 November (Wednesday) to 13 November (Friday) 2026, by 18:30",
+   "original_ko": "11. 11.(수) ~ 11. 13.(금) 18:30",
+   "verified": true
+  },
+  {
+   "what": "Bill printing and tuition payment, first period (weekends excluded; unpaid registration is automatically cancelled)",
+   "when": "18 November 2026 (Wednesday) to 23 November 2026 (Monday)",
+   "original_ko": "(1차) 2026. 11. 18.(수) ~ 11. 23.(월)",
+   "verified": true
+  },
+  {
+   "what": "Bill printing and tuition payment, final period (weekends excluded; unpaid registration is automatically cancelled)",
+   "when": "26 November 2026 (Thursday) to 27 November 2026 (Friday)",
+   "original_ko": "(최종) 2026. 11. 26.(목) ~ 11. 27.(금)",
+   "verified": true
+  },
+  {
+   "what": "Second announcement of cancelled (closed) courses",
+   "when": "8 December 2026 (Tuesday)",
+   "original_ko": "2026. 12. 8.(화)",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request for students in courses cancelled in the second announcement: student application",
+   "when": "9 December 2026 (Wednesday), 08:30–23:59",
+   "original_ko": "12. 9.(수) 08:30 ~ 23:59",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request for students in courses cancelled in the second announcement: instructor approval",
+   "when": "9 December (Wednesday) to 10 December (Thursday) 2026",
+   "original_ko": "12. 9.(수) ~ 12. 10.(목)",
+   "verified": true
+  },
+  {
+   "what": "Over-capacity request for students in courses cancelled in the second announcement: student must complete registration themselves",
+   "when": "9 December (Wednesday) to 11 December (Friday) 2026, by 18:30",
+   "original_ko": "12. 9.(수) ~ 12. 11.(금) 18:30",
+   "verified": true
+  },
+  {
+   "what": "Course cancellation before classes begin (full tuition refund)",
+   "when": "11 December 2026 (Friday) to 21 December 2026 (Monday)",
+   "original_ko": "2026. 12. 11.(금) ~ 12. 21.(월)",
+   "verified": true
+  },
+  {
+   "what": "Classes begin",
+   "when": "22 December 2026 (Tuesday)",
+   "original_ko": "2026. 12. 22.(화)",
+   "verified": true
+  },
+  {
+   "what": "Course cancellation after classes begin (two-thirds tuition refund)",
+   "when": "22 December 2026 (Tuesday) to 1 January 2027 (Friday)",
+   "original_ko": "2026. 12. 22.(화) ~ 2027. 1. 1.(금)",
+   "verified": true
+  },
+  {
+   "what": "Course cancellation after classes begin (one-half tuition refund)",
+   "when": "2 January 2027 (Saturday) to 7 January 2027 (Thursday)",
+   "original_ko": "2027. 1. 2.(토) ~ 1. 7.(목)",
+   "verified": true
+  },
+  {
+   "what": "Class period",
+   "when": "22 December 2026 (Tuesday) to 25 January 2027 (Monday)",
+   "original_ko": "2026. 12. 22.(화) ∼ 2027. 1. 25.(월)",
+   "verified": true
+  },
+  {
+   "what": "Classes end",
+   "when": "25 January 2027 (Monday)",
+   "original_ko": "2027. 1. 25.(월)",
+   "verified": true
+  },
+  {
+   "what": "Grade entry by instructors (no 'I' grade entry period and no separate grade correction period)",
+   "when": "18 January 2027 (Monday) to 28 January 2027 (Thursday)",
+   "original_ko": "2027. 1. 18.(월) ~ 1. 28.(목)",
+   "verified": true
+  },
+  {
+   "what": "Grade checking by students",
+   "when": "28 January 2027 (Thursday) to 28 February 2027 (Sunday)",
+   "original_ko": "2027. 1. 28.(목) ~ 2. 28.(일)",
+   "verified": true
+  },
+  {
+   "what": "Grades expected to appear on the transcript",
+   "when": "29 January 2027 (Friday), expected",
+   "original_ko": "2027. 1. 29.(금) 예정",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Students expecting to graduate may graduate after the winter session only if they registered for Fall 2026 and are expected to graduate in February 2027.",
+  "Students on leave of absence cannot graduate even if winter session courses complete their graduation requirements.",
+  "Students in military service must confirm with their service authority before registering; under the Military Service Act or the rules of the service authority, taking courses (earning credits) may not be allowed.",
+  "Domestic credit-exchange students cannot submit course baskets; they may register only during first-come registration.",
+  "Course baskets cannot be submitted or changed on 29 October 2026.",
+  "For the 10 minutes before each cancelled-seat release time, no course in the system can be registered or cancelled; only the number of available cancelled seats is shown.",
+  "During cancelled-seat release times, no course can be cancelled; only registration is possible.",
+  "A maximum of 9 credits may be taken, including credits taken through domestic credit exchange at other universities.",
+  "Courses you are taking in Fall 2026 cannot be retaken in the winter session.",
+  "Students expecting to graduate must check in advance whether they meet graduation requirements and must complete registration within the period.",
+  "Over-capacity requests and course cancellations must be completed within their periods; no changes are possible afterwards.",
+  "If tuition is not paid within the payment period, the course registration is automatically cancelled.",
+  "Cancelling before classes begin (11–21 December 2026) gives a full tuition refund; cancelling from 22 December 2026 to 1 January 2027 gives a two-thirds refund; cancelling from 2 to 7 January 2027 gives a one-half refund.",
+  "There is no 'I' (incomplete) grade entry period and no separate grade correction period.",
+  "Any misconduct in course registration will be severely punished."
+ ],
+ "steps": [
+  "Read the attachments before registering: the winter session registration guideline (Attachment 1-1), the course registration system user manual (Attachment 1-2), the card news on the new anti-reselling registration system (Attachment 1-3), the notice on registration misconduct (Attachment 2) and the course overlap request manual (Attachment 3). These attachments were not read for this translation.",
+  "If you are in military service, confirm with your service authority that you may take courses before registering.",
+  "If you expect to graduate, check in advance whether you meet the graduation requirements.",
+  "Submit your course basket in the course registration system from 27 October 2026 09:00 to 28 October 2026 16:00 (domestic credit-exchange students skip this step).",
+  "Register for courses on a first-come basis on 30 October, 2 November and 3 November 2026, 08:30–16:30, staying within the 9-credit limit.",
+  "Check the first announcement of cancelled courses on 10 November 2026.",
+  "If needed, change your registration from 11 to 13 November 2026, 09:00–18:30.",
+  "If a course is full, submit an over-capacity request on 11 November 2026 (08:30–23:59); after instructor approval, complete the registration yourself by 13 November 2026, 18:30.",
+  "Print your bill and pay tuition in the first period (18–23 November 2026, weekends excluded) or at the latest in the final period (26–27 November 2026).",
+  "Check the second announcement of cancelled courses on 8 December 2026; if your course was cancelled, submit an over-capacity request on 9 December 2026 (08:30–23:59) and complete the registration yourself by 11 December 2026, 18:30.",
+  "If you wish to cancel a course, do so within the cancellation periods; cancel by 21 December 2026 for a full refund.",
+  "Check your grades between 28 January and 28 February 2027."
+ ],
+ "translation": "2026 Winter Session Course Registration Guide\n\nWe announce the course registration schedule for the 2026 winter session as follows. Students who wish to apply for the summer session [sic; the notice concerns the winter session] should read the attached files carefully and apply according to the schedule.\n\n1. Eligible students: currently enrolled students and students on leave of absence at this university, and students approved for credit exchange from other universities in Korea or abroad.\n※ (Students expecting to graduate) Only students who registered for Fall 2026 and are expected to graduate in February 2027 may graduate after taking winter session courses. Students on leave cannot graduate even if taking seasonal courses while on leave satisfies their graduation requirements.\n※ Students in military service should confirm with their service authority whether they may take courses before registering. Under the Military Service Act or the relevant rules of the service authority, taking courses (earning credits) may not be possible.\n\n2. First-come course registration system to prevent course reselling\n▶ Cancelled-seat release times\n- Main registration: 10:00–11:00, 13:00–14:00, 15:00–16:00\n- Registration change: 10:00–11:00, 13:00–14:00, 17:00–18:00\n▶ For 10 minutes before each cancelled-seat release time, registration and cancellation are not possible for any course; only the number of cancelled seats available for registration is displayed.\n▶ During cancelled-seat release times, no course can be cancelled (registration only).\n▶ Registration closing time extended by 30 minutes (main registration 16:30, registration change 18:30) (see attachment for details).\n\n3. Course registration schedule\n- Preliminary registration (mock registration):\n  - 20 October 2026 (Tue) 09:00–16:00: preliminary course basket submission\n  - 21 October 2026 (Wed): preliminary course basket confirmed by the system\n  - 22 October (Thu) – 23 October (Fri) 2026, 08:30–16:30: preliminary first-come registration\n- Course registration (actual registration):\n  - 27 October 2026 (Tue) 09:00–23:59 and 28 October 2026 (Wed) 00:00–16:00: course basket submission period. ※ Domestic credit-exchange students cannot apply.\n  - 29 October 2026 (Thu): course basket confirmed by the system (Academic Affairs). ※ Baskets cannot be submitted or changed.\n  - 30 October (Fri), 2 November (Mon), 3 November (Tue) 2026, 08:30–16:30: first-come registration (days 1–3). ※ Domestic credit-exchange students may apply.\n- First announcement of cancelled courses: 10 November 2026 (Tue)\n- Registration change: 11 November (Wed) – 13 November (Fri) 2026, 09:00–18:30\n- Over-capacity requests: 11 November (Wed) – 13 November (Fri) 2026. Student application: 11 November (Wed) 08:30–23:59. Instructor approval: 11 November (Wed) – 12 November (Thu). Student registration confirmation (※ students register the course themselves): 11 November (Wed) – 13 November (Fri) 18:30.\n- Bill printing and tuition payment: (first) 18 November (Wed) – 23 November (Mon) 2026; (final) 26 November (Thu) – 27 November (Fri) 2026. Weekends excluded. If tuition is not paid within the period, the registration is automatically cancelled.\n- Second announcement of cancelled courses: 8 December 2026 (Tue). Over-capacity requests for students in courses cancelled in the second announcement: student application 9 December (Wed) 08:30–23:59; instructor approval 9 December (Wed) – 10 December (Thu); student registration confirmation (※ students register the course themselves) 9 December (Wed) – 11 December (Fri) 18:30.\n- Course cancellation before classes begin: 11 December (Fri) – 21 December (Mon) 2026. Full tuition refund.\n- Classes begin: 22 December 2026 (Tue)\n- Course cancellation after classes begin: 22 December 2026 (Tue) – 1 January 2027 (Fri): two-thirds of tuition refunded; 2 January (Sat) – 7 January (Thu) 2027: one-half of tuition refunded.\n- Classes end: 25 January 2027 (Mon)\n- Grade entry: 18 January (Mon) – 28 January (Thu) 2027. No 'I' grade entry period and no separate correction period.\n- Grade checking: 28 January (Thu) – 28 February (Sun) 2027. Reflected on transcripts: expected 29 January 2027 (Fri).\n\n3. Important notes\n- Class period: 22 December 2026 (Tue) – 25 January 2027 (Mon)\n- Credits allowed: maximum 9 credits (including domestic credit exchange at other universities)\n- Registration and retaking: courses being taken in Fall 2026 cannot be retaken in the winter session.\n- Registration by students expecting to graduate: check in advance whether graduation requirements are met, and be sure to complete registration within the period.\n- Over-capacity requests and course cancellation: learn the procedures and be sure to complete them within the period (no changes possible after the period).\n- Misconduct: misconduct related to course registration will be severely punished if discovered.\n\nAttachments (5 files; their contents were not read for this translation):\n(Attachment 1-1) 2026 Winter Session Course Registration Guide (Guideline for 2026 Winter Session Course Registration).pdf\n(Attachment 1-2) Seoul National University Course Registration System User Manual (Korean/English).pdf\n(Attachment 1-3) Card news on the improved anti-reselling course registration system (New CRS Program for Preventing Reselling).pdf\n(Attachment 2) Notice on course registration misconduct.pdf\n(Attachment 3) Course Overlap Request Manual.pdf",
+ "id": 21593,
+ "text_hash": "c80f8c465d0d233f",
+ "images": 0,
+ "attachments": [
+  "(붙임1-1)2026학년도 동계 계절수업 수강신청 안내(Guideline for 2026 Winter Session Course Registration).pdf",
+  "(붙임1-2) 서울대학교 수강신청 시스템 이용자 매뉴얼(국영문).pdf",
+  "(붙임1-3) 강의매매방지 수강신청제도 개선 카드뉴스(New CRS Program for Preventing Reselling).pdf",
+  "(붙임2)수강신청 부정행위 관련 알림.pdf",
+  "(붙임3) 중복수강신청 매뉴얼(Course Overlap Request Manual).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

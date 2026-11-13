@@ -1,0 +1,37 @@
+{
+ "title_en": "Information Session on Outgoing Exchange Student Recruitment for Fall 2027",
+ "summary": "Undergraduate and graduate students interested in being sent to a foreign university as exchange students for Fall 2027 may attend an information session on 30 October 2026 (Friday). The same session is held twice, from 10:00 to 11:30 and from 14:00 to 15:30, in the first-floor Seminar Room of Building 152 (CJ International Center). Detailed information is available on the Office of International Affairs website linked in the notice.",
+ "applies_to": "Undergraduate and graduate students interested in being sent to a foreign university as exchange students for Fall 2027. The notice does not state that attendance is mandatory.",
+ "dates": [
+  {
+   "what": "Information session, morning session",
+   "when": "Friday, 30 October 2026, 10:00–11:30",
+   "original_ko": "2026. 10. 30.(금) 오전 10:00 - 11:30",
+   "verified": true
+  },
+  {
+   "what": "Information session, afternoon session (same content as the morning session)",
+   "when": "Friday, 30 October 2026, 14:00–15:30",
+   "original_ko": "오후 14:00 - 15:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The morning and afternoon sessions cover the same content, so students need to attend only one.",
+  "The notice does not state that attendance is mandatory or that advance registration is required."
+ ],
+ "steps": [
+  "Read the detailed information at https://oga.snu.ac.kr/outgoing_notice-board/?mod=document&uid=3125.",
+  "Attend one session on Friday, 30 October 2026 (10:00–11:30 or 14:00–15:30) in the Seminar Room, 1st floor, Building 152 (CJ International Center).",
+  "For questions, contact the Office of International Affairs; the contact details are in the original notice."
+ ],
+ "translation": "Information Session on Outgoing Exchange Student Recruitment for Fall 2027\n\nAn information session on the recruitment of outgoing exchange students for Fall 2027 will be held. Each unit is asked to announce this on its website notice board, and students interested in studying abroad are invited to apply.\n\n1. Date and time: Friday, 30 October 2026, 10:00–11:30 (morning) / 14:00–15:30 (afternoon)\n* The same content will be presented twice, once in the morning and once in the afternoon.\n\n2. Venue: Seminar Room, 1st floor, Building 152 (CJ International Center)\n\n3. Main content: General information on the outgoing exchange semester\n\n4. Intended audience: Undergraduate and graduate students interested in being sent to a foreign university\n\n5. Detailed information: https://oga.snu.ac.kr/outgoing_notice-board/?mod=document&uid=3125\n\n6. Contact: A staff member of the Office of International Affairs (name and phone number are given in the original notice).",
+ "id": 21590,
+ "text_hash": "cfe2a91bc62332b2",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,45 @@
+{
+ "title_en": "Selection of Examination Administrators for the 16th Bar Examination (2027)",
+ "summary": "The Ministry of Justice is selecting undergraduate students of this university to work as examination administrators at the 16th Bar Examination in 2027. Interested currently enrolled students in years 1 to 4 must email the completed application form (Attachment 2) individually to the staff member in charge by Friday, 6 November. The Ministry of Justice plans to notify selected students by telephone between 24 and 27 November 2026.",
+ "applies_to": "Optional; for interested undergraduate students of this university who are currently enrolled in years 1 to 4. Fourth-year students who plan to enter a law school (법학전문대학원) or who plan to take up employment are not eligible.",
+ "dates": [
+  {
+   "what": "Deadline to email the application form (Attachment 2)",
+   "when": "By Friday, 6 November",
+   "original_ko": "11. 6.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "Period in which the Ministry of Justice plans to notify selected students by telephone",
+   "when": "Tuesday, 24 November 2026 to Friday, 27 November 2026",
+   "original_ko": "2026. 11. 24.(화) ~ 11. 27.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Fourth-year students who plan to enter a law school or who plan to take up employment are excluded.",
+  "Twenty-one students will be selected; reserve candidates may also be selected depending on the Ministry of Justice's circumstances.",
+  "Students who cannot be reached by telephone during the notification period will not be selected.",
+  "The allowance is 100,000 won per weekday and 120,000 won per holiday.",
+  "The work period and duties are given only in Attachment 1, which was not read for this translation."
+ ],
+ "steps": [
+  "Read Attachment 1 (시험관리원 근무안내.hwp) for the work period and duties; its content was not read for this translation.",
+  "Complete the application form in Attachment 2 (시험관리원 근무 지원서(서울대).xlsx).",
+  "Email the completed application form individually to the staff member in charge by Friday, 6 November; the email address is in the original notice.",
+  "Keep your telephone available between 24 and 27 November 2026, when the Ministry of Justice plans to call selected students.",
+  "If selected, work at the Law Building (Building 15), Seoul National University, according to the schedule in Attachment 1."
+ ],
+ "translation": "Title: Selection of Examination Administrators for the 16th Bar Examination (2027) (by Friday, 6 November)\n\nThe Ministry of Justice is selecting undergraduate students of our university to work as examination administrators (시험관리원) at the 16th Bar Examination in 2027. Interested currently enrolled students are asked to apply.\n\n1. Eligibility: Currently enrolled students in years 1 to 4\n   * Fourth-year students who plan to enter a law school (법학전문대학원) or who plan to take up employment are excluded.\n\n2. Number to be selected: 21 (reserve candidates may be selected depending on the Ministry of Justice's circumstances)\n\n3. Place of work: Law Building (Building 15), Seoul National University\n\n4. Work period and duties: See [Attachment 1]\n\n5. Allowance: 100,000 won on weekdays; 120,000 won on holidays\n\n6. How to apply: Send the application form in [Attachment 2] individually by email to the staff member in charge by Friday, 6 November. (The email address is given in the original notice.)\n\n7. Selection: The Ministry of Justice plans to notify selected students by telephone between Tuesday, 24 November 2026 and Friday, 27 November 2026. (Students who cannot be reached will not be selected.)\n\n8. Enquiries: Legal Professionals Division (법조인력과), Ministry of Justice (the telephone number is given in the original notice).\n\nAttachments (2):\nAttachment 1. 시험관리원 근무안내.hwp (Examination Administrator Work Guide) (55 KB)\nAttachment 2. 시험관리원 근무 지원서(서울대).xlsx (Examination Administrator Application Form (SNU)) (12 KB)\n\n(Note: The contents of the attachments were not read for this translation.)",
+ "id": 21606,
+ "text_hash": "22d6cf4a9a68b9ce",
+ "images": 0,
+ "attachments": [
+  "붙임 1. 시험관리원 근무안내.hwp",
+  "붙임 2. 시험관리원 근무 지원서(서울대).xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

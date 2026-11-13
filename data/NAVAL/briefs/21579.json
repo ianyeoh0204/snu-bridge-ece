@@ -1,0 +1,35 @@
+{
+ "title_en": "2026 Multiple-Major Experience Essay Contest",
+ "summary": "Eligible current undergraduate students (third year or above, including students on leave of absence) and graduates who have multiple-major experience are invited to enter the 2026 Multiple-Major Essay Contest on their experience of completing a multiple major. Participation is voluntary. Applicants must register and submit their essay through SNU Extracurricular [SNU비교과] by Sunday, 22 November 2026.",
+ "applies_to": "Optional (voluntary participation). Open to undergraduates of this university who have multiple-major experience during their undergraduate program and who are either currently enrolled students in their third year or above (students on leave of absence are included) or graduates. Multiple major covers a double major, minor, joint major, interdisciplinary (linked) major or student-designed major.",
+ "dates": [
+  {
+   "what": "Deadline for registering and submitting the essay on SNU Extracurricular [SNU비교과]",
+   "when": "Sunday, 22 November 2026",
+   "original_ko": "2026. 11. 22.(일)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only students and graduates with multiple-major experience during their undergraduate program at this university may enter.",
+  "Currently enrolled students must be in their third year or above; students on leave of absence are also eligible.",
+  "Multiple major means a double major, minor, joint major, interdisciplinary (linked) major or student-designed major.",
+  "Registration and essay submission are made only through SNU Extracurricular [SNU비교과].",
+  "The essay topic must be the applicant's experience of completing a multiple major as an undergraduate."
+ ],
+ "steps": [
+  "Log in to SNU Extracurricular [SNU비교과] and find the contest post by searching for its title: \"2026 다전공 수기 공모전: 꼬리에 꼬리를 무는 나의 다전공 이야기\" (the original notice also gives a direct link to the post; the link address is not included in the text available for this translation).",
+  "On that post, register to participate in the contest.",
+  "Write an essay on your experience of completing a multiple major as an undergraduate.",
+  "Submit your essay on SNU Extracurricular [SNU비교과] by Sunday, 22 November 2026."
+ ],
+ "translation": "2026 Multiple-Major Essay Contest\n\nWe announce the 2026 Multiple-Major Essay Contest [2026 다전공 수기 공모전] as follows, and we encourage many students to participate.\n\n1. Contest overview\n○ Topic: undergraduate students' experience of completing a multiple major\n○ Eligibility: currently enrolled students in their third year or above (including students on leave of absence) and graduates who have multiple-major experience during their undergraduate program at this university\n※ Multiple major: double major, minor, joint major, interdisciplinary (linked) major, student-designed major\n○ Submission deadline: Sunday, 22 November 2026\n\n2. How to participate: register and submit your essay on SNU Extracurricular [SNU비교과].\n※ Direct link to the SNU Extracurricular post ▶ 2026 Multiple-Major Essay Contest: My Multiple-Major Story, One Thing Leading to Another [2026 다전공 수기 공모전: 꼬리에 꼬리를 무는 나의 다전공 이야기] (the link address is not included in the text available for this translation and was not read).\n※ Search on SNU Extracurricular ▶ 2026 다전공 수기 공모전: 꼬리에 꼬리를 무는 나의 다전공 이야기",
+ "id": 21579,
+ "text_hash": "30618803359d694b",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

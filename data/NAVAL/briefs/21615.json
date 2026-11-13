@@ -1,0 +1,19 @@
+{
+ "title_en": "Promotion: SNU Commons (Special Appointment) Distinguished Professor Lecture Series",
+ "summary": "This is a promotional notice announcing the SNU Commons (Special Appointment) Distinguished Professor Lecture Series. The text provided contains only the title, so it states no audience, requirement, date or place. Students who wish to attend should consult the original notice for details.",
+ "applies_to": "",
+ "dates": [],
+ "conditions": [],
+ "steps": [
+  "Consult the original notice on the department's academic board for the lecture details, as only the title was provided for translation."
+ ],
+ "translation": "[Promotion] \"SNU Commons (Special Appointment) Distinguished Professor Lecture Series\" [SNU Commons (특임)석좌교수 강연 시리즈]\n\nThe text provided contains only the title of this notice. No body text, image or attachment content was included, so any further details (such as lecture dates, venues, speakers or registration) were not read. Please refer to the original notice for details.",
+ "id": 21615,
+ "text_hash": "e3b0c44298fc1c14",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}
