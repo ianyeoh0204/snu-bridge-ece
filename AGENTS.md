@@ -452,3 +452,21 @@ start a second department's requirements before 20 Nov was lifted by the develop
   results on pages 12 and 25, and each card follows its page; Naval's undergraduate cards cite the page where the quote
   first appears in a file that repeats it per year; Nuclear undergraduate stops at 2025 entrants, which Home says.
 - New Korean lines from this review are unread by a Korean speaker, like the poster's: see `out/korean-new-lines.md`.
+
+## Background page made the same as the poster (13 Nov 2026, night)
+The developer read the page and found three places where the site and the poster had drifted apart.
+- **One sentence, one copy.** A sentence shown on both the poster and the site lives in `bridge/text.json` only.
+  `POSTER_KO` holds lines the poster alone prints. The first Background step ("Why now") now uses the poster's five
+  sentences: the lead, the 1 billion won to 27 colleges, the division planned for September 2027, the President's
+  address, and "Our reading". The older site wording ("two directions") named no figure, and the developer could not
+  see in it that the university wants more international students. News1 was re-read on 13 Nov 2026 and holds all four
+  figures. It also says colleges are to get extra funds by evaluation; the page does not use that.
+- **Departments table.** The column "Of them, with an English title" is gone from both tables on the site, as on the
+  poster. One row showed two different "English title" counts (Korean board and English board). The total of 25 stays
+  above the table with its list of links. Do not bring a per-department English-title column back.
+- **The sample.** `tools/survey.py sample` counts pages with a run of eight or more English words beyond the site's own
+  menus. The sentence says that and no more: "had a passage of English in the page text".
+- The two links under one item ran together on a narrow screen (`.plain li > span` made the link row a block).
+- An unslop rewording of step 1 was built as a local preview only (`site/unslop.html`, not in the repository). It came
+  out 6 words longer over ten lines: the rules reword, they do not cut. Adopt it only if the developer picks it, and
+  then write its Korean.

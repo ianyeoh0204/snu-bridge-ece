@@ -60,9 +60,6 @@ POSTER_KO = {
         "–: 별도 영어 게시판 없음. 취업·장학·세미나 게시판은 어느 학과에서도 집계하지 않았습니다.",
     "A sample of {m} Korean-titled notices was opened: {n} held a line of English, none an English version.":
         "한국어 제목의 공지 {m}건을 표본으로 열어 보았습니다. {n}건에 영어로 된 줄이 있었고, 영어본이 있는 공지는 없었습니다.",
-    "SNU is working to bring in more international students.": "서울대학교는 더 많은 외국인 학생을 유치하려 하고 있습니다.",
-    "2026: {won} billion won to {n} colleges and schools to recruit international students and support their settlement.":
-        "2026년: 외국인 학생 유치와 정착 지원을 위해 {n}개 단과대학·전문대학원에 총 {won}억 원 지원",
     "{year}: a new undergraduate division for international students, about {n} new students expected.":
         "{year}년: 외국인 대상 학부 신설, 신입생 약 {n}명 예상",
     "Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can close that gap.":
@@ -128,14 +125,8 @@ POSTER_KO.update({
         "same: 영어 메뉴에 한국어 게시판의 공지가 한국어 그대로 표시됩니다. –: 영어 사이트 없음. 따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
     "A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.":
         "제목에 한글이 없으면 영어 제목으로 셌습니다. {n}건 전체를 링크와 함께 사이트에 실었습니다.",
-    "Planned for September {year}: a new undergraduate division for international students, about {n} entrants expected.":
-        "{year}년 9월 예정: 외국인 대상 학부 신설, 신입생 약 {n}명 예상",
-    "President's 2026 address: internationalisation must be the base of all the university's work.":
-        "2026년 총장 신년사: 국제화는 대학의 모든 일의 기반이 되어야 한다",
     "QS 2026 rank for share of international students, as reported by the SNU Alumni Association newspaper":
         "QS 2026년판 외국인 학생 비율 지표 순위 (서울대학교총동창신문 보도)",
-    "Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can narrow that gap.":
-        "저희의 해석: 이 학생들이 따라야 할 공지는 한국어로 게시됩니다. AI Native Campus가 지향하는 행정 분야의 AI 활용으로 이 격차를 줄일 수 있습니다.",
     "{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.":
         "전기·정보공학부 네 개 과정의 요건 카드 {n}개 (학부: {a}~{b}학번). 카드마다 파일, 쪽, 한국어 원문을 밝힙니다.",
     "{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
