@@ -14,7 +14,7 @@
   "Only the notice title was available. Any body text, attachments or images were not read and may contain further conditions."
  ],
  "steps": [
-  "If you wish to attend, go to the pilotis (open ground-floor area) on the first floor of Building 38 by 18:00 on Wednesday, October 21."
+  "The notice title gives the Orange Concert start time and place: 18:00 on Wednesday, October 21, at the first-floor pilotis of Building 38."
  ],
  "translation": "Title: Notice of the Orange Concert (Wednesday, October 21, 18:00, Building 38, 1st Floor Pilotis [38동 1층 필로티])\n\nNote: Only the title of this notice was provided. No body text, attachment or image was available, so none was read or translated.",
  "id": 21581,
@@ -24,5 +24,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-13",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

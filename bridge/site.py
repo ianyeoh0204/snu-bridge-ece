@@ -98,6 +98,8 @@ def build() -> Path:
             # the "Why and how" page: board counts (tools/evidence.py) and hand-checked facts
             "evidence": _json(ROOT / "data" / name / "evidence.json"),
             "evidence_notes": _json(config_file.parent / "evidence_notes.json"),
+            # the second reading of this department's notices (out/second_read_notices.py): counts only
+            "notice_reading": (lambda r: r and {k: r[k] for k in ("date", "read", "agreed", "corrected", "noted")})(_json(ROOT / "data" / name / "notice_reading.json")),
             "reread": bool(audit),  # False: cards written from the sources and checked by code only
             "read_on": config.get("read_on", ""),
             "audit": audit and {k: audit.get(k) for k in ("audited_on", "decoys", "cards_first_reading", "notices", "notices_after")},

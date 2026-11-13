@@ -46,7 +46,7 @@
   "You must give consent to the use of the full text of your thesis.",
   "The thesis title must be identical in MySNU, on the approval page, in the uploaded file and in the library record; if your title changed, you must inform the department office.",
   "The title may differ from the title on the thesis review result documents.",
-  "The submission date and approval date on the approval page must fall within this semester, and the approval date must be after the submission deadline; using the same date for both is recommended.",
+  "The submission date and approval date on the approval page must fall within this semester, and the approval date must be after the submission date; using the same date for both is recommended.",
   "Master's committee: chair, vice-chair (advisor) and one member; doctoral committee: chair, vice-chair (advisor) and three members.",
   "The cover and the approval page must each be a single page and must not run onto a second page.",
   "Both files (the final thesis with an unsigned approval page and the signed approval page) must be uploaded before the deadline, or the thesis is not accepted as submitted.",
@@ -80,5 +80,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

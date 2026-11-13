@@ -15,7 +15,7 @@
  ],
  "steps": [
   "Read the full original notice and any attachments for the venue, eligibility and registration method, as these were not included in the text provided.",
-  "Attend the Research Ethics Seminar (Session 1) [Issue Resolution] on Thursday 22 October from 13:00."
+  "Check the original notice for whether and how to attend the Research Ethics Seminar (Session 1) [Issue Resolution]."
  ],
  "translation": "Title: Information on the training \"Research Ethics Seminar (Session 1) [Issue Resolution] (연구윤리 세미나(1회)[이슈해결편])\" (Thursday 22 October, from 13:00)\n\nNote: Only the title of this notice was provided. The body text and any attachments were not available and were not read.",
  "id": 31487,
@@ -25,5 +25,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

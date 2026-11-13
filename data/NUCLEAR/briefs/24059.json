@@ -95,7 +95,7 @@
  "steps": [
   "Choose one of the five topics and form a team of up to four currently enrolled students.",
   "Apply online at https://buly.kr/GP5oiR6 by 17:00 on Wednesday, 11 November 2026.",
-  "Attend the online orientation via ZOOM on Monday, 16 November 2026, 19:00–20:00.",
+  "An online orientation via ZOOM is scheduled for Monday, 16 November 2026, 19:00–20:00.",
   "Register your team on site between 09:00 and 10:30 on Thursday, 19 November 2026, at the 3rd-floor gymnasium of the Recreation Center, Hallym University.",
   "Attend the hackathon briefing at 10:30 and carry out team development work from 11:00.",
   "Submit your presentation materials by 09:30 on Friday, 20 November 2026 (the notice does not state how or where to submit).",
@@ -110,5 +110,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-13",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

@@ -1,6 +1,6 @@
 {
  "title_en": "Fall 2026 Registration for Remote Courses with Credit Recognition During Military Service",
- "summary": "Eligible students serving in the military who wish to take remote courses for credit recognition in Fall 2026 must register through '장병e음' (Janghwang e-eum) between 18:00 on 12 August 2026 and 24:00 on 17 September 2026. Students may take up to 6 credits per semester (12 credits in total during service), at a fee of KRW 40,500 per credit. After returning to school, students must apply for credit recognition on mySNU before the last day of classes of the semester in which they return.",
+ "summary": "Eligible students serving in the military who wish to take remote courses for credit recognition in Fall 2026 must register through '장병e음' (Jangbyeong e-eum) between 18:00 on 12 August 2026 and 24:00 on 17 September 2026. Students may take up to 6 credits per semester (12 credits in total during service), at a fee of KRW 40,500 per credit. After returning to school, students must apply for credit recognition on mySNU before the last day of classes of the semester in which they return.",
  "applies_to": "Eligible students currently serving in the military who wish to take remote courses for credit recognition in Fall 2026. Participation is optional. Students who are discharged or released from service before the one-quarter point of the semester (23 September 2026) cannot apply. The detailed eligibility criteria may be in the attachment, which was not read.",
  "dates": [
   {
@@ -47,5 +47,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

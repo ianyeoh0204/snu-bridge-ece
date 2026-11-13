@@ -478,10 +478,13 @@ function renderNotices() {
   boards.replaceChildren(...[deptId, ...Object.keys(pilots)].map((k) =>
     el("button", { type: "button", "aria-pressed": String(k === board), onclick: () => { board = k; audience = "All"; history.replaceState(null, "", k === deptId ? "#notices" : "#notices-" + k); renderNotices(); } },
       k === deptId ? `${dept.name} · ${dept.name_ko}` : L("{name} (pilot)", { name: pilots[k].name }, { name: pilots[k].name_ko }))));
-  const unread = !(dept.audit && dept.audit.notices);  // the second reader re-read a sample of this department's notices, or none
-  pilotNote.hidden = !(pilot || unread);
+  const nr = !pilot && dept.notice_reading, unread = !nr;  // the second reader's pass over this department's notices, if any
+  pilotNote.hidden = false;
+  pilotNote.className = nr ? "note" : "trapline";
   pilotNote.replaceChildren(...(pilot ? B("Pilot. Notices only: this department's requirements have not been written, and these translations have not been re-read by the second reader.")
-    : unread ? B("These translations have not been re-read by the second reader.") : []));
+    : unread ? B("These translations have not been re-read by the second reader.")
+    : B("Notices up to {date} were re-read by a second AI reader from another maker: {a} of {n} stood as written and {c} were corrected. Newer notices have not been re-read.",
+        { date: fullDate(nr.date), a: num(nr.agreed + nr.noted), n: num(nr.read), c: num(nr.corrected) }, { date: koDate(nr.date) })));
   document.getElementById("eyebrow-notices").replaceChildren(...B("Department of {name}", { name: nd.name }, { name: nd.name_ko }));
   document.getElementById("lede-notices").replaceChildren(...(pilot || deptId !== mainId ? B("Notices from the department's notice board, with English titles. Each entry links to the original notice.")
     : B("Notices from the department's academic board, with English titles. Each entry links to the original notice.")));

@@ -15,7 +15,7 @@
  "steps": [
   "Determine which case applies to you (registration only to meet completion requirements, exceeded prescribed semesters, research student beyond prescribed semesters, or general enrolled student); if unsure, contact the department office (contact details are in the original notice).",
   "Research students beyond prescribed semesters: read the reference notice at https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57896.",
-  "Pay the regular-semester tuition (required in all cases).",
+  "Pay the regular-semester tuition. The notice states it is required when you register only to meet the completion requirements.",
   "Register for courses if you have exceeded the prescribed number of semesters, are a research student beyond the prescribed semesters, or are a general enrolled student; if you have exceeded the prescribed semesters and will not register for courses, take a leave of absence instead to avoid expulsion."
  ],
  "translation": "Title: Notice on Tuition Payment and Course Registration for Students Expected to Complete Coursework\n\n1. Registration to meet the minimum enrollment period / tuition payment requirement for coursework completion (수료)\n- In this case, payment of regular-semester tuition is mandatory, but course registration (수강신청) is optional.\n- For example, if you have met all requirements for master's coursework completion but must register for a 4th time because at least 4 registrations are required, you do not need to register for courses when you register for the 4th time.\n\n2. However, students who have exceeded the prescribed number of semesters (규정학기초과자) must register for courses.\n- Students who have exceeded the prescribed number of semesters: master's and doctoral students from their 5th semester; integrated master's-doctoral program (석박통합과정) students from their 9th semester.\n- For example, if you are in your 5th semester of the master's program, you must both register (pay tuition) and register for courses.\n※ If you do not register for courses (earn credits) or take a leave of absence, you will be expelled (제적).\n\n3. Research students who have exceeded the prescribed semesters (초과자연구생) must also register for courses.\n- Reference link: https://ece.snu.ac.kr/community/academics?md=v&bbsidx=57896\n\n4. [General enrolled students] (일반 재학생) who are not in the situations above (such as students expected to complete coursework) must register (pay tuition) and register for courses.\n\nThe above may vary in special cases or depending on individual student circumstances, so if it is difficult to determine your exact situation, please contact the department office once more.\n\n● Contact: Administrative Office, Department of Electrical and Computer Engineering (contact details are given in the original notice).",
@@ -26,5 +26,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

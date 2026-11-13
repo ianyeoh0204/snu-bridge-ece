@@ -1,7 +1,7 @@
 {
  "title_en": "Fall 2026 Graduate Thesis Submission Deadline Extension Applications Due 24 July",
  "summary": "Graduate students whose thesis submission deadline has passed (master's students 4 to under 6 years after completing coursework; doctoral students 6 to under 8 years after completing coursework) who wish to extend that deadline must apply. They must submit one Application for Extension of Thesis Submission Deadline by Friday, 24 July 2026. They may submit it at the department office (Building 301, Room 319) or by email.",
- "applies_to": "Graduate students whose thesis submission deadline has passed and who wish to apply for an extension. Master's students: 4 years or more but less than 6 years after completing coursework. Doctoral students: 6 years or more but less than 8 years after completing coursework. This includes students counting periods of military service or pregnancy and childbirth, because these periods are not extended automatically and must be approved through this application.",
+ "applies_to": "Graduate students whose thesis submission deadline has passed and who wish to apply for an extension. Master's students: 4 years or more but less than 6 years after completing coursework. Doctoral students: 6 years or more but less than 8 years after completing coursework. This includes students whose military service or pregnancy and childbirth periods must be excluded from the deadline calculation, because that exclusion is not automatic and requires approval through this application.",
  "dates": [
   {
    "what": "Deadline to submit the Application for Extension of Thesis Submission Deadline (in person or by email)",
@@ -39,5 +39,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

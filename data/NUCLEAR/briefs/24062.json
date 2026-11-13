@@ -1,7 +1,7 @@
 {
  "title_en": "2026 Research Reactor Experiment and Practice Program: Call for Participants",
- "summary": "The Korea Nuclear International Cooperation Foundation (한국원자력협력재단) invites interested undergraduate nuclear engineering majors in their third or fourth year, and graduate students, to apply for the 2026 Research Reactor Experiment and Practice Program. Applicants must email the participation application form and related documents by 16:00 on Tuesday, 1 December 2026. The email address and the forms are in the Foundation's recruitment notice on its NETi website, not in this notice.",
- "applies_to": "Optional, for interested students only: third- and fourth-year undergraduate students majoring in nuclear engineering, and graduate students, who are interested in research related to reactor physics. Twelve participants will be selected.",
+ "summary": "The Korea Nuclear International Cooperation Foundation (한국원자력협력재단) invites nuclear engineering undergraduate students in their third or fourth year and graduate students who are interested in research related to reactor physics to apply for the 2026 Research Reactor Experiment and Practice Program. Applicants must email the participation application form and related documents by 16:00 on Tuesday, 1 December 2026. The email address and the forms are in the Foundation's recruitment notice on its NETi website, not in this notice.",
+ "applies_to": "Optional, for interested students only: third- and fourth-year undergraduate students and graduate students majoring in nuclear engineering who are interested in research related to reactor physics. Twelve participants will be selected.",
  "dates": [
   {
    "what": "Application period (applications close at 16:00 on the last day)",
@@ -30,7 +30,7 @@
   "The email address for applications is not stated in this notice; it should be in the Foundation's recruitment notice."
  ],
  "steps": [
-  "Read the full recruitment notice on the Foundation's NETi website (path given in the notice: NETi > 알림마당 > 공지사항) to obtain the application form, the list of related documents and the email address.",
+  "Read the full recruitment notice using the path printed in the notice: 보기 > 공지사항 > 알림마당 > NETi, to obtain the application form, the list of related documents and the email address.",
   "Complete the participation application form (참가 신청서) and prepare the related documents.",
   "Email the application form and documents to the Foundation by 16:00 on Tuesday, 1 December 2026."
  ],
@@ -42,5 +42,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-13",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

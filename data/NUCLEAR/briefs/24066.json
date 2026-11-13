@@ -1,5 +1,5 @@
 {
- "title_en": "2026 National University Student AI Startup Hackathon",
+ "title_en": "2026 AI-Powered Startup Hackathon for University Students Nationwide",
  "summary": "Interested university students may take part in the 2026 AI Startup Hackathon for University Students Nationwide, hosted by the Hallym University Startup Support Headquarters. Applications are made through a Google Form reached by scanning the QR code on the event poster, between 27 October and 17:00 on 11 November 2026. The competition takes place on 19–20 November 2026 in the gymnasium on the 3rd floor of the Recreation Center, Hallym University.",
  "applies_to": "University students nationwide who are interested, including members of startup clubs. Participation is voluntary, not mandatory.",
  "dates": [
@@ -37,5 +37,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-13",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

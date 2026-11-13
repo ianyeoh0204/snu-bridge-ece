@@ -27,7 +27,7 @@
  ],
  "steps": [
   "Read the attached summary guide (attachment 3) and the NIIED event guide (attachment 4, for reference); their contents were not read for this translation.",
-  "Complete the nominee list (attachment 1, Excel file) and, if you wish to perform, the special performance application form (attachment 2).",
+  "Email the relevant documents to the address given in the original notice.",
   "Email the completed documents to the address given in the original notice by Friday, 2 October 2026."
  ],
  "translation": "Notice on the 2026 Global Korea Scholarship (GKS) Year-End Evening and Call for Nominations for the Academic Excellence Award and Other Recommendations\n\nWe are informing you of the 2026 GKS Year-End Evening and the call for nominations for the Academic Excellence Award and other recommendations. Interested students should review this notice and submit the relevant documents by email to [email address given in the original notice].\n\nA. Content: Call for nominations of candidates for the Academic Excellence Award for Korean Government Scholarship students and of students wishing to take part in the special performance\n\nB. Deadline: By Friday, 2 October 2026 (~ 2026.10.2.(금)까지). * The deadline must be strictly observed (there is an internal university selection process).\n\nC. Eligibility: Korean Government Scholarship (GKS) students within their scholarship period\n※ Students on a leave of absence and students whose scholarship period has ended are excluded.\n\nD. Benefits:\n- Three Academic Excellence Award candidates (one per program) will be selected and recommended to the National Institute for International Education (NIIED).\n- All students who wish to take part in the special performance will be recommended.\n- 2026 GKS Year-End Evening (Tuesday, 15 December 2026, 16:00–18:10, NIIED, 1st floor)\n※ However, final selection is decided by NIIED.\n\nAttachments:\n1. List of nominees, 1 copy\n2. Special performance application form, 1 copy\n3. Guide to the event and candidate nominations, 1 copy\n4. (Reference) NIIED event guide, 1 copy. End.\n\nAttached files (4):\n1. (College) 2026 GKS Year-End Evening attendance nomination list_event attendance, special performance, academic excellence.xlsx (15 KB)\n2. (College) 2026 GKS Year-End Evening special performance application form.hwpx (175 KB)\n3. 2026 GKS Year-End Evening event and Academic Excellence Award candidate nomination guide (summary).hwpx (171 KB)\n4. (Reference) NIIED 2026 GKS Year-End Evening event guide.hwpx (210 KB)\n\n[Note: The contents of the attached files were not read for this translation. The email address for submission is given in the original notice.]",
@@ -43,5 +43,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

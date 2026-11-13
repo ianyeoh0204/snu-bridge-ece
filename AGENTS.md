@@ -374,3 +374,14 @@ start a second department's requirements before 20 Nov was lifted by the develop
   developer's point: the assistant should read the department's own page, not pass through this site's translation).
   Ideas from the older repositories the developer declined: a "due next" list (not relevant to every student), and a
   booth script for now (after 20 Nov).
+- Notices re-read by the second maker (13 Nov, the developer: "run anything that needs second confirmation" with the
+  lighter model): GPT-5.6 Terra through Kiro compared the short English parts of all 294 notices with their Korean text
+  (`out/second_read_notices.py`; the Korean texts and raw answers stay in `out/`). 251 stood as written; it raised 55
+  points on the other 43. 21 points were the standard "contact the department office" line this site writes on purpose,
+  26 were real and were corrected in 22 notices (a wrong count of documents, a dropped period, "by 18:00" for a start
+  time, a missing exception for 2020 entrants), the rest were judged not to matter. No wrong date was found.
+  Counts per department are in `data/<DEPARTMENT>/notice_reading.json` and on each Notices page, which also says newer
+  notices are not re-read: the daily job has no second maker in it. A corrected brief carries `second_reading`; it is
+  lost, rightly, when the notice changes and is translated again.
+  What may be said now: every requirement card and every notice translated up to 13 Nov 2026 was written by one model
+  and re-read by a model from another maker; new notices are translated daily by one model with dates checked by code.

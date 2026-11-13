@@ -15,7 +15,7 @@
   "Applicants must have at least one semester remaining until graduation after the internship is completed.",
   "Applicants must check the eligibility requirements in the attached recruitment notice; its content was not read.",
   "The university will recommend no more than 15 students to the OECD.",
-  "All five required documents must be submitted through the Google Form within the application period.",
+  "All six required documents must be submitted through the Google Form within the application period.",
   "The internship lasts 1 to 6 months; the exact period is arranged with the relevant OECD department after final selection.",
   "Work may be in person, remote, or a combination of both.",
   "Passing the university's internal selection is not final; selected students must then apply individually to the OECD, which makes the final selection."
@@ -41,5 +41,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

@@ -1,6 +1,6 @@
 {
  "title_en": "Fall 2026 Doctoral Dissertation Review: Results Due Tuesday, December 29, 2026",
- "summary": "Doctoral students in the Department of Aerospace Engineering who are taking their dissertation review in Fall 2026 must complete the initial, intermediate and final reviews, and submit the review result documents by Tuesday, December 29, 2026. They must inform the department office of the date, time and place of each review and of any changes. They must then submit the dissertation PDF online through the Central Library website between January 15 and February 1, 2027 (14:00), and submit the online submission confirmation and the original approval page to the department office (Room 117) within the same period.",
+ "summary": "Doctoral students in the Department of Aerospace Engineering who are taking their dissertation review in Fall 2026 must complete the initial, intermediate and final reviews, and submit the review result documents by Tuesday, December 29, 2026. They must inform the department office of the date, time and place of the initial and final reviews and of any changes. They must then submit the dissertation PDF online through the Central Library website between January 15 and February 1, 2027 (14:00), and submit the online submission confirmation and the original approval page to the department office (Room 117) within the same period.",
  "applies_to": "Doctoral students in the Department of Aerospace Engineering who are undergoing doctoral dissertation review in Fall 2026 (2026학년도 2학기). Completing the review and submitting the dissertation is mandatory for receiving the degree. The review period extension request applies only to doctoral students who will postpone their review to the next semester. The thesis submission deadline extension request applies only to students admitted in 2013 or earlier for whom 6 years have passed since completing the doctoral program (excluding military service) and who wish to extend by 2 more years, and to students admitted in 2014 or later for whom 5 years have passed since completing the doctoral program (excluding military service).",
  "dates": [
   {
@@ -114,5 +114,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

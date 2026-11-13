@@ -1,5 +1,5 @@
 {
- "title_en": "Recruitment of Student Mentors and Operations Assistants for the 2026 SNU–Paju University Experience Camp",
+ "title_en": "Recruitment of Student Mentors and Operations Assistants for the 2026 SNU–Paju City University Experience Camp",
  "summary": "Currently enrolled undergraduate students in engineering fields at Seoul National University who are interested may apply to serve as student mentors or operations assistants at the 2026 SNU–Paju City University Experience Camp. Applicants must submit the application form by email to the person in charge by 20:00 on Sunday, 25 October 2026; the email address is given in the original notice. The camp will be held on Tuesday, 3 November 2026, from 09:00 to 18:00 on the Gwanak Campus.",
  "applies_to": "Currently enrolled undergraduate students in engineering fields (공학계열) at Seoul National University who wish to serve as student mentors or operations assistants. Application is voluntary.",
  "dates": [
@@ -37,5 +37,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

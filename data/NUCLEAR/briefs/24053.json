@@ -68,7 +68,7 @@
   "Read the attached guide 'DN문화재단 장학생 모집 안내문.docx', in particular the section 'Main Activities and Conditions for Maintaining Scholarship Payment' (its content was not read for this translation).",
   "Complete the scholarship application form and consent form in the Foundation's format (attachment 'DN문화재단 장학생 지원 신청서 및 동의서(양식).docx').",
   "Complete the College of Engineering personal information collection, use and provision consent form (attachment '개인정보 수집 이용 및 제공 동의서(공대).hwp').",
-  "Obtain an academic transcript (as of Spring 2026) and a certificate of enrollment.",
+  "Obtain an academic transcript ('26.1 기준, as the notice writes it) and a certificate of enrollment.",
   "Email all documents by Friday, 13 November 2026, 18:00, to the address given in the original notice.",
   "If selected, attend the award ceremony in February 2027 and the opening ceremony in November 2027."
  ],
@@ -84,5 +84,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-13",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

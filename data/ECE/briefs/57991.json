@@ -24,7 +24,7 @@
  "steps": [
   "Read the attached announcement (2026학년도 동계 Study Abroad Program (SAP) 참가자 모집 공고문.pdf) and the recommended program list (2026 동계 국제처 추천 프로그램 리스트_수정.xlsx); their contents were not read for this translation.",
   "Download the submission form templates (제출 서류 양식.zip) attached to the notice and complete the required documents.",
-  "Submit your application in person to your own department (or division) office by Thursday, 3 September 2026.",
+  "Submit your application to your own department (or division) office by Thursday, 3 September 2026.",
   "Check for the announcement of successful applicants, planned for Wednesday, 23 September 2026.",
   "For questions, contact the International Cooperation Support Team (국제협력지원과); the contact details are in the original notice."
  ],
@@ -40,5 +40,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }

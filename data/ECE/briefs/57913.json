@@ -1,6 +1,6 @@
 {
  "title_en": "Fall 2026 Registration for Prerequisite-Designated Courses: Programming Methodology and Basic Electromagnetics",
- "summary": "Students who wish to take Programming Methodology (430.211) or Basic Electromagnetics and Lab (430.202B) in Fall 2026 must register according to their admission year and whether they have completed the prerequisite course. Students who have completed the prerequisite register directly on the course registration website during the course registration period. Eligible students who must use the Google Form (mainly 2019-and-earlier admits without the prerequisite) must submit it between 1 September (Tue) 09:00 and 3 September (Thu) 18:00 and adjust their allowable credit limit by 3 September.",
+ "summary": "Students who wish to take Programming Methodology (430.211) or Basic Electromagnetics and Lab (430.202B) in Fall 2026 must register according to their admission year and whether they have completed the prerequisite course. Students who completed the prerequisite register directly on the course registration website, except students admitted in 2020 or later whose prerequisite is recognised through Advanced Physics 2 or General Physics and Lab 2; they must use the Google Form. Eligible students who must use the Google Form (mainly 2019-and-earlier admits without the prerequisite) must submit it between 1 September (Tue) 09:00 and 3 September (Thu) 18:00 and adjust their allowable credit limit by 3 September.",
  "applies_to": "All students who wish to take the prerequisite-designated courses Programming Methodology (430.211, section 001) or Basic Electromagnetics and Lab (430.202B, sections 001–003) in Fall 2026. Students admitted in 2020 or later who have not completed the prerequisite course may not register at all. The Google Form is only for: (a) Programming Methodology: students admitted in 2019 or earlier who have not completed the prerequisite and who, as of Fall 2026, are in the Department of Electrical and Computer Engineering undergraduate program (major or second major: double major/minor), the College of Liberal Studies with Electrical and Computer Engineering as major, or the Interdisciplinary Programs in AI Semiconductor Engineering, Intelligent Communications, or Artificial Intelligence; (b) Basic Electromagnetics and Lab: students who, as of Fall 2026, are in the Department of Electrical and Computer Engineering undergraduate program (major or second major: double major/minor), the College of Liberal Studies with Electrical and Computer Engineering as major, or the Interdisciplinary Program in AI Semiconductor Engineering, and who either were admitted in 2019 or earlier and have not completed the prerequisite, or were admitted in 2020 or later and have completed Advanced Physics 2 or General Physics and Lab 2.",
  "dates": [
   {
@@ -42,7 +42,7 @@
   "The list of prerequisite-designated courses and their prerequisites (Section 1 of the notice) was not included in the text and was not read; check the original notice."
  ],
  "steps": [
-  "Website registration: If you have completed the prerequisite course (any admission year), register directly on the course registration website during the course registration period.",
+  "Website registration: If you completed the prerequisite course, register directly on the course registration website, except students admitted in 2020 or later whose prerequisite is recognised through Advanced Physics 2 or General Physics and Lab 2; they must use the Google Form.",
   "Google Form registration: Confirm that you meet the eligibility conditions for the specific course (program, admission year, and prerequisite status); check Section 1 of the original notice for the prerequisite list, which was not read.",
   "Google Form registration: Between 1 September (Tue) 09:00 and 3 September (Thu) 18:00, complete and submit the 'Prerequisite-Designated Course Registration Request Form' (선이수 지정 교과목 수강신청 요청서) at https://forms.gle/m4bCo2YLia9Uucrp6 (Chrome recommended), choosing only one section per course and writing college, department and student ID in full without abbreviations.",
   "Google Form registration: By 3 September (Thu), adjust your allowable credit limit (수강신청가능 학점) so that adding the course will not exceed it.",
@@ -57,5 +57,9 @@
  "model": "claude-opus-5-5",
  "written": "2026-11-12",
  "prompt": 2,
- "revised": false
+ "revised": false,
+ "second_reading": {
+  "date": "2026-11-13",
+  "corrected": true
+ }
 }
