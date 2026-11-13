@@ -295,3 +295,16 @@ start a second department's requirements before 20 Nov was lifted by the develop
   the developer tries it with the quota kept for the demo), and `tools/reader_sheet.py`, which writes a sheet of ten
   notices for the developer's Korean-speaking labmate. Until that reading happens, never call a brief "reviewed by a person".
 - Source for the 20th: `git archive` of HEAD into `out/snu-bridge-source.zip`. Rebuild it on the day it is sent.
+
+## 13 Nov 2026
+- Scheduled runs so far: 12 Nov at 12:08 and 13 Nov at 11:40 Seoul time, both successful, both more than four hours
+  after the 07:17 schedule. "Daily" holds; no clock time does.
+- The developer read the ten-notice sheet and found it correct, and does not want the site to say anything like
+  "reviewed by a person": it looks unprofessional. Do not add such a label. In daily operation there is no human step:
+  AI translates, code checks the quoted dates, and the Korean original is one tap away. Review by a department office
+  is what the proposal offers the university if it adopts this, not something this project does.
+- `navigator/instructions.md` was tried through Codex with the lighter model the developer asked for (`gpt-6.1-sol`,
+  low effort): it behaved as intended on a pasted notice and on a poster image, and was tightened twice (no names of
+  people, staff included; only dates a student acts on; three short lines first).
+- The developer downloaded Nuclear's and Naval's graduate rule files into the older folder
+  `../snu-ece-notice-navigator/sources/Nuclear` and `/Naval`, after agreeing to stop at two departments. Ask before building.
