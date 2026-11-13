@@ -66,13 +66,25 @@ The official PDFs and spreadsheets are not in this repository, because they are 
 before running `pages`, `extract`, `check` or `tools/check_quotes.py`. The daily update and the site build do not need them.
 
 ## Add a department
-Create `sources/<name>/`, put the official files in it, and write a `config.json` like the ECE one.
+Four departments are on the site. ECE is the main one (`"main": true` in its config): the page opens on it and the
+Background page is about its boards. Aerospace, Naval and Nuclear were each added in a day, this way:
 
-**Notices only (a pilot).** A folder whose `config.json` has `"pilot": true` and a `board`, and no requirement cards,
-is shown on the Notices page as a pilot and nowhere else (`sources/AEROSPACE/` is one). The daily job reads and
-translates its notices like any other department's; delete the folder and its `data/<name>/` to stop. The list reader
-in `bridge/notices.py` and the page reader in `bridge/briefs.py` fit the board software ECE uses; a site on other
-software needs its own two readers. `tools/survey.py` shows how each of the other engineering sites lists its posts.
+1. **Notices.** Create `sources/<NAME>/config.json` with the board's addresses and a `since` date (copy
+   `sources/NUCLEAR/config.json`). Run `python -m bridge notices <NAME>` and `python -m bridge briefs <NAME>` on your own
+   machine first. Never push a new department folder without its translated notices, or the daily job translates them
+   all on GitHub. The readers in `bridge/notices.py` and `bridge/briefs.py` fit the board software these four
+   departments use; other software needs its own two readers (`tools/survey.py` shows how the other engineering sites
+   list their posts). A slow site may need `out/translate_gently.py`'s pace: one request every five seconds.
+2. **Requirements.** A person downloads the department's graduation rules into `sources/<NAME>/` (PDFs there are never
+   uploaded). An AI assistant writes `tools/cards_<name>.py` from `prompts/write-cards.md`; the checks in
+   `tools/cards_pdf.py` refuse a card whose Korean quote is not in the document or whose numbers are not in a quote.
+   Rules published as web pages are read as in `tools/pages_aerospace.py`.
+3. **Second reading.** A model from another maker reads every card against the Korean with `prompts/read-cards.md`.
+   Correct the cards and repeat until the findings stop mattering, then record the result in `data/<NAME>/audit.json`.
+4. Add `programs`, `headline_cards` and `files` to the config, run `python -m bridge site`, look at the department in
+   the switch under the header, then push.
+
+A folder with a `board` and `"pilot": true` but no cards is shown on the Notices page only, as a pilot.
 
 ## The part done in ChatGPT Edu
 `navigator/instructions.md` holds the instructions for the assistant a student uses for what this site does not read:

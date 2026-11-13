@@ -326,3 +326,27 @@ start a second department's requirements before 20 Nov was lifted by the develop
     seconds, a minute's pause after a failure) finished it. If the daily job fails on Naval, that is the first suspect.
   - A helper that writes cards must be followed by a different one that only reads; the writer's own report listed 18
     doubtful readings, and the reader settled or confirmed each.
+
+## Second reader for every department's cards (13 Nov 2026, published)
+- The developer asked whether the booth answer could be "double-checked by two frontier models", and offered Kiro
+  (`kiro-cli`), which serves OpenAI models, for the reading. Command used, read-only, changing no file:
+  `kiro-cli chat --no-interactive --trust-workspace --model gpt-5.6-sol --trust-tools=fs_read "<prompts/read-cards.md filled in>" < /dev/null`.
+  Sol costs 4.4 times Kiro's base credit and Terra 2.2; the developer finds Terra enough, so use Terra for later passes.
+- Result, recorded in `data/<DEPARTMENT>/audit.json` and shown on each card ("Re-read by a second reader on ..."):
+  Nuclear 10 of 10 agreed; Aerospace 27 of 32 and Naval 39 of 44 agreed, the other 5 in each corrected as the reader
+  asked and not read again ("settled by the author", with that reason on the card). With ECE's 91 of 98 that is 167 of
+  184. First readings: Nuclear 7 of 10, Aerospace 28 of 32, Naval 38 of 44. No reading found a wrong number.
+- This reading differs from ECE's: it compared cards with extracted text, not page images, and no planted errors were
+  mixed in. Each pass finds smaller things than the last; stop when a finding no longer changes what a student does.
+- What may be said: every requirement card in all four departments was written by one model and re-read by a model
+  from another maker. Notices are translated by one model with dates checked by code; only ten ECE notices were re-read
+  by the second model, and a department's Notices page still says its translations were not re-read.
+- `navigator/instructions.md`: on the developer's decision the assistant gives the staff contact a notice lists (name,
+  room, email) and addresses the email draft to that person. The public site still never copies names or contact details.
+- `prompts/write-cards.md` and `prompts/read-cards.md` are the two prompts used to add a department, kept in the
+  repository so that whoever takes this over can add the next one (README, "Add a department").
+- Figures the developer got from the "Univ in Data" assistant on aichat.snu (대학알리미, not checked at the source by
+  me): share of international students meeting the language standard 46.1% (2025 disclosure) and 45.5% (2026);
+  international student dropout 7.9% and 6.8%; all students 2.3% (2025). Its "180" and "200" degree-seeking students
+  cannot be the whole university (a university post puts Engineering alone at about 220) and are probably the
+  undergraduate disclosure only. Nothing from it is on the poster or the site.

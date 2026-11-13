@@ -1,0 +1,50 @@
+{
+ "audited_on": "2026-11-13",
+ "reader": "A second AI model from a different maker (OpenAI GPT-5.6 through the Kiro command line, read-only): the Sol model read every card twice, and the Terra model read the corrected cards again. It compared each card with the Korean source text; no planted errors were used here.",
+ "cards_first_reading": {
+  "agreed": 7,
+  "of": 10
+ },
+ "cards": {
+  "ne-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-qualifying": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-comprehensive-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-comprehensive-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-comprehensive-limit": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-thesis-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-preliminary-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-thesis-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-publication-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ne-publication-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ }
+}

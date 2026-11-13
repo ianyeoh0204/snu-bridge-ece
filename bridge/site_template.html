@@ -462,9 +462,10 @@ function renderNotices() {
   boards.replaceChildren(...[deptId, ...Object.keys(pilots)].map((k) =>
     el("button", { type: "button", "aria-pressed": String(k === board), onclick: () => { board = k; audience = "All"; history.replaceState(null, "", k === deptId ? "#notices" : "#notices-" + k); renderNotices(); } },
       k === deptId ? `${dept.name} · ${dept.name_ko}` : L("{name} (pilot)", { name: pilots[k].name }, { name: pilots[k].name_ko }))));
-  pilotNote.hidden = !(pilot || dept.reread === false);
+  const unread = !(dept.audit && dept.audit.notices);  // the second reader re-read a sample of this department's notices, or none
+  pilotNote.hidden = !(pilot || unread);
   pilotNote.replaceChildren(...(pilot ? B("Pilot. Notices only: this department's requirements have not been written, and these translations have not been re-read by the second reader.")
-    : dept.reread === false ? B("These translations have not been re-read by the second reader.") : []));
+    : unread ? B("These translations have not been re-read by the second reader.") : []));
   document.getElementById("eyebrow-notices").replaceChildren(...B("Department of {name}", { name: nd.name }, { name: nd.name_ko }));
   document.getElementById("lede-notices").replaceChildren(...(pilot || deptId !== mainId ? B("Notices from the department's notice board, with English titles. Each entry links to the original notice.")
     : B("Notices from the department's academic board, with English titles. Each entry links to the original notice.")));
@@ -779,7 +780,7 @@ function renderAbout() {
       el("ul", { class: "plain" },
         el("li", null, B("Notices: each site needs a small reader for its own board software. The eleven department sites read here use six kinds. Translation, the date check and publishing stay the same.")),
         el("li", null, B("Requirements: written by hand from that department's official documents and re-read by a second reader, as they were here.")),
-        ...deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]).map((d) => el("li", null, B("Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were checked by code and by one independent AI reading, not by the second reader.",
+        ...deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]).map((d) => el("li", null, B("Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were re-read by a second reader from another maker; its notices were not.",
           { name: d.name, n: d.cards.length, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }))),
         ...Object.entries(pilots).map(([k, d]) => el("li", null, B("Pilot: {name} notices since {date} are on this site in English. Its board runs on the same software as this department's.", { name: d.name, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }),
           el("span", { class: "links" }, el("a", { href: "#notices-" + k }, L("Open the pilot"))))))) : "",

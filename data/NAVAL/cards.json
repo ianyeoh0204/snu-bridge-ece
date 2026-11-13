@@ -92,7 +92,8 @@
   "rule": [
    "Earn at least 24 credits.",
    "Thesis research (대학원 논문연구) is recognised up to 6 credits.",
-   "It can be taken again within that limit, but you cannot take 2 or more thesis research courses in one semester."
+   "It can be taken again within that limit, but you cannot take 2 or more thesis research courses in one semester.",
+   "Navy-commissioned master's students of the shipbuilding branch (해군 조함병과 위탁생) follow a separate section of the rules."
   ],
   "why": "",
   "when": "",
@@ -106,7 +107,8 @@
   "quotes_ko": [
    "□ 이수학점: 24학점 이상",
    "○ 대학원 논문연구: 최대 6학점까지 인정",
-   "- 취득한도 내에서 반복 수강할 수 있으나 한 학기에 2개강좌 이상 수강할 수 없음"
+   "- 취득한도 내에서 반복 수강할 수 있으나 한 학기에 2개강좌 이상 수강할 수 없음",
+   "□ 해당 규정은 해군‘조함병과’석사과정 위탁생의 규정이며"
   ],
   "check": "unchecked",
   "entry_years": [],
@@ -305,11 +307,12 @@
   ],
   "group": "credit_rules",
   "title": "Undergraduate courses",
-  "key": "Up to 6 credits in total, with your advisor's approval",
+  "key": "Up to 6 credits in total, with approval",
   "rule": [
    "Undergraduate courses approved by your advisor count as completion credits up to 6 credits, counted over the master's and PhD programs together.",
    "They are recognised as other-major credits (타전공 인정); submit the form 학부과목 이수 승인신청서.",
-   "Only courses of the same or a similar major count. General and liberal-education courses (일반·교양과목) are excluded."
+   "Only courses of the same or a similar major count. General and liberal-education courses (일반·교양과목) are excluded.",
+   "The university rule printed on the form asks for the approval of your advisor and of the department head or the major's chair."
   ],
   "why": "",
   "when": "",
@@ -323,7 +326,8 @@
   "quotes_ko": [
    "○ 대학원 과정의 학생이 학사과정 교과목을 이수하고자 할 경우, 지도교수의 승인을 받은 학부 교과목은 석사, 박사 통산 6학점까지 수료학점으로 인정",
    "- 타전공 인정(‘학부과목 이수 승인신청서’ 제출)",
-   "- 동일·유사 전공과목에 한하며, 일반·교양과목은 제외"
+   "- 동일·유사 전공과목에 한하며, 일반·교양과목은 제외",
+   "전공주임 교수의 승인을 받아 학점을 취득할 수 있으며, 대학원과정 통산하여 6학점 이내에서 과정수료"
   ],
   "check": "unchecked",
   "entry_years": [],
@@ -626,7 +630,7 @@
   ],
   "group": "start_early",
   "title": "Two mandatory trainings",
-  "key": "Both in your first semester; without them, no qualifying examination",
+  "key": "In principle both in your first semester; without them, no qualifying examination",
   "rule": [
    "Completing the environmental safety training for newcomers (환경안전신규교육) and the respect-for-life (suicide prevention) training (생명존중 (자살예방) 교육) is a condition for sitting the comprehensive examination.",
    "In principle, complete both in your first semester.",
@@ -664,7 +668,8 @@
    "By the day the result of your master's thesis examination is reported, meet at least one of the two conditions below.",
    "Condition 1: a paper related to your thesis, as first author or corresponding author, published in a KCI-listed Korean journal or an SCIE/SCOPUS-listed international journal; or documents proving that it will be published, submitted to the department office.",
    "Condition 2: an oral presentation, as first author or corresponding author, of a paper related to your thesis at an international conference.",
-   "For condition 2 the conference must have presenters from 4 or more countries and 20 or more oral presentations in total, and the 3 examiners must recognise it as an international conference."
+   "For condition 2 the conference must have presenters from 4 or more countries and 20 or more oral presentations in total, and the 3 examiners must recognise it as an international conference.",
+   "For military-commissioned students (군 위탁 교육생), a presentation at a military-related conference is not recognised."
   ],
   "why": "",
   "when": "",
@@ -679,7 +684,8 @@
    "- 학위 예정자는 석사학위 논문심사 결과보고일까지 다음의 조건 중 하나 이상을 만족",
    "1) 졸업논문과 연관성이 있는 논문을 KCI 등재된 국내 학술 논문지 또는 SCIE/SCOPUS 등재된 국제 학술 논문지에 제1저자 또는 교신저자로 게재하거나, 게재 예정임을 증명할 수 있는 관련 문서를 학과 행정실에 제출한 경우",
    "2) 4개국 이상의 발표자가 참여하고 총 구두 발표 논문이 20건 이상이며, 심사위원 3인이 국제적인 학술대회임을 인정하는 국제 학술대회에서 졸업논문과 연관성이 있는 논문을 제1저자 또는 교신저자로 구두 발표한 경우",
-   "○ 2022년도 2학기 입학자부터 적용 (학과 내규)"
+   "○ 2022년도 2학기 입학자부터 적용 (학과 내규)",
+   "※ 군 위탁 교육생의 경우 군 관련 학술대회 발표 실적을 인정하지 않음."
   ],
   "check": "unchecked",
   "entry_years": [],
@@ -759,7 +765,7 @@
   ],
   "group": "before_exam",
   "title": "Comprehensive examination: eligibility and attempts (master's)",
-  "key": "Registered for 2 or more semesters; sittings limited to 2",
+  "key": "Registered for 2 or more semesters; repeat sittings limited to 2",
   "rule": [
    "Eligible: students registered for 2 or more semesters who have completed the two mandatory trainings.",
    "Repeated sitting of the comprehensive examination (major) is allowed only up to 2 times after entry (반복 응시는 입학 후 2회까지만 허용).",
@@ -822,7 +828,7 @@
   ],
   "group": "before_exam",
   "title": "Thesis qualifying examination: eligibility and attempts (PhD)",
-  "key": "Registered for 4 or more semesters; sittings limited to 3",
+  "key": "Registered for 4 or more semesters; repeat sittings limited to 3",
   "rule": [
    "Eligible for the comprehensive examination: students registered for 4 or more semesters who have completed the two mandatory trainings.",
    "You can apply for the thesis qualifying examination after registering for 4 or more semesters since entry and completing the required courses of the field you will sit (응시 분야의 필수 교과목).",
@@ -856,7 +862,7 @@
   ],
   "group": "before_exam",
   "title": "Thesis qualifying examination: eligibility and attempts (integrated)",
-  "key": "Registered for 4 or more semesters; sittings limited to 3",
+  "key": "Registered for 4 or more semesters; repeat sittings limited to 3",
   "rule": [
    "Eligible for the comprehensive examination: students registered for 4 or more semesters who have completed the two mandatory trainings.",
    "You can apply for the thesis qualifying examination after registering for 4 or more semesters since entry and completing the required courses of the field you will sit (응시 분야의 필수 교과목).",
@@ -954,7 +960,7 @@
    "Sit 2 of the 5 subjects and score 70 or higher out of 100 in each to pass.",
    "The 5 subjects: 선박설계자동화특강 (414.556), 선체구조설계특강 (414.561), 선박생산공학특강 (414.552), 해양공학설계특강 (414.562), 선박유체역학특강 (414.557).",
    "If you passed the written test in 선박유체역학특강 in this department's master's thesis qualifying examination and then entered this department's PhD program, that subject counts as already passed, and passing 1 other subject passes the thesis qualifying examination.",
-   "If you did not take this department's 선박유체역학특강 during your master's, it is a required course (필수 이수과목).",
+   "If you did not complete this department's 선박유체역학특강 during your master's program, you must complete it (필수 이수과목).",
    "A separate line of the same section says that anyone who graduated from this department's master's program and entered its PhD program is treated as having passed 선박유체역학특강. The document does not say how the two lines fit together."
   ],
   "why": "",
@@ -1145,7 +1151,7 @@
   ],
   "group": "before_exam",
   "title": "English score for the thesis qualifying examination",
-  "key": "NEW TEPS 327; TOEFL iBT 86 or 96 by year of entry",
+  "key": "NEW TEPS 327 (student numbers from 2005); TOEFL iBT 86 or 96 by year of entry",
   "rule": [
    "The document describes the English route under 'Korean graduate students' (한국인 대학원생): since the 1st semester of 2006 the score recognised at admission through the general admission track (대학원 일반전형) stands in place of the examination.",
    "Those not already treated as passed must take NEW TEPS or TOEFL and reach the standard score set by the College of Engineering before submitting the thesis examination documents, and submit the score to the department.",
@@ -1248,7 +1254,7 @@
   "title": "Preliminary review of the master's thesis (학위논문 사전심사)",
   "key": "Thesis plan and review form to 3 examiners before you apply",
   "rule": [
-   "Before applying for the thesis examination (3월 또는 9월 초: early March or early September), give 1 copy each of the master's thesis plan (석사학위 논문계획서) and the preliminary review form (석사 학위 논문 사전심사서) to the 3 examiners.",
+   "Before applying for the thesis examination in March or early September (3월 또는 9월 초), give 1 copy each of the master's thesis plan (석사학위 논문계획서) and the preliminary review form (석사 학위 논문 사전심사서) to the 3 examiners.",
    "Submit the approved preliminary review form when you register as a prospective thesis submitter in the semester in which you plan to graduate (April or October).",
    "At the public presentation the form is passed to the examiners and taken into account in the examination."
   ],
@@ -1410,9 +1416,9 @@
   ],
   "group": "for_degree",
   "title": "Giving up the integrated program",
-  "key": "Withdrawal form within the 2/4 line of the 3rd semester",
+  "key": "Withdrawal form by the halfway point (2/4선) of the 3rd semester",
   "rule": [
-   "If you submit the form for giving up the integrated program (석박사통합과정 포기원) within the 2/4 line of the 3rd semester (3학기 수업연한 2/4선 내), you can graduate from the master's program.",
+   "If you submit the form for giving up the integrated program (석박사통합과정 포기원) by the halfway point of the 3rd semester (3학기 수업연한 2/4선 내; the document gives no date), you can graduate from the master's program.",
    "The document does not explain this term or give a date."
   ],
   "why": "",

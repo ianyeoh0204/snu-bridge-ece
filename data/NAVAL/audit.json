@@ -1,0 +1,186 @@
+{
+ "audited_on": "2026-11-13",
+ "reader": "A second AI model from a different maker (OpenAI GPT-5.6 through the Kiro command line, read-only): the Sol model read every card twice, and the Terra model read the corrected cards again. It compared each card with the Korean source text; no planted errors were used here.",
+ "cards_first_reading": {
+  "agreed": 38,
+  "of": 44
+ },
+ "cards": {
+  "na-registration-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-registration-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-registration-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-credits-ms": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "na-credits-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-credits-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-grades": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-status-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-carried-bachelor": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-carried-masters": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-undergraduate-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-other-department-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-other-department-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-other-department-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-interdisciplinary-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-common-competency": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-common-competency-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-research-ethics": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-research-ethics-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-mandatory-trainings": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-publication-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-publication-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-qualifying-examination": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-comprehensive-attempts-ms": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "na-engineering-mathematics-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-qualifying-attempts-phd": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "na-qualifying-attempts-integrated": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "na-comprehensive-subjects-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-comprehensive-subjects-ms-before": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-comprehensive-subjects-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-comprehensive-subjects-phd-before": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-comprehensive-subjects-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-comprehensive-subjects-integrated-before": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-language-international": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-korean-course-exemption": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-english-score": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-english-score-notes": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-thesis-application": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-preliminary-review-ms": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "na-thesis-examination-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-thesis-examination-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-thesis-deadline-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-thesis-deadline-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "na-withdrawal-integrated": {
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ }
+}

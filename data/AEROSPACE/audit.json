@@ -1,0 +1,138 @@
+{
+ "audited_on": "2026-11-13",
+ "reader": "A second AI model from a different maker (OpenAI GPT-5.6 through the Kiro command line, read-only): the Sol model read every card twice, and the Terra model read the corrected cards again. It compared each card with the Korean source text; no planted errors were used here.",
+ "cards_first_reading": {
+  "agreed": 28,
+  "of": 32
+ },
+ "cards": {
+  "ae-ms-completion": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "ae-ms-thesis-research": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ms-other-department": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ms-bachelor-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ms-required-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-ms-seminar": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-common-competency": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-phd-completion": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "ae-phd-thesis-research": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-phd-other-department": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-phd-masters-credits": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-phd-required-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-phd-repeated-course": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-int-completion": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "ae-int-thesis-research": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-int-other-department": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-int-common-competency": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-int-required-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-two-system-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-no-duplicate-course": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-subtitled-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-semester-limit": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-english-courses": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-average-below": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-qe-english": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-qe-korean": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-qe-basic": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-qe-major-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-qe-major-phd": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "ae-committee": {
+   "status": "settled_by_author",
+   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+  },
+  "ae-thesis-ms": {
+   "status": "reader_agrees",
+   "reason": ""
+  },
+  "ae-thesis-phd": {
+   "status": "reader_agrees",
+   "reason": ""
+  }
+ }
+}

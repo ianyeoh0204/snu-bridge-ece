@@ -162,7 +162,7 @@
   "title": "Master's thesis examination",
   "key": "Presentation before a committee of 3",
   "rule": [
-   "After qualifying, write the thesis, present it to a master's thesis examination committee of 3 members, and pass the examination."
+   "After obtaining the qualification to submit a thesis, write the thesis and, under the university's degree-conferral regulations (학위수여규정), present it to a master's thesis examination committee of 3 members and pass the examination."
   ],
   "why": "You must hold the qualification to submit a thesis before this examination.",
   "when": "",
@@ -220,7 +220,7 @@
   "title": "Doctoral thesis examination",
   "key": "Draft to a committee of 5, two weeks before the presentation",
   "rule": [
-   "Submit a draft of the thesis to a thesis examination committee of 5 members no later than 2 weeks before the scheduled presentation.",
+   "After obtaining the qualification to submit a thesis, and under the university's degree-conferral regulations (학위수여규정): submit a draft of the thesis to a thesis examination committee of 5 members no later than 2 weeks before the scheduled presentation.",
    "Present it and pass the examination."
   ],
   "why": "The draft is due before the presentation, not on the day.",
@@ -233,7 +233,8 @@
   "source_page_also": 0,
   "source_quote_ko": "④ 박사과정 학생은 5인으로 구성된 논문심사위원회에 예정된 발표심사일 2주전까지 논문초안을 제출하고, 발표 후 심사에 합격해야 한다.",
   "quotes_ko": [
-   "④ 박사과정 학생은 5인으로 구성된 논문심사위원회에 예정된 발표심사일 2주전까지 논문초안을 제출하고, 발표 후 심사에 합격해야 한다."
+   "④ 박사과정 학생은 5인으로 구성된 논문심사위원회에 예정된 발표심사일 2주전까지 논문초안을 제출하고, 발표 후 심사에 합격해야 한다.",
+   "제 5 조 (논문심사합격요건) ① 학생은 논문제출자격을 획득한 후 학위논문을 작성하여 학위수여규정과 다음에 정해진 절차와 기준에 따라 논문심사에 합격해야 한다."
   ],
   "check": "unchecked",
   "entry_years": [],
@@ -280,7 +281,7 @@
   "title": "Journal paper (PhD and integrated)",
   "key": "At least 1 SCI(E) paper accepted, as lead author, by the day of the 초심",
   "rule": [
-   "By the day of your 초심 (the first examination of the doctoral thesis; this document does not define the term), have at least 1 paper accepted for publication in an SCI(E)-level journal, as lead author (주저자).",
+   "By the day of your 초심 (the first examination of the doctoral thesis; this document does not define the term), have at least 1 paper on research done during the degree accepted for publication in an SCI(E)-level journal, as lead author (주저자).",
    "Online publication counts.",
    "An exception can be approved by the department's faculty meeting if your thesis advisor submits a statement of reasons."
   ],

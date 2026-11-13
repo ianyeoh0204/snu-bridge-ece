@@ -12,7 +12,7 @@
    "Credits: at least 24.",
    "Grade point average: at least 3.0."
   ],
-  "why": "These three conditions together complete the master's coursework.",
+  "why": "These are the main thresholds for completing coursework; the required-course rules also apply.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from 2021",
@@ -213,7 +213,7 @@
    "Credits: at least 36.",
    "Grade point average: at least 3.0."
   ],
-  "why": "These three conditions together complete the PhD coursework.",
+  "why": "These are the main thresholds for completing coursework; the required-course rules also apply.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from 2021",
@@ -388,7 +388,7 @@
    "Credits: at least 60.",
    "Grade point average: at least 3.0."
   ],
-  "why": "These three conditions together complete the integrated program's coursework.",
+  "why": "These are the main thresholds for completing coursework; the required-course rules also apply.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from 2021",
@@ -533,7 +533,7 @@
   "rule": [
    "If you take both 발사체 시스템 개론 및 현장실무응용 and 위성 시스템 개론 및 현장실무응용, only 3 credits count toward completion."
   ],
-  "why": "Taking both does not add credits toward completion.",
+  "why": "If you take both, only 3 credits in total are recognised toward completion.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from 2021",
@@ -563,7 +563,7 @@
    "In each of the bachelor's, master's and PhD programs, a course of the same name must not be taken twice.",
    "Exceptions are the courses designated separately, such as thesis research (논문연구)."
   ],
-  "why": "A repeated course does not add credits toward completion.",
+  "why": "The document states this as a prohibition.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from 2021",
@@ -591,9 +591,10 @@
   "key": "A different subtitle counts as a different course, with exceptions",
   "rule": [
    "A graduate course designated as course group Ⅱ counts as a separate course when its subtitle is different, so it is not treated as a duplicate.",
-   "Exceptions: the launch vehicle and satellite system courses, and the group-2 courses of the interdisciplinary Space Systems program (협동과정 우주시스템전공), where only one course counts at completion even with different subtitles."
+   "First exception: if you take both 발사체 시스템 개론 및 현장실무응용 and 위성 시스템 개론 및 현장실무응용, only 3 credits in total are recognised.",
+   "Second exception: among the group-2 courses of the interdisciplinary Space Systems program (협동과정 우주시스템전공, also named 협동과정 지능형우주항공시스템전공), only one course is recognised at completion even when the subtitles differ."
   ],
-  "why": "Special-topic courses are often offered again under a new subtitle.",
+  "why": "A different subtitle normally keeps a group Ⅱ course from being treated as a duplicate.",
   "when": "",
   "trap": "",
   "applies_from": "Entrants from 2021",
@@ -857,7 +858,7 @@
    "PhD students must sit it in their 3rd registered semester. Integrated-program students must sit it at least once within 4 semesters.",
    "Questions test overall understanding of the PhD major courses; 70 or higher passes.",
    "After failing, 2 more attempts, each in the semester right after the failure.",
-   "A 3rd retake is an oral examination, with a presentation of the thesis topic, before a committee of 3 professors. Failing it ends the PhD program.",
+   "A 3rd retake is an oral examination, with a presentation of the thesis topic, before a committee of 3 professors that includes the department head and your advisor. Failing it ends the PhD program.",
    "An integrated-program student who meets the master's requirements can then still receive a master's degree."
   ],
   "why": "The timing is fixed by rule, and repeated failure ends the program.",
@@ -892,7 +893,7 @@
   "rule": [
    "3 members including your advisor as chair: professors, or experts from academia or research institutes.",
    "Form it within 6 semesters of entering the PhD program (8 for the integrated program), and hold its meeting in that same semester.",
-   "It reviews the research plan and sets the schedule of the preliminary and final examinations.",
+   "It reviews the research plan and sets the schedule of the preliminary and final examinations. If a member is replaced, the same formation procedure applies.",
    "It is dissolved when the advising result report (논문지도결과보고서) is received. Its members are appointed as members of the thesis examination committee."
   ],
   "why": "It has its own deadline, counted from the semester you entered.",
@@ -927,7 +928,7 @@
    "Documents: April in the first semester, October in the second, on the announced dates.",
    "Examination: late May to early June, or late November to early December.",
    "The thesis and its presentation are in English, in principle.",
-   "Submit the thesis within 4 years of completing coursework. Military service is not counted; an extension of up to 2 years is possible.",
+   "Submit the thesis within 4 years of completing coursework. Military service is not counted. After review by the graduate academic committee, the head of the college or graduate school can extend this by up to 2 years.",
    "Other rules of the university and the department also apply."
   ],
   "why": "The last step before the degree, with its own time limit.",
@@ -961,13 +962,13 @@
   "title": "Doctoral thesis examination",
   "key": "Two journal papers first; thesis within 6 years",
   "rule": [
-   "Eligible with 36 credits, or 60 as a combined total (통산 60학점), earned or to be earned by the end of that semester; both parts of the qualifying examination passed; and registration (research-student registration if coursework is completed).",
+   "Eligible with at least 36 credits (통산 60학점: 60 in combined total), earned or to be earned by the end of that semester; both parts of the qualifying examination passed; and registration (research-student registration if coursework is completed).",
    "Documents: April in the first semester, October in the second, on the announced dates.",
    "At least 2 papers in internationally recognised journals, 1 as lead author and 1 as co-author, published or with proof of acceptance, and the department head's permission.",
    "Preliminary examination at the start of the semester (April or October); final examination, with a public presentation, at the end (June or December).",
    "The thesis and its presentation are in English, in principle.",
-   "Submit the thesis within 6 years of completing coursework. Military service is not counted; an extension of up to 2 years is possible.",
-   "Publish the thesis within 1 year of receiving the degree. Publication can be deferred after review, for a patent or a similar reason.",
+   "Submit the thesis within 6 years of completing coursework. Military service is not counted. After review by the graduate academic committee, the head of the college or graduate school can extend this by up to 2 years.",
+   "Make the thesis public (공표) within 1 year of receiving the degree: as a book, in a journal or periodical, by presenting it at an academic seminar, or in another way. This can be deferred after review, for a patent or a similar reason.",
    "Other rules of the university and the department also apply."
   ],
   "why": "The papers must be published or accepted before the examination can be requested.",

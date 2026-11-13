@@ -146,11 +146,11 @@ POSTER_KO.update({
         "공식 문서를 바탕으로 한 번 작성한 뒤, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
     "scheduled check for new notices": "매일 예약된 새 공지 확인",
     "estimated cost to translate one notice": "공지 1건 번역 비용 추정치",
-    "Claude translates the notices. An OpenAI model, through ChatGPT Edu, re-read the requirement cards once.":
-        "공지 번역은 Claude가 맡습니다. 요건 카드는 ChatGPT Edu를 통한 OpenAI 모델이 한 번 다시 읽었습니다.",
+    "Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).":
+        "공지 번역은 Claude가 맡습니다. 모든 요건 카드는 OpenAI 모델이 다시 읽었습니다(전기·정보공학부는 ChatGPT Edu를 통해).",
     "Checks performed": "수행한 확인",
-    "requirements agreed by the second AI reader; the other {n} settled by the author":
-        "2차 AI 판독자가 동의한 요건. 나머지 {n}개는 작성자가 판단",
+    "requirements, {d} departments, agreed by the second AI reader; {n} settled by the author":
+        "{d}개 학과 요건 중 2차 AI 판독자가 동의. {n}개는 작성자가 판단",
     "planted errors caught in those tests": "그 시험에서 적발한 일부러 넣은 오류",
     "quoted dates found word for word in the Korean notice (the quote, not the translation)":
         "한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
@@ -305,11 +305,17 @@ def build():
              + step(3, "Publish", bi("GitHub rebuilds and publishes the site, without the developer's laptop."))
              + step("+", "Requirements, separately", bi("Written once from the official documents, then re-read once by a second AI model from another maker.")) + "</ol>")
     daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig("≈0.06<i>USD</i>", bi("estimated cost to translate one notice"))
-    who = f'<p class="stand">{bi("Claude translates the notices. An OpenAI model, through ChatGPT Edu, re-read the requirement cards once.")}</p>'
+    who = f'<p class="stand">{bi("Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).")}</p>'
     how = f'<div class="body">{steps}<div class="figs two">{daily}{cost}</div>{who}</div>'
 
-    agreed = sum(1 for c in audit["cards"].values() if c["status"] == "reader_agrees")
-    checks = [fig(agreed, bi("requirements agreed by the second AI reader; the other {n} settled by the author", {"n": reread - agreed}), f"of {len(cards)}"),
+    # every department's cards and its second reading (data/<DEPARTMENT>/audit.json)
+    audits = [json.loads(f.read_text(encoding="utf-8"))["cards"] for f in sorted((ROOT / "data").glob("*/audit.json"))]
+    all_cards = sum(len(load(f"data/{f.parent.name}/cards.json")) for f in (ROOT / "data").glob("*/cards.json"))
+    agreed = sum(1 for a in audits for c in a.values() if c["status"] == "reader_agrees")
+    settled = sum(1 for a in audits for c in a.values() if c["status"] == "settled_by_author")
+    if agreed + settled != all_cards:
+        sys.exit(f"{all_cards} cards but {agreed + settled} have a second reading on record.")
+    checks = [fig(agreed, bi("requirements, {d} departments, agreed by the second AI reader; {n} settled by the author", {"n": settled, "d": len(audits)}), f"of {all_cards}"),
               fig(caught, bi("planted errors caught in those tests"), f"of {len(audit['decoys'])}"),
               fig(num(sum(d["verified"] for d in dates)), bi("quoted dates found word for word in the Korean notice (the quote, not the translation)"), f"of {num(len(dates))}")]
     ai_note = f'<p class="note">{bi("The second reader is an AI model. It is not a check by a person or by the department.")}</p>'
