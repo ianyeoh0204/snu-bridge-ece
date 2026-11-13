@@ -523,3 +523,7 @@ The developer read the page and found three places where the site and the poster
     at the competition knows). "Not an official Seoul National University website" stays in all three places.
   - The poster carries the university emblem (`out/poster/snu-logo.png`, not published) beside the lab logo, and the
     author's name at 17 mm. The emblem is never used on the site, which must not look official.
+- Poster (14 Nov, later still): both marks in the footer are 80 mm high (the footer is 98 mm and the panels gave up
+  12 mm). The note "The second reader is an AI model. It is not a check by a person or by the department." is off the
+  poster: the developer found it redundant beside "agreed by the second AI reader". The room it freed went to a larger
+  chart. The site keeps its own sentence, because there no other line says the second reader is an AI model.

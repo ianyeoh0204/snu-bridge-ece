@@ -91,7 +91,6 @@ POSTER_KO = {
     "deliberately wrong entries caught": "일부러 넣은 오류 적발",
     "dates found word for word in the notice": "공지 원문에서 그대로 확인된 날짜",
     "points that could mislead, in ten notices, after the instructions were tightened": "지침을 강화한 뒤, 공지 10건에서 오해를 부를 수 있는 지점",
-    "The second reader is an AI model. It is not a check by a person or by the department.": "2차 판독자는 AI 모델입니다. 사람이나 학과가 검증한 것은 아닙니다.",
     "Try it": "직접 해 보기",
     "Choose your program. See what to finish before graduation, and the page each item comes from.": "과정을 고르면 졸업 전에 마쳐야 할 항목과 각 항목의 출처 쪽을 볼 수 있습니다.",
     "Open a notice. Compare its dates with the Korean beside them, then open the original.": "공지를 열어 날짜를 옆의 한국어와 비교하고, 원문을 열어 보세요.",
@@ -208,7 +207,14 @@ LOWER_BAND = """
 .band aside { display: grid; grid-template-columns: 270mm 150mm; grid-template-rows: auto auto 1fr; gap: 4mm 8mm; text-align: right; }
 .band aside svg { grid-column: 2; grid-row: 1 / span 3; width: 150mm; height: 150mm; }
 .band aside p { grid-column: 1; }
-.grid { height: 1104mm; }
+.grid { height: 1092mm; }
+.foot { height: 98mm; }
+.foot .logo { height: 80mm; }
+.col.mid .panel:first-child { flex: 4.6 1 0; }
+.drow { grid-template-columns: 200mm minmax(0, 1fr) 62mm; font-size: 11.6mm; }
+.drow:not(.own):not(.head) { padding: 2.4mm 0; }
+.drow .dbar b, .drow u { font-size: 12.4mm; }
+.drow.head, .drow.head u, .drow.head .ko { font-size: 9.6mm !important; }
 .bar .ko { display: inline; margin-left: 5mm; }
 """
 CHOSEN = "equal"
@@ -337,8 +343,7 @@ def build(variant=CHOSEN):
     checks = [fig(agreed, bi("requirements, {d} departments, agreed by the second AI reader; {n} settled by the author", {"n": settled, "d": len(audits)}), f"of {all_cards}"),
               fig(caught, bi("planted errors caught, in the ECE readings"), f"of {len(audit['decoys'])}"),
               fig(num(sum(d["verified"] for d in all_dates)), bi("quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)", {"d": len(audits)}), f"of {num(len(all_dates))}")]
-    ai_note = f'<p class="note">{bi("The second reader is an AI model. It is not a check by a person or by the department.")}</p>'
-    checked = f'<div class="body"><div class="figs three even">{"".join(checks)}</div><div>{ai_note}</div></div>'
+    checked = f'<div class="body"><div class="figs three even">{"".join(checks)}</div></div>'
 
     tries = [bi("Choose your program and year of entry. See the requirements covered, and the page each comes from."),
              bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
