@@ -78,7 +78,6 @@ POSTER_KO = {
     "{n} notices in English: who must act, dates, conditions, steps, and the full translation.": "영어로 제공하는 공지 {n}건: 조치 대상, 날짜, 조건, 절차, 전문 번역",
     "Source": "출처",
     "page {n}": "{n}쪽",
-    "Once a day a scheduled job reads the department's Korean board.": "하루 한 번 예약된 작업이 학과의 한국어 게시판을 읽습니다.",
     "An AI model writes the English. Plain code checks every quoted date against the notice.": "AI 모델이 영어로 옮기고, 인용된 모든 날짜를 코드가 공지 원문과 대조합니다.",
     "A second AI model, from another maker, re-read every requirement against its page.": "개발사가 다른 두 번째 AI 모델이 모든 요건을 해당 쪽과 대조해 다시 읽었습니다.",
     "The site is rebuilt and published. No one's computer is needed.": "사이트를 다시 만들어 게시합니다. 누구의 컴퓨터도 필요하지 않습니다.",
@@ -102,7 +101,7 @@ POSTER_KO = {
     "Notices: one small reader for each kind of board software. The eleven department sites read use six kinds.": "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램 하나가 필요합니다. 읽어 본 11개 학과 사이트는 여섯 종류를 씁니다.",
     "Requirements: written by hand from each department's documents, then re-read.": "요건: 학과의 공식 문서를 바탕으로 직접 작성한 뒤 다시 읽습니다.",
     "What it does not do": "하지 않는 일",
-    "It does not read images or attachments; it sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.":
+    "It does not read images or attachments, and sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.":
         "이미지와 첨부파일은 읽지 않으며, 학생을 ChatGPT Edu로 안내합니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
     "A student project. Not an official Seoul National University website.": "학생 프로젝트이며 서울대학교 공식 웹사이트가 아닙니다.",
 }
@@ -124,10 +123,9 @@ POSTER_KO.update({
         "전기·정보공학부 네 개 과정의 요건 카드 {n}개 (학부: {a}~{b}학번). 카드마다 파일, 쪽, 한국어 원문을 밝힙니다.",
     "{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
         "{date} 이후 전기·정보공학부 학사 공지 {n}건을 영어로 제공: 조치 대상, 날짜, 조건, 절차, 전문 번역",
-    "GitHub rebuilds and publishes the site, without the developer's laptop.": "개발자의 노트북 없이 GitHub에서 사이트를 다시 만들어 게시합니다.",
     "Requirements, separately": "요건은 별도로",
-    "Written once from the official documents, then re-read once by a second AI model from another maker.":
-        "공식 문서를 바탕으로 한 번 작성한 뒤, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
+    "An AI model wrote them once from the official documents, and a second AI model from another maker re-read them once.":
+        "AI 모델이 공식 문서를 바탕으로 한 번 작성했고, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
     "scheduled check for new notices": "매일 예약된 새 공지 확인",
     "departments read by one automatic job": "하나의 자동 작업이 읽는 학과 수",
     "Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).":
@@ -142,12 +140,12 @@ POSTER_KO.update({
         "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
     "Choose your program and year of entry. See the requirements covered, and the page each comes from.":
         "과정과 입학 연도를 고르면 다루는 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
-    "Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.":
+    "Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.":
         "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
-    "Switch department: {names} are here too, with {n} requirements written from their own rules.":
+    "Switch department. {names} are here too, with {n} requirements written from their own rules.":
         "학과를 바꿔 보세요. {names}도 있으며, 각 학과의 자체 규정을 바탕으로 요건 {n}개를 작성했습니다.",
-    "Notices: each kind of board software needs its own small reader. Translation and publishing are reused.":
-        "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시는 그대로 다시 씁니다.",
+    "Notices need a small reader for each kind of board software. Translation and publishing are reused.":
+        "공지에는 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시는 그대로 다시 씁니다.",
     "Requirements: written from each department's own documents, then re-read.": "요건: 각 학과의 공식 문서를 바탕으로 작성한 뒤 다시 읽습니다.",
 })
 
@@ -256,10 +254,10 @@ def build():
                 f'<div><b class="blue">{num(totals["english_titled"])}</b><p>{bi("of them have a title in English")}</p></div></div>')
     silent = min((d for d in survey["departments"] if d["english_side"] == "separate" and not d["english_posts"]), key=lambda d: d["english_last_post"])
     korean_only = max((d for d in survey["departments"] if d["english_posts"] and not d["english_posts_titled"]), key=lambda d: d["english_posts"])
-    english_boards = bi("The {k} separate English boards: {n} posts in the same period, {m} with an English title.",
+    english_boards = bi("The {k} separate English boards had {n} posts in the same period, {m} with an English title.",
                         {"k": totals["english_boards"], "n": totals["english_posts"], "m": totals["english_posts_titled"]})
     last = datetime.date.fromisoformat(silent["english_last_post"])
-    boards_line = bi("{a}'s English board: last post in {month} {year}. {b}'s: {n} posts, all with Korean titles.",
+    boards_line = bi("{a}'s English board last had a post in {month} {year}. {b}'s has {n} posts, all with Korean titles.",
                      {"a": silent["name"], "month": last.strftime("%B"), "year": last.year, "b": korean_only["name"], "n": korean_only["english_posts"]},
                      {"a": silent["name_ko"], "month": last.month, "b": korean_only["name_ko"]})
     legend = bi("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")
@@ -290,7 +288,7 @@ def build():
     steps = ('<ol class="steps">' + step(1, "Collect", bi("Once a day a scheduled job reads the department's Korean board."))
              + step(2, "Translate", bi("An AI model writes the English. Plain code checks every quoted date against the notice."))
              + step(3, "Publish", bi("GitHub rebuilds and publishes the site, without the developer's laptop."))
-             + step("+", "Requirements, separately", bi("Written once from the official documents, then re-read once by a second AI model from another maker.")) + "</ol>")
+             + step("+", "Requirements, separately", bi("An AI model wrote them once from the official documents, and a second AI model from another maker re-read them once.")) + "</ol>")
     # the point of this panel is that the flow runs by itself, so the second figure is how much it covers, not what it costs
     daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig(len(others) + 1, bi("departments read by one automatic job"))
     who = f'<p class="stand">{bi("Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).")}</p>'
@@ -311,13 +309,13 @@ def build():
 
     tries = [bi("Choose your program and year of entry. See the requirements covered, and the page each comes from."),
              bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
-             bi("Add the notices' dates to your calendar: {n} events, past ones included, each matching the weekday the notice prints.", {"n": calendar["events"]}),
-             bi("Switch department: {names} are here too, with {n} requirements written from their own rules.",
+             bi("Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.", {"n": calendar["events"]}),
+             bi("Switch department. {names} are here too, with {n} requirements written from their own rules.",
                 {"names": " and ".join([", ".join(o["short"] for o in others[:-1]), others[-1]["short"]]) + " Engineering", "n": sum(o["cards"] for o in others)},
                 {"names": ", ".join(o["department_ko"] for o in others)})]
     try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
     extends = (f'<h5>{bi("Where it extends")}</h5>'
-               + f'<p class="small">{bi("Notices: each kind of board software needs its own small reader. Translation and publishing are reused.")}</p>')
+               + f'<p class="small">{bi("Notices need a small reader for each kind of board software. Translation and publishing are reused.")}</p>')
     try_it = f'<div class="body">{try_list}{extends}</div>'
 
     columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
@@ -460,7 +458,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 </header>
 <main class="grid">{grid}</main>
 <footer class="foot">
-  <div><b>{bi("What it does not do")}</b>{bi("It does not read images or attachments; it sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
+  <div><b>{bi("What it does not do")}</b>{bi("It does not read images or attachments, and sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
   <div>{bi("A student project. Not an official Seoul National University website.")}{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
   {logo}
 </footer>

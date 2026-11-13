@@ -476,3 +476,26 @@ The developer read the page and found three places where the site and the poster
 - The departments table shows a plain number for the English board (the developer: the heading already says what it
   is): the post count, "same", or "–", with the poster's legend line under the table. Energy Resources' last-post date
   (19 February 2024) is no longer on the page; it is in `data/survey.json`.
+
+## The whole Background page and the poster in the chosen wording (13 Nov 2026, late night)
+- The developer asked for the other five Background steps and the poster in the same wording as step 1 (the pstack
+  `unslop` rules): whole sentences, the actor named ("This project read the boards"), no label-and-colon openings.
+  34 more lines were reworded (764 to 795 words: it rewords, it does not cut). Labels, headings and the captions that
+  read on from a big number were left alone. The limit phrases from the outside review were kept word for word
+  ("Code, not AI", "not a part of the first", "not a measure of how much was translated", "have not been re-read").
+- Not reworded, and not to be: requirement cards (any change to a card's text voids its second reading and the
+  "261 of 279") and notice translations (they would have to be translated again). Home, Requirements and Notices
+  labels are a few words each.
+- Poster and site share a sentence where they say the same thing: Collect and Publish in "How it works" are now the
+  poster's sentences (the site adds a second sentence of its own, as a second pair). Where the site carries more detail
+  (Translate and Check as two steps, the second reader's page images) the wording is aligned, not identical.
+- "Bodies and attachments were not read" left the title-count line: the line after it says only titles were tested,
+  and the sample of 86 did read page text. "It runs on GitHub" became "The daily job runs on GitHub" (cards are not
+  written there). The poster's requirements step now says an AI model wrote them, which the README already said.
+- Second maker (GPT-5.6 Terra through Kiro, read-only; `out/review/reworded-*`): all 44 reworded lines, each old
+  English, new English and Korean. 8 points: 1 Korean wording corrected ("짧은 부분" for "short parts"), 1 false alarm
+  (the Korean amount is filled with its own value, 10억), 2 are the changes the developer had already seen and chosen
+  in step 1 ("put them into English"; "working case of generative AI in administration" dropped), 4 are the true
+  narrowings and additions listed above.
+- `out/korean-new-lines.md` is generated, not edited by hand: every pair in `bridge/text.json` that differs from commit
+  1cc6121. `out/poster/poster-before-unslop.png` is the poster before this pass.
