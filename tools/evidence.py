@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Count what the "Why and how" page claims, from the department's own public pages.
 
-Reads the list pages of the Korean academic board and of the English notice board back to 1 January 2024
+Reads the list pages of the Korean academic board and of the English notice board back to 1 January 2025
 (one request per second, list pages only) and writes data/ECE/evidence.json: posts and views per year on each
 board, the most-read Korean notices of the current year, and every English post of the period. Run by hand when the numbers should be refreshed:
     .venv/bin/python tools/evidence.py

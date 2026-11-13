@@ -15,7 +15,7 @@ def card(id, programs, group, title, rule, why, page, quote, when="", trap="", a
     return {"id": id, "programs": programs, "group": group, "title": title, "rule": rule, "why": why,
             "when": when, "trap": trap, "applies_from": applies_from,
             "events": [{"label": label, "months": months} for label, months in events],
-            "source_file": file, "source_page": page, "source_page_also": also, "source_quote_ko": quote, "check": "unchecked"}
+            "source_file": file, "source_page": page, "source_page_also": also, "source_quote_ko": quote}
 
 
 CARDS = [

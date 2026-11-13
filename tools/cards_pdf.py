@@ -2,7 +2,8 @@
 """Shared by the departments whose graduate rules come as a PDF downloaded by a person (tools/cards_nuclear.py,
 tools/cards_naval.py). The PDFs stay in sources/<DEPARTMENT>/ and are never uploaded; only short quoted lines are.
 
-No second reader from another maker re-reads these cards. In its place `write` refuses to save unless, for every card:
+A model from another maker re-read these cards on 13 Nov 2026 (data/<DEPARTMENT>/audit.json). Before that reading,
+`write` refuses to save unless, for every card:
   1. each Korean quote is found, word for word (spaces and line breaks aside), in the file the card cites;
   2. every number in the card's English title, key fact and rule lines appears in its Korean quotes.
 The page shown for a card is the page of the PDF on which its first quote is found, so it is never typed by hand.
@@ -33,7 +34,7 @@ def card(id, programs, group, source, title, key, rule, quotes, why, when="", tr
     must then be found in the document of EVERY year it applies to, and the site cites the student's own year's file."""
     return {"id": id, "programs": programs, "group": group, "title": title, "key": key, "rule": rule, "why": why, "when": when, "trap": trap,
             "applies_from": applies_from, "events": [], "source_file": source, "source_page": 0, "source_page_also": 0,
-            "source_quote_ko": quotes[0], "quotes_ko": quotes, "check": "unchecked", "entry_years": sorted(entry_years), "updates": []}
+            "source_quote_ko": quotes[0], "quotes_ko": quotes, "entry_years": sorted(entry_years), "updates": []}
 
 
 def numbers(text):

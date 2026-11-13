@@ -17,7 +17,8 @@ HIDDEN = {"wrong", "not_on_page"}  # a card the second reader rejected is never 
 AUDIENCE = {"학부": "Undergraduate", "대학원": "Graduate", "학부&대학원": "All students"}
 # A department that files notices by kind instead: shown as a label, and offered to every audience.
 CATEGORY = {"공통": "General", "홍보": "Promotion", "장학": "Scholarship", "안전교육": "Safety training",
-            "전문연구요원": "Technical research personnel"}
+            "전문연구요원": "Technical research personnel", "공모전/홍보": "Contests and promotion", "학사": "Academic",
+            "채용": "Recruitment", "진학/취업": "Graduate school and jobs"}
 
 
 def _notices(department: str, card_ids: set) -> list[dict]:
@@ -25,7 +26,6 @@ def _notices(department: str, card_ids: set) -> list[dict]:
     data, folder = ROOT / "data" / department, ROOT / "sources" / department
     if not (data / "notices.json").exists():
         return []
-    titles = json.loads((data / "notice_titles_en.json").read_text(encoding="utf-8")) if (data / "notice_titles_en.json").exists() else {}
     links = json.loads((folder / "notice_links.json").read_text(encoding="utf-8")) if (folder / "notice_links.json").exists() else []
     out = []
     for n in json.loads((data / "notices.json").read_text(encoding="utf-8")):
@@ -33,8 +33,9 @@ def _notices(department: str, card_ids: set) -> list[dict]:
         brief_file = data / "briefs" / f"{n['id']}.json"
         brief = json.loads(brief_file.read_text(encoding="utf-8")) if brief_file.exists() else None
         out.append({"id": n["id"], "date": n["date"], "url": n["url"], "title_ko": n["title_ko"], "brief": brief,
-                    "title_en": titles.get(str(n["id"])) or (brief or {}).get("title_en", ""),  # a reviewed title wins
-                    "audience": AUDIENCE.get(n["audience_ko"], "All students" if n["audience_ko"] in CATEGORY else n["audience_ko"]),
+                    "title_en": (brief or {}).get("title_en", ""),
+                    # a board word this file does not know is offered to every audience, so it can never hide a notice
+                    "audience": AUDIENCE.get(n["audience_ko"], "All students"),
                     "category": {"en": CATEGORY[n["audience_ko"]], "ko": n["audience_ko"]} if n["audience_ko"] in CATEGORY else None,
                     "edited": bool(n.get("title_history")), "cards": [c for c in tied if c in card_ids]})
     return out

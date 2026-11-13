@@ -2,7 +2,6 @@
   "department": "Nuclear Engineering",
   "department_ko": "원자핵공학과",
   "short": "Nuclear",
-  "note": "Graduate requirements for entrants from 2021, written from the department's own rule document (downloaded by a person, not republished) and checked by code and one independent AI reading. Notices from its notice board. Undergraduate requirements cover 2023 to 2025 entrants; the department has not published a guide for 2026 entrants.",
   "board": {
     "name": "Nuclear Engineering notices (공지사항)",
     "list_url": "https://nucleng.snu.ac.kr/community/notice",

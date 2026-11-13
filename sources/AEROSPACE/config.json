@@ -2,7 +2,6 @@
   "department": "Aerospace Engineering",
   "department_ko": "항공우주공학과",
   "short": "Aerospace",
-  "note": "Graduate requirements for entrants from 2021, written from the department's own web pages (tools/pages_aerospace.py, tools/cards_aerospace.py) and checked by code only: no second reader has re-read them. Notices from its notice board.",
   "read_on": "2026-11-12",
   "programs": [
     "undergraduate",

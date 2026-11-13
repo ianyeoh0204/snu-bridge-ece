@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Requirement cards for Aerospace Engineering's graduate programs, entrants from 2021, written by hand from the
+"""Requirement cards for Aerospace Engineering's graduate programs, entrants from 2021, written from the
 department's own web pages (read by tools/pages_aerospace.py).
 
     .venv/bin/python tools/pages_aerospace.py     first: read the pages
     .venv/bin/python tools/cards_aerospace.py     then: check every card and write data/AEROSPACE/cards.json
 
-No second reader has re-read these cards (the developer's decision, to keep the ChatGPT Edu quota for the demo), and
-the site says so. In its place, code refuses to write the file unless, for every card:
+A model from another maker re-read these cards on 13 Nov 2026 (data/AEROSPACE/audit.json). Before that reading, code
+refuses to write the file unless, for every card:
   1. each Korean quote is found, word for word, in the tab for entrants from 2021 of the page the card cites
      (the same pages carry the rules for entrants up to 2020, with different numbers);
   2. every number in the card's English title, key fact and rule lines appears in its Korean quotes.
@@ -35,7 +35,7 @@ ONLY_3 = "「발사체 시스템 개론 및 현장실무응용」과 「위성 �
 def card(id, programs, group, page, title, key, rule, quotes, why, when="", trap=""):
     return {"id": id, "programs": programs, "group": group, "title": title, "key": key, "rule": rule, "why": why, "when": when,
             "trap": trap, "applies_from": "Entrants from 2021", "events": [], "source_file": page, "source_page": 0,
-            "source_page_also": 0, "source_quote_ko": quotes[0], "quotes_ko": quotes, "check": "unchecked", "entry_years": [], "updates": []}
+            "source_page_also": 0, "source_quote_ko": quotes[0], "quotes_ko": quotes, "entry_years": [], "updates": []}
 
 
 CARDS = [

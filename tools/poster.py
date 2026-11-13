@@ -52,8 +52,8 @@ POSTER_KO = {
         "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
     "The gap": "격차",
     "English board posts": "영어 게시판 게시물",
-    "{a}'s English board: no post since {year}. {b}'s: {n} posts, all with Korean titles.":
-        "{a} 영어 게시판: {year}년 이후 게시물 없음. {b} 영어 게시판: 게시물 {n}건 모두 한국어 제목.",
+    "{a}'s English board: last post in {month} {year}. {b}'s: {n} posts, all with Korean titles.":
+        "{a} 영어 게시판: 마지막 게시물 {year}년 {month}월. {b} 영어 게시판: 게시물 {n}건 모두 한국어 제목.",
     "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
         "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
     "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
@@ -138,8 +138,8 @@ POSTER_KO.update({
         "저희의 해석: 이 학생들이 따라야 할 공지는 한국어로 게시됩니다. AI Native Campus가 지향하는 행정 분야의 AI 활용으로 이 격차를 줄일 수 있습니다.",
     "{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.":
         "전기·정보공학부 네 개 과정의 요건 카드 {n}개 (학부: {a}~{b}학번). 카드마다 파일, 쪽, 한국어 원문을 밝힙니다.",
-    "{n} academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
-        "{date} 이후 학사 공지 {n}건을 영어로 제공: 조치 대상, 날짜, 조건, 절차, 전문 번역",
+    "{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
+        "{date} 이후 전기·정보공학부 학사 공지 {n}건을 영어로 제공: 조치 대상, 날짜, 조건, 절차, 전문 번역",
     "GitHub rebuilds and publishes the site, without the developer's laptop.": "개발자의 노트북 없이 GitHub에서 사이트를 다시 만들어 게시합니다.",
     "Requirements, separately": "요건은 별도로",
     "Written once from the official documents, then re-read once by a second AI model from another maker.":
@@ -151,9 +151,9 @@ POSTER_KO.update({
     "Checks performed": "수행한 확인",
     "requirements, {d} departments, agreed by the second AI reader; {n} settled by the author":
         "{d}개 학과 요건 중 2차 AI 판독자가 동의. {n}개는 작성자가 판단",
-    "planted errors caught in those tests": "그 시험에서 적발한 일부러 넣은 오류",
-    "quoted dates found word for word in the Korean notice (the quote, not the translation)":
-        "한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
+    "planted errors caught, in the ECE readings": "전기·정보공학부 판독에서 적발한 일부러 넣은 오류",
+    "quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)":
+        "{d}개 학과, 한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
     "In ten notices re-read after the instructions were tightened, {n} doubtful points remained.":
         "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
     "Choose your program and year of entry. See the requirements covered, and the page each comes from.":
@@ -223,6 +223,7 @@ def build():
     survey, context = load("data/survey.json"), load("sources/context.json")
     briefs = [json.loads(pathlib.Path(f).read_text(encoding="utf-8")) for f in glob.glob(str(ROOT / "data/ECE/briefs/*.json"))]
     dates = [d for b in briefs for d in b["dates"]]
+    all_dates = [d for f in glob.glob(str(ROOT / "data/*/briefs/*.json")) for d in json.loads(pathlib.Path(f).read_text(encoding="utf-8"))["dates"]]
     reread = sum(1 for c in audit["cards"].values() if c["status"] != "open")
     caught = sum(1 for v in audit["decoys"].values() if v == "caught")
     mislead = lambda group: sum(sum(n["could_mislead"].values()) for n in audit.get(group, {}).values())
@@ -273,9 +274,10 @@ def build():
     korean_only = max((d for d in survey["departments"] if d["english_posts"] and not d["english_posts_titled"]), key=lambda d: d["english_posts"])
     english_boards = bi("The {k} separate English boards: {n} posts in the same period, {m} with an English title.",
                         {"k": totals["english_boards"], "n": totals["english_posts"], "m": totals["english_posts_titled"]})
-    boards_line = bi("{a}'s English board: no post since {year}. {b}'s: {n} posts, all with Korean titles.",
-                     {"a": silent["name"], "year": silent["english_last_post"][:4], "b": korean_only["name"], "n": korean_only["english_posts"]},
-                     {"a": silent["name_ko"], "b": korean_only["name_ko"]})
+    last = datetime.date.fromisoformat(silent["english_last_post"])
+    boards_line = bi("{a}'s English board: last post in {month} {year}. {b}'s: {n} posts, all with Korean titles.",
+                     {"a": silent["name"], "month": last.strftime("%B"), "year": last.year, "b": korean_only["name"], "n": korean_only["english_posts"]},
+                     {"a": silent["name_ko"], "month": last.month, "b": korean_only["name_ko"]})
     legend = bi("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")
     counted = f'<p class="note">{legend}</p><p class="note">' + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p>"
 
@@ -296,7 +298,7 @@ def build():
     covered = day(ece["board"]["since"])
     line_req = bi("{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.",
                   {"n": len(cards), "a": years[0], "b": years[-1]})
-    line_notices = bi("{n} academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.",
+    line_notices = bi("{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.",
                       {"n": len(notices), "date": covered[0]}, {"date": covered[1]})
     does = f'<div class="body"><p>{line_req}</p>{requirement}<p>{line_notices}</p>{translated}</div>'
 
@@ -318,8 +320,8 @@ def build():
     if agreed + settled != all_cards:
         sys.exit(f"{all_cards} cards but {agreed + settled} have a second reading on record.")
     checks = [fig(agreed, bi("requirements, {d} departments, agreed by the second AI reader; {n} settled by the author", {"n": settled, "d": len(audits)}), f"of {all_cards}"),
-              fig(caught, bi("planted errors caught in those tests"), f"of {len(audit['decoys'])}"),
-              fig(num(sum(d["verified"] for d in dates)), bi("quoted dates found word for word in the Korean notice (the quote, not the translation)"), f"of {num(len(dates))}")]
+              fig(caught, bi("planted errors caught, in the ECE readings"), f"of {len(audit['decoys'])}"),
+              fig(num(sum(d["verified"] for d in all_dates)), bi("quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)", {"d": len(audits)}), f"of {num(len(all_dates))}")]
     ai_note = f'<p class="note">{bi("The second reader is an AI model. It is not a check by a person or by the department.")}</p>'
     checked = f'<div class="body"><div class="figs three even">{"".join(checks)}</div><div>{ai_note}</div></div>'
 
@@ -438,14 +440,14 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .drow.head {{ align-items: end; font-size: 8.6mm; color: #333; }}
 .drow.head em {{ font-size: 8.6mm; font-weight: 400; color: #002c84; line-height: 1.12; white-space: nowrap; justify-self: end; }}
 .drow.head u {{ font-size: 8.6mm; line-height: 1.12; }}
-.drow.head .ko {{ display: block; margin: 0; font-size: 8.6mm; }}
+.drow.head .ko {{ display: block; margin: 0; font-size: 8.6mm; word-break: keep-all; }}
 .drow.own {{ margin: 0 -3mm; padding: 2.6mm 3mm; background: #002c84; color: #fff; border-bottom: 0; }}
 .drow.own .dn small, .drow.own em, .drow.own u {{ color: #fff; }}
 .drow.own .dbar i {{ background: #fff; }}
 .grid {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); }}
 .col {{ display: flex; flex-direction: column; gap: 24mm; min-height: 0; }}
 .col .panel {{ flex: 1 1 0; }}
-.col.mid .panel:first-child {{ flex: 3.55 1 0; }}
+.col.mid .panel:first-child {{ flex: 3.3 1 0; }}
 .col.mid .panel:first-child .body {{ gap: 4.2mm; }}
 .col.mid .cap {{ margin-top: 0; font-size: 11.6mm; line-height: 1.2; }}
 .col.mid .note + .note {{ margin-top: 2mm; }}
@@ -503,11 +505,12 @@ def print_pdf(page):
 
 
 if __name__ == "__main__":
-    print_pdf(build())
+    page = build()
+    if missing:  # before anything is printed: a poster with a line in English only must never be written
+        sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))
+    print_pdf(page)
     review = ["# Korean lines written for the poster only", "",
               "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]
     review += [line for english in used_new for line in (f"- {english}", f"  - {POSTER_KO[english]}")]
-    if missing:
-        sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))
     print(f"{len(used_new)} Korean lines are written for the poster only: out/poster/korean-review.md")
     (OUT / "korean-review.md").write_text("\n".join(review) + "\n", encoding="utf-8")

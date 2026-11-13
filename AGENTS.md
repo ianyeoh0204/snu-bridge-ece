@@ -14,7 +14,7 @@ official page that says so. Users are international students whose Korean is wea
 5. Publish: `python -m bridge site` rebuilds `site/index.html` from the cards (`bridge/site.py`), and the calendar file of deadlines (`bridge/deadlines.py`).
 6. Plugin: the ChatGPT plugin reads the same cards and any screenshot a student pastes. (not built)
 
-One record is shared by everything: the card, defined in `bridge/cards.py`.
+One record is shared by everything: the card. Its fields are set by the card scripts in `tools/`; `bridge/cards.py` holds only the groups.
 Only `bridge/llm.py` talks to a model. Changing provider means changing that one file.
 
 ## The three screens (approved 11 Nov 2026)
@@ -45,6 +45,8 @@ one folder each. Visa, housing and life outside academics belong to other office
 Poster PDF and source archive due Fri 20 Nov 2026, 23:59. Booth demo Mon 30 Nov 2026, 14:00.
 
 ## Status (11 Nov 2026)
+(Written 11 Nov. The counts, the extractor, the 07:17 promise and the pilot wording here are superseded by the sections of
+12 and 13 Nov below.)
 - Tone: formal, as for an official page. Card titles are noun phrases with a short key fact beneath (`tools/wording.py`).
 - Cards: 98, all written by hand in Claude Code and marked `unchecked`. `tools/build_ece.py` writes `data/ECE/cards.json`.
   - Graduate: 69, from the handbook pages (`tools/cards_ece_graduate_part*.py`).
@@ -342,6 +344,7 @@ start a second department's requirements before 20 Nov was lifted by the develop
 - What may be said: every requirement card in all four departments was written by one model and re-read by a model
   from another maker. Notices are translated by one model with dates checked by code; only ten ECE notices were re-read
   by the second model, and a department's Notices page still says its translations were not re-read.
+  (Superseded by the Wrap-up below: all notices up to 13 Nov were re-read.)
 - `navigator/instructions.md`: on the developer's decision the assistant gives the staff contact a notice lists (name,
   room, email) and addresses the email draft to that person. The public site still never copies names or contact details.
 - `prompts/write-cards.md` and `prompts/read-cards.md` are the two prompts used to add a department, kept in the
@@ -420,3 +423,32 @@ start a second department's requirements before 20 Nov was lifted by the develop
 - Naval's two bachelor's-thesis cards (apply at least 2 semesters before graduating; advisor assignment) rest on text of
   the department's "학부 졸업" document that the developer pasted on 13 Nov; the paste is kept, not uploaded, beside the
   PDFs and is read by `tools/cards_naval_undergraduate.py` until the PDF itself is put there. 279 cards in all.
+
+## Review before sending (13 Nov 2026, evening)
+- The developer asked for a full review. Five read-only reviewers (poster, site text, cards, daily job, repository),
+  each finding challenged by a second agent: 56 confirmed. The pattern behind most of them: lines written when the site
+  had one department were still on the page ("requirements cover one department", "written by hand", "its notices were
+  not re-read"). After adding a department, search `bridge/text.json`, `tools/poster.py`, the comments and the configs
+  for every sentence that counts departments or says who read what.
+- Counts now: 279 cards in four departments, 261 agreed by the second reader, 18 settled by the author. Seven cards
+  whose title, key line or one rule line was reworded after their reading (two Nuclear, five Naval) were read again by
+  GPT-5.6 Terra through Kiro (`out/review/second-maker-*-reworded.*`): all seven agreed. Any later change to a card's
+  text needs the same, or the card becomes "settled by the author".
+- Poster figures say their scope: "261 of 279 requirements, 4 departments"; "11 of 11 planted errors caught, in the ECE
+  readings" (no planted errors were used for the other three); "841 of 847 quoted dates, 4 departments" (the 6 not found
+  are marked on their notices). The alternative, ECE's own 241 of 241 with an ECE label, is equally true.
+- Site: an unknown board word is now shown to every audience (Nuclear's Notices page had opened on 10 of 53 notices);
+  the Notices line says the second reading covered the short parts, not the full translation; a card with no
+  "Relevance" text no longer shows the empty label; no university office is named.
+- A lecturer's name had come through in one ECE translation, inside an attachment's file name the model repeated. It is
+  removed from the file; it is still in the repository's history (rewriting history is the developer's decision).
+  `TITLED_NAME` only cleans the attachment list, not the model's text: check after any re-translation of a notice whose
+  attachment name carries a person's name.
+- Daily job: `actions/checkout` takes `main` (a push that waited behind a run no longer republishes an older page);
+  five failures in a row stop a department and a failed request keeps the pace; the run is marked failed when a notice
+  has no translation at all; a retitled notice is translated again; a pinned row is recognised by `noti-ico`;
+  the limit is 150 minutes; `anthropic` is pinned to the version the translations were made with.
+- Accepted as they are (the reviewers agreed): ECE's handbook gives two slightly different months for the defense
+  results on pages 12 and 25, and each card follows its page; Naval's undergraduate cards cite the page where the quote
+  first appears in a file that repeats it per year; Nuclear undergraduate stops at 2025 entrants, which Home says.
+- New Korean lines from this review are unread by a Korean speaker, like the poster's: see `out/korean-new-lines.md`.

@@ -1,7 +1,7 @@
 {
  "audited_on": "2026-11-12",
- "reader": "A second AI model from a different maker (OpenAI, through the Codex command-line tool), which did not write the cards",
- "selection": "Every card whose source is page 8, 9, 10, 12, 20 of the graduate handbook, fixed before any result was seen; page 11 was added because an audited rule continues from it.",
+ "reader": "A second AI model from a different maker (OpenAI, through the Codex command-line tool signed in with ChatGPT Edu), which did not write the cards",
+ "selection": "First every card whose source is page 8, 9, 10, 12, 20 of the graduate handbook, fixed before any result was seen (page 11 was added because an audited rule continues from it); then every remaining card.",
  "decoys": {
   "check-b": "caught",
   "check-a": "caught",

@@ -159,8 +159,8 @@
    "reason": ""
   },
   "na-preliminary-review-ms": {
-   "status": "settled_by_author",
-   "reason": "Corrected as the second reader asked on 13 November 2026; not read again after that correction."
+   "status": "reader_agrees",
+   "reason": ""
   },
   "na-thesis-examination-ms": {
    "status": "reader_agrees",

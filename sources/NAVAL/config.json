@@ -2,7 +2,6 @@
   "department": "Naval Architecture and Ocean Engineering",
   "department_ko": "조선해양공학과",
   "short": "Naval",
-  "note": "Graduate requirements written from the department's own graduation rules (downloaded by a person, not republished) and checked by code and one independent AI reading. Notices from its notice board.",
   "board": {
     "name": "Naval Architecture and Ocean Engineering notices (공지사항)",
     "list_url": "https://naoe.snu.ac.kr/news/notice",

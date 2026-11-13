@@ -2,10 +2,11 @@
 """Audit of requirement cards by a second reader that did not write them.
 
     .venv/bin/python tools/audit.py prepare     # writes out/audit/: one image and one question file per page
-    (a different AI model reads each page and answers; see README "Audit")
+    (a different AI model reads each page and answers; the command is in AGENTS.md under Audit)
     .venv/bin/python tools/audit.py collect     # reads the answers into data/ECE/audit.json
 
-Selection rule, fixed before any result was seen: every card whose source is one of PAGES of the graduate handbook.
+Selection rule for the first round, fixed before any result was seen: every card whose source is one of PAGES of the
+graduate handbook. Every remaining card was read in later rounds.
 Two cards with a deliberately wrong number are mixed in, to learn whether the reader really reads the page.
 """
 import copy
@@ -238,9 +239,9 @@ def collect() -> None:
                            "wrong_dates": sum(f["kind"] == "wrong_date" for f in answer["findings"])}
     result = {
         "audited_on": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat(),
-        "reader": "A second AI model from a different maker (OpenAI, through the Codex command-line tool), which did not write the cards",
-        "selection": f"Every card whose source is page {', '.join(map(str, PAGES))} of the graduate handbook, fixed before any result was seen; "
-                     "page 11 was added because an audited rule continues from it.",
+        "reader": "A second AI model from a different maker (OpenAI, through the Codex command-line tool signed in with ChatGPT Edu), which did not write the cards",
+        "selection": f"First every card whose source is page {', '.join(map(str, PAGES))} of the graduate handbook, fixed before any result was seen "
+                     "(page 11 was added because an audited rule continues from it); then every remaining card.",
         "decoys": decoys, "rules_on_these_pages_without_a_card": uncovered,
         "cards_first_reading": {"agree": sum(r["agrees"] for r in first.values()), "of": len(first),
                                 "contradicted": sum("contradicted" in [r["key"], *r["lines"].values()] for r in first.values())},

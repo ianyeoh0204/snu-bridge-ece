@@ -252,7 +252,7 @@ CARDS = [
           "본 학과 박사과정에 입학한 자는‘선박유체역학특강’과목을 기합격한 것으로 간주하며, 이를 제외한 1개 과목의 시험 합격 시 논문제출자격시험에 합격한 것으로 함. "
           "석사과정 때 본 학과의 선박유체역학특강을 이수하지 않은 학생은 필수 이수과목으로 함 (2026년 9월 입학생부터 적용)",
           FIVE_NUMBERED, OWN_MASTERS], "", applies_from=NOW),
-    card("na-comprehensive-subjects-phd-before", PHD, "before_exam", "rules-before", "Comprehensive examination subjects (PhD)", "2 of 5 subjects; 70 of 100 in each",
+    card("na-comprehensive-subjects-phd-before", PHD, "before_exam", "rules-before", "Comprehensive examination subjects (PhD), earlier entrants", "2 of 5 subjects; 70 of 100 in each",
          ["Sit 2 of the 5 subjects of the thesis qualifying examination and score 70 or higher out of 100 in each to pass.", FIVE_LINE,
           "If you graduated from this department's master's program and entered its PhD program, 선박유체역학특강 counts as already passed, "
           "and passing 1 other subject passes the thesis qualifying examination."],
@@ -265,7 +265,7 @@ CARDS = [
           "The integrated-program section lists the subjects without course numbers; the numbers are from the list in the PhD section."],
          ["○ 종합시험(전공) 과목: 석박통합과정: 5개 교과목 중 2개 과목을 응시하여 각 과목별 100점 만점 중 70점 이상의 성적을 받아야 합격으로 인정함. 단, 선박유체역학특강은 필수 이수 과목으로 함(2026년 9월 입학생부터 적용)",
           FIVE_PLAIN, FIVE_NUMBERED], "", applies_from=NOW),
-    card("na-comprehensive-subjects-integrated-before", INT, "before_exam", "rules-before", "Comprehensive examination subjects (integrated)", "2 of 5 subjects, 선박유체역학특강 among them; 70 of 100 in each",
+    card("na-comprehensive-subjects-integrated-before", INT, "before_exam", "rules-before", "Comprehensive examination subjects (integrated), earlier entrants", "2 of 5 subjects, 선박유체역학특강 among them; 70 of 100 in each",
          ["Sit 2 of the 5 subjects of the thesis qualifying examination and score 70 or higher out of 100 in each to pass.",
           "For the integrated program, the 2 subjects must include 선박유체역학특강.", FIVE_LINE,
           "The integrated-program section lists the subjects without course numbers; the numbers are from the list in the PhD section."],
@@ -314,7 +314,7 @@ CARDS = [
          ["Students who have passed the thesis qualifying examination apply for the thesis examination. The document gives April or October for the application."],
          ["□ 학위논문 심사: 논문제출자격시험 합격자 중 학위논문심사 신청(4월 또는 10월)"], "", when="April or October."),
     card("na-preliminary-review-ms", MS, "for_degree", "rules", "Preliminary review of the master's thesis (학위논문 사전심사)", "Thesis plan and review form to 3 examiners before you apply",
-         ["Before applying for the thesis examination in March or early September (3월 또는 9월 초), give 1 copy each of the master's thesis plan (석사학위 논문계획서) "
+         ["In March or early September (3월 또는 9월 초), before you apply for the thesis examination, give 1 copy each of the master's thesis plan (석사학위 논문계획서) "
           "and the preliminary review form (석사 학위 논문 사전심사서) to the 3 examiners.",
           "Submit the approved preliminary review form when you register as a prospective thesis submitter in the semester in which you plan to graduate (April or October).",
           "At the public presentation the form is passed to the examiners and taken into account in the examination."],

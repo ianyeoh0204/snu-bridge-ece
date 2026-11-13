@@ -14,7 +14,7 @@ def card(id, group, title, key, rule, why, quote, years=ALL_YEARS, when="", trap
     return {"id": id, "programs": ["undergraduate"], "entry_years": list(years), "group": group, "title": title, "key": key,
             "rule": rule, "why": why, "when": when, "trap": trap, "applies_from": applies_from, "events": [],
             "source_file": F.format(year=max(years or YEARS)),
-            "source_page": 1, "source_quote_ko": quote, "check": "unchecked"}
+            "source_page": 1, "source_quote_ko": quote}
 
 
 ENGLISH = ["New TEPS 453 to 525: take Advanced English.", "New TEPS 387 to 452: take College English 2.",

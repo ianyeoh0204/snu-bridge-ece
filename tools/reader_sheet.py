@@ -4,7 +4,8 @@
     .venv/bin/python tools/reader_sheet.py      writes out/review/notices-for-a-korean-reader.md (not published)
 
 The proposal promised briefs "reviewed by the applicant with a Korean-speaking labmate". So far they are checked by
-code (each quoted date is found in the notice) and, for ten of them, by a second AI reader. This sheet is for the human
+code (each quoted date is found in the notice) and, up to 13 Nov 2026, by a second AI reader
+(data/<DEPARTMENT>/notice_reading.json). This sheet is for the human
 reading. It takes the ten notices with the most dates still ahead, because a wrong date there can still do harm.
 When the reader has finished, record the result by hand in sources/ECE/reader_notes.json; nothing reads that file yet.
 """
