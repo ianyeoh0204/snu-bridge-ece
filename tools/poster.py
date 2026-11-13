@@ -124,8 +124,8 @@ POSTER_KO.update({
     "of them have a title in English": "이 가운데 제목이 영어인 공지",
     "The {k} separate English boards: {n} posts in the same period, {m} with an English title.":
         "별도 영어 게시판 {k}곳: 같은 기간 게시물 {n}건, 이 중 영어 제목 {m}건",
-    "–: no English board of its own. Separate job, scholarship, news and seminar boards are not counted; such notices can still appear on the boards counted.":
-        "–: 별도 영어 게시판 없음. 따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았으며, 그런 공지가 집계한 게시판에 올라올 수는 있습니다.",
+    "same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.":
+        "same: 영어 메뉴에 한국어 게시판의 공지가 한국어 그대로 표시됩니다. –: 영어 사이트 없음. 따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
     "A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.":
         "제목에 한글이 없으면 영어 제목으로 셌습니다. {n}건 전체를 링크와 함께 사이트에 실었습니다.",
     "Planned for September {year}: a new undergraduate division for international students, about {n} entrants expected.":
@@ -259,9 +259,10 @@ def build():
     # (An earlier draft added the two boards into one "English" figure; a reviewer showed it read as a share of the first.)
     most = max(d["korean"] for d in survey["departments"])
     def drow(d):
-        mark = " (this site)" if d["this_site"] else ""
-        mark_ko = " (본 사이트)" if d["this_site"] else ""
-        board = num(d["english_posts"]) if d["english_side"] == "separate" else "–"
+        mark = mark_ko = ""  # the developer: no "(this site)" after the department's name; the row is highlighted instead
+        # the English side: posts on a separate English board; "same" where the English menu shows the Korean board's
+        # own posts (checked live for Computer Science on 13 Nov 2026: same notices, Korean titles); "–" where there is no English site
+        board = num(d["english_posts"]) if d["english_side"] == "separate" else "same" if d["english_side"] == "same_posts" else "–"
         return (f'<div class="drow {"own" if d["this_site"] else ""}"><span class="dn">{html.escape(d["name"] + mark)}<small lang="ko">{html.escape(d["name_ko"] + mark_ko)}</small></span>'
                 f'<span class="dbar"><i style="width:{74 * d["korean"] / most:.1f}%"></i><b>{num(d["korean"])}</b></span><em>{num(d["english_titled"])}</em><u>{board}</u></div>')
     chart = ('<div class="chart"><div class="drow head"><span></span>' + bi("Korean board") + bi("of them, English title", tag="em") + bi("English board posts", tag="u") + "</div>"
@@ -275,7 +276,7 @@ def build():
     boards_line = bi("{a}'s English board: no post since {year}. {b}'s: {n} posts, all with Korean titles.",
                      {"a": silent["name"], "year": silent["english_last_post"][:4], "b": korean_only["name"], "n": korean_only["english_posts"]},
                      {"a": silent["name_ko"], "b": korean_only["name_ko"]})
-    legend = bi("–: no English board of its own. Separate job, scholarship, news and seminar boards are not counted; such notices can still appear on the boards counted.")
+    legend = bi("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")
     counted = f'<p class="note">{legend}</p><p class="note">' + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p>"
 
     funded = bi("2026: {won} billion won to {n} colleges and schools to recruit international students and support their settlement.",
