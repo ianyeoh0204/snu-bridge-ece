@@ -503,3 +503,6 @@ The developer read the page and found three places where the site and the poster
   "Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the
   Korean." The developer could not follow "(ECE through ChatGPT Edu)", so it is gone. The footer says "For images and
   attachments, use ChatGPT Edu. The site does not read them." in the developer's own phrasing.
+- A second poster layout to compare (14 Nov): `python tools/poster.py equal` writes `out/poster/poster-equal.*` with a
+  lower blue band (196 mm, was 300) and every Korean line the same size as its English. The developer's reason: the
+  judges read Korean. It fits with no overflow. The poster that is sent is still `poster.pdf` until the developer picks.

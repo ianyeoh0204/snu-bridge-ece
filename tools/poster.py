@@ -195,7 +195,24 @@ def fig(big, caption, small=""):
     return f'<div class="fig"><b>{big}{f"<i>{small}</i>" if small else ""}</b><p>{caption}</p></div>'
 
 
-def build():
+# A second layout to compare (`python tools/poster.py equal`, written to out/poster/poster-equal.*): a lower blue band,
+# and every Korean line the same size as the English above it. The judges read Korean.
+EQUAL = """
+.band { height: 196mm; padding: 22mm 44mm 0; grid-template-columns: 1fr auto; }
+.band h1 { margin: 3mm 0 8mm -1mm; font-size: 96mm; }
+.band .tag { max-width: none; font-size: 15mm; }
+.band aside { display: grid; grid-template-columns: 210mm 150mm; grid-template-rows: auto auto 1fr; gap: 4mm 8mm; text-align: right; }
+.band aside svg { grid-column: 2; grid-row: 1 / span 3; width: 150mm; height: 150mm; }
+.band aside p { grid-column: 1; }
+.grid { height: 1104mm; }
+.ko, .drow .dn small, .mock td small, .mock .kotitle { font-size: 1em !important; line-height: 1.24; }
+.bar .ko { display: inline; margin-left: 5mm; }
+.col:first-child .panel:first-child { flex: 1.11 1 0; }
+.steps li { padding: 3.6mm 0; }
+"""
+
+
+def build(variant=""):
     import segno
 
     used_new.clear(), missing.clear()
@@ -447,7 +464,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .foot {{ grid-template-columns: 1.9fr 1fr auto; }}
 .foot .logo {{ display: block; height: 62mm; width: auto; margin-top: -3mm; }}
 .foot div:nth-child(2) span {{ display: block; margin-bottom: 2mm; }}
-</style></head><body>
+{EQUAL if variant == 'equal' else ''}</style></head><body>
 <header class="band">
   <div>
     <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
@@ -464,7 +481,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 </footer>
 </body></html>"""
     OUT.mkdir(parents=True, exist_ok=True)
-    target = OUT / "poster.html"
+    target = OUT / (f"poster-{variant}.html" if variant else "poster.html")
     target.write_text(page, encoding="utf-8")
     return target
 
@@ -487,10 +504,13 @@ def print_pdf(page):
 
 
 if __name__ == "__main__":
-    page = build()
+    variant = sys.argv[1] if len(sys.argv) > 1 else ""
+    page = build(variant)
     if missing:  # before anything is printed: a poster with a line in English only must never be written
         sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))
     print_pdf(page)
+    if variant:  # a layout to compare: the sheet for the Korean reader belongs to the poster that is sent
+        sys.exit()
     review = ["# Korean lines written for the poster only", "",
               "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]
     review += [line for english in used_new for line in (f"- {english}", f"  - {POSTER_KO[english]}")]
