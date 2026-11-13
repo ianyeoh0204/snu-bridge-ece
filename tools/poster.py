@@ -101,8 +101,8 @@ POSTER_KO = {
     "Notices: one small reader for each kind of board software. The eleven department sites read use six kinds.": "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램 하나가 필요합니다. 읽어 본 11개 학과 사이트는 여섯 종류를 씁니다.",
     "Requirements: written by hand from each department's documents, then re-read.": "요건: 학과의 공식 문서를 바탕으로 직접 작성한 뒤 다시 읽습니다.",
     "What it does not do": "하지 않는 일",
-    "It does not read images or attachments, and sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.":
-        "이미지와 첨부파일은 읽지 않으며, 학생을 ChatGPT Edu로 안내합니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
+    "For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.":
+        "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
     "A student project. Not an official Seoul National University website.": "학생 프로젝트이며 서울대학교 공식 웹사이트가 아닙니다.",
 }
 
@@ -128,8 +128,8 @@ POSTER_KO.update({
         "AI 모델이 공식 문서를 바탕으로 한 번 작성했고, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
     "scheduled check for new notices": "매일 예약된 새 공지 확인",
     "departments read by one automatic job": "하나의 자동 작업이 읽는 학과 수",
-    "Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).":
-        "공지 번역은 Claude가 맡습니다. 모든 요건 카드는 OpenAI 모델이 다시 읽었습니다(전기·정보공학부는 ChatGPT Edu를 통해).",
+    "Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the Korean.":
+        "영어는 Claude가 작성합니다. 개발사가 다른 OpenAI 모델이 모든 요건 카드를 한국어 원문과 대조해 다시 읽었습니다.",
     "Checks performed": "수행한 확인",
     "requirements, {d} departments, agreed by the second AI reader; {n} settled by the author":
         "{d}개 학과 요건 중 2차 AI 판독자가 동의. {n}개는 작성자가 판단",
@@ -291,7 +291,7 @@ def build():
              + step("+", "Requirements, separately", bi("An AI model wrote them once from the official documents, and a second AI model from another maker re-read them once.")) + "</ol>")
     # the point of this panel is that the flow runs by itself, so the second figure is how much it covers, not what it costs
     daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig(len(others) + 1, bi("departments read by one automatic job"))
-    who = f'<p class="stand">{bi("Claude translates the notices. OpenAI models re-read every requirement card (ECE through ChatGPT Edu).")}</p>'
+    who = f'<p class="stand">{bi("Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the Korean.")}</p>'
     how = f'<div class="body">{steps}<div class="figs two">{daily}{cost}</div>{who}</div>'
 
     # every department's cards and its second reading (data/<DEPARTMENT>/audit.json)
@@ -445,7 +445,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .figs.three.even .fig {{ padding: 3mm 5mm 4mm; }}
 .figs.three.even .fig p {{ font-size: 9.6mm; }}
 .foot {{ grid-template-columns: 1.9fr 1fr auto; }}
-.foot .logo {{ display: block; height: 46mm; width: auto; }}
+.foot .logo {{ display: block; height: 62mm; width: auto; margin-top: -3mm; }}
 .foot div:nth-child(2) span {{ display: block; margin-bottom: 2mm; }}
 </style></head><body>
 <header class="band">
@@ -458,7 +458,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 </header>
 <main class="grid">{grid}</main>
 <footer class="foot">
-  <div><b>{bi("What it does not do")}</b>{bi("It does not read images or attachments, and sends the student to ChatGPT Edu. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
+  <div><b>{bi("What it does not do")}</b>{bi("For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.")}</div>
   <div>{bi("A student project. Not an official Seoul National University website.")}{bi("Board counts: {from} to {to}. Site figures as of {date}.", {"from": since[0], "to": until[0], "date": stamp[0]}, {"from": since[1], "to": until[1], "date": stamp[1]})}</div>
   {logo}
 </footer>

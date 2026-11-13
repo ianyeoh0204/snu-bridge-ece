@@ -499,3 +499,7 @@ The developer read the page and found three places where the site and the poster
   narrowings and additions listed above.
 - `out/korean-new-lines.md` is generated, not edited by hand: every pair in `bridge/text.json` that differs from commit
   1cc6121. `out/poster/poster-before-unslop.png` is the poster before this pass.
+- Poster (14 Nov, the developer's requests): the lab logo is 62 mm high (was 46). The line under "How it works" is
+  "Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the
+  Korean." The developer could not follow "(ECE through ChatGPT Edu)", so it is gone. The footer says "For images and
+  attachments, use ChatGPT Edu. The site does not read them." in the developer's own phrasing.
