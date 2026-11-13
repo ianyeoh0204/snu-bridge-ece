@@ -358,3 +358,8 @@ start a second department's requirements before 20 Nov was lifted by the develop
   the old calendar address must subscribe again.
 - Removed as unused: `bridge/extract.py`, `bridge/check.py`, `bridge/table.py` and their commands (an automatic card
   extractor that was never run to completion; cards are written per department instead), and `data/ECE/notice_titles_en.json`.
+- Daily job hardened after a read of the older repositories showed the gap: one department's site failing used to stop
+  the loop, lose that run's translations and skip the rebuild. Now each department is read on its own, at most 40
+  notices are translated per department per run, the page is always rebuilt, and the run is marked failed at the end
+  (GitHub emails the owner) if any department could not be read. A first list page with no rows is an error, not
+  "nothing new". `board.pause` in a config sets the seconds between requests (Naval: 5).

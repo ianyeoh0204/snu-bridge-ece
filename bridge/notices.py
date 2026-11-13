@@ -58,6 +58,8 @@ def update(department: str) -> tuple[list[dict], list[str]]:
     first = config.get("first_page", 0)  # some departments number their list pages from 1
     for page in range(first, first + 40):
         rows = _rows(_fetch(f"{config['list_url']}?page={page}"))
+        if page == first and not rows:  # a maintenance page or a changed layout must never pass as "nothing new"
+            raise RuntimeError(f"No notices could be read on the first list page of {department}. Nothing was changed.")
         for row in rows:
             if row["date"] < config["since"]:
                 continue
@@ -72,7 +74,7 @@ def update(department: str) -> tuple[list[dict], list[str]]:
         dated = [r["date"] for r in rows if not r["pinned"]]
         if not rows or (dated and max(dated) < config["since"]):  # a page of pinned notices only is not the end
             break
-        time.sleep(1)
+        time.sleep(config.get("pause", 1))  # seconds between requests; a slow site gets more (see the config)
     notices = sorted(known.values(), key=lambda n: (n["date"], n["id"]), reverse=True)
     store.write_text(json.dumps(notices, ensure_ascii=False, indent=1), encoding="utf-8")
     return notices, changes

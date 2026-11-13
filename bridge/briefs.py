@@ -135,9 +135,12 @@ def update(department: str, limit: int = 0, only: set | None = None) -> tuple[li
     out = data / "briefs"
     out.mkdir(parents=True, exist_ok=True)
     written, failed, checked = [], [], 0
+    board = json.loads((ROOT / "sources" / department / "config.json").read_text(encoding="utf-8")).get("board", {})
     for notice in json.loads((data / "notices.json").read_text(encoding="utf-8")):
         if limit and len(written) >= limit:
             break
+        if len(failed) >= 8 and not checked:
+            break  # the site is not answering: stop asking, and let the next run try again
         if only and notice["id"] not in only:
             continue
         try:
@@ -147,6 +150,7 @@ def update(department: str, limit: int = 0, only: set | None = None) -> tuple[li
             print(failed[-1], flush=True)
             continue
         checked += 1
+        time.sleep(max(0, board.get("pause", 1) - 1))  # extra seconds between requests for a slow site
         if line:
             written.append(line)
             print(line, flush=True)

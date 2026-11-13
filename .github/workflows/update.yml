@@ -39,12 +39,17 @@ jobs:
         env:
           # the secret may be named ANTHROPIC_API_KEY or API_KEY
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.API_KEY }}
+        id: read
         run: |
+          # One department's site being down must not stop the others, lose what was already translated,
+          # or keep the page from being rebuilt. The run is marked failed at the very end instead.
+          trouble=0
           for folder in sources/*/; do
             department=$(basename "$folder")
-            python -m bridge notices "$department"
-            python -m bridge briefs "$department"
+            python -m bridge notices "$department" || { echo "::warning::$department: its notice board could not be read today"; trouble=1; continue; }
+            python -m bridge briefs "$department" 40 || { echo "::warning::$department: its notices could not be read today"; trouble=1; }
           done
+          echo "trouble=$trouble" >> "$GITHUB_OUTPUT"
 
       - name: Save what changed
         if: github.event_name != 'push'
@@ -61,3 +66,9 @@ jobs:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      # After the page is published: tell the owner (GitHub emails a failed run) if any department could not be read.
+      - name: Report a department that could not be read
+        if: steps.read.outputs.trouble == '1'
+        run: exit 1
+

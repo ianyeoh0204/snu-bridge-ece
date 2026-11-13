@@ -7,7 +7,9 @@
     "name": "Naval Architecture and Ocean Engineering notices (공지사항)",
     "list_url": "https://naoe.snu.ac.kr/news/notice",
     "detail_url": "https://naoe.snu.ac.kr/news/notice?md=v&bbsidx={id}",
-    "since": "2026-10-01"
+    "since": "2026-10-01",
+    "pause": 5,
+    "pause_note": "This site returned errors and then refused connections at one request a second, so it gets five seconds between requests."
   },
   "assistant": {
     "name": "ChatGPT Edu",
