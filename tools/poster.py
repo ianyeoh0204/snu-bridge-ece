@@ -195,9 +195,11 @@ def fig(big, caption, small=""):
     return f'<div class="fig"><b>{big}{f"<i>{small}</i>" if small else ""}</b><p>{caption}</p></div>'
 
 
-# A second layout to compare (`python tools/poster.py equal`, written to out/poster/poster-equal.*): a lower blue band,
-# and every Korean line the same size as the English above it. The judges read Korean.
-EQUAL = """
+# Other layouts to compare (`python tools/poster.py equal` or `balanced`, written to out/poster/poster-<name>.*).
+# Both have a lower blue band. The judges read Korean, so the Korean is larger than on the first poster:
+# "equal" sets it at the size of the English above it; "balanced" at 85% of it, which looks the same size to the eye
+# because Korean characters fill their box, and never smaller than on the first poster.
+LOWER_BAND = """
 .band { height: 196mm; padding: 22mm 44mm 0; grid-template-columns: 1fr auto; }
 .band h1 { margin: 3mm 0 8mm -1mm; font-size: 96mm; }
 .band .tag { max-width: none; font-size: 15mm; }
@@ -205,11 +207,19 @@ EQUAL = """
 .band aside svg { grid-column: 2; grid-row: 1 / span 3; width: 150mm; height: 150mm; }
 .band aside p { grid-column: 1; }
 .grid { height: 1104mm; }
-.ko, .drow .dn small, .mock td small, .mock .kotitle { font-size: 1em !important; line-height: 1.24; }
 .bar .ko { display: inline; margin-left: 5mm; }
+"""
+LAYOUTS = {
+    "equal": LOWER_BAND + """
+.ko, .drow .dn small, .mock td small, .mock .kotitle { font-size: 1em !important; line-height: 1.24; }
 .col:first-child .panel:first-child { flex: 1.11 1 0; }
 .steps li { padding: 3.6mm 0; }
-"""
+""",
+    "balanced": LOWER_BAND + """
+.ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
+.drow .dn small, .mock td small, .drow.head .ko, .band aside .ko { font-size: max(.85em, 8.6mm) !important; }
+""",
+}
 
 
 def build(variant=""):
@@ -464,7 +474,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .foot {{ grid-template-columns: 1.9fr 1fr auto; }}
 .foot .logo {{ display: block; height: 62mm; width: auto; margin-top: -3mm; }}
 .foot div:nth-child(2) span {{ display: block; margin-bottom: 2mm; }}
-{EQUAL if variant == 'equal' else ''}</style></head><body>
+{LAYOUTS.get(variant, '')}</style></head><body>
 <header class="band">
   <div>
     <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
@@ -505,6 +515,8 @@ def print_pdf(page):
 
 if __name__ == "__main__":
     variant = sys.argv[1] if len(sys.argv) > 1 else ""
+    if variant and variant not in LAYOUTS:
+        sys.exit(f"No layout named {variant}. Choose from: {', '.join(LAYOUTS)}.")
     page = build(variant)
     if missing:  # before anything is printed: a poster with a line in English only must never be written
         sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))

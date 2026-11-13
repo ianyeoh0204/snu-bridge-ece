@@ -506,3 +506,6 @@ The developer read the page and found three places where the site and the poster
 - A second poster layout to compare (14 Nov): `python tools/poster.py equal` writes `out/poster/poster-equal.*` with a
   lower blue band (196 mm, was 300) and every Korean line the same size as its English. The developer's reason: the
   judges read Korean. It fits with no overflow. The poster that is sent is still `poster.pdf` until the developer picks.
+- A third layout (14 Nov): `python tools/poster.py balanced`, the lower band with Korean at 85% of its English and never
+  smaller than on the first poster. It leaves room in every panel (146 to 393 px between parts at screen scale), which
+  could go to larger small type in both languages. Three files to compare: `poster`, `poster-equal`, `poster-balanced`.
