@@ -469,6 +469,10 @@ The developer read the page and found three places where the site and the poster
 - **The sample.** `tools/survey.py sample` counts pages with a run of eight or more English words beyond the site's own
   menus. The sentence says that and no more: "had a passage of English in the page text".
 - The two links under one item ran together on a narrow screen (`.plain li > span` made the link row a block).
-- An unslop rewording of step 1 was built as a local preview only (`site/unslop.html`, not in the repository). It came
-  out 6 words longer over ten lines: the rules reword, they do not cut. Adopt it only if the developer picks it, and
-  then write its Korean.
+- The developer compared step 1 in two wordings and chose the unslop rewording ("pretty good, easy to understand"):
+  whole sentences with the actor named, no label-and-colon openings. It is 6 words longer over ten lines; the rules
+  reword, they do not cut. Four of the ten lines are also the poster's, so the poster was rebuilt with them and measured
+  (no overflow). The other five Background steps are still in the earlier wording.
+- The departments table shows a plain number for the English board (the developer: the heading already says what it
+  is): the post count, "same", or "–", with the poster's legend line under the table. Energy Resources' last-post date
+  (19 February 2024) is no longer on the page; it is in `data/survey.json`.

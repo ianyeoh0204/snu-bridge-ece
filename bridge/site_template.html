@@ -214,6 +214,7 @@ details.done .title { color:var(--muted); }
 .survey .n { text-align:right; font-variant-numeric:tabular-nums; font-weight:700; }
 .survey .own { background:var(--ink); color:var(--bg); }
 .survey .lab { display:none; }
+.survey.counts .row { grid-template-columns:minmax(0, 3fr) minmax(0, 1fr) minmax(0, 1fr); }
 .askline { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; }
 .ask { padding:8px 14px; border:2px solid var(--ink); background:none; color:var(--ink); font:inherit; font-size:14px; text-align:left; cursor:pointer; }
 .ask:hover, .ask:focus-visible { background:var(--ink); color:var(--bg); }
@@ -227,6 +228,8 @@ details.done .title { color:var(--muted); }
 @media (max-width:700px) {
   .survey .row { grid-template-columns:minmax(0, 1fr); gap:6px 16px; }
   .survey .row > :first-child { font-weight:700; }
+  .survey.counts .row { grid-template-columns:minmax(0, 1fr) minmax(0, 1fr); }
+  .survey.counts .row > :first-child { grid-column:1 / -1; }
   .survey .head { display:none; }
   .survey .n { text-align:left; }
   .survey .lab { display:block; font-size:11px; font-weight:400; letter-spacing:.04em; text-transform:uppercase; opacity:.7; }
@@ -653,11 +656,11 @@ function renderAbout() {
   // English titles are counted once for all departments (the figure above the table), never per row.
   const span = (from, to) => [{ from: fullDate(from), to: fullDate(to) }, { from: koDate(from), to: koDate(to) }];
   const svRow = (cls, name, korean, side) => el("div", { class: "row " + cls }, el("div", null, ...name),
-    el("div", { class: "n" }, el("small", { class: "lab" }, L("Notices on the Korean board")), korean), el("div", null, ...side));
-  const svSide = (d) => d.english_side === "same_posts" ? B("The English menu shows the Korean board's own notices, in Korean")
-    : d.english_side === "none" ? B("No English site; a browser translation button")
-    : d.english_posts ? B("Posts on its English board: {n}", { n: num(d.english_posts) })
-    : B("English board: no post in the period. Last post: {date}", { date: fullDate(d.english_last_post) }, { date: koDate(d.english_last_post) });
+    el("div", { class: "n" }, el("small", { class: "lab" }, L("Notices on the Korean board")), korean), side);
+  // The English side is one plain count, as on the poster: posts on the department's own English board in the period;
+  // "same" where the English menu shows the Korean board's own notices; "–" where there is no English site.
+  const svSide = (d) => el("div", { class: "n" }, el("small", { class: "lab" }, L("English board posts")),
+    d.english_side === "same_posts" ? "same" : d.english_side === "none" ? "–" : num(d.english_posts));
   // The page is read as five short steps, widest first: other departments, this department, examples, method, checks.
   // Only the step on screen is built, so its parts move into place when the reader arrives at it.
   // The first step is the setting: what the university itself has said and done this year (sources/context.json).
@@ -669,27 +672,27 @@ function renderAbout() {
       parts: () => [
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("What the university has set out")), el("span", null, B("Read {date}", ...day(ctx.read_on)))),
       el("ul", { class: "plain" },
-        el("li", null, B("2026: {won} billion won to {n} colleges and schools to recruit international students and support their settlement.", { won: ctx.figures.college_fund_billion_won, n: ctx.figures.colleges_funded }, { won: 10 * ctx.figures.college_fund_billion_won }),  // 1 billion won is 10억 원
+        el("li", null, B("In 2026 the university put {won} billion won into {n} colleges and schools to recruit international students and help them settle.", { won: ctx.figures.college_fund_billion_won, n: ctx.figures.colleges_funded }, { won: 10 * ctx.figures.college_fund_billion_won }),  // 1 billion won is 10억 원
           el("span", { class: "links" }, src("colleges"))),
-        el("li", null, B("Planned for September {year}: a new undergraduate division for international students, about {n} entrants expected.", { year: ctx.figures.new_division_year, n: ctx.figures.new_division_students }),
+        el("li", null, B("A new undergraduate division for international students is planned for September {year}, with about {n} entrants expected.", { year: ctx.figures.new_division_year, n: ctx.figures.new_division_students }),
           el("span", { class: "links" }, src("colleges"))),
-        el("li", null, B("President's 2026 address: internationalisation must be the base of all the university's work."),
+        el("li", null, B("In his 2026 address the President said internationalisation must be the base of all the university's work."),
           el("span", { class: "links" }, src("address"))),
-        el("li", null, B("AI Native Campus. The vision was declared on 2 April with {n} action plans in education, research, administration and governance. Since June, ChatGPT Edu has been provided to every member.", { n: ctx.figures.action_plans }),
+        el("li", null, B("The university declared its AI Native Campus vision on 2 April, with {n} action plans in education, research, administration and governance. It has provided ChatGPT Edu to every member since June.", { n: ctx.figures.action_plans }),
           el("span", { class: "links" }, src("summit"), src("edu"))))),
 
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("The figures behind it"))),
       el("div", { class: "figs", "data-reveal": "" },
-        fig(String(ctx.figures.qs_rank), "", B("the university's place in the QS World University Rankings, 2026 and 2027 editions, after {n} in the 2025 edition", { n: ctx.figures.qs_rank_before })),
-        fig(num(ctx.figures.qs_student_ratio_rank), "", B("its place for the share of international students, 2026 edition. The university named the international indicators as the main cause of the fall.")),
+        fig(String(ctx.figures.qs_rank), "", B("SNU's place in the 2026 and 2027 QS World University Rankings. It was {n} in the 2025 edition.", { n: ctx.figures.qs_rank_before })),
+        fig(num(ctx.figures.qs_student_ratio_rank), "", B("SNU's place for share of international students in the 2026 edition. The university named the international indicators as the main cause of its fall in rank.")),
         fig(num(ctx.figures.students_in_korea), "", B("international students in Korea in 2026. The Ministry of Education says its focus now moves from numbers to the quality of education and support."))),
-      el("p", { class: "aboutnote" }, B("Ranking figures are as reported by the two newspapers below, not read from QS directly."), el("span", { class: "links" }, src("qs_2026"), src("qs_2027"), src("ministry")))),
+      el("p", { class: "aboutnote" }, B("The two newspapers below reported the ranking figures. This project did not read them from QS."), el("span", { class: "links" }, src("qs_2026"), src("qs_2027"), src("ministry")))),
 
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Where this project stands"))),
       el("ul", { class: "plain" },
-        el("li", null, B("Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can narrow that gap.")),
-        el("li", null, B("SNU Bridge is one working case of generative AI in administration: {n} departments' notices and requirements in English, the notices kept current daily without the developer's laptop.", { n: deptIds.length })),
-        el("li", null, B("Which AI does what: translations are made by Claude through its API. An OpenAI model was the second reader, and ChatGPT Edu is where the site sends students to read attachments.")))),
+        el("li", null, B("This is our reading. The notices these students must follow are posted in Korean, and AI in administration, an aim of the AI Native Campus, can put them into English.")),
+        el("li", null, B("SNU Bridge puts {n} departments' notices and requirements into English with generative AI. It updates the notices daily without the developer's laptop.", { n: deptIds.length })),
+        el("li", null, B("Claude makes the translations through its API. An OpenAI model was the second reader. The site sends students to ChatGPT Edu to read attachments.")))),
       ] } : null,
     sv ? { key: "engineering",
       lead: B("Across the engineering departments counted here, notices are posted in Korean. Few have an English title, and the English boards carry few posts."),
@@ -699,10 +702,11 @@ function renderAbout() {
         fig(num(sv.totals.korean), "", B("notices on the Korean boards of {n} engineering departments", { n: sv.departments.length })),
         fig(num(sv.totals.english_titled), `of ${num(sv.totals.korean)}`, B("of them have a title in English")),
         fig(num(sv.totals.sample_with_english_passage), `of ${sv.totals.sample_opened}`, B("Korean-titled notices, in a sample from the other nine departments, had a passage of English in the page text."))),
-      el("div", { class: "survey", "data-reveal": "" },
-        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", null, B("Its English board in the same period"))),
+      el("div", { class: "survey counts", "data-reveal": "" },
+        el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", { class: "n" }, B("English board posts"))),
         ...sv.departments.map((d) => svRow(d.this_site ? "own" : "", [d.name, below(d.name_ko)],
           (d.approximate ? "≈ " : "") + num(d.korean), svSide(d)))),
+      el("p", { class: "aboutnote" }, B("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")),
       el("p", { class: "aboutnote" }, B("The {k} separate English boards: {n} posts in the same period, {m} with an English title.", { k: sv.totals.english_boards, n: sv.totals.english_posts, m: sv.totals.english_posts_titled })),
       (() => { const apart = sv.departments.filter((d) => d.english_side === "separate"), by = (f) => (a, b) => (f(a) < f(b) ? -1 : 1);
         const silent = apart.filter((d) => !d.english_posts).sort(by((d) => d.english_last_post))[0], korean = apart.filter((d) => d.english_posts && !d.english_posts_titled).sort(by((d) => -d.english_posts))[0];
@@ -745,7 +749,7 @@ function renderAbout() {
       el("div", { class: "survey", "data-reveal": "" },
         el("div", { class: "row head" }, el("div", null, B("Tab on the Korean site")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", null, B("In the departments table"))),
         ...sv.departments.find((d) => d.this_site).tabs.map((t) => svRow(t.name === "학사" ? "own" : "", [out(t.url, t.name_en), below(t.name)], num(t.korean),
-          t.counted ? B("Counted") : B("Not counted: other departments keep these on separate boards")))),
+          el("div", null, ...(t.counted ? B("Counted") : B("Not counted: other departments keep these on separate boards")))))),
       el("p", { class: "aboutnote" }, B("The highlighted tab is the one this site translates."))) : "",
 
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("The ten most-read Korean notices of {year}", { year })), el("span", null, B("Match on the English board"))),

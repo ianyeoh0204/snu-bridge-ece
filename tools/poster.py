@@ -51,7 +51,6 @@ POSTER_KO = {
     "Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.":
         "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
     "The gap": "격차",
-    "English board posts": "영어 게시판 게시물",
     "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
         "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
     "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
@@ -117,8 +116,6 @@ POSTER_KO.update({
     "Master's program": "석사과정",
     "of them, English title": "이 중 영어 제목",
     "of them have a title in English": "이 가운데 제목이 영어인 공지",
-    "same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.":
-        "same: 영어 메뉴에 한국어 게시판의 공지가 한국어 그대로 표시됩니다. –: 영어 사이트 없음. 따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
     "A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.":
         "제목에 한글이 없으면 영어 제목으로 셌습니다. {n}건 전체를 링크와 함께 사이트에 실었습니다.",
     "QS 2026 rank for share of international students, as reported by the SNU Alumni Association newspaper":
@@ -268,14 +265,14 @@ def build():
     legend = bi("same: the English menu shows the Korean board's own notices, in Korean. –: no English site. Separate job, scholarship, news and seminar boards are not counted.")
     counted = f'<p class="note">{legend}</p><p class="note">' + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p>"
 
-    funded = bi("2026: {won} billion won to {n} colleges and schools to recruit international students and support their settlement.",
+    funded = bi("In 2026 the university put {won} billion won into {n} colleges and schools to recruit international students and help them settle.",
                 {"won": f["college_fund_billion_won"], "n": f["colleges_funded"]}, {"won": 10 * f["college_fund_billion_won"]})  # 1 billion won is 10억 원
-    division = bi("Planned for September {year}: a new undergraduate division for international students, about {n} entrants expected.",
+    division = bi("A new undergraduate division for international students is planned for September {year}, with about {n} entrants expected.",
                   {"year": f["new_division_year"], "n": f["new_division_students"]})
-    reading = bi("Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can narrow that gap.")
+    reading = bi("This is our reading. The notices these students must follow are posted in Korean, and AI in administration, an aim of the AI Native Campus, can put them into English.")
     why_figs = '<div class="figs rows">' + fig(num(f["qs_student_ratio_rank"]), bi("QS 2026 rank for share of international students, as reported by the SNU Alumni Association newspaper")) + "</div>"
     why = ('<div class="body">' + f'<p class="lead">{bi("SNU is working to bring in more international students.")}</p>'
-           + f'<ul class="rule"><li>{funded}</li><li>{division}</li><li>' + bi("President's 2026 address: internationalisation must be the base of all the university's work.") + "</li></ul>"
+           + f'<ul class="rule"><li>{funded}</li><li>{division}</li><li>' + bi("In his 2026 address the President said internationalisation must be the base of all the university's work.") + "</li></ul>"
            + why_figs + f'<p class="stand">{reading}</p>'
            + '<p class="note">' + bi("Sources: News1, 27 April 2026; President's New Year address; SNU Alumni Association newspaper. Links on the site.") + "</p></div>")
 
