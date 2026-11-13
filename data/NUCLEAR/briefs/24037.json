@@ -1,0 +1,49 @@
+{
+ "title_en": "Fall 2026 Intensive Report Writing Tutoring Program (Second Round)",
+ "summary": "The Writing Support Center of the College of Liberal Studies (학부대학 글쓰기지원센터) invites domestic (Korean) enrolled undergraduate students to apply for the Fall 2026 Intensive Report Writing Tutoring Program (second round). Applications must be submitted through the SNU extracurricular website (SNU 비교과 사이트) between 8 October 2026 and 12:00 noon on 22 October 2026. Participation is voluntary, and about 20 students will be selected, with results announced on 23 October 2026.",
+ "applies_to": "Domestic (Korean) undergraduate students currently enrolled (내국인 학부 재학생) only. Participation is voluntary, for students who have difficulty writing reports or who wish to study academic writing systematically. The notice does not state that international students may apply.",
+ "dates": [
+  {
+   "what": "Application period (apply on the SNU extracurricular website)",
+   "when": "Thursday 8 October 2026 to Thursday 22 October 2026, 12:00 noon",
+   "original_ko": "2026. 10. 8.(목) ~ 2026. 10. 22.(목) 정오",
+   "verified": true
+  },
+  {
+   "what": "Announcement of selected participants",
+   "when": "Friday 23 October 2026",
+   "original_ko": "2026. 10. 23.(금)",
+   "verified": true
+  },
+  {
+   "what": "Program period (tutoring sessions for selected participants)",
+   "when": "23 October 2026 to 21 December 2026",
+   "original_ko": "2026년 10월 23일 ~ 2026년 12월 21일",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only domestic (Korean) undergraduate students who are currently enrolled are eligible to apply.",
+  "Applications are accepted only through the SNU extracurricular website (SNU 비교과 사이트).",
+  "Applications close at 12:00 noon on 22 October 2026.",
+  "Approximately 20 students will be selected; applying does not guarantee a place.",
+  "Each selected student receives four one-to-one writing tutoring sessions during the semester, held by Zoom video consultation or in person."
+ ],
+ "steps": [
+  "Read the attached promotional poster (2026년 2학기 리포트 집중지도(2차)_포스터.png); its content is an image and was not read for this translation.",
+  "Apply on the SNU extracurricular website (SNU 비교과 사이트) between 8 October 2026 and 12:00 noon on 22 October 2026.",
+  "Check the announcement of selected participants on 23 October 2026.",
+  "If selected, attend four one-to-one writing tutoring sessions, by Zoom or in person, between 23 October and 21 December 2026."
+ ],
+ "translation": "Fall 2026 Intensive Report Writing Tutoring Program (Second Round)\n\nThe Writing Support Center of the College of Liberal Studies (학부대학 글쓰기지원센터) is running the Fall 2026 Intensive Report Writing Tutoring Program (second round) to help enrolled undergraduate students who have difficulty writing reports or who wish to study academic writing systematically. Interested students are encouraged to participate.\n\n1. Detailed procedure\n\nA. Recruitment and selection of participants\n1) Application period: Thursday 8 October 2026 to Thursday 22 October 2026, 12:00 noon\n※ Apply on the SNU extracurricular website (SNU 비교과 사이트).\n2) Eligibility: Domestic (Korean) enrolled undergraduate students (내국인 학부 재학생)\n3) Number selected: approximately 20\n4) Announcement of participants: Friday 23 October 2026\n\nB. Program operation\n1) Program period: 23 October 2026 to 21 December 2026\n2) Format: Four one-to-one writing tutoring sessions per student during the semester (held as Zoom video consultations or in-person consultations)\n\nAttachment: Promotional poster for the Fall 2026 Intensive Report Writing Tutoring Program (Second Round)\nAttached file (1): 2026년 2학기 리포트 집중지도(2차)_포스터.png (336 KB) — this image was not read for this translation.",
+ "id": 24037,
+ "text_hash": "e402bddb0421ce9a",
+ "images": 0,
+ "attachments": [
+  "2026년 2학기 리포트 집중지도(2차)_포스터.png"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

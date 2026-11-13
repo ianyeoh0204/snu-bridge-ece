@@ -1,0 +1,44 @@
+{
+ "title_en": "Call for Recommendations: 3rd IPESK Next-Generation Engineers and Engineering Researchers",
+ "summary": "Currently enrolled students who wish to be recommended for certification as a 3rd IPESK Next-Generation Engineer or Engineering Researcher must submit the required documents by Friday, 20 November 2026. Third- and fourth-year undergraduates need a cumulative GPA of 3.5 or higher, and graduate students need a record of excellent paper publications, presentations or awards. Documents must be submitted to the Department of Nuclear Engineering office.",
+ "applies_to": "Voluntary; only for currently enrolled students who wish to apply. Next-Generation Engineer: currently enrolled third- or fourth-year undergraduate students with a cumulative GPA of 3.5 or higher across all semesters. Next-Generation Engineering Researcher: currently enrolled graduate students with a record of excellent paper publications, presentations or awards. Detailed requirements are in Attachment 1.",
+ "dates": [
+  {
+   "what": "Deadline to submit application documents (all applicants)",
+   "when": "Friday, 20 November 2026",
+   "original_ko": "2026. 11. 20.(금)까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applying is voluntary; only students who wish to be recommended need to act.",
+  "Applicants must be currently enrolled students.",
+  "Next-Generation Engineer applicants must be third- or fourth-year undergraduates with a cumulative GPA of 3.5 or higher across all semesters.",
+  "Next-Generation Engineering Researcher applicants must be graduate students with a record of excellent paper publications, presentations or awards.",
+  "The official seal (직인날인) on the recommendation letter is not required.",
+  "Detailed requirements are given in Attachment 1, which was not read for this translation."
+ ],
+ "steps": [
+  "Read Attachment 1 ([붙임1] 제3기 IPESK 차세대 공학(연구)자 추가 추천 안내.pdf) for the detailed requirements; its content was not read for this translation.",
+  "Download the forms attached to the original notice: the recommendation letter (Attachment 2), the recommendation list (Attachment 3), and the personal information consent form for your category (Attachment 4 for Engineers, Attachment 5 for Engineering Researchers).",
+  "Prepare one copy each of: the recommendation letter (official seal not required), the recommendation list, and the consent form for the collection, use and provision of personal information.",
+  "Next-Generation Engineer applicants: also prepare one copy of your academic transcript.",
+  "Next-Generation Engineering Researcher applicants: also prepare one copy of your representative paper record and your award record.",
+  "Submit all documents to the Department of Nuclear Engineering office by Friday, 20 November 2026. The office contact details are in the original notice."
+ ],
+ "translation": "Title: Call for Recommendations: 3rd IPESK Next-Generation Engineers and Engineering Researchers\n\nTo promote education and foster excellent engineers, the incorporated association 한국이공학진흥원 (IPESK) will receive recommendations of outstanding currently enrolled students and certify them as IPESK Next-Generation Engineers and Engineering Researchers. Students who wish to apply should submit their documents by Friday, 20 November 2026 (2026. 11. 20.(금)).\n\nA. Requirements for recommendation as an IPESK Next-Generation Engineer (Researcher). ※ See the guidance document [Attachment 1] for detailed requirements and information.\n- Engineer: currently enrolled third- or fourth-year undergraduate students with excellent grades (cumulative GPA across all semesters of 3.5 or higher).\n- Engineering Researcher: currently enrolled graduate students with a record of excellent paper publications, presentations or awards.\n\nB. Documents to submit: one copy each of the recommendation letter (official seal (직인날인) omitted), the recommendation list, the consent form for the collection, use and provision of personal information, and the academic transcript (Engineer) or the representative paper record and award record (Engineering Researcher).\n\nC. Submit to: the Department of Nuclear Engineering office (contact details are in the original notice).\n\nD. Inquiries: 한국이공학진흥원 (IPESK) (contact details are in the original notice).\n\nAttachments (5) (their contents were not read for this translation):\n[Attachment 1] 제3기 IPESK 차세대 공학(연구)자 추가 추천 안내.pdf – Guidance on the additional recommendation of 3rd IPESK Next-Generation Engineers (Researchers)\n[Attachment 2] 제3기 차세대 공학(연구)자 학장 추천서(서식).hwpx – Dean's recommendation letter (form)\n[Attachment 3] 제3기 차세대 공학(연구)자 추천명단(서식).xlsx – Recommendation list (form)\n[Attachment 4] 제3기 차세대 공학자 개인정보 수집 및 이용 동의서(서식).hwp – Personal information collection and use consent form for Next-Generation Engineers (form)\n[Attachment 5] 제3기 차세대 공학연구자 개인정보 수집 및 이용 동의서(서식).hwp – Personal information collection and use consent form for Next-Generation Engineering Researchers (form)",
+ "id": 24047,
+ "text_hash": "a4eb06fd8f39e1b7",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 제3기 IPESK 차세대 공학(연구)자 추가 추천 안내.pdf",
+  "[붙임2] 제3기 차세대 공학(연구)자 학장 추천서(서식).hwpx",
+  "[붙임3] 제3기 차세대 공학(연구)자 추천명단(서식).xlsx",
+  "[붙임4] 제3기 차세대 공학자 개인정보 수집 및 이용 동의서(서식).hwp",
+  "[붙임5] 제3기 차세대 공학연구자 개인정보 수집 및 이용 동의서(서식).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

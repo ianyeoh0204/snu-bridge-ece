@@ -1,0 +1,46 @@
+{
+ "title_en": "2026 Research Reactor Experiment and Practice Program: Call for Participants",
+ "summary": "The Korea Nuclear International Cooperation Foundation (한국원자력협력재단) invites interested undergraduate nuclear engineering majors in their third or fourth year, and graduate students, to apply for the 2026 Research Reactor Experiment and Practice Program. Applicants must email the participation application form and related documents by 16:00 on Tuesday, 1 December 2026. The email address and the forms are in the Foundation's recruitment notice on its NETi website, not in this notice.",
+ "applies_to": "Optional, for interested students only: third- and fourth-year undergraduate students majoring in nuclear engineering, and graduate students, who are interested in research related to reactor physics. Twelve participants will be selected.",
+ "dates": [
+  {
+   "what": "Application period (applications close at 16:00 on the last day)",
+   "when": "Monday, 2 November 2026 to Tuesday, 1 December 2026, 16:00",
+   "original_ko": "2026. 11. 2.(월) ~ 12. 1.(화) 16:00까지",
+   "verified": true
+  },
+  {
+   "what": "Domestic experiments and practice at Kyung Hee University (AGN-201K reactor), for selected participants",
+   "when": "4 January 2027 to 7 January 2027",
+   "original_ko": "2027. 1. 4. ~ 1. 7.",
+   "verified": true
+  },
+  {
+   "what": "Overseas experiments and practice at Kindai University, Japan (UTR-KINKI reactor), for selected participants",
+   "when": "12 January 2027 to 15 January 2027",
+   "original_ko": "2027. 1. 12. ~ 1. 15.",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications must reach the Foundation by 16:00 on 1 December 2026.",
+  "Applications are submitted by email: the participation application form and related documents.",
+  "Only 12 participants will be selected.",
+  "The program includes online pre-training in reactor physics theory; the notice does not give its dates.",
+  "The email address for applications is not stated in this notice; it should be in the Foundation's recruitment notice."
+ ],
+ "steps": [
+  "Read the full recruitment notice on the Foundation's NETi website (path given in the notice: NETi > 알림마당 > 공지사항) to obtain the application form, the list of related documents and the email address.",
+  "Complete the participation application form (참가 신청서) and prepare the related documents.",
+  "Email the application form and documents to the Foundation by 16:00 on Tuesday, 1 December 2026."
+ ],
+ "translation": "[Korea Nuclear International Cooperation Foundation] Call for Participants and Promotion: 2026 Research Reactor Experiment and Practice Program\n\nTo train future professionals in the nuclear field, the Korea Nuclear International Cooperation Foundation (한국원자력협력재단) is running the \"2026 Research Reactor Experiment and Practice Program\", which uses research reactors in Korea and abroad.\n\nThis program is an experiment and practice course that links the AGN-201K research reactor at Kyung Hee University with the UTR-KINKI research reactor at Kindai University in Japan. It is designed so that participating students can confirm reactor physics theory through actual experiments and compare and analyse the characteristics and experimental results of different research reactors.\n\nParticipants are being recruited as set out below. Interested students are encouraged to apply.\n\n■ Call for Participants: 2026 Research Reactor Experiment and Practice Program\n\nApplication period: Monday, 2 November 2026 to Tuesday, 1 December 2026, until 16:00\n\nEligible applicants: Third- and fourth-year undergraduate students majoring in nuclear engineering, and graduate students, who are interested in research related to reactor physics\n\nNumber of participants: 12\n\nProgram content:\n- Online pre-training: theoretical training in reactor physics\n- Domestic experiments and practice: 4–7 January 2027 / Kyung Hee University, AGN-201K\n- Overseas experiments and practice: 12–15 January 2027 / Kindai University (킨키대학교), Japan, UTR-KINKI\n\nHow to apply: Submit the participation application form (참가 신청서) and related documents by email.\n\nRecruitment notice: See NETi > 알림마당 (Notice Board) > 공지사항 (Notices).\n\n(Note: The email address for submission is not given in this notice; please refer to the Foundation's recruitment notice. The notice spells the Japanese university both as 킨다이 and 킨키; both refer to Kindai University.)",
+ "id": 24062,
+ "text_hash": "f8f7e150496c5ce1",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

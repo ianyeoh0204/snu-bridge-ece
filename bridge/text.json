@@ -215,8 +215,8 @@
   "Each line opens the notice on the department's own site. Most are seminars and outside programmes; one is a test post. A speaker's name is replaced with [name].": "각 줄을 누르면 해당 학과 사이트의 공지가 열립니다. 대부분 세미나와 외부 프로그램이며, 한 건은 시험용 게시물입니다. 연사의 이름은 [name]으로 바꾸었습니다.",
   "These translations have not been re-read by the second reader.": "이 번역은 2차 판독자가 다시 읽지 않았습니다.",
   "Checked by code and one independent AI reading; not re-read by the second reader from another maker": "코드와 독립적인 AI 판독 1회로 확인했으며, 개발사가 다른 2차 판독자는 다시 읽지 않았습니다",
-  "Written from the department's web pages on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.": "{date}에 학과 웹페이지를 바탕으로 작성했습니다. 코드와 같은 개발사의 독립적인 AI 판독 1회로 확인했으며, 개발사가 다른 2차 판독자는 읽지 않았습니다.",
   "Also on this site: {name}, {n} requirements and {m} notices": "이 사이트의 다른 학과: {name}, 요건 {n}개와 공지 {m}건",
-  "A second department, {name}: {n} requirements written from its own web pages, and its notices since {date}. Its requirements were checked by code and by one independent AI reading, not by the second reader.": "두 번째 학과 {name}: 학과 웹페이지를 바탕으로 작성한 요건 {n}개와 {date} 이후의 공지. 요건은 코드와 독립적인 AI 판독 1회로 확인했으며, 2차 판독자는 읽지 않았습니다."
+  "Written from the department's own rules on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.": "{date}에 학과의 자체 규정을 바탕으로 작성했습니다. 코드와 같은 개발사의 독립적인 AI 판독 1회로 확인했으며, 개발사가 다른 2차 판독자는 읽지 않았습니다.",
+  "Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were checked by code and by one independent AI reading, not by the second reader.": "다른 학과 {name}: 학과의 자체 규정을 바탕으로 작성한 요건 {n}개와 {date} 이후의 공지. 요건은 코드와 독립적인 AI 판독 1회로 확인했으며, 2차 판독자는 읽지 않았습니다."
  }
 }

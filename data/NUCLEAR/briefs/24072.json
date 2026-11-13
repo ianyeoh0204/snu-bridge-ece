@@ -1,0 +1,37 @@
+{
+ "title_en": "Call for Participants: 3rd SNU AZIT × SNAAC The Beginning Ideathon 2026",
+ "summary": "Currently enrolled students and students on leave of absence at Seoul National University, undergraduate or graduate, may apply to the 3rd SNU AZIT × SNAAC The Beginning Ideathon. Applications must be submitted through the online application link by Thursday, 26 November 2026. The event takes place from 28 to 29 December 2026 (two days, one night) at Mondrian Seoul Itaewon.",
+ "applies_to": "Optional programme open to Seoul National University students who are currently enrolled or on leave of absence, both undergraduate and graduate students.",
+ "dates": [
+  {
+   "what": "Application deadline",
+   "when": "By Thursday, 26 November 2026",
+   "original_ko": "~ 2026. 11. 26.(목)까지",
+   "verified": true
+  },
+  {
+   "what": "Ideathon event (two days, one night)",
+   "when": "Monday, 28 December to Tuesday, 29 December 2026",
+   "original_ko": "2026. 12. 28.(월) ~ 29.(화) (1박 2일)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only Seoul National University students who are currently enrolled or on leave of absence are eligible.",
+  "Both undergraduate and graduate students may apply.",
+  "Participation is entirely free of charge, and accommodation and meals are provided."
+ ],
+ "steps": [
+  "Apply through the online application link (https://startup.snu.ac.kr/bbs/board.php?bo_table=sub4_2&wr_id=24) by Thursday, 26 November 2026.",
+  "Attend the ideathon at Mondrian Seoul Itaewon (23 Jangmun-ro, Yongsan-gu, Seoul) from 28 to 29 December 2026."
+ ],
+ "translation": "Call for Participants: 2026 3rd SNU AZIT × SNAAC The Beginning Ideathon\n\n1. Programme: 2026 3rd SNU AZIT X SNAAC The Beginning Ideathon\n\n2. Date: Monday, 28 December to Tuesday, 29 December 2026 (two days, one night)\n\n3. Venue: Mondrian Seoul Itaewon (23 Jangmun-ro, Yongsan-gu, Seoul)\n\n4. Eligibility: Seoul National University students who are currently enrolled or on leave of absence (undergraduate and graduate students alike)\n\n5. Benefits: Participation fee fully waived; accommodation and meals provided\n\n6. Application period: Until Thursday, 26 November 2026\n\n7. Application link: https://startup.snu.ac.kr/bbs/board.php?bo_table=sub4_2&wr_id=24",
+ "id": 24072,
+ "text_hash": "7fab11df57262aa5",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

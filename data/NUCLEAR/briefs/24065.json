@@ -1,0 +1,37 @@
+{
+ "title_en": "Nature Masterclasses Expert Trainer-led (NMT) Live Online Workshops, November 2026",
+ "summary": "Seoul National University members, such as graduate students, may attend the Nature Masterclasses Expert Trainer-led (NMT) live online workshops, held in nine two-hour sessions from Tuesday 10 November to Wednesday 18 November 2026 on GoToWebinar. Participants must register separately for each workshop through its registration link or the QR code in the attached file, and then join using the link in the confirmation email. The notice states no registration deadline, and the detailed session schedule is given only in the attachment.",
+ "applies_to": "Members of Seoul National University (graduate students and others). The notice does not state that participation is mandatory.",
+ "dates": [
+  {
+   "what": "NMT live online workshop period: nine sessions of two hours each (see the attachment for the date and time of each session)",
+   "when": "Tuesday 10 November 2026 to Wednesday 18 November 2026",
+   "original_ko": "2026.11.10.(화)~11.18.(수)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "You must register separately for each workshop you wish to attend; one registration does not cover other workshops.",
+  "You can join a session only through the link in the confirmation email sent after you register.",
+  "The workshops are held only online, live, on GoToWebinar.",
+  "The notice states no registration deadline.",
+  "The date and time of each session are given only in the attachment, which was not read for this translation."
+ ],
+ "steps": [
+  "Read the attached file (NMT 워크숍 홍보자료 (1).pdf) for the detailed date and time of each session and for the QR codes.",
+  "Register separately for each workshop you wish to attend, using its registration link (Workshop 1: https://attendee.gotowebinar.com/register/4624864123742828126 ; Workshop 2: https://attendee.gotowebinar.com/register/3612392035445159259 ; Workshop 3: https://attendee.gotowebinar.com/register/3294249445472840286) or the QR code in the attachment.",
+  "Check your email for the registration confirmation for each workshop.",
+  "At the session time, join the live online workshop on GoToWebinar using the link in the confirmation email."
+ ],
+ "translation": "[College of Liberal Studies / BK21] Nature Masterclasses Expert Trainer-led (NMT) Programme\n\nA. Programme: Nature Masterclasses Expert Trainer-led (NMT) Live Workshops\n\nB. Eligible participants: Members of Seoul National University (graduate students and others)\n\nC. Schedule: Tuesday 10 November 2026 to Wednesday 18 November 2026, nine sessions in total (two hours per session)\n※ For the detailed schedule of each session, see the attachment. (The attachment was not read for this translation.)\n\nD. Format: Live online sessions (GoToWebinar)\n\nE. How to apply: Register individually for each workshop through its registration link or the QR code in the attachment.\n1) Workshop 1: https://attendee.gotowebinar.com/register/4624864123742828126\n2) Workshop 2: https://attendee.gotowebinar.com/register/3612392035445159259\n3) Workshop 3: https://attendee.gotowebinar.com/register/3294249445472840286\n※ You must register separately for each workshop. After registering, join the session through the link in the confirmation email you receive.\n\nAttachment (1 file): NMT 워크숍 홍보자료 (1).pdf [NMT workshop promotional material] (913 KB). The content of this attachment was not read.",
+ "id": 24065,
+ "text_hash": "db603fc8ec4976e7",
+ "images": 0,
+ "attachments": [
+  "NMT 워크숍 홍보자료 (1).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

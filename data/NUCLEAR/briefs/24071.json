@@ -1,0 +1,63 @@
+{
+ "title_en": "Honesty Scholarship (1st Round, 2027): Call for Applications",
+ "summary": "Current third-year students of the College of Engineering who are expected to enter their fourth year in the 2027 academic year may apply for the 2027 1st-round Honesty Scholarship (정직장학금), which awards one student USD 10,000 per year. Applicants must email their documents (self-introduction, recommendation letter, transcript and any activity evidence) to the Department of Nuclear Engineering office by Thursday, 3 December 2026. The office's contact address is in the original notice.",
+ "applies_to": "Optional (for those who wish to apply): current third-year students of this university's College of Engineering who are expected to advance to the fourth year in the 2027 academic year. Students should have contributed to building a sound academic community and show exemplary leadership, locally and nationally, through consideration for others and positive influence. Only one student from the College of Engineering will be selected.",
+ "dates": [
+  {
+   "what": "Deadline to email application documents to the Department of Nuclear Engineering office",
+   "when": "Thursday, 3 December 2026",
+   "original_ko": "2026.12.3(목) 까지",
+   "verified": true
+  },
+  {
+   "what": "Selection of the scholar (during the student's third-year second semester)",
+   "when": "Fall 2026 (third-year second semester)",
+   "original_ko": "3학년 2학기에 선발",
+   "verified": true
+  },
+  {
+   "what": "Scholarship allocated and paid (as a Development Foundation designated scholarship) to the selected student",
+   "when": "Spring 2027 (fourth-year first semester)",
+   "original_ko": "4학년 1학기에 발전재단 특지장학금으로 배정 및 지급",
+   "verified": true
+  },
+  {
+   "what": "Scholarship award ceremony; attendance is mandatory for the selected student",
+   "when": "Planned for the end of February each year",
+   "original_ko": "매년 2월 말 개최 예정인 장학금수여식",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only one student from the College of Engineering will be selected.",
+  "Selection is made from students recommended by their department, after consultation with the selection advisers and review by the College of Engineering Scholarship Committee.",
+  "The award is USD 10,000 per person per year; the 2027 amount in won is KRW 13,296,090, and the won amount changes every year according to the exchange rate applied when the fund is transferred.",
+  "The self-introduction must include your personal values formed over your life so far and your resolution for the future.",
+  "The recommendation letter may be from a dean, your academic advisor, or an acquaintance.",
+  "Evidence of activities during university (volunteering, student council and other group activities, awards and commendations) is submitted additionally only if you have it.",
+  "The selected student is invited to the scholarship award ceremony planned for the end of February each year and must attend.",
+  "In the first year one student each is selected from the College of Engineering and the College of Social Sciences; from the following year one student is selected in alternate years (order: College of Engineering, then College of Social Sciences)."
+ ],
+ "steps": [
+  "Read the attached operating plan (제1회 정직장학금 운영(안).docx); its content was not read for this translation.",
+  "Download the attached form file (정직장학 자기소개서 및 추천서.hwpx) for the self-introduction and recommendation letter; its content was not read for this translation.",
+  "Write a self-introduction that includes your personal values and your resolution for the future.",
+  "Obtain a recommendation letter from a dean, your academic advisor, or an acquaintance.",
+  "Obtain your academic transcript.",
+  "If available, gather evidence of activities during university (volunteering, student council or group activities, awards and commendations).",
+  "Email all documents to the Department of Nuclear Engineering office by Thursday, 3 December 2026 (the email address is in the original notice).",
+  "If selected, attend the scholarship award ceremony planned for the end of February."
+ ],
+ "translation": "2027 1st-Round Honesty Scholarship: Selection of Scholars\n\nThe selection of scholars for the 2027 1st-round Honesty Scholarship (정직장학금) will be conducted as follows. Students who wish to apply should submit their documents by email by Thursday, 3 December 2026 (2026.12.3(목)).\n\n1. Fund overview\n- Donors: donors of the Mijoo Foundation (미주재단) (donations 2023–2025 and 2025; individual names are given in the original notice)\n- Purpose: to discover and support talented students who practise sound leadership based on honest character and a sense of social responsibility, and who contribute to the academic community through consideration for others and positive influence.\n\n2. Eligibility and criteria\n- Current third-year students of this university's College of Engineering who are expected to advance to the fourth year in the 2027 academic year\n- Students who have contributed to building a sound academic community\n- Students with leadership that serves as a model locally and nationally through consideration for others and positive influence\n\n3. Selection plan and scholarship payment\n- Number selected: 1 student from the College of Engineering\n- Amount: USD 10,000 per person per year\n  ※ The 2027 amount is KRW 13,296,090 per person (the won amount changes every year according to the exchange rate applied when the fund is transferred).\n- Selection method: students recommended by their department are reviewed with advice from the selection advisers, examined by the College of Engineering Scholarship Committee, and one student is finally selected.\n- Payment plan: selected in the second semester of the third year; allocated and paid as a Development Foundation designated scholarship (발전재단 특지장학금) in the first semester of the fourth year.\n  ※ In the first year, one student each is selected from the College of Engineering and the College of Social Sciences; from the following year, one student is selected in alternate years (order: College of Engineering → College of Social Sciences).\n  ※ The selected student will be invited to the scholarship award ceremony planned for the end of February each year, and attendance is mandatory.\n- Documents to submit\n  · Self-introduction (자기소개서) (must include the personal values you have formed over your life so far and your resolution for the future)\n  · Recommendation letter (추천서) (from a dean, your academic advisor, or an acquaintance)\n  · Academic transcript (성적증명서)\n  · Additional submission: evidence of activities during university, if any (volunteering, student council and other group activities, awards and commendations, etc.)\n- Submit to: Department of Nuclear Engineering office (contact name and email address are in the original notice)\n\nAttachments (2) (their contents were not read):\n1. 제1회 정직장학금 운영(안).docx (Operating plan for the 1st Honesty Scholarship) (21 KB)\n2. 정직장학 자기소개서 및 추천서.hwpx (Honesty Scholarship self-introduction and recommendation letter forms) (27 KB)",
+ "id": 24071,
+ "text_hash": "0ffe728497dc3de4",
+ "images": 0,
+ "attachments": [
+  "1. 제1회 정직장학금 운영(안).docx",
+  "2. 정직장학 자기소개서 및 추천서.hwpx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

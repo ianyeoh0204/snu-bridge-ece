@@ -1,0 +1,48 @@
+{
+ "title_en": "2027 Kwanjeong Educational Foundation New Graduate Scholarship: Call for Applicants",
+ "summary": "Students who wish to be recommended for the 2027 Kwanjeong Educational Foundation new graduate scholarship must email their application documents to the Department of Nuclear Engineering office by Friday, 19 February 2027. Applicants must be entering the general graduate school (master's, doctoral or integrated master's-doctoral program) in Spring 2027, or have entered in Fall 2026, and must have an overall GPA of at least 3.8/4.3 (4.0/4.5) in their previous program. The required documents are the recommendation list (Attachment 3) and the personal information consent form (Attachment 4).",
+ "applies_to": "Optional; for students who wish to apply. Applicants must be incoming new students of the general graduate school (master's, doctoral or integrated master's-doctoral program) admitted for Spring 2027, or students who entered in Fall 2026, with an overall GPA of 3.8/4.3 (4.0/4.5) or higher in their previous program. Detailed eligibility is in the selection plan (Attachment 2), which was not read.",
+ "dates": [
+  {
+   "what": "Deadline to email application documents to the Department of Nuclear Engineering office",
+   "when": "Friday, 19 February 2027",
+   "original_ko": "2027. 2. 19.(금)까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Each department may recommend at most 2 students; the College of Engineering plans to recommend at most 10.",
+  "Applicants must have an overall GPA of at least 3.8/4.3 (4.0/4.5) in their previous program.",
+  "If applications exceed the College of Engineering quota of 10, recommendees are chosen by GPA on a 4.3 scale: undergraduate GPA for master's and integrated master's-doctoral entrants, master's GPA for doctoral entrants.",
+  "Ties are broken by overall undergraduate GPA (percentile).",
+  "The scholarship may be received together with national and university scholarships.",
+  "The scholarship may not be received together with a scholarship from another private foundation.",
+  "If national or university scholarships already cover both tuition and living expenses, the scholarship amount will be adjusted.",
+  "Only applicants who pass the first online screening submit documents by post.",
+  "Applicants who pass the document screening must attend an interview, so they must check the interview schedule.",
+  "Being recommended by the College of Engineering does not guarantee final selection as a university recommendee."
+ ],
+ "steps": [
+  "Read the foundation's selection plan (Attachment 2) for detailed eligibility, required documents and the interview schedule; the attachments were not read.",
+  "Complete the recommendation list (Attachment 3) and the personal information collection, use and provision consent form (Attachment 4).",
+  "Email the completed documents to the Department of Nuclear Engineering office by Friday, 19 February 2027 (the contact is in the original notice).",
+  "Wait for the department and college recommendation decision; final recommendees will be notified to the department.",
+  "If you are a final recommendee, submit documents as instructed in a separate later notice, including the foundation's online document submission.",
+  "If you pass the first online screening, send the required documents by post.",
+  "If you pass the document screening, attend the interview."
+ ],
+ "translation": "2027 Kwanjeong Educational Foundation New Graduate Scholarship: Call for Applicants\n\nThe Kwanjeong Educational Foundation will select new graduate scholarship recipients for the 2027 academic year as follows. Students who wish to apply and are eligible should submit their documents by email by Friday, 19 February 2027 [2027. 2. 19.(금)].\n\nA. Number of recommendations: at most 2 per department. ※ The College of Engineering plans to recommend at most 10.\n\nB. Eligibility: students entering the general graduate school (master's, doctoral or integrated master's-doctoral program) as new students in Spring 2027, or students who entered in Fall 2026, whose overall GPA in their previous program is 3.8/4.3 (4.0/4.5) or higher.\n※ For detailed eligibility, see the scholarship selection plan [Attachment 2].\n\nC. Scholarship amount and support period\nType: Kwanjeong Academic Encouragement Scholarship [관정학업장려장학금] (Type B)\nProgram: graduate\nAmount per semester (up to 4 semesters): up to KRW 6,000,000\nNature: academic encouragement grant\nNotes: may be received together with national and university scholarships.\n※ May not be received together with scholarships from other private foundations.\n※ If national or university scholarships cover both tuition and living expenses, the scholarship amount will be adjusted.\n\nD. Recommendee selection procedure\n1) Department recommendation\n※ If applications exceed the College of Engineering quota (10), recommendees will be selected by GPA on a 4.3 scale (master's and integrated master's-doctoral entrants: undergraduate grades; doctoral entrants: master's grades). In case of a tie, selection is by undergraduate grades (overall GPA, percentile).\n2) Final recommendees are notified to the department.\n3) Final recommendees submit documents (separate notice to follow).\n\nE. Documents to submit: recommendation list (Attachment 3) and consent form for the collection, use and provision of personal information (Attachment 4).\n- The foundation will announce online document submission; after the first online screening, only successful applicants submit documents by post.\n\nF. Submit to: Department of Nuclear Engineering office (the contact person and email address are in the original notice).\n\nG. Notes\n1) For details of the selection, including required documents, check the foundation's selection plan [Attachment 2].\n2) Applicants who pass the document screening must attend the interview, so you must check the interview schedule.\n3) Even College of Engineering recommendees may not be finally selected as university recommendees.\n\nAttachments (4) (not read; their content is not in the notice text):\n2-1. 2027 Domestic University Scholarship Selection Plan (PDF)\n2-2. Regulations on Domestic University Scholarship Selection and Payment (10th amendment) (PDF)\n3. 2027 Kwanjeong Scholarship Recommendation List (Graduate) (XLSX)\n4. Consent Form for Collection, Use and Provision of Personal Information (Scholarship and Welfare Division, external foundations) (HWP)",
+ "id": 24070,
+ "text_hash": "12f4734d342915c4",
+ "images": 0,
+ "attachments": [
+  "2-1. 2027년 국내대학 장학생 선발계획.pdf",
+  "2-2. 국내대학장학생선발및장학금지급규정(10차 개정).pdf",
+  "3. 2027년도 관정장학생 추천명단(대학원).xlsx",
+  "4. 개인정보 수집·이용 및 제공 동의서(장학복지과_교외재단).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,49 @@
+{
+ "title_en": "Recruitment of the 44th Songwon Kim Young-hwan Scholarship Foundation Scholars for 2027",
+ "summary": "Students who will advance to the first semester of their second year in Spring 2027 and who meet the income-bracket and GPA requirements may apply for the Songwon Kim Young-hwan Scholarship Foundation's 44th scholarship (5 million won per semester). Applicants must submit their academic transcript by email by 10:00 on Monday, 16 November 2026. All recommended candidates must attend an interview at the Foundation's main conference room on Saturday, 19 December 2026; anyone who does not attend is automatically eliminated.",
+ "applies_to": "Optional application, open only to students who meet all of these requirements: (1) will advance to the first semester of the second year as of Spring 2027 (27-1학기); (2) are within Student Financial Aid Bracket 3 (학자금지원구간 3구간 이내) and have a cumulative GPA, across all semesters, of 3.0/4.3 or higher; (3) will participate faithfully in the Foundation's official events and can adapt to communal living. At most one student is recommended per department; the College of Engineering plans to recommend two. Interview attendance is mandatory for all recommended candidates.",
+ "dates": [
+  {
+   "what": "Deadline to submit the application documents (academic transcript) by email",
+   "when": "Monday, 16 November 2026, 10:00",
+   "original_ko": "2026. 11. 16.(월) 10:00까지",
+   "verified": true
+  },
+  {
+   "what": "Mandatory interview for all recommended candidates (tentative), at the Foundation's main conference room",
+   "when": "Saturday, 19 December 2026, 09:00–12:00 (tentative)",
+   "original_ko": "2026. 12. 19.(토) 09:00 ~ 12:00 예정",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "At most one student is recommended per department; the College of Engineering plans to recommend two students.",
+  "You must be advancing to the first semester of your second year as of Spring 2027.",
+  "You must be within Student Financial Aid Bracket 3 and have a cumulative GPA of 3.0/4.3 or higher across all semesters.",
+  "You must be willing to participate faithfully in the Foundation's official events and be able to adapt to communal living.",
+  "The scholarship is 5 million won per semester and continues until graduation within the regular number of semesters only if the Foundation's requirements are met.",
+  "This scholarship cannot be received at the same time as other external (off-campus) or donor-funded scholarships.",
+  "All recommended candidates must attend the interview; anyone who does not attend is automatically eliminated.",
+  "Being recommended by the College of Engineering does not guarantee final selection as a scholar.",
+  "Students selected as final nominees will be informed separately about additional documents to submit."
+ ],
+ "steps": [
+  "Read the two attached files (the 44th scholar selection guide and the posting notice); their contents were not available in the text and were not read.",
+  "Obtain your academic transcript (성적증명서).",
+  "Submit the transcript by email by 10:00 on Monday, 16 November 2026; the email address is not given in the notice text, so check the original notice or ask the department office.",
+  "If you are selected as a final nominee, submit the additional documents as you will be instructed.",
+  "Attend the interview on Saturday, 19 December 2026, 09:00–12:00 (tentative), at the Foundation's main conference room."
+ ],
+ "translation": "Title: Recruitment of the 44th Songwon Kim Young-hwan Scholarship Foundation Scholars for the 2027 Academic Year\n\nThe Songwon Kim Young-hwan Scholarship Foundation will select its 44th cohort of scholars for the 2027 academic year as described below. Students who meet the recommendation requirements are asked to submit their documents by email by 10:00 on Monday, 16 November 2026.\n\nA. Number of recommendations: at most 1 per department (division). ※ The College of Engineering plans to recommend 2 students.\n\nB. Recommendation requirements\n1) Students who will advance to the first semester of the second year as of Spring 2027 (27-1학기)\n2) Within Student Financial Aid Bracket 3 (학자금지원구간 3구간 이내) and a cumulative GPA across all semesters of 3.0/4.3 or higher\n3) Students who will participate faithfully in the Foundation's official events and are able to adapt to communal living\n\nC. Scholarship amount: 5 million won per semester (supported until graduation within the regular number of semesters, provided the Foundation's requirements are met)\n※ Cannot be received concurrently with external (off-campus) or donor-funded scholarships.\n\nD. Documents to submit: academic transcript (성적증명서) (students selected as final nominees will be informed about additional documents to submit)\n\nE. Other matters\n1) All recommended candidates must attend the interview.\n- Interview date and time: Saturday, 19 December 2026, 09:00–12:00 (tentative), at the Foundation's main conference room. ※ Candidates who do not attend will be automatically eliminated.\n2) Even candidates recommended by the College of Engineering may not be selected as final scholars.\n\nAttachments (2):\n1-1. 제 44기 송원김영환장학재단 장학생 선발 안내.docx (Guide to the Selection of the 44th Songwon Kim Young-hwan Scholarship Foundation Scholars) (13 KB)\n1-2. 게시용 안내문.docx (Notice for posting) (24 KB)\n[The contents of the attachments were not included in the text and were not read. The email address for submission is not stated in the notice text; check the original notice or contact the department office.]",
+ "id": 24078,
+ "text_hash": "35d0477dfdfc8f0c",
+ "images": 0,
+ "attachments": [
+  "1-1. 제 44기 송원김영환장학재단 장학생 선발 안내.docx",
+  "1-2. 게시용 안내문.docx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,34 @@
+{
+ "title_en": "Generative AI Research Ethics Seminar (Online), 13 November 2026",
+ "summary": "The department invites interested participants to an online seminar on research ethics in the use of generative AI, held at 3:00 p.m. on Friday, 13 November 2026. Those who wish to attend must pre-register through the QR code on the attached poster or the online form at https://forms.gle/ZdcV5dtHXtkp5VTq8; the Zoom link will be sent to pre-registered participants only. The notice does not state that attendance is mandatory, and it gives no registration deadline.",
+ "applies_to": "The notice does not state who the seminar is for or that attendance is mandatory. Anyone who wishes to attend must pre-register.",
+ "dates": [
+  {
+   "what": "Seminar date and start time (online via Zoom)",
+   "when": "Friday, 13 November 2026, 3:00 p.m.",
+   "original_ko": "2026. 11. 13. (금) 오후 3시",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The Zoom link will be sent only to those who pre-register.",
+  "A gift voucher (gifticon) will be given by lottery only to participants who both pre-registered and attended.",
+  "The notice does not state a pre-registration deadline."
+ ],
+ "steps": [
+  "Pre-register using the QR code on the attached poster or the online form at https://forms.gle/ZdcV5dtHXtkp5VTq8. The poster was not read, so its content is not included here.",
+  "Wait for the Zoom link, which will be sent to pre-registered participants.",
+  "Join the seminar online through the Zoom link at 3:00 p.m. on Friday, 13 November 2026."
+ ],
+ "translation": "Generative AI Research Ethics Seminar\n\nAs the use of generative AI in research expands, we are holding a generative AI research ethics seminar, as set out below. Its aim is to prevent research misconduct that may arise from this use and to help researchers use generative AI correctly.\n\n- Details -\n\n❍ Date and time: Friday, 13 November 2026, 3:00 p.m.\n\n❍ Format: Online (a Zoom link will be sent to those who pre-register)\n\n❍ Topic: The Changing Research Environment and Research Ethics\n\n❍ Speaker: An adjunct professor at Sogang University who serves as Secretary General of the Council of University Research Ethics (the name is in the original notice).\n\n❍ Pre-registration: Use the QR code on the attached poster or https://forms.gle/ZdcV5dtHXtkp5VTq8\n\n❍ Other: Gift vouchers (gifticons) will be given by lottery to those who pre-registered and attended.\n\nAttachment (1 file): 생성형_AI_연구윤리_세미나_포스터_배포.pdf (14 MB). This poster was not read, and its content is not included in this translation.",
+ "id": 24067,
+ "text_hash": "29cf1aa068c257e8",
+ "images": 0,
+ "attachments": [
+  "생성형_AI_연구윤리_세미나_포스터_배포.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

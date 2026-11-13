@@ -1,0 +1,37 @@
+{
+ "title_en": "2026 Gangneung ITS World Congress: Event Information",
+ "summary": "Gangneung City and the Ministry of Land, Infrastructure and Transport are hosting the 2026 Gangneung ITS World Congress from Monday 19 October to Friday 23 October 2026 at Gangneung Olympic Park. This notice is for information, and attendance is not stated as required. Anyone wishing to attend registers on site at the Convention Center or Exhibition Hall entrance, and undergraduate students attending the academic sessions must bring a certificate of enrollment to have the registration fee waived.",
+ "applies_to": "Not stated as mandatory for any group. The notice is general information about the event. Undergraduate students who register for the academic conference at the Convention Center have the registration fee waived, and they must present a certificate of enrollment.",
+ "dates": [
+  {
+   "what": "Event period of the 2026 Gangneung ITS World Congress (5 days)",
+   "when": "Monday 19 October 2026 to Friday 23 October 2026",
+   "original_ko": "2026. 10. 19.(월) ~ 23.(금), 5일간",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Registration for the academic conference and policy sessions at the Convention Center is paid, but it is free for undergraduate students who register.",
+  "Undergraduate students who register for the academic sessions must present a certificate of enrollment (재학증명서).",
+  "Entry to the Exhibition Hall is free for those who register as exhibition visitors.",
+  "The technology demonstration area and the outdoor plaza events are free.",
+  "On-site registration is available at the entrances of the Convention Center and the Exhibition Hall."
+ ],
+ "steps": [
+  "Read the attached event leaflet (2026 ITS세계총회 행사안내 리플렛.pdf). Its content was not part of the notice text and has not been read or translated here.",
+  "Undergraduate students attending the academic sessions: obtain a certificate of enrollment (재학증명서) and bring it to the venue.",
+  "Go to Gangneung Olympic Park (100 Surigol-gil, Gangneung) between 19 and 23 October 2026.",
+  "Register on site at the entrance of the Convention Center (academic conference) or the Exhibition Hall (exhibition visitors). Undergraduate students present the certificate of enrollment there to have the conference registration fee waived."
+ ],
+ "translation": "Title: Information on the 2026 Gangneung ITS World Congress\n\nThe Ministry of Land, Infrastructure and Transport and Gangneung City are hosting the 2026 Gangneung ITS World Congress in Gangneung. World-leading experts, companies and government officials in advanced transport technology and future mobility will take part.\n\nA. Event name: 2026 Gangneung ITS World Congress\n\nB. Event period: Monday 19 October to Friday 23 October 2026 (5 days)\n\nC. Venue: Gangneung Olympic Park area (100 Surigol-gil)\n\nD. Main programme\n- (Convention Center) ITS academic conference and policy sessions (paid registration; free for undergraduate students who register)\n- (Exhibition Hall) Exhibition of ITS technologies and products by Korean and international companies and institutions (free with exhibition visitor registration)\n- (Technology Demonstration Area) Demonstrations and hands-on experience of advanced technologies such as autonomous driving and smart pedestrian crossings (free)\n- (Outdoor Plaza) Side events including culture, tourism and science-technology experiences, food and beverage booths, and cultural performances (free)\n\n※ On-site registration is operated at the entrances of the Convention Center and the Exhibition Hall. Undergraduate students registering to attend the academic sessions must present a certificate of enrollment (재학증명서).\n\n※ Undergraduate students are exempt from the registration fee when they register to attend the academic sessions at the Convention Center.\n\nAttachment (1 file): 2026 ITS세계총회 행사안내 리플렛.pdf (2 MB), an event information leaflet. The content of this attachment was not read.",
+ "id": 24042,
+ "text_hash": "c24dcdef9c4ab315",
+ "images": 0,
+ "attachments": [
+  "2026 ITS세계총회 행사안내 리플렛.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

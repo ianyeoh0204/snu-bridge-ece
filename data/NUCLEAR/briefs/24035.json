@@ -1,0 +1,32 @@
+{
+ "title_en": "Gong Busking Campus Performance Event, October 14, 2026",
+ "summary": "Members of the College of Engineering are invited to the \"Gong Busking\" performance event on Wednesday, October 14, 2026, from 12:30 to 13:30. The event will take place at the College of Engineering Red Square, or on the 1st floor pilotis of Building 38 in case of rain. Sandwiches will be provided to the first 50 people, per performance team.",
+ "applies_to": "Members of the College of Engineering. The notice invites attendance and does not state that it is mandatory. All members are also asked to note in advance that the event will cause noise, and to cooperate.",
+ "dates": [
+  {
+   "what": "Gong Busking event (performances; sandwiches for the first 50 people per performance team)",
+   "when": "Wednesday, October 14, 2026, 12:30–13:30",
+   "original_ko": "2026. 10. 14.(수) 12:30 ~ 13:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "In case of rain, the event will move from the College of Engineering Red Square to the 1st floor pilotis of Building 38.",
+  "Sandwiches are provided only to the first 50 people, counted per performance team.",
+  "The event will cause noise, and members are asked to cooperate."
+ ],
+ "steps": [
+  "Read this notice in advance and expect noise around the venue during the event.",
+  "Go to the College of Engineering Red Square on Wednesday, October 14, 2026, by 12:30. If it rains, go to the 1st floor pilotis of Building 38 instead.",
+  "Arrive early if you wish to receive a sandwich, as they are provided only to the first 50 people per performance team."
+ ],
+ "translation": "Notice: Gong Busking Event\n\nTo discover and share the cultural capabilities and artistic potential of Seoul National University College of Engineering students, and to turn campus spaces into open cultural spaces in everyday life, creating a free and lively campus culture, we will hold \"Gong Busking\" as follows.\n\n1. Date and time: Wednesday, October 14, 2026, 12:30–13:30\n\n2. Venue: College of Engineering Red Square (in case of rain, 1st floor pilotis of Building 38)\n\n3. Participants: Members of the College of Engineering\n\n4. Program: Gong Busking. ※ Sandwiches will be provided to the first 50 people (per performance team).\n- Performers: Clean Live (클린라이브) and one solo performer (the name is given in the original notice)\n\n5. Request for cooperation: Please note in advance that the event will cause noise, and we ask for your cooperation.",
+ "id": 24035,
+ "text_hash": "9ac95bfbe0d1cba0",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

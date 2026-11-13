@@ -1,0 +1,31 @@
+{
+ "title_en": "SNU Commons Distinguished Chair Professor Lecture Series: First Lecture",
+ "summary": "All members of the university, including students and faculty and staff, may attend the first lecture of the SNU Commons Distinguished Chair Professor Lecture Series. The lecture will take place on Friday, 20 November 2026 at 11:30 in the Lecture Hall on the 1st floor of the SNU Commons Administration Building. Those wishing to attend must apply through the SNU extracurricular programme website (SNU 비교과 사이트).",
+ "applies_to": "All members of the university (students, faculty, staff and others). The notice does not state that attendance is mandatory.",
+ "dates": [
+  {
+   "what": "First lecture of the series",
+   "when": "Friday, 20 November 2026, 11:30",
+   "original_ko": "2026. 11. 20.(금) 11:30",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "A souvenir and a lunch (sandwich) are given only to those who attend on the day of the event.",
+  "Applications are made through the SNU extracurricular programme website (SNU 비교과 사이트).",
+  "The notice does not give an application deadline or a date for the second lecture."
+ ],
+ "steps": [
+  "Apply to attend through the SNU extracurricular programme website (SNU 비교과 사이트), using the application link in the original notice (the link itself was not included in the text provided).",
+  "Attend the lecture on Friday, 20 November 2026 at 11:30 in the Lecture Hall (렉처홀), 1st floor, SNU Commons Administration Building (행정관), to receive the souvenir and lunch."
+ ],
+ "translation": "SNU Commons (Distinguished) Chair Professor Lecture Series\n\nA. Event: SNU Commons (Distinguished) Chair Professor Lecture Series, Lecture No. 1\n\nB. Speaker: A Distinguished Chair Professor (특임석좌교수) of the Department of Sociology, College of Social Sciences (name given in the original notice)\n\nC. Date and time: Friday, 20 November 2026, 11:30\n\nD. Venue: Lecture Hall (렉처홀), 1st floor, SNU Commons Administration Building (행정관)\n\nE. Eligible participants: All members of the university (students, faculty, staff and others)\n\nF. How to apply: Apply through the SNU extracurricular programme website (SNU 비교과 사이트)\n\n※ A souvenir and lunch (sandwich) will be provided only to those who attend on the day of the event: participation application link (the link was not included in the text provided).\n\n※ Next lecture (No. 2): A Distinguished Chair Professor of the Department of Agricultural Biotechnology, College of Agriculture and Life Sciences (name given in the original notice). No date is stated.",
+ "id": 24073,
+ "text_hash": "c539c54e5872fd5a",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

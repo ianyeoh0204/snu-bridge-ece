@@ -1,0 +1,77 @@
+{
+ "title_en": "Selection Schedule for National Work Scholarship Winter Vacation Intensive Work, 2026",
+ "summary": "Undergraduate students currently enrolled who applied for the general type of the National Work Scholarship for Fall 2026 and wish to join the winter vacation intensive work program must apply for their preferred workplaces. Applications are made by the students themselves on the Korea Student Aid Foundation website or mobile service from 30 October 2026, 9:00, to 12 November 2026, 18:00. Final selection results will be released by the Foundation on 14 December 2026.",
+ "applies_to": "Currently enrolled undergraduate students who applied for the general type of the National Work Scholarship for Fall 2026 (2026학년도 2학기). Participation is optional. Students who wish to participate must submit a preferred workplace application.",
+ "dates": [
+  {
+   "what": "Preferred workplace application period (must for anyone wishing to participate)",
+   "when": "Friday 30 October 2026, 9:00, to Thursday 12 November 2026, 18:00",
+   "original_ko": "2026. 10. 30.(금) 9시 ~ 11. 12.(목) 18시",
+   "verified": true
+  },
+  {
+   "what": "Foundation matches work institutions with students and confirms priority recommendation candidates",
+   "when": "Monday 23 November 2026",
+   "original_ko": "2026. 11. 23.(월)",
+   "verified": true
+  },
+  {
+   "what": "University headquarters confirms selection candidates according to the university's own selection criteria",
+   "when": "Friday 4 December 2026",
+   "original_ko": "2026. 12. 4.(금)",
+   "verified": true
+  },
+  {
+   "what": "College gives final confirmation of willingness to work, then recommends students and registers them in the system",
+   "when": "By Wednesday 9 December 2026",
+   "original_ko": "~ 2026. 12. 9.(수)",
+   "verified": true
+  },
+  {
+   "what": "University headquarters checks the final selected students",
+   "when": "By Friday 11 December 2026",
+   "original_ko": "~ 2026. 12. 11.(금)",
+   "verified": true
+  },
+  {
+   "what": "Foundation releases final selection results",
+   "when": "Monday 14 December 2026",
+   "original_ko": "2026. 12. 14.(월)",
+   "verified": true
+  },
+  {
+   "what": "Work period for selected students",
+   "when": "Friday 1 January 2027 to Sunday 14 February 2027",
+   "original_ko": "2027. 1. 1.(금) ~ 2. 14.(일)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only enrolled undergraduate students who applied for the general type of the Fall 2026 National Work Scholarship are eligible.",
+  "The preferred workplace application is mandatory; students must submit it themselves.",
+  "Students may choose up to 5 off-campus work institutions, and placement is matched automatically from among those choices.",
+  "About 20 students will be selected.",
+  "Selection candidates are confirmed according to the university's own selection criteria, given in the attached PDF, which was not read for this translation.",
+  "Working hours are limited to a maximum of 8 hours per day and 40 hours per week.",
+  "The scholarship is paid at 12,790 won per hour.",
+  "The college confirms each student's willingness to work before final recommendation.",
+  "The schedule may change depending on the Foundation's and the university's academic schedules."
+ ],
+ "steps": [
+  "Check the attached file with the university's own selection criteria (2026학년도 2학기 국가근로장학금 서울대학교 자체선발기준(동계방학 집중근로).pdf); its content was not read for this translation.",
+  "Between 30 October 2026, 9:00, and 12 November 2026, 18:00, apply on the Korea Student Aid Foundation website or mobile service via [Menu] > [Scholarships (장학금)] > [National Work Scholarship (국가근로장학금)] > [Work Scholarship Management (근로장학관리)] > [Preferred Workplace Application (희망근로지 신청)], choosing up to 5 off-campus work institutions.",
+  "When the college contacts you for final confirmation of your willingness to work (by 9 December 2026), confirm it.",
+  "Check the final selection results released by the Foundation on 14 December 2026."
+ ],
+ "translation": "2026 National Work Scholarship: Winter Vacation Intensive Work Selection Schedule\n\nWe announce the selection schedule for the 2026 National Work Scholarship winter vacation intensive work program. Students who wish to participate should apply within the deadline.\n\nA. Overview of the winter vacation intensive work program\n• (Eligibility) Enrolled undergraduate students who applied for the general type of the National Work Scholarship for Fall 2026\n• (Work period) 1 January 2027 (Fri) to 14 February 2027 (Sun)\n• (Work institution) Automatically matched from among the off-campus work institutions (up to 5) selected during the preferred workplace application period\n• (Number selected) About 20\n• (Working hours) Up to 8 hours per day and no more than 40 hours per week\n• (Scholarship) 12,790 won per hour\n\nB. How to participate\n- Preferred workplace application [희망근로지 신청] (mandatory): 30 October 2026 (Fri), 9:00, to 12 November 2026 (Thu), 18:00\n※ Students apply themselves on the Korea Student Aid Foundation website or mobile service\n• [Menu] > [Scholarships (장학금)] > [National Work Scholarship (국가근로장학금)] > [Work Scholarship Management (근로장학관리)] > [Preferred Workplace Application (희망근로지 신청)]\n\nC. Selection schedule\n1) (Foundation) Matching of work institutions and scholarship students, and confirmation of priority recommendation candidates: 23 November 2026 (Mon)\n2) (University headquarters) Confirmation of selection candidates from among the priority recommendation candidates according to the university's own selection criteria: 4 December 2026 (Fri)\n3) (College) Final confirmation of willingness to work, then recommendation of National Work Scholarship students and registration in the system: by 9 December 2026 (Wed)\n4) (University headquarters) Confirmation of final selected students: by 11 December 2026 (Fri)\n5) (Foundation) Release of final selection results: 14 December 2026 (Mon)\n※ The above schedule may change depending on the Foundation's and the university's academic schedules.\n\nAttachment (1)\n2026학년도 2학기 국가근로장학금 서울대학교 자체선발기준(동계방학 집중근로).pdf (121 KB) — Seoul National University's own selection criteria for the Fall 2026 National Work Scholarship (winter vacation intensive work). The content of this attachment was not read.",
+ "id": 24063,
+ "text_hash": "384bcff05cc59b5c",
+ "images": 0,
+ "attachments": [
+  "2026학년도 2학기 국가근로장학금 서울대학교 자체선발기준(동계방학 집중근로).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

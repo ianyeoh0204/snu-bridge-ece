@@ -82,6 +82,8 @@ def read(url: str) -> dict:
     page = _fetch(url)
     start = page.rfind("조회수")
     end = page.find('class="rbtn', start)  # the row of buttons under the notice
+    if end < 0:
+        end = page.find('class="function"', start)  # the same row on Nuclear Engineering's pages
     if start < 0 or end < 0:
         raise RuntimeError(f"Notice page layout changed, cannot find the body: {url}")
     region = page[start:end].rsplit("<", 1)[0]  # drop the tag the cut landed in

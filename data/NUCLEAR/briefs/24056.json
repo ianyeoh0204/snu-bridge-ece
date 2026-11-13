@@ -1,0 +1,45 @@
+{
+ "title_en": "Central Library Researcher Career Mentoring Lectures, Sessions 6–8 (November 2026)",
+ "summary": "The Central Library will hold its 6th, 7th and 8th Researcher Career Mentoring Lectures on 11, 12 and 13 November 2026 to support researchers' research skills and paper writing; department members are encouraged to attend. Anyone who wishes to attend must first register online through the Seoul National University Central Library's training application page (이용교육 신청). Sessions 6 and 8 are held in person in Yang Doo-seok Hall, 3rd floor, Kwanjeong Library, and Session 7 is held online via Zoom.",
+ "applies_to": "Researchers at the university, including members of the department, who wish to attend. Attendance is voluntary and encouraged, but online advance registration is mandatory for anyone who attends.",
+ "dates": [
+  {
+   "what": "Session 6 lecture (in person, Yang Doo-seok Hall, 3rd floor, Kwanjeong Library)",
+   "when": "Wednesday 11 November 2026, 14:00–15:30",
+   "original_ko": "2026. 11. 11.(수) 14:00~15:30",
+   "verified": true
+  },
+  {
+   "what": "Session 7 lecture (online via Zoom)",
+   "when": "Thursday 12 November 2026, 15:00–16:30",
+   "original_ko": "2026. 11. 12.(목) 15:00~16:30",
+   "verified": true
+  },
+  {
+   "what": "Session 8 lecture (in person, Yang Doo-seok Hall, 3rd floor, Kwanjeong Library)",
+   "when": "Friday 13 November 2026, 10:30–12:00",
+   "original_ko": "2026. 11. 13.(금) 10:30~12:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Online advance registration is mandatory in order to attend.",
+  "The notice does not state a registration deadline.",
+  "Sessions 6 and 8 are in person only; Session 7 is online only (Zoom).",
+  "The notice does not give the Zoom link for Session 7."
+ ],
+ "steps": [
+  "Register online in advance through the Seoul National University Central Library website, under the training application menu (이용교육 신청 – 서울대학교 중앙도서관), for each session you wish to attend.",
+  "In-person sessions (Sessions 6 and 8): Attend at Yang Doo-seok Hall (양두석홀), 3rd floor, Kwanjeong Library (관정관), at the scheduled time.",
+  "Online session (Session 7): Join via Zoom at the scheduled time."
+ ],
+ "translation": "Notice: 2026 Central Library Researcher Career Mentoring Lectures, Sessions 6, 7 and 8\n\nTo strengthen the research capabilities of researchers at the university and to support paper writing, the Central Library will hold special lectures as follows. Please inform your members so that they can participate actively.\n\nA. Event: Sessions 6, 7 and 8 of the Central Library Researcher Career Mentoring Lectures (「중앙도서관 연구자 커리어 멘토링 특강」)\n\nB. Dates and times\n- Session 6: Wednesday 11 November 2026, 14:00–15:30\n- Session 7: Thursday 12 November 2026, 15:00–16:30\n- Session 8: Friday 13 November 2026, 10:30–12:00\n\nC. Details\n\nSession 6\n- Date and time: Wednesday 11 November 2026, 14:00–15:30\n- Topic and content: Transversal comparative sociology: doing social science that surveys boundaries\n- Speaker: a current senior researcher at the Asia Research Institute, who holds a PhD from the Department of Sociology (name given in the original notice)\n- Format: In person (Yang Doo-seok Hall, 3rd floor, Kwanjeong Library [관정관 3층 양두석홀])\n\nSession 7\n- Date and time: Thursday 12 November 2026, 15:00–16:30\n- Topic and content: How to structure a paper that attracts journal editors' interest\n- Speaker: a current assistant professor at Dongshin University, who holds a PhD in educational psychology from the University of Munich (name given in the original notice)\n- Format: Online (Zoom)\n\nSession 8\n- Date and time: Friday 13 November 2026, 10:30–12:00\n- Topic and content: How design development research becomes a paper: paper design and experience presenting at international conferences\n- Speaker: a current doctoral student in the Department of Clothing and Textiles, who holds a master's degree from the same department (name given in the original notice)\n- Format: In person (Yang Doo-seok Hall, 3rd floor, Kwanjeong Library [관정관 3층 양두석홀])\n\nD. How to participate: Online advance registration (mandatory), via the training application page (이용교육 신청 – 서울대학교 중앙도서관) of the Seoul National University Central Library.",
+ "id": 24056,
+ "text_hash": "8d7fbc0e5b82a358",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

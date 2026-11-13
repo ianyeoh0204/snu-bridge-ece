@@ -1,0 +1,50 @@
+{
+ "title_en": "SSAFY Cohort 17 Recruitment for Hope Ladder Type I Scholarship Recipients",
+ "summary": "The Korea Student Aid Foundation is recruiting trainees for Cohort 17 of the Samsung Youth SW·AI Academy (SSAFY), and interested Hope Ladder Type I (희망사다리Ⅰ유형) scholarship recipients are invited to apply. Applications must be submitted online through the official SSAFY website (http://www.ssafy.com) between 26 October and 9 November 2026. Applying is optional.",
+ "applies_to": "Hope Ladder Type I (희망사다리Ⅰ유형) scholarship recipients who are interested in the programme (optional, not mandatory). Applicants must be graduates or expected graduates of a four-year university, in any major; expected graduates must be able to graduate by February 2027.",
+ "dates": [
+  {
+   "what": "Application period for SSAFY Cohort 17",
+   "when": "Monday 26 October 2026 to Monday 9 November 2026",
+   "original_ko": "’26. 10. 26.(월) ~ ’26. 11. 9.(월)",
+   "verified": true
+  },
+  {
+   "what": "Latest graduation date for applicants who are expected graduates",
+   "when": "By February 2027",
+   "original_ko": "2027년 2월 이내",
+   "verified": true
+  },
+  {
+   "what": "SSAFY training period (one year)",
+   "when": "January 2027 to December 2027",
+   "original_ko": "’27. 1. ~ ’27. 12. (1년)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must be graduates or expected graduates of a four-year university; any major is eligible.",
+  "Expected graduates are eligible only if they can graduate by February 2027.",
+  "Applications are accepted only online through the official SSAFY website.",
+  "The training lasts one year, from January to December 2027.",
+  "Hope Ladder Type I scholarship recipients who take part will have it recognised as completion of the Fall 2026 basic job training (직무기초교육).",
+  "The information session schedule is not stated in the notice and must be checked via the information session link."
+ ],
+ "steps": [
+  "Read the attached promotional material (붙임. 홍보 자료.zip); its contents were not read for this translation.",
+  "Check the information session schedule using the link http://forms.gle/fDihf6AZrGXC4qMj6.",
+  "Apply online through the official SSAFY website (http://www.ssafy.com) between 26 October and 9 November 2026.",
+  "For questions, use the contact details given in the original notice."
+ ],
+ "translation": "Recruitment for a Training Programme for Hope Ladder Type I Scholarship Recipients\n\nThe Korea Student Aid Foundation is recruiting trainees for Cohort 17 of the Samsung Youth SW·AI Academy (SSAFY) for Hope Ladder Type I (희망사다리Ⅰ유형) scholarship recipients. Interested students are invited to apply.\n\n□ Overview of the Samsung Youth SW·AI Academy (SSAFY)\n\n○ (Application period) Monday 26 October 2026 to Monday 9 November 2026\n\n○ (Eligibility) Graduates or expected graduates of a four-year university (any major)\n※ Expected graduates must be able to graduate by February 2027.\n\n○ (Training period) January 2027 to December 2027 (one year)\n\n○ (How to apply) Online application through the official SSAFY website (http://www.ssafy.com)\n\n○ (Information session) http://forms.gle/fDihf6AZrGXC4qMj6 (schedule must be checked)\n\n○ (Contact) The phone number and email address are given in the original notice.\n\n○ (Benefit for scholarship recipients) Recognised as completion of the Fall 2026 basic job training (직무기초교육).\n\nAttachment (1 file)\nAttachment: Promotional material (홍보 자료.zip, 5 MB). The contents of this attachment were not read.",
+ "id": 24054,
+ "text_hash": "b0f1b64b1c27d0b0",
+ "images": 0,
+ "attachments": [
+  "붙임. 홍보 자료.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

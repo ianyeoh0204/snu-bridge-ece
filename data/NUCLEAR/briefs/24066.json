@@ -1,0 +1,41 @@
+{
+ "title_en": "2026 National University Student AI Startup Hackathon",
+ "summary": "Interested university students may take part in the 2026 AI Startup Hackathon for University Students Nationwide, hosted by the Hallym University Startup Support Headquarters. Applications are made through a Google Form reached by scanning the QR code on the event poster, between 27 October and 17:00 on 11 November 2026. The competition takes place on 19–20 November 2026 in the gymnasium on the 3rd floor of the Recreation Center, Hallym University.",
+ "applies_to": "University students nationwide who are interested, including members of startup clubs. Participation is voluntary, not mandatory.",
+ "dates": [
+  {
+   "what": "Application period for the hackathon (closes at 17:00 on the final day)",
+   "when": "Tuesday 27 October 2026 to Wednesday 11 November 2026, 17:00",
+   "original_ko": "2026. 10. 27.(화) ~ 11. 11.(수) 17:00",
+   "verified": true
+  },
+  {
+   "what": "Hackathon competition period, held at the Hallym University Recreation Center, 3rd-floor gymnasium",
+   "when": "Thursday 19 November 2026 to Friday 20 November 2026",
+   "original_ko": "2026. 11. 19.(목) ~ 20.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications close at 17:00 on 11 November 2026.",
+  "The competition is limited to 100 participants in total: 25 teams.",
+  "Each team may have no more than 4 members.",
+  "Applications are accepted only through the Google Form linked from the QR code on the event poster.",
+  "The poster was not included in the notice text and was not read, so the QR code and form link are not available here."
+ ],
+ "steps": [
+  "Obtain the event poster from the original notice; the poster was not included in the text and was not read.",
+  "Scan the QR code on the poster to open the Google Form.",
+  "Complete and submit the Google Form application by 17:00 on 11 November 2026.",
+  "Attend the competition on 19–20 November 2026 at the gymnasium on the 3rd floor of the Recreation Center, Hallym University."
+ ],
+ "translation": "2026 AI Startup Hackathon for University Students Nationwide\n\nThe Hallym University Startup Support Headquarters is holding the \"2026 AI Startup Hackathon for University Students Nationwide\" for university students across the country, in order to generate innovative local startup ideas that combine creative perspectives with AI technology. Interested students are encouraged to participate.\n\n3. Event Overview\n\nA. Competition period / venue: Thursday 19 November 2026 to Friday 20 November 2026 / Gymnasium, 3rd floor, Recreation Center, Hallym University\n※ Competition application: Tuesday 27 October 2026 to Wednesday 11 November 2026, 17:00\n\nB. Number of participants: 100 in total (25 teams, with a maximum of 4 members per team)\n\nC. Theme: Discover a startup idea using AI (EdTech)\n\nD. Prizes: Total prize money of KRW 15,000,000\n\nE. How to apply: Scan the QR code on the poster and apply through the Google Form. [The poster was not included in the notice text and was not read.]\n\nF. Request: Please help promote participation among startup clubs and interested students.\n\n[Note: The original notice begins its list at item 3; items 1 and 2 do not appear in the text.]",
+ "id": 24066,
+ "text_hash": "a6a875867c28136e",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

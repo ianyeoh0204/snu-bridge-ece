@@ -1,0 +1,44 @@
+{
+ "title_en": "Fall 2026 Tuition Installment Payment: Fourth (Final) Payment Schedule",
+ "summary": "Undergraduate and graduate enrolled students who applied to pay tuition in installments, and students beyond the standard period of study who owe an additional payment after a credit change, must pay the fourth (final) installment for Fall 2026. Payment must be completed between 09:00 on Monday, 23 November 2026 and 17:00 on Wednesday, 25 November 2026. Students who do not pay in full within this period will be dismissed for non-registration.",
+ "applies_to": "Mandatory for (1) undergraduate and graduate enrolled students who applied for installment payment of Fall 2026 tuition, and (2) undergraduate and graduate students who have exceeded the standard period of study and must make an additional payment as a settlement following a change in credits. In the administrative system, those to pay are listed as unsettled (미정산자), excluding students on leave of absence, with a positive settlement amount (수납정산금액).",
+ "dates": [
+  {
+   "what": "Payment period for the fourth (final) installment of Fall 2026 tuition (payment possible 24 hours a day during the period)",
+   "when": "Monday, 23 November 2026, 09:00 to Wednesday, 25 November 2026, 17:00",
+   "original_ko": "2026년 11월 23일(월) 09:00 ~ 11월 25일(수) 17:00",
+   "verified": true
+  },
+  {
+   "what": "Payment deadline on the last day of the period",
+   "when": "Wednesday, 25 November 2026, 17:00",
+   "original_ko": "마지막 날 17시 마감",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Payment can be made 24 hours a day during the payment period, but it closes at 17:00 on the last day.",
+  "Students who do not pay the full amount within the period will be dismissed for non-registration (미등록 제적).",
+  "Students on leave of absence are excluded from the list of those required to pay.",
+  "Only those whose settlement amount (수납정산금액) is positive are required to pay."
+ ],
+ "steps": [
+  "Read the attached tuition payment guide (an English version is attached as [붙임1-2]) and the tuition fee tables; their contents were not read for this translation, so check them for how to pay.",
+  "Confirm whether you are required to pay and the amount due; the notice gives the lookup path 학사행정 > 등록 > 등록대상자관리 > 등록대상자조회및산출처리 (conditions: payment status unsettled, students on leave excluded, positive settlement amount). Contact the department office if unsure; contact details are in the original notice.",
+  "Pay the full amount between 09:00 on 23 November 2026 and 17:00 on 25 November 2026."
+ ],
+ "translation": "Notice of the Payment Schedule for the 4th (Final) Installment of Fall 2026 Tuition\n\nThe payment schedule for the 4th (final) installment of Fall 2026 tuition is announced as follows. Students paying in installments are asked to refer to the schedule and complete their tuition payment within the deadline.\n\nA. Those required to pay:\n- Undergraduate and graduate enrolled students who applied for installment payment\n- Undergraduate and graduate students who have exceeded the standard period of study and must make an additional payment as a settlement following a change in credits\n※ How to look up those required to pay: Academic Administration > Registration > Registration Target Management > Registration Target Inquiry and Calculation (학사행정 > 등록 > 등록대상자관리 > 등록대상자조회및산출처리)\n(Search conditions: payment status - unsettled (미정산자); in the list excluding students on leave of absence, those whose settlement amount (수납정산금액) is a positive number)\n\nB. Payment period: Monday, 23 November 2026, 09:00 to Wednesday, 25 November 2026, 17:00\n※ Payment is possible 24 hours a day during the registration period (closes at 17:00 on the last day).\n※ Students who do not pay in full within the period will be dismissed for non-registration.\n\nAttachments (4) (the contents of these files were not read):\n[붙임1-1] Fall 2026 Enrolled Students Tuition Payment Guide, Korean (PDF, 251 KB)\n[붙임1-2] Fall 2026 Enrolled Students Tuition Payment Guide, English (PDF, 217 KB)\n[붙임2] Fall 2026 Undergraduate and Graduate Tuition Fee Table (PDF, 66 KB)\n[붙임3] 2026 Tuition Fee Table for Students Exceeding the Prescribed Number of Semesters (PDF, 97 KB)",
+ "id": 24080,
+ "text_hash": "d0765d9d7c6a2228",
+ "images": 0,
+ "attachments": [
+  "[붙임1-1] 2026-2 재학생 등록금 납부 안내문_국문.pdf",
+  "[붙임1-2] 2026-2 재학생 등록금 납부 안내문_영문.pdf",
+  "[붙임2] 2026학년도 제2학기 대학(원)생 등록금 일람표.pdf",
+  "[붙임3] 2026학년도 규정학기초과자 등록금 일람표.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

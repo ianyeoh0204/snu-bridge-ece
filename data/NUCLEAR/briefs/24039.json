@@ -1,0 +1,42 @@
+{
+ "title_en": "2026 Korea Biosafety Association On-Site Biosafety Training (Biological Safety Cabinet Management)",
+ "summary": "Those who wish to attend the Korean Biosafety Association's on-site biosafety training must complete the participation application form and submit it by email between 19 October and 29 October 2026; the email address is in the original notice. The training takes place on 17 November 2026, 13:30–16:30, at the Safety Experience Center classroom, 1st floor, SNU Environmental Health and Safety Center (Building 97). Places are limited to 50 and are allocated on a first-come, first-served basis.",
+ "applies_to": "",
+ "dates": [
+  {
+   "what": "Registration period (application form submitted by email)",
+   "when": "Monday 19 October 2026 to Thursday 29 October 2026",
+   "original_ko": "2026년 10월 19일(월) ~ 10월 29일(목)",
+   "verified": true
+  },
+  {
+   "what": "Training session (3 hours)",
+   "when": "Tuesday 17 November 2026, 13:30–16:30",
+   "original_ko": "2026년 11월 17일(화) 13:30~16:30 (3시간)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Places are limited to 50 and are filled on a first-come, first-served basis.",
+  "The training is free of charge.",
+  "Applications are accepted only by email, using the participation application form provided as an attachment."
+ ],
+ "steps": [
+  "Read the attached guide (2026 찾아가는 생물안전 현장교육 안내.hwp); its content was not read for this translation.",
+  "Download and complete the attached participation application form (2026 찾아가는 생물안전 현장교육 참가신청서(추가접수).xlsx).",
+  "Email the completed form between 19 and 29 October 2026 to the address given in the original notice.",
+  "Attend the training on 17 November 2026 at 13:30 at the Safety Experience Center classroom, 1st floor, SNU Environmental Health and Safety Center (Building 97)."
+ ],
+ "translation": "Title: 2026 Korean Biosafety Association On-Site Biosafety Training\n\n□ 2026 Korean Biosafety Association \"On-Site Biosafety Training\" [찾아가는 생물안전 현장교육]\n- Organiser: Korean Biosafety Association (incorporated association)\n- Sponsors: Seoul National University Environmental Health and Safety Center [환경안전원]; International CLS [국제씨엘에스]\n- Date and time: Tuesday 17 November 2026, 13:30–16:30 (3 hours)\n- Venue: Safety Experience Center classroom [안전체험센터 교육장], 1st floor, Seoul National University Environmental Health and Safety Center (Building 97)\n- Training content: Safety management of biological safety cabinets\n- Participation fee: Free\n- Capacity: 50 persons (first-come, first-served)\n- Registration period: Monday 19 October 2026 to Thursday 29 October 2026\n- How to register: Complete the participation application form (template) and submit it by email (the email address is given in the original notice).\n\nAttachments (2):\n2026 찾아가는 생물안전 현장교육 안내.hwp (160 KB) – training guide\n2026 찾아가는 생물안전 현장교육 참가신청서(추가접수).xlsx (15 KB) – participation application form (additional registration)\n\nNote: The contents of the attachments were not read for this translation.",
+ "id": 24039,
+ "text_hash": "1143780de0f1d5db",
+ "images": 1,
+ "attachments": [
+  "2026 찾아가는 생물안전 현장교육 안내.hwp",
+  "2026 찾아가는 생물안전 현장교육 참가신청서(추가접수).xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

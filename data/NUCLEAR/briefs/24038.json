@@ -1,0 +1,82 @@
+{
+ "title_en": "Winter Session 2026 Course Registration Schedule",
+ "summary": "Students who wish to take Winter Session 2026 courses must register within the stated periods: preliminary registration from 20 to 23 October 2026 and course registration from 27 October to 3 November 2026 (excluding weekends). Registered students must print their tuition bill and pay the tuition by 23 November 2026 (first period) or 27 November 2026 (final period); unpaid registrations are automatically cancelled. Graduating students must confirm their graduation requirements in advance and must complete registration within the period.",
+ "applies_to": "Students who wish to register for Winter Session 2026 (2026학년도 동계 계절수업) courses; registration is optional. Graduating students who need winter courses must complete registration within the period. The rule against retaking a course currently being taken in Fall 2026 applies to undergraduate (학사과정) students.",
+ "dates": [
+  {
+   "what": "Preliminary course registration",
+   "when": "Tuesday 20 October 2026 to Friday 23 October 2026",
+   "original_ko": "2026. 10. 20.(화) ∼ 10. 23.(금)",
+   "verified": true
+  },
+  {
+   "what": "Course registration (Saturdays and Sundays excluded)",
+   "when": "Tuesday 27 October 2026 to Tuesday 3 November 2026",
+   "original_ko": "2026. 10. 27.(화) ∼ 11. 3.(화)",
+   "verified": true
+  },
+  {
+   "what": "Course registration changes",
+   "when": "Wednesday 11 November 2026 to Friday 13 November 2026",
+   "original_ko": "2026. 11. 11.(수) ∼ 11. 13.(금)",
+   "verified": true
+  },
+  {
+   "what": "Tuition bill printing and tuition payment, first period",
+   "when": "Wednesday 18 November 2026 to Monday 23 November 2026",
+   "original_ko": "2026. 11. 18.(수) ∼ 11. 23.(월)",
+   "verified": true
+  },
+  {
+   "what": "Tuition bill printing and tuition payment, final period",
+   "when": "Thursday 26 November 2026 to Friday 27 November 2026",
+   "original_ko": "2026. 11. 26.(목) ∼ 11. 27.(금)",
+   "verified": true
+  },
+  {
+   "what": "Course registration cancellation (course withdrawal)",
+   "when": "Friday 11 December 2026 to Thursday 7 January 2027",
+   "original_ko": "2026. 12. 11.(금) ∼ 2027. 1. 7(목)",
+   "verified": true
+  },
+  {
+   "what": "Winter Session class period",
+   "when": "Tuesday 22 December 2026 to Monday 25 January 2027",
+   "original_ko": "2026. 12. 22.(화) ∼ 2027. 1. 25.(월)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Course registration is not open on Saturdays or Sundays during the registration period.",
+  "If tuition is not paid by bank payment or virtual account within the payment period, the course registration is automatically cancelled.",
+  "Under the anti-reselling system, courses cannot be cancelled during first-come-first-served registration or during the time for registering for seats vacated by cancellations in the change period.",
+  "A maximum of 9 credits may be registered, including credits taken at other Korean universities through credit exchange.",
+  "Undergraduate students may not retake in Winter Session a course they are currently taking in Fall 2026.",
+  "Graduating students must check in advance whether they meet graduation requirements and must complete registration within the period.",
+  "Over-quota (정원 외) requests and course cancellations must follow the stated procedure and be completed within the period; no changes are possible after the period ends."
+ ],
+ "steps": [
+  "Read the attached registration guide, the course registration system user manual, the anti-reselling card news, the notice on registration misconduct and the course overlap request manual (attachments were not read for this translation).",
+  "Graduating students: confirm whether you meet your graduation requirements before registering.",
+  "Complete preliminary course registration from 20 to 23 October 2026.",
+  "Register for courses from 27 October to 3 November 2026 (not on weekends), up to 9 credits including domestic credit exchange.",
+  "If needed, make registration changes from 11 to 13 November 2026, and complete any over-quota request within the period.",
+  "Print the tuition bill and pay by bank or virtual account from 18 to 23 November 2026, or at the latest in the final period from 26 to 27 November 2026.",
+  "If you wish to cancel a course, do so between 11 December 2026 and 7 January 2027."
+ ],
+ "translation": "Winter Session 2026 Course Registration Guide\n\nWe announce the course registration schedule for the 2026 Winter Session.\n\nA. Course registration schedule\n\n- Preliminary course registration: 20 (Tue) – 23 (Fri) October 2026\n- Course registration: 27 October (Tue) – 3 November (Tue) 2026; Saturdays and Sundays excluded\n- Course registration changes: 11 (Wed) – 13 (Fri) November 2026\n- Printing of tuition bill and tuition payment: (First) 18 (Wed) – 23 (Mon) November 2026; (Final) 26 (Thu) – 27 (Fri) November 2026. If payment is not made by bank payment or virtual account, the course registration is automatically cancelled.\n- Course registration cancellation: 11 December 2026 (Fri) – 7 January 2027 (Thu)\n\nB. Points to note\n\n- Operation of the anti-reselling system: Course cancellation is not possible during first-come-first-served course registration, or during the time for registering for seats vacated by cancellations in the registration change period.\n- Class period and maximum credits: 22 December 2026 (Tue) – 25 January 2027 (Mon); maximum 9 credits (including credit exchange with other universities in Korea).\n- Course registration and retaking: Courses currently being taken in Fall 2026 cannot be retaken in the Winter Session (applies to undergraduate students).\n- Registration by graduating students: Check in advance whether you meet graduation requirements, and be sure to complete registration within the period.\n- Over-quota requests and course cancellation: Familiarise yourself with the procedure and be sure to complete it within the period (no changes are possible after the period).\n\nAttachments:\n1. Winter Session 2026 course registration guide materials, one copy each.\n2. Notice on misconduct in course registration, one copy.\n3. Course overlap registration guide, one copy.\n\nAttached files (5):\n- (Attachment 1-1) 2026 Winter Session Course Registration Guide (Guideline for 2026 Winter Session Course Registration).pdf\n- (Attachment 1-2) Seoul National University Course Registration System User Manual (Korean/English).pdf\n- (Attachment 1-3) Card news on the improved course registration system for preventing course reselling (New CRS Program for Preventing Reselling).pdf\n- (Attachment 2) Notice on misconduct in course registration.pdf\n- (Attachment 3) Course overlap registration manual (Course Overlap Request Manual).pdf\n\n(The contents of the attached files were not available and were not read for this translation.)",
+ "id": 24038,
+ "text_hash": "f7c429110b8db1f3",
+ "images": 0,
+ "attachments": [
+  "(붙임1-1)2026학년도 동계 계절수업 수강신청 안내(Guideline for 2026 Winter Session Course Registration).pdf",
+  "(붙임1-2) 서울대학교 수강신청 시스템 이용자 매뉴얼(국영문).pdf",
+  "(붙임1-3) 강의매매방지 수강신청제도 개선 카드뉴스(New CRS Program for Preventing Reselling).pdf",
+  "(붙임2)수강신청 부정행위 관련 알림.pdf",
+  "(붙임3) 중복수강신청 매뉴얼(Course Overlap Request Manual).pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

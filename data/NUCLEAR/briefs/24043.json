@@ -1,0 +1,40 @@
+{
+ "title_en": "2026 AI Hacking Defense Contest (2026 ACDC): Call for Preliminary Round Participants",
+ "summary": "Anyone of Republic of Korea nationality aged 19 or over who is interested in AI and cybersecurity may enter the 2026 AI Hacking Defense Contest (2026 ACDC); this is optional, not mandatory. The online preliminary round takes place on Saturday, 31 October 2026, from 09:00 to 17:00, and the final round on Tuesday, 1 December 2026, at the Grand InterContinental Seoul Parnas (Samseong-dong, Seoul). The notice does not state how or by when to register; registration details may be in the attached poster, which was not read.",
+ "applies_to": "Optional (not mandatory). Open only to persons of Republic of Korea nationality aged 19 or over who are interested in AI and cybersecurity, in two categories: General (employees of government or public institutions and private companies, etc.) and Student (enrolled students or students on leave of absence at universities or graduate schools located in Korea).",
+ "dates": [
+  {
+   "what": "Preliminary round (online)",
+   "when": "Saturday, 31 October 2026, 09:00–17:00",
+   "original_ko": "2026. 10. 31.(토), 09:00~17:00",
+   "verified": true
+  },
+  {
+   "what": "Final round, at Grand InterContinental Seoul Parnas (Samseong-dong, Seoul)",
+   "when": "Tuesday, 1 December 2026",
+   "original_ko": "2026 12. 1.(화)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only persons of Republic of Korea nationality may participate.",
+  "Participants must be aged 19 or over.",
+  "The Student category is limited to enrolled students or students on leave of absence at universities or graduate schools located in Korea.",
+  "The General category is for employees of government or public institutions and private companies, etc."
+ ],
+ "steps": [
+  "Read the attached poster (2026 AI해킹방어대회(2026 ACDC) 포스터.pdf); its content was not read for this translation, and the notice text itself does not state how or by when to register.",
+  "Take part in the online preliminary round on 31 October 2026, from 09:00 to 17:00."
+ ],
+ "translation": "2026 AI Hacking Defense Contest (2026 ACDC): Call for Preliminary Round Participants\n\nThe 2026 ACDC (AI Cyber Defense Contest, AI 해킹방어대회), hosted by the Ministry of Science and ICT and jointly organised by the Korea Internet & Security Agency and the Korea Information Security Industry Association, will be held.\n\nA. Event name: 2026 AI Hacking Defense Contest (2026 ACDC)\n\nB. Theme: AI everywhere, Cybersecurity Always.\n\nC. Preliminary round (online): Saturday, 31 October 2026, 09:00–17:00\n\nD. Final round: Tuesday, 1 December 2026, Grand InterContinental Seoul Parnas (Samseong-dong, Seoul)\n\nE. Eligibility: Anyone of Republic of Korea nationality aged 19 or over who is interested in AI and cybersecurity\n1) General category: employees working at government or public institutions and private companies, etc.\n2) Student category: enrolled students or students on leave of absence at universities (or graduate schools) located in Korea\n\nAttachment (1 file): 2026 AI해킹방어대회(2026 ACDC) 포스터.pdf (718 KB) [2026 ACDC poster]. The content of this attachment was not read.",
+ "id": 24043,
+ "text_hash": "881b497a65b16b44",
+ "images": 0,
+ "attachments": [
+  "2026 AI해킹방어대회(2026 ACDC) 포스터.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

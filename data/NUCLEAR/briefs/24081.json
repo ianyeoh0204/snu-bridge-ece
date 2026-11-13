@@ -1,0 +1,59 @@
+{
+ "title_en": "Bachelor's Thesis Presentation and Submission for February 2027 Graduates",
+ "summary": "Undergraduate students expected to graduate in February 2027 must submit their thesis details by email by December 11, 2026, and their poster and PDF presentation materials by December 16, 2026. They must present their poster at the thesis presentation on December 21, 2026, at 10:00 AM in Building 36, Room 208. They must then submit the final thesis and the Respect for Life Education completion certificate to the Department of Nuclear Engineering office (Building 36, Room 308-1) by 4:00 PM the same day.",
+ "applies_to": "Undergraduate (bachelor's) students expected to graduate in the 2026 academic year's first graduation round (February 2027). The notice states the required submissions and presentation for these students.",
+ "dates": [
+  {
+   "what": "Deadline to email the thesis title, thesis language (Korean or English) and the name of the thesis supervisor",
+   "when": "By Friday, December 11, 2026",
+   "original_ko": "2026. 12. 11.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "Deadline to submit presentation materials: the poster (to the department office) and the PDF file (by email)",
+   "when": "By Wednesday, December 16, 2026",
+   "original_ko": "2026. 12. 16.(수)까지",
+   "verified": true
+  },
+  {
+   "what": "Bachelor's thesis presentation (poster question-and-answer session)",
+   "when": "Monday, December 21, 2026, 10:00 AM",
+   "original_ko": "2026. 12. 21.(월) , 오전 10시",
+   "verified": true
+  },
+  {
+   "what": "Deadline to submit the final thesis and the Respect for Life Education completion certificate to the department office",
+   "when": "Monday, December 21, 2026, by 4:00 PM",
+   "original_ko": "2026. 12. 21.(월) 16:00까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The poster must be mounted on foam board and measure 60 cm wide by 90 cm high.",
+  "The presentation is a poster question-and-answer session with the evaluation committee.",
+  "All presenters must remain at their places until the presentation session ends, except in unavoidable circumstances.",
+  "The final thesis must bear the thesis supervisor's seal (stamp).",
+  "If the supervisor's seal is missing, you must show proof to the department staff member using an email you received from your supervisor.",
+  "You must write your thesis using the attached Hangul (.hwp) template; files in any other format are not accepted.",
+  "The thesis may be written in Korean or English."
+ ],
+ "steps": [
+  "Download the attached thesis template file (학사 졸업논문 양식.hwp) and write your thesis using it; the attachment's content was not read for this translation.",
+  "By December 11, 2026, email your thesis title, thesis language (Korean or English) and your thesis supervisor's name to the department office; the email address is in the original notice.",
+  "By December 16, 2026, submit your poster (on foam board, 60 cm wide by 90 cm high) to the Department of Nuclear Engineering office, Building 36, Room 308-1.",
+  "By December 16, 2026, email the PDF file of your presentation materials to the department office; the email address is in the original notice.",
+  "On December 21, 2026, attend the thesis presentation at 10:00 AM in Building 36, Room 208, answer the evaluation committee's questions at your poster, and stay until the session ends.",
+  "By 4:00 PM on December 21, 2026, submit your final thesis bearing your supervisor's seal (stamp) and your Respect for Life Education completion certificate to the Department of Nuclear Engineering office, Building 36, Room 308-1; if the seal is missing, show the department staff member an email from your supervisor as proof."
+ ],
+ "translation": "Guidance on the Bachelor's Thesis Presentation and Thesis Submission for the 2026 Academic Year First Graduation Round (February 2027)\n\nThe bachelor's thesis presentation for the 2026 academic year first graduation round will be held as follows. Please take note.\n\n○ Eligible students: Students expected to graduate in the 2026 academic year first graduation round (February 2027)\n○ Date and time: Monday, December 21, 2026, 10:00 AM\n○ Location: Building 36, Room 208\n\n※ Submissions and notes\n\n1. Submission of thesis title / thesis language (Korean or English) / name of thesis supervisor\n 1) Deadline: by Friday, December 11, 2026\n 2) Method: by email, [email address given in the original notice]\n\n2. Submission of presentation materials (poster and PDF file)\n 1) Deadline: by Wednesday, December 16, 2026\n 2) Method:\n - Poster (mounted on foam board, 60 cm wide x 90 cm high) -> submit to the Department of Nuclear Engineering office, Building 36, Room 308-1\n - PDF file -> by email, [email address given in the original notice]\n\n3. The thesis presentation will take the form of a question-and-answer session with the evaluation committee at each poster. Except in unavoidable circumstances, all presenters must remain at their places until the presentation ends.\n\n4. Submission of the final thesis and the Respect for Life Education (생명존중교육) completion certificate\n 1) Deadline: submit to the Department of Nuclear Engineering office, Building 36, Room 308-1, by 4:00 PM on Monday, December 21, 2026\n 2) Note: The thesis must bear the thesis supervisor's seal (stamp, 날인). If it does not, provide proof to the staff member in charge using the email you received from your professor.\n\n5. Please use the attached Hangul (.hwp) file as the bachelor's thesis template. (Files in other formats may not be used.)\n\nAttachment (1 file): 학사 졸업논문 양식.hwp (Bachelor's thesis template, 15 KB). The content of this attachment was not read.\n\nThe contact details for the department office are given in the original notice.",
+ "id": 24081,
+ "text_hash": "f35ad2a602a39702",
+ "images": 0,
+ "attachments": [
+  "학사 졸업논문 양식.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

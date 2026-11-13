@@ -1,0 +1,61 @@
+{
+ "title_en": "Recruitment of Participants for the UNAIDS Fellowship Program, First Half of 2027",
+ "summary": "The Office of International Affairs is recruiting enrolled undergraduate and graduate students, and graduate research students, who meet the enrolment, grade and English requirements to work as unpaid fellows at UNAIDS from March to August 2027. Interested students must submit their application through a Google Form by 11:00 on Friday, 20 November 2026. Full details are in the attached recruitment notice, which has not been read.",
+ "applies_to": "This is a voluntary application open to: (1) undergraduate students currently enrolled at the university (students on leave of absence are not eligible) who have completed at least two semesters at the university; and (2) graduate students currently enrolled at the university (students on leave of absence are not eligible) who have completed at least one semester at the university, and graduate research students. Applicants must also have a cumulative GPA in their current degree program of at least 2.7 (undergraduate) or 3.3 (graduate) and be fluent in English. International students holding a D-2 (study) visa must check their individual visa and stay status in advance.",
+ "dates": [
+  {
+   "what": "Application deadline (submission of the Google Form)",
+   "when": "Friday, 20 November 2026, by 11:00",
+   "original_ko": "2026. 11. 20.(금) 11시까지",
+   "verified": true
+  },
+  {
+   "what": "First interview",
+   "when": "Late November to early December 2026",
+   "original_ko": "11월 말 ~ 12월 초",
+   "verified": true
+  },
+  {
+   "what": "Announcement of final successful applicants (planned)",
+   "when": "January to February (planned)",
+   "original_ko": "1월 ~ 2월 (예정)",
+   "verified": true
+  },
+  {
+   "what": "Fellowship placement period at UNAIDS (6 months)",
+   "when": "March 2027 to August 2027",
+   "original_ko": "2027년 3월 ~ 2027년 8월 (6개월간)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Students on leave of absence are not eligible.",
+  "Undergraduates must have completed at least two semesters at the university; graduate students must have completed at least one semester at the university (graduate research students are also eligible).",
+  "Applicants must have a cumulative GPA in their current degree program of at least 2.7 (undergraduate) or 3.3 (graduate).",
+  "Applicants must be fluent in English; English ability will be assessed at the interview.",
+  "International students holding a D-2 (study) visa must check in advance their individual visa and stay status in relation to leave of absence and return to study.",
+  "The placement is unpaid.",
+  "Financial support is provided by the Office of International Affairs; the details are in an attachment that has not been read.",
+  "The second interview is held by video, on a schedule set by the local UNAIDS office; no date is given in the notice."
+ ],
+ "steps": [
+  "Read the attached recruitment notice (2027년 상반기 UNAIDS 인턴십 참가자 모집 공고문.pdf) and the Terms of Reference (Terms of Reference - SNU-UNAIDS Fellowship Program.zip) for full details, including the detailed schedule and financial support; these attachments have not been read.",
+  "If you hold a D-2 (study) visa, check your individual visa and stay status in advance.",
+  "Download the submission forms (제출양식.zip) and complete them.",
+  "Submit your application through the Google Form by 11:00 on Friday, 20 November 2026; the link is not given in the notice text and may be in the attachments or the original notice.",
+  "Attend the first interview in late November to early December, and the second interview by video on the schedule set by the local office, if selected."
+ ],
+ "translation": "Recruitment of Participants for the UNAIDS Fellowship Program, First Half of 2027\n\nUnder an agreement with an international organisation, the Office of International Affairs is recruiting participants to work as fellows at UNAIDS, as follows.\n\nA. Fellowship overview\n\n| Application deadline | First interview | Second interview | Announcement of final successful applicants | Placement | Remarks |\n| 20 Nov. (Fri) by 11:00 | Late November to early December | Video interview according to the local office's schedule | January to February (planned) | March 2027, for 6 months | |\n\n- Period: March 2027 to August 2027 (6 months)\n- Working conditions: placement (unpaid)\n\nB. Main schedule (see attachment for the detailed schedule)\n\nC. Eligibility\n\n1) Academic status\n a) Undergraduate students: currently enrolled students of the university (not including students on leave of absence) who have completed at least two semesters at the university\n b) Graduate students: currently enrolled students of the university (not including students on leave of absence) who have completed at least one semester at the university, and graduate research students\n ※ International students holding a D-2 (study) visa must check in advance their individual visa and stay status in relation to leave of absence and return to study.\n\n2) Grades: cumulative GPA in the current degree program of at least 2.7 for undergraduates and at least 3.3 for graduate students\n\n3) Fluency in English: English ability will be assessed at the interview\n\nD. Support from the Office of International Affairs: financial support (see attachment)\n\nE. How to apply: submit the Google Form by 11:00 on Friday, 20 November 2026\n※ Please check the attached recruitment notice for detailed information.\n\nAttachments (3):\n1. 2027년 상반기 UNAIDS 인턴십 참가자 모집 공고문.pdf (Recruitment notice for UNAIDS internship participants, first half of 2027) (87 KB)\n2. Terms of Reference - SNU-UNAIDS Fellowship Program.zip (1 MB)\n3. 제출양식.zip (Submission forms) (39 KB)\n\n[Translator's note: the attachments were not read, and the Google Form link does not appear in the notice text.]",
+ "id": 24074,
+ "text_hash": "7c90ab6e8bb5902a",
+ "images": 0,
+ "attachments": [
+  "1. 2027년 상반기 UNAIDS 인턴십 참가자 모집 공고문.pdf",
+  "2. Terms of Reference - SNU-UNAIDS Fellowship Program.zip",
+  "3. 제출양식.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

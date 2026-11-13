@@ -1,0 +1,34 @@
+{
+ "title_en": "2026 Multiple-Major Essay Contest",
+ "summary": "The Major Design Support Center of the College of Liberal Studies is holding the 2026 Multiple-Major Essay Contest on undergraduates' experiences of completing a multiple major. Eligible students (third year or above, including those on leave) and graduates with multiple-major experience may apply and submit their essays through SNU비교과 (SNU Extracurricular) by Sunday, 22 November 2026. Participation is optional.",
+ "applies_to": "Optional. Open to enrolled undergraduates of this university in their third year or above (including students on leave of absence) and graduates, who have multiple-major experience during their undergraduate studies at this university. Multiple majors include double majors, minors, joint (interdisciplinary) majors, linked majors and student-designed majors.",
+ "dates": [
+  {
+   "what": "Deadline to submit the essay",
+   "when": "Sunday, 22 November 2026",
+   "original_ko": "2026. 11. 22.(일)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only students in their third year or above (including those on leave) and graduates may enter.",
+  "Entrants must have multiple-major experience during undergraduate studies at this university: a double major, minor, joint major, linked major or student-designed major.",
+  "Applications and essays must be submitted through SNU비교과 (SNU Extracurricular)."
+ ],
+ "steps": [
+  "Read the attached contest poster ([학부대학 전공설계지원센터] 2026 다전공 수기 공모전 포스터.pdf); its content was not read for this translation.",
+  "Find the contest post on SNU비교과 (SNU Extracurricular) by following the link in the original notice or searching for \"2026 다전공 수기 공모전: 꼬리에 꼬리를 무는 나의 다전공 이야기\".",
+  "Apply for the contest and submit your essay through that SNU비교과 post by Sunday, 22 November 2026."
+ ],
+ "translation": "The Major Design Support Center of the College of Liberal Studies is holding the \"2026 Multiple-Major Essay Contest – My Multiple-Major Story, One Tale Leading to Another\" [2026 다전공 수기 공모전 - 꼬리에 꼬리를 무는 나의 다전공 이야기]. We welcome stories of the concerns, learning and growth you experienced while choosing and completing a multiple major. We hope many students will take part.\n\nA. Contest overview\n○ Theme: Undergraduates' experiences of completing a multiple major\n○ Eligibility: Enrolled students in their third year or above (including students on leave of absence) and graduates who have multiple-major experience during their undergraduate studies at this university\n※ Multiple major [다전공]: double major [복수전공], minor [부전공], joint major [연합전공], linked major [연계전공], student-designed major [학생설계전공]\n○ Submission deadline: Sunday, 22 November 2026\n\nB. How to participate: Apply and submit your essay on SNU비교과 (SNU Extracurricular).\n※ Link to the SNU비교과 post ▶ 2026 다전공 수기 공모전: 꼬리에 꼬리를 무는 나의 다전공 이야기 (the link is in the original notice)\n※ Search on SNU비교과 ▶ 2026 다전공 수기 공모전: 꼬리에 꼬리를 무는 나의 다전공 이야기\n\nAttachment: 2026 Multiple-Major Essay Contest poster\nAttached file (1): [학부대학 전공설계지원센터] 2026 다전공 수기 공모전 포스터.pdf (1 MB). The content of this attachment was not read for this translation.",
+ "id": 24036,
+ "text_hash": "a40c87af8fa53282",
+ "images": 0,
+ "attachments": [
+  "[학부대학 전공설계지원센터] 2026 다전공 수기 공모전 포스터.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

@@ -1,0 +1,37 @@
+{
+ "title_en": "3rd International Aerospace and Defense Convergence Conference 2026",
+ "summary": "Gyeongsang National University's Gyeongnam Aerospace and Defense Institute of Science and Technology (GADIST) will hold the 3rd International Aerospace and Defense Convergence Conference 2026 on Thursday, 26 November 2026, from 09:00 to 18:00. The conference takes place in the Grand Auditorium on the 2nd floor of the GNU Convention Center, Gajwa Campus. Those wishing to attend may pre-register on the conference website, gass2026.kr.",
+ "applies_to": "The notice lists the intended audience as about 200 domestic and international experts, academic researchers, industry practitioners and policy officials. It does not name a specific student group and does not state that attendance is mandatory.",
+ "dates": [
+  {
+   "what": "Conference date and time",
+   "when": "Thursday, 26 November 2026, 09:00 to 18:00",
+   "original_ko": "2026. 11. 26.(목) 09:00 ~ 18:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "The notice does not state a deadline for pre-registration.",
+  "The notice does not state any registration fee or attendance requirement."
+ ],
+ "steps": [
+  "Optionally, view the attached invitations and posters (Korean and English); their content was not read for this translation.",
+  "Pre-register on the conference website, gass2026.kr.",
+  "Attend the conference on Thursday, 26 November 2026 (09:00 to 18:00) in the Grand Auditorium, 2nd floor, GNU Convention Center, Gajwa Campus, Gyeongsang National University.",
+  "For questions, contact the Office of External Cooperation at GADIST; the contact details are in the original notice."
+ ],
+ "translation": "Title: 3rd International Aerospace and Defense Convergence Conference 2026\n\nThe Gyeongnam Aerospace and Defense Institute of Science and Technology (GADIST) of Gyeongsang National University will hold the \"3rd International Aerospace and Defense Convergence Conference 2026\" as set out below, in order to share new opportunities and challenges in the aerospace and defense fields through satellite and AI technologies, and to build a global cooperation network bringing together local government, industry, academia, research institutes, public agencies and the military.\n\nA. Event: 3rd International Aerospace and Defense Convergence Conference 2026\n\nB. Theme: The Future of Aerospace and Defense, Connected by Satellites and AI\n\nC. Date and time: Thursday, 26 November 2026, 09:00 to 18:00\n\nD. Venue: Grand Auditorium, 2nd floor, GNU Convention Center, Gajwa Campus, Gyeongsang National University\n\nE. Intended audience: About 200 participants, including domestic and international experts, academic researchers, industry practitioners and policy officials\n\nF. Hosts / Organizers: Gyeongsangnam-do Province, Jinju City, Gyeongsang National University / Aerospace and Defense Technology Council (Gyeongsang National University, Defense Agency for Technology and Quality), GADIST\n\nG. Core themes: Satellites × Aerospace, Satellites × Defense, AI Convergence\n\nH. Website and pre-registration: gass2026.kr\n\nI. Inquiries: Office of External Cooperation, Gyeongnam Aerospace and Defense Institute of Science and Technology, Gyeongsang National University (the contact person's details are given in the original notice).\n\nAttachments (4): Invitation (Korean).jpg (2 MB); Invitation (English).jpg (2 MB); Poster (Korean).jpg (5 MB); Poster (English).jpg (5 MB). The content of these image attachments was not read for this translation.",
+ "id": 24076,
+ "text_hash": "39155d5bfb6d2bb0",
+ "images": 0,
+ "attachments": [
+  "초청장_국문.jpg",
+  "초청장_영문.jpg",
+  "포스터_국문.jpg",
+  "포스터_영문.jpg"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

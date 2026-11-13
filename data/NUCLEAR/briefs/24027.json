@@ -1,0 +1,61 @@
+{
+ "title_en": "Applications for the 2026 Undergraduate Research Internship Program",
+ "summary": "Enrolled College of Engineering undergraduates who have completed the first semester of their third year and meet all eligibility requirements may apply for the 2026 Undergraduate Research Internship; three places are allocated to the Department of Nuclear Engineering. Applicants must submit [Form 1], confirmed by their laboratory supervising professor, in person to the Department of Nuclear Engineering administrative office (Building 36, Room 308-1) by Friday, 30 October 2026. Selected students must complete the safety and environment training and submit the completion certificate by the end of November 2026.",
+ "applies_to": "Optional (by application). Open to enrolled students of College of Engineering departments who have completed the first semester of their third year and who meet all of the following: able to participate for at least 10 hours per week; able to complete the Fall 2026 regular safety and environment training; and enrolled with no change in academic status during Fall 2026 and the internship period. The Department of Nuclear Engineering has 3 places.",
+ "dates": [
+  {
+   "what": "Deadline to submit the application ([Form 1]) in person to the department office",
+   "when": "Friday, 30 October 2026",
+   "original_ko": "2026. 10. 30.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "Research internship period (8 weeks in total)",
+   "when": "Tuesday, 15 December 2026 to Monday, 8 February 2027",
+   "original_ko": "2026. 12. 15.(화)~2027. 2. 8.(월)",
+   "verified": true
+  },
+  {
+   "what": "Selected students confirmed and announced (planned)",
+   "when": "Monday, 23 November 2026 (planned)",
+   "original_ko": "2026.11.23 (월) 예정",
+   "verified": true
+  },
+  {
+   "what": "Selected students: complete the safety and environment training and submit the completion certificate",
+   "when": "By the end of November 2026",
+   "original_ko": "2026. 11월 말까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must have completed the first semester of their third year and must be enrolled students of a College of Engineering department.",
+  "Applicants must meet all requirements: at least 10 hours of participation per week, ability to complete the Fall 2026 regular safety and environment training, and no change in academic status during Fall 2026 and the internship period.",
+  "Recommending students who are already receiving scholarships, support funds or similar benefits is discouraged.",
+  "[Form 1] must carry the confirmation of the student's laboratory supervising professor.",
+  "Applications must be submitted in person at the department office.",
+  "Interns must submit a [Form 2] result report once a month.",
+  "The stipend is KRW 800,000 per student (KRW 400,000 x 2 months)."
+ ],
+ "steps": [
+  "Read the attachments (support plan, student application guide, and safety and environment training forms and regulations); their contents were not read for this translation.",
+  "Complete [Form 1] Undergraduate Research Internship Application and Recommendation Form and obtain confirmation from your laboratory supervising professor.",
+  "Submit [Form 1] in person to the Department of Nuclear Engineering administrative office, Building 36, Room 308-1, by Friday, 30 October 2026.",
+  "Check the announcement of selected students, planned for Monday, 23 November 2026.",
+  "If selected, complete the safety and environment training and submit the completion certificate by the end of November 2026 (the notice does not state where to submit it).",
+  "During the internship, write the [Form 2] result report, including tasks performed and expected effects, and submit it once a month (the notice does not state where to submit it)."
+ ],
+ "translation": "Application for the 2026 Undergraduate Research Internship\n\nWe announce the 2026 Undergraduate Research Internship program as follows. Please submit the application documents by Friday, 30 October 2026.\n\nA. Places allocated to the Department of Nuclear Engineering: 3 students\n\nB. Program details\n1) Research internship period: Tuesday, 15 December 2026 to Monday, 8 February 2027, 8 weeks in total\n2) Eligibility: enrolled students of College of Engineering departments (who have completed the first semester of their third year) who meet all of the following requirements:\n- Able to participate for at least 10 hours per week\n- Able to complete the Fall 2026 regular safety and environment training\n- Enrolled students with no change in academic status during Fall 2026 and the internship period\n※ Recommending students who have already received scholarships, support funds, etc. is discouraged.\n3) Research internship stipend: KRW 800,000 per undergraduate student (KRW 400,000 x 2 months)\n\nC. Application method and procedure\n1) Application method: submit the documents in person to the department office by Friday, 30 October 2026 (Department of Nuclear Engineering administrative office, Building 36, Room 308-1)\n2) Documents to submit: [Form 1] Undergraduate Research Internship Application and Recommendation Form\n- Undergraduate students submit [Form 1], confirmed by their laboratory supervising professor, to the department office.\n\nD. Management of the undergraduate research internship\n- Undergraduate students write the [Form 2] Result Report, describing tasks performed, expected effects, etc., and submit it (once a month).\n\nE. Upcoming schedule\n- Confirmation and announcement of selected students: Monday, 23 November 2026 (planned)\n- Selected students complete the safety and environment training and submit the completion certificate: by the end of November 2026\n\nAttachments (3) (their contents were not read for this translation):\nAttachment 1. 2026 College of Engineering Undergraduate Research Internship Support Plan.hwp (176 KB)\nAttachment 2. (Guide for undergraduates) 2026 College of Engineering Undergraduate Research Internship Application Guide.hwp (161 KB)\nAttachment 5. Forms and regulations related to completion of safety and environment training.zip (565 KB)",
+ "id": 24027,
+ "text_hash": "a7820dadc6f0d913",
+ "images": 0,
+ "attachments": [
+  "붙임1. 2026년도 공과대학 학부생 연구인턴십 사업 지원계획.hwp",
+  "붙임2. (학부생 안내용) 2026년도 공과대학 학부생 연구인턴십 신청 안내.hwp",
+  "붙임5. 안전환경교육 이수 관련 서식 및 법령.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

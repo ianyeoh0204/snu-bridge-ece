@@ -1,0 +1,45 @@
+{
+ "title_en": "89th General Course on the Use of Radioisotopes: Training Announcement",
+ "summary": "Interested students may apply for the 89th General Course on the Use of Radioisotopes, run by the Nuclear Education Center of the Korea Atomic Energy Research Institute (KAERI) from 4 to 29 January 2027. Applicants must complete Attachments 2, 3 and 4 and send them by email to the contact address given in the original notice between 9 and 27 November 2026. Places are limited to about 40 and are filled on a first-come, first-served basis, and the tuition fee is KRW 1,100,000 per person.",
+ "applies_to": "Any interested student. Participation is voluntary, not mandatory. The notice states no limits by program, year of admission, registered semester or nationality.",
+ "dates": [
+  {
+   "what": "Application (recruitment) period. Applications are sent by email.",
+   "when": "Monday 9 November 2026 to Friday 27 November 2026",
+   "original_ko": "2026. 11. 9.(월) ~ 11. 27.(금)",
+   "verified": true
+  },
+  {
+   "what": "Training period (4 weeks) at KAERI",
+   "when": "Monday 4 January 2027 to Friday 29 January 2027",
+   "original_ko": "2027. 1. 4.(월) ~ 2027. 1. 29.(금), 4주",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "About 40 places are available, and they are filled on a first-come, first-served basis.",
+  "The fee is KRW 1,100,000 per person and covers tuition only.",
+  "Participants must arrange and pay for their own accommodation, meals and transport.",
+  "Cancellation and refund fees apply. The details are in Attachment 4, which was not read for this translation."
+ ],
+ "steps": [
+  "Read Attachment 1 (training announcement, PDF) and the Nuclear Education Center website (https://www.kaeri.re.kr/kntc/) for full details. The content of Attachment 1 was not read for this translation.",
+  "Download and complete Attachment 2 (course application form [수강신청서]), Attachment 3 (consent form for the collection and use of personal information [개인정보 수집 및 이용에 관한 동의서]) and Attachment 4 (notice of fees for cancellation and refund, with consent form [취소·환불에 따른 수수료 부과 안내 및 동의서]).",
+  "Between 9 and 27 November 2026, email the three completed forms to the Nuclear Education Center contact. The email address is in the original notice.",
+  "Attend the training from 4 to 29 January 2027 in Tiered Lecture Room 1 [제1계단강의실], Training Center Building [연수원동], KAERI, 111 Daedeok-daero 989beon-gil, Yuseong-gu, Daejeon."
+ ],
+ "translation": "89th General Course on the Use of Radioisotopes: Training Announcement\n\nThe Nuclear Education Center of the Korea Atomic Energy Research Institute (KAERI) is offering the 89th General Course on the Use of Radioisotopes, as described below. Interested students are invited to apply.\n\nA. Course title: 89th General Course on the Use of Radioisotopes\n\nB. Training period: Monday 4 January 2027 to Friday 29 January 2027 (4 weeks)\n\nC. Number of places: about 40 (first come, first served)\n\nD. Application period: Monday 9 November 2026 to Friday 27 November 2026\n\nE. Fee: KRW 1,100,000 per person. (This covers tuition only. Participants must arrange their own accommodation, meals and transport.)\n\nF. Venue: Tiered Lecture Room 1 [제1계단강의실], Training Center Building [연수원동], Korea Atomic Energy Research Institute\n※ 111 Daedeok-daero 989beon-gil, Yuseong-gu, Daejeon\n\nG. How to apply: Complete [Attachment 2], [Attachment 3] and [Attachment 4] and send them to the email address given below.\n※ For details, see the Nuclear Education Center website (https://www.kaeri.re.kr/kntc/).\n\nH. Contact: a staff member of the Nuclear Education Center. The name, phone number and email address are in the original notice.\n\nAttachments (4):\n[Attachment 1] 89th General Course on the Use of Radioisotopes – Training Announcement.pdf (1 MB)\n[Attachment 2] 89th General Course on the Use of Radioisotopes – Course Application Form [수강신청서] (Name: Hong Gil-dong, a placeholder name).hwp (75 KB)\n[Attachment 3] 89th General Course on the Use of Radioisotopes – Consent Form for the Collection and Use of Personal Information [개인정보 수집 및 이용에 관한 동의서] (Name: Hong Gil-dong, a placeholder name).hwp (55 KB)\n[Attachment 4] 89th General Course on the Use of Radioisotopes – Notice of Fees for Cancellation and Refund, with Consent Form [취소·환불에 따른 수수료 부과 안내 및 동의서] (Name: Hong Gil-dong, a placeholder name).hwp (68 KB)\n\n(The contents of the attachments were not read for this translation.)",
+ "id": 24058,
+ "text_hash": "b1f5d6fee4c9c67e",
+ "images": 0,
+ "attachments": [
+  "[붙임1] 제89회 방사성동위원소 이용 일반과정 교육안내문.pdf",
+  "[붙임2] 제89회 방사성동위원소 이용 일반과정 수강신청서(성명 홍길동).hwp",
+  "[붙임3] 제89회 방사성동위원소 이용 일반과정 개인정보 수집 및 이용에 관한 동의서(성명 홍길동).hwp",
+  "[붙임4] 제89회 방사성동위원소 이용 일반과정 취소·환불에 따른 수수료 부과 안내 및 동의서(성명 홍길동).hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

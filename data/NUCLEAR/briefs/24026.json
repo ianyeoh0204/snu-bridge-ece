@@ -1,0 +1,29 @@
+{
+ "title_en": "Korean Register Recruitment for Nuclear Power Positions",
+ "summary": "The Korean Register (KR) is recruiting staff to work on nuclear-powered vessel matters. Interested applicants must apply through the KR recruitment website (https://krs.recruit-zone.co.kr/) by 8 October. The process after the application stage will be conducted as blind recruitment.",
+ "applies_to": "Anyone interested in employment with the Korean Register in work related to nuclear-powered vessels. The notice does not state any eligibility limits, and application is voluntary.",
+ "dates": [
+  {
+   "what": "Application deadline",
+   "when": "8 October (2026)",
+   "original_ko": "10월 08일까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applications close on 8 October.",
+  "All stages after the application stage are conducted as blind recruitment."
+ ],
+ "steps": [
+  "Apply on the KR recruitment website (https://krs.recruit-zone.co.kr/) by 8 October."
+ ],
+ "translation": "Title: Korean Register Recruitment in the Nuclear Power Field\n\nThe Korean Register (한국선급, KR) intends to recruit staff to carry out work related to nuclear-powered vessels.\n\nKR recruitment website (https://krs.recruit-zone.co.kr/)\n\nApplications close on 8 October, and the subsequent process will be conducted as blind recruitment.",
+ "id": 24026,
+ "text_hash": "4d441ea262e21c26",
+ "images": 0,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

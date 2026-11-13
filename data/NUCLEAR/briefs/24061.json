@@ -1,0 +1,47 @@
+{
+ "title_en": "Recruitment of Undergraduate Proctors for the 16th Bar Examination (2027)",
+ "summary": "The Ministry of Justice is recruiting undergraduate students of this university to work as examination proctors for the 16th Bar Examination in 2027. Interested students must email the completed application form (Attachment 2) individually to the staff member in charge by Friday, November 6; the email address is in the original notice. Selected students will be notified by telephone between November 24 and November 27, 2026, and work will take place at the Seoul National University Law Building (Building 15).",
+ "applies_to": "Undergraduate students of this university who wish to apply. Participation is voluntary. Fourth-year students who plan to enter a law school or who expect to be employed are excluded. The notice text does not show any further eligibility conditions; item A (가) appears to be missing from the text.",
+ "dates": [
+  {
+   "what": "Deadline to email the application form (Attachment 2)",
+   "when": "Friday, November 6",
+   "original_ko": "11. 6.(금)까지",
+   "verified": true
+  },
+  {
+   "what": "Period during which the Ministry of Justice will notify selected applicants by telephone",
+   "when": "Tuesday, November 24, 2026 to Friday, November 27, 2026",
+   "original_ko": "2026. 11. 24.(화) ~ 11. 27.(금)",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Fourth-year students who plan to enter a law school are excluded.",
+  "Fourth-year students who expect to be employed are excluded.",
+  "Applications must be sent individually by email using the Attachment 2 application form.",
+  "Applicants who cannot be reached by telephone during the notification period will not be selected.",
+  "21 proctors will be selected, and reserve proctors may also be selected depending on the Ministry of Justice's circumstances.",
+  "The allowance is KRW 100,000 per weekday and KRW 120,000 per holiday.",
+  "The work period and duties are given only in Attachment 1, which was not read for this translation."
+ ],
+ "steps": [
+  "Read Attachment 1 (시험관리원 근무안내.hwpx) in the original notice for the work period and duties; its content was not read for this translation.",
+  "Download and complete Attachment 2, the proctor application form (시험관리원 근무 지원서(서울대).xlsx).",
+  "Email the completed application form individually to the staff member in charge by Friday, November 6; the email address is in the original notice.",
+  "Remain reachable by telephone from November 24 to November 27, 2026, when the Ministry of Justice will call selected applicants.",
+  "If selected, report for work at the Seoul National University Law Building (Building 15) as described in Attachment 1."
+ ],
+ "translation": "Recruitment of Examination Proctors for the 16th Bar Examination, 2027 (for Undergraduate Students)\n\nThe Ministry of Justice is recruiting undergraduate students of our university to work as examination proctors for the 16th Bar Examination in 2027, as described below. Interested students are invited to apply.\n\n[Item A (가) does not appear in the notice text.]\n* Fourth-year students who plan to enter a law school or who expect to be employed are excluded.\n\nB. Number to be selected: 21 (reserve proctors may be selected depending on the Ministry of Justice's circumstances)\n\nC. Place of work: Seoul National University Law Building (Building 15)\n\nD. Work period and duties: see [Attachment 1]\n\nE. Allowance: KRW 100,000 per weekday; KRW 120,000 per holiday\n\nF. How to apply: Send the [Attachment 2] application form individually by email to the staff member in charge (email address in the original notice) by Friday, November 6.\n\nG. Selection: The Ministry of Justice will notify selected applicants by telephone between Tuesday, November 24, 2026 and Friday, November 27, 2026 (applicants who cannot be reached will not be selected).\n\nH. Inquiries: Legal Professional Manpower Division, Ministry of Justice (telephone number in the original notice)\n\nAttachments (2)\nAttachment 1. Proctor work guide (시험관리원 근무안내.hwpx, 55 KB) — content not read\nAttachment 2. Proctor application form (Seoul National University) (시험관리원 근무 지원서(서울대).xlsx, 12 KB) — content not read",
+ "id": 24061,
+ "text_hash": "afe7eec540d86c1f",
+ "images": 0,
+ "attachments": [
+  "붙임 1. 시험관리원 근무안내.hwpx",
+  "붙임 2. 시험관리원 근무 지원서(서울대).xlsx"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

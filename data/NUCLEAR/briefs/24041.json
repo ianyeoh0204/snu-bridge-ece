@@ -1,0 +1,19 @@
+{
+ "title_en": "Announcement of the Orange Concert",
+ "summary": "This notice announces that an Orange Concert will be held. The text provided contains only the title, so it does not state who should attend, the date, time, location or any registration procedure. Please consult the original notice or the department office for details.",
+ "applies_to": "",
+ "dates": [],
+ "conditions": [],
+ "steps": [
+  "Read the original notice on the department board, or contact the department office (contact details are in the original notice), for the date, time, location and any participation requirements, as these were not included in the text provided."
+ ],
+ "translation": "Title: Announcement of the Orange Concert (오렌지 콘서트 개최 안내)\n\nNote: Only the title of this notice was provided. No body text, image or attachment was available, so any further details in the original notice were not read.",
+ "id": 24041,
+ "text_hash": "e3b0c44298fc1c14",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

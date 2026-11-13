@@ -1,0 +1,37 @@
+{
+ "title_en": "Information Session on the 2027 Undergraduate Startup and Advanced Research Talent Support Program",
+ "summary": "Undergraduate students enrolled in the second semester of their first year as of Fall 2026 may attend an information session on the 2027 Undergraduate Startup and Advanced Research Innovative Talent Support Program. Students who wish to attend must personally complete and submit the Google Form by Thursday, 15 October 2026; places are limited to 100 on a first-come, first-served basis. The session will be held on Tuesday, 20 October 2026, from 17:00 in Room 422, Global Engineering Education Center (Building 38).",
+ "applies_to": "Bachelor's program students enrolled (재적생) in the second semester of their first year, as of Fall 2026. Attendance is by application and is not stated to be mandatory.",
+ "dates": [
+  {
+   "what": "Deadline to apply to attend the information session (Google Form)",
+   "when": "By Thursday, 15 October 2026",
+   "original_ko": "~ 2026. 10. 15.(목)",
+   "verified": true
+  },
+  {
+   "what": "Information session",
+   "when": "Tuesday, 20 October 2026, from 17:00",
+   "original_ko": "2026. 10. 20.(화) 17:00 ~",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Only bachelor's program students enrolled in the second semester of their first year as of Fall 2026 are eligible.",
+  "Places are limited to 100 and are allocated on a first-come, first-served basis.",
+  "Each student who wishes to attend must complete and submit the Google Form personally."
+ ],
+ "steps": [
+  "Complete and submit the Google Form yourself by Thursday, 15 October 2026: https://forms.gle/eJHo4kxMkEVC4eacA",
+  "Attend the information session on Tuesday, 20 October 2026, from 17:00 in Room 422, Global Engineering Education Center (Building 38)."
+ ],
+ "translation": "Information Session on the 2027 \"Undergraduate Startup and Advanced Research Innovative Talent Support Program\" [학부생 창업·심화연구 혁신 인재 지원사업]\n\nA. Event Overview\n1) Date and time: Tuesday, 20 October 2026, from 17:00\n2) Venue: Room 422, Global Engineering Education Center (Building 38)\n3) Content: Information on the selection of 2027 innovative talent participants, question-and-answer session, etc.\n\nB. Application to Attend\n1) Eligibility: Bachelor's program students enrolled in the second semester of their first year, as of Fall 2026\n2) Capacity: 100 students (first come, first served)\n3) Application deadline and method\n- Deadline: by Thursday, 15 October 2026\n- Method: Students who wish to attend must complete and submit the Google Form themselves.\n※ Application link: https://forms.gle/eJHo4kxMkEVC4eacA",
+ "id": 24032,
+ "text_hash": "f2b3e3e4a3e47f41",
+ "images": 1,
+ "attachments": [],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

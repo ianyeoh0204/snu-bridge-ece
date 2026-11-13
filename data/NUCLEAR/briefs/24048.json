@@ -1,0 +1,68 @@
+{
+ "title_en": "2027 Undergraduate Startup and Advanced Research Innovative Talent Support Program: Call for Applications",
+ "summary": "Undergraduate students who will be enrolled in the first semester of their second year in Spring 2027 (and others as described in the attached notice) may apply for the 2027 Undergraduate Startup and Advanced Research Innovative Talent Support Program. Applicants must submit a recommendation letter (Form 1) and a proposal (Form 2) to their department office, in person or by email, by Friday, 13 November 2026. Applicants on leave of absence at the application deadline must also submit a certificate of enrollment by Tuesday, 2 March 2027.",
+ "applies_to": "Optional (by application). Eligible: undergraduate students who, as of Spring 2027, are enrolled or expected to be enrolled in the first semester of their second year, among others (\"등\"); full eligibility details are in Attachment 1, which was not read. Applicants whose academic status is 'leave of absence' on the application deadline must additionally submit a certificate of enrollment.",
+ "dates": [
+  {
+   "what": "Deadline for students to submit application documents to their department",
+   "when": "By Friday, 13 November 2026",
+   "original_ko": "~ '26. 11. 13.(금)",
+   "verified": true
+  },
+  {
+   "what": "Departments collect documents and submit them to the Research Administration Office (no student action stated)",
+   "when": "By Tuesday, 17 November 2026",
+   "original_ko": "~ '26. 11. 17.(화)",
+   "verified": true
+  },
+  {
+   "what": "First-round review (document evaluation) (tentative)",
+   "when": "By early to mid-December 2026",
+   "original_ko": "~ '26. 12월 초/중",
+   "verified": true
+  },
+  {
+   "what": "Second-round review (interview evaluation) (tentative)",
+   "when": "Early to mid-December 2026 to mid-January 2027",
+   "original_ko": "'26. 12월 초/중 ~ '27. 1월 중",
+   "verified": true
+  },
+  {
+   "what": "Final selection (tentative)",
+   "when": "Mid-January 2027",
+   "original_ko": "'27. 1월 중",
+   "verified": true
+  },
+  {
+   "what": "Deadline to submit a certificate of enrollment, for applicants on leave of absence as of the application deadline",
+   "when": "By Tuesday, 2 March 2027",
+   "original_ko": "2027. 3. 2.(화)까지",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Up to 30 students are selected once a year.",
+  "Support lasts one year; continuation is decided by an interim evaluation at the end of each academic year, for a maximum of three years.",
+  "Applicants whose academic status is 'leave of absence' on the application deadline must submit a certificate of enrollment by 2 March 2027.",
+  "The schedule is tentative; detailed dates from the first-round review to final selection will be announced separately later.",
+  "Further eligibility and program details are in Attachment 1, which was not read for this translation."
+ ],
+ "steps": [
+  "Read Attachment 1 (the full call for applications and forms, .hwp file) for detailed eligibility and requirements.",
+  "Complete the recommendation letter (Attachment 1 – Form 1) and the proposal (Attachment 1 – Form 2).",
+  "Submit both documents to your department office in person or by email by Friday, 13 November 2026 (the email address is in the original notice).",
+  "If your status is 'leave of absence' on the application deadline, submit a certificate of enrollment by Tuesday, 2 March 2027.",
+  "Watch for a separate announcement of the detailed schedule for the first-round review, interview and final selection."
+ ],
+ "translation": "2027 \"Undergraduate Startup and Advanced Research Innovative Talent Support Program\" – Call for Applications\n\nA. Program Overview\n1) Selection timing and number: once a year, up to 30 students\n2) Support period: 1 year\n※ Continuation of support is decided through an interim evaluation at the end of each academic year; support is available for up to 3 years.\n3) Eligibility: as of Spring 2027 (1st semester of the 2027 academic year), undergraduate students enrolled (or expected to be enrolled) in the first semester of their second year, etc.\n※ Please refer to the attached document for other details.\n\nB. Selection Overview\n1) Selection schedule (tentative)\n※ If your academic status is 'leave of absence' (휴학) as of the application deadline, you must separately submit a certificate of enrollment (재학증명서) by Tuesday, 2 March 2027.\n※ The detailed schedule from the first-round review to final selection will be announced separately later.\n\n- Submission of application documents (student → department): by Friday, 13 November 2026\n- Collection of documents and submission of official letter (department → Research Administration Office): by Tuesday, 17 November 2026\n- First-round review (document evaluation): by early/mid-December 2026\n- Second-round review (interview evaluation): early/mid-December 2026 to mid-January 2027\n- Final selection: mid-January 2027\n\n2) Documents to submit – submit directly to the department office or by email (the address is in the original notice)\n① [Attachment 1 – Form 1] Recommendation letter (추천서)\n② [Attachment 1 – Form 2] Proposal (제안서)\n\nAttachment (1 file)\nAttachment 1. Undergraduate Startup and Advanced Research Innovative Talent Support Program (2027 academic year) call for applications and forms (.hwp, 147 KB) – the content of this attachment was not read.",
+ "id": 24048,
+ "text_hash": "0631c5a1dc5f2f42",
+ "images": 0,
+ "attachments": [
+  "붙임1. 학부생 창업·심화연구 혁신 인재 지원사업(2027학년도) 선발 공고문 및 서식.hwp"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

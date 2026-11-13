@@ -778,7 +778,7 @@ function renderAbout() {
       el("ul", { class: "plain" },
         el("li", null, B("Notices: each site needs a small reader for its own board software. The eleven department sites read here use six kinds. Translation, the date check and publishing stay the same.")),
         el("li", null, B("Requirements: written by hand from that department's official documents and re-read by a second reader, as they were here.")),
-        ...deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]).map((d) => el("li", null, B("A second department, {name}: {n} requirements written from its own web pages, and its notices since {date}. Its requirements were checked by code and by one independent AI reading, not by the second reader.",
+        ...deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]).map((d) => el("li", null, B("Another department, {name}: {n} requirements written from its own rules, and its notices since {date}. Its requirements were checked by code and by one independent AI reading, not by the second reader.",
           { name: d.name, n: d.cards.length, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }))),
         ...Object.entries(pilots).map(([k, d]) => el("li", null, B("Pilot: {name} notices since {date} are on this site in English. Its board runs on the same software as this department's.", { name: d.name, date: fullDate(d.board.since) }, { name: d.name_ko, date: koDate(d.board.since) }),
           el("span", { class: "links" }, el("a", { href: "#notices-" + k }, L("Open the pilot"))))))) : "",
@@ -945,7 +945,7 @@ function route() {
   bar.hidden = deptIds.length < 2 || about;
   if (!bar.hidden && !bar.childElementCount) bar.append(el("span", null, L("Department")), el("div", { class: "seg", role: "group" }, ...deptIds.map((k) =>
     el("button", { type: "button", "aria-pressed": String(k === deptId), onclick: () => { if (k !== deptId) switchTo(k); } }, `${DATA.departments[k].name} · ${DATA.departments[k].name_ko}`))),
-    dept.reread === false ? el("span", { class: "tag trap" }, ...B("Written from the department's web pages on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.", { date: fullDate(dept.read_on) }, { date: koDate(dept.read_on) })) : "");
+    dept.reread === false ? el("span", { class: "tag trap" }, ...B("Written from the department's own rules on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.", { date: fullDate(dept.read_on) }, { date: koDate(dept.read_on) })) : "");
   if (h.startsWith("#card-")) { show("requirements", true); openCard(h.slice(6)); }
   else if (h.startsWith("#notice-")) { board = Object.keys(pilots).find((k) => h.startsWith(`#notice-${k}-`)) || deptId; audience = "All"; show("notices", true); openNotice(h.slice(8)); }
   else if (h.startsWith("#notices-") && pilots[h.slice(9)]) { board = h.slice(9); audience = "All"; show("notices"); }

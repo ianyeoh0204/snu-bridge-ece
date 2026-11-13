@@ -1,0 +1,30 @@
+{
+ "title_en": "Information Session on 2027 Entrepreneurial Engineering Innovation Talent Recruitment",
+ "summary": "The Seoul National University College of Engineering Innovation and Startup Center will hold an information session on recruitment for the 2027 Entrepreneurial Engineering Innovation Talent program. Interested students are invited to attend on Monday, 9 November 2026, from 15:00 to 16:00 in Room B103, Building 39, College of Engineering. Attendance is optional.",
+ "applies_to": "Interested students (voluntary attendance; the notice states no other limits).",
+ "dates": [
+  {
+   "what": "Information session on the 2027 Entrepreneurial Engineering Innovation Talent program recruitment",
+   "when": "Monday, 9 November 2026, 15:00–16:00",
+   "original_ko": "2026년 11월 9일(월) 15:00~16:00",
+   "verified": true
+  }
+ ],
+ "conditions": [],
+ "steps": [
+  "Optionally read the attached PDF (2027년도 창업가형 혁신인재 모집 설명회 개최 안내.pdf); its content was not read for this translation.",
+  "Attend the information session on Monday, 9 November 2026, 15:00–16:00, in Room B103, Building 39, College of Engineering.",
+  "For questions, contact the Innovation and Startup Center; the contact details are in the original notice."
+ ],
+ "translation": "Title: Information Session on Recruitment for the 2027 Entrepreneurial Engineering Innovation Talent Program\n\nThe Seoul National University College of Engineering Innovation and Startup Center [서울공대혁신창업센터] will hold an information session on recruitment for the 2027 Entrepreneurial Engineering Innovation Talent program as follows. We encourage all interested students to attend.\n\nA. Event: 2027 Entrepreneurial Engineering Innovation Talent Recruitment Information Session [2027년도 창업가형 공학기술 혁신인재 모집 설명회]\n\nB. Date and time: Monday, 9 November 2026, 15:00–16:00\n\nC. Venue: Room B103, Building 39, College of Engineering\n\nD. Main contents:\n- Introduction to the College of Engineering Entrepreneurial Innovation Talent program\n- Information on recruitment and selection for the 2027 program, etc.\n\nE. Inquiries: Innovation and Startup Center (the contact details are given in the original notice).\n\nAttachment (1 file): 2027년도 창업가형 혁신인재 모집 설명회 개최 안내.pdf (55 KB) — the content of this attachment was not read for this translation.",
+ "id": 24068,
+ "text_hash": "599428805469bbc9",
+ "images": 0,
+ "attachments": [
+  "2027년도 창업가형 혁신인재 모집 설명회 개최 안내.pdf"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}

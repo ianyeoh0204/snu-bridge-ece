@@ -1,0 +1,42 @@
+{
+ "title_en": "2026 OECD Internship Program (Round 2): Call for Applicants",
+ "summary": "The Office of International Affairs is recruiting enrolled undergraduate and graduate students, including research students, for the 2026 OECD Internship Program (Round 2). Applicants who wish to take part must submit all required documents through a Google Form by 14:00 on Monday, 23 November 2026. Applicants must first check the eligibility requirements in the attached recruitment notice.",
+ "applies_to": "Voluntary application. Open to undergraduate and graduate students (including research students) currently enrolled at the university who will have at least one semester remaining before graduation after completing the internship. Further eligibility requirements are set out in the attached recruitment notice, which must be checked; its content was not read.",
+ "dates": [
+  {
+   "what": "Deadline for submitting application documents via the Google Form",
+   "when": "Monday, 23 November 2026, 14:00",
+   "original_ko": "2026. 11. 23.(월) 14:00",
+   "verified": true
+  }
+ ],
+ "conditions": [
+  "Applicants must be currently enrolled undergraduate or graduate students, including research students.",
+  "Applicants must have at least one semester remaining before graduation after completing the internship.",
+  "Applicants must check the eligibility requirements in the attached recruitment notice; that attachment was not read, so additional requirements may apply.",
+  "All five required documents must be submitted within the application period.",
+  "Up to 15 students will be recommended to the OECD.",
+  "Selection has three stages: internal university selection, individual application to the OECD by those selected, and final selection by the OECD.",
+  "The internship lasts 1 to 6 months, to be arranged with the relevant OECD department after final selection.",
+  "Work may be in person, remote, or a combination of both."
+ ],
+ "steps": [
+  "Read the attached recruitment notice (2026년 OECD 인턴십 프로그램(Round 2)_모집 공고문.pdf) for eligibility and full details; its content was not read for this translation.",
+  "Download the forms in the attachment 첨부서류.zip.",
+  "Prepare one copy each of: the application form and pledge (attached forms), a Statement of Purpose in English (free format), a CV in English (free format), an official transcript in English, and the consent form for the collection, use and provision of personal information.",
+  "Submit all documents through the Google Form by 14:00 on Monday, 23 November 2026; the link is not given in the notice text and may be in the attachment, so contact the department office if needed (contact details are in the original notice).",
+  "If selected internally, apply individually to the OECD as the second stage of selection."
+ ],
+ "translation": "2026 OECD Internship Program (Round 2): Call for Applicants\n\nThe Office of International Affairs is recruiting participants to work as OECD interns, as follows.\n\nA. Number of students recommended to the OECD: up to 15\n\nB. Internship period: 1 to 6 months (to be arranged with the relevant OECD department after final selection)\n\nC. Work format: in person or remote (a combination is possible)\n\nD. Eligibility\n- Academic status: undergraduate and graduate students (including research students) currently enrolled at the university who will have at least one semester remaining before graduation after completing the internship.\n* You must check the eligibility requirements in the attached recruitment notice.\n\nE. How to apply: submit the documents below through the Google Form within the application period.\n1) Required documents\na) Application form and pledge (attached forms), one copy each\nb) Statement of Purpose in English (free format), one copy\nc) CV in English (free format), one copy\nd) Transcript in English, one copy\ne) Consent form for the collection, use and provision of personal information, one copy\n2) Deadline for application documents: Monday, 23 November 2026, 14:00\n3) Selection procedure: Stage 1, internal university selection -> Stage 2, individual application to the OECD by those selected -> Final selection (by the OECD)\n※ Please see the attached recruitment notice for detailed information.\n\nAttachments (2)\n1. 2026년 OECD 인턴십 프로그램(Round 2)_모집 공고문.pdf (107 KB) [2026 OECD Internship Program (Round 2) recruitment notice]\n2. 첨부서류.zip (110 KB) [attached forms]\n\n(The attachments were not read; their content is not included in this translation.)",
+ "id": 24028,
+ "text_hash": "65163abc400afa7d",
+ "images": 0,
+ "attachments": [
+  "1. 2026년 OECD 인턴십 프로그램(Round 2)_모집 공고문.pdf",
+  "2. 첨부서류.zip"
+ ],
+ "model": "claude-opus-5-5",
+ "written": "2026-11-13",
+ "prompt": 2,
+ "revised": false
+}
