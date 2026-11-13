@@ -47,6 +47,9 @@ def _main() -> None:
             print(f"::warning::{line}")  # shown on the run's page on GitHub
         if failed and not checked:
             sys.exit("No notice could be read. The department site may be down or its page layout may have changed.")
+        missing = [line.split()[0] for line in failed if not (ROOT / "data" / department / "briefs" / f"{line.split()[0]}.json").exists()]
+        if missing:  # an earlier translation still stands for the others; these have none to show
+            sys.exit(f"{len(missing)} notices have no translation yet: {', '.join(missing)}.")
         return
     if command == "notices":
         from . import notices

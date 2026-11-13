@@ -100,7 +100,7 @@ def read(url: str) -> dict:
 
 
 # A person's name before a title in an attachment's file name, such as "(홍길동교수님)". Role words are not names.
-TITLED_NAME = re.compile(r"(?<![가-힣])(?!지도|담당|심사|책임|주임|초빙|겸임|명예|연구|강의|석좌|전임|신임)[가-힣]{2,4}(교수|박사)(?=님|[^가-힣]|$)")
+TITLED_NAME = re.compile(r"(?<![가-힣])(?!논문|공동|특임|지도|담당|심사|책임|주임|초빙|겸임|명예|연구|강의|석좌|전임|신임)[가-힣]{2,4}(교수|박사)(?=님|[^가-힣]|$)")
 
 
 def _squash(value: str) -> str:
@@ -113,9 +113,11 @@ def _translate(notice: dict, target: Path) -> str:
     time.sleep(1)
     digest = hashlib.sha256(source["text"].encode("utf-8")).hexdigest()[:16]
     old = json.loads(target.read_text(encoding="utf-8")) if target.exists() else None
-    if old and old["text_hash"] == digest and old.get("prompt") == PROMPT_VERSION:
+    titles = len(notice.get("title_history", []))  # the title is not part of the text, so a new title is counted apart
+    if old and old["text_hash"] == digest and old.get("prompt") == PROMPT_VERSION and old.get("titles", 0) == titles:
         return ""
-    changed = bool(old) and old["text_hash"] != digest  # the notice itself was edited, not just our instructions
+    # the notice itself was edited, not just our instructions
+    changed = bool(old) and (old["text_hash"] != digest or old.get("titles", 0) != titles)
     brief = llm.ask(SYSTEM, [llm.text(f"Title: {notice['title_ko']}\nPosted: {notice['date']}\n\n{source['text']}")],
                     BRIEF, max_tokens=32000, effort="medium")
     body = _squash(notice["title_ko"] + source["text"])  # a deadline is sometimes stated only in the title
@@ -123,7 +125,7 @@ def _translate(notice: dict, target: Path) -> str:
         date["verified"] = _squash(date["original_ko"]) in body
     brief.update(id=notice["id"], text_hash=digest, images=source["images"], attachments=source["attachments"],
                  model=llm.MODEL, written=datetime.datetime.now(SEOUL).date().isoformat(), prompt=PROMPT_VERSION,
-                 revised=changed or bool(old and old.get("revised")))
+                 titles=titles, revised=changed or bool(old and old.get("revised")))
     target.write_text(json.dumps(brief, ensure_ascii=False, indent=1), encoding="utf-8")
     unverified = sum(not d["verified"] for d in brief["dates"])
     return f"{notice['id']} {len(brief['dates'])} dates, {unverified} not found in the text, {source['images']} images unread"
@@ -134,13 +136,11 @@ def update(department: str, limit: int = 0, only: set | None = None) -> tuple[li
     data = ROOT / "data" / department
     out = data / "briefs"
     out.mkdir(parents=True, exist_ok=True)
-    written, failed, checked = [], [], 0
+    written, failed, checked, streak = [], [], 0, 0
     board = json.loads((ROOT / "sources" / department / "config.json").read_text(encoding="utf-8")).get("board", {})
     for notice in json.loads((data / "notices.json").read_text(encoding="utf-8")):
         if limit and len(written) >= limit:
             break
-        if len(failed) >= 8 and not checked:
-            break  # the site is not answering: stop asking, and let the next run try again
         if only and notice["id"] not in only:
             continue
         try:
@@ -148,8 +148,12 @@ def update(department: str, limit: int = 0, only: set | None = None) -> tuple[li
         except Exception as error:  # network trouble, a changed page layout, or a notice too long for the model
             failed.append(f"{notice['id']} not translated ({type(error).__name__}: {error})")
             print(failed[-1], flush=True)
+            streak += 1
+            if streak >= 5:
+                break  # the site or the model is not answering: stop asking, and let the next run try again
+            time.sleep(max(1, board.get("pause", 1)))  # a failed request is still a request: keep the pace
             continue
-        checked += 1
+        checked, streak = checked + 1, 0
         time.sleep(max(0, board.get("pause", 1) - 1))  # extra seconds between requests for a slow site
         if line:
             written.append(line)

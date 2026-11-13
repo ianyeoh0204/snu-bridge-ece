@@ -1,4 +1,4 @@
-# Every morning: read each department's board, translate what is new, rebuild the site and publish it.
+# Once a day: read each department's board, translate what is new, rebuild the site and publish it.
 # Needs one repository secret holding the model key, named ANTHROPIC_API_KEY or API_KEY
 # (Settings > Secrets and variables > Actions).
 name: Update and publish
@@ -22,12 +22,15 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 150
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # Always the newest commit, so a push that waited behind a daily run does not republish an older page.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -47,7 +50,7 @@ jobs:
           for folder in sources/*/; do
             department=$(basename "$folder")
             python -m bridge notices "$department" || { echo "::warning::$department: its notice board could not be read today"; trouble=1; continue; }
-            python -m bridge briefs "$department" 40 || { echo "::warning::$department: its notices could not be read today"; trouble=1; }
+            python -m bridge briefs "$department" 40 || { echo "::warning::$department: some notices could not be read or translated today"; trouble=1; }
           done
           echo "trouble=$trouble" >> "$GITHUB_OUTPUT"
 

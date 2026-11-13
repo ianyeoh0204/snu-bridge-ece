@@ -44,7 +44,7 @@ def _rows(page: str) -> list[dict]:
             "title_ko": NAMED.sub(r"\1 [name]", title),
             "date": "-".join(date.groups()),
             "audience_ko": next((c for c in cells if c and not c.isdigit()), category.group(1).strip() if category else ""),
-            "pinned": 'class="noti"' in row,
+            "pinned": "noti-ico" in row,  # the mark a pinned row carries inside it (its class is on the <tr> tag itself)
         })
     return found
 
@@ -76,5 +76,6 @@ def update(department: str) -> tuple[list[dict], list[str]]:
             break
         time.sleep(config.get("pause", 1))  # seconds between requests; a slow site gets more (see the config)
     notices = sorted(known.values(), key=lambda n: (n["date"], n["id"]), reverse=True)
+    store.parent.mkdir(parents=True, exist_ok=True)  # a department read for the first time has no folder yet
     store.write_text(json.dumps(notices, ensure_ascii=False, indent=1), encoding="utf-8")
     return notices, changes
