@@ -111,18 +111,13 @@ POSTER_KO = {
         "전기·정보공학부 공지의 날짜로, 지난 일정을 포함하며 캘린더에 추가할 수 있습니다. 모두 공지에 적힌 요일과 일치합니다.",
     "The website shows all the information at a glance.": "웹사이트에서 모든 정보를 한눈에 볼 수 있습니다.",
     "Calendar": "캘린더",
-    "Ask ChatGPT Edu": "ChatGPT Edu에 묻기",
     "Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its file, page and Korean line.":
         "과정과 입학 연도별로 졸업에 필요한 모든 것을 보여 줍니다. {d}개 학과의 요건 {n}개이며, 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
     "Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.":
         "새 공지를 영어로 제공하며, 조치 대상, 날짜, 조건, 절차를 보여 줍니다. 지금까지 {d}개 학과의 공지 {n}건입니다.",
     "The dates from ECE's notices, in the student's own calendar: {n} so far.":
         "전기·정보공학부 공지의 날짜를 학생의 캘린더에서 볼 수 있습니다. 지금까지 {n}건입니다.",
-    "For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment.":
-        "더 궁금한 점은 공지마다 있는 버튼으로 ChatGPT Edu용 질문을 복사해 물어볼 수 있으며, 스크린샷이나 첨부파일도 함께 올릴 수 있습니다.",
     "Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu.": "공지의 ChatGPT Edu 버튼을 누르고, 복사된 질문을 ChatGPT Edu에 붙여 넣어 보세요.",
-    "Translations are made by AI. Every notice links to its Korean original, and every requirement cites its source.":
-        "번역은 AI가 합니다. 모든 공지는 한국어 원문으로 연결되고, 모든 요건에는 출처가 표시됩니다.",
     "Separate job, scholarship, news and seminar boards are not counted.": "따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
 }
 

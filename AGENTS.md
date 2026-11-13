@@ -569,3 +569,11 @@ The developer read the page and found three places where the site and the poster
   its Korean original, and every requirement cites its source."
 - Say "an assistant in ChatGPT Edu" or "the ChatGPT Edu button", not "plugin": what exists is a button on each notice
   that copies a question, and `navigator/instructions.md` for a ChatGPT Edu project. No plugin has been built.
+- Background pages made shorter (14 Nov, the developer: "everything below here feels too redundant", long detail
+  makes the reader lose attention or take the site for one more AI app). On "Engineering departments" the list of 25
+  notices and the notes on method, and on the ECE page everything from the tab table down, are folded behind one closed
+  line each (`more(...)` in the template, class `fold`). They are folded, not deleted: the poster says all 25 are
+  listed on the site, and the developer's own rule is that every number can be traced. Do not unfold them by default.
+- The last Background page is "Checks" (was "Checks and limits"). Its closing block is "Ask ChatGPT Edu", in the
+  poster's two sentences, and "This is not an official Seoul National University website" is gone from that page (the
+  developer: everyone knows). The site's footer still says it once, in small type.

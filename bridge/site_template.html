@@ -214,6 +214,10 @@ details.done .title { color:var(--muted); }
 .survey .n { text-align:right; font-variant-numeric:tabular-nums; font-weight:700; }
 .survey .own { background:var(--ink); color:var(--bg); }
 .survey .lab { display:none; }
+.fold { display:block; margin-top:24px; border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); }
+.fold > summary { padding-left:16px; padding-right:16px; }
+.fold > .block:first-of-type { margin-top:8px; }
+.fold > :last-child { margin-bottom:20px; }
 .survey.counts .row { grid-template-columns:minmax(0, 3fr) minmax(0, 1fr) minmax(0, 1fr); }
 .askline { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; }
 .ask { padding:8px 14px; border:2px solid var(--ink); background:none; color:var(--ink); font:inherit; font-size:14px; text-align:left; cursor:pointer; }
@@ -467,7 +471,7 @@ let board = deptId;
 let aboutStep = "";  // which step of the About page is on screen; "" is the first
 // The steps of the About page, as the menu under the About tab lists them and as each step is titled.
 const STEP_LABEL = { why: () => B("Why now"), engineering: () => B("Engineering departments"), department: () => [dept.short || dept.name, below(dept.name_ko)],
-  examples: () => B("In practice"), method: () => B("How it works"), checks: () => B("Checks and limits") };
+  examples: () => B("In practice"), method: () => B("How it works"), checks: () => B("Checks") };
 const aboutKeys = () => (dept.evidence && dept.evidence_notes ? [DATA.context && "why", DATA.survey && "engineering", "department", "examples", "method", "checks"].filter(Boolean) : []);
 function renderAboutMenu() {
   const keys = aboutKeys(), now = Math.max(0, keys.indexOf(aboutStep)), on = !document.getElementById("view-about").hidden;
@@ -655,6 +659,9 @@ function renderAbout() {
   // Each row shows two plain counts, as the poster does: notices on the Korean boards, and posts on the English board.
   // English titles are counted once for all departments (the figure above the table), never per row.
   const span = (from, to) => [{ from: fullDate(from), to: fullDate(to) }, { from: koDate(from), to: koDate(to) }];
+  // Detail that most readers do not need is folded behind one line (the developer: long pages lose the reader).
+  const more = (label, ...inside) => { const d = el("details", { class: "fold" }, el("summary", null, el("span", { class: "title" }, ...label)), ...inside);
+    d.addEventListener("toggle", () => d.querySelectorAll("[data-reveal]").forEach((e) => e.classList.add("in"))); return d; };
   const svRow = (cls, name, korean, side) => el("div", { class: "row " + cls }, el("div", null, ...name),
     el("div", { class: "n" }, el("small", { class: "lab" }, L("Notices on the Korean board")), korean), side);
   // The English side is one number in every row, as on the poster: posts on the department's separate English board in
@@ -711,7 +718,7 @@ function renderAbout() {
         return silent && korean ? el("p", { class: "aboutnote" }, B("{a}'s English board last had a post in {month} {year}. {b}'s has {n} posts, all with Korean titles.",
           { a: silent.name, month: MONTHS[Number(silent.english_last_post.slice(5, 7)) - 1], year: silent.english_last_post.slice(0, 4), b: korean.name, n: korean.english_posts },
           { a: silent.name_ko, month: Number(silent.english_last_post.slice(5, 7)), b: korean.name_ko })) : ""; })(),
-      el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("All {n} of them, to open and check", { n: num(sv.totals.english_titled) })), el("span", null, B("Newest first"))),
+      more(B("All {n} of them, and how they were counted", { n: num(sv.totals.english_titled) }),
       el("ul", { class: "plain titles" }, ...sv.departments.flatMap((d) => d.english_titles.map((t) => Object.assign({ dept: d }, t))).sort((a, b) => (a.date < b.date ? 1 : -1))
         .map((t) => el("li", null, out(t.url, t.title), el("span", { class: "links" }, `${t.date} · ${t.dept.name} · ${t.dept.name_ko}`)))),
       el("p", { class: "aboutnote" }, B("Each line opens the notice on the department's own site. Most are seminars and outside programmes, and one is a test post. This page replaces a speaker's name with [name].")),
@@ -724,7 +731,7 @@ function renderAbout() {
         el("li", null, B("This project tested only the title of every notice. It did not read attachments or images.")),
         el("li", null, B("The count covers each department's notice boards. It leaves out boards kept apart for jobs, scholarships, news or seminars, in every department. For Electrical and Computer Engineering that leaves {n} boards: academic, admissions, campus life and other.", { n: sv.departments.find((d) => d.this_site).korean_boards.length })),
         el("li", null, B("This project repeated each count from the board's own post numbering. Nine sites matched exactly, and Computer Science and Engineering prints no numbering.")),
-        el("li", null, B("Two departments are not counted. The Materials Science and Engineering site permits automated reading of its first page only, and the Architecture site permits none.")))),
+        el("li", null, B("Two departments are not counted. The Materials Science and Engineering site permits automated reading of its first page only, and the Architecture site permits none."))))),
       ] } : null,
     { key: "department", title: () => [dept.name, below(dept.name_ko)],
       lead: B("This step sets the department's academic board, the one this site translates, beside its English notice board, for {from} to {to}.", ...span(ev.since, ev.until)),
@@ -746,6 +753,7 @@ function renderAbout() {
       el("p", { class: "aboutnote" }, B("This project counted both boards from their list pages on {date}. The two boards cover different subjects, so these are counts of what was posted, not a measure of how much was translated.", ...day(ev.counted_on))),
       el("p", { class: "links" }, out(ev.korean_board, B("Korean academic board")), out(ev.english_board, B("English notice board")))),
 
+    more(B("More on this department's boards"),
     sv && sv.departments.find((d) => d.this_site).tabs ? el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("The Korean site, tab by tab")), el("span", null, B("{from} to {to}", ...span(sv.since, sv.until)))),
       el("div", { class: "survey", "data-reveal": "" },
         el("div", { class: "row head" }, el("div", null, B("Tab on the Korean site")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", null, B("In the departments table"))),
@@ -776,6 +784,7 @@ function renderAbout() {
         fig(num(briefs.filter((b) => b.attachments.some(hwp)).length), `of ${briefs.length}`, B("attach HWP files ({n} files)", { n: num(briefs.flatMap((b) => b.attachments).filter(hwp).length) }))),
       el("p", { class: "aboutnote" }, out(notes.handbook.url, P(notes.handbook.name))),
       el("p", { class: "aboutnote" }, B("{pages} pages with {chars} characters of extractable text, so its text cannot be selected, searched or passed to a browser's translator.", { pages: notes.handbook.pages, chars: notes.handbook.text_characters }))),
+    ),
       ] },
     { key: "examples",
       lead: B("For a student the gap means two things. The Korean and English texts differ in places, and guidance is spread across several notices."),
@@ -825,7 +834,7 @@ function renderAbout() {
         el("li", null, B("Changing the AI provider means changing one file.")))),
       ] },
     { key: "checks",
-      lead: B("This step shows what a second reader checked and what the site does not do yet."),
+      lead: B("This step shows what a second reader checked."),
       parts: () => [
     audited.length ? el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Independent check")), el("span", null, B("Checked {date}", ...day(dept.audit.audited_on)))),
       el("div", { class: "figs four", "data-reveal": "" },
@@ -845,10 +854,10 @@ function renderAbout() {
         { date: fullDate(dept.notice_reading.date), a: num(dept.notice_reading.agreed + dept.notice_reading.noted), n: num(dept.notice_reading.read), c: num(dept.notice_reading.corrected) }, { date: koDate(dept.notice_reading.date) })) : "",
       el("p", { class: "aboutnote" }, B("The second reader is an AI model from a different maker than the model that drafted the requirements. It read each page image itself. It is not a check by a person or by the department."))) : "",
 
-    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("What it does not do yet"))),
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Ask ChatGPT Edu"))),
       el("ul", { class: "plain" },
-        el("li", null, B("The site does not read images or attachments. The notice says so and sends the student to {assistant}.", { assistant: dept.assistant ? dept.assistant.name : "the original notice" })),
-        el("li", null, B("Translations are made by AI and can be wrong. This is not an official Seoul National University website.")))),
+        el("li", null, B("For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment.")),
+        el("li", null, B("Translations are made by AI. Every notice links to its Korean original, and every requirement cites its source.")))),
       ] },
   ].filter(Boolean);
   const at = Math.max(0, steps.findIndex((s) => s.key === aboutStep)), here = steps[at], next = steps[at + 1];
