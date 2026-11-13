@@ -6,7 +6,7 @@
   ],
   "group": "finish_coursework",
   "title": "Completion: registrations, credits and grade average",
-  "key": "4 to 8 registrations; 24 credits; 3.0 average",
+  "key": "24 credits; 3.0 average; 4 to 8 registrations",
   "rule": [
    "Registered semesters: at least 4, at most 8.",
    "Credits: at least 24.",
@@ -207,7 +207,7 @@
   ],
   "group": "finish_coursework",
   "title": "Completion: registrations, credits and grade average",
-  "key": "4 to 12 registrations; 36 credits; 3.0 average",
+  "key": "36 credits; 3.0 average; 4 to 12 registrations",
   "rule": [
    "Registered semesters: at least 4, at most 12.",
    "Credits: at least 36.",
@@ -382,7 +382,7 @@
   ],
   "group": "finish_coursework",
   "title": "Completion: registrations, credits and grade average",
-  "key": "6 to 16 registrations; 60 credits; 3.0 average",
+  "key": "60 credits; 3.0 average; 6 to 16 registrations",
   "rule": [
    "Registered semesters: at least 6, at most 16.",
    "Credits: at least 60.",

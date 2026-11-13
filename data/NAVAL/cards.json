@@ -88,7 +88,7 @@
   ],
   "group": "finish_coursework",
   "title": "Coursework credits (master's)",
-  "key": "At least 24 credits; thesis research counts up to 6",
+  "key": "24 credits; thesis research counts up to 6",
   "rule": [
    "Earn at least 24 credits.",
    "Thesis research (대학원 논문연구) is recognised up to 6 credits.",
@@ -121,7 +121,7 @@
   ],
   "group": "finish_coursework",
   "title": "Coursework credits (PhD)",
-  "key": "At least 36 credits; thesis research counts up to 12",
+  "key": "36 credits; thesis research counts up to 12",
   "rule": [
    "Earn at least 36 credits.",
    "Thesis research (대학원 논문연구) is recognised up to 12 credits.",
@@ -152,7 +152,7 @@
   ],
   "group": "finish_coursework",
   "title": "Coursework credits (integrated)",
-  "key": "At least 60 credits; thesis research counts up to 18",
+  "key": "60 credits; thesis research counts up to 18",
   "rule": [
    "Earn at least 60 credits.",
    "Thesis research (대학원 논문연구) is recognised up to 18 credits.",

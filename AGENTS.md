@@ -388,3 +388,8 @@ start a second department's requirements before 20 Nov was lifted by the develop
 - A manual full run on 13 Nov read all four departments without a failure (Naval at five seconds a request) but then
   could not save: commits had been pushed to `main` during its 16 minutes. The save step now rebases onto those before
   pushing. Avoid pushing while a scheduled run is in progress all the same.
+- Home page boxes (the developer, 13 Nov: every department should look like ECE's): a program's headline card must have
+  a key shaped "<number> <unit>; <rest>" so the box shows a big number. Aerospace and Naval lead with credits like ECE.
+  Nuclear's rule document gives no credit numbers (it leaves them to the university's regulations), so its boxes lead
+  with the examination pass mark. Do not add credit numbers for Nuclear without a source that states them.
+- The second full manual run of the daily job passed (15 min 46 s, all four departments read, saved and published).

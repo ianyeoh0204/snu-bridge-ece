@@ -41,7 +41,7 @@ def card(id, programs, group, page, title, key, rule, quotes, why, when="", trap
 CARDS = [
     # ---- completing coursework: master's
     card("ae-ms-completion", ["masters"], "finish_coursework", "completion", "Completion: registrations, credits and grade average",
-         "4 to 8 registrations; 24 credits; 3.0 average",
+         "24 credits; 3.0 average; 4 to 8 registrations",
          ["Registered semesters: at least 4, at most 8.", "Credits: at least 24.", "Grade point average: at least 3.0."],
          [": 등록횟수 4회 이상 8회까지, 24학점 이상, 평점평균 3.0이상"], "These are the main thresholds for completing coursework; the required-course rules also apply."),
     card("ae-ms-thesis-research", ["masters"], "credit_rules", "completion", "Thesis research credits", "At most 6 of the 24 credits",
@@ -71,7 +71,7 @@ CARDS = [
          ["대학원 공통역량교과목은 최대 3학점까지 타학과 교과목으로 인정한다.[신설 2021.12.16.]"], "They are recognised as other-department courses, and only up to this many credits."),
     # ---- completing coursework: PhD
     card("ae-phd-completion", ["phd"], "finish_coursework", "completion", "Completion: registrations, credits and grade average",
-         "4 to 12 registrations; 36 credits; 3.0 average",
+         "36 credits; 3.0 average; 4 to 12 registrations",
          ["Registered semesters: at least 4, at most 12.", "Credits: at least 36.", "Grade point average: at least 3.0."],
          [": 등록횟수 4회이상 12회까지, 36학점 이상, 평점평균 3.0이상"], "These are the main thresholds for completing coursework; the required-course rules also apply."),
     card("ae-phd-thesis-research", ["phd"], "credit_rules", "completion", "Thesis research credits", "At most 12 of the 36 credits, seminar included",
@@ -101,7 +101,7 @@ CARDS = [
          "Master's and PhD courses are run as one list, so a PhD student can register again for a course already taken. It will not count toward completion."),
     # ---- completing coursework: integrated
     card("ae-int-completion", ["integrated"], "finish_coursework", "completion", "Completion: registrations, credits and grade average",
-         "6 to 16 registrations; 60 credits; 3.0 average",
+         "60 credits; 3.0 average; 6 to 16 registrations",
          ["Registered semesters: at least 6, at most 16.", "Credits: at least 60.", "Grade point average: at least 3.0."],
          [": 등록횟수 6회이상 16회까지, 60학점 이상, 평점평균 3.0이상"], "These are the main thresholds for completing coursework; the required-course rules also apply."),
     card("ae-int-thesis-research", ["integrated"], "credit_rules", "completion", "Thesis research credits", "At most 18 of the 60 credits, seminar included",

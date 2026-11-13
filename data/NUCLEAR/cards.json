@@ -67,7 +67,7 @@
   ],
   "group": "before_exam",
   "title": "Comprehensive examination (master's)",
-  "key": "Two questions; average of 60 to pass",
+  "key": "60 points on average to pass; two written questions",
   "rule": [
    "A written examination of 1 question on a topic related to your courses and 1 question on a topic related to your thesis.",
    "Each question is marked out of 100. The average must be 60 or higher to pass."
@@ -97,7 +97,7 @@
   ],
   "group": "before_exam",
   "title": "Comprehensive examination (PhD and integrated)",
-  "key": "Five questions; 70 on three of them and 290 in total",
+  "key": "70 points on each of three questions; 290 in total over five",
   "rule": [
    "Choose and answer 5 questions of the comprehensive written examination. Each is marked out of 100.",
    "To pass: 70 or higher on each of 3 questions, and 290 or higher in total over the 5.",
