@@ -480,7 +480,7 @@ const QUESTION = (url) => "Explain this Seoul National University notice for an 
   "If it depends on my program or year of entry, ask me.";
 const askButton = (n) => { const done = el("span", { class: "asked", hidden: "" }, ...B("Copied. Paste it into {assistant}.", { assistant: assistantLink() }, { assistant: dept.assistant.name }));
   const button = el("button", { type: "button", class: "ask", onclick: async () => {
-    try { await navigator.clipboard.writeText(QUESTION(n.url)); done.hidden = false; } catch (e) { window.prompt(L("Copy this question"), QUESTION(n.url)); } } }, ...B("Copy a question about the original notice for {assistant}", { assistant: dept.assistant.name }));
+    try { await navigator.clipboard.writeText(QUESTION(n.url)); done.hidden = false; } catch (e) { window.prompt(L("Copy this question"), QUESTION(n.url)); } } }, ...B("Ask in {assistant}", { assistant: dept.assistant.name }));
   return el("p", { class: "askline" }, button, done); };
 const assistantLink = () => el("a", { href: dept.assistant.url, target: "_blank", rel: "noopener" }, dept.assistant.name);
 let audience = audienceOf(program);

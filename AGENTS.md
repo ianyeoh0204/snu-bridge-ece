@@ -702,3 +702,12 @@ separated, and a new "clean" look written by a Sonnet agent from a brief) and ch
   could not open. It could not read the images or open the PDFs from the link alone and asked for a screenshot or the
   file, which is what the site and the poster say. It took some dates from another SNU page carrying the same schedule,
   and said so. Sending a screenshot was not tried.
+- The button on each notice is labelled "Ask in ChatGPT Edu" (the developer, 15 Nov; it was "Copy a question about the
+  original notice for ChatGPT Edu"). It still copies the same question and then says "Copied. Paste it into ChatGPT Edu."
+  The developer asked for no further change to the poster or the site after this.
+- The developer's own trial of the same request in two places (15 Nov, notice 58022 with one HWP form): in the Codex
+  desktop app, the "SNU Bridge — Rules & Notices" plugin's bundled reader fetched and read the HWP's text; on
+  chatgpt.com the same plugin was refused the file (HTTP 403) and read the notice page only. So the booth demo of
+  reading an attachment runs in the desktop app, and on the website a student adds the file or a screenshot. Both are
+  ChatGPT Edu; the poster and the site say only "ChatGPT Edu". That plugin lives in the developer's workspace, not in
+  this repository; `navigator/instructions.md` here is the text for a ChatGPT Edu project.
