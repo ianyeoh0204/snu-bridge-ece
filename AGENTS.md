@@ -661,3 +661,44 @@ code, every English and Korean pair. Every finding was checked on the page or in
   About addresses, department switch and return from About, program and year buttons, a tick across a reload and with
   storage blocked, the filter with its counts, the copy button (the question carries the original notice's address),
   the calendar links and file (149 events), cross-department addresses, no sideways scroll, no console error.
+
+## Who reads what: the languages are separated (14 Nov 2026, late; published on the developer's word)
+The developer compared three versions on a simulated iPhone (the published site, the same look with the languages
+separated, and a new "clean" look written by a Sonnet agent from a brief) and chose the second.
+- **Student pages print English only; About prints both.** Home, Requirements and Notices are for international
+  students. About is for the department and the judges, who read Korean, so there each sentence has its Korean beneath
+  it. This replaces "two languages on one page" of 11 Nov (the developer: "only the webpage for the judge should have 2
+  languages"). `LANG` in the template is set for each page as it is shown; `?lang=both` in the address prints both on
+  every page (the form before this change), `?lang=en` English on every page. There is no language button.
+  Korean that is the department's own (a requirement's source line, a notice's title and dates) stays on every page.
+- Every pair still lives in `bridge/text.json` and the build still stops on a missing one. `out/korean-new-lines.md` now
+  lists first the unread lines a visitor sees in Korean (About, and lines shared with the poster), then the ones that
+  are no longer shown.
+- New or changed sentences, each approved by the developer, none read by a Korean speaker yet:
+  - Home: one sentence in place of two ("...in English for international students, each linked to its official source.").
+  - "Requirements for students admitted in {year} are not yet included." It appears by itself when the calendar year is
+    later than the newest rule sheet (the developer's worry: a 2027 entrant would see 2026 rules without a word).
+    Nuclear shows it now for 2026. A new year still needs a person: add that year's sheet, write and re-read its cards.
+    The developer asked whether to remove the year buttons instead; no, because the rules differ by year of admission.
+  - "The project began with {first}. {names} were added by the same steps, to show that it extends to other
+    departments." On About under "Extending to another department" and on the poster under "Where it extends", where
+    it replaces the "small reader" sentence (both did not fit; the gap between parts of that panel is 3.8 mm, was 4).
+  - The note on departments without an English board now ends "...has no English site; its Korean site has a Google
+    Translate button." Seen on Naval's site on 14 Nov. Computer Science's English menu was opened the same day: menus in
+    English, notices (list and body) in Korean, so its 0 stands.
+- If a judge says a browser can already translate a page: the site's answer is what a page translator cannot do.
+  Requirements sit in rule PDFs (ECE's graduate handbook is 38 scanned pages with no selectable text); dates are checked
+  against the Korean by code and the requirements were re-read by a second model; 102 of the 295 notices contain images
+  and 98 attach HWP files, which the site says on each notice and hands to ChatGPT Edu.
+- A long web address inside a notice ran past the edge of a phone screen and was cut off; it wraps now.
+- `tools/poster.py` draws only the poster that is sent. The older layouts (`first`, `equal`, `balanced`), their branches
+  and 56 unused Korean lines are gone (620 lines to 492); the poster's HTML came out byte for byte the same. Earlier
+  sections of this file that mention `python tools/poster.py <layout>` describe history.
+- The clean version was not chosen. Its three files are kept, unpublished, in `out/clean-version/` with the small
+  script that built the separated version for comparison.
+- ChatGPT Edu, tried in the developer's account on 14 Nov (two messages, in a chat started with the developer's
+  "SNU Bridge — Rules & Notices" plugin): given the copy-button question for a notice with two image tables and two
+  PDFs, it opened the department's page and answered with who must act, dates beside their Korean, steps and what it
+  could not open. It could not read the images or open the PDFs from the link alone and asked for a screenshot or the
+  file, which is what the site and the poster say. It took some dates from another SNU page carrying the same schedule,
+  and said so. Sending a screenshot was not tried.

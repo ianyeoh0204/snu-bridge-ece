@@ -5,7 +5,7 @@
   "Notices": "공지사항",
   "About": "소개",
   "Department of {name}": "{name}",
-  "Graduation requirements and department notices in English, for international students. Prepared from official department documents; every item links to its source.": "외국인 학생을 위해 졸업 요건과 학과 공지를 영어로 안내합니다. 학과 공식 문서를 바탕으로 작성했으며, 모든 항목에 출처 링크를 제공합니다.",
+  "Graduation requirements and department notices in English for international students, each linked to its official source.": "외국인 학생을 위해 졸업 요건과 학과 공지를 영어로 안내하며, 모든 항목에 공식 출처 링크를 제공합니다.",
   "Graduation requirements": "졸업 요건",
   "Undergraduate": "학부",
   "Master's": "석사과정",
@@ -172,7 +172,7 @@
   "{from} to {to}": "{from} ~ {to}",
   "Notices on the Korean board": "한국어 게시판의 공지",
   "Separate English board posts": "별도 영문 게시판 게시물",
-  "{n} departments have no separate English board and count 0. Under the English menu of {a}, the Korean board's own notices appear. {b} has no English site.": "{n}개 학과는 별도 영문 게시판이 없어 0으로 셌습니다. {a}의 영어 메뉴에는 한국어 게시판의 공지가 그대로 표시됩니다. {b}는 영문 사이트가 없습니다.",
+  "{n} departments have no separate English board and count 0. Under the English menu of {a}, the Korean board's own notices appear. {b} has no English site; its Korean site has a Google Translate button.": "{n}개 학과는 별도 영문 게시판이 없어 0으로 셌습니다. {a}의 영어 메뉴에는 한국어 게시판의 공지가 그대로 표시됩니다. {b}는 영문 사이트가 없으며, 한국어 사이트에 Google 번역 버튼이 있습니다.",
   "notices on the Korean boards of {n} engineering departments": "공과대학 {n}개 학과의 한국어 게시판에 올라온 공지",
   "Every figure covers the same period, {from} to {to}. This project read the boards on {date}.": "모든 수치는 같은 기간({from} ~ {to})을 대상으로 합니다. 이 프로젝트는 {date}에 게시판을 읽었습니다.",
   "{n} of the {m} posts on the English notice board have a title in English.": "영문 공지 게시판 게시물 {m}건 가운데 {n}건의 제목이 영어입니다.",
@@ -209,6 +209,8 @@
   "The gap": "격차",
   "requirements, {d} departments, agreed by the second AI reader; {n} settled by the author": "{d}개 학과 요건 중 2차 AI 판독자가 동의한 요건, {n}개는 작성자가 판단",
   "planted errors caught, in the ECE readings": "전기·정보공학부 판독에서 적발한 일부러 넣은 오류",
-  "quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)": "{d}개 학과, 한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)"
+  "quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)": "{d}개 학과, 한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
+  "Requirements for students admitted in {year} are not yet included.": "{year}년 입학생의 요건은 아직 포함되어 있지 않습니다.",
+  "The project began with {first}. {names} were added by the same steps, to show that it extends to other departments.": "이 프로젝트는 {first}에서 시작했습니다. {names}는 같은 절차로 추가했으며, 다른 학과로 확장할 수 있음을 보여 줍니다."
  }
 }

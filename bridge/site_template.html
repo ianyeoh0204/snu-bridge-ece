@@ -149,6 +149,7 @@ details.done .title { color:var(--muted); }
 .notice .full summary { min-height:0; padding:8px 0; font-size:14px; font-weight:700; color:var(--blue); }
 .notice .full summary::after { font-size:18px; }
 .notice .full p { margin:0 0 10px; white-space:pre-wrap; }
+.notice .body :is(p, li, td) { overflow-wrap:anywhere; }  /* a long address in a notice wraps instead of running off a phone screen */
 .links { display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:12px; font-size:14px; }
 
 
@@ -361,7 +362,7 @@ const deptId = deptIds.includes(asked) ? asked : deptIds.includes(store.get("bri
 const dept = DATA.departments[deptId];
 const switchTo = (id, hash) => { store.set("bridge:dept", id === mainId ? null : id);
   let saved = null; try { saved = localStorage.getItem("bridge:dept"); } catch (e) {}
-  const query = (saved || mainId) === id ? "" : "?dept=" + id;  // a browser that stores nothing carries the choice in the address
+  const query = [(saved || mainId) === id ? "" : "dept=" + id, FIXED ? "lang=" + FIXED : ""].filter(Boolean).join("&").replace(/^(?=.)/, "?");  // a browser that stores nothing carries the choice in the address
   history.replaceState(null, "", location.pathname + query + (hash !== undefined ? hash : location.hash)); location.reload(); };
 let program = dept.programs.includes(store.get("bridge:program")) ? store.get("bridge:program") : dept.default_program;
 // Entry years exist only where the rules differ by year of admission (undergraduate). The latest year is the default.
@@ -380,20 +381,33 @@ function el(tag, attrs, ...children) {
   for (const c of children.flat(3)) if (c !== null && c !== "") node.append(c);
   return node;
 }
-// Two languages on one page. B(an English sentence) gives that sentence with its Korean beneath it in small type.
-// Both come from one pair in bridge/text.json, and the site will not build if a sentence used here has no Korean there.
+// Who reads what (the developer, 14 Nov 2026): Home, Requirements and Notices are for international students and print
+// English only. About is for the department and the judges, who read Korean, so there B(an English sentence) gives
+// that sentence with its Korean beneath it in small type. ?lang=both in the address prints both on every page, and
+// ?lang=en English on every page. Every sentence is one pair in bridge/text.json, and the site will not build if a
+// sentence used here has no Korean there. Korean that is the department's own (a requirement's source line, a notice's
+// title and dates) is evidence, not interface, and is shown on every page.
 const TEXT = DATA.text;
 const fill = (text, values) => text.split(/(\{\w+\})/).map((part) => { const m = part.match(/^\{(\w+)\}$/); return m ? (values[m[1]] === undefined ? "" : values[m[1]]) : part; });
-const below = (...korean) => el("small", { class: "ko2", lang: "ko" }, ...korean);
-const B = (english, values, koreanValues) => [...fill(english, values || {}), below(fill(TEXT[english], Object.assign({}, values, koreanValues)))];
-const L = (english, values, koreanValues) => `${fill(english, values || {}).join("")} · ${fill(TEXT[english], Object.assign({}, values, koreanValues)).join("")}`;
-const P = (pair) => [pair.en, below(pair.ko)];  // a pair kept in a data file instead
+const FIXED = ["en", "both"].includes(new URLSearchParams(location.search).get("lang")) ? new URLSearchParams(location.search).get("lang") : null;
+let LANG = FIXED || "en";  // "en" on the student pages, "both" on About; set for each page as it is shown
+const below = (...korean) => (LANG === "both" ? el("small", { class: "ko2", lang: "ko" }, ...korean) : "");
+const B = (english, values, koreanValues) => (LANG === "both" ? [...fill(english, values || {}), below(fill(TEXT[english], Object.assign({}, values, koreanValues)))] : fill(english, values || {}));
+const L = (english, values, koreanValues) => (LANG === "both" ? `${fill(english, values || {}).join("")} · ${fill(TEXT[english], Object.assign({}, values, koreanValues)).join("")}` : fill(english, values || {}).join(""));
+const P = (pair) => [pair.en, below(pair.ko)];
+const two = (english, korean) => (LANG === "both" ? `${english} · ${korean}` : english);
 const koDate = (iso) => `${Number(iso.slice(0, 4))}년 ${Number(iso.slice(5, 7))}월 ${Number(iso.slice(8))}일`;
 const GROUP = { start_early: () => B("Early preparation"), before_exam: () => B("Qualification examination eligibility"), general_education: () => B("General education"),
   major_courses: () => B("Major courses"), finish_coursework: () => B("Coursework completion"), credit_rules: () => B("Credit and grade rules"),
   for_degree: () => B("Degree conferral"), every_semester: () => B("Each semester") };
 const AUDIENCE = { Graduate: () => B("Graduate"), Undergraduate: () => B("Undergraduate"), All: () => B("All") };
 const PROGRAM = { undergraduate: () => B("Undergraduate"), masters: () => B("Master's"), phd: () => B("PhD"), integrated: () => B("Integrated MS-PhD") };
+const others = deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]);
+const beganWith = () => B("The project began with {first}. {names} were added by the same steps, to show that it extends to other departments.",
+  { first: DATA.departments[mainId].name, names: [others.slice(0, -1).map((d) => d.short).join(", "), others[others.length - 1].short].filter(Boolean).join(" and ") + " Engineering" },
+  { first: DATA.departments[mainId].name_ko, names: others.map((d) => d.name_ko).join(", ") });
+// A year of admission later than the newest rule sheet on the site: say so, instead of showing the newest year's rules without a word.
+const yearsMissing = (years) => (years.length ? Array.from({ length: Math.max(0, new Date().getFullYear() - years[years.length - 1]) }, (_, i) => years[years.length - 1] + 1 + i) : []);
 const itemsOf = (n) => (n === 1 ? B("{n} item", { n }) : B("{n} items", { n }));
 const noticesOf = (n) => (n === 1 ? B("{n} notice", { n }) : B("{n} notices", { n }));
 const doneKey = (id) => `bridge:${deptId}:${program}:${id}`;
@@ -528,7 +542,7 @@ function renderNotices() {
         return el("details", { class: "notice", id: anchor(n.id) },
           el("summary", null, el("div", { class: "head" },
             el("div", { class: "meta" }, n.date,
-              n.category ? el("span", { class: "tag" }, `${n.category.en} · ${n.category.ko}`) : null,
+              n.category ? el("span", { class: "tag" }, two(n.category.en, n.category.ko)) : null,
               n.edited || (b && b.revised) ? el("span", { class: "tag trap" }, L("Revised")) : null,
               b && b.dates.length ? el("span", { class: "tag" }, L("Dates: {n}", { n: b.dates.length })) : null),
             el("div", { class: "en" }, n.title_en || L("Translation pending")))),
@@ -593,7 +607,7 @@ function setBoardLang(lang) {
 function renderHome() {
   document.getElementById("view-home").replaceChildren(
     el("section", { class: "band" }, el("p", null, B("Department of {name}", { name: dept.name }, { name: dept.name_ko })), el("h1", null, "SNU Bridge"),
-      el("p", null, B("Graduation requirements and department notices in English, for international students. Prepared from official department documents; every item links to its source."))),
+      el("p", null, B("Graduation requirements and department notices in English for international students, each linked to its official source."))),
     el("section", { class: "block", "aria-label": "Programs" },
       el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Graduation requirements"))),
       el("div", { class: "gates" }, ...dept.programs.map(programFacts).map((f) =>
@@ -656,7 +670,7 @@ function renderAbout() {
   const everyDept = Object.values(DATA.departments), allCards = everyDept.flatMap((d) => d.cards), sum = (list, f) => list.reduce((a, x) => a + f(x), 0);
   const allDates = everyDept.flatMap((d) => d.notices.filter((n) => n.brief).flatMap((n) => n.brief.dates));
   const readings = everyDept.map((d) => d.notice_reading).filter(Boolean), readDate = readings.map((r) => r.date).sort().pop();
-  const checkLabel = B("Independent check"); checkLabel[checkLabel.length - 1].prepend(dept.name_ko + ": "); checkLabel.unshift(dept.name + ": ");
+  const checkLabel = B("Independent check"); if (LANG === "both") checkLabel[checkLabel.length - 1].prepend(dept.name_ko + ": "); checkLabel.unshift(dept.name + ": ");
   const status = (n) => n.english_board === "found" ? B("Identified") : n.english_board ? B("None identified") : B("Not compared");
   // The same count on other departments' boards (tools/survey.py), with this department's own boards for the same period.
   const sv = DATA.survey;
@@ -729,7 +743,7 @@ function renderAbout() {
       el("p", { class: "aboutnote" }, B("Each line opens the notice on the department's own site. Most are seminars and outside programmes, and one is a test post. This page replaces a speaker's name with [name].")),
       el("ul", { class: "plain" },
         el("li", null, B("A title counts as English when it has no Korean in it. Posts on the separate English boards are counted apart and are not added to the {n}.", { n: num(sv.totals.english_titled) })),
-        el("li", null, B("{n} departments have no separate English board and count 0. Under the English menu of {a}, the Korean board's own notices appear. {b} has no English site.",
+        el("li", null, B("{n} departments have no separate English board and count 0. Under the English menu of {a}, the Korean board's own notices appear. {b} has no English site; its Korean site has a Google Translate button.",
           { n: sv.departments.filter((d) => d.english_side !== "separate").length, a: sv.departments.filter((d) => d.english_side === "same_posts").map((d) => d.name).join(" and "), b: sv.departments.filter((d) => d.english_side === "none").map((d) => d.name).join(" and ") },
           { a: sv.departments.filter((d) => d.english_side === "same_posts").map((d) => d.name_ko).join(", "), b: sv.departments.filter((d) => d.english_side === "none").map((d) => d.name_ko).join(", ") })),
         el("li", null, B("Every figure covers the same period, {from} to {to}. This project read the boards on {date}.", Object.assign({ date: fullDate(sv.counted_on) }, span(sv.since, sv.until)[0]), Object.assign({ date: koDate(sv.counted_on) }, span(sv.since, sv.until)[1]))),
@@ -850,6 +864,7 @@ function renderAbout() {
     sv ?
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Extending to another department"))),
       el("ul", { class: "plain" },
+        others.length ? el("li", null, beganWith()) : "",
         el("li", null, B("Notices need a small reader for each kind of board software. The eleven department sites read here use six kinds. Translation, the date check and publishing stay the same.")),
         el("li", null, B("Requirements are written from that department's official documents and re-read by a second reader, as they were here.")),
         ...deptIds.filter((k) => k !== mainId).map((k) => DATA.departments[k]).map((d) => el("li", null, B("{name} is on this site with {n} requirements written from its own rules and its notices since {date}.",
@@ -904,6 +919,7 @@ function animate(root) {
 }
 
 function show(view, keepScroll) {
+  LANG = FIXED || (view === "about" ? "both" : "en"); footer(); if (view === "requirements") render();
   aboutMenu.classList.remove("open"); if (aboutMenu.contains(document.activeElement)) document.activeElement.blur();  // the list never stays open over a new page
   for (const v of ["home", "requirements", "notices", "about"]) {
     document.getElementById("view-" + v).hidden = v !== view;
@@ -968,7 +984,8 @@ function render() {
   document.getElementById("years-row").hidden = !years.length;
   const series = Object.values(dept.sources).find((s) => s.entry_year);
   document.getElementById("years-note").replaceChildren(...(years.length ? [B("Requirements for students admitted before {year} are not included.", { year: years[0] }),
-    series && series.url ? el("a", { href: series.url, target: "_blank", rel: "noopener" }, L("Department page for earlier years")) : ""].flat() : []));
+    " ", yearsMissing(years).length ? B("Requirements for students admitted in {year} are not yet included.", { year: yearsMissing(years).join(", ") }) : "",
+    " ", series && series.url ? el("a", { href: series.url, target: "_blank", rel: "noopener" }, L("Department page for earlier years")) : ""].flat() : []));
   document.getElementById("years").replaceChildren(...years.map((y) =>
     el("button", { type: "button", "aria-pressed": String(y === yearNow()),
       onclick: () => { entryYear = y; store.set("bridge:year", String(y)); render(); } }, String(y))));
@@ -984,6 +1001,7 @@ render();
 // Addresses: (none) or #home, #requirements, #notices, #about, #card-<id>, #notice-<id>;
 // for a pilot department, #notices-<DEPARTMENT> and #notice-<DEPARTMENT>-<id>; for a page of About, #about-<why|gap|how>.
 function route() {
+  LANG = FIXED || (/^#about(-|$)/.test(location.hash) ? "both" : "en");
   const h = location.hash, named = (prefix) => deptIds.find((k) => k !== deptId && (h === prefix + k || h.startsWith(prefix + k + "-")));
   // An address that names another department (older links to a pilot, or a link shared from it) opens that department.
   if (h === "#notices-" + deptId || h.startsWith(`#notice-${deptId}-`)) return (history.replaceState(null, "", h === "#notices-" + deptId ? "#notices" : "#notice-" + h.slice(9 + deptId.length)), route());
@@ -1000,7 +1018,7 @@ function route() {
   const bar = document.getElementById("deptbar");
   bar.hidden = deptIds.length < 2 || about;
   if (!bar.hidden && !bar.childElementCount) bar.append(el("span", null, L("Department")), el("div", { class: "seg", role: "group" }, ...deptIds.map((k) =>
-    el("button", { type: "button", "aria-pressed": String(k === deptId), onclick: () => { if (k !== deptId) switchTo(k); } }, `${DATA.departments[k].name} · ${DATA.departments[k].name_ko}`))),
+    el("button", { type: "button", "aria-pressed": String(k === deptId), onclick: () => { if (k !== deptId) switchTo(k); } }, two(DATA.departments[k].name, DATA.departments[k].name_ko)))),
     dept.reread === false ? el("span", { class: "tag trap" }, ...B("Written from the department's own rules on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.", { date: fullDate(dept.read_on) }, { date: koDate(dept.read_on) })) : "");
   if (h.startsWith("#card-")) { const c = dept.cards.find((x) => x.id === h.slice(6));
     // A card of another program or year of admission is not on the page until that program is shown.
@@ -1025,7 +1043,7 @@ for (const [id, label] of [["tab-requirements", B("Requirements")], ["tab-notice
   ["h1-requirements", B("Graduation requirements")], 
   ["years-label", B("Year of admission")], ["months-note", B("Months are taken from the graduate handbook. Exact dates are announced in each semester's notices.")],
   ["progress-note", B("Progress is stored on this device only.")], ["h1-notices", B("Department notices")]]) document.getElementById(id).replaceChildren(...label.flat());
-document.getElementById("footer").replaceChildren(...B("English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
+const footer = () => document.getElementById("footer").replaceChildren(...B("English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
 route();
 </script>
 </body>

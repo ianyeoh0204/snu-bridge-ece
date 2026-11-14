@@ -38,76 +38,16 @@ SEOUL = datetime.timezone(datetime.timedelta(hours=9))
 # Korean written for the poster only. Not yet read by a Korean speaker.
 POSTER_KO = {
     "The 2nd SNU Generative AI Competition": "제2회 서울대학교 생성형 AI 경진대회",
-    "One department's graduation requirements and notices, in English, each with its source. Updated daily from the department's own notices.":
-        "한 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 학과 공지를 바탕으로 매일 갱신됩니다.",
     "Scan to open the site": "QR 코드로 사이트 열기",
-    "The university set two directions this year.": "올해 대학은 두 가지 방향을 밝혔습니다.",
-    "Internationalisation: the base of all the university's work, not an added project.": "국제화: “대학의 부가적인 사업이 아니라 모든 일의 기반”",
-    "AI Native Campus: {n} action plans in education, research, administration and governance.": "AI Native Campus: 교육·연구·행정·거버넌스 분야 실행계획 {n}개",
-    "QS rank, 2026 and 2027 editions ({n} in 2025)": "QS 순위, 2026·2027년판 (2025년판 {n}위)",
-    "rank for share of international students, 2026 edition": "외국인 학생 비율 지표 순위, 2026년판",
-    "international students in Korea, 2026": "2026년 국내 외국인 유학생",
-    "Our reading, not the university's: a student who cannot read the department's notices is left out of both.":
-        "대학의 입장이 아닌 저희의 해석입니다. 학과 공지를 읽지 못하는 학생은 두 방향 모두에서 소외됩니다.",
-    "Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.":
-        "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
-    "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
-        "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
-    "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
-        "–: 별도 영문 게시판 없음. 취업·장학·세미나 게시판은 어느 학과에서도 집계하지 않았습니다.",
-    "A sample of {m} Korean-titled notices was opened: {n} held a line of English, none an English version.":
-        "한국어 제목의 공지 {m}건을 표본으로 열어 보았습니다. {n}건에 영어로 된 줄이 있었고, 영어본이 있는 공지는 없었습니다.",
-    "{year}: a new undergraduate division for international students, about {n} new students expected.":
-        "{year}년: 외국인 대상 학부 신설, 신입생 약 {n}명 예상",
-    "Our reading: the notices these students must follow are posted in Korean. AI in administration, an aim of the AI Native Campus, can close that gap.":
-        "저희의 해석: 이 학생들이 따라야 할 공지는 한국어로 게시됩니다. AI Native Campus가 지향하는 행정 분야의 AI 활용으로 이 격차를 줄일 수 있습니다.",
     "Sources: News1, 27 April 2026; President's New Year address; SNU Alumni Association newspaper. Links on the site.":
         "출처: 뉴스1(2026년 4월 27일), 총장 신년사, 서울대학교총동창신문. 링크는 사이트에 있습니다.",
-    "new notices read and translated": "새 공지를 읽고 번역",
     "Board counts: {from} to {to}. Site figures as of {date}.": "게시판 집계 기간: {from} ~ {to}. 사이트 수치 기준일: {date}.",
     "Korean board": "한국어 게시판",
-    "English title": "영어 제목",
-    "Korean notices on {n} engineering departments' boards since {date}": "{date} 이후 공과대학 {n}개 학과 게시판의 한국어 공지",
-    "have a title in English": "제목이 영어인 공지",
-    "This department's academic board since {date}": "{date} 이후 본 학과 학사 게시판",
-    "Korean notices": "한국어 공지",
-    "posts on the English board": "영문 게시판 게시물",
-    "Counted from the public boards. Titles only; method and limits are on the site.": "공개 게시판을 집계했습니다. 제목만 확인했으며, 방법과 한계는 사이트에 있습니다.",
     "What it does": "하는 일",
-    "{n} requirements for four programs. Each cites its file, page and Korean line.": "네 개 과정의 요건 {n}개. 항목마다 파일, 쪽, 한국어 원문을 밝힙니다.",
-    "{n} notices in English: who must act, dates, conditions, steps, and the full translation.": "영어로 제공하는 공지 {n}건: 조치 대상, 날짜, 조건, 절차, 전문 번역",
-    "Source": "출처",
-    "page {n}": "{n}쪽",
     "An AI model writes the English. Plain code checks every quoted date against the notice.": "AI 모델이 영어로 옮기고, 인용된 모든 날짜를 코드가 공지 원문과 대조합니다.",
-    "A second AI model, from another maker, re-read every requirement against its page.": "개발사가 다른 두 번째 AI 모델이 모든 요건을 해당 쪽과 대조해 다시 읽었습니다.",
-    "The site is rebuilt and published. No one's computer is needed.": "사이트를 다시 만들어 게시합니다. 누구의 컴퓨터도 필요하지 않습니다.",
-    "Re-read": "재판독",
-    "every day": "매일",
-    "a notice": "공지 1건당",
-    "Claude translates. An OpenAI model, through ChatGPT Edu, re-reads.": "번역은 Claude가, 재판독은 ChatGPT Edu를 통한 OpenAI 모델이 맡습니다.",
-    "Checked": "검증",
-    "requirements re-read by a second reader": "2차 판독자가 다시 읽은 요건",
-    "deliberately wrong entries caught": "일부러 넣은 오류 적발",
-    "dates found word for word in the notice": "공지 원문에서 그대로 확인된 날짜",
-    "points that could mislead, in ten notices, after the instructions were tightened": "지침을 강화한 뒤, 공지 10건에서 오해를 부를 수 있는 지점",
     "Try it": "직접 해 보기",
-    "Choose your program. See what to finish before graduation, and the page each item comes from.": "과정을 고르면 졸업 전에 마쳐야 할 항목과 각 항목의 출처 쪽을 볼 수 있습니다.",
     "Open a notice. Compare its dates with the Korean beside them, then open the original.": "공지를 열어 날짜를 옆의 한국어와 비교하고, 원문을 열어 보세요.",
-    "Add the deadlines to your calendar: {n} dated events, each checked against the weekday the notice prints.":
-        "마감일을 내 캘린더에 추가해 보세요. 날짜가 있는 일정 {n}건이며, 각각 공지에 적힌 요일과 대조했습니다.",
-    "Switch to {name}: another department's notices, added in one day as a pilot.": "{name}(으)로 바꿔 보세요. 하루 만에 시범으로 추가한 다른 학과의 공지입니다.",
     "Where it extends": "확장 방향",
-    "Notices: one small reader for each kind of board software. The eleven department sites read use six kinds.": "공지: 게시판 소프트웨어 종류마다 간단한 읽기 프로그램 하나가 필요합니다. 읽어 본 11개 학과 사이트는 여섯 종류를 씁니다.",
-    "Requirements: written by hand from each department's documents, then re-read.": "요건: 학과의 공식 문서를 바탕으로 직접 작성한 뒤 다시 읽습니다.",
-    "What it does not do": "하지 않는 일",
-    "For images and attachments, use ChatGPT Edu. The site does not read them. It does not replace the department office. Translations are made by AI and can be wrong.":
-        "이미지와 첨부파일은 ChatGPT Edu를 이용하세요. 본 사이트는 이를 읽지 않습니다. 학과 사무실을 대신하지 않습니다. 번역은 AI가 한 것이며 틀릴 수 있습니다.",
-    "requirements to graduate, in {d} departments. Each cites its file, page and Korean line.":
-        "{d}개 학과의 졸업 요건입니다. 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
-    "department notices in English, in {d} departments. Each gives who must act, the dates, the conditions, the steps and the full translation.":
-        "{d}개 학과의 공지를 영어로 제공합니다. 공지마다 조치 대상, 날짜, 조건, 절차, 전문 번역을 보여 줍니다.",
-    "dates from ECE's notices, ready for your calendar, past ones included. Each matches the weekday the notice prints.":
-        "전기·정보공학부 공지의 날짜로, 지난 일정을 포함하며 캘린더에 추가할 수 있습니다. 모두 공지에 적힌 요일과 일치합니다.",
     "The website shows all the information at a glance.": "웹사이트에서 모든 정보를 한눈에 볼 수 있습니다.",
     "Calendar": "캘린더",
     "Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.":
@@ -117,7 +57,6 @@ POSTER_KO = {
     "The dates from ECE's notices, in the student's own calendar: {n} so far.":
         "전기·정보공학부 공지의 날짜를 학생의 캘린더에서 볼 수 있습니다. 지금까지 {n}건입니다.",
     "Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu.": "공지의 ChatGPT Edu 버튼을 누르고, 복사된 질문을 ChatGPT Edu에 붙여 넣어 보세요.",
-    "Separate job, scholarship, news and seminar boards are not counted.": "따로 둔 취업·장학·뉴스·세미나 게시판은 집계하지 않았습니다.",
 }
 
 
@@ -127,16 +66,10 @@ POSTER_KO.update({
     "{n} departments' graduation requirements and notices, in English, each with its source. New notices are translated daily.":
         "{n}개 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 새 공지는 매일 번역됩니다.",
     "Master's program": "석사과정",
-    "of them, English title": "이 중 영어 제목",
-    "of them have a title in English": "이 가운데 제목이 영어인 공지",
     "A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.":
         "제목에 한글이 없으면 영어 제목으로 셌습니다. {n}건 전체를 링크와 함께 사이트에 실었습니다.",
     "QS 2026 rank for share of international students, as reported by the SNU Alumni Association newspaper":
         "QS 2026년판 외국인 학생 비율 지표 순위 (서울대학교총동창신문 보도)",
-    "{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.":
-        "전기·정보공학부 네 개 과정의 요건 카드 {n}개 (학부: {a}~{b}학번). 카드마다 파일, 쪽, 한국어 원문을 밝힙니다.",
-    "{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
-        "{date} 이후 전기·정보공학부 학사 공지 {n}건을 영어로 제공: 조치 대상, 날짜, 조건, 절차, 전문 번역",
     "Requirements, separately": "요건은 별도로",
     "An AI model wrote them once from the official documents, and a second AI model from another maker re-read them.":
         "AI 모델이 공식 문서를 바탕으로 한 번 작성했고, 개발사가 다른 두 번째 AI 모델이 다시 읽었습니다.",
@@ -145,17 +78,10 @@ POSTER_KO.update({
     "Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the Korean.":
         "영어는 Claude가 작성합니다. 개발사가 다른 OpenAI 모델이 모든 요건 카드를 한국어 원문과 대조해 다시 읽었습니다.",
     "Checks performed": "수행한 검증",
-    "In ten notices re-read after the instructions were tightened, {n} doubtful points remained.":
-        "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
     "Choose your program and year of entry. See the requirements, and the page each comes from.":
         "과정과 입학 연도를 고르면 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
-    "Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.":
-        "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
     "Switch department. {names} are here too, with {n} requirements written from their own rules.":
         "학과를 바꿔 보세요. {names}도 있으며, 각 학과의 자체 규정을 바탕으로 요건을 모두 {n}개 작성했습니다.",
-    "Notices need a small reader for each kind of board software. Translation and publishing are reused.":
-        "공지에는 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시 과정은 그대로 재사용합니다.",
-    "Requirements: written from each department's own documents, then re-read.": "요건: 각 학과의 공식 문서를 바탕으로 작성한 뒤 다시 읽습니다.",
 })
 
 
@@ -204,11 +130,11 @@ def fig(big, caption, small=""):
     return f'<div class="fig"><b>{big}{f"<i>{small}</i>" if small else ""}</b><p>{caption}</p></div>'
 
 
-# Three layouts. The developer compared them on 14 Nov 2026 and chose "equal": the judges read Korean, so every Korean
-# line is the size of the English above it, and a lower blue band pays for the room. `python tools/poster.py` draws it
-# as out/poster/poster.*. The other two are kept to compare (`python tools/poster.py first` or `balanced`, written to
-# out/poster/poster-<name>.*): "first" is the tall band with small Korean, "balanced" has Korean at 85% of the English.
-LOWER_BAND = """
+# The chosen poster's own rules, after the shared ones in build(): a lower blue band (196 mm) and every Korean line the
+# size of the English above it (the judges read Korean). "What it does" is the tall panel, on the right, with one example
+# for each part; "The gap" is an ordinary panel. The top row reads Why now, The gap, What it does; the bottom row
+# How it works, Try it, Checks performed.
+POSTER_CSS = """
 .band { height: 196mm; padding: 22mm 44mm 0; grid-template-columns: 1fr auto; }
 .band h1 { margin: 3mm 0 8mm -1mm; font-size: 96mm; }
 .band .tag { max-width: none; font-size: 15mm; }
@@ -224,32 +150,15 @@ LOWER_BAND = """
 .drow .dbar b, .drow u { font-size: 12.4mm; }
 .drow.head, .drow.head u, .drow.head .ko { font-size: 9.6mm !important; }
 .bar .ko { display: inline; margin-left: 5mm; }
-"""
-CHOSEN = "product"
-LAYOUTS = {
-    "first": "",
-    "equal": LOWER_BAND + """
+
 .ko, .drow .dn small, .mock td small, .mock .kotitle { font-size: 1em !important; line-height: 1.24; }
 .col:first-child .panel:first-child { flex: 1.11 1 0; }
 .steps li { padding: 3.6mm 0; }
 .foot { grid-template-columns: 1.6fr 1.15fr auto auto; }
-""",
-    "product": "",  # filled in below: the chosen layout plus its own rules
-    "balanced": LOWER_BAND + """
-.ko, .mock .kotitle { font-size: max(.85em, 9.2mm) !important; line-height: 1.26; }
-.drow .dn small, .mock td small, .drow.head .ko, .band aside .ko { font-size: max(.85em, 8.6mm) !important; }
-""",
-}
 
-
-# "product" (to compare, 14 Nov 2026): the developer found the requirements, the notices and the calendar hard to find
-# on the poster, and the missing English notices overstated. Here "What it does" is the tall panel, on the right, with
-# one large number and one example for each of the three, and "The gap" is an ordinary panel. The top row reads
-# Why now, The gap, What it does; the bottom row How it works, Try it, Checks performed.
-LAYOUTS["product"] = LAYOUTS["equal"] + """
 .col.mid .panel:first-child { flex: 1.62 1 0; }
 .col:last-child .panel:first-child { flex: 4.7 1 0; }
-.col:last-child .panel:first-child .body { gap: 4mm; }
+.col:last-child .panel:first-child .body { gap: 3.8mm; }
 .does { justify-content: flex-start; }
 .does .part h5 { margin-top: 0; color: #002c84; font-size: 16mm; }
 .does .part .cap2 { margin: 2mm 0 4mm; font-size: 12.6mm; line-height: 1.24; }
@@ -267,20 +176,17 @@ LAYOUTS["product"] = LAYOUTS["equal"] + """
 """
 
 
-def build(variant=CHOSEN):
+def build():
     import segno
 
     used_new.clear(), missing.clear()
-    ece, aero = load("sources/ECE/config.json"), load("sources/AEROSPACE/config.json")
+    ece = load("sources/ECE/config.json")
     cards, audit = load("data/ECE/cards.json"), load("data/ECE/audit.json")
     notices = load("data/ECE/notices.json")
     survey, context = load("data/survey.json"), load("sources/context.json")
     briefs = [json.loads(pathlib.Path(f).read_text(encoding="utf-8")) for f in glob.glob(str(ROOT / "data/ECE/briefs/*.json"))]
-    dates = [d for b in briefs for d in b["dates"]]
     all_dates = [d for f in glob.glob(str(ROOT / "data/*/briefs/*.json")) for d in json.loads(pathlib.Path(f).read_text(encoding="utf-8"))["dates"]]
-    reread = sum(1 for c in audit["cards"].values() if c["status"] != "open")
     caught = sum(1 for v in audit["decoys"].values() if v == "caught")
-    mislead = lambda group: sum(sum(n["could_mislead"].values()) for n in audit.get(group, {}).values())
     f, totals = context["figures"], survey["totals"]
     today = datetime.datetime.now(SEOUL).date().isoformat()
     calendar = deadlines.build("ECE", ece["short"], ece["site"])[1]  # the same count the site shows
@@ -294,19 +200,14 @@ def build(variant=CHOSEN):
     # One real requirement and one real notice, redrawn as the site shows them. The requirement is one whose every number
     # can be seen in the Korean line quoted beside it, so the example shows what it claims to show.
     digits = lambda text: set(re.findall(r"\d+(?:\.\d+)?", text))
-    shown = [c for c in cards if "masters" in c["programs"] and digits(c["key"]) and digits(c["key"]) <= digits(c["source_quote_ko"])]
-    card = next((c for c in shown if c["id"] == ece["headline_cards"]["masters"]), shown[0])
-    source = next(s for s in ece["files"] if s["file"] == card["source_file"])
     weekday = lambda d: d["verified"] and re.search(r"[월화수목금토일]\s*(요일)?\s*\)", d["original_ko"])
     by_id = {b["id"]: b for b in briefs}
     newest = max((by_id[n["id"]] for n in notices[:6] if n["id"] in by_id), key=lambda b: sum(1 for d in b["dates"] if weekday(d)))
     notice = next(n for n in notices if n["id"] == newest["id"])
-    rows = ([d for d in newest["dates"] if weekday(d)] or [d for d in newest["dates"] if d["verified"]])[:2 if variant != "product" else 1]
+    rows = ([d for d in newest["dates"] if weekday(d)] or [d for d in newest["dates"] if d["verified"]])[:1]
     qr = segno.make(SITE, error="m").svg_inline(omitsize=True, border=2, dark="#000", light="#fff")
 
     program = bi("Master's program")
-    requirement = (f'<div class="mock"><p class="meta">{program}</p><h4>{html.escape(card["title"])}</h4><p class="key">{html.escape(card["key"])}</p>'
-                   f'<p class="src">{bi("Source")}: {html.escape(source["name"])}, {fill("page {n}", {"n": card["source_page"]})} · <span lang="ko">{html.escape(card["source_quote_ko"])}</span></p></div>')
     date_rows = "".join(f'<tr><td>{html.escape(d["what"])}</td><td>{html.escape(d["when"])}<small lang="ko">{html.escape(d["original_ko"])}</small></td></tr>' for d in rows)
     translated = (f'<div class="mock"><p class="meta">{notice["date"]}</p><h4>{html.escape(newest["title_en"])}</h4><p class="kotitle" lang="ko">{html.escape(notice["title_ko"])}</p>'
                   f'<table>{date_rows}</table><p class="src">{bi("Original notice")} →</p></div>')
@@ -327,16 +228,8 @@ def build(variant=CHOSEN):
              + "".join(drow(d) for d in sorted(survey["departments"], key=lambda d: -d["korean"])) + "</div>")
     heropair = (f'<div class="heropair"><div><b>{num(totals["korean"])}</b><p>' + bi("notices on the Korean boards of {n} engineering departments", {"n": len(survey["departments"])}) + "</p></div>"
                 f'<div><b class="blue">{num(totals["english_titled"])}</b><p>{bi("of them have a title in English")}</p></div></div>')
-    silent = min((d for d in survey["departments"] if d["english_side"] == "separate" and not d["english_posts"]), key=lambda d: d["english_last_post"])
-    korean_only = max((d for d in survey["departments"] if d["english_posts"] and not d["english_posts_titled"]), key=lambda d: d["english_posts"])
     english_boards = bi("The separate English boards of {k} departments had {n} posts in the same period, {m} with an English title.",
                         {"k": totals["english_boards"], "n": totals["english_posts"], "m": totals["english_posts_titled"]})
-    last = datetime.date.fromisoformat(silent["english_last_post"])
-    boards_line = bi("{a}'s English board last had a post in {month} {year}. {b}'s has {n} posts, all with Korean titles.",
-                     {"a": silent["name"], "month": last.strftime("%B"), "year": last.year, "b": korean_only["name"], "n": korean_only["english_posts"]},
-                     {"a": silent["name_ko"], "month": last.month, "b": korean_only["name_ko"]})
-    legend = bi("Separate job, scholarship, news and seminar boards are not counted.")
-    counted = f'<p class="note">{legend}</p><p class="note">' + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p>"
 
     funded = bi("In 2026 the university put {won} billion won into {n} colleges and schools to recruit international students and help them settle.",
                 {"won": f["college_fund_billion_won"], "n": f["colleges_funded"]}, {"won": 10 * f["college_fund_billion_won"]})  # 1 billion won is 10억 원
@@ -348,16 +241,6 @@ def build(variant=CHOSEN):
            + f'<ul class="rule"><li>{funded}</li><li>{division}</li><li>' + bi("In his 2026 address the President said internationalisation must be the base of all the university's work.") + "</li></ul>"
            + why_figs + f'<p class="stand">{reading}</p>'
            + '<p class="note">' + bi("Sources: News1, 27 April 2026; President's New Year address; SNU Alumni Association newspaper. Links on the site.") + "</p></div>")
-
-    gap = f'<div class="body"><p class="period">{period}</p>{heropair}{chart}<p class="stand">{english_boards}</p><p class="cap">{boards_line}</p><div>{counted}</div></div>'
-
-    years = sorted({y for c in cards for y in (c.get("entry_years") or [])})
-    covered = day(ece["board"]["since"])
-    line_req = bi("{n} requirement cards for four ECE programs (undergraduate: {a} to {b} entrants). Each cites its file, page and Korean line.",
-                  {"n": len(cards), "a": years[0], "b": years[-1]})
-    line_notices = bi("{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.",
-                      {"n": len(notices), "date": covered[0]}, {"date": covered[1]})
-    does = f'<div class="body"><p>{line_req}</p>{requirement}<p>{line_notices}</p>{translated}</div>'
 
     step = lambda n, title, text: f'<li><b>{n}</b><h4>{bi(title)}</h4><p>{text}</p></li>'
     steps = ('<ol class="steps">' + step(1, "Collect", bi("Once a day a scheduled job reads the department's Korean board."))
@@ -383,45 +266,41 @@ def build(variant=CHOSEN):
 
     tries = [bi("Choose your program and year of entry. See the requirements, and the page each comes from."),
              bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
-             bi("Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.", {"n": calendar["events"]}),
+             bi("Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu."),
              bi("Switch department. {names} are here too, with {n} requirements written from their own rules.",
                 {"names": " and ".join([", ".join(o["short"] for o in others[:-1]), others[-1]["short"]]) + " Engineering", "n": sum(o["cards"] for o in others)},
                 {"names": ", ".join(o["department_ko"] for o in others)})]
-    try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
-    extends = (f'<h5>{bi("Where it extends")}</h5>'
-               + f'<p class="small">{bi("Notices need a small reader for each kind of board software. Translation and publishing are reused.")}</p>')
-    try_it = f'<div class="body">{try_list}{extends}</div>'
+    began = bi("The project began with {first}. {names} were added by the same steps, to show that it extends to other departments.",
+               {"first": ece["short"], "names": " and ".join([", ".join(o["short"] for o in others[:-1]), others[-1]["short"]]) + " Engineering"},
+               {"first": ece["department_ko"], "names": ", ".join(o["department_ko"] for o in others)})
+    extends = f'<h5>{bi("Where it extends")}</h5>' + f'<p class="small">{began}</p>'
 
-    if variant == "product":
-        # the example requirement: the master's headline card, with the rule line whose every number is in its Korean quote
-        head = next(c for c in cards if c["id"] == ece["headline_cards"]["masters"])
-        line = next(r for r in head["rule"] if digits(r) and digits(r) <= digits(head["source_quote_ko"]))
-        head_source = next(x for x in ece["files"] if x["file"] == head["source_file"])
-        example = (f'<div class="mock"><p class="meta">{program}</p><h4>{html.escape(head["title"])}</h4><p class="key">{html.escape(line)}</p>'
-                   f'<p class="src">{bi("Source")}: {html.escape(head_source["name"])}, {fill("page {n}", {"n": head["source_page"]})} · <span lang="ko">{html.escape(head["source_quote_ko"])}</span></p></div>')
-        translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
-                             if (d.parent / "briefs" / f"{n['id']}.json").exists())
-        part = lambda label, sentence, example="": f'<div class="part"><h5>{bi(label)}</h5><p class="cap2">{sentence}</p>{example}</div>'
-        does = ('<div class="body does">' + f'<p class="lead">{bi("The website shows all the information at a glance.")}</p>'
-                + part("Requirements", bi("Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.", {"n": all_cards, "d": len(audits)}), example)
-                + part("Notices", bi("Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.", {"n": translated_all, "d": len(audits)}), translated)
-                + part("Calendar", bi("The dates from ECE's notices, in the student's own calendar: {n} so far.", {"n": calendar["events"]}))
-                + part("Ask ChatGPT Edu", bi("For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment."))
-                + f'<div class="part">{extends}</div></div>')
-        gap = (f'<div class="body small-gap"><p class="period">{period}</p>{heropair}{chart}<p class="stand">{english_boards}</p><p class="note">'
-               + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p></div>")
-        tries[2] = bi("Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu.")
-        try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
-        try_it = f'<div class="body">{try_list}</div>'
+    # the example requirement: the master's headline card, with the rule line whose every number is in its Korean quote
+    head = next(c for c in cards if c["id"] == ece["headline_cards"]["masters"])
+    line = next(r for r in head["rule"] if digits(r) and digits(r) <= digits(head["source_quote_ko"]))
+    head_source = next(x for x in ece["files"] if x["file"] == head["source_file"])
+    example = (f'<div class="mock"><p class="meta">{program}</p><h4>{html.escape(head["title"])}</h4><p class="key">{html.escape(line)}</p>'
+               f'<p class="src">{bi("Source")}: {html.escape(head_source["name"])}, {fill("page {n}", {"n": head["source_page"]})} · <span lang="ko">{html.escape(head["source_quote_ko"])}</span></p></div>')
+    translated_all = sum(1 for d in sorted((ROOT / "data").glob("*/notices.json")) for n in json.loads(d.read_text(encoding="utf-8"))
+                         if (d.parent / "briefs" / f"{n['id']}.json").exists())
+    part = lambda label, sentence, example="": f'<div class="part"><h5>{bi(label)}</h5><p class="cap2">{sentence}</p>{example}</div>'
+    does = ('<div class="body does">' + f'<p class="lead">{bi("The website shows all the information at a glance.")}</p>'
+            + part("Requirements", bi("Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.", {"n": all_cards, "d": len(audits)}), example)
+            + part("Notices", bi("Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.", {"n": translated_all, "d": len(audits)}), translated)
+            + part("Calendar", bi("The dates from ECE's notices, in the student's own calendar: {n} so far.", {"n": calendar["events"]}))
+            + part("Ask ChatGPT Edu", bi("For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment."))
+            + f'<div class="part">{extends}</div></div>')
+    gap = (f'<div class="body small-gap"><p class="period">{period}</p>{heropair}{chart}<p class="stand">{english_boards}</p><p class="note">'
+           + bi("A title counts as English when it has no Korean in it. All {n} are listed on the site, each with its link.", {"n": totals["english_titled"]}) + "</p></div>")
+    try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
+    try_it = f'<div class="body">{try_list}</div>'
     # the count is spelled out in English at the head of the sentence, and a numeral in Korean
     tagline = bi("{n} departments' graduation requirements and notices, in English, each with its source. New notices are translated daily.",
                  {"n": {2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six"}.get(len(others) + 1, len(others) + 1)}, {"n": len(others) + 1})
     foot_left = bi("Translations are made by AI. Every notice links to its Korean original, and every requirement cites its source.")
     columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Try it", "5") + try_it],
-               [bar("What it does", "3") + does, bar("Checks performed", "6") + checked]] if variant == "product" else [[bar("Why now", "1") + why, bar("How it works", "4") + how],
-               [bar("The gap", "2") + gap, bar("Checks performed", "5") + checked],
-               [bar("What it does", "3") + does, bar("Try it", "6") + try_it]]
+               [bar("What it does", "3") + does, bar("Checks performed", "6") + checked]]
     grid = "".join(f'<div class="col{" mid" if i == 1 else ""}">' + "".join(f'<section class="panel">{p}</section>' for p in column) + "</div>"
                    for i, column in enumerate(columns))
     # both marks are read from out/poster/ (not published) and left out if the file is missing
@@ -551,7 +430,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 .band .author span {{ display: block; margin-top: 2mm; font-size: 10.5mm; }}
 .foot .logo {{ display: block; height: 62mm; width: auto; margin-top: -3mm; }}
 .foot div:nth-child(2) span {{ display: block; margin-bottom: 2mm; }}
-{LAYOUTS.get(variant, '')}</style></head><body>
+{POSTER_CSS}</style></head><body>
 <header class="band">
   <div>
     <p class="eyebrow">{bi("The 2nd SNU Generative AI Competition")} </p>
@@ -568,7 +447,7 @@ h5 .ko {{ display: inline; margin-left: 3mm; }}
 </footer>
 </body></html>"""
     OUT.mkdir(parents=True, exist_ok=True)
-    target = OUT / ("poster.html" if variant == CHOSEN else f"poster-{variant}.html")
+    target = OUT / "poster.html"
     target.write_text(page, encoding="utf-8")
     return target
 
@@ -591,14 +470,11 @@ def print_pdf(page):
 
 
 if __name__ == "__main__":
-    variant = sys.argv[1] if len(sys.argv) > 1 else CHOSEN
-    if variant not in LAYOUTS:
-        sys.exit(f"No layout named {variant}. Choose from: {', '.join(LAYOUTS)}.")
-    page = build(variant)
+    page = build()
     if missing:  # before anything is printed: a poster with a line in English only must never be written
         sys.exit("These lines have no Korean yet:\n" + "\n".join(missing))
     print_pdf(page)
-    if variant == CHOSEN and (ROOT / "site").is_dir():
+    if (ROOT / "site").is_dir():
         # The same page scaled to fit a browser pane, for the developer to click on a part and say what to change
         # (http://localhost:8770/poster/ with the local preview running). site/ is built again on GitHub and never
         # uploaded from here, so the author's name and the lab logo stay on this machine.
@@ -609,8 +485,6 @@ if __name__ == "__main__":
         for name in ("snu-logo.png", "lab-logo.png"):
             if (OUT / name).exists():
                 (preview / name).write_bytes((OUT / name).read_bytes())
-    if variant != CHOSEN:  # a layout to compare: the sheet for the Korean reader belongs to the poster that is sent
-        sys.exit()
     review = ["# Korean lines written for the poster only", "",
               "These are not on the site and have not been read by a Korean speaker. English first, Korean beneath.", ""]
     review += [line for english in used_new for line in (f"- {english}", f"  - {POSTER_KO[english]}")]
