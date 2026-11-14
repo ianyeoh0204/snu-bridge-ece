@@ -51,7 +51,6 @@ POSTER_KO = {
         "대학의 입장이 아닌 저희의 해석입니다. 학과 공지를 읽지 못하는 학생은 두 방향 모두에서 소외됩니다.",
     "Sources: President's New Year address; SNU press releases; SNU Alumni Association newspaper; Korea University News; The Korea Herald. Links on the site.":
         "출처: 총장 신년사, 서울대학교 보도자료, 서울대학교총동창신문, 한국대학신문, 코리아헤럴드. 링크는 사이트에 있습니다.",
-    "The gap": "격차",
     "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
         "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
     "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
@@ -146,11 +145,6 @@ POSTER_KO.update({
     "Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the Korean.":
         "영어는 Claude가 작성합니다. 개발사가 다른 OpenAI 모델이 모든 요건 카드를 한국어 원문과 대조해 다시 읽었습니다.",
     "Checks performed": "수행한 확인",
-    "requirements, {d} departments, agreed by the second AI reader; {n} settled by the author":
-        "{d}개 학과 요건 중 2차 AI 판독자가 동의. {n}개는 작성자가 판단",
-    "planted errors caught, in the ECE readings": "전기·정보공학부 판독에서 적발한 일부러 넣은 오류",
-    "quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)":
-        "{d}개 학과, 한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
     "In ten notices re-read after the instructions were tightened, {n} doubtful points remained.":
         "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
     "Choose your program and year of entry. See the requirements covered, and the page each comes from.":

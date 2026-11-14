@@ -577,3 +577,32 @@ The developer read the page and found three places where the site and the poster
 - The last Background page is "Checks" (was "Checks and limits"). Its closing block is "Ask ChatGPT Edu", in the
   poster's two sentences, and "This is not an official Seoul National University website" is gone from that page (the
   developer: everyone knows). The site's footer still says it once, in small type.
+
+## Wrap-up of the site's own wording (14 Nov 2026, the developer: "this is a webpage they want to deploy")
+The test for a line on a student-facing page: would the department office keep it if it ran the site next semester?
+A line that reports to the developer how the project was checked belongs on About, not above a list a student reads.
+- About is three pages, named as the poster's panels: Why now, The gap, How it works (`#about-why|gap|how`). The six
+  older addresses still open the page their step is now part of (`STEP_MOVED` in the template).
+  - The gap: the ten-department table; this department's two boards (the bars by year and the counting note moved into
+    its fold); "In practice" as one sentence with its two examples folded.
+  - How it works: the four steps; "Checks" with the poster's three figures over all four departments (261 of 279,
+    11 of 11 in the ECE readings, 841 of 847), in the poster's words, and the notice re-reading as one sentence summed
+    over the four departments (272 of 294 stood, 22 corrected); ECE's eight figures folded under them; Ask ChatGPT Edu;
+    Extending to another department; Passing it on.
+  - A sentence the site and the poster both print was moved from `POSTER_KO` to `bridge/text.json` (four lines).
+- Removed, each for a reason the developer gave:
+  - Everyone knows: "It is not an official Seoul National University website" (footer; now nowhere on the site or poster).
+  - A report to the developer: the second reader's counts above the Notices list (they are on About); "This project did
+    not read them from QS" (the line still says the two newspapers reported the figures); "The second reader is an AI
+    model ... not a check by a person or by the department" (the Checks sentence already says "a second AI reader from
+    another maker").
+  - Said twice: the line under "Graduation requirements" (Home says it); "English titles are unofficial translations;
+    the original notices are in Korean" on the Notices count line (the lede and the footer say it).
+  - Said twice on the merged "How it works" page: each step is one sentence (the semester files and the source links are
+    said under "Passing it on" and "Ask ChatGPT Edu"); the ECE-only counts under the four steps are gone, because the
+    Checks row under them gives the same figures for all four departments; "without the developer's laptop" is said once
+    there; the per-department lines under "Extending" no longer repeat the second reading.
+  - The extra page's footer (`bridge/korean_blocks.html`) no longer says "student project" or "not an official website".
+- Kept on purpose: "Re-read by a second reader on <date>" on each requirement and "Translated by AI on <date>..." on each
+  notice. They are short, and they are what the 261 of 279 rests on.
+- No sentence was written new. Korean was only cut, except "앞 단계에서는" to "위 표에서는" ("The table above counts...").
