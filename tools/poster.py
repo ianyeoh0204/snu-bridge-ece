@@ -50,8 +50,8 @@ POSTER_KO = {
     "Where it extends": "확장 방향",
     "The website shows all the information at a glance.": "웹사이트에서 모든 정보를 한눈에 볼 수 있습니다.",
     "Calendar": "캘린더",
-    "Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.":
-        "과정과 입학 연도별로 졸업에 필요한 모든 것을 보여 줍니다. {d}개 학과의 요건 {n}개이며, 요건마다 출처와 한국어 원문을 밝힙니다.",
+    "Graduation requirements by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.":
+        "과정과 입학 연도별 졸업 요건입니다. {d}개 학과의 요건 {n}개이며, 요건마다 출처와 한국어 원문을 밝힙니다.",
     "Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.":
         "새 공지를 영어로 제공하며, 조치 대상, 날짜, 조건, 절차를 보여 줍니다. 지금까지 {d}개 학과의 공지 {n}건입니다.",
     "The dates from ECE's notices, in the student's own calendar: {n} so far.":
@@ -285,7 +285,7 @@ def build():
                          if (d.parent / "briefs" / f"{n['id']}.json").exists())
     part = lambda label, sentence, example="": f'<div class="part"><h5>{bi(label)}</h5><p class="cap2">{sentence}</p>{example}</div>'
     does = ('<div class="body does">' + f'<p class="lead">{bi("The website shows all the information at a glance.")}</p>'
-            + part("Requirements", bi("Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.", {"n": all_cards, "d": len(audits)}), example)
+            + part("Requirements", bi("Graduation requirements by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.", {"n": all_cards, "d": len(audits)}), example)
             + part("Notices", bi("Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.", {"n": translated_all, "d": len(audits)}), translated)
             + part("Calendar", bi("The dates from ECE's notices, in the student's own calendar: {n} so far.", {"n": calendar["events"]}))
             + part("Ask ChatGPT Edu", bi("For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment."))

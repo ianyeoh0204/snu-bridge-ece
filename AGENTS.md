@@ -2,7 +2,7 @@
 
 ## What it is
 The list a senior gives a new international student, kept correct by the department's own notices.
-For each program it shows everything needed to graduate: what, when it opens, what it blocks, and the
+For each program it shows the graduation requirements: what, when it opens, what it blocks, and the
 official page that says so. Users are international students whose Korean is weak.
 
 ## How it works
