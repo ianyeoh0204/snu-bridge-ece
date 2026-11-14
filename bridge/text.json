@@ -211,6 +211,7 @@
   "planted errors caught, in the ECE readings": "전기·정보공학부 판독에서 적발한 일부러 넣은 오류",
   "quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)": "{d}개 학과, 한국어 공지에서 그대로 확인된 인용 날짜 (번역이 아닌 인용문 확인)",
   "Requirements for students admitted in {year} are not yet included.": "{year}년 입학생의 요건은 아직 포함되어 있지 않습니다.",
-  "The project began with {first}. {names} were added by the same steps, to show that it extends to other departments.": "이 프로젝트는 {first}에서 시작했습니다. {names}는 같은 절차로 추가했으며, 다른 학과로 확장할 수 있음을 보여 줍니다."
+  "The project began with {first}. {names} were added by the same steps, to show that it extends to other departments.": "이 프로젝트는 {first}에서 시작했습니다. {names}는 같은 절차로 추가했으며, 다른 학과로 확장할 수 있음을 보여 줍니다.",
+  "The original notice changed after this translation was made. The English below is not up to date; please read the original notice.": "이 번역이 작성된 뒤 원문 공지가 수정되었습니다. 아래 영문은 최신 내용이 아니므로 원문 공지를 확인하시기 바랍니다."
  }
 }

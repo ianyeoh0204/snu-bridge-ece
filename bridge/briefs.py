@@ -114,12 +114,23 @@ def _translate(notice: dict, target: Path) -> str:
     digest = hashlib.sha256(source["text"].encode("utf-8")).hexdigest()[:16]
     old = json.loads(target.read_text(encoding="utf-8")) if target.exists() else None
     titles = len(notice.get("title_history", []))  # the title is not part of the text, so a new title is counted apart
-    if old and old["text_hash"] == digest and old.get("prompt") == PROMPT_VERSION and old.get("titles", 0) == titles:
-        return ""
     # the notice itself was edited, not just our instructions
     changed = bool(old) and (old["text_hash"] != digest or old.get("titles", 0) != titles)
-    brief = llm.ask(SYSTEM, [llm.text(f"Title: {notice['title_ko']}\nPosted: {notice['date']}\n\n{source['text']}")],
-                    BRIEF, max_tokens=32000, effort="medium")
+    if old and not changed:
+        if old.pop("stale", None):  # edited back to the text this translation was made from
+            target.write_text(json.dumps(old, ensure_ascii=False, indent=1), encoding="utf-8")
+        if old.get("prompt") == PROMPT_VERSION:
+            return ""
+    try:
+        brief = llm.ask(SYSTEM, [llm.text(f"Title: {notice['title_ko']}\nPosted: {notice['date']}\n\n{source['text']}")],
+                        BRIEF, max_tokens=32000, effort="medium")
+    except Exception:
+        # The notice changed and its new English could not be written: the old English stays, marked as out of date,
+        # so the page says so and the calendar leaves its dates out until a later run translates it again.
+        if changed and not old.get("stale"):
+            old["stale"] = datetime.datetime.now(SEOUL).date().isoformat()
+            target.write_text(json.dumps(old, ensure_ascii=False, indent=1), encoding="utf-8")
+        raise
     body = _squash(notice["title_ko"] + source["text"])  # a deadline is sometimes stated only in the title
     for date in brief["dates"]:
         date["verified"] = _squash(date["original_ko"]) in body

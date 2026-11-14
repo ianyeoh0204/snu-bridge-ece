@@ -543,7 +543,7 @@ function renderNotices() {
           el("summary", null, el("div", { class: "head" },
             el("div", { class: "meta" }, n.date,
               n.category ? el("span", { class: "tag" }, two(n.category.en, n.category.ko)) : null,
-              n.edited || (b && b.revised) ? el("span", { class: "tag trap" }, L("Revised")) : null,
+              n.edited || (b && (b.revised || b.stale)) ? el("span", { class: "tag trap" }, L("Revised")) : null,
               b && b.dates.length ? el("span", { class: "tag" }, L("Dates: {n}", { n: b.dates.length })) : null),
             el("div", { class: "en" }, n.title_en || L("Translation pending")))),
           el("div", { class: "body" },
@@ -564,6 +564,8 @@ function renderNotices() {
               const full = el("details", Object.assign({ class: "full" }, listFirst ? {} : { open: "" }), el("summary", null, L("Full English translation")),
                 ...b.translation.split(/\n\s*\n/).map((t) => el("p", null, t)));
               return [
+              b.stale ? el("p", { class: "trapline" }, el("b", null, L("Caution") + ". "),
+                B("The original notice changed after this translation was made. The English below is not up to date; please read the original notice.")) : null,
               el("p", null, b.summary),
               b.dates.length ? el("table", null, ...b.dates.map((d) => el("tr", null,
                 el("td", null, d.what), el("td", null, d.when,

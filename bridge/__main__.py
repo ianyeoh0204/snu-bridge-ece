@@ -50,6 +50,10 @@ def _main() -> None:
         missing = [line.split()[0] for line in failed if not (ROOT / "data" / department / "briefs" / f"{line.split()[0]}.json").exists()]
         if missing:  # an earlier translation still stands for the others; these have none to show
             sys.exit(f"{len(missing)} notices have no translation yet: {', '.join(missing)}.")
+        stale = sorted(f.stem for f in (ROOT / "data" / department / "briefs").glob("*.json")
+                       if json.loads(f.read_text(encoding="utf-8")).get("stale"))
+        if stale:  # the page marks these as out of date; the run is marked failed so the owner hears of it
+            sys.exit(f"{len(stale)} notices changed at the source and their English is not updated yet: {', '.join(stale)}.")
         return
     if command == "notices":
         from . import notices

@@ -137,6 +137,8 @@ def build(department: str, short: str, site: str) -> tuple[str, dict]:
         if not file.exists():
             continue
         brief, used = json.loads(file.read_text(encoding="utf-8")), 0
+        if brief.get("stale"):
+            continue  # the notice changed after this English was written: its dates wait for the new translation
         stamp = brief["written"].replace("-", "") + "T000000Z"  # unchanged between builds unless the notice is translated again
         for date in brief["dates"]:
             count["dates"] += 1
