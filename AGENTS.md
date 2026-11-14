@@ -711,3 +711,7 @@ separated, and a new "clean" look written by a Sonnet agent from a brief) and ch
   reading an attachment runs in the desktop app, and on the website a student adds the file or a screenshot. Both are
   ChatGPT Edu; the poster and the site say only "ChatGPT Edu". That plugin lives in the developer's workspace, not in
   this repository; `navigator/instructions.md` here is the text for a ChatGPT Edu project.
+- The lecturer's name in the repository's history stays as it is (the developer, 15 Nov: no rewrite, no force-push). It
+  is in no current file, not on the site and not in the source archive.
+- The developer called the project wrapped on 15 Nov 2026. Left for the sending day (by 23:59, 20 Nov): `git pull`,
+  `.venv/bin/python tools/poster.py`, `git archive --format=zip --prefix=snubridge/ -o out/snubridge-source.zip HEAD`.
