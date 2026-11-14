@@ -606,3 +606,20 @@ A line that reports to the developer how the project was checked belongs on Abou
 - Kept on purpose: "Re-read by a second reader on <date>" on each requirement and "Translated by AI on <date>..." on each
   notice. They are short, and they are what the 261 of 279 rests on.
 - No sentence was written new. Korean was only cut, except "앞 단계에서는" to "위 표에서는" ("The table above counts...").
+- Later the same day, on the developer's word: the footer is three sentences (unofficial translation, confirm with the
+  office, last updated). "Made for the 2nd SNU Generative AI Competition" and the link to the extra Korean page are gone;
+  `korean-blocks.html` is still built but nothing links to it.
+- Second maker over the site's own pages (GPT-5.6 Terra through Kiro, read-only). What it read: the six pages as the main
+  department (ECE) shows them, as plain text made by a script, with two notices and three requirements as examples, and the
+  poster's text without the author line. It did not read the other three departments' pages, or any card or notice content; `out/review/site-read-*` and `out/review/site-pages/`). It was told the
+  developer's tests (said twice, report to the developer, inconsistent, overclaiming, everyone knows, negative framing,
+  Korean mismatch) and reproduced 295 notices, 279 requirements, 261, 18, 11 of 11, 841 of 847, 8,477, 80 and 149.
+  Eleven points. Taken (5): the calendar line said "from these notices" beside a filtered count of 47, now "from this
+  department's notices"; "and each was checked against that weekday" cut from the same note; "Once a day" was both a bar
+  label and the first words under it, the label is gone; the poster's tagline said "A department's" on a sheet about
+  four, now "Four departments'" (counted from the data); "the requirements covered" on the poster is "the requirements".
+  Not taken (6): two were the count-up animation caught mid-count in the text dump (Home shows 130, 24, 36, 60 credits);
+  "Re-read by a second reader" on each requirement stays (the developer was asked and removed only the other two);
+  "Translated by AI on <date>..." on each notice stays (it sends the student to the original); the gap page's first
+  sentence stays (8,477 notices on Korean boards against 80 posts on English boards, and the next sentence says so);
+  "The website shows all the information at a glance" is the developer's own sentence.

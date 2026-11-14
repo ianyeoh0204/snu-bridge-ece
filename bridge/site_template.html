@@ -193,7 +193,6 @@ details.done .title { color:var(--muted); }
 .plain b { font-weight:700; }
 .aboutnote { margin:12px 0 0; max-width:86ch; font-size:13px; color:var(--muted); }
 
-#footer .extra { display:block; margin-top:10px; color:var(--blue); font-weight:700; text-decoration:none; }
 .band .of { margin-left:10px; opacity:.78; font-variant-numeric:tabular-nums; }
 .band.small p:first-child .ko2 { display:inline; margin-left:8px; }
 .band.small h1 { margin:12px 0 16px; font-size:clamp(34px, 6vw, 60px); line-height:1; letter-spacing:-.03em; }
@@ -502,11 +501,11 @@ function renderNotices() {
   calNote.hidden = !cal;
   if (cal) {
     const file = location.origin + location.pathname.replace(/[^/]*$/, "") + cal.file, feed = file.replace(/^https?:/, "webcal:");
-    calNote.replaceChildren(...B("Deadlines as a calendar: {n} dated events from these notices. Subscribe once and it follows the notices.", { n: cal.events }),
+    calNote.replaceChildren(...B("Deadlines as a calendar: {n} dated events from this department's notices. Subscribe once and it follows the notices.", { n: cal.events }),
       el("span", { class: "links" }, el("a", { href: feed }, L("Apple Calendar or Outlook")),
         el("a", { href: "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(feed), target: "_blank", rel: "noopener" }, L("Google Calendar")),
         el("a", { href: cal.file }, L("Calendar file"))),
-      ...B("Only dates the notice prints with a weekday are included, and each was checked against that weekday. To be reminded, set a notification for this calendar in your calendar app."));
+      ...B("Only dates the notice prints with a weekday are included. To be reminded, set a notification for this calendar in your calendar app."));
   }
   const byMonth = new Map();
   for (const n of shown) { const k = n.date.slice(0, 7); byMonth.set(k, [...(byMonth.get(k) || []), n]); }
@@ -805,7 +804,7 @@ function renderAbout() {
     { key: "how",
       lead: B("This step shows how the site is made and kept up to date, and what another department would need."),
       parts: () => [
-    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("How SNU Bridge works")), el("span", null, B("Once a day"))),
+    el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("How SNU Bridge works"))),
       el("div", { class: "figs four", "data-reveal": "" },
         step("1", B("Collect"), B("Once a day a scheduled job reads the department's Korean board.")),
         step("2", B("Translate"), B("An AI model translates each new or changed notice into a title, a summary, dates, steps and the full text.")),
@@ -1005,9 +1004,7 @@ for (const [id, label] of [["tab-requirements", B("Requirements")], ["tab-notice
   ["h1-requirements", B("Graduation requirements")], 
   ["years-label", B("Year of admission")], ["months-note", B("Months are taken from the graduate handbook. Exact dates are announced in each semester's notices.")],
   ["progress-note", B("Progress is stored on this device only.")], ["h1-notices", B("Department notices")]]) document.getElementById(id).replaceChildren(...label.flat());
-document.getElementById("footer").replaceChildren(...B("SNU Bridge was made for the 2nd SNU Generative AI Competition. English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
-// One link out to the extra page, which has its own look: Korean grammar as building blocks.
-document.getElementById("footer").append(el("a", { class: "extra", href: "korean-blocks.html" }, L("Extra: Korean, in blocks")));
+document.getElementById("footer").replaceChildren(...B("English text is an unofficial translation. Regulations may change; please confirm with the department office. Last updated {date}.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) }));
 route();
 </script>
 </body>

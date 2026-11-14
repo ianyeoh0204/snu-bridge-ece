@@ -124,8 +124,8 @@ POSTER_KO = {
 # Lines rewritten on 12 Nov 2026 after an outside review (an OpenAI model through Codex, read-only) found no wrong number
 # but a dozen lines that made a narrow check look like a broader claim. Not yet read by a Korean speaker.
 POSTER_KO.update({
-    "A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.":
-        "학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 새 공지는 매일 번역됩니다.",
+    "{n} departments' graduation requirements and notices, in English, each with its source. New notices are translated daily.":
+        "{n}개 학과의 졸업 요건과 공지를 출처와 함께 영어로 제공합니다. 새 공지는 매일 번역됩니다.",
     "Master's program": "석사과정",
     "of them, English title": "이 중 영어 제목",
     "of them have a title in English": "이 가운데 제목이 영어인 공지",
@@ -147,8 +147,8 @@ POSTER_KO.update({
     "Checks performed": "수행한 확인",
     "In ten notices re-read after the instructions were tightened, {n} doubtful points remained.":
         "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
-    "Choose your program and year of entry. See the requirements covered, and the page each comes from.":
-        "과정과 입학 연도를 고르면 다루는 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
+    "Choose your program and year of entry. See the requirements, and the page each comes from.":
+        "과정과 입학 연도를 고르면 요건과 각 요건의 출처 쪽을 볼 수 있습니다.",
     "Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.":
         "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
     "Switch department. {names} are here too, with {n} requirements written from their own rules.":
@@ -381,7 +381,7 @@ def build(variant=CHOSEN):
               fig(num(sum(d["verified"] for d in all_dates)), bi("quoted dates, {d} departments, found word for word in the Korean notice (the quote, not the translation)", {"d": len(audits)}), f"of {num(len(all_dates))}")]
     checked = f'<div class="body"><div class="figs three even">{"".join(checks)}</div></div>'
 
-    tries = [bi("Choose your program and year of entry. See the requirements covered, and the page each comes from."),
+    tries = [bi("Choose your program and year of entry. See the requirements, and the page each comes from."),
              bi("Open a notice. Compare its dates with the Korean beside them, then open the original."),
              bi("Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.", {"n": calendar["events"]}),
              bi("Switch department. {names} are here too, with {n} requirements written from their own rules.",
@@ -413,7 +413,9 @@ def build(variant=CHOSEN):
         tries[2] = bi("Press the ChatGPT Edu button on a notice and paste the question into ChatGPT Edu.")
         try_list = '<ol class="try">' + "".join(f'<li><b>{i}</b><p>{t}</p></li>' for i, t in enumerate(tries, 1)) + "</ol>"
         try_it = f'<div class="body">{try_list}</div>'
-    tagline = bi("A department's graduation requirements and notices, in English, each with its source. New notices are translated daily.")
+    # the count is spelled out in English at the head of the sentence, and a numeral in Korean
+    tagline = bi("{n} departments' graduation requirements and notices, in English, each with its source. New notices are translated daily.",
+                 {"n": {2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six"}.get(len(others) + 1, len(others) + 1)}, {"n": len(others) + 1})
     foot_left = bi("Translations are made by AI. Every notice links to its Korean original, and every requirement cites its source.")
     columns = [[bar("Why now", "1") + why, bar("How it works", "4") + how],
                [bar("The gap", "2") + gap, bar("Try it", "5") + try_it],
