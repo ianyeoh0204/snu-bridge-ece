@@ -133,8 +133,9 @@ details.done .title { color:var(--muted); }
 
 /* notices */
 .notice summary { align-items:flex-start; }
-.notice .head { flex:1; }
-.notice .meta { display:flex; align-items:center; gap:10px; margin-bottom:4px; font-size:13px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.notice .head { flex:1; min-width:0; }
+.notice .meta { display:flex; flex-wrap:wrap; align-items:center; gap:4px 10px; margin-bottom:4px; font-size:13px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.notice .meta .tag { white-space:normal; }
 .notice .en { font-size:18px; font-weight:700; letter-spacing:-.01em; }
 .notice .body { padding-left:16px; }
 .notice .ko { margin:0 0 12px; font-size:14px; color:var(--muted); }
@@ -159,7 +160,6 @@ details.done .title { color:var(--muted); }
 .fig b small { margin-left:6px; font-size:.3em; font-weight:500; letter-spacing:0; color:var(--muted); }
 .fig h3 { margin:16px 0 0; font-size:18px; line-height:1.2; letter-spacing:-.01em; }
 .fig p { margin:8px 0 0; font-size:15px; }
-.fig p.dim, .dim { color:var(--muted); }
 .years { border-bottom:2px solid var(--ink); }
 .year { display:grid; grid-template-columns:84px minmax(0, 1fr); gap:0 16px; padding:16px; border-top:1px solid var(--hair); }
 .year:first-child { border-top:0; }
@@ -198,7 +198,8 @@ details.done .title { color:var(--muted); }
 .band.small h1 { margin:12px 0 16px; font-size:clamp(34px, 6vw, 60px); line-height:1; letter-spacing:-.03em; }
 .nav nav .menu { position:relative; display:flex; }
 .nav nav .drop { display:none; position:absolute; top:100%; right:0; z-index:6; width:max-content; min-width:230px; max-width:min(320px, 86vw); background:var(--bg); border:2px solid var(--ink); }
-.nav nav .menu:hover .drop, .nav nav .menu:focus-within .drop, .nav nav .menu.open .drop { display:block; }
+@media (hover:hover) { .nav nav .menu:hover .drop { display:block; } }  /* on a touch screen hover sticks after a tap, so the list would stay open */
+.nav nav .menu:focus-within .drop, .nav nav .menu.open .drop { display:block; }
 .nav nav .drop:empty { display:none !important; }
 .nav nav .drop a { display:grid; grid-template-columns:20px minmax(0, 1fr); align-items:baseline; gap:0 6px; margin:0; padding:10px 14px; border:0; border-top:1px solid var(--hair); color:var(--ink); font-size:15px; font-weight:400; line-height:1.25; }
 .nav nav .drop a:first-child { border-top:0; }
@@ -276,7 +277,6 @@ details.done .title { color:var(--muted); }
 .gate p .sub { display:block; margin-top:6px; }
 .plain .links, .aboutnote + .links { margin-top:8px; }
 .links a .ko2 { font-weight:400; }
-.diff small + small { margin-top:-4px; }
 
 /* motion: the resting state above is the finished page; these rules only describe "not arrived yet" */
 .moves .barhead[data-reveal] { transition:clip-path .5s cubic-bezier(.2,.7,.2,1); clip-path:inset(0); }
@@ -347,17 +347,22 @@ details.done .title { color:var(--muted); }
 <script>
 const DATA = __DATA__;
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const unsaved = new Map();  // what the browser refused to store, kept for this page so that ticks still count
 const store = {
-  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
-  set(k, v) { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} },
+  get(k) { if (unsaved.has(k)) return unsaved.get(k); try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); unsaved.delete(k); } catch (e) { v === null ? unsaved.delete(k) : unsaved.set(k, v); } },
 };
 // More than one department can have requirements. The page shows one at a time: the first ("main") unless the reader
 // chose another, which is remembered. Changing department reloads the page, so every view is built for that department.
 // The Background page is about the main department's boards and always opens on it.
 const deptIds = Object.keys(DATA.departments), mainId = deptIds[0];
-const deptId = deptIds.includes(store.get("bridge:dept")) ? store.get("bridge:dept") : mainId;
+const asked = new URLSearchParams(location.search).get("dept");  // only where the browser stores nothing (see switchTo)
+const deptId = deptIds.includes(asked) ? asked : deptIds.includes(store.get("bridge:dept")) ? store.get("bridge:dept") : mainId;
 const dept = DATA.departments[deptId];
-const switchTo = (id, hash) => { store.set("bridge:dept", id === mainId ? null : id); if (hash !== undefined) history.replaceState(null, "", hash || location.pathname); location.reload(); };
+const switchTo = (id, hash) => { store.set("bridge:dept", id === mainId ? null : id);
+  let saved = null; try { saved = localStorage.getItem("bridge:dept"); } catch (e) {}
+  const query = (saved || mainId) === id ? "" : "?dept=" + id;  // a browser that stores nothing carries the choice in the address
+  history.replaceState(null, "", location.pathname + query + (hash !== undefined ? hash : location.hash)); location.reload(); };
 let program = dept.programs.includes(store.get("bridge:program")) ? store.get("bridge:program") : dept.default_program;
 // Entry years exist only where the rules differ by year of admission (undergraduate). The latest year is the default.
 const yearsOf = (p) => [...new Set(dept.cards.filter((c) => c.programs.includes(p)).flatMap((c) => c.entry_years || []))].sort();
@@ -389,6 +394,8 @@ const GROUP = { start_early: () => B("Early preparation"), before_exam: () => B(
   for_degree: () => B("Degree conferral"), every_semester: () => B("Each semester") };
 const AUDIENCE = { Graduate: () => B("Graduate"), Undergraduate: () => B("Undergraduate"), All: () => B("All") };
 const PROGRAM = { undergraduate: () => B("Undergraduate"), masters: () => B("Master's"), phd: () => B("PhD"), integrated: () => B("Integrated MS-PhD") };
+const itemsOf = (n) => (n === 1 ? B("{n} item", { n }) : B("{n} items", { n }));
+const noticesOf = (n) => (n === 1 ? B("{n} notice", { n }) : B("{n} notices", { n }));
 const doneKey = (id) => `bridge:${deptId}:${program}:${id}`;
 
 // Cards written for one program come before cards shared by several, so the main rule leads its group.
@@ -398,7 +405,7 @@ const cardsNow = () => cardsOf(program);
 
 function openCard(id) {
   const node = document.getElementById("card-" + id);
-  if (node) { node.open = true; node.scrollIntoView({ behavior: "smooth", block: "center" }); }
+  if (node) { node.open = true; node.scrollIntoView({ behavior: STILL ? "auto" : "smooth", block: "center" }); }
 }
 
 function renderMonths() {
@@ -424,7 +431,7 @@ function relatedNotices(c) {
   const list = dept.notices.filter((n) => n.cards.includes(c.id) && [audienceOf(program), "All students"].includes(n.audience)).slice(0, 3);
   if (!list.length) return null;
   return el("div", { class: "related" }, el("b", null, L("Recent notices") + ". "),
-    ...list.map((n) => el("a", { href: n.url, target: "_blank", rel: "noopener" }, `${n.date}  ${n.title_en || n.title_ko}`)));
+    ...list.map((n) => el("a", { href: "#notice-" + n.id }, `${n.date}  ${n.title_en || n.title_ko}`)));  // this site's English page of the notice, which links to the original
 }
 
 // Steps of one case arrive as "Online attendance: do this", repeated on every step of that case (see bridge/briefs.py).
@@ -459,8 +466,7 @@ const QUESTION = (url) => "Explain this Seoul National University notice for an 
   "If it depends on my program or year of entry, ask me.";
 const askButton = (n) => { const done = el("span", { class: "asked", hidden: "" }, ...B("Copied. Paste it into {assistant}.", { assistant: assistantLink() }, { assistant: dept.assistant.name }));
   const button = el("button", { type: "button", class: "ask", onclick: async () => {
-    try { await navigator.clipboard.writeText(QUESTION(n.url)); } catch (e) { window.prompt(L("Copy this question"), QUESTION(n.url)); }
-    done.hidden = false; } }, ...B("Copy a question about the original notice for {assistant}", { assistant: dept.assistant.name }));
+    try { await navigator.clipboard.writeText(QUESTION(n.url)); done.hidden = false; } catch (e) { window.prompt(L("Copy this question"), QUESTION(n.url)); } } }, ...B("Copy a question about the original notice for {assistant}", { assistant: dept.assistant.name }));
   return el("p", { class: "askline" }, button, done); };
 const assistantLink = () => el("a", { href: dept.assistant.url, target: "_blank", rel: "noopener" }, dept.assistant.name);
 let audience = audienceOf(program);
@@ -494,8 +500,9 @@ function renderNotices() {
   document.getElementById("audiences").replaceChildren(...Object.keys(options).map((a) =>
     el("button", { type: "button", "aria-pressed": String(a === audience), onclick: () => { audience = a; renderNotices(); } }, AUDIENCE[a]())));
   const shown = nd.notices.filter((n) => !options[audience] || options[audience].includes(n.audience));
-  document.getElementById("notice-note").replaceChildren(...B("{n} notices since {date}.",
-    { n: shown.length, date: fullDate(nd.board.since) }, { date: koDate(nd.board.since) }));
+  // Under a filter the count is a part of the whole, and says so: Home gives the whole.
+  document.getElementById("notice-note").replaceChildren(...(shown.length === nd.notices.length ? B("{n} notices since {date}.", { n: shown.length, date: fullDate(nd.board.since) }, { date: koDate(nd.board.since) })
+    : B("{n} of {m} notices since {date}.", { n: shown.length, m: nd.notices.length, date: fullDate(nd.board.since) }, { date: koDate(nd.board.since) })));
   // Deadlines as a calendar the student subscribes to once. Shown for the department whose notices are checked.
   const cal = !pilot && dept.calendar, calNote = document.getElementById("calendar-note");
   calNote.hidden = !cal;
@@ -511,7 +518,7 @@ function renderNotices() {
   for (const n of shown) { const k = n.date.slice(0, 7); byMonth.set(k, [...(byMonth.get(k) || []), n]); }
   document.getElementById("notice-list").replaceChildren(...[...byMonth].map(([k, list]) =>
     el("section", { class: "group month" },
-      el("h2", null, el("span", { class: "plainspan" }, `${MONTHS[Number(k.slice(5)) - 1]} ${k.slice(0, 4)}`, below(`${k.slice(0, 4)}년 ${Number(k.slice(5))}월`)), el("span", null, B("{n} notices", { n: list.length }))),
+      el("h2", null, el("span", { class: "plainspan" }, `${MONTHS[Number(k.slice(5)) - 1]} ${k.slice(0, 4)}`, below(`${k.slice(0, 4)}년 ${Number(k.slice(5))}월`)), el("span", null, noticesOf(list.length))),
       el("div", { class: "list" }, ...list.map((n) => {
         const card = cardsNow().find((c) => n.cards.includes(c.id));
         const b = n.brief;
@@ -550,7 +557,7 @@ function renderNotices() {
               b.images ? el("p", { class: "trapline" }, el("b", null, L("Caution") + ". "),
                 dept.assistant ? B("Images in this notice that could not be read: {n}. For English, paste a screenshot into {assistant}.", { n: b.images, assistant: assistantLink() }, { assistant: dept.assistant.name })
                   : B("Images in this notice that could not be read: {n}. Please check the original notice.", { n: b.images })) : null,
-              b.attachments.length ? el("p", null, el("b", null, L("Attachments (Korean)") + ". "), b.attachments.join("; ") + ". ",
+              b.attachments.length ? el("p", null, el("b", null, L("Attachments") + ". "), b.attachments.join("; ") + ". ",
                 dept.assistant ? B("For English, upload to {assistant}.", { assistant: assistantLink() }, { assistant: dept.assistant.name }) : "") : null,
               dept.assistant ? askButton(n) : null,
               ...(listFirst ? [checklist, full] : [full, checklist]),
@@ -591,7 +598,7 @@ function renderHome() {
       el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Graduation requirements"))),
       el("div", { class: "gates" }, ...dept.programs.map(programFacts).map((f) =>
         el("a", { class: "gate", href: "#requirements", onclick: f.go }, el("b", { "data-count": f.number }, f.number), el("small", null, f.unit),
-          el("h3", null, f.label), el("p", null, f.rest), el("span", { class: "go" }, B("{n} items", { n: f.count })))))),
+          el("h3", null, f.label), el("p", null, f.rest), el("span", { class: "go" }, itemsOf(f.count)))))),
     el("section", { class: "block board", id: "board", "aria-label": "Latest notices" },
       el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Latest notices")),
         el("div", { class: "seg", id: "board-lang", role: "group", "aria-label": "Language of the titles" })),
@@ -601,7 +608,6 @@ function renderHome() {
           el("span", { class: "swap", style: `--i:${i}`, "aria-hidden": "true" },
             el("span", { class: "ko", lang: "ko" }, n.title_ko), el("span", { class: "en" }, n.title_en || n.title_ko)),
           el("span", { "aria-hidden": "true" }, "→")))),
-      el("p", { class: "note" }, B("From the department's notice board, as of {date}. Unofficial translations.", { date: fullDate(DATA.built) }, { date: koDate(DATA.built) })),
       el("a", { class: "more", href: "#notices" }, B("All {n} notices since {date}", { n: dept.notices.length, date: fullDate(dept.board.since) }, { date: koDate(dept.board.since) })),
       // A department with notices only gets one line here; the rest of Home stays this department's.
       ...deptIds.filter((k) => k !== deptId).map((k) => el("a", { class: "more", href: "#requirements", onclick: (ev) => { ev.preventDefault(); switchTo(k, "#requirements"); } },
@@ -691,7 +697,7 @@ function renderAbout() {
         fig(String(ctx.figures.qs_rank), "", B("SNU's place in the 2026 and 2027 QS World University Rankings. It was {n} in the 2025 edition.", { n: ctx.figures.qs_rank_before })),
         fig(num(ctx.figures.qs_student_ratio_rank), "", B("SNU's place for share of international students in the 2026 edition. The university named the international indicators as the main cause of its fall in rank.")),
         fig(num(ctx.figures.students_in_korea), "", B("international students in Korea in 2026. The Ministry of Education says its focus now moves from numbers to the quality of education and support."))),
-      el("p", { class: "aboutnote" }, B("The two newspapers below reported the ranking figures."), el("span", { class: "links" }, src("qs_2026"), src("qs_2027"), src("ministry")))),
+      el("p", { class: "aboutnote" }, B("The first two newspapers below reported the ranking figures."), el("span", { class: "links" }, src("qs_2026"), src("qs_2027"), src("ministry")))),
 
     el("section", { class: "block" }, el("div", { class: "barhead", "data-reveal": "" }, el("h2", null, B("Where this project stands"))),
       el("ul", { class: "plain" },
@@ -711,7 +717,7 @@ function renderAbout() {
         el("div", { class: "row head" }, el("div", null, B("Department")), el("div", { class: "n" }, B("Notices on the Korean board")), el("div", { class: "n" }, B("Separate English board posts"))),
         ...sv.departments.map((d) => svRow(d.this_site ? "own" : "", [d.name, below(d.name_ko)],
           (d.approximate ? "≈ " : "") + num(d.korean), svSide(d)))),
-      el("p", { class: "aboutnote" }, B("The {k} separate English boards had {n} posts in the same period, {m} with an English title.", { k: sv.totals.english_boards, n: sv.totals.english_posts, m: sv.totals.english_posts_titled })),
+      el("p", { class: "aboutnote" }, B("The separate English boards of {k} departments had {n} posts in the same period, {m} with an English title.", { k: sv.totals.english_boards, n: sv.totals.english_posts, m: sv.totals.english_posts_titled })),
       (() => { const apart = sv.departments.filter((d) => d.english_side === "separate"), by = (f) => (a, b) => (f(a) < f(b) ? -1 : 1);
         const silent = apart.filter((d) => !d.english_posts).sort(by((d) => d.english_last_post))[0], korean = apart.filter((d) => d.english_posts && !d.english_posts_titled).sort(by((d) => -d.english_posts))[0];
         return silent && korean ? el("p", { class: "aboutnote" }, B("{a}'s English board last had a post in {month} {year}. {b}'s has {n} posts, all with Korean titles.",
@@ -829,7 +835,7 @@ function renderAbout() {
       el("div", { class: "figs four", "data-reveal": "" },
         fig(num(checkedNotices.length), "", B("notices with deadlines compared with the Korean original")),
         fig(num(checkedNotices.concat(recheckedNotices).reduce((a, n) => a + n.wrong_dates, 0)), "", B("dates that were wrong")),
-        fig(num(checkedNotices.filter((n) => n.overall === "could_mislead").length), `of ${checkedNotices.length}`, B("summaries left out something a student could need, at the first reading")),
+        fig(num(checkedNotices.filter((n) => n.overall === "could_mislead").length), `of ${checkedNotices.length}`, B("summaries had a point that could mislead a student, at the first reading")),
         recheckedNotices.length ? fig(num(recheckedNotices.filter((n) => n.overall === "could_mislead").length), `of ${recheckedNotices.length}`, B("still did after the translation instructions were tightened")) : ""),
       recheckedNotices.length ? el("p", { class: "aboutnote" }, B("Across those notices, the points that could mislead a student fell from {a} to {b}.", { a: misleading(checkedNotices), b: misleading(recheckedNotices) })) : "",
       el("p", { class: "aboutnote" }, B("The author settled {s} of the rest against the page, with the reason shown on the requirement, and {o} are still open.",
@@ -862,7 +868,7 @@ function renderAbout() {
   // Which step this is and how many there are sits above the title; the menu under the About tab lists them all.
   root.replaceChildren(
     el("section", { class: "band small" }, el("p", null, ...B("Background and Method"), el("span", { class: "of" }, ` ${at + 1} / ${steps.length}`)),
-      el("h1", null, ...(here.title || STEP_LABEL[here.key])()), el("p", null, here.lead)),
+      el("h1", null, ...STEP_LABEL[here.key]()), el("p", null, here.lead)),
     ...here.parts(),
     next ? el("a", { class: "nextstep", href: "#about-" + next.key }, el("small", null, B("Next")), el("span", null, ...STEP_LABEL[next.key]())) : "");
 }
@@ -898,6 +904,7 @@ function animate(root) {
 }
 
 function show(view, keepScroll) {
+  aboutMenu.classList.remove("open"); if (aboutMenu.contains(document.activeElement)) document.activeElement.blur();  // the list never stays open over a new page
   for (const v of ["home", "requirements", "notices", "about"]) {
     document.getElementById("view-" + v).hidden = v !== view;
     if (v !== "home") document.getElementById("tab-" + v).setAttribute("aria-current", v === view ? "page" : "false");
@@ -969,7 +976,7 @@ function render() {
   renderCount();
   document.getElementById("groups").replaceChildren(...Object.entries(DATA.groups).map(([group, label]) => {
     const list = cardsNow().filter((c) => c.group === group);
-    return list.length ? el("section", { class: "group" }, el("h2", null, el("span", { class: "plainspan" }, GROUP[group] ? GROUP[group]() : label), el("span", null, B("{n} items", { n: list.length }))),
+    return list.length ? el("section", { class: "group" }, el("h2", null, el("span", { class: "plainspan" }, GROUP[group] ? GROUP[group]() : label), el("span", null, itemsOf(list.length))),
       el("div", { class: "list" }, ...list.map(cardNode))) : "";
   }));
 }
@@ -982,19 +989,33 @@ function route() {
   if (h === "#notices-" + deptId || h.startsWith(`#notice-${deptId}-`)) return (history.replaceState(null, "", h === "#notices-" + deptId ? "#notices" : "#notice-" + h.slice(9 + deptId.length)), route());
   if (named("#notices-")) return switchTo(named("#notices-"), "#notices");
   if (named("#notice-")) return switchTo(named("#notice-"), "#notice-" + h.slice(9 + named("#notice-").length));
-  if ((h === "#about" || h.startsWith("#about-")) && deptId !== mainId) return switchTo(mainId, h);
-  const bar = document.getElementById("deptbar"), about = h === "#about" || h.startsWith("#about-");
+  // A card or notice of another department on this site (a shared link, a calendar event, a link on About) opens that department.
+  const elsewhere = (list, id) => !dept[list].some((x) => String(x.id) === id) && deptIds.find((k) => k !== deptId && DATA.departments[k][list].some((x) => String(x.id) === id));
+  if (h.startsWith("#card-") && elsewhere("cards", h.slice(6))) return switchTo(elsewhere("cards", h.slice(6)), h);
+  if (h.startsWith("#notice-") && elsewhere("notices", h.slice(8))) return switchTo(elsewhere("notices", h.slice(8)), h);
+  // About is the main department's. A visitor who came to it from another department goes back there on leaving by a tab.
+  const about = h === "#about" || h.startsWith("#about-"), from = store.get("bridge:from");
+  if (about && deptId !== mainId) { store.set("bridge:from", deptId); return switchTo(mainId, h); }
+  if (!about && from) { store.set("bridge:from", null); if (["", "#home", "#requirements", "#notices"].includes(h) && from !== deptId && deptIds.includes(from)) return switchTo(from, h); }
+  const bar = document.getElementById("deptbar");
   bar.hidden = deptIds.length < 2 || about;
   if (!bar.hidden && !bar.childElementCount) bar.append(el("span", null, L("Department")), el("div", { class: "seg", role: "group" }, ...deptIds.map((k) =>
     el("button", { type: "button", "aria-pressed": String(k === deptId), onclick: () => { if (k !== deptId) switchTo(k); } }, `${DATA.departments[k].name} · ${DATA.departments[k].name_ko}`))),
     dept.reread === false ? el("span", { class: "tag trap" }, ...B("Written from the department's own rules on {date}. Checked by code and by one independent AI reading from the same maker, not by the second reader from another maker.", { date: fullDate(dept.read_on) }, { date: koDate(dept.read_on) })) : "");
-  if (h.startsWith("#card-")) { show("requirements", true); openCard(h.slice(6)); }
+  if (h.startsWith("#card-")) { const c = dept.cards.find((x) => x.id === h.slice(6));
+    // A card of another program or year of admission is not on the page until that program is shown.
+    if (c && !cardsNow().includes(c)) { if (!c.programs.includes(program)) program = c.programs[0];
+      if (!cardsNow().includes(c) && (c.entry_years || []).length) entryYear = c.entry_years[c.entry_years.length - 1];
+      audience = audienceOf(program); render(); }
+    show("requirements", !!c); openCard(h.slice(6)); }
   else if (h.startsWith("#notice-")) { board = Object.keys(pilots).find((k) => h.startsWith(`#notice-${k}-`)) || deptId; audience = "All"; show("notices", true); openNotice(h.slice(8)); }
   else if (h.startsWith("#notices-") && pilots[h.slice(9)]) { board = h.slice(9); audience = "All"; show("notices"); }
   else if (h === "#about" || h.startsWith("#about-")) { aboutStep = STEP_MOVED[h.slice(7)] || h.slice(7); show("about"); }
   else show({ "#notices": "notices", "#requirements": "requirements" }[h] || "home");
 }
 window.addEventListener("hashchange", route);
+// A link inside About to one of the main department's own notices or cards stays in the main department.
+document.getElementById("view-about").addEventListener("click", (ev) => { const a = ev.target.closest('a[href^="#"]'); if (a && !a.getAttribute("href").startsWith("#about")) store.set("bridge:from", null); });
 const aboutMenu = document.getElementById("menu-about");
 document.getElementById("tab-about").addEventListener("click", (ev) => {
   if (matchMedia("(hover: none)").matches && !aboutMenu.classList.contains("open") && aboutKeys().length) { ev.preventDefault(); aboutMenu.classList.add("open"); }

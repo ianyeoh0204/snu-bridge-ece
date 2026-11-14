@@ -623,3 +623,41 @@ A line that reports to the developer how the project was checked belongs on Abou
   "Translated by AI on <date>..." on each notice stays (it sends the student to the original); the gap page's first
   sentence stays (8,477 notices on Korean boards against 80 posts on English boards, and the next sentence says so);
   "The website shows all the information at a glance" is the developer's own sentence.
+
+## Final check (14 Nov 2026): four Opus 5.5 readers and a click-through
+The developer asked for a last check of every button and every wording by a few Opus 5.5 agents. Four read-only readers,
+one scope each, on one frozen build (`out/review/final-pages/`: the three student pages of all four departments, the three
+About pages and the poster's text): student pages, every number recounted from the data, every control and route read as
+code, every English and Korean pair. Every finding was checked on the page or in the data before anything was changed.
+`bridge/korean_blocks.html` is out of the repository and the build (a copy is in `out/`, not published).
+- The numbers all reproduce (8,477, 25, the ten rows, 80 and 36, 261 of 279, 18, 11 of 11, 841 of 847, 295, 149, 181).
+  Wording corrected where it said more than was counted: the 80 posts are on "the separate English boards of 7
+  departments" (two departments have more than one board, so "7 boards" was wrong); the poster's "each with its file, page
+  and Korean line" is "its source and Korean line" (94 of the 279 cards cite a web page or a yearly file and show no page
+  number); "re-read them once" lost its "once" (three departments were read more than once); "the first two newspapers
+  below" (three links follow); the two ECE captions said summaries "left out something" where the count is any point
+  that could mislead.
+- Found by reading the code, and fixed: notice headers ran off a 375 px screen in Nuclear, Aerospace and Naval (long
+  category tags could not wrap); the About list stayed open over the page on a phone (hover is now for devices that
+  hover, and every page change closes the list); a `#card-` address for a card of another program or year opened nothing
+  (it now shows that program); an address for another department's card or notice opened the wrong department (it now
+  switches, so a shared link and a calendar event land on the right notice); opening About from another department left
+  the visitor on ECE (leaving About by a tab goes back to their department; `bridge:from`); "Recent notices" on a card
+  opened the Korean page under an English title (it opens this site's page of the notice); the copy button said "Copied"
+  when nothing was copied; a browser that stores nothing could not switch department (the choice then rides in the
+  address as `?dept=`, and ticks count for the page).
+- Student pages: "1 items" is "1 item" (and "1 notice", which the first notice of each new month would have shown wrong);
+  under a filter the Notices count is "47 of 75 notices since 1 July 2026", a part and its whole; "Attachments", not
+  "Attachments (Korean)" (some are English files); Home's line under the board is gone (the footer says both things).
+- Korean, 13 of 15 points taken: one phrase that could read as "rewritten" for "reused", one count that could read as
+  per department, 영문 for every "English board" and 게시물 for every "post", the formal ending where three lines used the
+  casual one, "실제 사례" for the heading "In practice". An Opus read is not the Korean speaker's read; the sheets still go out.
+- Not taken, with the reason: card and notice content (out of scope; changing a card voids its second reading); the
+  count "0 of 30 completed" beside 35 items (the five that repeat every semester have no tick box, and sit under their own
+  heading); "Also on this site: ..., 70 requirements and 113 notices" (live counts, not evidence); "Caution. Images in this
+  notice that could not be read" (a student must know the picture was not translated, and the line says what to do);
+  method notes inside closed folds; the Notices filter resetting on each visit; the poster's inviting "-보세요" endings.
+- Tested in the page after the fixes, desktop and 375 px: every tab, the menu's first and second tap, all folds, all old
+  About addresses, department switch and return from About, program and year buttons, a tick across a reload and with
+  storage blocked, the filter with its counts, the copy button (the question carries the original notice's address),
+  the calendar links and file (149 events), cross-department addresses, no sideways scroll, no console error.

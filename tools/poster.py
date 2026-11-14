@@ -54,7 +54,7 @@ POSTER_KO = {
     "The board this site translates, {name}'s academic board: {n} of {m} titles in English.":
         "본 사이트가 번역하는 {name} 학사 게시판: {m}건 가운데 영어 제목 {n}건",
     "–: no English board of its own. Job, scholarship and seminar boards are not counted for any department.":
-        "–: 별도 영어 게시판 없음. 취업·장학·세미나 게시판은 어느 학과에서도 집계하지 않았습니다.",
+        "–: 별도 영문 게시판 없음. 취업·장학·세미나 게시판은 어느 학과에서도 집계하지 않았습니다.",
     "A sample of {m} Korean-titled notices was opened: {n} held a line of English, none an English version.":
         "한국어 제목의 공지 {m}건을 표본으로 열어 보았습니다. {n}건에 영어로 된 줄이 있었고, 영어본이 있는 공지는 없었습니다.",
     "{year}: a new undergraduate division for international students, about {n} new students expected.":
@@ -110,8 +110,8 @@ POSTER_KO = {
         "전기·정보공학부 공지의 날짜로, 지난 일정을 포함하며 캘린더에 추가할 수 있습니다. 모두 공지에 적힌 요일과 일치합니다.",
     "The website shows all the information at a glance.": "웹사이트에서 모든 정보를 한눈에 볼 수 있습니다.",
     "Calendar": "캘린더",
-    "Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its file, page and Korean line.":
-        "과정과 입학 연도별로 졸업에 필요한 모든 것을 보여 줍니다. {d}개 학과의 요건 {n}개이며, 요건마다 파일, 쪽, 한국어 원문을 밝힙니다.",
+    "Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.":
+        "과정과 입학 연도별로 졸업에 필요한 모든 것을 보여 줍니다. {d}개 학과의 요건 {n}개이며, 요건마다 출처와 한국어 원문을 밝힙니다.",
     "Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.":
         "새 공지를 영어로 제공하며, 조치 대상, 날짜, 조건, 절차를 보여 줍니다. 지금까지 {d}개 학과의 공지 {n}건입니다.",
     "The dates from ECE's notices, in the student's own calendar: {n} so far.":
@@ -138,13 +138,13 @@ POSTER_KO.update({
     "{n} ECE academic notices since {date}, in English: who must act, dates, conditions, steps, and the full translation.":
         "{date} 이후 전기·정보공학부 학사 공지 {n}건을 영어로 제공: 조치 대상, 날짜, 조건, 절차, 전문 번역",
     "Requirements, separately": "요건은 별도로",
-    "An AI model wrote them once from the official documents, and a second AI model from another maker re-read them once.":
-        "AI 모델이 공식 문서를 바탕으로 한 번 작성했고, 개발사가 다른 두 번째 AI 모델이 한 번 다시 읽었습니다.",
+    "An AI model wrote them once from the official documents, and a second AI model from another maker re-read them.":
+        "AI 모델이 공식 문서를 바탕으로 한 번 작성했고, 개발사가 다른 두 번째 AI 모델이 다시 읽었습니다.",
     "scheduled check for new notices": "매일 예약된 새 공지 확인",
     "departments read by one automatic job": "하나의 자동 작업이 읽는 학과 수",
     "Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the Korean.":
         "영어는 Claude가 작성합니다. 개발사가 다른 OpenAI 모델이 모든 요건 카드를 한국어 원문과 대조해 다시 읽었습니다.",
-    "Checks performed": "수행한 확인",
+    "Checks performed": "수행한 검증",
     "In ten notices re-read after the instructions were tightened, {n} doubtful points remained.":
         "지침을 강화한 뒤 다시 읽은 공지 10건에서 의심스러운 지점 {n}곳이 남았습니다.",
     "Choose your program and year of entry. See the requirements, and the page each comes from.":
@@ -152,9 +152,9 @@ POSTER_KO.update({
     "Add the notices' dates to your calendar. It holds {n} events, past ones included, and each matches the weekday the notice prints.":
         "공지의 날짜를 내 캘린더에 추가해 보세요. 지난 일정을 포함해 {n}건이며, 모두 공지에 적힌 요일과 일치합니다.",
     "Switch department. {names} are here too, with {n} requirements written from their own rules.":
-        "학과를 바꿔 보세요. {names}도 있으며, 각 학과의 자체 규정을 바탕으로 요건 {n}개를 작성했습니다.",
+        "학과를 바꿔 보세요. {names}도 있으며, 각 학과의 자체 규정을 바탕으로 요건을 모두 {n}개 작성했습니다.",
     "Notices need a small reader for each kind of board software. Translation and publishing are reused.":
-        "공지에는 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시는 그대로 다시 씁니다.",
+        "공지에는 게시판 소프트웨어 종류마다 간단한 읽기 프로그램이 필요합니다. 번역과 게시 과정은 그대로 재사용합니다.",
     "Requirements: written from each department's own documents, then re-read.": "요건: 각 학과의 공식 문서를 바탕으로 작성한 뒤 다시 읽습니다.",
 })
 
@@ -329,7 +329,7 @@ def build(variant=CHOSEN):
                 f'<div><b class="blue">{num(totals["english_titled"])}</b><p>{bi("of them have a title in English")}</p></div></div>')
     silent = min((d for d in survey["departments"] if d["english_side"] == "separate" and not d["english_posts"]), key=lambda d: d["english_last_post"])
     korean_only = max((d for d in survey["departments"] if d["english_posts"] and not d["english_posts_titled"]), key=lambda d: d["english_posts"])
-    english_boards = bi("The {k} separate English boards had {n} posts in the same period, {m} with an English title.",
+    english_boards = bi("The separate English boards of {k} departments had {n} posts in the same period, {m} with an English title.",
                         {"k": totals["english_boards"], "n": totals["english_posts"], "m": totals["english_posts_titled"]})
     last = datetime.date.fromisoformat(silent["english_last_post"])
     boards_line = bi("{a}'s English board last had a post in {month} {year}. {b}'s has {n} posts, all with Korean titles.",
@@ -363,7 +363,7 @@ def build(variant=CHOSEN):
     steps = ('<ol class="steps">' + step(1, "Collect", bi("Once a day a scheduled job reads the department's Korean board."))
              + step(2, "Translate", bi("An AI model writes the English. Plain code checks every quoted date against the notice."))
              + step(3, "Publish", bi("GitHub rebuilds and publishes the site, without the developer's laptop."))
-             + step("+", "Requirements, separately", bi("An AI model wrote them once from the official documents, and a second AI model from another maker re-read them once.")) + "</ol>")
+             + step("+", "Requirements, separately", bi("An AI model wrote them once from the official documents, and a second AI model from another maker re-read them.")) + "</ol>")
     # the point of this panel is that the flow runs by itself, so the second figure is how much it covers, not what it costs
     daily, cost = fig(html.escape("Daily"), bi("scheduled check for new notices")), fig(len(others) + 1, bi("departments read by one automatic job"))
     who = f'<p class="stand">{bi("Claude writes the English. An OpenAI model, from a different maker, re-read every requirement card against the Korean.")}</p>'
@@ -403,7 +403,7 @@ def build(variant=CHOSEN):
                              if (d.parent / "briefs" / f"{n['id']}.json").exists())
         part = lambda label, sentence, example="": f'<div class="part"><h5>{bi(label)}</h5><p class="cap2">{sentence}</p>{example}</div>'
         does = ('<div class="body does">' + f'<p class="lead">{bi("The website shows all the information at a glance.")}</p>'
-                + part("Requirements", bi("Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its file, page and Korean line.", {"n": all_cards, "d": len(audits)}), example)
+                + part("Requirements", bi("Everything needed to graduate, by program and year of entry. {n} requirements in {d} departments, each with its source and Korean line.", {"n": all_cards, "d": len(audits)}), example)
                 + part("Notices", bi("Each new notice in English, with who must act, the dates, the conditions and the steps. {n} notices so far, in {d} departments.", {"n": translated_all, "d": len(audits)}), translated)
                 + part("Calendar", bi("The dates from ECE's notices, in the student's own calendar: {n} so far.", {"n": calendar["events"]}))
                 + part("Ask ChatGPT Edu", bi("For further questions, each notice has a button that copies a ready question for ChatGPT Edu, where the student can add a screenshot or an attachment."))

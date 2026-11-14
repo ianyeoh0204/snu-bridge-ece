@@ -127,8 +127,4 @@ def build() -> Path:
     (site / "cards.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     for file, text in calendars.items():
         (site / file).write_bytes(text.encode("utf-8"))  # bytes, so the CRLF line ends the format requires are kept
-    # An extra page with its own look: Korean grammar as building blocks, a student's study notes in English.
-    extra = Path(__file__).parent / "korean_blocks.html"
-    if extra.exists():
-        (site / "korean-blocks.html").write_text(extra.read_text(encoding="utf-8"), encoding="utf-8")
     return site / "index.html"
